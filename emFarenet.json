@@ -7,7 +7,7 @@
     },
     "webPage": {
         "@type": "WebPage",
-        "typeCode": "CityToCity",
+        "typeCode": "CICI",
         "name": "flights from san francisco to new york",
         "url": "flights.everymundo.com/en/flights-from-san-francisco-to-new-york",
         "hostName": "flights.everymundo.com",
@@ -15,103 +15,104 @@
         "siteEditionIsoCode": "en-US"
     },
     "journey": {
-            "@type": "Journey",
-            "flightReservation": {
-                "@type": "FlightReservation",
-                "reservationStatus": "Confirmed",
-                "fareDetails": {
-                    "@type": "Fare",
-                    "price": 234.21,
-                    "totalPrice": 250.6,
-                    "taxPrice": 16.39,
-                    "priceCurrency": "USD",
-                    "priceCurrencySymbol": "$",
-                    "redemption": {
-                        "@type": "Redemption",
-                        "unit": "miles",
-                        "amount": 1500
-                    }
-                },
-                "passengerDetails": [
-                    {
-                        "@type": "Passenger",
-                        "category": "senior65Plus",
-                        "count": 2
-                    },
-                    {
-                        "@type": "Passenger",
-                        "adult12PlusCount": 0
-                    },
-                    {
-                        "@type": "Passenger",
-                        "adult18To64Count": 2
-                    },
-                    {
-                        "@type": "Passenger",
-                        "child15To17Count": 0
-                    },
-                    {
-                        "@type": "Passenger",
-                        "child12To14Count": 1
-                    },
-                    {
-                        "@type": "Passenger",
-                        "child5To11Count": 1
-                    },
-                    {
-                        "@type": "Passenger",
-                        "child2To4Count": 0
-                    },
-                    {
-                        "@type": "Passenger",
-                        "infant0To2Count": 0
-                    }
-                ],
-                "passenger": {
-                    "@type": "Passenger",
-                    "seniorCount": 2,
-                    "adultCount": 2,
-                    "youngAdultCount": 0,
-                    "childCount": 2,
-                    "infantInLapCount": 0,
-                    "infantInSeatCount": 0
+        "@type": "Journey",
+        "flightReservation": {
+            "@type": "FlightReservation",
+            "reservationStatus": "Confirmed"
+            },
+        "fareDetails": {
+            "@type": "Fare",
+            "price": 234.21,
+            "totalPrice": 250.6,
+            "taxPrice": 16.39,
+            "priceCurrency": "USD",
+            "priceCurrencySymbol": "$",
+            "redemption": {
+                "@type": "Redemption",
+                "unit": "miles",
+                "amount": 1500
                 }
             },
-            "fareTensor": {
-                "@type": "Faretensor",
-                "route": "SFO>JFK",
-                "journeyType": "RoundTrip",
-                "cells": [
-                    {
-                        "@type": "Cell",
-                        "b": 345.21,
-                        "boundType": "Outbound",
-                        "isSoldOut": false,
-                        "redemptionAmount": 9999,
-                        "outboundDate": "2017-03-06",
-                        "inboundDate": null
-                    },
-                    {
-                        "@type": "Cell",
-                        "price": 345.21,
-                        "boundType": "inbound",
-                        "isSoldOut": false,
-                        "redemptionAmount": 9999,
-                        "outboundDate": null,
-                        "inboundDate": "2017-03-09"
-                    },
-                    {
-                        "@type": "Cell",
-                        "price": 345.21,
-                        "boundType": "matrix",
-                        "isSoldOut": false,
-                        "redemptionAmount": 9999,
-                        "outboundDate": "2017-03-06",
-                        "inboundDate": "2017-03-09"
-                    }
+        "passengerDetails": [
+            {
+                "@type": "Passenger",
+                "category": "senior65Plus",
+                "count": 2
+            },
+            {
+                "@type": "Passenger",
+                "adult12PlusCount": 0
+            },
+            {
+                "@type": "Passenger",
+                "adult18To64Count": 2
+            },
+            {
+                "@type": "Passenger",
+                "child15To17Count": 0
+            },
+            {
+                "@type": "Passenger",
+                "child12To14Count": 1
+            },
+            {
+                "@type": "Passenger",
+                "child5To11Count": 1
+            },
+            {
+                "@type": "Passenger",
+                "child2To4Count": 0
+            },
+            {
+                "@type": "Passenger",
+                "infant0To2Count": 0
+            }
+        ],
+        "passenger": {
+            "@type": "Passenger",
+            "seniorCount": 2,
+            "adultCount": 2,
+            "youngAdultCount": 0,
+            "childCount": 2,
+            "infantInLapCount": 0,
+            "infantInSeatCount": 0
+            }
+        },
+        "fareTensor": {
+            "@type": "Faretensor",
+            "route": "SFO>JFK",
+            "journeyType": "RoundTrip",
+            "cells": [
+                {
+                    "@type": "Cell",
+                    "price": 345.21,
+                    "boundType": "Outbound",
+                    "isSoldOut": false,
+                    "redemptionAmount": 9999,
+                    "outboundDate": "2017-03-06",
+                    "inboundDate": null
+                },
+                {
+                    "@type": "Cell",
+                    "price": 345.21,
+                    "boundType": "inbound",
+                    "isSoldOut": false,
+                    "redemptionAmount": 9999,
+                    "outboundDate": null,
+                    "inboundDate": "2017-03-09"
+                },
+                {
+                    "@type": "Cell",
+                    "price": 345.21,
+                    "boundType": "matrix",
+                    "isSoldOut": false,
+                    "redemptionAmount": 9999,
+                    "outboundDate": "2017-03-06",
+                    "inboundDate": "2017-03-09"
+                }
                 ]
             },
-            "outboundFlight": {
+        "outboundFlight": {
                 "@type": "Flight",
                 "fareDetails": {
                     "@type": "Fare",
@@ -199,7 +200,7 @@
                     }
                 ]
             },
-            "inboundFlight": {
+        "inboundFlight": {
                 "@type": "Flight",
                 "fareDetails": {
                         "@type": "Fare",
@@ -252,12 +253,12 @@
                     }
                 ]
             },
-            "departureDate": "2017-12-07",
-            "returnDate": "2017-12-10",
-            "journeyType": "RoundTrip",
-            "isCodeShare": false,
-            "flightType": "Domestic",
-            "promo": {
+        "departureDate": "2017-12-07",
+        "returnDate": "2017-12-10",
+        "journeyType": "RoundTrip",
+        "isCodeShare": false,
+        "flightType": "Domestic",
+        "promo": {
                 "@type": "Promo",
                 "isPromo": true,
                 "discountCode": "AFFBFAN",
