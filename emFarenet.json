@@ -1,0 +1,302 @@
+{
+    "@type": "Offer",
+    "airline": {
+        "@type": "Airline",
+        "name": "EveryMundo",
+        "iataCode": "EM"
+    },
+    "webPage": {
+        "@type": "WebPage",
+        "typeCode": "CityToCity",
+        "name": "flights from san francisco to new york",
+        "url": "flights.everymundo.com/en/flights-from-san-francisco-to-new-york",
+        "hostName": "flights.everymundo.com",
+        "languageIsoCode": "en",
+        "siteEditionIsoCode": "en-US"
+    },
+    "journey": {
+            "@type": "Journey",
+            "flightReservation": {
+                "@type": "FlightReservation",
+                "reservationStatus": "Confirmed",
+                "fareDetails": {
+                    "@type": "Fare",
+                    "price": 234.21,
+                    "totalPrice": 250.6,
+                    "taxPrice": 16.39,
+                    "priceCurrency": "USD",
+                    "priceCurrencySymbol": "$",
+                    "redemption": {
+                        "@type": "Redemption",
+                        "unit": "miles",
+                        "amount": 1500
+                    }
+                },
+                "passengerDetails": [
+                    {
+                        "@type": "Passenger",
+                        "category": "senior65Plus",
+                        "count": 2
+                    },
+                    {
+                        "@type": "Passenger",
+                        "adult12PlusCount": 0
+                    },
+                    {
+                        "@type": "Passenger",
+                        "adult18To64Count": 2
+                    },
+                    {
+                        "@type": "Passenger",
+                        "child15To17Count": 0
+                    },
+                    {
+                        "@type": "Passenger",
+                        "child12To14Count": 1
+                    },
+                    {
+                        "@type": "Passenger",
+                        "child5To11Count": 1
+                    },
+                    {
+                        "@type": "Passenger",
+                        "child2To4Count": 0
+                    },
+                    {
+                        "@type": "Passenger",
+                        "infant0To2Count": 0
+                    }
+                ],
+                "passenger": {
+                    "@type": "Passenger",
+                    "seniorCount": 2,
+                    "adultCount": 2,
+                    "youngAdultCount": 0,
+                    "childCount": 2,
+                    "infantInLapCount": 0,
+                    "infantInSeatCount": 0
+                }
+            },
+            "fareTensor": {
+                "@type": "Faretensor",
+                "route": "SFO>JFK",
+                "journeyType": "RoundTrip",
+                "cells": [
+                    {
+                        "@type": "Cell",
+                        "b": 345.21,
+                        "boundType": "Outbound",
+                        "isSoldOut": false,
+                        "redemptionAmount": 9999,
+                        "outboundDate": "2017-03-06",
+                        "inboundDate": null
+                    },
+                    {
+                        "@type": "Cell",
+                        "price": 345.21,
+                        "boundType": "inbound",
+                        "isSoldOut": false,
+                        "redemptionAmount": 9999,
+                        "outboundDate": null,
+                        "inboundDate": "2017-03-09"
+                    },
+                    {
+                        "@type": "Cell",
+                        "price": 345.21,
+                        "boundType": "matrix",
+                        "isSoldOut": false,
+                        "redemptionAmount": 9999,
+                        "outboundDate": "2017-03-06",
+                        "inboundDate": "2017-03-09"
+                    }
+                ]
+            },
+            "outboundFlight": {
+                "@type": "Flight",
+                "fareDetails": {
+                    "@type": "Fare",
+                    "price": 234.21,
+                    "isSoldOut": false,
+                    "taxPrice": 16.39
+                },
+                "route": "SFO>MIA>JFK",
+                "estimatedDuration": "PT9H30M",
+                "fareClassInput": "Economy",
+                "fareClass": "Economy",
+                "availableSeatsCount": "9+",
+                "departureAirportIataCode": "SFO",
+                "arrivalAirportIataCode": "JFK",
+                "legs": [
+                    {
+                        "@type": "Leg",
+                        "flightNumber": "EM110",
+                        "departureAirport": {
+                            "@type": "Airport",
+                            "name": "San Francisco Airport",
+                            "iataCode": "SFO"
+                        },
+                        "arrivalAirport": {
+                            "@type": "Airport",
+                            "name": "Miami International Airport",
+                            "iataCode": "MIA"
+                        },
+                        "departureTime": "2027-03-04T06:35:00-08:00",
+                        "arrivalTime": "2027-03-04T13:35:00-08:00",
+                        "estimatedDuration": "PT6H30M",
+                        "operatingAirline": {
+                            "@type": "Airline",
+                            "name": "EveryMundo",
+                            "iataCode": "EM"
+                        },
+                        "additionalInfo": {
+                            "@type": "AdditionalInfo",
+                            "fields": [
+                                {
+                                    "name": "classOfService",
+                                    "value": "COACH_EC"
+                                },
+                                {
+                                    "name": "fareBasis",
+                                    "value": "NNNJ6SBM+"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@type": "Leg",
+                        "flightNumber": "EM111",
+                        "departureAirport": {
+                            "@type": "Airport",
+                            "name": "Miami International Airport",
+                            "iataCode": "MIA"
+                        },
+                        "arrivalAirport": {
+                            "@type": "Airport",
+                            "name": "John F. Kennedy International Airport",
+                            "iataCode": "JFK"
+                        },
+                        "departureTime": "2027-03-07T10:35:00-08:00",
+                        "arrivalTime": "2027-03-07T19:35:00-08:00",
+                        "estimatedDuration": "PT3H25M",
+                        "airline": {
+                            "@type": "Airline",
+                            "name": "EveryMundo",
+                            "iataCode": "EM"
+                        },
+                        "additionalInfo": {
+                            "@type": "ExtraInfo",
+                            "fields": [
+                                {
+                                    "name": "classOfService",
+                                    "value": "COACH_EC"
+                                },
+                                {
+                                    "name": "fareBasis",
+                                    "value": "NNNJ6SBM"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "inboundFlight": {
+                "@type": "Flight",
+                "fareDetails": {
+                        "@type": "Fare",
+                        "price": 250.00,
+                        "isSoldOut": false,
+                        "taxPrice": 6.21
+                },
+                "route": "JFK>SFO",
+                "estimatedDuration": "PT7H30M",
+                "fareClassInput": "Economy",
+                "fareClass": "Economy",
+                "availableSeatsCount": "9+",
+                "departureAirportIataCode": "JFK",
+                "arrivalAirportIataCode": "SFO",
+                "legs": [
+                    {
+                        "@type": "Leg",
+                        "flightNumber": "EM110",                    
+                        "departureAirport": {
+                            "@type": "Airport",
+                            "name": "John F. Kennedy International Airport",
+                            "iataCode": "JFK"
+                        },
+                        "arrivalAirport": {
+                            "@type": "Airport",
+                            "name": "San Francisco Airport",
+                            "iataCode": "SFO"
+                        },
+                        "departureTime": "2017-03-04T06:35:00-08:00",
+                        "arrivalTime": "2017-03-04T13:35:00-08:00",
+                        "estimatedDuration": "PT7H30M",
+                        "operatingAirline": {
+                            "@type": "Airline",
+                            "name": "EveryMundo",
+                            "iataCode": "EM"
+                        },
+                        "additionalInfo": {
+                            "@type": "ExtraInfo",
+                            "fields": [
+                                {
+                                    "name": "classOfService",
+                                    "value": "COACH_EC"
+                                },
+                                {
+                                    "name": "fareBasis",
+                                    "value": "NNNJ6SBM"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "departureDate": "2017-12-07",
+            "returnDate": "2017-12-10",
+            "journeyType": "RoundTrip",
+            "isCodeShare": false,
+            "flightType": "Domestic",
+            "promo": {
+                "@type": "Promo",
+                "isPromo": true,
+                "discountCode": "AFFBFAN",
+                "expirationDate": "2017-12-31"
+            },
+            "departureCity": {
+                "@type": "City",
+                "name": "San Francisco"
+            },
+            "departureCountry": {
+                "@type": "Country",
+                "name": "United States",
+                "isoCode": "US"
+            },
+            "arrivalCity": {
+                "@type": "City",
+                "name": "New York"
+            },
+            "arrivalCountry": {
+                "@type": "Country",
+                "name": "United States",
+                "isoCode": "US"
+            },
+            "extraInfo": {
+                "@type": "ExtraInfo",
+                "deviceType": "Mobile",
+                "isReward": true,
+                "trackingId": "ABC124x3dae",
+                "isMile": false,
+                "lenghtOfStay": 12,
+                "additionalInfo": {
+                    "@type": "ExtraInfo",
+                    "fields": [                
+                        {
+                            "name": "tltsidCookie",
+                            "value": "42990EFE42A8FA03991ED1939C3B10F1"
+                        }
+                    ]
+                }
+            }
+        }
+}
