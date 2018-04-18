@@ -87,31 +87,38 @@
     },
     {
         "@type": "Passenger",
-        "adult12PlusCount": 0
+        "category": "adult12PlusCount",
+        "count": 0
     },
     {
         "@type": "Passenger",
-        "adult18To64Count": 2
+        "category": "adult18To64Count",
+        "count": 2
     },
     {
         "@type": "Passenger",
-        "child15To17Count": 0
+        "category": "child15To17Count",
+        "count": 0
     },
     {
         "@type": "Passenger",
-        "child12To14Count": 1
+        "category": "child12To14Count",
+        "count": 1
     },
     {
         "@type": "Passenger",
-        "child5To11Count": 1
+        "category": "child5To11Count",
+        "count": 1
     },
     {
         "@type": "Passenger",
-        "child2To4Count": 0
+        "category": "child2To4Count",
+        "count": 0
     },
     {
         "@type": "Passenger",
-        "infant0To2Count": 0
+        "category": "infant0To2Count",
+        "count": 0
     }
   ],
   "passenger": {
@@ -124,8 +131,9 @@
     "infantInLapCount": 0,
     "infantInSeatCount": 0
   },
-  "fareDetails": {
-    "@type": "Fare",
+  "priceSpecification": {
+    "@type": "PriceSpecification",
+    "description": "Journey",
     "price": 234.21,
     "totalPrice": 250.6,
     "taxPrice": 16.39,
@@ -136,17 +144,19 @@
     "priceMarketId": "USD-US",
     "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
   },
-  "promo": {
-    "@type": "Promo",
-    "isPromo": true,
-    "discountCode": "AFFBFAN",
+  "discount": {
+    "@type": "Discount",
+    "isDiscount": true,
+    "code": "AFFBFAN",
+    "amount": 500,
+    "percentage": 0.5,
     "expirationDate": "2017-12-31"
   },
   "seat": {
     "rowNumber": "16",
     "cabinColumnId": "A",
-    "fareDetails": {
-      "@type": "Fare",
+    "priceSpecification": {
+      "@type": "priceSpecification",
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
@@ -294,8 +304,8 @@
     "@type": "Flight",
     "flightNumber": "EM110",
     "route": "SFO>JFK|JFK>SFO",
-    "fareDetails": {
-      "@type": "Fare",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
@@ -386,10 +396,12 @@
       "image": "unitedstates.com/image.jpg"
     },
     "flightType": "Domestic",
-    "promo": {
-      "@type": "Promo",
-      "isPromo": true,
-      "discountCode": "AFFBFAN",
+    "discount": {
+      "@type": "Discount",
+      "isDiscount": true,
+      "code": "AFFBFAN",
+      "amount": 500,
+      "percentage": 0.5,
       "expirationDate": "2017-12-31"
     },
     "baggage": {
@@ -397,8 +409,8 @@
       "count": 2,
       "checkedBags": 1,
       "carryOnBags": 1,
-      "fareDetails": {
-        "@type": "Fare",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
         "price": 234.21,
         "totalPrice": 250.6,
         "taxPrice": 16.39,
@@ -435,8 +447,8 @@
       "modifiedTime": "2027-03-14T13:05:00-05:00"
     },
     "fullRoute": "SFO>MIA>JFK|JFK>SFO",
-    "fareDetails": {
-        "@type": "Fare",
+    "priceSpecification": {
+        "@type": "PriceSpecification",
         "price": 234.21,
         "totalPrice": 250.6,
         "taxPrice": 16.39,
@@ -453,39 +465,46 @@
         }
     },
     "passengerDetails": [
-        {
-            "@type": "Passenger",
-            "category": "senior65Plus",
-            "count": 2
-        },
-        {
-            "@type": "Passenger",
-            "adult12PlusCount": 0
-        },
-        {
-            "@type": "Passenger",
-            "adult18To64Count": 2
-        },
-        {
-            "@type": "Passenger",
-            "child15To17Count": 0
-        },
-        {
-            "@type": "Passenger",
-            "child12To14Count": 1
-        },
-        {
-            "@type": "Passenger",
-            "child5To11Count": 1
-        },
-        {
-            "@type": "Passenger",
-            "child2To4Count": 0
-        },
-        {
-            "@type": "Passenger",
-            "infant0To2Count": 0
-        }
+      {
+          "@type": "Passenger",
+          "category": "senior65Plus",
+          "count": 2
+      },
+      {
+          "@type": "Passenger",
+          "category": "adult12PlusCount",
+          "count": 0
+      },
+      {
+          "@type": "Passenger",
+          "category": "adult18To64Count",
+          "count": 2
+      },
+      {
+          "@type": "Passenger",
+          "category": "child15To17Count",
+          "count": 0
+      },
+      {
+          "@type": "Passenger",
+          "category": "child12To14Count",
+          "count": 1
+      },
+      {
+          "@type": "Passenger",
+          "category": "child5To11Count",
+          "count": 1
+      },
+      {
+          "@type": "Passenger",
+          "category": "child2To4Count",
+          "count": 0
+      },
+      {
+          "@type": "Passenger",
+          "category": "infant0To2Count",
+          "count": 0
+      }
     ],
     "passenger": {
         "@type": "Passenger",
@@ -518,8 +537,8 @@
       "@type": "Flight",
       "boundType": "Outbound",
       "route": "SFO>JFK",
-      "fareDetails": {
-        "@type": "Fare",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
         "price": 750.12,
         "totalPrice": 825.51,
         "taxPrice": 75.39
@@ -776,10 +795,12 @@
         "image": "unitedstates.com/image.jpg"
       },
       "flightType":"Domestic",
-      "promo": {
-        "@type": "Promo",
-        "isPromo": true,
-        "discountCode": "AFFBFAN",
+      "discount": {
+        "@type": "Discount",
+        "isDiscount": true,
+        "code": "AFFBFAN",
+        "amount": 500,
+        "percentage": 0.5,
         "expirationDate": "2017-12-31"
       },
       "baggage": {
@@ -787,8 +808,8 @@
         "count": 2,
         "checkedBags": 1,
         "carryOnBags": 1,
-        "fareDetails": {
-          "@type": "Fare",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
           "price": 234.21,
           "totalPrice": 250.6,
           "taxPrice": 16.39,
@@ -817,8 +838,8 @@
       "@type": "Journey",
       "boundType": "Inbound",
       "route": "JFK>SFO",
-      "fareDetails": {
-        "@type": "Fare",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
         "price": 750.12,
         "totalPrice": 825.51,
         "taxPrice": 75.39
@@ -977,10 +998,12 @@
         "image": "unitedstates.com/image.jpg"
       },
       "flightType": "Domestic",
-      "promo": {
-        "@type": "Promo",
-        "isPromo": true,
-        "discountCode": "AFFBFAN",
+      "discount": {
+        "@type": "Discount",
+        "isDiscount": true,
+        "code": "AFFBFAN",
+        "amount": 500,
+        "percentage": 0.5,
         "expirationDate": "2017-12-31"
       },
       "baggage": {
@@ -988,8 +1011,8 @@
         "count": 2,
         "checkedBags": 1,
         "carryOnBags": 1,
-        "fareDetails": {
-          "@type": "Fare",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
           "price": 234.21,
           "totalPrice": 250.6,
           "taxPrice": 16.39,
@@ -1021,10 +1044,12 @@
     "flightType": "Domestic",
     "segmentCount": 2,
     "flightCount": 3,
-    "promo": {
-      "@type": "Promo",
-      "isPromo": true,
-      "discountCode": "AFFBFAN",
+    "discount": {
+      "@type": "Discount",
+      "isDiscount": true,
+      "code": "AFFBFAN",
+      "amount": 500,
+      "percentage": 0.5,
       "expirationDate": "2017-12-31"
     },
     "airline": {
@@ -1077,8 +1102,8 @@
       "@type": "Lounge",
       "airportIataCode":"MIA",
       "passCount": 1,
-      "fareDetails": {
-        "@type": "Fare",
+      "priceSpecification": {
+        "@type": "priceSpecification",
         "price": 234.21,
         "totalPrice": 250.6,
         "taxPrice": 16.39,
@@ -1094,8 +1119,8 @@
     "count": 2,
     "checkedBags": 1,
     "carryOnBags": 1,
-    "fareDetails": {
-      "@type": "Fare",
+    "priceSpecification": {
+      "@type": "priceSpecification",
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
@@ -1110,8 +1135,8 @@
     "@type": "InsuranceAgency",
     "brand": "Platinum Plan",
     "name": "AIG Travel Guard",
-    "fareDetails": {
-      "@type": "Fare",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
@@ -1135,8 +1160,8 @@
       },
       "image": "mia.com/image.jpg"
     },
-    "fareDetails": {
-      "@type": "Fare",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
@@ -1148,11 +1173,11 @@
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1500 Orange Avenue",
-    "addressLocality": "San Diego",
-    "addressRegion": "CA",
+    "street": "1500 Orange Avenue",
+    "cityName": "San Diego",
+    "regionCode": "CA",
     "postalCode": "94043",
-    "addressCountry": "US"
+    "countryCode": "US"
   },
   "autoRental": {
     "@type": "AutoRental",
@@ -1169,11 +1194,11 @@
       "name": "Hertz San Diego Airport",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "1500 Orange Avenue",
-        "addressLocality": "San Diego",
-        "addressRegion": "CA",
+        "street": "1500 Orange Avenue",
+        "cityName": "San Diego",
+        "regionCode": "CA",
         "postalCode": "94043",
-        "addressCountry": "US"
+        "countryCode": "US"
       }
     },
     "pickupTime": "2017-08-05T16:00:00-07:00",
@@ -1182,11 +1207,11 @@
       "name": "Hertz LAX",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "1234 First Street",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
+        "street": "1500 Orange Avenue",
+        "cityName": "San Diego",
+        "regionCode": "CA",
         "postalCode": "94043",
-        "addressCountry": "US"
+        "countryCode": "US"
       }
     },
     "dropoffTime": "2017-08-06T20:00:00-07:00"
@@ -1196,8 +1221,9 @@
     "author": "Tripadvisor",
     "bestRating": 5,
     "ratingValue": 3,
-    "worstRating": 1
-  },
+    "worstRating": 1,
+    "ratingCount": 11
+    },
   "guest": {
     "count": 4,
     "adultCount": 2,
@@ -1207,8 +1233,8 @@
     "@type": "Hotel",
     "name": "Holiday Inn",
     "cityCode": "SAN",
-    "fareDetails": {
-      "@type": "Fare",
+    "priceSpecification": {
+      "@type": "priceSpecification",
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
@@ -1226,11 +1252,11 @@
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1500 Orange Avenue",
-      "addressLocality": "San Diego",
-      "addressRegion": "CA",
+      "street": "1500 Orange Avenue",
+      "cityName": "San Diego",
+      "regionCode": "CA",
       "postalCode": "94043",
-      "addressCountry": "US"
+      "countryCode": "US"
     },
     "checkinTime": "2017-08-05T16:00:00-07:00",
     "checkoutTime": "2017-08-06T20:00:00-07:00",
@@ -1240,8 +1266,9 @@
       "author": "Tripadvisor",
       "bestRating": 5,
       "ratingValue": 3,
-      "worstRating": 1
-    }
+      "worstRating": 1,
+      "ratingCount": 11
+      }
   },
   "payment": {
     "@type": "Payment",
@@ -1511,7 +1538,7 @@
             "airIndex": 0.76
         }
     ],
-    "fareDetails": [
+    "priceSpecification": [
         {
             "airline": {
                 "@type": "Airline",
@@ -1557,7 +1584,7 @@
     "histogramDetails": [
         {
             "dateTick": "2017-08-12",
-            "fareDetails": [
+            "priceSpecification": [
                 {
                     "airline": {
                         "@type": "Airline",
@@ -1587,7 +1614,7 @@
       "ariaLive": "Polite",
       "isAriaBusy": "False",
       "loadingLabel": "Loading",
-      "fareDetails": [
+      "priceSpecification": [
         {
             "airline": {
                 "@type": "Airline",
@@ -1613,7 +1640,7 @@
       "showGeneralDisclaimerOnTop": "True",
       "showCallToAction": "False",
       "showPricing": "True",
-      "showPromoFare": "True",
+      "showDiscountFare": "True",
       "showDots": "False",
       "className": "ExploreSlider",
       "isScrollInfinite": "False",
@@ -1769,7 +1796,7 @@
         "Infants"
       ],
       "passengersTypeDefault": "Adults",
-      "showPromotionalCode": "True",
+      "showDiscountCode": "True",
       "isCallToActionDisabledOnError": "True",
       "PassengerCountMaxNumber": 4,
       "PassengerCountMinNumber": 1,
@@ -1819,8 +1846,8 @@
         "modifiedTime": "2027-03-14T13:05:00-05:00"
       },
       "fullRoute": "SFO>MIA>JFK|JFK>SFO",
-      "fareDetails": {
-          "@type": "Fare",
+      "priceSpecififcation": {
+          "@type": "priceSpecification",
           "price": 234.21,
           "totalPrice": 250.6,
           "taxPrice": 16.39,
@@ -1837,39 +1864,46 @@
           }
       },
       "passengerDetails": [
-          {
-              "@type": "Passenger",
-              "category": "senior65Plus",
-              "count": 2
-          },
-          {
-              "@type": "Passenger",
-              "adult12PlusCount": 0
-          },
-          {
-              "@type": "Passenger",
-              "adult18To64Count": 2
-          },
-          {
-              "@type": "Passenger",
-              "child15To17Count": 0
-          },
-          {
-              "@type": "Passenger",
-              "child12To14Count": 1
-          },
-          {
-              "@type": "Passenger",
-              "child5To11Count": 1
-          },
-          {
-              "@type": "Passenger",
-              "child2To4Count": 0
-          },
-          {
-              "@type": "Passenger",
-              "infant0To2Count": 0
-          }
+        {
+            "@type": "Passenger",
+            "category": "senior65Plus",
+            "count": 2
+        },
+        {
+            "@type": "Passenger",
+            "category": "adult12PlusCount",
+            "count": 0
+        },
+        {
+            "@type": "Passenger",
+            "category": "adult18To64Count",
+            "count": 2
+        },
+        {
+            "@type": "Passenger",
+            "category": "child15To17Count",
+            "count": 0
+        },
+        {
+            "@type": "Passenger",
+            "category": "child12To14Count",
+            "count": 1
+        },
+        {
+            "@type": "Passenger",
+            "category": "child5To11Count",
+            "count": 1
+        },
+        {
+            "@type": "Passenger",
+            "category": "child2To4Count",
+            "count": 0
+        },
+        {
+            "@type": "Passenger",
+            "category": "infant0To2Count",
+            "count": 0
+        }
       ],
       "passenger": {
           "@type": "Passenger",
@@ -1880,8 +1914,7 @@
           "childCount": 1,
           "infantInLapCount": 0,
           "infantInSeatCount": 0
-        }
-      },
+        },
       "fareTensor": {
         "@type": "FlightTensor",
         "route": "SFO>JFK", 
@@ -1902,8 +1935,8 @@
         "@type": "Flight",
         "boundType": "Outbound",
         "route": "SFO>JFK",
-        "fareDetails": {
-          "@type": "Fare",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
           "price": 750.12,
           "totalPrice": 825.51,
           "taxPrice": 75.39
@@ -2160,10 +2193,12 @@
           "image": "unitedstates.com/image.jpg"
         },
         "flightType":"Domestic",
-        "promo": {
-          "@type": "Promo",
-          "isPromo": true,
-          "discountCode": "AFFBFAN",
+        "discount": {
+          "@type": "Discount",
+          "isDiscount": true,
+          "code": "AFFBFAN",
+          "amount": 500,
+          "percentage": 0.5,
           "expirationDate": "2017-12-31"
         },
         "baggage": {
@@ -2171,8 +2206,8 @@
           "count": 2,
           "checkedBags": 1,
           "carryOnBags": 1,
-          "fareDetails": {
-            "@type": "Fare",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
             "price": 234.21,
             "totalPrice": 250.6,
             "taxPrice": 16.39,
@@ -2201,8 +2236,8 @@
         "@type": "Journey",
         "boundType": "Inbound",
         "route": "JFK>SFO",
-        "fareDetails": {
-          "@type": "Fare",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
           "price": 750.12,
           "totalPrice": 825.51,
           "taxPrice": 75.39
@@ -2361,10 +2396,12 @@
           "image": "unitedstates.com/image.jpg"
         },
         "flightType": "Domestic",
-        "promo": {
-          "@type": "Promo",
-          "isPromo": true,
-          "discountCode": "AFFBFAN",
+        "discount": {
+          "@type": "Discount",
+          "isDiscount": true,
+          "code": "AFFBFAN",
+          "amount": 500,
+          "percentage": 0.5,
           "expirationDate": "2017-12-31"
         },
         "baggage": {
@@ -2372,8 +2409,8 @@
           "count": 2,
           "checkedBags": 1,
           "carryOnBags": 1,
-          "fareDetails": {
-            "@type": "Fare",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
             "price": 234.21,
             "totalPrice": 250.6,
             "taxPrice": 16.39,
@@ -2405,10 +2442,12 @@
       "flightType": "Domestic",
       "segmentCount": 2,
       "flightCount": 3,
-      "promo": {
-        "@type": "Promo",
-        "isPromo": true,
-        "discountCode": "AFFBFAN",
+      "discount": {
+        "@type": "Discount",
+        "isDiscount": true,
+        "code": "AFFBFAN",
+        "amount": 500,
+        "percentage": 0.5,
         "expirationDate": "2017-12-31"
       },
       "airline": {
@@ -2416,19 +2455,19 @@
         "name": "EveryMundo",
         "iataCode": "EM",
         "image": "everymundo.com/image.jpg"
-      }
+        }
     },
-    "hotels": [
+    "hotel": [
       {
         "@type": "Hotel",
         "name": "Holiday Inn",
         "cityCode": "SAN",
-        "fareDetails": {
-          "@type": "Fare",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "description": "Hotel|Journey",
           "price": 234.21,
           "totalPrice": 250.6,
           "taxPrice": 16.39,
-          "fuelPrice": 57.89,
           "additionalFeesPrice": 12,
           "priceCurrency": "USD",
           "priceCurrencySymbol": "$",
@@ -2442,22 +2481,31 @@
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "1500 Orange Avenue",
-          "addressLocality": "San Diego",
-          "addressRegion": "CA",
+          "street": "1500 Orange Avenue",
+          "cityName": "San Diego",
+          "regionCode": "CA",
           "postalCode": "94043",
-          "addressCountry": "US"
+          "countryCode": "US"
         },
         "checkinTime": "2017-08-05T16:00:00-07:00",
         "checkoutTime": "2017-08-06T20:00:00-07:00",
         "roomCount": 1,
-        "rating": {
+        "rating": [
+          {
           "@type": "Rating",
           "author": "Tripadvisor",
           "bestRating": 5,
           "ratingValue": 3,
           "worstRating": 1
-        }
+          },
+          {
+          "@type": "Rating",
+          "author": "AAV",
+          "bestRating": 5,
+          "ratingValue": 3,
+          "worstRating": 1
+          }
+        ]
       }
     ],
     "autoRental": {
@@ -2475,11 +2523,11 @@
         "name": "Hertz San Diego Airport",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "1500 Orange Avenue",
-          "addressLocality": "San Diego",
-          "addressRegion": "CA",
+          "street": "1500 Orange Avenue",
+          "cityName": "San Diego",
+          "regionCode": "CA",
           "postalCode": "94043",
-          "addressCountry": "US"
+          "countryCode": "US"
         }
       },
       "pickupTime": "2017-08-05T16:00:00-07:00",
@@ -2488,13 +2536,14 @@
         "name": "Hertz LAX",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "1234 First Street",
-          "addressLocality": "Los Angeles",
-          "addressRegion": "CA",
+          "street": "1500 Orange Avenue",
+          "cityName": "San Diego",
+          "regionCode": "CA",
           "postalCode": "94043",
-          "addressCountry": "US"
+          "countryCode": "US"
         }
       },
       "dropoffTime": "2017-08-06T20:00:00-07:00"
     }
   }
+}

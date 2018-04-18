@@ -42,31 +42,38 @@
             },
             {
                 "@type": "Passenger",
-                "adult12PlusCount": 0
+                "category": "adult12PlusCount",
+                "count": 0
             },
             {
                 "@type": "Passenger",
-                "adult18To64Count": 2
+                "category": "adult18To64Count",
+                "count": 2
             },
             {
                 "@type": "Passenger",
-                "child15To17Count": 0
+                "category": "child15To17Count",
+                "count": 0
             },
             {
                 "@type": "Passenger",
-                "child12To14Count": 1
+                "category": "child12To14Count",
+                "count": 1
             },
             {
                 "@type": "Passenger",
-                "child5To11Count": 1
+                "category": "child5To11Count",
+                "count": 1
             },
             {
                 "@type": "Passenger",
-                "child2To4Count": 0
+                "category": "child2To4Count",
+                "count": 0
             },
             {
                 "@type": "Passenger",
-                "infant0To2Count": 0
+                "category": "infant0To2Count",
+                "count": 0
             }
         ],
         "passenger": {
