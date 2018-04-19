@@ -1,4 +1,8 @@
 {
+  "provider": {
+    "@type": "Organization",
+    "name": "Hertz"
+  },
   "airline": {
     "@type": "Airline",
     "name": "EveryMundo",
@@ -142,6 +146,7 @@
     "priceCurrency": "USD",
     "priceCurrencySymbol": "$",
     "priceMarketId": "USD-US",
+    "isSoldOut": false,
     "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
   },
   "discount": {
@@ -163,6 +168,7 @@
       "priceCurrency": "USD",
       "priceCurrencySymbol": "$",
       "priceMarketId": "USD-US",
+      "isSoldOut": false,
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
     }
   },
@@ -282,19 +288,20 @@
       }
     ]   
   },
+  "device": {
+    "category": "Mobile",
+    "screenResolution": "360x600",
+    "mobileBranding": "Apple",
+    "mobileModel": "iPhone",
+    "mobileName": "iPhone 6",
+    "operatingSystem": "iOS",
+    "operatingSystemVersion": "9",
+    "isMobileApp": "True"
+  },
   "extraInfo": {
     "@type": "ExtraInfo",
-    "deviceType": "Mobile",
-    "deviceViewPort": "S",
-    "deviceName": "iphone6",
-    "deviceOS": "iOS9",
-    "isDeviceApp": "True",
-    "isReward": "True",
-    "system": "airTRFX",
-    "version": "2.0",
     "environment": "Production",
     "indexStatus": "Index",
-    "isMile": "False",
     "additionalInfo": {
       "@type": "ExtraInfo",
       "name": "name",
@@ -314,6 +321,7 @@
       "priceCurrency": "USD",
       "priceCurrencySymbol": "$",
       "priceMarketId": "USD-US",
+      "isSoldOut": false,
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
       "redemption": {
         "@type": "Redemption",
@@ -1099,7 +1107,7 @@
   },
   "lounge": [
     {
-      "@type": "Lounge",
+      "@type": "LoungeAccess",
       "airportIataCode":"MIA",
       "passCount": 1,
       "priceSpecification": {
@@ -1214,7 +1222,8 @@
         "countryCode": "US"
       }
     },
-    "dropoffTime": "2017-08-06T20:00:00-07:00"
+    "dropoffTime": "2017-08-06T20:00:00-07:00",
+    "type": "SUV"
   },
   "rating": {
     "@type": "Rating",
@@ -1223,7 +1232,7 @@
     "ratingValue": 3,
     "worstRating": 1,
     "ratingCount": 11
-    },
+  },
   "guest": {
     "count": 4,
     "adultCount": 2,
@@ -1276,7 +1285,7 @@
     "cardName": "Amex",
     "isSaved": "True"
   },
-  "currencyCpnversion": {
+  "currencyConversion": {
     "@type": "CurrencyConversion",
     "requestTimestamp": "2017-05-30 22:49:47",
     "currencySource": "USD",
@@ -1288,11 +1297,25 @@
       "AFN": 68.35
     }
   },
-  "frequentistFlightProgram": {
+  "loyaltyProgram": {
     "@type": "LoyaltyProgram",
-    "userId": "12854712",
-    "programName": "Miles and Bonus",
+    "name": "Miles and Bonus",
+    "provider": {
+      "@type": "Organization",
+      "name": "Aegean Airlines"
+    },
+    "url": "https://www.britishairways.com/en-gb/executive-club/about-the-club",
+    "certificateNumber": "12854712",
     "membershipLevel": "Gold",
+    "redemption": {
+      "@type": "Redemption",
+      "unit": "miles",
+      "amount": 1500,
+      "conversion": {
+        "amount": 1500,
+        "ratio": 0.5
+      }
+    },
     "milesEarned": 1000,
     "isLoggedIn": "False"
   },
@@ -1824,16 +1847,6 @@
     },
   "offer": {
     "@type": "Offer",
-    "webPage": {
-      "@type": "WebPage",
-      "name": "flights from miami to berlin",
-      "url": "flights.everymundo.com/en/flights-from-miami-to-berlin",
-      "hostName": "flights.everymundo.com",
-      "typeName": "CityToCity",
-      "typeCode": "CICI",
-      "languageIsoCode": "en",
-      "siteEdition": "en-US"
-    },
     "journey": {
       "@type": "Journey",
       "flightReservation": {
@@ -2543,7 +2556,41 @@
           "countryCode": "US"
         }
       },
-      "dropoffTime": "2017-08-06T20:00:00-07:00"
+      "dropoffTime": "2017-08-06T20:00:00-07:00",
+      "type": "SUV"
+    },
+    "webPage": {
+      "@type": "WebPage",
+      "name": "flights from miami to berlin",
+      "url": "flights.everymundo.com/en/flights-from-miami-to-berlin",
+      "hostName": "flights.everymundo.com",
+      "typeName": "CityToCity",
+      "typeCode": "CICI",
+      "languageIsoCode": "en",
+      "siteEdition": "en-US"
+    },
+    "device": {
+      "category": "Mobile",
+      "screenResolution": "360x600",
+      "mobileBranding": "Apple",
+      "mobileModel": "iPhone",
+      "mobileName": "iPhone 6",
+      "operatingSystem": "iOS",
+      "operatingSystemVersion": "9",
+      "isMobileApp": "True"
+    },
+    "database": {
+      "@type": "Database",
+      "version": "2.1.0",
+      "_id": "14961881240552180.141840260",
+      "__createdat": "2017-11-28 15:46:02",
+      "__v": 1,
+      "farenetId": "bcxtwjjyxgshxx4rvgqm9",
+      "datacoreId": "acsswjjyujshxx4rvgfm9",
+      "sourceId": "15172519344200370.816662698",
+      "trackingId": "RTJFKFRA2017073120170824$0_123456KARIN",
+      "schemaVersion": 1,
+      "batchId": "201711281029"
     }
   }
 }

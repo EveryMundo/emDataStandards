@@ -21,8 +21,8 @@
             "reservationStatus": "Confirmed"
             },
         "fullRoute": "SFO>MIA>JFK|JFK>SFO",
-        "fareDetails": {
-            "@type": "Fare",
+        "priceSpecification": {
+            "@type": "PriceSpecification",
             "price": 234.21,
             "totalPrice": 250.6,
             "taxPrice": 16.39,
@@ -124,8 +124,8 @@
                 "@type": "Flight",
                 "boundType": "Outbound",
                 "route": "SFO>MIA>JFK",
-                "fareDetails": {
-                    "@type": "Fare",
+                "priceSpecification": {
+                    "@type": "PriceSpecification",
                     "price": 234.21,
                     "isSoldOut": false,
                     "taxPrice": 16.39
@@ -222,8 +222,8 @@
                 "@type": "Flight",
                 "boundType": "Inbound",
                 "route": "JFK>SFO",
-                "fareDetails": {
-                        "@type": "Fare",
+                "priceSpecification": {
+                        "@type": "PriceSpecification",
                         "price": 250.00,
                         "isSoldOut": false,
                         "taxPrice": 6.21
