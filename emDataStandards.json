@@ -306,7 +306,8 @@
       "@type": "ExtraInfo",
       "name": "name",
       "value": "value"
-  },
+      }
+    },
   "flight": {
     "@type": "Flight",
     "flightNumber": "EM110",
@@ -523,7 +524,6 @@
         "childCount": 1,
         "infantInLapCount": 0,
         "infantInSeatCount": 0
-      }
     },
     "fareTensor": {
       "@type": "FlightTensor",
@@ -1241,6 +1241,7 @@
   "hotel": {
     "@type": "Hotel",
     "name": "Holiday Inn",
+    "group": "IHG",
     "cityCode": "SAN",
     "priceSpecification": {
       "@type": "priceSpecification",
@@ -1277,7 +1278,8 @@
       "ratingValue": 3,
       "worstRating": 1,
       "ratingCount": 11
-      }
+      },
+    "image": "everymundo.com/image.jpg"
   },
   "payment": {
     "@type": "Payment",
@@ -1847,6 +1849,7 @@
     },
   "offer": {
     "@type": "Offer",
+    "offerId": "123456789Kat",
     "journey": {
       "@type": "Journey",
       "flightReservation": {
@@ -1859,7 +1862,7 @@
         "modifiedTime": "2027-03-14T13:05:00-05:00"
       },
       "fullRoute": "SFO>MIA>JFK|JFK>SFO",
-      "priceSpecififcation": {
+      "priceSpecification": {
           "@type": "priceSpecification",
           "price": 234.21,
           "totalPrice": 250.6,
@@ -2474,6 +2477,7 @@
       {
         "@type": "Hotel",
         "name": "Holiday Inn",
+        "group": "IHG",
         "cityCode": "SAN",
         "priceSpecification": {
           "@type": "PriceSpecification",
@@ -2503,22 +2507,14 @@
         "checkinTime": "2017-08-05T16:00:00-07:00",
         "checkoutTime": "2017-08-06T20:00:00-07:00",
         "roomCount": 1,
-        "rating": [
-          {
+        "rating": {
           "@type": "Rating",
           "author": "Tripadvisor",
           "bestRating": 5,
           "ratingValue": 3,
           "worstRating": 1
           },
-          {
-          "@type": "Rating",
-          "author": "AAV",
-          "bestRating": 5,
-          "ratingValue": 3,
-          "worstRating": 1
-          }
-        ]
+        "image": "everymundo.com/image.jpg"
       }
     ],
     "autoRental": {
