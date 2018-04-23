@@ -185,6 +185,7 @@
       "departureGate": "19",
       "departureTerminal": "E",
       "departureTime": "2027-03-04T06:35:00-08:00",
+      "departureTimeZone": "UTC",
       "arrivalAirport": {
           "@type": "Airport",
           "name": "Miami International Airport",
@@ -193,6 +194,7 @@
       "arrivalGate": "19",
       "arrivalTerminal": "E",
       "arrivalTime": "2027-03-04T13:35:00-08:00",
+      "arrivalTimeZone": "UTC",
       "estimatedDuration": "PT6H30M",
       "flightDistance": "300km",
       "departureCity": {
@@ -269,13 +271,13 @@
         "isSoldOut": false,
         "redemptionAmount": 9999,
         "outboundDate": "2017-03-06",
-        "inboundDate": null
+        "inboundDate": "NULL"
     }
   ],   
   "fareTensor": {
     "@type": "FlightTensor",
     "route": "SFO>JFK", 
-    "journeyType": "RoundTrip",  
+    "journeyType": "RT",  
     "cells": [
       {
           "@type": "Cell",
@@ -284,7 +286,7 @@
           "isSoldOut": false,
           "redemptionAmount": 9999,
           "outboundDate": "2017-03-06",
-          "inboundDate": null
+          "inboundDate": "NULL"
       }
     ]   
   },
@@ -296,7 +298,7 @@
     "mobileName": "iPhone 6",
     "operatingSystem": "iOS",
     "operatingSystemVersion": "9",
-    "isMobileApp": "True"
+    "isMobileApp": true
   },
   "extraInfo": {
     "@type": "ExtraInfo",
@@ -307,11 +309,20 @@
       "name": "name",
       "value": "value"
       }
-    },
+  },
+  "flightReservation": {
+      "@type": "FlightReservation",
+      "boardingGroup": "B",
+      "reservationStatus": "IbeSearch",
+      "passengerPriorityStatus": "FastTrack",
+      "passengerSequenceNumber": "ABC123",
+      "bookingTime": "2027-01-14T13:05:00-05:00",
+      "modifiedTime": "2027-03-14T13:05:00-05:00"
+  },
   "flight": {
     "@type": "Flight",
     "flightNumber": "EM110",
-    "route": "SFO>JFK|JFK>SFO",
+    "route": "SFO>JFK",
     "priceSpecification": {
       "@type": "PriceSpecification",
       "price": 234.21,
@@ -345,6 +356,7 @@
     "departureGate": "11",
     "departureTerminal": "B",
     "departureTime": "2027-03-04T06:35:00-08:00",
+    "departureTimeZone": "UTC",
     "arrivalAirport": {
       "@type": "Airport",
       "name": "Miami International Airport",
@@ -358,6 +370,7 @@
     "arrivalGate": "32",
     "arrivalTerminal": "C",
     "arrivalTime": "2027-03-05T13:30:00-05:00",
+    "arrivalTimeZone": "UTC",
     "estimatedDuration": "PT9H45M",
     "flightDistance": "3200KM",
     "departureCity": {
@@ -405,6 +418,7 @@
       "image": "unitedstates.com/image.jpg"
     },
     "flightType": "Domestic",
+    "routeType": "Nonstop",
     "discount": {
       "@type": "Discount",
       "isDiscount": true,
@@ -428,7 +442,7 @@
         "priceMarketId": "USD-US",
         "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
       },
-      "prepaidInd": "True"
+      "prepaidInd": true
     },
     "additionalInfo": {
       "@type": "AdditionalInfo",
@@ -528,7 +542,7 @@
     "fareTensor": {
       "@type": "FlightTensor",
       "route": "SFO>JFK", 
-      "journeyType": "RoundTrip",  
+      "journeyType": "RT",  
       "cells": [
         {
             "@type": "Cell",
@@ -537,7 +551,7 @@
             "isSoldOut": false,
             "redemptionAmount": 9999,
             "outboundDate": "2017-03-06",
-            "inboundDate": null
+            "inboundDate": "NULL"
         }
       ]   
     },
@@ -576,6 +590,7 @@
           "departureGate": "11",
           "departureTerminal": "B",
           "departureTime": "2027-03-04T06:35:00-08:00",
+          "departureTimeZone": "UTC",
           "arrivalAirport": {
             "@type": "Airport",
             "name": "Miami International Airport",
@@ -590,6 +605,7 @@
           "arrivalGate": "21",
           "arrivalTerminal": "D",
           "arrivalTime": "2027-03-04T13:35:00-08:00",
+          "arrivalTimeZone": "UTC",
           "estimatedDuration": "PT6H30M",
           "flightDistance": "900km",
           "departureCity": {
@@ -675,6 +691,7 @@
           "departureGate": "32",
           "departureTerminal": "A",
           "departureTime": "2027-03-07T10:35:00-08:00",
+          "departureTimeZone": "UTC",
           "arrivalAirport": {
             "@type": "Airport",
             "name": "John F. Kennedy International Airport",
@@ -689,6 +706,7 @@
           "arrivalGate": "12",
           "arrivalTerminal": "B",
           "arrivalTime": "2027-03-07T19:35:00-08:00",
+          "arrivalTimeZone": "UTC",
           "estimatedDuration": "PT3H25M",
           "flightDistance": "300km",
           "departureCity": {
@@ -803,6 +821,7 @@
         "image": "unitedstates.com/image.jpg"
       },
       "flightType":"Domestic",
+      "routeType": "Connecting",
       "discount": {
         "@type": "Discount",
         "isDiscount": true,
@@ -826,7 +845,7 @@
           "priceMarketId": "USD-US",
           "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
         },
-        "prepaidInd": "True"
+        "prepaidInd": true
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -877,6 +896,7 @@
           "departureGate": "17",
           "departureTerminal": "D",
           "departureTime": "2017-03-04T06:35:00-08:00",
+          "departureTimeZone": "UTC",
           "arrivalAirport": {
             "@type": "Airport",
             "name": "San Francisco Airport",
@@ -891,6 +911,7 @@
           "arrivalGate": "19",
           "arrivalTerminal": "E",
           "arrivalTime": "2017-03-04T13:35:00-08:00",
+          "arrivalTimeZone": "UTC",
           "estimatedDuration": "PT7H30M",
           "flightDistance": "1023km",  
           "departureCity": {
@@ -1006,6 +1027,7 @@
         "image": "unitedstates.com/image.jpg"
       },
       "flightType": "Domestic",
+      "routeType": "Nonstop",
       "discount": {
         "@type": "Discount",
         "isDiscount": true,
@@ -1029,7 +1051,7 @@
           "priceMarketId": "USD-US",
           "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
         },
-        "prepaidInd": "True"
+        "prepaidInd": true
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -1047,8 +1069,8 @@
     },
     "departureDate": "2017-12-07",
     "returnDate": "2017-12-10",
-    "journeyType": "RoundTrip",
-    "isCodeShare": "True",
+    "journeyType": "RT",
+    "isCodeShare": true,
     "flightType": "Domestic",
     "segmentCount": 2,
     "flightCount": 3,
@@ -1073,14 +1095,10 @@
     "__createdat": "2017-11-28 15:46:02",
     "__v": 1,
     "farenetId": "bcxtwjjyxgshxx4rvgqm9",
-    "datacoreId": "acsswjjyujshxx4rvgfm9",
-    "sourceId": "15172519344200370.816662698",
     "trackingId": "RTJFKFRA2017073120170824$0_123456KARIN",
     "schemaVersion": 1,
     "batchId": "201711281029",
-    "parserVersion": "4.3.6",
-    "parserRegexId": "CopaNonbrand1",
-    "parserBatchId": "201711281029" 
+    "parserRegexId": "CopaNonbrand1" 
   },
   "adwords": {
     "@type": "Adwords",
@@ -1137,7 +1155,7 @@
       "priceMarketId": "USD-US",
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
     },
-    "prepaidInd": "True"
+    "prepaidInd": true
   },
   "insurance": {
     "@type": "InsuranceAgency",
@@ -1285,19 +1303,22 @@
     "@type": "Payment",
     "method": "CreditCard",
     "cardName": "Amex",
-    "isSaved": "True"
+    "isSaved": true
   },
   "currencyConversion": {
     "@type": "CurrencyConversion",
     "requestTimestamp": "2017-05-30 22:49:47",
-    "currencySource": "USD",
-    "isHistorical": "False",
+    "localCurrencyCode": "USD",
+    "isHistorical": false,
     "exchangeRateDate": "2017-05-30 00:00:00",
     "exchangeRates": {
       "@type": "Rate",
       "AED": 3.67,
       "AFN": 68.35
-    }
+    },
+    "localAmount": 321,
+    "totalPriceUSD": 321,
+    "exchangeRateUSD": 1
   },
   "loyaltyProgram": {
     "@type": "LoyaltyProgram",
@@ -1319,7 +1340,7 @@
       }
     },
     "milesEarned": 1000,
-    "isLoggedIn": "False"
+    "isLoggedIn": false
   },
   "request": {
     "@type": "Request",
@@ -1386,10 +1407,10 @@
     },
     "fareClasses": [
         {
-            "fareClass": "OneWay"
+            "fareClass": "OW"
         },
         {
-            "fareClass": "RoundTrip"
+            "fareClass": "RT"
         }
     ],
     "flightType": "Domestic",
@@ -1400,7 +1421,7 @@
     "routesMaxNumber": 23,
     "dataLoopBackWindow": "2d",
     "timeInterval": "1m",
-    "isGroupedByRoute": "False",
+    "isGroupedByRoute": false,
     "paginationDetails": [
         {
             "paginationType": "Route",
@@ -1499,7 +1520,9 @@
     "priceCurrencySymbol": "$",
     "totalPrice": 234.5,
     "departureTime": "2018-03-07T19:44:02.092Z",
+    "departureTimeZone": "UTC",
     "returnTime": "2018-03-12T19:44:02.092Z",
+    "returnTimeZone": "UTC",
     "formattedTotalPrice": "234.50",
     "formattedDepartureDate": "07/03/18",
     "formattedReturnDate": "07/12/18",
@@ -1576,7 +1599,9 @@
             "priceCurrencySymbol": "$",
             "totalPrice": 234.5,
             "departureTime": "2018-03-07T19:44:02.092Z",
+            "departureTimeZone": "UTC",
             "returnTime": "2018-03-12T19:44:02.092Z",
+            "returnTimeZone": "UTC",
             "formattedTotalPrice": "234.50",
             "formattedDepartureDate": "07/03/18",
             "formattedReturnDate": "07/12/18"
@@ -1622,7 +1647,9 @@
                     "priceCurrencySymbol": "$",
                     "totalPrice": 234.5,
                     "departureTime": "2018-03-07T19:44:02.092Z",
+                    "departureTimeZone": "UTC",
                     "returnTime": "2018-03-12T19:44:02.092Z",
+                    "returnTimeZone": "UTC",
                     "formattedTotalPrice": "234.50",
                     "formattedDepartureDate": "07/03/18",
                     "formattedReturnDate": "07/12/18"
@@ -1631,13 +1658,13 @@
         }
     ]
     },
-    "frontComponents": {
+  "frontComponents": {
       "@type": "frontComponent",
-      "showLoading": "True",
+      "showLoading": true,
       "role": "Alert",
-      "ariaLabel": " ",
+      "ariaLabel": "NULL",
       "ariaLive": "Polite",
-      "isAriaBusy": "False",
+      "isAriaBusy": false,
       "loadingLabel": "Loading",
       "priceSpecification": [
         {
@@ -1652,24 +1679,26 @@
             "priceCurrencySymbol": "$",
             "totalPrice": 234.5,
             "departureTime": "2018-03-07T19:44:02.092Z",
+            "departureTimeZone": "UTC",
             "returnTime": "2018-03-12T19:44:02.092Z",
+            "returnTimeZone": "UTC",
             "formattedTotalPrice": "234.50",
             "formattedDepartureDate": "07/03/18",
             "formattedReturnDate": "07/12/18"
         }
       ],
-      "showSorting": "True",
+      "showSorting": true,
       "defaultArrivalImage": "arrivalimage.com",
-      "additionalCssClasses": " ",
-      "showGeneralDisclaimer": "False",
-      "showGeneralDisclaimerOnTop": "True",
-      "showCallToAction": "False",
-      "showPricing": "True",
-      "showDiscountFare": "True",
-      "showDots": "False",
+      "additionalCssClasses": "NULL",
+      "showGeneralDisclaimer": false,
+      "showGeneralDisclaimerOnTop": true,
+      "showCallToAction": false,
+      "showPricing": true,
+      "showDiscountFare": true,
+      "showDots": false,
       "className": "ExploreSlider",
-      "isScrollInfinite": "False",
-      "isLazyLoad": "True",
+      "isScrollInfinite": false,
+      "isLazyLoad": true,
       "slidesToShowNumber": 3,
       "slidesToScrollNumber": 2,
       "responsiveDetails": [
@@ -1696,11 +1725,11 @@
           }
       ],
       "initialSlide": 1,
-      "showArrows": "True",
-      "isAutoDisplay": "False",
-      "isRightToLeft": "False",
-      "isFullWidth": "True",
-      "showBlankOption": "False",
+      "showArrows": true,
+      "isAutoDisplay": false,
+      "isRightToLeft": false,
+      "isFullWidth": true,
+      "showBlankOption": false,
       "typeLabelsSorting": {
           "@type": "Sorting",
           "mostPopular": "fareMostPopular",
@@ -1717,7 +1746,7 @@
         "priceHighToLow",
         "date"
       ],
-      "journeyType": "OneWay",
+      "journeyType": "OW",
       "fareClass": "Economy",
       "totalPrice": 312,
       "departureAirport": {
@@ -1773,56 +1802,56 @@
       },
       "priceCurrencySymbol": "$",
       "formattedTotalPrice": "234.00",
-      "showPriceCurrency": "True",
-      "showPriceCurrencySymbol": "True",
+      "showPriceCurrency": true,
+      "showPriceCurrencySymbol": true,
       "templateLayout": "Extended",
-      "controlsTemplateLayout": " ",
-      "showTitle": "True",
-      "showSubtitle": "False",
-      "isFocusOnCurrentField": "False",
-      "showErrors": "True",
+      "controlsTemplateLayout": ""NULL"",
+      "showTitle": true,
+      "showSubtitle": false,
+      "isFocusOnCurrentField": false,
+      "showErrors": true,
       "showJourneyTypes": [
-        "False",
-        "True"
+        false,
+        true
       ],
       "journeyTypes": [
-        "OneWay",
-        "RoundTrip"
+        "OW",
+        "RT"
       ],
       "journeyTypeControl": "RadioButton",
-      "showMultiCity": "False",
+      "showMultiCity": false,
       "multiCityUrl": "multicity.com",
-      "showAirportsList": "False",
+      "showAirportsList": false,
       "airportsListMaxNumber": 40,
-      "isAirportsClearableButton": "False",
-      "isAirportsAutocomplete": "True",
-      "airportsListFormat": " ",
-      "airportsListFilteringPriority": " ",
-      "datesFormatEdition": " ",
-      "datesFormatDisplay": " ",
+      "isAirportsClearableButton": false,
+      "isAirportsAutocomplete": true,
+      "airportsListFormat": "NULL",
+      "airportsListFilteringPriority": "NULL",
+      "datesFormatEdition": "NULL",
+      "datesFormatDisplay": "NULL",
       "visibleMonthsMaxNumber": 8,
-      "showFlexibleDays": "True",
+      "showFlexibleDays": true,
       "daysUntilReturnDate": 5,
-      "isBlackoutDates": "True",
+      "isBlackoutDates": true,
       "showFareClasses": [
-        "False",
-        "True"
+        false,
+        true
       ],
       "fareClasses": [
         "Economy",
-        "Bussiness",
+        "Business",
         "FirstClass"
       ],
       "fareClassDefault": "Economy",
-      "showPassengerCount": "True",
+      "showPassengerCount": true,
       "passengersType": [
         "Adults",
         "Children",
         "Infants"
       ],
       "passengersTypeDefault": "Adults",
-      "showDiscountCode": "True",
-      "isCallToActionDisabledOnError": "True",
+      "showDiscountCode": true,
+      "isCallToActionDisabledOnError": true,
       "PassengerCountMaxNumber": 4,
       "PassengerCountMinNumber": 1,
       "PassengerCountByTypeMaxNumber": {
@@ -1846,11 +1875,11 @@
       "accessibilityLabelKeys": [
         "AccEmCmpFrom"
       ] 
-    },
+  },
   "offer": {
     "@type": "Offer",
     "offerId": "123456789Kat",
-    "journey": {
+    "journey": {  
       "@type": "Journey",
       "flightReservation": {
         "@type": "FlightReservation",
@@ -1934,7 +1963,7 @@
       "fareTensor": {
         "@type": "FlightTensor",
         "route": "SFO>JFK", 
-        "journeyType": "RoundTrip",  
+        "journeyType": "RT",  
         "cells": [
           {
               "@type": "Cell",
@@ -1943,7 +1972,7 @@
               "isSoldOut": false,
               "redemptionAmount": 9999,
               "outboundDate": "2017-03-06",
-              "inboundDate": null
+              "inboundDate": "NULL"
           }
         ]   
       },
@@ -1982,6 +2011,7 @@
             "departureGate": "11",
             "departureTerminal": "B",
             "departureTime": "2027-03-04T06:35:00-08:00",
+            "departureTimeZone": "UTC",
             "arrivalAirport": {
               "@type": "Airport",
               "name": "Miami International Airport",
@@ -1996,6 +2026,7 @@
             "arrivalGate": "21",
             "arrivalTerminal": "D",
             "arrivalTime": "2027-03-04T13:35:00-08:00",
+            "arrivalTimeZone": "UTC",
             "estimatedDuration": "PT6H30M",
             "flightDistance": "900km",
             "departureCity": {
@@ -2081,6 +2112,7 @@
             "departureGate": "32",
             "departureTerminal": "A",
             "departureTime": "2027-03-07T10:35:00-08:00",
+            "departureTimeZone": "UTC",
             "arrivalAirport": {
               "@type": "Airport",
               "name": "John F. Kennedy International Airport",
@@ -2095,6 +2127,7 @@
             "arrivalGate": "12",
             "arrivalTerminal": "B",
             "arrivalTime": "2027-03-07T19:35:00-08:00",
+            "arrivalTimeZone": "UTC",
             "estimatedDuration": "PT3H25M",
             "flightDistance": "300km",
             "departureCity": {
@@ -2209,6 +2242,7 @@
           "image": "unitedstates.com/image.jpg"
         },
         "flightType":"Domestic",
+        "routeType": "Connecting",
         "discount": {
           "@type": "Discount",
           "isDiscount": true,
@@ -2232,7 +2266,7 @@
             "priceMarketId": "USD-US",
             "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
           },
-          "prepaidInd": "True"
+          "prepaidInd": true
         },
         "additionalInfo": {
           "@type": "AdditionalInfo",
@@ -2283,6 +2317,7 @@
             "departureGate": "17",
             "departureTerminal": "D",
             "departureTime": "2017-03-04T06:35:00-08:00",
+            "departureTimeZone": "UTC",
             "arrivalAirport": {
               "@type": "Airport",
               "name": "San Francisco Airport",
@@ -2297,6 +2332,7 @@
             "arrivalGate": "19",
             "arrivalTerminal": "E",
             "arrivalTime": "2017-03-04T13:35:00-08:00",
+            "arrivalTimeZone": "UTC",
             "estimatedDuration": "PT7H30M",
             "flightDistance": "1023km",  
             "departureCity": {
@@ -2412,6 +2448,7 @@
           "image": "unitedstates.com/image.jpg"
         },
         "flightType": "Domestic",
+        "routeType": "Nonstop",
         "discount": {
           "@type": "Discount",
           "isDiscount": true,
@@ -2435,7 +2472,7 @@
             "priceMarketId": "USD-US",
             "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
           },
-          "prepaidInd": "True"
+          "prepaidInd": true
         },
         "additionalInfo": {
           "@type": "AdditionalInfo",
@@ -2453,8 +2490,8 @@
       },
       "departureDate": "2017-12-07",
       "returnDate": "2017-12-10",
-      "journeyType": "RoundTrip",
-      "isCodeShare": "True",
+      "journeyType": "RT",
+      "isCodeShare": true,
       "flightType": "Domestic",
       "segmentCount": 2,
       "flightCount": 3,
@@ -2473,7 +2510,7 @@
         "image": "everymundo.com/image.jpg"
         }
     },
-    "hotel": [
+    "hotels": [
       {
         "@type": "Hotel",
         "name": "Holiday Inn",
@@ -2573,17 +2610,15 @@
       "mobileName": "iPhone 6",
       "operatingSystem": "iOS",
       "operatingSystemVersion": "9",
-      "isMobileApp": "True"
+      "isMobileApp": true
     },
     "database": {
       "@type": "Database",
-      "version": "2.1.0",
       "_id": "14961881240552180.141840260",
+      "version": "2.1.0",
       "__createdat": "2017-11-28 15:46:02",
       "__v": 1,
       "farenetId": "bcxtwjjyxgshxx4rvgqm9",
-      "datacoreId": "acsswjjyujshxx4rvgfm9",
-      "sourceId": "15172519344200370.816662698",
       "trackingId": "RTJFKFRA2017073120170824$0_123456KARIN",
       "schemaVersion": 1,
       "batchId": "201711281029"
