@@ -143,8 +143,8 @@
     "taxPrice": 16.39,
     "fuelPrice": 57.89,
     "additionalFeesPrice": 12,
-    "priceCurrency": "USD",
-    "priceCurrencySymbol": "$",
+    "currency": "USD",
+    "currencySymbol": "$",
     "priceMarketId": "USD-US",
     "isSoldOut": false,
     "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
@@ -165,8 +165,8 @@
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
-      "priceCurrency": "USD",
-      "priceCurrencySymbol": "$",
+      "currency": "USD",
+      "currencySymbol": "$",
       "priceMarketId": "USD-US",
       "isSoldOut": false,
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
@@ -330,8 +330,8 @@
       "taxPrice": 16.39,
       "fuelPrice": 57.89,
       "additionalFeesPrice": 12,
-      "priceCurrency": "USD",
-      "priceCurrencySymbol": "$",
+      "currency": "USD",
+      "currencySymbol": "$",
       "priceMarketId": "USD-US",
       "isSoldOut": false,
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
@@ -437,8 +437,8 @@
         "price": 234.21,
         "totalPrice": 250.6,
         "taxPrice": 16.39,
-        "priceCurrency": "USD",
-        "priceCurrencySymbol": "$",
+        "currency": "USD",
+        "currencySymbol": "$",
         "priceMarketId": "USD-US",
         "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
       },
@@ -477,8 +477,8 @@
         "taxPrice": 16.39,
         "fuelPrice": 57.89,
         "additionalFeesPrice": 12,
-        "priceCurrency": "USD",
-        "priceCurrencySymbol": "$",
+        "currency": "USD",
+        "currencySymbol": "$",
         "priceMarketId": "USD-US",
         "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
         "redemption": {
@@ -840,8 +840,8 @@
           "price": 234.21,
           "totalPrice": 250.6,
           "taxPrice": 16.39,
-          "priceCurrency": "USD",
-          "priceCurrencySymbol": "$",
+          "currency": "USD",
+          "currencySymbol": "$",
           "priceMarketId": "USD-US",
           "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
         },
@@ -1046,8 +1046,8 @@
           "price": 234.21,
           "totalPrice": 250.6,
           "taxPrice": 16.39,
-          "priceCurrency": "USD",
-          "priceCurrencySymbol": "$",
+          "currency": "USD",
+          "currencySymbol": "$",
           "priceMarketId": "USD-US",
           "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
         },
@@ -1068,7 +1068,9 @@
       }
     },
     "departureDate": "2017-12-07",
+    "departureDay": "4",
     "returnDate": "2017-12-10",
+    "returnDay": "7",
     "journeyType": "RT",
     "isCodeShare": true,
     "flightType": "Domestic",
@@ -1133,8 +1135,8 @@
         "price": 234.21,
         "totalPrice": 250.6,
         "taxPrice": 16.39,
-        "priceCurrency": "USD",
-        "priceCurrencySymbol": "$",
+        "currency": "USD",
+        "currencySymbol": "$",
         "priceMarketId": "USD-US",
         "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
       }
@@ -1150,8 +1152,8 @@
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
-      "priceCurrency": "USD",
-      "priceCurrencySymbol": "$",
+      "currency": "USD",
+      "currencySymbol": "$",
       "priceMarketId": "USD-US",
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
     },
@@ -1166,8 +1168,8 @@
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
-      "priceCurrency": "USD",
-      "priceCurrencySymbol": "$",
+      "currency": "USD",
+      "currencySymbol": "$",
       "priceMarketId": "USD-US",
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
     }
@@ -1191,8 +1193,8 @@
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
-      "priceCurrency": "USD",
-      "priceCurrencySymbol": "$",
+      "currency": "USD",
+      "currencySymbol": "$",
       "priceMarketId": "USD-US",
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
     }
@@ -1266,10 +1268,9 @@
       "price": 234.21,
       "totalPrice": 250.6,
       "taxPrice": 16.39,
-      "fuelPrice": 57.89,
       "additionalFeesPrice": 12,
-      "priceCurrency": "USD",
-      "priceCurrencySymbol": "$",
+      "currency": "USD",
+      "currencySymbol": "$",
       "priceMarketId": "USD-US",
       "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
     },
@@ -1308,7 +1309,7 @@
   "currencyConversion": {
     "@type": "CurrencyConversion",
     "requestTimestamp": "2017-05-30 22:49:47",
-    "localCurrencyCode": "USD",
+    "localCurrency": "USD",
     "isHistorical": false,
     "exchangeRateDate": "2017-05-30 00:00:00",
     "exchangeRates": {
@@ -1341,6 +1342,11 @@
     },
     "milesEarned": 1000,
     "isLoggedIn": false
+  },
+  "error": {
+    "@type": "Error",
+    "identifier": "1",
+    "message": "Conflicting arrival date"
   },
   "request": {
     "@type": "Request",
@@ -1385,32 +1391,32 @@
           "isoCode": "GR"
       }
     ],
-    "dateLimits": {
+    "dateLimit": {
       "earliestDate": "2017-01-12",
       "latestDate": "2017-01-25"
     },
-    "departureDateLimits": {
+    "departureDateLimit": {
         "earliestDate": "2017-01-12",
         "latestDate": "2017-01-25"
     },
-    "returnDateLimits": {
+    "returnDateLimit": {
         "earliestDate": "2017-02-01",
         "latestDate": "2017-02-15"
     },
-    "priceDetails": {
-        "priceCurrency": "USD",
-        "priceMin": 128.0,
-        "priceMax": 235.0,
+    "priceSpecification": {
+        "currency": "USD",
+        "budgetMinimumAmount": 128.0,
+        "budgetMaximumAmount": 235.0,
         "decimalDigitsNumber": 2,
         "priceDecimalSeparator": ".",
         "priceThousandSeparator": ","
     },
-    "fareClasses": [
+    "journeyTypes": [
         {
-            "fareClass": "OW"
+            "journeyType": "OW"
         },
         {
-            "fareClass": "RT"
+            "journeyType": "RT"
         }
     ],
     "flightType": "Domestic",
@@ -1449,10 +1455,10 @@
     ],
     "selectedOutputCurrencies": [
         {
-            "priceCurrency": "USD"
+            "currency": "USD"
         },
         {
-            "priceCurrency": "EUR"
+            "currency": "EUR"
         }
     ]
     },
@@ -1466,8 +1472,8 @@
     },
     "departureAirport": {
         "@type": "Airport",
-        "name": "San Francsico Airport",
-        "iataCode": "EM",
+        "name": "San Francisco Airport",
+        "iataCode": "SFO",
         "image": "sfo.com/image.jpg"
     },
     "arrivalAirport": {
@@ -1508,16 +1514,16 @@
     },
     "departureRegion": {
         "@type": "Region",
-        "name": "Northen America",
-        "image": "northenamerica.com/image.jpg"
+        "name": "North America",
+        "image": "northamerica.com/image.jpg"
     },
     "arrivalRegion": {
         "@type": "Region",
-        "name": "Northen America",
-        "image": "northenamerica.com/image.jpg"
+        "name": "North America",
+        "image": "northamerica.com/image.jpg"
     },
-    "priceCurrency": "USD",
-    "priceCurrencySymbol": "$",
+    "currency": "USD",
+    "currencySymbol": "$",
     "totalPrice": 234.5,
     "departureTime": "2018-03-07T19:44:02.092Z",
     "departureTimeZone": "UTC",
@@ -1532,8 +1538,8 @@
         {
             "departureAirport": {
                 "@type": "Airport",
-                "name": "San Francsico Airport",
-                "iataCode": "EM",
+                "name": "San Francisco Airport",
+                "iataCode": "SFO",
                 "image": "sfo.com/image.jpg"
             },
             "arrivalAirport": {
@@ -1574,13 +1580,13 @@
             },
             "departureRegion": {
                 "@type": "Region",
-                "name": "Northen America",
-                "image": "northenamerica.com/image.jpg"
+                "name": "North America",
+                "image": "northamerica.com/image.jpg"
             },
             "arrivalRegion": {
                 "@type": "Region",
-                "name": "Northen America",
-                "image": "northenamerica.com/image.jpg"
+                "name": "North America",
+                "image": "northamerica.com/image.jpg"
             },
             "popularity": 234,
             "airIndex": 0.76
@@ -1592,11 +1598,10 @@
                 "@type": "Airline",
                 "name": "EveryMundo",
                 "iataCode": "EM",
-                "id": "EveryMundoAir",
                 "image": "everymundo.com/image.jpg"
             },
-            "priceCurrency": "USD",
-            "priceCurrencySymbol": "$",
+            "currency": "USD",
+            "currencySymbol": "$",
             "totalPrice": 234.5,
             "departureTime": "2018-03-07T19:44:02.092Z",
             "departureTimeZone": "UTC",
@@ -1640,11 +1645,10 @@
                         "@type": "Airline",
                         "name": "EveryMundo",
                         "iataCode": "EM",
-                        "id": "EveryMundoAir",
                         "image": "everymundo.com/image.jpg"
                     },
-                    "priceCurrency": "USD",
-                    "priceCurrencySymbol": "$",
+                    "currency": "USD",
+                    "currencySymbol": "$",
                     "totalPrice": 234.5,
                     "departureTime": "2018-03-07T19:44:02.092Z",
                     "departureTimeZone": "UTC",
@@ -1672,11 +1676,10 @@
                 "@type": "Airline",
                 "name": "EveryMundo",
                 "iataCode": "EM",
-                "id": "EveryMundoAir",
                 "image": "everymundo.com/image.jpg"
             },
-            "priceCurrency": "USD",
-            "priceCurrencySymbol": "$",
+            "currency": "USD",
+            "currencySymbol": "$",
             "totalPrice": 234.5,
             "departureTime": "2018-03-07T19:44:02.092Z",
             "departureTimeZone": "UTC",
@@ -1688,7 +1691,7 @@
         }
       ],
       "showSorting": true,
-      "defaultArrivalImage": "arrivalimage.com",
+      "defaultImage": "arrivalimage.com",
       "additionalCssClasses": "NULL",
       "showGeneralDisclaimer": false,
       "showGeneralDisclaimerOnTop": true,
@@ -1800,12 +1803,12 @@
         "iataCode": "EM",
         "image": "everymundo.com/image.jpg"
       },
-      "priceCurrencySymbol": "$",
+      "currencySymbol": "$",
       "formattedTotalPrice": "234.00",
-      "showPriceCurrency": true,
-      "showPriceCurrencySymbol": true,
+      "showcurrency": true,
+      "showcurrencySymbol": true,
       "templateLayout": "Extended",
-      "controlsTemplateLayout": ""NULL"",
+      "controlsTemplateLayout": "NULL",
       "showTitle": true,
       "showSubtitle": false,
       "isFocusOnCurrentField": false,
@@ -1898,8 +1901,8 @@
           "taxPrice": 16.39,
           "fuelPrice": 57.89,
           "additionalFeesPrice": 12,
-          "priceCurrency": "USD",
-          "priceCurrencySymbol": "$",
+          "currency": "USD",
+          "currencySymbol": "$",
           "priceMarketId": "USD-US",
           "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
           "redemption": {
@@ -2261,8 +2264,8 @@
             "price": 234.21,
             "totalPrice": 250.6,
             "taxPrice": 16.39,
-            "priceCurrency": "USD",
-            "priceCurrencySymbol": "$",
+            "currency": "USD",
+            "currencySymbol": "$",
             "priceMarketId": "USD-US",
             "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
           },
@@ -2467,8 +2470,8 @@
             "price": 234.21,
             "totalPrice": 250.6,
             "taxPrice": 16.39,
-            "priceCurrency": "USD",
-            "priceCurrencySymbol": "$",
+            "currency": "USD",
+            "currencySymbol": "$",
             "priceMarketId": "USD-US",
             "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
           },
@@ -2489,7 +2492,9 @@
         }
       },
       "departureDate": "2017-12-07",
+      "departureDay": "4",
       "returnDate": "2017-12-10",
+      "returnDay": "7",
       "journeyType": "RT",
       "isCodeShare": true,
       "flightType": "Domestic",
@@ -2523,8 +2528,8 @@
           "totalPrice": 250.6,
           "taxPrice": 16.39,
           "additionalFeesPrice": 12,
-          "priceCurrency": "USD",
-          "priceCurrencySymbol": "$",
+          "currency": "USD",
+          "currencySymbol": "$",
           "priceMarketId": "USD-US",
           "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
         },
@@ -2623,5 +2628,44 @@
       "schemaVersion": 1,
       "batchId": "201711281029"
     }
+  },
+  "dateLimit": {
+      "@type": "DateLimit",
+      "earliestDate": "2017-01-12",
+      "latestDate": "2017-01-25"
+    },
+  "flexibleDate": {
+    "@type": "FlexibleDate",
+    "departureDate":"2017-12-07",
+    "departureDayInterval": 3,
+    "departureFlexibleDate":{
+      "minus3": "2017-12-04",
+      "minus2": "2017-12-05",
+      "minus1": "2017-12-06",
+      "plus1": "2017-12-08",
+      "plus2": "2017-12-09",
+      "plus3": "2017-12-10"
+    },
+    "returnDate":"2017-12-17",
+    "returnDayInterval": 3,
+    "returnFlexibleDate":{
+      "minus3": "2017-12-14",
+      "minus2": "2017-12-15",
+      "minus1": "2017-12-16",
+      "plus1": "2017-12-18",
+      "plus2": "2017-12-19",
+      "plus3": "2017-12-20"
+    },
+    "stayDuration": 10
+  },
+  "budget":{
+    "@type": "Budget",
+    "minimumAmount": 50,
+    "maximumAmount": 300
+  },
+  "theme": {
+    "activity": "EUR",
+    "cityCode": "MIA",
+    "isRegion": true
   }
 }
