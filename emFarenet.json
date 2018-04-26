@@ -26,8 +26,8 @@
             "price": 234.21,
             "totalPrice": 250.6,
             "taxPrice": 16.39,
-            "priceCurrency": "USD",
-            "priceCurrencySymbol": "$",
+            "currency": "USD",
+            "currencySymbol": "$",
             "redemption": {
                 "@type": "Redemption",
                 "unit": "miles",
@@ -282,11 +282,13 @@
         "journeyType": "RoundTrip",
         "isCodeShare": false,
         "flightType": "Domestic",
-        "promo": {
-                "@type": "Promo",
-                "isPromo": true,
-                "discountCode": "AFFBFAN",
-                "expirationDate": "2017-12-31"
-            }
+        "discount": {
+            "@type": "Discount",
+            "isDiscount": true,
+            "code": "AFFBFAN",
+            "amount": 500,
+            "percentage": 0.5,
+            "expirationDate": "2017-12-31"
+          }
         }
 
