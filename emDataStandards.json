@@ -1246,7 +1246,7 @@
     "dropoffTime": "2017-08-06T20:00:00-07:00",
     "type": "SUV"
   },
-  "rating": {
+  "aggregateRating": {
     "@type": "Rating",
     "author": "Tripadvisor",
     "bestRating": 5,
@@ -1291,7 +1291,8 @@
     "checkinTime": "2017-08-05T16:00:00-07:00",
     "checkoutTime": "2017-08-06T20:00:00-07:00",
     "roomCount": 1,
-    "rating": {
+    "starRating": "5",
+    "aggregateRating": {
       "@type": "Rating",
       "author": "Tripadvisor",
       "bestRating": 5,
@@ -1355,20 +1356,20 @@
     "latestDate": "2017-01-25"
   },
   "flexibleDate": {
-  "@type": "FlexibleDate",
-  "departureDate":"2017-12-07",
-  "departureDayInterval": 3,
-  "departureFlexibleDate":{
+    "@type": "FlexibleDate",
+    "departureDate":"2017-12-07",
+    "departureDayInterval": 3,
+    "departureFlexibleDate":{
     "minus3": "2017-12-04",
     "minus2": "2017-12-05",
     "minus1": "2017-12-06",
     "plus1": "2017-12-08",
     "plus2": "2017-12-09",
     "plus3": "2017-12-10"
-  },
-  "returnDate":"2017-12-17",
-  "returnDayInterval": 3,
-  "returnFlexibleDate":{
+    },
+    "returnDate":"2017-12-17",
+    "returnDayInterval": 3,
+    "returnFlexibleDate":{
     "minus3": "2017-12-14",
     "minus2": "2017-12-15",
     "minus1": "2017-12-16",
@@ -1379,14 +1380,14 @@
   "stayDuration": 10
   },
   "budget":{
-  "@type": "Budget",
-  "minimumAmount": 50,
-  "maximumAmount": 300
+    "@type": "Budget",
+    "minimumAmount": 50,
+    "maximumAmount": 300
   },
   "theme": {
-  "activity": "EUR",
-  "cityCode": "MIA",
-  "isRegion": true
+    "activity": "EUR",
+    "cityCode": "MIA",
+    "isRegion": true
   },
   "request": {
     "@type": "Request",
@@ -2589,7 +2590,8 @@
         "checkinTime": "2017-08-05T16:00:00-07:00",
         "checkoutTime": "2017-08-06T20:00:00-07:00",
         "roomCount": 1,
-        "rating": {
+        "starRating": "5",
+        "aggregateRating": {
           "@type": "Rating",
           "author": "Tripadvisor",
           "bestRating": 5,
