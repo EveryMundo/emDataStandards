@@ -1,0 +1,11 @@
+{
+  "@type": "City",
+  "name": "Miami",
+  "cityCode": "MIA",
+  "geo": {
+    "@type": "Geocoordinates",
+    "latitude": 37.42,
+    "longitude": -108.32
+  },
+  "image": "miami.com/image.jpg"
+}

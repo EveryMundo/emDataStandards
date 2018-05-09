@@ -1,0 +1,5 @@
+{
+  "@type": "Budget",
+  "minimumAmount": 50,
+  "maximumAmount": 300
+}

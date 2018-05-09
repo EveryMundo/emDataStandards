@@ -1,0 +1,10 @@
+{
+  "@type": "ExtraInfo",
+  "environment": "Production",
+  "indexStatus": "Index",
+  "additionalInfo": {
+    "@type": "ExtraInfo",
+    "name": "name",
+    "value": "value"
+  }
+}

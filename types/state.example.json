@@ -1,0 +1,11 @@
+{
+  "@type": "State",
+  "name": "Florida",
+  "stateCode": "FL",
+  "geo": {
+    "@type": "Geocoordinates",
+    "latitude": 37.42,
+    "longitude": -108.32
+  },
+  "image": "florida.com/image.jpg"
+}

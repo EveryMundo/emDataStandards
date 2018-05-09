@@ -1,0 +1,23 @@
+{
+  "@type": "Adwords",
+  "accountName": "A3_GR (en)",
+  "accountId": "399-781-8285",
+  "campaignName": "GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]",
+  "campaignId": "329-581-8275",
+  "campaignType": "NonBrand",
+  "specialCampaign": "Bidto1",
+  "adgroupName": "GS:en-GR_NB\\IR=MAN>XX>HER/BM",
+  "adgroupId": "439-456-1255",
+  "geoTarget": "Miami",
+  "market": "US",
+  "languageIsoCode": "en",
+  "routeType": "Connecting",
+  "locationType": "City>City",
+  "keywordGroup": "General",
+  "keywordType": "Route",
+  "matchType": "BM",
+  "audience": "2-30 days",
+  "marketingNetwork": "Search",
+  "searchEngine": "Google",
+  "inputKey": "Google&&A3_GR (en)&&GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]&&GS:en-GR_NB\\IR=MAN>XX>HER/BM"
+}

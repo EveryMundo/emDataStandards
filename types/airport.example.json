@@ -1,0 +1,11 @@
+{
+  "@type": "Airport",
+  "name": "Miami International Airport",
+  "iataCode": "MIA",
+  "geo": {
+    "@type": "Geocoordinates",
+    "latitude": 37.42,
+    "longitude": -108.32
+  },
+  "image": "mia.com/image.jpg"
+}

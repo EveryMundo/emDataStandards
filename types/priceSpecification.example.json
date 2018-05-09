@@ -1,0 +1,14 @@
+{
+  "@type": "PriceSpecification",
+  "description": "Journey",
+  "price": 234.21,
+  "totalPrice": 250.6,
+  "taxPrice": 16.39,
+  "fuelPrice": 57.89,
+  "additionalFeesPrice": 12,
+  "currency": "USD",
+  "currencySymbol": "$",
+  "priceMarketId": "USD-US",
+  "isSoldOut": false,
+  "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
+}

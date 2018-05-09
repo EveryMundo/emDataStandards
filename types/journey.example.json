@@ -1,0 +1,632 @@
+{
+  "@type": "Journey",
+  "flightReservation": {
+    "@type": "FlightReservation",
+    "boardingGroup": "B",
+    "reservationStatus": "IbeSearch",
+    "passengerPriorityStatus": "FastTrack",
+    "passengerSequenceNumber": "ABC123",
+    "bookingTime": "2027-01-14T13:05:00-05:00",
+    "modifiedTime": "2027-03-14T13:05:00-05:00"
+  },
+  "fullRoute": "SFO>MIA>JFK|JFK>SFO",
+  "priceSpecification": {
+    "@type": "PriceSpecification",
+    "price": 234.21,
+    "totalPrice": 250.6,
+    "taxPrice": 16.39,
+    "fuelPrice": 57.89,
+    "additionalFeesPrice": 12,
+    "currency": "USD",
+    "currencySymbol": "$",
+    "priceMarketId": "USD-US",
+    "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
+    "redemption": {
+      "@type": "Redemption",
+      "unit": "miles",
+      "amount": 1500
+    }
+  },
+  "passengerDetails": [
+    {
+      "@type": "Passenger",
+      "category": "senior65Plus",
+      "count": 2
+    },
+    {
+      "@type": "Passenger",
+      "category": "adult12PlusCount",
+      "count": 0
+    },
+    {
+      "@type": "Passenger",
+      "category": "adult18To64Count",
+      "count": 2
+    },
+    {
+      "@type": "Passenger",
+      "category": "child15To17Count",
+      "count": 0
+    },
+    {
+      "@type": "Passenger",
+      "category": "child12To14Count",
+      "count": 1
+    },
+    {
+      "@type": "Passenger",
+      "category": "child5To11Count",
+      "count": 1
+    },
+    {
+      "@type": "Passenger",
+      "category": "child2To4Count",
+      "count": 0
+    },
+    {
+      "@type": "Passenger",
+      "category": "infant0To2Count",
+      "count": 0
+    }
+  ],
+  "passenger": {
+    "@type": "Passenger",
+    "count": 3,
+    "seniorCount": 0,
+    "adultCount": 2,
+    "youngAdultCount": 0,
+    "childCount": 1,
+    "infantInLapCount": 0,
+    "infantInSeatCount": 0
+  },
+  "fareTensor": {
+    "@type": "FlightTensor",
+    "route": "SFO>JFK",
+    "journeyType": "RT",
+    "cells": [
+      {
+        "@type": "Cell",
+        "price": 345.21,
+        "boundType": "Outbound",
+        "isSoldOut": false,
+        "redemptionAmount": 9999,
+        "outboundDate": "2017-03-06",
+        "inboundDate": "NULL"
+      }
+    ]
+  },
+  "outboundFlight": {
+    "@type": "Flight",
+    "boundType": "Outbound",
+    "route": "SFO>JFK",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": 750.12,
+      "totalPrice": 825.51,
+      "taxPrice": 75.39
+    },
+    "fareClassInput": "Economy",
+    "fareClass": "Economy",
+    "departureAirportIataCode": "SFO",
+    "arrivalAirportIataCode": "JFK",
+    "estimatedDuration": "PT9H45M",
+    "flightDistance": "1200km",
+    "availableSeatsCount": "9+",
+    "legs": [
+      {
+        "flightNumber": "EM110",
+        "route": "SFO>MIA",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "San Francisco Airport",
+          "iataCode": "SFO",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 23.12,
+            "longitude": -168.32
+          },
+          "image": "sfo.com/image.jpg"
+        },
+        "departureGate": "11",
+        "departureTerminal": "B",
+        "departureTime": "2027-03-04T06:35:00-08:00",
+        "departureTimeZone": "UTC",
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Miami International Airport",
+          "iataCode": "MIA",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "mia.com/image.jpg"
+        },
+        "arrivalGate": "21",
+        "arrivalTerminal": "D",
+        "arrivalTime": "2027-03-04T13:35:00-08:00",
+        "arrivalTimeZone": "UTC",
+        "estimatedDuration": "PT6H30M",
+        "flightDistance": "900km",
+        "departureCity": {
+          "@type": "City",
+          "name": "San Francisco",
+          "cityCode": "SFO",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 23.12,
+            "longitude": -168.32
+          },
+          "image": "sanfrancisco.com/image.jpg"
+        },
+        "departureCountry": {
+          "@type": "Country",
+          "name": "United States",
+          "isoCode": "US",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "unitedstates.com/image.jpg"
+        },
+        "arrivalCity": {
+          "@type": "City",
+          "name": "Miami",
+          "cityCode": "MIA",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "miami.com/image.jpg"
+        },
+        "arrivalCountry": {
+          "@type": "Country",
+          "name": "United States",
+          "isoCode": "US",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "unitedstates.com/image.jpg"
+        },
+        "flightType": "Domestic",
+        "operatingAirline": {
+          "@type": "Airline",
+          "name": "EveryMundo",
+          "iataCode": "EM",
+          "image": "everymundo.com/image.jpg"
+        },
+        "aircraft": "Boeing 747",
+        "additionalInfo": {
+          "@type": "AdditionalInfo",
+          "fields": [
+            {
+              "name": "classOfService",
+              "value": "COACH_EC"
+            },
+            {
+              "name": "fareBasis",
+              "value": "NNNJ6SBM+"
+            }
+          ]
+        }
+      },
+      {
+        "flightNumber": "EM111",
+        "route": "MIA>JFK",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Miami International Airport",
+          "iataCode": "MIA",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "mia.com/image.jpg"
+        },
+        "departureGate": "32",
+        "departureTerminal": "A",
+        "departureTime": "2027-03-07T10:35:00-08:00",
+        "departureTimeZone": "UTC",
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "John F. Kennedy International Airport",
+          "iataCode": "JFK",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 211.42,
+            "longitude": -118.32
+          },
+          "image": "jfk.com/image.jpg"
+        },
+        "arrivalGate": "12",
+        "arrivalTerminal": "B",
+        "arrivalTime": "2027-03-07T19:35:00-08:00",
+        "arrivalTimeZone": "UTC",
+        "estimatedDuration": "PT3H25M",
+        "flightDistance": "300km",
+        "departureCity": {
+          "@type": "City",
+          "name": "Miami",
+          "cityCode": "MIA",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "mia.com/image.jpg"
+        },
+        "departureCountry": {
+          "@type": "Country",
+          "name": "United States",
+          "isoCode": "US",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "unitedstates.com/image.jpg"
+        },
+        "arrivalCity": {
+          "@type": "City",
+          "name": "New York",
+          "cityCode": "NYC",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 211.42,
+            "longitude": -118.32
+          },
+          "image": "newyork.com/image.jpg"
+        },
+        "arrivalCountry": {
+          "@type": "Country",
+          "name": "United States",
+          "isoCode": "US",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "unitedstates.com/image.jpg"
+        },
+        "flightType": "Domestic",
+        "operatingAirline": {
+          "@type": "Airline",
+          "name": "EveryMundo",
+          "iataCode": "EM",
+          "image": "everymundo.com/image.jpg"
+        },
+        "aircraft": "Boeing 747",
+        "additionalInfo": {
+          "@type": "AdditionalInfo",
+          "fields": [
+            {
+              "name": "classOfService",
+              "value": "COACH_EC"
+            },
+            {
+              "name": "fareBasis",
+              "value": "NNNJ6SBM+"
+            }
+          ]
+        }
+      }
+    ],
+    "departureCity": {
+      "@type": "City",
+      "name": "San Francisco",
+      "cityCode": "SFO",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 23.12,
+        "longitude": -168.32
+      },
+      "image": "sanfrancisco.com/image.jpg"
+    },
+    "departureCountry": {
+      "@type": "Country",
+      "name": "United States",
+      "isoCode": "US",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
+      },
+      "image": "unitedstates.com/image.jpg"
+    },
+    "arrivalCity": {
+      "@type": "City",
+      "name": "New York",
+      "cityCode": "NYC",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 211.42,
+        "longitude": -118.32
+      },
+      "image": "newyork.com/image.jpg"
+    },
+    "arrivalCountry": {
+      "@type": "Country",
+      "name": "United States",
+      "isoCode": "US",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
+      },
+      "image": "unitedstates.com/image.jpg"
+    },
+    "flightType": "Domestic",
+    "routeType": "Connecting",
+    "discount": {
+      "@type": "Discount",
+      "isDiscount": true,
+      "code": "AFFBFAN",
+      "amount": 500,
+      "percentage": 0.5,
+      "expirationDate": "2017-12-31"
+    },
+    "baggage": {
+      "@type": "BaggageAllowance",
+      "count": 2,
+      "checkedBags": 1,
+      "carryOnBags": 1,
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": 234.21,
+        "totalPrice": 250.6,
+        "taxPrice": 16.39,
+        "currency": "USD",
+        "currencySymbol": "$",
+        "priceMarketId": "USD-US",
+        "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
+      },
+      "prepaidInd": true
+    },
+    "additionalInfo": {
+      "@type": "AdditionalInfo",
+      "fields": [
+        {
+          "name": "classOfService",
+          "value": "COACH_EC"
+        },
+        {
+          "name": "fareBasis",
+          "value": "NNNJ6SBM+"
+        }
+      ]
+    }
+  },
+  "inboundFlight": {
+    "@type": "Journey",
+    "boundType": "Inbound",
+    "route": "JFK>SFO",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": 750.12,
+      "totalPrice": 825.51,
+      "taxPrice": 75.39
+    },
+    "fareClassInput": "Economy",
+    "fareClass": "Economy",
+    "departureAirportIataCode": "JFK",
+    "arrivalAirportIataCode": "SFO",
+    "estimatedDuration": "PT7H30M",
+    "flightDistance": "1023km",
+    "availableSeatsCount": "9+",
+    "legs": [
+      {
+        "flightNumber": "EM110",
+        "route": "JFK>SFO",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "John F. Kennedy International Airport",
+          "iataCode": "JFK",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 211.42,
+            "longitude": -118.32
+          },
+          "image": "jfk.com/image.jpg"
+        },
+        "departureGate": "17",
+        "departureTerminal": "D",
+        "departureTime": "2017-03-04T06:35:00-08:00",
+        "departureTimeZone": "UTC",
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "San Francisco Airport",
+          "iataCode": "SFO",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 23.42,
+            "longitude": -168.32
+          },
+          "image": "jfk.com/image.jpg"
+        },
+        "arrivalGate": "19",
+        "arrivalTerminal": "E",
+        "arrivalTime": "2017-03-04T13:35:00-08:00",
+        "arrivalTimeZone": "UTC",
+        "estimatedDuration": "PT7H30M",
+        "flightDistance": "1023km",
+        "departureCity": {
+          "@type": "City",
+          "name": "New York",
+          "cityCode": "NYC",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 211.42,
+            "longitude": -118.32
+          },
+          "image": "newyork.com/image.jpg"
+        },
+        "departureCountry": {
+          "@type": "Country",
+          "name": "United States",
+          "isoCode": "US",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "unitedstates.com/image.jpg"
+        },
+        "arrivalCity": {
+          "@type": "City",
+          "name": "San Francisco",
+          "cityCode": "SFO",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 23.42,
+            "longitude": -168.32
+          },
+          "image": "sanfrancisco.com/image.jpg"
+        },
+        "arrivalCountry": {
+          "@type": "Country",
+          "name": "United States",
+          "isoCode": "US",
+          "geo": {
+            "@type": "Geocoordinates",
+            "latitude": 37.42,
+            "longitude": -108.32
+          },
+          "image": "unitedstates.com/image.jpg"
+        },
+        "flightType": "Domestic",
+        "operatingAirline": {
+          "@type": "Airline",
+          "name": "EveryMundo",
+          "iataCode": "EM",
+          "image": "everymundo.com/image.jpg"
+        },
+        "aircraft": "Boeing 747",
+        "additionalInfo": {
+          "@type": "AdditionalInfo",
+          "fields": [
+            {
+              "name": "classOfService",
+              "value": "COACH_EC"
+            },
+            {
+              "name": "fareBasis",
+              "value": "NNNJ6SBM+"
+            }
+          ]
+        }
+      }
+    ],
+    "departureCity": {
+      "@type": "City",
+      "name": "New York",
+      "cityCode": "NYC",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 211.42,
+        "longitude": -118.32
+      },
+      "image": "newyork.com/image.jpg"
+    },
+    "departureCountry": {
+      "@type": "Country",
+      "name": "United States",
+      "isoCode": "US",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
+      },
+      "image": "unitedstates.com/image.jpg"
+    },
+    "arrivalCity": {
+      "@type": "City",
+      "name": "San Francisco",
+      "cityCode": "SFO",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 23.42,
+        "longitude": -168.32
+      },
+      "image": "sanfrancisco.com/image.jpg"
+    },
+    "arrivalCountry": {
+      "@type": "Country",
+      "name": "United States",
+      "isoCode": "US",
+      "geo": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
+      },
+      "image": "unitedstates.com/image.jpg"
+    },
+    "flightType": "Domestic",
+    "routeType": "Nonstop",
+    "discount": {
+      "@type": "Discount",
+      "isDiscount": true,
+      "code": "AFFBFAN",
+      "amount": 500,
+      "percentage": 0.5,
+      "expirationDate": "2017-12-31"
+    },
+    "baggage": {
+      "@type": "BaggageAllowance",
+      "count": 2,
+      "checkedBags": 1,
+      "carryOnBags": 1,
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": 234.21,
+        "totalPrice": 250.6,
+        "taxPrice": 16.39,
+        "currency": "USD",
+        "currencySymbol": "$",
+        "priceMarketId": "USD-US",
+        "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
+      },
+      "prepaidInd": true
+    },
+    "additionalInfo": {
+      "@type": "AdditionalInfo",
+      "fields": [
+        {
+          "name": "classOfService",
+          "value": "COACH_EC"
+        },
+        {
+          "name": "fareBasis",
+          "value": "NNNJ6SBM+"
+        }
+      ]
+    }
+  },
+  "departureDate": "2017-12-07",
+  "departureDay": "4",
+  "returnDate": "2017-12-10",
+  "returnDay": "7",
+  "journeyType": "RT",
+  "isCodeShare": true,
+  "flightType": "Domestic",
+  "segmentCount": 2,
+  "flightCount": 3,
+  "discount": {
+    "@type": "Discount",
+    "isDiscount": true,
+    "code": "AFFBFAN",
+    "amount": 500,
+    "percentage": 0.5,
+    "expirationDate": "2017-12-31"
+  },
+  "airline": {
+    "@type": "Airline",
+    "name": "EveryMundo",
+    "iataCode": "EM",
+    "image": "everymundo.com/image.jpg"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "@type": "Flight",
+  "flightNumber": "EM110",
+  "route": "SFO>JFK",
+  "priceSpecification": {
+    "@type": "PriceSpecification",
+    "price": 234.21,
+    "totalPrice": 250.6,
+    "taxPrice": 16.39,
+    "fuelPrice": 57.89,
+    "additionalFeesPrice": 12,
+    "currency": "USD",
+    "currencySymbol": "$",
+    "priceMarketId": "USD-US",
+    "isSoldOut": false,
+    "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
+    "redemption": {
+      "@type": "Redemption",
+      "unit": "miles",
+      "amount": 1500
+    }
+  },
+  "fareClassInput": "Economy",
+  "fareClass": "Economy",
+  "departureAirport": {
+    "@type": "Airport",
+    "name": "San Francisco Airport",
+    "iataCode": "SFO",
+    "geo": {
+      "@type": "Geocoordinates",
+      "latitude": 23.12,
+      "longitude": -168.32
+    }
+  },
+  "departureGate": "11",
+  "departureTerminal": "B",
+  "departureTime": "2027-03-04T06:35:00-08:00",
+  "departureTimeZone": "UTC",
+  "arrivalAirport": {
+    "@type": "Airport",
+    "name": "Miami International Airport",
+    "iataCode": "MIA",
+    "geo": {
+      "@type": "Geocoordinates",
+      "latitude": 37.42,
+      "longitude": -108.32
+    }
+  },
+  "arrivalGate": "32",
+  "arrivalTerminal": "C",
+  "arrivalTime": "2027-03-05T13:30:00-05:00",
+  "arrivalTimeZone": "UTC",
+  "estimatedDuration": "PT9H45M",
+  "flightDistance": "3200KM",
+  "departureCity": {
+    "@type": "City",
+    "name": "San Francisco",
+    "cityCode": "SFO",
+    "geo": {
+      "@type": "Geocoordinates",
+      "latitude": 23.12,
+      "longitude": -168.32
+    },
+    "image": "sanfrancisco.com/image.jpg"
+  },
+  "departureCountry": {
+    "@type": "Country",
+    "name": "United States",
+    "isoCode": "US",
+    "geo": {
+      "@type": "Geocoordinates",
+      "latitude": 37.42,
+      "longitude": -108.32
+    },
+    "image": "unitedstates.com/image.jpg"
+  },
+  "arrivalCity": {
+    "@type": "City",
+    "name": "Miami",
+    "cityCode": "MIA",
+    "geo": {
+      "@type": "Geocoordinates",
+      "latitude": 37.42,
+      "longitude": -108.32
+    },
+    "image": "miami.com/image.jpg"
+  },
+  "arrivalCountry": {
+    "@type": "Country",
+    "name": "United States",
+    "isoCode": "US",
+    "geo": {
+      "@type": "Geocoordinates",
+      "latitude": 37.42,
+      "longitude": -108.32
+    },
+    "image": "unitedstates.com/image.jpg"
+  },
+  "flightType": "Domestic",
+  "routeType": "Nonstop",
+  "discount": {
+    "@type": "Discount",
+    "isDiscount": true,
+    "code": "AFFBFAN",
+    "amount": 500,
+    "percentage": 0.5,
+    "expirationDate": "2017-12-31"
+  },
+  "baggage": {
+    "@type": "BaggageAllowance",
+    "count": 2,
+    "checkedBags": 1,
+    "carryOnBags": 1,
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": 234.21,
+      "totalPrice": 250.6,
+      "taxPrice": 16.39,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "priceMarketId": "USD-US",
+      "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
+    },
+    "prepaidInd": true
+  },
+  "additionalInfo": {
+    "@type": "AdditionalInfo",
+    "fields": [
+      {
+        "name": "classOfService",
+        "value": "COACH_EC"
+      },
+      {
+        "name": "fareBasis",
+        "value": "NNNJ6SBM+"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "category": "Mobile",
+  "screenResolution": "360x600",
+  "mobileBranding": "Apple",
+  "mobileModel": "iPhone",
+  "mobileName": "iPhone 6",
+  "operatingSystem": "iOS",
+  "operatingSystemVersion": "9",
+  "isMobileApp": true
+}

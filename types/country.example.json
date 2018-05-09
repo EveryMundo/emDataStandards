@@ -1,0 +1,11 @@
+{
+  "@type": "Country",
+  "name": "United States",
+  "isoCode": "US",
+  "geo": {
+    "@type": "Geocoordinates",
+    "latitude": 37.42,
+    "longitude": -108.32
+  },
+  "image": "unitedstates.com/image.jpg"
+}

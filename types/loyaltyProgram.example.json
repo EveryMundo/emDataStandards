@@ -1,0 +1,22 @@
+{
+  "@type": "LoyaltyProgram",
+  "name": "Miles and Bonus",
+  "provider": {
+    "@type": "Organization",
+    "name": "Aegean Airlines"
+  },
+  "url": "https://www.britishairways.com/en-gb/executive-club/about-the-club",
+  "certificateNumber": "12854712",
+  "membershipLevel": "Gold",
+  "redemption": {
+    "@type": "Redemption",
+    "unit": "miles",
+    "amount": 1500,
+    "conversion": {
+      "amount": 1500,
+      "ratio": 0.5
+    }
+  },
+  "milesEarned": 1000,
+  "isLoggedIn": false
+}
