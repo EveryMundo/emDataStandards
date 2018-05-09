@@ -37,6 +37,10 @@
         "image": {
           "description": "image",
           "type": "string"
+        },
+        "images": {
+          "description": "images",
+          "type": "array"
         }
       }
     },

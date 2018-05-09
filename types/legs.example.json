@@ -67,7 +67,7 @@
       },
       "image": "unitedstates.com/image.jpg"
     },
-    "flightType": "Domestic",
+    "flightType": "DOMESTIC",
     "operatingAirline": {
       "@type": "Airline",
       "name": "EveryMundo",

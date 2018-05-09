@@ -5,16 +5,20 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
+      "description": "The name of the airline",
       "type": "string"
     },
     "iataCode": {
-      "description": "iataCode",
+      "description": "IATA identifier for the airline",
       "type": "string"
     },
     "image": {
-      "description": "image",
+      "description": "Image URL for the airline",
       "type": "string"
+    },
+    "images": {
+      "description": "Array of multiple image URLs for the airline",
+      "type": "array"
     }
   },
   "required": []

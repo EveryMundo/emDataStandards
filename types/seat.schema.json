@@ -3,11 +3,11 @@
   "type": "object",
   "properties": {
     "rowNumber": {
-      "description": "rowNumber",
+      "description": "Number assigned to a row in the aircraft, typically used to identify seat assignments.",
       "type": "string"
     },
     "cabinColumnId": {
-      "description": "cabinColumnId",
+      "description": "Identifier of the column (e.g. A, B, C, etc.)",
       "type": "string"
     },
     "priceSpecification": {

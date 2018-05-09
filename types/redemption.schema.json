@@ -5,15 +5,15 @@
   "type": "object",
   "properties": {
     "unit": {
-      "description": "unit",
+      "description": "MILES, BITCOIN, POINTS, OTHER",
       "type": "string"
     },
     "amount": {
-      "description": "amount",
+      "description": "Amount of redemption units",
       "type": "number"
     },
     "conversion": {
-      "description": "conversion",
+      "description": "Redemption amount/unit equivalents",
       "type": "object",
       "properties": {
         "amount": {

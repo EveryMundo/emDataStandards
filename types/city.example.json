@@ -7,5 +7,8 @@
     "latitude": 37.42,
     "longitude": -108.32
   },
-  "image": "miami.com/image.jpg"
+  "image": "miami.com/image.jpg",
+  "images": [
+    "miami.com/image.jpg", "miami.com/image2.jpg"
+  ]
 }

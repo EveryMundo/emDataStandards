@@ -5,11 +5,11 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
+      "description": "The name of the airport",
       "type": "string"
     },
     "iataCode": {
-      "description": "iataCode",
+      "description": "IATA identifier for the airport",
       "type": "string"
     },
     "geo": {
@@ -17,18 +17,22 @@
       "type": "object",
       "properties": {
         "latitude": {
-          "description": "latitude",
+          "description": "The latitude of the  airport",
           "type": "number"
         },
         "longitude": {
-          "description": "longitude",
+          "description": "The longitude of the airport",
           "type": "number"
         }
       }
     },
     "image": {
-      "description": "image",
+      "description": "Image URL for the airport",
       "type": "string"
+    },
+    "images": {
+      "description": "Array of image URLs for the airport",
+      "type": "array"
     }
   },
   "required": []

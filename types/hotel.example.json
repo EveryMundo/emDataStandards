@@ -39,5 +39,9 @@
     "worstRating": 1,
     "ratingCount": 11
   },
-  "image": "everymundo.com/image.jpg"
+  "image": "everymundo.com/image.jpg",
+  "images": [
+    "everymundo.com/image.jpg", "everymundo.com/image2.jpg"
+  ]
+
 }

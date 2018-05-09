@@ -5,31 +5,31 @@
   "type": "object",
   "properties": {
     "count": {
-      "description": "count",
+      "description": "Amount of passengers for a specific category",
       "type": "number"
     },
     "seniorCount": {
-      "description": "seniorCount",
+      "description": "Amount of senior passengers",
       "type": "number"
     },
     "adultCount": {
-      "description": "adultCount",
+      "description": "Amount of adult passengers",
       "type": "number"
     },
     "youngAdultCount": {
-      "description": "youngAdultCount",
+      "description": "Amount of young adults passengers",
       "type": "number"
     },
     "childCount": {
-      "description": "childCount",
+      "description": "Amount of children passengers",
       "type": "number"
     },
     "infantInLapCount": {
-      "description": "infantInLapCount",
+      "description": "Amount of in lap infants passengers",
       "type": "number"
     },
     "infantInSeatCount": {
-      "description": "infantInSeatCount",
+      "description": "Amount of in seat infants passengers",
       "type": "number"
     }
   },

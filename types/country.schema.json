@@ -5,11 +5,11 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
+      "description": "The name of the country",
       "type": "string"
     },
     "isoCode": {
-      "description": "isoCode",
+      "description": "The country code (in 2 letter codes from ISO 3166-1)",
       "type": "string"
     },
     "geo": {
@@ -17,18 +17,22 @@
       "type": "object",
       "properties": {
         "latitude": {
-          "description": "latitude",
+          "description": "The latitude of the  country",
           "type": "number"
         },
         "longitude": {
-          "description": "longitude",
+          "description": "The longitude of the country",
           "type": "number"
         }
       }
     },
     "image": {
-      "description": "image",
+      "description": "Image URL for the country",
       "type": "string"
+    },
+    "images": {
+      "description": "Array of image URLs for the country",
+      "type": "array"
     }
   },
   "required": []

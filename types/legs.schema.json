@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "array",
-  "properties": [
+  "properties":
     {
       "flightNumber": {
         "description": "flightNumber",
@@ -38,7 +38,7 @@
         "type": "string"
       },
       "departureTimeZone": {
-        "description": "departureTimeZone",
+        "description": "While departure time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
         "type": "string"
       },
       "arrivalAirport": {
@@ -68,11 +68,11 @@
         "type": "string"
       },
       "arrivalTimeZone": {
-        "description": "arrivalTimeZone",
+        "description": "While arrival time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
         "type": "string"
       },
       "estimatedDuration": {
-        "description": "estimatedDuration",
+        "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
         "type": "string"
       },
       "flightDistance": {
@@ -208,7 +208,7 @@
         }
       },
       "flightType": {
-        "description": "flightType",
+        "description": "DOMESTIC, INTERNATIONAL",
         "type": "string"
       },
       "operatingAirline": {
@@ -226,7 +226,7 @@
         }
       },
       "aircraft": {
-        "description": "aircraft",
+        "description": "Aircraft brand",
         "type": "string"
       },
       "additionalInfo": {
@@ -242,7 +242,6 @@
           }
         }
       }
-    }
-  ],
+    },
   "required": []
 }

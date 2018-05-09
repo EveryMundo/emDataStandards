@@ -1,87 +1,19 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "array",
-  "properties": [
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
+  "properties": {
+    "category": {
+      "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+      "type": "string"
     },
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
+    "mappedTo": {
+      "description": "Field that passenger count is being mapped to under type Passenger",
+      "type": "number"
     },
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
-    },
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
-    },
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
-    },
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
-    },
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
-    },
-    {
-      "category": {
-        "description": "category",
-        "type": "string"
-      },
-      "count": {
-        "description": "count",
-        "type": "number"
-      }
+    "count": {
+      "description": "Amount of passengers for a specific category",
+      "type": "number"
     }
-  ],
+  },
   "required": []
 }

@@ -5,11 +5,11 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
+      "description": "The name of the city",
       "type": "string"
     },
     "cityCode": {
-      "description": "cityCode",
+      "description": "ISO code for the city",
       "type": "string"
     },
     "geo": {
@@ -17,18 +17,22 @@
       "type": "object",
       "properties": {
         "latitude": {
-          "description": "latitude",
+          "description": "The latitude of the city",
           "type": "number"
         },
         "longitude": {
-          "description": "longitude",
+          "description": "The longitude of the city",
           "type": "number"
         }
       }
     },
     "image": {
-      "description": "image",
+      "description": "Image URL for the city",
       "type": "string"
+    },
+    "images": {
+      "description": "Array of image URLs for the city",
+      "type": "array"
     }
   },
   "required": []

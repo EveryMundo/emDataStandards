@@ -5,11 +5,11 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
+      "description": "The name of the region",
       "type": "string"
     },
     "regionCode": {
-      "description": "regionCode",
+      "description": "Any region M.49 standards code",
       "type": "string"
     },
     "geo": {
@@ -17,18 +17,22 @@
       "type": "object",
       "properties": {
         "latitude": {
-          "description": "latitude",
+          "description": "The latitude of the region",
           "type": "number"
         },
         "longitude": {
-          "description": "longitude",
+          "description": "The longitude of the region",
           "type": "number"
         }
       }
     },
     "image": {
-      "description": "image",
+      "description": "Image URL for the region",
       "type": "string"
+    },
+    "images": {
+      "description": "Array of image URLs for the region",
+      "type": "array"
     }
   },
   "required": []

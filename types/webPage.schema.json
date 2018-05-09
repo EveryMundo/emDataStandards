@@ -4,32 +4,36 @@
   "description": "WebPage",
   "type": "object",
   "properties": {
+    "publisher": {
+      "description": "The publisher of the creative work",
+      "type": "string"
+    },
     "name": {
-      "description": "name",
+      "description": "The name of the page",
       "type": "string"
     },
     "url": {
-      "description": "url",
+      "description": "The page url",
       "type": "string"
     },
     "hostName": {
-      "description": "hostName",
+      "description": "Host name",
       "type": "string"
     },
     "typeName": {
-      "description": "typeName",
+      "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED",
       "type": "string"
     },
     "typeCode": {
-      "description": "typeCode",
+      "description": "Page Type Code: HP, CICO, FCI, TCI, CICO, COCI, FCO, TCO, EXT",
       "type": "string"
     },
     "languageIsoCode": {
-      "description": "languageIsoCode",
+      "description": "Language ISO 639-1 code",
       "type": "string"
     },
     "siteEdition": {
-      "description": "siteEdition",
+      "description": "Site edition combination of ISO codes for language and country",
       "type": "string"
     }
   },

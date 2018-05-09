@@ -1,42 +1,50 @@
 [
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "senior65Plus",
+    "mappedTo": "seniorCount",
     "count": 2
   },
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "adult12PlusCount",
+    "mappedTo": "adultCount",
     "count": 0
   },
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "adult18To64Count",
+    "mappedTo": "adultCount",
     "count": 2
   },
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "child15To17Count",
+    "mappedTo": "youngAdultCount",
     "count": 0
   },
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "child12To14Count",
+    "mappedTo": "childCount",
     "count": 1
   },
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "child5To11Count",
+    "mappedTo": "childCount",
     "count": 1
   },
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "child2To4Count",
+    "mappedTo": "childCount",
     "count": 0
   },
   {
-    "@type": "Passenger",
+    "@type": "PassengerDetails",
     "category": "infant0To2Count",
+    "mappedTo": "infantInLapCount",
     "count": 0
   }
 ]

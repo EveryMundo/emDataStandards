@@ -5,23 +5,23 @@
   "type": "object",
   "properties": {
     "isDiscount": {
-      "description": "isDiscount",
+      "description": "Whether there is a promotion",
       "type": "boolean"
     },
     "code": {
-      "description": "code",
+      "description": "Discount promotion code",
       "type": "string"
     },
     "amount": {
-      "description": "amount",
+      "description": "Discount amount applied to the price",
       "type": "number"
     },
     "percentage": {
-      "description": "percentage",
+      "description": "Discount percentage applied to the price",
       "type": "number"
     },
     "expirationDate": {
-      "description": "expirationDate",
+      "description": "Promotion expiration date",
       "type": "string"
     }
   },

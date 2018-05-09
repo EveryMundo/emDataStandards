@@ -7,5 +7,8 @@
     "latitude": 37.42,
     "longitude": -108.32
   },
-  "image": "florida.com/image.jpg"
+  "image": "florida.com/image.jpg",
+  "images": [
+    "florida.com/image.jpg", "florida.com/image2.jpg"
+  ]
 }

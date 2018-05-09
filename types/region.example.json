@@ -7,5 +7,8 @@
     "latitude": 37.42,
     "longitude": -108.32
   },
-  "image": "northamerica.com/image.jpg"
+  "image": "northamerica.com/image.jpg",
+  "images": [
+    "northamerica.com/image.jpg", "northamerica.com/image2.jpg"
+  ]
 }
