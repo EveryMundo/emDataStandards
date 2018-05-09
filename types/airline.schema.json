@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Airline",
+  "description": "Airline",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "name",
+      "type": "string"
+    },
+    "iataCode": {
+      "description": "iataCode",
+      "type": "string"
+    },
+    "image": {
+      "description": "image",
+      "type": "string"
+    }
+  },
+  "required": []
+}

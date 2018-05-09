@@ -1,0 +1,837 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey",
+  "description": "Journey",
+  "type": "object",
+  "properties": {
+    "flightReservation": {
+      "description": "flightReservation",
+      "type": "object",
+      "properties": {
+        "boardingGroup": {
+          "description": "boardingGroup",
+          "type": "string"
+        },
+        "reservationStatus": {
+          "description": "reservationStatus",
+          "type": "string"
+        },
+        "passengerPriorityStatus": {
+          "description": "passengerPriorityStatus",
+          "type": "string"
+        },
+        "passengerSequenceNumber": {
+          "description": "passengerSequenceNumber",
+          "type": "string"
+        },
+        "bookingTime": {
+          "description": "bookingTime",
+          "type": "string"
+        },
+        "modifiedTime": {
+          "description": "modifiedTime",
+          "type": "string"
+        }
+      }
+    },
+    "fullRoute": {
+      "description": "fullRoute",
+      "type": "string"
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "object",
+      "properties": {
+        "price": {
+          "description": "price",
+          "type": "number"
+        },
+        "totalPrice": {
+          "description": "totalPrice",
+          "type": "number"
+        },
+        "taxPrice": {
+          "description": "taxPrice",
+          "type": "number"
+        },
+        "fuelPrice": {
+          "description": "fuelPrice",
+          "type": "number"
+        },
+        "additionalFeesPrice": {
+          "description": "additionalFeesPrice",
+          "type": "number"
+        },
+        "currency": {
+          "description": "currency",
+          "type": "string"
+        },
+        "currencySymbol": {
+          "description": "currencySymbol",
+          "type": "string"
+        },
+        "priceMarketId": {
+          "description": "priceMarketId",
+          "type": "string"
+        },
+        "lastUpdatePriceTime": {
+          "description": "lastUpdatePriceTime",
+          "type": "string"
+        },
+        "redemption": {
+          "description": "redemption",
+          "type": "object",
+          "properties": {
+            "unit": {
+              "description": "unit",
+              "type": "string"
+            },
+            "amount": {
+              "description": "amount",
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "passengerDetails": {
+      "description": "passengerDetails",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "passenger": {
+      "description": "passenger",
+      "type": "object",
+      "properties": {
+        "count": {
+          "description": "count",
+          "type": "number"
+        },
+        "seniorCount": {
+          "description": "seniorCount",
+          "type": "number"
+        },
+        "adultCount": {
+          "description": "adultCount",
+          "type": "number"
+        },
+        "youngAdultCount": {
+          "description": "youngAdultCount",
+          "type": "number"
+        },
+        "childCount": {
+          "description": "childCount",
+          "type": "number"
+        },
+        "infantInLapCount": {
+          "description": "infantInLapCount",
+          "type": "number"
+        },
+        "infantInSeatCount": {
+          "description": "infantInSeatCount",
+          "type": "number"
+        }
+      }
+    },
+    "fareTensor": {
+      "description": "fareTensor",
+      "type": "object",
+      "properties": {
+        "route": {
+          "description": "route",
+          "type": "string"
+        },
+        "journeyType": {
+          "description": "journeyType",
+          "type": "string"
+        },
+        "cells": {
+          "description": "cells",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "outboundFlight": {
+      "description": "outboundFlight",
+      "type": "object",
+      "properties": {
+        "boundType": {
+          "description": "boundType",
+          "type": "string"
+        },
+        "route": {
+          "description": "route",
+          "type": "string"
+        },
+        "priceSpecification": {
+          "description": "priceSpecification",
+          "type": "object",
+          "properties": {
+            "price": {
+              "description": "price",
+              "type": "number"
+            },
+            "totalPrice": {
+              "description": "totalPrice",
+              "type": "number"
+            },
+            "taxPrice": {
+              "description": "taxPrice",
+              "type": "number"
+            }
+          }
+        },
+        "fareClassInput": {
+          "description": "fareClassInput",
+          "type": "string"
+        },
+        "fareClass": {
+          "description": "fareClass",
+          "type": "string"
+        },
+        "departureAirportIataCode": {
+          "description": "departureAirportIataCode",
+          "type": "string"
+        },
+        "arrivalAirportIataCode": {
+          "description": "arrivalAirportIataCode",
+          "type": "string"
+        },
+        "estimatedDuration": {
+          "description": "estimatedDuration",
+          "type": "string"
+        },
+        "flightDistance": {
+          "description": "flightDistance",
+          "type": "string"
+        },
+        "availableSeatsCount": {
+          "description": "availableSeatsCount",
+          "type": "string"
+        },
+        "legs": {
+          "description": "legs",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "departureCity": {
+          "description": "departureCity",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "cityCode": {
+              "description": "cityCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "departureCountry": {
+          "description": "departureCountry",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "isoCode": {
+              "description": "isoCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "arrivalCity": {
+          "description": "arrivalCity",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "cityCode": {
+              "description": "cityCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "arrivalCountry": {
+          "description": "arrivalCountry",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "isoCode": {
+              "description": "isoCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "flightType": {
+          "description": "flightType",
+          "type": "string"
+        },
+        "routeType": {
+          "description": "routeType",
+          "type": "string"
+        },
+        "discount": {
+          "description": "discount",
+          "type": "object",
+          "properties": {
+            "isDiscount": {
+              "description": "isDiscount",
+              "type": "boolean"
+            },
+            "code": {
+              "description": "code",
+              "type": "string"
+            },
+            "amount": {
+              "description": "amount",
+              "type": "number"
+            },
+            "percentage": {
+              "description": "percentage",
+              "type": "number"
+            },
+            "expirationDate": {
+              "description": "expirationDate",
+              "type": "string"
+            }
+          }
+        },
+        "baggage": {
+          "description": "baggage",
+          "type": "object",
+          "properties": {
+            "count": {
+              "description": "count",
+              "type": "number"
+            },
+            "checkedBags": {
+              "description": "checkedBags",
+              "type": "number"
+            },
+            "carryOnBags": {
+              "description": "carryOnBags",
+              "type": "number"
+            },
+            "priceSpecification": {
+              "description": "priceSpecification",
+              "type": "object",
+              "properties": {
+                "price": {
+                  "description": "price",
+                  "type": "number"
+                },
+                "totalPrice": {
+                  "description": "totalPrice",
+                  "type": "number"
+                },
+                "taxPrice": {
+                  "description": "taxPrice",
+                  "type": "number"
+                },
+                "currency": {
+                  "description": "currency",
+                  "type": "string"
+                },
+                "currencySymbol": {
+                  "description": "currencySymbol",
+                  "type": "string"
+                },
+                "priceMarketId": {
+                  "description": "priceMarketId",
+                  "type": "string"
+                },
+                "lastUpdatePriceTime": {
+                  "description": "lastUpdatePriceTime",
+                  "type": "string"
+                }
+              }
+            },
+            "prepaidInd": {
+              "description": "prepaidInd",
+              "type": "boolean"
+            }
+          }
+        },
+        "additionalInfo": {
+          "description": "additionalInfo",
+          "type": "object",
+          "properties": {
+            "fields": {
+              "description": "fields",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "inboundFlight": {
+      "description": "inboundFlight",
+      "type": "object",
+      "properties": {
+        "boundType": {
+          "description": "boundType",
+          "type": "string"
+        },
+        "route": {
+          "description": "route",
+          "type": "string"
+        },
+        "priceSpecification": {
+          "description": "priceSpecification",
+          "type": "object",
+          "properties": {
+            "price": {
+              "description": "price",
+              "type": "number"
+            },
+            "totalPrice": {
+              "description": "totalPrice",
+              "type": "number"
+            },
+            "taxPrice": {
+              "description": "taxPrice",
+              "type": "number"
+            }
+          }
+        },
+        "fareClassInput": {
+          "description": "fareClassInput",
+          "type": "string"
+        },
+        "fareClass": {
+          "description": "fareClass",
+          "type": "string"
+        },
+        "departureAirportIataCode": {
+          "description": "departureAirportIataCode",
+          "type": "string"
+        },
+        "arrivalAirportIataCode": {
+          "description": "arrivalAirportIataCode",
+          "type": "string"
+        },
+        "estimatedDuration": {
+          "description": "estimatedDuration",
+          "type": "string"
+        },
+        "flightDistance": {
+          "description": "flightDistance",
+          "type": "string"
+        },
+        "availableSeatsCount": {
+          "description": "availableSeatsCount",
+          "type": "string"
+        },
+        "legs": {
+          "description": "legs",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "departureCity": {
+          "description": "departureCity",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "cityCode": {
+              "description": "cityCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "departureCountry": {
+          "description": "departureCountry",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "isoCode": {
+              "description": "isoCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "arrivalCity": {
+          "description": "arrivalCity",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "cityCode": {
+              "description": "cityCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "arrivalCountry": {
+          "description": "arrivalCountry",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string"
+            },
+            "isoCode": {
+              "description": "isoCode",
+              "type": "string"
+            },
+            "geo": {
+              "description": "geo",
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "description": "latitude",
+                  "type": "number"
+                },
+                "longitude": {
+                  "description": "longitude",
+                  "type": "number"
+                }
+              }
+            },
+            "image": {
+              "description": "image",
+              "type": "string"
+            }
+          }
+        },
+        "flightType": {
+          "description": "flightType",
+          "type": "string"
+        },
+        "routeType": {
+          "description": "routeType",
+          "type": "string"
+        },
+        "discount": {
+          "description": "discount",
+          "type": "object",
+          "properties": {
+            "isDiscount": {
+              "description": "isDiscount",
+              "type": "boolean"
+            },
+            "code": {
+              "description": "code",
+              "type": "string"
+            },
+            "amount": {
+              "description": "amount",
+              "type": "number"
+            },
+            "percentage": {
+              "description": "percentage",
+              "type": "number"
+            },
+            "expirationDate": {
+              "description": "expirationDate",
+              "type": "string"
+            }
+          }
+        },
+        "baggage": {
+          "description": "baggage",
+          "type": "object",
+          "properties": {
+            "count": {
+              "description": "count",
+              "type": "number"
+            },
+            "checkedBags": {
+              "description": "checkedBags",
+              "type": "number"
+            },
+            "carryOnBags": {
+              "description": "carryOnBags",
+              "type": "number"
+            },
+            "priceSpecification": {
+              "description": "priceSpecification",
+              "type": "object",
+              "properties": {
+                "price": {
+                  "description": "price",
+                  "type": "number"
+                },
+                "totalPrice": {
+                  "description": "totalPrice",
+                  "type": "number"
+                },
+                "taxPrice": {
+                  "description": "taxPrice",
+                  "type": "number"
+                },
+                "currency": {
+                  "description": "currency",
+                  "type": "string"
+                },
+                "currencySymbol": {
+                  "description": "currencySymbol",
+                  "type": "string"
+                },
+                "priceMarketId": {
+                  "description": "priceMarketId",
+                  "type": "string"
+                },
+                "lastUpdatePriceTime": {
+                  "description": "lastUpdatePriceTime",
+                  "type": "string"
+                }
+              }
+            },
+            "prepaidInd": {
+              "description": "prepaidInd",
+              "type": "boolean"
+            }
+          }
+        },
+        "additionalInfo": {
+          "description": "additionalInfo",
+          "type": "object",
+          "properties": {
+            "fields": {
+              "description": "fields",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "departureDate": {
+      "description": "departureDate",
+      "type": "string"
+    },
+    "departureDay": {
+      "description": "departureDay",
+      "type": "string"
+    },
+    "returnDate": {
+      "description": "returnDate",
+      "type": "string"
+    },
+    "returnDay": {
+      "description": "returnDay",
+      "type": "string"
+    },
+    "journeyType": {
+      "description": "journeyType",
+      "type": "string"
+    },
+    "isCodeShare": {
+      "description": "isCodeShare",
+      "type": "boolean"
+    },
+    "flightType": {
+      "description": "flightType",
+      "type": "string"
+    },
+    "segmentCount": {
+      "description": "segmentCount",
+      "type": "number"
+    },
+    "flightCount": {
+      "description": "flightCount",
+      "type": "number"
+    },
+    "discount": {
+      "description": "discount",
+      "type": "object",
+      "properties": {
+        "isDiscount": {
+          "description": "isDiscount",
+          "type": "boolean"
+        },
+        "code": {
+          "description": "code",
+          "type": "string"
+        },
+        "amount": {
+          "description": "amount",
+          "type": "number"
+        },
+        "percentage": {
+          "description": "percentage",
+          "type": "number"
+        },
+        "expirationDate": {
+          "description": "expirationDate",
+          "type": "string"
+        }
+      }
+    },
+    "airline": {
+      "description": "airline",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": []
+}

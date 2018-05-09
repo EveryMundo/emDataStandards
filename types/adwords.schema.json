@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adwords",
+  "description": "Adwords",
+  "type": "object",
+  "properties": {
+    "accountName": {
+      "description": "accountName",
+      "type": "string"
+    },
+    "accountId": {
+      "description": "accountId",
+      "type": "string"
+    },
+    "campaignName": {
+      "description": "campaignName",
+      "type": "string"
+    },
+    "campaignId": {
+      "description": "campaignId",
+      "type": "string"
+    },
+    "campaignType": {
+      "description": "campaignType",
+      "type": "string"
+    },
+    "specialCampaign": {
+      "description": "specialCampaign",
+      "type": "string"
+    },
+    "adgroupName": {
+      "description": "adgroupName",
+      "type": "string"
+    },
+    "adgroupId": {
+      "description": "adgroupId",
+      "type": "string"
+    },
+    "geoTarget": {
+      "description": "geoTarget",
+      "type": "string"
+    },
+    "market": {
+      "description": "market",
+      "type": "string"
+    },
+    "languageIsoCode": {
+      "description": "languageIsoCode",
+      "type": "string"
+    },
+    "routeType": {
+      "description": "routeType",
+      "type": "string"
+    },
+    "locationType": {
+      "description": "locationType",
+      "type": "string"
+    },
+    "keywordGroup": {
+      "description": "keywordGroup",
+      "type": "string"
+    },
+    "keywordType": {
+      "description": "keywordType",
+      "type": "string"
+    },
+    "matchType": {
+      "description": "matchType",
+      "type": "string"
+    },
+    "audience": {
+      "description": "audience",
+      "type": "string"
+    },
+    "marketingNetwork": {
+      "description": "marketingNetwork",
+      "type": "string"
+    },
+    "searchEngine": {
+      "description": "searchEngine",
+      "type": "string"
+    },
+    "inputKey": {
+      "description": "inputKey",
+      "type": "string"
+    }
+  },
+  "required": []
+}

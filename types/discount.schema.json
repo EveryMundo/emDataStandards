@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Discount",
+  "description": "Discount",
+  "type": "object",
+  "properties": {
+    "isDiscount": {
+      "description": "isDiscount",
+      "type": "boolean"
+    },
+    "code": {
+      "description": "code",
+      "type": "string"
+    },
+    "amount": {
+      "description": "amount",
+      "type": "number"
+    },
+    "percentage": {
+      "description": "percentage",
+      "type": "number"
+    },
+    "expirationDate": {
+      "description": "expirationDate",
+      "type": "string"
+    }
+  },
+  "required": []
+}

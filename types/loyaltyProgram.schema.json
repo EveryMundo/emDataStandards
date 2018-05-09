@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "LoyaltyProgram",
+  "description": "LoyaltyProgram",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "name",
+      "type": "string"
+    },
+    "provider": {
+      "description": "provider",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        }
+      }
+    },
+    "url": {
+      "description": "url",
+      "type": "string"
+    },
+    "certificateNumber": {
+      "description": "certificateNumber",
+      "type": "string"
+    },
+    "membershipLevel": {
+      "description": "membershipLevel",
+      "type": "string"
+    },
+    "redemption": {
+      "description": "redemption",
+      "type": "object",
+      "properties": {
+        "unit": {
+          "description": "unit",
+          "type": "string"
+        },
+        "amount": {
+          "description": "amount",
+          "type": "number"
+        },
+        "conversion": {
+          "description": "conversion",
+          "type": "object",
+          "properties": {
+            "amount": {
+              "description": "amount",
+              "type": "number"
+            },
+            "ratio": {
+              "description": "ratio",
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "milesEarned": {
+      "description": "milesEarned",
+      "type": "number"
+    },
+    "isLoggedIn": {
+      "description": "isLoggedIn",
+      "type": "boolean"
+    }
+  },
+  "required": []
+}

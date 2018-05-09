@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "CurrencyConversion",
+  "description": "CurrencyConversion",
+  "type": "object",
+  "properties": {
+    "requestTimestamp": {
+      "description": "requestTimestamp",
+      "type": "string"
+    },
+    "localCurrency": {
+      "description": "localCurrency",
+      "type": "string"
+    },
+    "isHistorical": {
+      "description": "isHistorical",
+      "type": "boolean"
+    },
+    "exchangeRateDate": {
+      "description": "exchangeRateDate",
+      "type": "string"
+    },
+    "exchangeRates": {
+      "description": "exchangeRates",
+      "type": "object",
+      "properties": {
+        "AED": {
+          "description": "AED",
+          "type": "number"
+        },
+        "AFN": {
+          "description": "AFN",
+          "type": "number"
+        }
+      }
+    },
+    "localAmount": {
+      "description": "localAmount",
+      "type": "number"
+    },
+    "totalPriceUSD": {
+      "description": "totalPriceUSD",
+      "type": "number"
+    },
+    "exchangeRateUSD": {
+      "description": "exchangeRateUSD",
+      "type": "number"
+    }
+  },
+  "required": []
+}

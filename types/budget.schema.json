@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Budget",
+  "description": "Budget",
+  "type": "object",
+  "properties": {
+    "minimumAmount": {
+      "description": "minimumAmount",
+      "type": "number"
+    },
+    "maximumAmount": {
+      "description": "maximumAmount",
+      "type": "number"
+    }
+  },
+  "required": []
+}

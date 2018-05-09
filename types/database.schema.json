@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Database",
+  "description": "Database",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "_id",
+      "type": "string"
+    },
+    "__createdat": {
+      "description": "__createdat",
+      "type": "string"
+    },
+    "timeZone": {
+      "description": "timeZone",
+      "type": "string"
+    },
+    "__v": {
+      "description": "__v",
+      "type": "number"
+    },
+    "farenetId": {
+      "description": "farenetId",
+      "type": "string"
+    },
+    "trackingId": {
+      "description": "trackingId",
+      "type": "string"
+    },
+    "schemaVersion": {
+      "description": "schemaVersion",
+      "type": "number"
+    },
+    "batchId": {
+      "description": "batchId",
+      "type": "string"
+    },
+    "parserRegexId": {
+      "description": "parserRegexId",
+      "type": "string"
+    }
+  },
+  "required": []
+}

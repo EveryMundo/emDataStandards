@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "properties": [
+    {
+      "price": {
+        "description": "price",
+        "type": "number"
+      },
+      "boundType": {
+        "description": "boundType",
+        "type": "string"
+      },
+      "isSoldOut": {
+        "description": "isSoldOut",
+        "type": "boolean"
+      },
+      "redemptionAmount": {
+        "description": "redemptionAmount",
+        "type": "number"
+      },
+      "outboundDate": {
+        "description": "outboundDate",
+        "type": "string"
+      },
+      "inboundDate": {
+        "description": "inboundDate",
+        "type": "string"
+      }
+    }
+  ],
+  "required": []
+}

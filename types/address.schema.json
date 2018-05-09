@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "PostalAddress",
+  "description": "PostalAddress",
+  "type": "object",
+  "properties": {
+    "street": {
+      "description": "street",
+      "type": "string"
+    },
+    "cityName": {
+      "description": "cityName",
+      "type": "string"
+    },
+    "regionCode": {
+      "description": "regionCode",
+      "type": "string"
+    },
+    "postalCode": {
+      "description": "postalCode",
+      "type": "string"
+    },
+    "countryCode": {
+      "description": "countryCode",
+      "type": "string"
+    }
+  },
+  "required": []
+}

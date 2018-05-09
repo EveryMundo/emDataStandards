@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Request",
+  "description": "Request",
+  "type": "object",
+  "properties": {
+    "airlines": {
+      "description": "airlines",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "departureAirports": {
+      "description": "departureAirports",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "arrivalAirports": {
+      "description": "arrivalAirports",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "countries": {
+      "description": "countries",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "dateLimit": {
+      "description": "dateLimit",
+      "type": "object",
+      "properties": {
+        "earliestDate": {
+          "description": "earliestDate",
+          "type": "string"
+        },
+        "latestDate": {
+          "description": "latestDate",
+          "type": "string"
+        }
+      }
+    },
+    "departureDateLimit": {
+      "description": "departureDateLimit",
+      "type": "object",
+      "properties": {
+        "earliestDate": {
+          "description": "earliestDate",
+          "type": "string"
+        },
+        "latestDate": {
+          "description": "latestDate",
+          "type": "string"
+        }
+      }
+    },
+    "returnDateLimit": {
+      "description": "returnDateLimit",
+      "type": "object",
+      "properties": {
+        "earliestDate": {
+          "description": "earliestDate",
+          "type": "string"
+        },
+        "latestDate": {
+          "description": "latestDate",
+          "type": "string"
+        }
+      }
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "object",
+      "properties": {
+        "currency": {
+          "description": "currency",
+          "type": "string"
+        },
+        "budgetMinimumAmount": {
+          "description": "budgetMinimumAmount",
+          "type": "number"
+        },
+        "budgetMaximumAmount": {
+          "description": "budgetMaximumAmount",
+          "type": "number"
+        },
+        "decimalDigitsNumber": {
+          "description": "decimalDigitsNumber",
+          "type": "number"
+        },
+        "priceDecimalSeparator": {
+          "description": "priceDecimalSeparator",
+          "type": "string"
+        },
+        "priceThousandSeparator": {
+          "description": "priceThousandSeparator",
+          "type": "string"
+        }
+      }
+    },
+    "journeyTypes": {
+      "description": "journeyTypes",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "flightType": {
+      "description": "flightType",
+      "type": "string"
+    },
+    "languageIsoCode": {
+      "description": "languageIsoCode",
+      "type": "string"
+    },
+    "dateFormat": {
+      "description": "dateFormat",
+      "type": "string"
+    },
+    "faresMaxNumber": {
+      "description": "faresMaxNumber",
+      "type": "number"
+    },
+    "faresPerRouteMaxNumber": {
+      "description": "faresPerRouteMaxNumber",
+      "type": "number"
+    },
+    "routesMaxNumber": {
+      "description": "routesMaxNumber",
+      "type": "number"
+    },
+    "dataLoopBackWindow": {
+      "description": "dataLoopBackWindow",
+      "type": "string"
+    },
+    "timeInterval": {
+      "description": "timeInterval",
+      "type": "string"
+    },
+    "isGroupedByRoute": {
+      "description": "isGroupedByRoute",
+      "type": "boolean"
+    },
+    "paginationDetails": {
+      "description": "paginationDetails",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sortingDetails": {
+      "description": "sortingDetails",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "selectedOutputFields": {
+      "description": "selectedOutputFields",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "selectedOutputCurrencies": {
+      "description": "selectedOutputCurrencies",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": []
+}

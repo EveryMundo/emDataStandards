@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "BaggageAllowance",
+  "description": "BaggageAllowance",
+  "type": "object",
+  "properties": {
+    "count": {
+      "description": "count",
+      "type": "number"
+    },
+    "checkedBags": {
+      "description": "checkedBags",
+      "type": "number"
+    },
+    "carryOnBags": {
+      "description": "carryOnBags",
+      "type": "number"
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "object",
+      "properties": {
+        "price": {
+          "description": "price",
+          "type": "number"
+        },
+        "totalPrice": {
+          "description": "totalPrice",
+          "type": "number"
+        },
+        "taxPrice": {
+          "description": "taxPrice",
+          "type": "number"
+        },
+        "currency": {
+          "description": "currency",
+          "type": "string"
+        },
+        "currencySymbol": {
+          "description": "currencySymbol",
+          "type": "string"
+        },
+        "priceMarketId": {
+          "description": "priceMarketId",
+          "type": "string"
+        },
+        "lastUpdatePriceTime": {
+          "description": "lastUpdatePriceTime",
+          "type": "string"
+        }
+      }
+    },
+    "prepaidInd": {
+      "description": "prepaidInd",
+      "type": "boolean"
+    }
+  },
+  "required": []
+}

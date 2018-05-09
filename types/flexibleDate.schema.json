@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "FlexibleDate",
+  "description": "FlexibleDate",
+  "type": "object",
+  "properties": {
+    "departureDate": {
+      "description": "departureDate",
+      "type": "string"
+    },
+    "departureDayInterval": {
+      "description": "departureDayInterval",
+      "type": "number"
+    },
+    "departureFlexibleDate": {
+      "description": "departureFlexibleDate",
+      "type": "object",
+      "properties": {
+        "minus3": {
+          "description": "minus3",
+          "type": "string"
+        },
+        "minus2": {
+          "description": "minus2",
+          "type": "string"
+        },
+        "minus1": {
+          "description": "minus1",
+          "type": "string"
+        },
+        "plus1": {
+          "description": "plus1",
+          "type": "string"
+        },
+        "plus2": {
+          "description": "plus2",
+          "type": "string"
+        },
+        "plus3": {
+          "description": "plus3",
+          "type": "string"
+        }
+      }
+    },
+    "returnDate": {
+      "description": "returnDate",
+      "type": "string"
+    },
+    "returnDayInterval": {
+      "description": "returnDayInterval",
+      "type": "number"
+    },
+    "returnFlexibleDate": {
+      "description": "returnFlexibleDate",
+      "type": "object",
+      "properties": {
+        "minus3": {
+          "description": "minus3",
+          "type": "string"
+        },
+        "minus2": {
+          "description": "minus2",
+          "type": "string"
+        },
+        "minus1": {
+          "description": "minus1",
+          "type": "string"
+        },
+        "plus1": {
+          "description": "plus1",
+          "type": "string"
+        },
+        "plus2": {
+          "description": "plus2",
+          "type": "string"
+        },
+        "plus3": {
+          "description": "plus3",
+          "type": "string"
+        }
+      }
+    },
+    "stayDuration": {
+      "description": "stayDuration",
+      "type": "number"
+    }
+  },
+  "required": []
+}

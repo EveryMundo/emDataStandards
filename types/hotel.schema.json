@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Hotel",
+  "description": "Hotel",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "name",
+      "type": "string"
+    },
+    "group": {
+      "description": "group",
+      "type": "string"
+    },
+    "cityCode": {
+      "description": "cityCode",
+      "type": "string"
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "object",
+      "properties": {
+        "price": {
+          "description": "price",
+          "type": "number"
+        },
+        "totalPrice": {
+          "description": "totalPrice",
+          "type": "number"
+        },
+        "taxPrice": {
+          "description": "taxPrice",
+          "type": "number"
+        },
+        "additionalFeesPrice": {
+          "description": "additionalFeesPrice",
+          "type": "number"
+        },
+        "currency": {
+          "description": "currency",
+          "type": "string"
+        },
+        "currencySymbol": {
+          "description": "currencySymbol",
+          "type": "string"
+        },
+        "priceMarketId": {
+          "description": "priceMarketId",
+          "type": "string"
+        },
+        "lastUpdatePriceTime": {
+          "description": "lastUpdatePriceTime",
+          "type": "string"
+        }
+      }
+    },
+    "guest": {
+      "description": "guest",
+      "type": "object",
+      "properties": {
+        "count": {
+          "description": "count",
+          "type": "number"
+        },
+        "adultCount": {
+          "description": "adultCount",
+          "type": "number"
+        },
+        "childCount": {
+          "description": "childCount",
+          "type": "number"
+        }
+      }
+    },
+    "address": {
+      "description": "address",
+      "type": "object",
+      "properties": {
+        "street": {
+          "description": "street",
+          "type": "string"
+        },
+        "cityName": {
+          "description": "cityName",
+          "type": "string"
+        },
+        "regionCode": {
+          "description": "regionCode",
+          "type": "string"
+        },
+        "postalCode": {
+          "description": "postalCode",
+          "type": "string"
+        },
+        "countryCode": {
+          "description": "countryCode",
+          "type": "string"
+        }
+      }
+    },
+    "checkinTime": {
+      "description": "checkinTime",
+      "type": "string"
+    },
+    "checkoutTime": {
+      "description": "checkoutTime",
+      "type": "string"
+    },
+    "roomCount": {
+      "description": "roomCount",
+      "type": "number"
+    },
+    "starRating": {
+      "description": "starRating",
+      "type": "string"
+    },
+    "aggregateRating": {
+      "description": "aggregateRating",
+      "type": "object",
+      "properties": {
+        "author": {
+          "description": "author",
+          "type": "string"
+        },
+        "bestRating": {
+          "description": "bestRating",
+          "type": "number"
+        },
+        "ratingValue": {
+          "description": "ratingValue",
+          "type": "number"
+        },
+        "worstRating": {
+          "description": "worstRating",
+          "type": "number"
+        },
+        "ratingCount": {
+          "description": "ratingCount",
+          "type": "number"
+        }
+      }
+    },
+    "image": {
+      "description": "image",
+      "type": "string"
+    }
+  },
+  "required": []
+}
