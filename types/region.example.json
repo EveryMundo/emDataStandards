@@ -1,0 +1,11 @@
+{
+  "@type": "Region",
+  "name": "North America",
+  "regionCode": "003",
+  "geo": {
+    "@type": "Geocoordinates",
+    "latitude": 37.42,
+    "longitude": -108.32
+  },
+  "image": "northamerica.com/image.jpg"
+}

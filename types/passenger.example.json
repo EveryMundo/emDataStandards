@@ -1,0 +1,10 @@
+{
+  "@type": "Passenger",
+  "count": 3,
+  "seniorCount": 0,
+  "adultCount": 2,
+  "youngAdultCount": 0,
+  "childCount": 1,
+  "infantInLapCount": 0,
+  "infantInSeatCount": 0
+}

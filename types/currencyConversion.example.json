@@ -1,0 +1,15 @@
+{
+  "@type": "CurrencyConversion",
+  "requestTimestamp": "2017-05-30 22:49:47",
+  "localCurrency": "USD",
+  "isHistorical": false,
+  "exchangeRateDate": "2017-05-30 00:00:00",
+  "exchangeRates": {
+    "@type": "Rate",
+    "AED": 3.67,
+    "AFN": 68.35
+  },
+  "localAmount": 321,
+  "totalPriceUSD": 321,
+  "exchangeRateUSD": 1
+}
