@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "InsuranceAgency",
+  "description": "InsuranceAgency",
+  "type": "object",
+  "properties": {
+    "brand": {
+      "description": "brand",
+      "type": "string"
+    },
+    "name": {
+      "description": "name",
+      "type": "string"
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "object",
+      "properties": {
+        "price": {
+          "description": "price",
+          "type": "number"
+        },
+        "totalPrice": {
+          "description": "totalPrice",
+          "type": "number"
+        },
+        "taxPrice": {
+          "description": "taxPrice",
+          "type": "number"
+        },
+        "currency": {
+          "description": "currency",
+          "type": "string"
+        },
+        "currencySymbol": {
+          "description": "currencySymbol",
+          "type": "string"
+        },
+        "priceMarketId": {
+          "description": "priceMarketId",
+          "type": "string"
+        },
+        "lastUpdatePriceTime": {
+          "description": "lastUpdatePriceTime",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": []
+}

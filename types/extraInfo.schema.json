@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "ExtraInfo",
+  "description": "ExtraInfo",
+  "type": "object",
+  "properties": {
+    "environment": {
+      "description": "environment",
+      "type": "string"
+    },
+    "indexStatus": {
+      "description": "indexStatus",
+      "type": "string"
+    },
+    "additionalInfo": {
+      "description": "additionalInfo",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "value": {
+          "description": "value",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": []
+}

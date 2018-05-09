@@ -1,0 +1,559 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "frontComponent",
+  "description": "frontComponent",
+  "type": "object",
+  "properties": {
+    "showLoading": {
+      "description": "showLoading",
+      "type": "boolean"
+    },
+    "role": {
+      "description": "role",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "ariaLabel",
+      "type": "string"
+    },
+    "ariaLive": {
+      "description": "ariaLive",
+      "type": "string"
+    },
+    "isAriaBusy": {
+      "description": "isAriaBusy",
+      "type": "boolean"
+    },
+    "loadingLabel": {
+      "description": "loadingLabel",
+      "type": "string"
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "showSorting": {
+      "description": "showSorting",
+      "type": "boolean"
+    },
+    "defaultImage": {
+      "description": "defaultImage",
+      "type": "string"
+    },
+    "additionalCssClasses": {
+      "description": "additionalCssClasses",
+      "type": "string"
+    },
+    "showGeneralDisclaimer": {
+      "description": "showGeneralDisclaimer",
+      "type": "boolean"
+    },
+    "showGeneralDisclaimerOnTop": {
+      "description": "showGeneralDisclaimerOnTop",
+      "type": "boolean"
+    },
+    "showCallToAction": {
+      "description": "showCallToAction",
+      "type": "boolean"
+    },
+    "showPricing": {
+      "description": "showPricing",
+      "type": "boolean"
+    },
+    "showDiscountFare": {
+      "description": "showDiscountFare",
+      "type": "boolean"
+    },
+    "showDots": {
+      "description": "showDots",
+      "type": "boolean"
+    },
+    "className": {
+      "description": "className",
+      "type": "string"
+    },
+    "isScrollInfinite": {
+      "description": "isScrollInfinite",
+      "type": "boolean"
+    },
+    "isLazyLoad": {
+      "description": "isLazyLoad",
+      "type": "boolean"
+    },
+    "slidesToShowNumber": {
+      "description": "slidesToShowNumber",
+      "type": "number"
+    },
+    "slidesToScrollNumber": {
+      "description": "slidesToScrollNumber",
+      "type": "number"
+    },
+    "responsiveDetails": {
+      "description": "responsiveDetails",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "initialSlide": {
+      "description": "initialSlide",
+      "type": "number"
+    },
+    "showArrows": {
+      "description": "showArrows",
+      "type": "boolean"
+    },
+    "isAutoDisplay": {
+      "description": "isAutoDisplay",
+      "type": "boolean"
+    },
+    "isRightToLeft": {
+      "description": "isRightToLeft",
+      "type": "boolean"
+    },
+    "isFullWidth": {
+      "description": "isFullWidth",
+      "type": "boolean"
+    },
+    "showBlankOption": {
+      "description": "showBlankOption",
+      "type": "boolean"
+    },
+    "typeLabelsSorting": {
+      "description": "typeLabelsSorting",
+      "type": "object",
+      "properties": {
+        "mostPopular": {
+          "description": "mostPopular",
+          "type": "string"
+        },
+        "mostSearched": {
+          "description": "mostSearched",
+          "type": "string"
+        },
+        "priceLowToHigh": {
+          "description": "priceLowToHigh",
+          "type": "string"
+        },
+        "priceHighToLow": {
+          "description": "priceHighToLow",
+          "type": "string"
+        },
+        "date": {
+          "description": "date",
+          "type": "string"
+        },
+        "tripLength": {
+          "description": "tripLength",
+          "type": "string"
+        },
+        "departureAsc": {
+          "description": "departureAsc",
+          "type": "string"
+        },
+        "flightDurationAsc": {
+          "description": "flightDurationAsc",
+          "type": "string"
+        }
+      }
+    },
+    "sortingTypes": {
+      "description": "sortingTypes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "journeyType": {
+      "description": "journeyType",
+      "type": "string"
+    },
+    "fareClass": {
+      "description": "fareClass",
+      "type": "string"
+    },
+    "totalPrice": {
+      "description": "totalPrice",
+      "type": "number"
+    },
+    "departureAirport": {
+      "description": "departureAirport",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "departureCity": {
+      "description": "departureCity",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "cityCode": {
+          "description": "cityCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalAirport": {
+      "description": "arrivalAirport",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalCity": {
+      "description": "arrivalCity",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "cityCode": {
+          "description": "cityCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "departureDate": {
+      "description": "departureDate",
+      "type": "string"
+    },
+    "returnDate": {
+      "description": "returnDate",
+      "type": "string"
+    },
+    "airline": {
+      "description": "airline",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "currencySymbol": {
+      "description": "currencySymbol",
+      "type": "string"
+    },
+    "formattedTotalPrice": {
+      "description": "formattedTotalPrice",
+      "type": "string"
+    },
+    "showcurrency": {
+      "description": "showcurrency",
+      "type": "boolean"
+    },
+    "showcurrencySymbol": {
+      "description": "showcurrencySymbol",
+      "type": "boolean"
+    },
+    "templateLayout": {
+      "description": "templateLayout",
+      "type": "string"
+    },
+    "controlsTemplateLayout": {
+      "description": "controlsTemplateLayout",
+      "type": "string"
+    },
+    "showTitle": {
+      "description": "showTitle",
+      "type": "boolean"
+    },
+    "showSubtitle": {
+      "description": "showSubtitle",
+      "type": "boolean"
+    },
+    "isFocusOnCurrentField": {
+      "description": "isFocusOnCurrentField",
+      "type": "boolean"
+    },
+    "showErrors": {
+      "description": "showErrors",
+      "type": "boolean"
+    },
+    "showJourneyTypes": {
+      "description": "showJourneyTypes",
+      "type": "array",
+      "items": {
+        "type": "boolean"
+      }
+    },
+    "journeyTypes": {
+      "description": "journeyTypes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "journeyTypeControl": {
+      "description": "journeyTypeControl",
+      "type": "string"
+    },
+    "showMultiCity": {
+      "description": "showMultiCity",
+      "type": "boolean"
+    },
+    "multiCityUrl": {
+      "description": "multiCityUrl",
+      "type": "string"
+    },
+    "showAirportsList": {
+      "description": "showAirportsList",
+      "type": "boolean"
+    },
+    "airportsListMaxNumber": {
+      "description": "airportsListMaxNumber",
+      "type": "number"
+    },
+    "isAirportsClearableButton": {
+      "description": "isAirportsClearableButton",
+      "type": "boolean"
+    },
+    "isAirportsAutocomplete": {
+      "description": "isAirportsAutocomplete",
+      "type": "boolean"
+    },
+    "airportsListFormat": {
+      "description": "airportsListFormat",
+      "type": "string"
+    },
+    "airportsListFilteringPriority": {
+      "description": "airportsListFilteringPriority",
+      "type": "string"
+    },
+    "datesFormatEdition": {
+      "description": "datesFormatEdition",
+      "type": "string"
+    },
+    "datesFormatDisplay": {
+      "description": "datesFormatDisplay",
+      "type": "string"
+    },
+    "visibleMonthsMaxNumber": {
+      "description": "visibleMonthsMaxNumber",
+      "type": "number"
+    },
+    "showFlexibleDays": {
+      "description": "showFlexibleDays",
+      "type": "boolean"
+    },
+    "daysUntilReturnDate": {
+      "description": "daysUntilReturnDate",
+      "type": "number"
+    },
+    "isBlackoutDates": {
+      "description": "isBlackoutDates",
+      "type": "boolean"
+    },
+    "showFareClasses": {
+      "description": "showFareClasses",
+      "type": "array",
+      "items": {
+        "type": "boolean"
+      }
+    },
+    "fareClasses": {
+      "description": "fareClasses",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fareClassDefault": {
+      "description": "fareClassDefault",
+      "type": "string"
+    },
+    "showPassengerCount": {
+      "description": "showPassengerCount",
+      "type": "boolean"
+    },
+    "passengersType": {
+      "description": "passengersType",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "passengersTypeDefault": {
+      "description": "passengersTypeDefault",
+      "type": "string"
+    },
+    "showDiscountCode": {
+      "description": "showDiscountCode",
+      "type": "boolean"
+    },
+    "isCallToActionDisabledOnError": {
+      "description": "isCallToActionDisabledOnError",
+      "type": "boolean"
+    },
+    "PassengerCountMaxNumber": {
+      "description": "PassengerCountMaxNumber",
+      "type": "number"
+    },
+    "PassengerCountMinNumber": {
+      "description": "PassengerCountMinNumber",
+      "type": "number"
+    },
+    "PassengerCountByTypeMaxNumber": {
+      "description": "PassengerCountByTypeMaxNumber",
+      "type": "object",
+      "properties": {
+        "adultsCount": {
+          "description": "adultsCount",
+          "type": "number"
+        },
+        "childrenCount": {
+          "description": "childrenCount",
+          "type": "number"
+        }
+      }
+    },
+    "PassengerCountByTypeMinNumber": {
+      "description": "PassengerCountByTypeMinNumber",
+      "type": "object",
+      "properties": {
+        "adultsCount": {
+          "description": "adultsCount",
+          "type": "number"
+        },
+        "childrenCount": {
+          "description": "childrenCount",
+          "type": "number"
+        }
+      }
+    },
+    "departureAirportIataCodeDefault": {
+      "description": "departureAirportIataCodeDefault",
+      "type": "string"
+    },
+    "arrivalAirportIataCodeDefault": {
+      "description": "arrivalAirportIataCodeDefault",
+      "type": "string"
+    },
+    "departureDateDefault": {
+      "description": "departureDateDefault",
+      "type": "string"
+    },
+    "returnDateDefault": {
+      "description": "returnDateDefault",
+      "type": "string"
+    },
+    "flexibleDaysDefault": {
+      "description": "flexibleDaysDefault",
+      "type": "number"
+    },
+    "labelKeys": {
+      "description": "labelKeys",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "accessibilityLabelKeys": {
+      "description": "accessibilityLabelKeys",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": []
+}

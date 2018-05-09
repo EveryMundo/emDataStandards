@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "properties": [
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    },
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    },
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    },
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    },
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    },
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    },
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    },
+    {
+      "category": {
+        "description": "category",
+        "type": "string"
+      },
+      "count": {
+        "description": "count",
+        "type": "number"
+      }
+    }
+  ],
+  "required": []
+}

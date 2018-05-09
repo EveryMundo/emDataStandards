@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Redemption",
+  "description": "Redemption",
+  "type": "object",
+  "properties": {
+    "unit": {
+      "description": "unit",
+      "type": "string"
+    },
+    "amount": {
+      "description": "amount",
+      "type": "number"
+    },
+    "conversion": {
+      "description": "conversion",
+      "type": "object",
+      "properties": {
+        "amount": {
+          "description": "amount",
+          "type": "number"
+        },
+        "ratio": {
+          "description": "ratio",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": []
+}

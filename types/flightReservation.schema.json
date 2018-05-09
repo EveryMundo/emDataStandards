@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "FlightReservation",
+  "description": "FlightReservation",
+  "type": "object",
+  "properties": {
+    "boardingGroup": {
+      "description": "boardingGroup",
+      "type": "string"
+    },
+    "reservationStatus": {
+      "description": "reservationStatus",
+      "type": "string"
+    },
+    "passengerPriorityStatus": {
+      "description": "passengerPriorityStatus",
+      "type": "string"
+    },
+    "passengerSequenceNumber": {
+      "description": "passengerSequenceNumber",
+      "type": "string"
+    },
+    "bookingTime": {
+      "description": "bookingTime",
+      "type": "string"
+    },
+    "modifiedTime": {
+      "description": "modifiedTime",
+      "type": "string"
+    }
+  },
+  "required": []
+}

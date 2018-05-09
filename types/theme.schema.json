@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "activity": {
+      "description": "activity",
+      "type": "string"
+    },
+    "cityCode": {
+      "description": "cityCode",
+      "type": "string"
+    },
+    "isRegion": {
+      "description": "isRegion",
+      "type": "boolean"
+    }
+  },
+  "required": []
+}

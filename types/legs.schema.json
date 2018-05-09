@@ -1,0 +1,248 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "properties": [
+    {
+      "flightNumber": {
+        "description": "flightNumber",
+        "type": "string"
+      },
+      "route": {
+        "description": "route",
+        "type": "string"
+      },
+      "departureAirport": {
+        "description": "departureAirport",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string"
+          },
+          "iataCode": {
+            "description": "iataCode",
+            "type": "string"
+          }
+        }
+      },
+      "departureGate": {
+        "description": "departureGate",
+        "type": "string"
+      },
+      "departureTerminal": {
+        "description": "departureTerminal",
+        "type": "string"
+      },
+      "departureTime": {
+        "description": "departureTime",
+        "type": "string"
+      },
+      "departureTimeZone": {
+        "description": "departureTimeZone",
+        "type": "string"
+      },
+      "arrivalAirport": {
+        "description": "arrivalAirport",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string"
+          },
+          "iataCode": {
+            "description": "iataCode",
+            "type": "string"
+          }
+        }
+      },
+      "arrivalGate": {
+        "description": "arrivalGate",
+        "type": "string"
+      },
+      "arrivalTerminal": {
+        "description": "arrivalTerminal",
+        "type": "string"
+      },
+      "arrivalTime": {
+        "description": "arrivalTime",
+        "type": "string"
+      },
+      "arrivalTimeZone": {
+        "description": "arrivalTimeZone",
+        "type": "string"
+      },
+      "estimatedDuration": {
+        "description": "estimatedDuration",
+        "type": "string"
+      },
+      "flightDistance": {
+        "description": "flightDistance",
+        "type": "string"
+      },
+      "departureCity": {
+        "description": "departureCity",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string"
+          },
+          "cityCode": {
+            "description": "cityCode",
+            "type": "string"
+          },
+          "geo": {
+            "description": "geo",
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "description": "latitude",
+                "type": "number"
+              },
+              "longitude": {
+                "description": "longitude",
+                "type": "number"
+              }
+            }
+          },
+          "image": {
+            "description": "image",
+            "type": "string"
+          }
+        }
+      },
+      "departureCountry": {
+        "description": "departureCountry",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string"
+          },
+          "isoCode": {
+            "description": "isoCode",
+            "type": "string"
+          },
+          "geo": {
+            "description": "geo",
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "description": "latitude",
+                "type": "number"
+              },
+              "longitude": {
+                "description": "longitude",
+                "type": "number"
+              }
+            }
+          },
+          "image": {
+            "description": "image",
+            "type": "string"
+          }
+        }
+      },
+      "arrivalCity": {
+        "description": "arrivalCity",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string"
+          },
+          "cityCode": {
+            "description": "cityCode",
+            "type": "string"
+          },
+          "geo": {
+            "description": "geo",
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "description": "latitude",
+                "type": "number"
+              },
+              "longitude": {
+                "description": "longitude",
+                "type": "number"
+              }
+            }
+          },
+          "image": {
+            "description": "image",
+            "type": "string"
+          }
+        }
+      },
+      "arrivalCountry": {
+        "description": "arrivalCountry",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string"
+          },
+          "isoCode": {
+            "description": "isoCode",
+            "type": "string"
+          },
+          "geo": {
+            "description": "geo",
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "description": "latitude",
+                "type": "number"
+              },
+              "longitude": {
+                "description": "longitude",
+                "type": "number"
+              }
+            }
+          },
+          "image": {
+            "description": "image",
+            "type": "string"
+          }
+        }
+      },
+      "flightType": {
+        "description": "flightType",
+        "type": "string"
+      },
+      "operatingAirline": {
+        "description": "operatingAirline",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string"
+          },
+          "iataCode": {
+            "description": "iataCode",
+            "type": "string"
+          }
+        }
+      },
+      "aircraft": {
+        "description": "aircraft",
+        "type": "string"
+      },
+      "additionalInfo": {
+        "description": "additionalInfo",
+        "type": "object",
+        "properties": {
+          "fields": {
+            "description": "fields",
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "required": []
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "properties": [
+    {
+      "airportIataCode": {
+        "description": "airportIataCode",
+        "type": "string"
+      },
+      "passCount": {
+        "description": "passCount",
+        "type": "number"
+      },
+      "priceSpecification": {
+        "description": "priceSpecification",
+        "type": "object",
+        "properties": {
+          "price": {
+            "description": "price",
+            "type": "number"
+          },
+          "totalPrice": {
+            "description": "totalPrice",
+            "type": "number"
+          },
+          "taxPrice": {
+            "description": "taxPrice",
+            "type": "number"
+          },
+          "currency": {
+            "description": "currency",
+            "type": "string"
+          },
+          "currencySymbol": {
+            "description": "currencySymbol",
+            "type": "string"
+          },
+          "priceMarketId": {
+            "description": "priceMarketId",
+            "type": "string"
+          },
+          "lastUpdatePriceTime": {
+            "description": "lastUpdatePriceTime",
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "required": []
+}

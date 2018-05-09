@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AutoRental",
+  "description": "AutoRental",
+  "type": "object",
+  "properties": {
+    "provider": {
+      "description": "provider",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        }
+      }
+    },
+    "reservationId": {
+      "description": "reservationId",
+      "type": "string"
+    },
+    "reservationStatus": {
+      "description": "reservationStatus",
+      "type": "string"
+    },
+    "brand": {
+      "description": "brand",
+      "type": "string"
+    },
+    "model": {
+      "description": "model",
+      "type": "string"
+    },
+    "pickupLocation": {
+      "description": "pickupLocation",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "address": {
+          "description": "address",
+          "type": "object",
+          "properties": {
+            "street": {
+              "description": "street",
+              "type": "string"
+            },
+            "cityName": {
+              "description": "cityName",
+              "type": "string"
+            },
+            "regionCode": {
+              "description": "regionCode",
+              "type": "string"
+            },
+            "postalCode": {
+              "description": "postalCode",
+              "type": "string"
+            },
+            "countryCode": {
+              "description": "countryCode",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "pickupTime": {
+      "description": "pickupTime",
+      "type": "string"
+    },
+    "dropoffLocation": {
+      "description": "dropoffLocation",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "address": {
+          "description": "address",
+          "type": "object",
+          "properties": {
+            "street": {
+              "description": "street",
+              "type": "string"
+            },
+            "cityName": {
+              "description": "cityName",
+              "type": "string"
+            },
+            "regionCode": {
+              "description": "regionCode",
+              "type": "string"
+            },
+            "postalCode": {
+              "description": "postalCode",
+              "type": "string"
+            },
+            "countryCode": {
+              "description": "countryCode",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "dropoffTime": {
+      "description": "dropoffTime",
+      "type": "string"
+    },
+    "type": {
+      "description": "type",
+      "type": "string"
+    }
+  },
+  "required": []
+}

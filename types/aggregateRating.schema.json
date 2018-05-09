@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Rating",
+  "description": "Rating",
+  "type": "object",
+  "properties": {
+    "author": {
+      "description": "author",
+      "type": "string"
+    },
+    "bestRating": {
+      "description": "bestRating",
+      "type": "number"
+    },
+    "ratingValue": {
+      "description": "ratingValue",
+      "type": "number"
+    },
+    "worstRating": {
+      "description": "worstRating",
+      "type": "number"
+    },
+    "ratingCount": {
+      "description": "ratingCount",
+      "type": "number"
+    }
+  },
+  "required": []
+}

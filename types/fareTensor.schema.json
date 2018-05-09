@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "FlightTensor",
+  "description": "FlightTensor",
+  "type": "object",
+  "properties": {
+    "route": {
+      "description": "route",
+      "type": "string"
+    },
+    "journeyType": {
+      "description": "journeyType",
+      "type": "string"
+    },
+    "cells": {
+      "description": "cells",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": []
+}

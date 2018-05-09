@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AirportParking",
+  "description": "AirportParking",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "name",
+      "type": "string"
+    },
+    "airport": {
+      "description": "airport",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "object",
+      "properties": {
+        "price": {
+          "description": "price",
+          "type": "number"
+        },
+        "totalPrice": {
+          "description": "totalPrice",
+          "type": "number"
+        },
+        "taxPrice": {
+          "description": "taxPrice",
+          "type": "number"
+        },
+        "currency": {
+          "description": "currency",
+          "type": "string"
+        },
+        "currencySymbol": {
+          "description": "currencySymbol",
+          "type": "string"
+        },
+        "priceMarketId": {
+          "description": "priceMarketId",
+          "type": "string"
+        },
+        "lastUpdatePriceTime": {
+          "description": "lastUpdatePriceTime",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": []
+}

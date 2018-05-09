@@ -1,0 +1,251 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Response",
+  "description": "Response",
+  "type": "object",
+  "properties": {
+    "airline": {
+      "description": "airline",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "departureAirport": {
+      "description": "departureAirport",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalAirport": {
+      "description": "arrivalAirport",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "departureCity": {
+      "description": "departureCity",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalCity": {
+      "description": "arrivalCity",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "departureState": {
+      "description": "departureState",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalState": {
+      "description": "arrivalState",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "departureCountry": {
+      "description": "departureCountry",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalCountry": {
+      "description": "arrivalCountry",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "departureRegion": {
+      "description": "departureRegion",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalRegion": {
+      "description": "arrivalRegion",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "currency": {
+      "description": "currency",
+      "type": "string"
+    },
+    "currencySymbol": {
+      "description": "currencySymbol",
+      "type": "string"
+    },
+    "totalPrice": {
+      "description": "totalPrice",
+      "type": "number"
+    },
+    "departureTime": {
+      "description": "departureTime",
+      "type": "string"
+    },
+    "departureTimeZone": {
+      "description": "departureTimeZone",
+      "type": "string"
+    },
+    "returnTime": {
+      "description": "returnTime",
+      "type": "string"
+    },
+    "returnTimeZone": {
+      "description": "returnTimeZone",
+      "type": "string"
+    },
+    "formattedTotalPrice": {
+      "description": "formattedTotalPrice",
+      "type": "string"
+    },
+    "formattedDepartureDate": {
+      "description": "formattedDepartureDate",
+      "type": "string"
+    },
+    "formattedReturnDate": {
+      "description": "formattedReturnDate",
+      "type": "string"
+    },
+    "popularity": {
+      "description": "popularity",
+      "type": "number"
+    },
+    "airIndex": {
+      "description": "airIndex",
+      "type": "number"
+    },
+    "routeDetails": {
+      "description": "routeDetails",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "priceSpecification": {
+      "description": "priceSpecification",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "locationDetails": {
+      "description": "locationDetails",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "histogramDetails": {
+      "description": "histogramDetails",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "WebPage",
+  "description": "WebPage",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "name",
+      "type": "string"
+    },
+    "url": {
+      "description": "url",
+      "type": "string"
+    },
+    "hostName": {
+      "description": "hostName",
+      "type": "string"
+    },
+    "typeName": {
+      "description": "typeName",
+      "type": "string"
+    },
+    "typeCode": {
+      "description": "typeCode",
+      "type": "string"
+    },
+    "languageIsoCode": {
+      "description": "languageIsoCode",
+      "type": "string"
+    },
+    "siteEdition": {
+      "description": "siteEdition",
+      "type": "string"
+    }
+  },
+  "required": []
+}

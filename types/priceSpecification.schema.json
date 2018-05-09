@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "PriceSpecification",
+  "description": "PriceSpecification",
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "description",
+      "type": "string"
+    },
+    "price": {
+      "description": "price",
+      "type": "number"
+    },
+    "totalPrice": {
+      "description": "totalPrice",
+      "type": "number"
+    },
+    "taxPrice": {
+      "description": "taxPrice",
+      "type": "number"
+    },
+    "fuelPrice": {
+      "description": "fuelPrice",
+      "type": "number"
+    },
+    "additionalFeesPrice": {
+      "description": "additionalFeesPrice",
+      "type": "number"
+    },
+    "currency": {
+      "description": "currency",
+      "type": "string"
+    },
+    "currencySymbol": {
+      "description": "currencySymbol",
+      "type": "string"
+    },
+    "priceMarketId": {
+      "description": "priceMarketId",
+      "type": "string"
+    },
+    "isSoldOut": {
+      "description": "isSoldOut",
+      "type": "boolean"
+    },
+    "lastUpdatePriceTime": {
+      "description": "lastUpdatePriceTime",
+      "type": "string"
+    }
+  },
+  "required": []
+}

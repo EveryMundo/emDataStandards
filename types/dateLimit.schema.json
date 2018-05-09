@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DateLimit",
+  "description": "DateLimit",
+  "type": "object",
+  "properties": {
+    "earliestDate": {
+      "description": "earliestDate",
+      "type": "string"
+    },
+    "latestDate": {
+      "description": "latestDate",
+      "type": "string"
+    }
+  },
+  "required": []
+}
