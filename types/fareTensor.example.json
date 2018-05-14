@@ -1,9 +1,6 @@
 {
   "@type": "FlightTensor",
-  "route": "SFO>JFK",
-  "originAirportIataCode": "SFO",
-  "destinationAirportIataCode": "JFK",
-  "journeyType": "RT",
+  "journeyType": "ROUND_TRIP",
   "cells": [
     {
       "@type": "Cell",
