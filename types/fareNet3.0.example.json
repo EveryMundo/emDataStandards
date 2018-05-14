@@ -3,15 +3,6 @@
   "offerId": "123456789Kat",
   "journey": {
     "@type": "Journey",
-    "flightReservation": {
-      "@type": "FlightReservation",
-      "boardingGroup": "B",
-      "reservationStatus": "IbeSearch",
-      "passengerPriorityStatus": "FastTrack",
-      "passengerSequenceNumber": "ABC123",
-      "bookingTime": "2027-01-14T13:05:00-05:00",
-      "modifiedTime": "2027-03-14T13:05:00-05:00"
-    },
     "fullRoute": "SFO>MIA>JFK|JFK>SFO",
     "priceSpecification": {
       "@type": "priceSpecification",
@@ -22,8 +13,7 @@
       "additionalFeesPrice": 12,
       "currency": "USD",
       "currencySymbol": "$",
-      "priceMarketId": "USD-US",
-      "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
+      "priceMarketId": "USD-US",      
       "redemption": {
         "@type": "Redemption",
         "unit": "miles",
@@ -32,43 +22,51 @@
     },
     "passengerDetails": [
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "senior65Plus",
+        "mappedTo": "seniorCount",
         "count": 2
       },
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "adult12PlusCount",
+        "mappedTo": "adultCount",
         "count": 0
       },
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "adult18To64Count",
+        "mappedTo": "adultCount",
         "count": 2
       },
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "child15To17Count",
+        "mappedTo": "youngAdultCount",
         "count": 0
       },
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "child12To14Count",
+        "mappedTo": "childCount",
         "count": 1
       },
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "child5To11Count",
+        "mappedTo": "childCount",
         "count": 1
       },
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "child2To4Count",
+        "mappedTo": "childCount",
         "count": 0
       },
       {
-        "@type": "Passenger",
+        "@type": "PassengerDetails",
         "category": "infant0To2Count",
+        "mappedTo": "infantInLapCount",
         "count": 0
       }
     ],
@@ -85,12 +83,14 @@
     "fareTensor": {
       "@type": "FlightTensor",
       "route": "SFO>JFK",
-      "journeyType": "RT",
+      "originAirportIataCode": "SFO",
+      "destinationAirportIataCode": "JFK",
+      "journeyType": "ROUND_TRIP",
       "cells": [
         {
           "@type": "Cell",
           "price": 345.21,
-          "boundType": "Outbound",
+          "boundType": "OUTBOUND",
           "isSoldOut": false,
           "redemptionAmount": 9999,
           "outboundDate": "2017-03-06",
@@ -100,7 +100,7 @@
     },
     "outboundFlight": {
       "@type": "Flight",
-      "boundType": "Outbound",
+      "boundType": "OUTBOUND",
       "route": "SFO>JFK",
       "priceSpecification": {
         "@type": "PriceSpecification",
@@ -112,9 +112,10 @@
       "fareClass": "Economy",
       "departureAirportIataCode": "SFO",
       "arrivalAirportIataCode": "JFK",
+      "departureDate":"2017-12-07",
       "estimatedDuration": "PT9H45M",
-      "flightDistance": "1200km",
       "availableSeatsCount": "9+",
+
       "legs": [
         {
           "flightNumber": "EM110",
@@ -123,22 +124,15 @@
             "@type": "Airport",
             "name": "San Francisco Airport",
             "iataCode": "SFO"
-            },
-          "departureGate": "11",
-          "departureTerminal": "B",
-          "departureTime": "2027-03-04T06:35:00-08:00",
-          "departureTimeZone": "UTC",
+            },          
+          "departureTime": "2027-03-04T06:35:00-08:00",          
           "arrivalAirport": {
             "@type": "Airport",
             "name": "Miami International Airport",
             "iataCode": "MIA"
-            },
-          "arrivalGate": "21",
-          "arrivalTerminal": "D",
-          "arrivalTime": "2027-03-04T13:35:00-08:00",
-          "arrivalTimeZone": "UTC",
-          "estimatedDuration": "PT6H30M",
-          "flightDistance": "900km",
+            },          
+          "arrivalTime": "2027-03-04T13:35:00-08:00",         
+          "estimatedDuration": "PT6H30M",          
           "departureCity": {
             "@type": "City",
             "name": "San Francisco",
@@ -159,7 +153,7 @@
             "name": "United States",
             "isoCode": "US"
             },
-          "flightType": "Domestic",
+          "flightType": "DOMESTIC",
           "operatingAirline": {
             "@type": "Airline",
             "name": "EveryMundo",
@@ -187,22 +181,15 @@
             "@type": "Airport",
             "name": "Miami International Airport",
             "iataCode": "MIA"
-            },
-          "departureGate": "32",
-          "departureTerminal": "A",
-          "departureTime": "2027-03-07T10:35:00-08:00",
-          "departureTimeZone": "UTC",
+            },          
+          "departureTime": "2027-03-07T10:35:00-08:00",          
           "arrivalAirport": {
             "@type": "Airport",
             "name": "John F. Kennedy International Airport",
             "iataCode": "JFK"
-            },
-          "arrivalGate": "12",
-          "arrivalTerminal": "B",
-          "arrivalTime": "2027-03-07T19:35:00-08:00",
-          "arrivalTimeZone": "UTC",
-          "estimatedDuration": "PT3H25M",
-          "flightDistance": "300km",
+            },          
+          "arrivalTime": "2027-03-07T19:35:00-08:00",          
+          "estimatedDuration": "PT3H25M",          
           "departureCity": {
             "@type": "City",
             "name": "Miami",
@@ -223,7 +210,7 @@
             "name": "United States",
             "isoCode": "US"
             },
-          "flightType": "Domestic",
+          "flightType": "DOMESTIC",
           "operatingAirline": {
             "@type": "Airline",
             "name": "EveryMundo",
@@ -265,7 +252,7 @@
         "name": "United States",
         "isoCode": "US"
         },
-      "flightType": "Domestic",
+      "flightType": "DOMESTIC",
       "routeType": "Connecting",
       "discount": {
         "@type": "Discount",
@@ -274,23 +261,6 @@
         "amount": 500,
         "percentage": 0.5,
         "expirationDate": "2017-12-31"
-      },
-      "baggage": {
-        "@type": "BaggageAllowance",
-        "count": 2,
-        "checkedBags": 1,
-        "carryOnBags": 1,
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": 234.21,
-          "totalPrice": 250.6,
-          "taxPrice": 16.39,
-          "currency": "USD",
-          "currencySymbol": "$",
-          "priceMarketId": "USD-US",
-          "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
-        },
-        "prepaidInd": true
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -320,8 +290,8 @@
       "fareClass": "Economy",
       "departureAirportIataCode": "JFK",
       "arrivalAirportIataCode": "SFO",
-      "estimatedDuration": "PT7H30M",
-      "flightDistance": "1023km",
+      "departureDate":"2017-12-10",
+      "estimatedDuration": "PT7H30M",      
       "availableSeatsCount": "9+",
       "legs": [
         {
@@ -331,22 +301,16 @@
             "@type": "Airport",
             "name": "John F. Kennedy International Airport",
             "iataCode": "JFK"
-            },
-          "departureGate": "17",
-          "departureTerminal": "D",
+            },          
           "departureTime": "2017-03-04T06:35:00-08:00",
           "departureTimeZone": "UTC",
           "arrivalAirport": {
             "@type": "Airport",
             "name": "San Francisco Airport",
             "iataCode": "SFO"
-            },
-          "arrivalGate": "19",
-          "arrivalTerminal": "E",
-          "arrivalTime": "2017-03-04T13:35:00-08:00",
-          "arrivalTimeZone": "UTC",
-          "estimatedDuration": "PT7H30M",
-          "flightDistance": "1023km",
+            },          
+          "arrivalTime": "2017-03-04T13:35:00-08:00",          
+          "estimatedDuration": "PT7H30M",          
           "departureCity": {
             "@type": "City",
             "name": "New York",
@@ -367,7 +331,7 @@
             "name": "United States",
             "isoCode": "US"
           },
-          "flightType": "Domestic",
+          "flightType": "DOMESTIC",
           "operatingAirline": {
             "@type": "Airline",
             "name": "EveryMundo",
@@ -409,7 +373,7 @@
         "name": "United States",
         "isoCode": "US"
       },
-      "flightType": "Domestic",
+      "flightType": "DOMESTIC",
       "routeType": "Nonstop",
       "discount": {
         "@type": "Discount",
@@ -418,23 +382,6 @@
         "amount": 500,
         "percentage": 0.5,
         "expirationDate": "2017-12-31"
-      },
-      "baggage": {
-        "@type": "BaggageAllowance",
-        "count": 2,
-        "checkedBags": 1,
-        "carryOnBags": 1,
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": 234.21,
-          "totalPrice": 250.6,
-          "taxPrice": 16.39,
-          "currency": "USD",
-          "currencySymbol": "$",
-          "priceMarketId": "USD-US",
-          "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
-        },
-        "prepaidInd": true
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -450,13 +397,11 @@
         ]
       }
     },
-    "departureDate": "2017-12-07",
-    "departureDay": "4",
-    "returnDate": "2017-12-10",
-    "returnDay": "7",
-    "journeyType": "RT",
+    "departureDate": "2017-12-07",    
+    "returnDate": "2017-12-10",    
+    "journeyType": "ROUND_TRIP",
     "isCodeShare": true,
-    "flightType": "Domestic",
+    "flightType": "DOMESTIC",
     "segmentCount": 2,
     "flightCount": 3,
     "discount": {
@@ -478,30 +423,21 @@
     "name": "flights from miami to berlin",
     "url": "flights.everymundo.com/en/flights-from-miami-to-berlin",
     "hostName": "flights.everymundo.com",
-    "typeName": "CityToCity",
-    "typeCode": "CICI",
     "languageIsoCode": "en",
     "siteEdition": "en-US"
   },
   "device": {
     "category": "Mobile",
-    "screenResolution": "360x600",
-    "mobileBranding": "Apple",
-    "mobileModel": "iPhone",
-    "mobileName": "iPhone 6",
-    "operatingSystem": "iOS",
-    "operatingSystemVersion": "9",
-    "isMobileApp": true
+    "screenResolution": "360x600",    
+    "operatingSystem": "iOS"
   },
   "database": {
     "@type": "Database",
     "_id": "14961881240552180.141840260",
     "version": "2.1.0",
     "__createdat": "2017-11-28 15:46:02",
-    "__v": 1,
-    "farenetId": "bcxtwjjyxgshxx4rvgqm9",
+    "__v": 1,    
     "trackingId": "RTJFKFRA2017073120170824$0_123456KARIN",
-    "schemaVersion": 1,
-    "batchId": "201711281029"
+    "schemaVersion": 1
   }
 }

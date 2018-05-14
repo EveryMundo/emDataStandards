@@ -3,19 +3,7 @@
   "title": "FlightTensor",
   "description": "FlightTensor",
   "type": "object",
-  "properties": {
-    "route": {
-      "description": "route",
-      "type": "string"
-    },
-    "originAirportIataCode": {
-      "description": "Origin Airport IATA Code",
-      "type": "string"
-    },
-    "destinationAirportIataCode": {
-      "description": "Destination Airport IATA Code",
-      "type": "string"
-    },
+  "properties": {    
     "journeyType": {
       "description": "journeyType",
       "type": "string"
