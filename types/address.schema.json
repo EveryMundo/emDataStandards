@@ -6,11 +6,13 @@
   "properties": {
     "street": {
       "description": "street",
-      "type": "string"
+      "type": "string",
+      "example": "Murgstr. 5"
     },
     "cityName": {
       "description": "cityName",
-      "type": "string"
+      "type": "string",
+      "example": "Murgstr. 5"
     },
     "regionCode": {
       "description": "regionCode",
