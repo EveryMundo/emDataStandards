@@ -756,16 +756,16 @@
       "description": "departureDate",
       "type": "string"
     },
-    "departureDay": {
-      "description": "departureDay",
+    "departureWeekDay": {
+      "description": "Day corresponding to departure date for the journey",
       "type": "string"
     },
     "returnDate": {
       "description": "returnDate",
       "type": "string"
     },
-    "returnDay": {
-      "description": "returnDay",
+    "returnWeekDay": {
+      "description": "Day corresponding to return date for the journey",
       "type": "string"
     },
     "journeyType": {
