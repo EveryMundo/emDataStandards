@@ -12,19 +12,22 @@
     "cityName": {
       "description": "cityName",
       "type": "string",
-      "example": "Murgstr. 5"
+      "example": "San Diego"
     },
     "regionCode": {
       "description": "regionCode",
-      "type": "string"
+      "type": "string",
+      "example": "CA"
     },
     "postalCode": {
       "description": "postalCode",
-      "type": "string"
+      "type": "string",
+      "example": "94043"
     },
     "countryCode": {
       "description": "countryCode",
-      "type": "string"
+      "type": "string",
+      "example": "US"
     }
   },
   "required": []
