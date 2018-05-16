@@ -12,6 +12,7 @@ EveryMundo's Data Standards
 
 ```bash
 git checkout gh-pages
+git merge master
 git pull origin gh-pages
 cd documentation
 npm run build
