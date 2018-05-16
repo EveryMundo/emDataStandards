@@ -1,4 +1,5 @@
 {
+  "id": "/autoRental",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "AutoRental",
   "description": "AutoRental",
@@ -39,30 +40,7 @@
           "type": "string"
         },
         "address": {
-          "description": "address",
-          "type": "object",
-          "properties": {
-            "street": {
-              "description": "street",
-              "type": "string"
-            },
-            "cityName": {
-              "description": "cityName",
-              "type": "string"
-            },
-            "regionCode": {
-              "description": "regionCode",
-              "type": "string"
-            },
-            "postalCode": {
-              "description": "postalCode",
-              "type": "string"
-            },
-            "countryCode": {
-              "description": "countryCode",
-              "type": "string"
-            }
-          }
+          "$ref": "./address.schema.json"
         }
       }
     },
@@ -115,5 +93,15 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "AutoRental",
+      "description": "AutoRental details",
+      "rel": "self",
+      "href": "/autoRental",
+      "method": "GET",
+      "targetSchema": {"rel": "self"}
+    }
+  ]
 }
