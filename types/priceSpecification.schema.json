@@ -7,47 +7,58 @@
   "properties": {
     "description": {
       "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
-      "type": "string"
+      "type": "string",
+      "example": "JOURNEY"
     },
     "price": {
       "description": "Price for the reservation or ticket",
-      "type": "number"
+      "type": "number",
+      "example": 234.21
     },
     "totalPrice": {
       "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
-      "type": "number"
+      "type": "number",
+      "example": 250.6
     },
     "taxPrice": {
       "description": "The amount paid in taxes",
-      "type": "number"
+      "type": "number",
+      "example": 16.39
     },
     "fuelPrice": {
       "description": "Airline fuel charges",
-      "type": "number"
+      "type": "number",
+      "example": 57.89
     },
     "additionalFeesPrice": {
       "description": "Airline additional fees",
-      "type": "number"
+      "type": "number",
+      "example": 12
     },
     "currency": {
       "description": "The currency (in 3-letter ISO 4217 format) of the price.",
-      "type": "string"
+      "type": "string",
+      "example": "USD"
     },
     "currencySymbol": {
       "description": "Currency symbol",
-      "type": "string"
+      "type": "string",
+      "example": "$"
     },
     "priceMarketId": {
       "description": "A unique identifier for price market combining ISO codes for currency and country",
-      "type": "string"
+      "type": "string",
+      "example": "USD-US"
     },
     "isSoldOut": {
       "description": "Whether fare is sold out - if isSoldOut=true, fare = NULL",
-      "type": "boolean"
+      "type": "boolean",
+      "example": false
     },
     "lastUpdatePriceTime": {
       "description": "Time of last price update/collection",
-      "type": "string"
+      "type": "string",
+      "example": "2018-02-12T16:49:13.131+0000"
     }
   },
   "required": [],

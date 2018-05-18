@@ -7,11 +7,13 @@
   "properties": {
     "flightNumber": {
       "description": "flightNumber",
-      "type": "string"
+      "type": "string",
+      "example": "EM110"
     },
     "route": {
       "description": "Departure and arrival airport IATA codes for each bound",
-      "type": "string"
+      "type": "string",
+      "example": "SFO>JFK"
     },
     "priceSpecification": {
       "description": "Fare details",
@@ -71,15 +73,35 @@
             }
           }
         }
+      },
+      "example": {
+        "@type": "PriceSpecification",
+        "price": 234.21,
+        "totalPrice": 250.6,
+        "taxPrice": 16.39,
+        "fuelPrice": 57.89,
+        "additionalFeesPrice": 12,
+        "currency": "USD",
+        "currencySymbol": "$",
+        "priceMarketId": "USD-US",
+        "isSoldOut": false,
+        "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
+        "redemption": {
+          "@type": "Redemption",
+          "unit": "miles",
+          "amount": 1500
+        }
       }
     },
     "fareClassInput": {
       "description": "Flight fare class",
-      "type": "string"
+      "type": "string",
+      "example": "Economy"
     },
     "fareClass": {
       "description": "ECONOMY, BUSINESS, FIRST",
-      "type": "string"
+      "type": "string",
+      "example": "Economy"
     },
     "departureAirport": {
       "description": "departureAirport",
@@ -107,23 +129,37 @@
             }
           }
         }
+      },
+      "example": {
+        "@type": "Airport",
+        "name": "San Francisco Airport",
+        "iataCode": "SFO",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 23.12,
+          "longitude": -168.32
+        }
       }
     },
     "departureGate": {
       "description": "departureGate",
-      "type": "string"
+      "type": "string",
+      "example": "11"
     },
     "departureTerminal": {
       "description": "departureTerminal",
-      "type": "string"
+      "type": "string",
+      "example": "B"
     },
     "departureTime": {
       "description": "departureTime",
-      "type": "string"
+      "type": "string",
+      "example": "2027-03-04T06:35:00-08:00"
     },
     "departureTimeZone": {
       "description": "departureTimeZone",
-      "type": "string"
+      "type": "string",
+      "example": "UTC"
     },
     "arrivalAirport": {
       "description": "arrivalAirport",
@@ -151,31 +187,47 @@
             }
           }
         }
+      },
+      "example": {
+        "@type": "Airport",
+        "name": "Miami International Airport",
+        "iataCode": "MIA",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 37.42,
+          "longitude": -108.32
+        }
       }
     },
     "arrivalGate": {
       "description": "arrivalGate",
-      "type": "string"
+      "type": "string",
+      "example": "32"
     },
     "arrivalTerminal": {
       "description": "arrivalTerminal",
-      "type": "string"
+      "type": "string",
+      "example": "C"
     },
     "arrivalTime": {
       "description": "arrivalTime",
-      "type": "string"
+      "type": "string",
+      "example": "2027-03-05T13:30:00-05:00"
     },
     "arrivalTimeZone": {
       "description": "arrivalTimeZone",
-      "type": "string"
+      "type": "string",
+      "example": "UTC"
     },
     "estimatedDuration": {
       "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. (ISO 8601 duration format)",
-      "type": "string"
+      "type": "string",
+      "example": "PT9H45M"
     },
     "flightDistance": {
       "description": "The distance of the flight",
-      "type": "string"
+      "type": "string",
+      "example": "3200KM"
     },
     "departureCity": {
       "description": "The city details where the flight originates",
@@ -207,6 +259,17 @@
           "description": "image",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "City",
+        "name": "San Francisco",
+        "cityCode": "SFO",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 23.12,
+          "longitude": -168.32
+        },
+        "image": "sanfrancisco.com/image.jpg"
       }
     },
     "departureCountry": {
@@ -239,6 +302,17 @@
           "description": "image",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Country",
+        "name": "United States",
+        "isoCode": "US",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 37.42,
+          "longitude": -108.32
+        },
+        "image": "unitedstates.com/image.jpg"
       }
     },
     "arrivalCity": {
@@ -271,6 +345,17 @@
           "description": "image",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "City",
+        "name": "Miami",
+        "cityCode": "MIA",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 37.42,
+          "longitude": -108.32
+        },
+        "image": "miami.com/image.jpg"
       }
     },
     "arrivalCountry": {
@@ -303,15 +388,28 @@
           "description": "image",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Country",
+        "name": "United States",
+        "isoCode": "US",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 37.42,
+          "longitude": -108.32
+        },
+        "image": "unitedstates.com/image.jpg"
       }
     },
     "flightType": {
       "description": "DOMESTIC, INTERNATIONAL",
-      "type": "string"
+      "type": "string",
+      "example": "Domestic"
     },
     "routeType": {
       "description": "NONSTOP, CONNECTING, CODESHARE",
-      "type": "string"
+      "type": "string",
+      "example": "Nonstop"
     },
     "discount": {
       "description": "discount",
@@ -337,6 +435,14 @@
           "description": "expirationDate",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Discount",
+        "isDiscount": true,
+        "code": "AFFBFAN",
+        "amount": 500,
+        "percentage": 0.5,
+        "expirationDate": "2017-12-31"
       }
     },
     "baggage": {
@@ -393,6 +499,23 @@
           "description": "prepaidInd",
           "type": "boolean"
         }
+      },
+      "example": {
+        "@type": "BaggageAllowance",
+        "count": 2,
+        "checkedBags": 1,
+        "carryOnBags": 1,
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": 234.21,
+          "totalPrice": 250.6,
+          "taxPrice": 16.39,
+          "currency": "USD",
+          "currencySymbol": "$",
+          "priceMarketId": "USD-US",
+          "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
+        },
+        "prepaidInd": true
       }
     },
     "additionalInfo": {
@@ -406,6 +529,19 @@
             "type": "object"
           }
         }
+      },
+      "example": {
+        "@type": "AdditionalInfo",
+        "fields": [
+          {
+            "name": "classOfService",
+            "value": "COACH_EC"
+          },
+          {
+            "name": "fareBasis",
+            "value": "NNNJ6SBM+"
+          }
+        ]
       }
     }
   },

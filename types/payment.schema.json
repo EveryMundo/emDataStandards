@@ -7,15 +7,18 @@
   "properties": {
     "method": {
       "description": "Method of payment",
-      "type": "string"
+      "type": "string",
+      "example": "CreditCard"
     },
     "cardName": {
       "description": "Name of credit card",
-      "type": "string"
+      "type": "string",
+      "example": "Amex"
     },
     "isSaved": {
       "description": "Whether the card was saved",
-      "type": "boolean"
+      "type": "boolean",
+      "example": true
     }
   },
   "required": [],

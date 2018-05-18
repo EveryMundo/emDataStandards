@@ -7,11 +7,13 @@
   "properties": {
     "name": {
       "description": "The name of the airport",
-      "type": "string"
+      "type": "string",
+      "example": "Miami International Airport"
     },
     "iataCode": {
       "description": "IATA identifier for the airport",
-      "type": "string"
+      "type": "string",
+      "example": "MIA"
     },
     "geo": {
       "description": "geo",
@@ -25,15 +27,25 @@
           "description": "The longitude of the airport",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
       }
     },
     "image": {
       "description": "Image URL for the airport",
-      "type": "string"
+      "type": "string",
+      "example": "mia.com/image.jpg"
     },
     "images": {
       "description": "Array of image URLs for the airport",
-      "type": "array"
+      "type": "array",
+      "example": [
+        "mia.com/image.jpg",
+        "mia.com/image2.jpg"
+      ]
     }
   },
   "required": [],

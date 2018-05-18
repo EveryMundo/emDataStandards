@@ -7,7 +7,8 @@
   "properties": {
     "_id": {
       "description": "Record unique identifier",
-      "type": "string"
+      "type": "string",
+      "example": "14961881240552180.141840260"
     },
     "version": {
       "description": "Version of the program that generated the record",
@@ -15,35 +16,43 @@
     },
     "__createdat": {
       "description": "Record creation date",
-      "type": "string"
+      "type": "string",
+      "example": "2017-11-28 15:46:02"
     },
     "timeZone": {
       "description": "Timezone of record creation",
-      "type": "string"
+      "type": "string",
+      "example": "EST"
     },
     "__v": {
       "description": "Datacore version, same number we find on the table name in Redshift",
-      "type": "number"
+      "type": "number",
+      "example": 1
     },
     "farenetId": {
       "description": "API specific field for back-reference: Farenet record unique identifier",
-      "type": "string"
+      "type": "string",
+      "example": "bcxtwjjyxgshxx4rvgqm9"
     },
     "trackingId": {
       "description": "Unique identifier created through module interactions for event tracking",
-      "type": "string"
+      "type": "string",
+      "example": "RTJFKFRA2017073120170824$0_123456KARIN"
     },
     "schemaVersion": {
       "description": "Schema version of Data Standards",
-      "type": "number"
+      "type": "number",
+      "example": 1
     },
     "batchId": {
       "description": "Unique batch identifier",
-      "type": "string"
+      "type": "string",
+      "example": "201711281029"
     },
     "parserRegexId": {
       "description": "ID of regex pattern that matched",
-      "type": "string"
+      "type": "string",
+      "example": "CopaNonbrand1"
     }
   },
   "required": [],
