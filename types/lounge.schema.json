@@ -1,5 +1,7 @@
 {
+  "id": "/lounge",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Lounge",
   "type": "array",
   "properties": [
     {

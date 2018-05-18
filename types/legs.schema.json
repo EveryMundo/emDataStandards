@@ -1,247 +1,248 @@
 {
+  "id": "/legs",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Legs",
   "type": "array",
-  "properties":
-    {
-      "flightNumber": {
-        "description": "flightNumber",
-        "type": "string"
-      },
-      "route": {
-        "description": "route",
-        "type": "string"
-      },
-      "departureAirport": {
-        "description": "departureAirport",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string"
-          },
-          "iataCode": {
-            "description": "iataCode",
-            "type": "string"
-          }
-        }
-      },
-      "departureGate": {
-        "description": "departureGate",
-        "type": "string"
-      },
-      "departureTerminal": {
-        "description": "departureTerminal",
-        "type": "string"
-      },
-      "departureTime": {
-        "description": "departureTime",
-        "type": "string"
-      },
-      "departureTimeZone": {
-        "description": "While departure time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
-        "type": "string"
-      },
-      "arrivalAirport": {
-        "description": "arrivalAirport",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string"
-          },
-          "iataCode": {
-            "description": "iataCode",
-            "type": "string"
-          }
-        }
-      },
-      "arrivalGate": {
-        "description": "arrivalGate",
-        "type": "string"
-      },
-      "arrivalTerminal": {
-        "description": "arrivalTerminal",
-        "type": "string"
-      },
-      "arrivalTime": {
-        "description": "arrivalTime",
-        "type": "string"
-      },
-      "arrivalTimeZone": {
-        "description": "While arrival time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
-        "type": "string"
-      },
-      "estimatedDuration": {
-        "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
-        "type": "string"
-      },
-      "flightDistance": {
-        "description": "flightDistance",
-        "type": "string"
-      },
-      "departureCity": {
-        "description": "departureCity",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string"
-          },
-          "cityCode": {
-            "description": "cityCode",
-            "type": "string"
-          },
-          "geo": {
-            "description": "geo",
-            "type": "object",
-            "properties": {
-              "latitude": {
-                "description": "latitude",
-                "type": "number"
-              },
-              "longitude": {
-                "description": "longitude",
-                "type": "number"
-              }
-            }
-          },
-          "image": {
-            "description": "image",
-            "type": "string"
-          }
-        }
-      },
-      "departureCountry": {
-        "description": "departureCountry",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string"
-          },
-          "isoCode": {
-            "description": "isoCode",
-            "type": "string"
-          },
-          "geo": {
-            "description": "geo",
-            "type": "object",
-            "properties": {
-              "latitude": {
-                "description": "latitude",
-                "type": "number"
-              },
-              "longitude": {
-                "description": "longitude",
-                "type": "number"
-              }
-            }
-          },
-          "image": {
-            "description": "image",
-            "type": "string"
-          }
-        }
-      },
-      "arrivalCity": {
-        "description": "arrivalCity",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string"
-          },
-          "cityCode": {
-            "description": "cityCode",
-            "type": "string"
-          },
-          "geo": {
-            "description": "geo",
-            "type": "object",
-            "properties": {
-              "latitude": {
-                "description": "latitude",
-                "type": "number"
-              },
-              "longitude": {
-                "description": "longitude",
-                "type": "number"
-              }
-            }
-          },
-          "image": {
-            "description": "image",
-            "type": "string"
-          }
-        }
-      },
-      "arrivalCountry": {
-        "description": "arrivalCountry",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string"
-          },
-          "isoCode": {
-            "description": "isoCode",
-            "type": "string"
-          },
-          "geo": {
-            "description": "geo",
-            "type": "object",
-            "properties": {
-              "latitude": {
-                "description": "latitude",
-                "type": "number"
-              },
-              "longitude": {
-                "description": "longitude",
-                "type": "number"
-              }
-            }
-          },
-          "image": {
-            "description": "image",
-            "type": "string"
-          }
-        }
-      },
-      "flightType": {
-        "description": "DOMESTIC, INTERNATIONAL",
-        "type": "string"
-      },
-      "operatingAirline": {
-        "description": "operatingAirline",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string"
-          },
-          "iataCode": {
-            "description": "iataCode",
-            "type": "string"
-          }
-        }
-      },
-      "aircraft": {
-        "description": "Aircraft brand",
-        "type": "string"
-      },
-      "additionalInfo": {
-        "description": "additionalInfo",
-        "type": "object",
-        "properties": {
-          "fields": {
-            "description": "fields",
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
-          }
+  "properties": {
+    "flightNumber": {
+      "description": "flightNumber",
+      "type": "string"
+    },
+    "route": {
+      "description": "route",
+      "type": "string"
+    },
+    "departureAirport": {
+      "description": "departureAirport",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
         }
       }
     },
+    "departureGate": {
+      "description": "departureGate",
+      "type": "string"
+    },
+    "departureTerminal": {
+      "description": "departureTerminal",
+      "type": "string"
+    },
+    "departureTime": {
+      "description": "departureTime",
+      "type": "string"
+    },
+    "departureTimeZone": {
+      "description": "While departure time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
+      "type": "string"
+    },
+    "arrivalAirport": {
+      "description": "arrivalAirport",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalGate": {
+      "description": "arrivalGate",
+      "type": "string"
+    },
+    "arrivalTerminal": {
+      "description": "arrivalTerminal",
+      "type": "string"
+    },
+    "arrivalTime": {
+      "description": "arrivalTime",
+      "type": "string"
+    },
+    "arrivalTimeZone": {
+      "description": "While arrival time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
+      "type": "string"
+    },
+    "estimatedDuration": {
+      "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+      "type": "string"
+    },
+    "flightDistance": {
+      "description": "flightDistance",
+      "type": "string"
+    },
+    "departureCity": {
+      "description": "departureCity",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "cityCode": {
+          "description": "cityCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "departureCountry": {
+      "description": "departureCountry",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "isoCode": {
+          "description": "isoCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalCity": {
+      "description": "arrivalCity",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "cityCode": {
+          "description": "cityCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "arrivalCountry": {
+      "description": "arrivalCountry",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "isoCode": {
+          "description": "isoCode",
+          "type": "string"
+        },
+        "geo": {
+          "description": "geo",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "latitude",
+              "type": "number"
+            },
+            "longitude": {
+              "description": "longitude",
+              "type": "number"
+            }
+          }
+        },
+        "image": {
+          "description": "image",
+          "type": "string"
+        }
+      }
+    },
+    "flightType": {
+      "description": "DOMESTIC, INTERNATIONAL",
+      "type": "string"
+    },
+    "operatingAirline": {
+      "description": "operatingAirline",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name",
+          "type": "string"
+        },
+        "iataCode": {
+          "description": "iataCode",
+          "type": "string"
+        }
+      }
+    },
+    "aircraft": {
+      "description": "Aircraft brand",
+      "type": "string"
+    },
+    "additionalInfo": {
+      "description": "additionalInfo",
+      "type": "object",
+      "properties": {
+        "fields": {
+          "description": "fields",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
   "required": []
 }

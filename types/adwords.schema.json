@@ -1,4 +1,5 @@
 {
+  "id": "/adwords",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adwords",
   "description": "Adwords",

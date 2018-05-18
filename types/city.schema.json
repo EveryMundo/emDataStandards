@@ -1,4 +1,5 @@
 {
+  "id": "/city",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "City",
   "description": "City",

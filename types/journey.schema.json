@@ -1,4 +1,5 @@
 {
+  "id": "/journey",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey",
   "description": "Journey",
@@ -454,12 +455,10 @@
         }
       }
     },
-    "multicityFlight":{
+    "multicityFlight": {
       "description": "Flights between outbound and inbound flights for multi-city flights.",
       "type": "object",
-      "properties": {
-        
-      }
+      "properties": {}
     },
     "inboundFlight": {
       "description": "Inbound journey details",

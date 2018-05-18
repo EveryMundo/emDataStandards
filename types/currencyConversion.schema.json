@@ -1,4 +1,5 @@
 {
+  "id": "/currencyConversion",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "CurrencyConversion",
   "description": "CurrencyConversion",

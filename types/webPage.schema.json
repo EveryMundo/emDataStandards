@@ -1,4 +1,5 @@
 {
+  "id": "/webPage",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "WebPage",
   "description": "WebPage",
