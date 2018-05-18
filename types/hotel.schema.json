@@ -5,15 +5,15 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
+      "description": "Hotel name",
       "type": "string"
     },
     "group": {
-      "description": "group",
+      "description": "Hotel group where hotels are under the same management and belong to the same brand of hotels.",
       "type": "string"
     },
     "cityCode": {
-      "description": "cityCode",
+      "description": "ISO code for the city",
       "type": "string"
     },
     "priceSpecification": {
@@ -73,7 +73,7 @@
       }
     },
     "address": {
-      "description": "address",
+      "description": "Where the hotel is located",
       "type": "object",
       "properties": {
         "street": {
@@ -99,23 +99,23 @@
       }
     },
     "checkinTime": {
-      "description": "checkinTime",
+      "description": "The earliest someone may check into a lodging establishment",
       "type": "string"
     },
     "checkoutTime": {
-      "description": "checkoutTime",
+      "description": "The latest someone may check out of a lodging establishment",
       "type": "string"
     },
     "roomCount": {
-      "description": "roomCount",
+      "description": "Number of rooms",
       "type": "number"
     },
     "starRating": {
-      "description": "starRating",
+      "description": "An official rating for the hotel, e.g. from national associations or standards bodies: 5-star hotel",
       "type": "string"
     },
     "aggregateRating": {
-      "description": "aggregateRating",
+      "description": "Rating of hotel",
       "type": "object",
       "properties": {
         "author": {
@@ -141,11 +141,11 @@
       }
     },
     "image": {
-      "description": "image",
+      "description": "Image URL for the hotel",
       "type": "string"
     },
     "images": {
-      "description": "images",
+      "description": "Image URLs for the hotel",
       "type": "array"
     }
   },

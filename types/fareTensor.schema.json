@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {    
     "journeyType": {
-      "description": "journeyType",
+      "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
       "type": "string"
     },
     "cells": {

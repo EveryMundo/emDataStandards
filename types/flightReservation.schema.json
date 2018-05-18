@@ -5,27 +5,27 @@
   "type": "object",
   "properties": {
     "boardingGroup": {
-      "description": "boardingGroup",
+      "description": "The airline-specific indicator of boarding order",
       "type": "string"
     },
     "reservationStatus": {
-      "description": "reservationStatus",
+      "description": "IBE_SEARCH, IBE_FLIGHT_SEARCH, IBE_SUMMARY, IBE_PASSENGER_INFO, IBE_PASSENGER_ADDRESS, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
       "type": "string"
     },
     "passengerPriorityStatus": {
-      "description": "passengerPriorityStatus",
+      "description": "The priority status assigned to a passenger for security or boarding",
       "type": "string"
     },
     "passengerSequenceNumber": {
-      "description": "passengerSequenceNumber",
+      "description": "The passenger's sequence number as assigned by the airline",
       "type": "string"
     },
     "bookingTime": {
-      "description": "bookingTime",
+      "description": "The date and time the reservation was booked",
       "type": "string"
     },
     "modifiedTime": {
-      "description": "modifiedTime",
+      "description": "The date and time the reservation was modified",
       "type": "string"
     }
   },

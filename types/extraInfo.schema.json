@@ -5,15 +5,15 @@
   "type": "object",
   "properties": {
     "environment": {
-      "description": "environment",
+      "description": "DEVELOPMENT, PREPRODUCTION, PRODUCTION",
       "type": "string"
     },
     "indexStatus": {
-      "description": "indexStatus",
+      "description": "INDEX, FOLLOWNOINDEX, NOFOLLOW",
       "type": "string"
     },
     "additionalInfo": {
-      "description": "additionalInfo",
+      "description": "Additional information not previously included",
       "type": "object",
       "properties": {
         "name": {

@@ -4,27 +4,27 @@
   "properties": [
     {
       "price": {
-        "description": "price",
+        "description": "Price for the reservation or ticket",
         "type": "number"
       },
       "boundType": {
-        "description": "boundType",
+        "description": "OUTBOUND, INBOUND ",
         "type": "string"
       },
       "isSoldOut": {
-        "description": "isSoldOut",
+        "description": "Whether price is sold out",
         "type": "boolean"
       },
       "redemptionAmount": {
-        "description": "redemptionAmount",
+        "description": "Amount of reedemed miles",
         "type": "number"
       },
       "outboundDate": {
-        "description": "outboundDate",
+        "description": "Outbound date",
         "type": "string"
       },
       "inboundDate": {
-        "description": "inboundDate",
+        "description": "Inbound date",
         "type": "string"
       }
     }

@@ -5,15 +5,15 @@
   "type": "object",
   "properties": {
     "method": {
-      "description": "method",
+      "description": "Method of payment",
       "type": "string"
     },
     "cardName": {
-      "description": "cardName",
+      "description": "Name of credit card",
       "type": "string"
     },
     "isSaved": {
-      "description": "isSaved",
+      "description": "Whether the card was saved",
       "type": "boolean"
     }
   },

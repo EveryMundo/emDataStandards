@@ -9,11 +9,11 @@
       "type": "string"
     },
     "route": {
-      "description": "route",
+      "description": "Departure and arrival airport IATA codes for each bound",
       "type": "string"
     },
     "priceSpecification": {
-      "description": "priceSpecification",
+      "description": "Fare details",
       "type": "object",
       "properties": {
         "price": {
@@ -73,11 +73,11 @@
       }
     },
     "fareClassInput": {
-      "description": "fareClassInput",
+      "description": "Flight fare class",
       "type": "string"
     },
     "fareClass": {
-      "description": "fareClass",
+      "description": "ECONOMY, BUSINESS, FIRST",
       "type": "string"
     },
     "departureAirport": {
@@ -169,15 +169,15 @@
       "type": "string"
     },
     "estimatedDuration": {
-      "description": "estimatedDuration",
+      "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. (ISO 8601 duration format)",
       "type": "string"
     },
     "flightDistance": {
-      "description": "flightDistance",
+      "description": "The distance of the flight",
       "type": "string"
     },
     "departureCity": {
-      "description": "departureCity",
+      "description": "The city details where the flight originates",
       "type": "object",
       "properties": {
         "name": {
@@ -209,7 +209,7 @@
       }
     },
     "departureCountry": {
-      "description": "departureCountry",
+      "description": "The country details where the flight originates",
       "type": "object",
       "properties": {
         "name": {
@@ -241,7 +241,7 @@
       }
     },
     "arrivalCity": {
-      "description": "arrivalCity",
+      "description": "The city details where the flight terminates",
       "type": "object",
       "properties": {
         "name": {
@@ -273,7 +273,7 @@
       }
     },
     "arrivalCountry": {
-      "description": "arrivalCountry",
+      "description": "The country details where the flight terminates",
       "type": "object",
       "properties": {
         "name": {
@@ -305,11 +305,11 @@
       }
     },
     "flightType": {
-      "description": "flightType",
+      "description": "DOMESTIC, INTERNATIONAL",
       "type": "string"
     },
     "routeType": {
-      "description": "routeType",
+      "description": "NONSTOP, CONNECTING, CODESHARE",
       "type": "string"
     },
     "discount": {
@@ -395,7 +395,7 @@
       }
     },
     "additionalInfo": {
-      "description": "additionalInfo",
+      "description": "Additional information regarding the flight",
       "type": "object",
       "properties": {
         "fields": {

@@ -5,11 +5,11 @@
   "type": "object",
   "properties": {
     "identifier": {
-      "description": "identifier",
+      "description": "Identifier for defined errors",
       "type": "string"
     },
     "message": {
-      "description": "message",
+      "description": "Error message corresponding to identifier",
       "type": "string"
     }
   },

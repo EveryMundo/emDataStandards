@@ -3,35 +3,35 @@
   "type": "object",
   "properties": {
     "category": {
-      "description": "category",
+      "description": "MOBILE, TABLET, DESKTOP",
       "type": "string"
     },
     "screenResolution": {
-      "description": "screenResolution",
+      "description": "Specifies the screen resolution.",
       "type": "string"
     },
     "mobileBranding": {
-      "description": "mobileBranding",
+      "description": "Mobile manufacturer or branded name (e.g: Samsung, HTC, Verizon, T-Mobile, Apple)",
       "type": "string"
     },
     "mobileModel": {
-      "description": "mobileModel",
+      "description": "Mobile device model (e.g.: Nexus S, iPhone, iPad, SM-G935F)",
       "type": "string"
     },
     "mobileName": {
-      "description": "mobileName",
+      "description": "Mobile device brand and model (e.g. Galaxy S8, iPhone 6)",
       "type": "string"
     },
     "operatingSystem": {
-      "description": "operatingSystem",
+      "description": "Device operating system (e.g. Windows, Android, iOS)",
       "type": "string"
     },
     "operatingSystemVersion": {
-      "description": "operatingSystemVersion",
+      "description": "The version of the operating system",
       "type": "string"
     },
     "isMobileApp": {
-      "description": "isMobileApp",
+      "description": "True if mobile app is being used",
       "type": "boolean"
     }
   },

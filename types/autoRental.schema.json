@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "provider": {
-      "description": "provider",
+      "description": "Car rental provider",
       "type": "object",
       "properties": {
         "name": {
@@ -16,27 +16,27 @@
       }
     },
     "reservationId": {
-      "description": "reservationId",
+      "description": "Unique identifier for the reservation",
       "type": "string"
     },
     "reservationStatus": {
-      "description": "reservationStatus",
+      "description": "CONFIRMED, PENDING, CANCELLED",
       "type": "string"
     },
     "brand": {
-      "description": "brand",
+      "description": "Brand of the rental car",
       "type": "string"
     },
     "model": {
-      "description": "model",
+      "description": "Model of rental car",
       "type": "string"
     },
     "pickupLocation": {
-      "description": "pickupLocation",
+      "description": "Where a taxi will pick up a passenger or a rental car can be picked up",
       "type": "object",
       "properties": {
         "name": {
-          "description": "name",
+          "description": "Any name for the location",
           "type": "string"
         },
         "address": {
@@ -45,15 +45,15 @@
       }
     },
     "pickupTime": {
-      "description": "pickupTime",
+      "description": "When a taxi will pickup a passenger or a rental car can be picked up",
       "type": "string"
     },
     "dropoffLocation": {
-      "description": "dropoffLocation",
+      "description": "Where a rental car can be dropped off",
       "type": "object",
       "properties": {
         "name": {
-          "description": "name",
+          "description": "Any name for the location",
           "type": "string"
         },
         "address": {
@@ -85,11 +85,11 @@
       }
     },
     "dropoffTime": {
-      "description": "dropoffTime",
+      "description": "When a rental car can be dropped off",
       "type": "string"
     },
     "type": {
-      "description": "type",
+      "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
       "type": "string"
     }
   },

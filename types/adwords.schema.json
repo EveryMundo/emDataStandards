@@ -5,83 +5,83 @@
   "type": "object",
   "properties": {
     "accountName": {
-      "description": "accountName",
+      "description": "Adwords account name",
       "type": "string"
     },
     "accountId": {
-      "description": "accountId",
+      "description": "AdWords account unique identifier",
       "type": "string"
     },
     "campaignName": {
-      "description": "campaignName",
+      "description": "Adwords campaign name",
       "type": "string"
     },
     "campaignId": {
-      "description": "campaignId",
+      "description": "Adwords campaign unique identifier",
       "type": "string"
     },
     "campaignType": {
-      "description": "campaignType",
+      "description": "Adwords campaign type",
       "type": "string"
     },
     "specialCampaign": {
-      "description": "specialCampaign",
+      "description": "Identifier of special campaigns (ie., campaign test suffix)",
       "type": "string"
     },
     "adgroupName": {
-      "description": "adgroupName",
+      "description": "Adwords ad group name",
       "type": "string"
     },
     "adgroupId": {
-      "description": "adgroupId",
+      "description": "Adwords ad group unique identifier",
       "type": "string"
     },
     "geoTarget": {
-      "description": "geoTarget",
+      "description": "Location identifier for marketing purposes",
       "type": "string"
     },
     "market": {
-      "description": "market",
+      "description": "Country ISO code of market",
       "type": "string"
     },
     "languageIsoCode": {
-      "description": "languageIsoCode",
+      "description": "Adwords account language ISO code",
       "type": "string"
     },
     "routeType": {
-      "description": "routeType",
+      "description": "NONSTOP, CONNECTING, CODESHARE",
       "type": "string"
     },
     "locationType": {
-      "description": "locationType",
+      "description": "Route location type regarding origin and destination",
       "type": "string"
     },
     "keywordGroup": {
-      "description": "keywordGroup",
+      "description": "Adwords keyword group",
       "type": "string"
     },
     "keywordType": {
-      "description": "keywordType",
+      "description": "Adwords keyword type",
       "type": "string"
     },
     "matchType": {
-      "description": "matchType",
+      "description": "Adwords keyword match type",
       "type": "string"
     },
     "audience": {
-      "description": "audience",
+      "description": "Adwords audience",
       "type": "string"
     },
     "marketingNetwork": {
-      "description": "marketingNetwork",
+      "description": "Adwords network type",
       "type": "string"
     },
     "searchEngine": {
-      "description": "searchEngine",
+      "description": "GOOGLE, BING, YANDEX, YAHOO, BAIDU, NAVER, YAHOO JAPAN",
       "type": "string"
     },
     "inputKey": {
-      "description": "inputKey",
+      "description": "Single field including account name, campaign name, adgroup name, etc., delimited with '&&'",
       "type": "string"
     }
   },

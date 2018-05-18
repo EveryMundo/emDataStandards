@@ -5,11 +5,11 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
+      "description": "Name of program",
       "type": "string"
     },
     "provider": {
-      "description": "provider",
+      "description": "Name of the organization providing the Loyalty Program.",
       "type": "object",
       "properties": {
         "name": {
@@ -19,19 +19,19 @@
       }
     },
     "url": {
-      "description": "url",
+      "description": "Loyalty Program information URL.",
       "type": "string"
     },
     "certificateNumber": {
-      "description": "certificateNumber",
+      "description": "The loyalty redemption certificate number.",
       "type": "string"
     },
     "membershipLevel": {
-      "description": "membershipLevel",
+      "description": "Loyalty Program Membership Level",
       "type": "string"
     },
     "redemption": {
-      "description": "redemption",
+      "description": "Loyalty Program currency payment method.",
       "type": "object",
       "properties": {
         "unit": {
@@ -59,11 +59,11 @@
       }
     },
     "milesEarned": {
-      "description": "milesEarned",
+      "description": "Total earned miles",
       "type": "number"
     },
     "isLoggedIn": {
-      "description": "isLoggedIn",
+      "description": "Whether the user is logged in as Loyalty user or not in an airTRFX page",
       "type": "boolean"
     }
   },

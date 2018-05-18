@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {
     "brand": {
-      "description": "brand",
+      "description": "Travel insurance provider",
       "type": "string"
     },
     "name": {

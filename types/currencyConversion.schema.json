@@ -5,23 +5,23 @@
   "type": "object",
   "properties": {
     "requestTimestamp": {
-      "description": "requestTimestamp",
+      "description": "Date and time for the currency API request",
       "type": "string"
     },
     "localCurrency": {
-      "description": "localCurrency",
+      "description": "Currency code conversion from",
       "type": "string"
     },
     "isHistorical": {
-      "description": "isHistorical",
+      "description": "True if the data was queried as historical data rather than the latest one",
       "type": "boolean"
     },
     "exchangeRateDate": {
-      "description": "exchangeRateDate",
+      "description": "Date of rate value. If historical is false then it matches timestamp",
       "type": "string"
     },
     "exchangeRates": {
-      "description": "exchangeRates",
+      "description": "Currency codes conversion to and rate values",
       "type": "object",
       "properties": {
         "AED": {
@@ -35,15 +35,15 @@
       }
     },
     "localAmount": {
-      "description": "localAmount",
+      "description": "Amount to be converted",
       "type": "number"
     },
     "totalPriceUSD": {
-      "description": "totalPriceUSD",
+      "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc. in USD",
       "type": "number"
     },
     "exchangeRateUSD": {
-      "description": "exchangeRateUSD",
+      "description": "Rate value for conversion rate to USD",
       "type": "number"
     }
   },

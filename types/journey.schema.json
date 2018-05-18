@@ -35,7 +35,7 @@
       }
     },
     "fullRoute": {
-      "description": "fullRoute",
+      "description": "Full itinerary with connections including stop over",
       "type": "string"
     },
     "priceSpecification": {
@@ -157,7 +157,7 @@
       }
     },
     "outboundFlight": {
-      "description": "outboundFlight",
+      "description": "Outbound journey details",
       "type": "object",
       "properties": {
         "boundType": {
@@ -454,8 +454,15 @@
         }
       }
     },
+    "multicityFlight":{
+      "description": "Flights between outbound and inbound flights for multi-city flights.",
+      "type": "object",
+      "properties": {
+        
+      }
+    },
     "inboundFlight": {
-      "description": "inboundFlight",
+      "description": "Inbound journey details",
       "type": "object",
       "properties": {
         "boundType": {
@@ -753,7 +760,7 @@
       }
     },
     "departureDate": {
-      "description": "departureDate",
+      "description": "Expected departure date for the journey",
       "type": "string"
     },
     "departureWeekDay": {
@@ -761,7 +768,7 @@
       "type": "string"
     },
     "returnDate": {
-      "description": "returnDate",
+      "description": "Expected return date for the journey",
       "type": "string"
     },
     "returnWeekDay": {
@@ -769,23 +776,23 @@
       "type": "string"
     },
     "journeyType": {
-      "description": "journeyType",
+      "description": "Type of journey",
       "type": "string"
     },
     "isCodeShare": {
-      "description": "isCodeShare",
+      "description": "Whether the segment is codeshare",
       "type": "boolean"
     },
     "flightType": {
-      "description": "flightType",
+      "description": "Type of flight",
       "type": "string"
     },
     "segmentCount": {
-      "description": "segmentCount",
+      "description": "Amount of segments",
       "type": "number"
     },
     "flightCount": {
-      "description": "flightCount",
+      "description": "Amount of flights or legs",
       "type": "number"
     },
     "discount": {

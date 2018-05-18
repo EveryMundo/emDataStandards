@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {
     "count": {
-      "description": "count",
+      "description": "Total number of baggages",
       "type": "number"
     },
     "checkedBags": {
@@ -51,7 +51,7 @@
       }
     },
     "prepaidInd": {
-      "description": "prepaidInd",
+      "description": "When true, indicates the baggage is prepaid",
       "type": "boolean"
     }
   },

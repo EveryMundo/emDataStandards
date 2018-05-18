@@ -5,27 +5,27 @@
   "type": "object",
   "properties": {
     "street": {
-      "description": "street",
+      "description": "Street address name",
       "type": "string",
       "example": "Murgstr. 5"
     },
     "cityName": {
-      "description": "cityName",
+      "description": "city name",
       "type": "string",
       "example": "San Diego"
     },
     "regionCode": {
-      "description": "regionCode",
+      "description": "State identifier code",
       "type": "string",
       "example": "CA"
     },
     "postalCode": {
-      "description": "postalCode",
+      "description": "Postal code number",
       "type": "string",
       "example": "94043"
     },
     "countryCode": {
-      "description": "countryCode",
+      "description": "Country ISO code",
       "type": "string",
       "example": "US"
     }

@@ -5,39 +5,43 @@
   "type": "object",
   "properties": {
     "_id": {
-      "description": "_id",
+      "description": "Record unique identifier",
+      "type": "string"
+    },
+    "version": {
+      "description": "Version of the program that generated the record",
       "type": "string"
     },
     "__createdat": {
-      "description": "__createdat",
+      "description": "Record creation date",
       "type": "string"
     },
     "timeZone": {
-      "description": "timeZone",
+      "description": "Timezone of record creation",
       "type": "string"
     },
     "__v": {
-      "description": "__v",
+      "description": "Datacore version, same number we find on the table name in Redshift",
       "type": "number"
     },
     "farenetId": {
-      "description": "farenetId",
+      "description": "API specific field for back-reference: Farenet record unique identifier",
       "type": "string"
     },
     "trackingId": {
-      "description": "trackingId",
+      "description": "Unique identifier created through module interactions for event tracking",
       "type": "string"
     },
     "schemaVersion": {
-      "description": "schemaVersion",
+      "description": "Schema version of Data Standards",
       "type": "number"
     },
     "batchId": {
-      "description": "batchId",
+      "description": "Unique batch identifier",
       "type": "string"
     },
     "parserRegexId": {
-      "description": "parserRegexId",
+      "description": "ID of regex pattern that matched",
       "type": "string"
     }
   },
