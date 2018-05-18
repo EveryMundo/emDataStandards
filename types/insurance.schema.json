@@ -48,5 +48,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "InsuranceAgency",
+      "description": "InsuranceAgency",
+      "rel": "self",
+      "href": "/insuranceAgency",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

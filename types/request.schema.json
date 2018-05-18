@@ -177,5 +177,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Request",
+      "description": "Request",
+      "rel": "self",
+      "href": "/request",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

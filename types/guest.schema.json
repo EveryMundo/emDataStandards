@@ -17,5 +17,16 @@
       "type": "number"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Guest",
+      "rel": "self",
+      "href": "/guest",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

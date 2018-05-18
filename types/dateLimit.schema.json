@@ -14,5 +14,17 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "DateLimit",
+      "description": "DateLimit",
+      "rel": "self",
+      "href": "/dateLimit",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

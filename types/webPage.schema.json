@@ -38,5 +38,17 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "WebPage",
+      "description": "WebPage",
+      "rel": "self",
+      "href": "/webPage",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

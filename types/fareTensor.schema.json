@@ -17,5 +17,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "FlightTensor",
+      "description": "FlightTensor",
+      "rel": "self",
+      "href": "/flightTensor",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

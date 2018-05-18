@@ -30,5 +30,17 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "FlightReservation",
+      "description": "FlightReservation",
+      "rel": "self",
+      "href": "/flightReservation",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

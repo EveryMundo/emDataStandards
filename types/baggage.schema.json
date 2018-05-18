@@ -56,5 +56,17 @@
       "type": "boolean"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "BaggageAllowance",
+      "description": "BaggageAllowance",
+      "rel": "self",
+      "href": "/baggageAllowance",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

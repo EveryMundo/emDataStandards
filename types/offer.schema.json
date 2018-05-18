@@ -1077,5 +1077,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Offer",
+      "description": "Offer",
+      "rel": "self",
+      "href": "/offer",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

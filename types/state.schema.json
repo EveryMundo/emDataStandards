@@ -36,5 +36,17 @@
       "type": "array"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "State",
+      "description": "State",
+      "rel": "self",
+      "href": "/state",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

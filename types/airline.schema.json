@@ -22,5 +22,17 @@
       "type": "array"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Airline",
+      "description": "Airline",
+      "rel": "self",
+      "href": "/airline",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

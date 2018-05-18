@@ -26,5 +26,17 @@
       "type": "number"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Rating",
+      "description": "Rating",
+      "rel": "self",
+      "href": "/rating",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

@@ -31,5 +31,17 @@
       "example": "US"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "PostalAddress",
+      "description": "PostalAddress",
+      "rel": "self",
+      "href": "/postalAddress",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

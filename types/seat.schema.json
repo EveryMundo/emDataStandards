@@ -51,5 +51,16 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Seat",
+      "rel": "self",
+      "href": "/seat",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

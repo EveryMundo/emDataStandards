@@ -17,5 +17,16 @@
       "type": "boolean"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Theme",
+      "rel": "self",
+      "href": "/theme",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

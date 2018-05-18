@@ -596,5 +596,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "frontComponent",
+      "description": "frontComponent",
+      "rel": "self",
+      "href": "/frontComponent",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

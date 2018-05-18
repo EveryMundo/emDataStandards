@@ -68,5 +68,17 @@
       "type": "boolean"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "LoyaltyProgram",
+      "description": "LoyaltyProgram",
+      "rel": "self",
+      "href": "/loyaltyProgram",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

@@ -26,5 +26,17 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Discount",
+      "description": "Discount",
+      "rel": "self",
+      "href": "/discount",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

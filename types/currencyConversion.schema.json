@@ -48,5 +48,17 @@
       "type": "number"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "CurrencyConversion",
+      "description": "CurrencyConversion",
+      "rel": "self",
+      "href": "/currencyConversion",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

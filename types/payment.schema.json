@@ -18,5 +18,17 @@
       "type": "boolean"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Payment",
+      "description": "Payment",
+      "rel": "self",
+      "href": "/payment",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

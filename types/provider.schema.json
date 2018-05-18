@@ -10,5 +10,17 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Organization",
+      "description": "Organization",
+      "rel": "self",
+      "href": "/organization",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

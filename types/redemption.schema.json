@@ -28,5 +28,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Redemption",
+      "description": "Redemption",
+      "rel": "self",
+      "href": "/redemption",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }
