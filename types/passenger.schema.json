@@ -34,5 +34,17 @@
       "type": "number"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Passenger",
+      "description": "Passenger",
+      "rel": "self",
+      "href": "/passenger",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

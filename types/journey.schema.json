@@ -839,5 +839,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Journey",
+      "description": "Journey",
+      "rel": "self",
+      "href": "/journey",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

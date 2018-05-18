@@ -31,5 +31,16 @@
       }
     }
   ],
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Cells",
+      "rel": "self",
+      "href": "/cells",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

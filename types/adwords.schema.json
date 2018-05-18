@@ -86,5 +86,17 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Adwords",
+      "description": "Adwords",
+      "rel": "self",
+      "href": "/adwords",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

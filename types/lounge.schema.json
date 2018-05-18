@@ -49,5 +49,16 @@
       }
     }
   ],
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Lounge",
+      "rel": "self",
+      "href": "/lounge",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

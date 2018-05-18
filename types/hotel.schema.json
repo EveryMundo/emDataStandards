@@ -150,5 +150,17 @@
       "type": "array"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Hotel",
+      "description": "Hotel",
+      "rel": "self",
+      "href": "/hotel",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

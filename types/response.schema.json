@@ -248,5 +248,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Response",
+      "description": "Response",
+      "rel": "self",
+      "href": "/response",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

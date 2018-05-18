@@ -86,5 +86,17 @@
       "type": "number"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "FlexibleDate",
+      "description": "FlexibleDate",
+      "rel": "self",
+      "href": "/flexibleDate",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

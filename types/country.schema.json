@@ -36,5 +36,17 @@
       "type": "array"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Country",
+      "description": "Country",
+      "rel": "self",
+      "href": "/country",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

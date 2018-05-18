@@ -36,5 +36,17 @@
       "type": "array"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Region",
+      "description": "Region",
+      "rel": "self",
+      "href": "/region",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

@@ -80,5 +80,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "AirportParking",
+      "description": "AirportParking",
+      "rel": "self",
+      "href": "/airportParking",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

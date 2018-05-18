@@ -409,5 +409,17 @@
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Flight",
+      "description": "Flight",
+      "rel": "self",
+      "href": "/flight",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

@@ -37,5 +37,16 @@
       "type": "boolean"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Device",
+      "rel": "self",
+      "href": "/device",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

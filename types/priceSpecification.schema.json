@@ -50,5 +50,17 @@
       "type": "string"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "PriceSpecification",
+      "description": "PriceSpecification",
+      "rel": "self",
+      "href": "/priceSpecification",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

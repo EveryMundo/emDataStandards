@@ -36,5 +36,17 @@
       "type": "array"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Airport",
+      "description": "Airport",
+      "rel": "self",
+      "href": "/airport",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

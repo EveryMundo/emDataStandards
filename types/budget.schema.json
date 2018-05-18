@@ -14,5 +14,17 @@
       "type": "number"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Budget",
+      "description": "Budget",
+      "rel": "self",
+      "href": "/budget",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }
