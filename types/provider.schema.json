@@ -1,4 +1,5 @@
 {
+  "id": "/organization",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Organization",
   "description": "Organization",

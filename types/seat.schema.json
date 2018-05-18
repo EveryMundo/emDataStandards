@@ -1,5 +1,7 @@
 {
+  "id": "/seat",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Seat",
   "type": "object",
   "properties": {
     "rowNumber": {

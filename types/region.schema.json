@@ -1,4 +1,5 @@
 {
+  "id": "/region",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Region",
   "description": "Region",

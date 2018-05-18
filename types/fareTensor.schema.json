@@ -1,9 +1,10 @@
 {
+  "id": "/flightTensor",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlightTensor",
   "description": "FlightTensor",
   "type": "object",
-  "properties": {    
+  "properties": {
     "journeyType": {
       "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
       "type": "string"

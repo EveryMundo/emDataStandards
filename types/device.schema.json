@@ -1,5 +1,7 @@
 {
+  "id": "/device",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Device",
   "type": "object",
   "properties": {
     "category": {

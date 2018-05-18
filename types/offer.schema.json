@@ -1,4 +1,5 @@
 {
+  "id": "/offer",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Offer",
   "description": "Offer",

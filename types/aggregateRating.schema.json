@@ -1,4 +1,5 @@
 {
+  "id": "/rating",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Rating",
   "description": "Rating",

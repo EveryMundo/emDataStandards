@@ -1,5 +1,7 @@
 {
+  "id": "/guest",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Guest",
   "type": "object",
   "properties": {
     "count": {

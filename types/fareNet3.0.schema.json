@@ -1,4 +1,5 @@
 {
+  "id": "/journey",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey",
   "description": "Journey",

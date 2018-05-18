@@ -1,5 +1,7 @@
 {
+  "id": "/theme",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Theme",
   "type": "object",
   "properties": {
     "activity": {

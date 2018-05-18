@@ -1,4 +1,5 @@
 {
+  "id": "/flightReservation",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlightReservation",
   "description": "FlightReservation",

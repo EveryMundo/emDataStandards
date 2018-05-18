@@ -1,5 +1,7 @@
 {
+  "id": "/passengerDetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "PassengerDetails",
   "type": "array",
   "properties": {
     "category": {
