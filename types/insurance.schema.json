@@ -7,11 +7,13 @@
   "properties": {
     "brand": {
       "description": "Travel insurance provider",
-      "type": "string"
+      "type": "string",
+      "example": "Platinum Plan"
     },
     "name": {
       "description": "name",
-      "type": "string"
+      "type": "string",
+      "example": "AIG Travel Guard"
     },
     "priceSpecification": {
       "description": "priceSpecification",
@@ -45,6 +47,16 @@
           "description": "lastUpdatePriceTime",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "PriceSpecification",
+        "price": 234.21,
+        "totalPrice": 250.6,
+        "taxPrice": 16.39,
+        "currency": "USD",
+        "currencySymbol": "$",
+        "priceMarketId": "USD-US",
+        "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
       }
     }
   },

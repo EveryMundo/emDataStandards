@@ -6,15 +6,18 @@
   "properties": {
     "activity": {
       "description": "activity",
-      "type": "string"
+      "type": "string",
+      "example": "EUR"
     },
     "cityCode": {
       "description": "cityCode",
-      "type": "string"
+      "type": "string",
+      "example": "MIA"
     },
     "isRegion": {
       "description": "isRegion",
-      "type": "boolean"
+      "type": "boolean",
+      "example": true
     }
   },
   "required": [],

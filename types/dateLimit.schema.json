@@ -7,11 +7,13 @@
   "properties": {
     "earliestDate": {
       "description": "earliestDate",
-      "type": "string"
+      "type": "string",
+      "example": "2017-01-12"
     },
     "latestDate": {
       "description": "latestDate",
-      "type": "string"
+      "type": "string",
+      "example": "2017-01-25"
     }
   },
   "required": [],

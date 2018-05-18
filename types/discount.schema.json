@@ -7,23 +7,28 @@
   "properties": {
     "isDiscount": {
       "description": "Whether there is a promotion",
-      "type": "boolean"
+      "type": "boolean",
+      "example": true
     },
     "code": {
       "description": "Discount promotion code",
-      "type": "string"
+      "type": "string",
+      "example": "AFFBFAN"
     },
     "amount": {
       "description": "Discount amount applied to the price",
-      "type": "number"
+      "type": "number",
+      "example": 500
     },
     "percentage": {
       "description": "Discount percentage applied to the price",
-      "type": "number"
+      "type": "number",
+      "example": 0.5
     },
     "expirationDate": {
       "description": "Promotion expiration date",
-      "type": "string"
+      "type": "string",
+      "example": "2017-12-31"
     }
   },
   "required": [],

@@ -7,11 +7,13 @@
   "properties": {
     "name": {
       "description": "The name of the city",
-      "type": "string"
+      "type": "string",
+      "example": "Miami"
     },
     "cityCode": {
       "description": "ISO code for the city",
-      "type": "string"
+      "type": "string",
+      "example": "MIA"
     },
     "geo": {
       "description": "geo",
@@ -25,15 +27,25 @@
           "description": "The longitude of the city",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
       }
     },
     "image": {
       "description": "Image URL for the city",
-      "type": "string"
+      "type": "string",
+      "example": "miami.com/image.jpg"
     },
     "images": {
       "description": "Array of image URLs for the city",
-      "type": "array"
+      "type": "array",
+      "example": [
+        "miami.com/image.jpg",
+        "miami.com/image2.jpg"
+      ]
     }
   },
   "required": [],

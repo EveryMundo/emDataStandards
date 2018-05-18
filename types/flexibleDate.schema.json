@@ -7,11 +7,13 @@
   "properties": {
     "departureDate": {
       "description": "departureDate",
-      "type": "string"
+      "type": "string",
+      "example": "2017-12-07"
     },
     "departureDayInterval": {
       "description": "departureDayInterval",
-      "type": "number"
+      "type": "number",
+      "example": 3
     },
     "departureFlexibleDate": {
       "description": "departureFlexibleDate",
@@ -41,15 +43,25 @@
           "description": "plus3",
           "type": "string"
         }
+      },
+      "example": {
+        "minus3": "2017-12-04",
+        "minus2": "2017-12-05",
+        "minus1": "2017-12-06",
+        "plus1": "2017-12-08",
+        "plus2": "2017-12-09",
+        "plus3": "2017-12-10"
       }
     },
     "returnDate": {
       "description": "returnDate",
-      "type": "string"
+      "type": "string",
+      "example": "2017-12-17"
     },
     "returnDayInterval": {
       "description": "returnDayInterval",
-      "type": "number"
+      "type": "number",
+      "example": 3
     },
     "returnFlexibleDate": {
       "description": "returnFlexibleDate",
@@ -79,11 +91,20 @@
           "description": "plus3",
           "type": "string"
         }
+      },
+      "example": {
+        "minus3": "2017-12-14",
+        "minus2": "2017-12-15",
+        "minus1": "2017-12-16",
+        "plus1": "2017-12-18",
+        "plus2": "2017-12-19",
+        "plus3": "2017-12-20"
       }
     },
     "stayDuration": {
       "description": "stayDuration",
-      "type": "number"
+      "type": "number",
+      "example": 10
     }
   },
   "required": [],

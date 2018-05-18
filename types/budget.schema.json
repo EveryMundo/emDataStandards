@@ -7,11 +7,13 @@
   "properties": {
     "minimumAmount": {
       "description": "minimumAmount",
-      "type": "number"
+      "type": "number",
+      "example": 50
     },
     "maximumAmount": {
       "description": "maximumAmount",
-      "type": "number"
+      "type": "number",
+      "example": 300
     }
   },
   "required": [],

@@ -13,23 +13,31 @@
           "description": "name",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Organization",
+        "name": "Hertz"
       }
     },
     "reservationId": {
       "description": "Unique identifier for the reservation",
-      "type": "string"
+      "type": "string",
+      "example": "546323"
     },
     "reservationStatus": {
       "description": "CONFIRMED, PENDING, CANCELLED",
-      "type": "string"
+      "type": "string",
+      "example": "Confirmed"
     },
     "brand": {
       "description": "Brand of the rental car",
-      "type": "string"
+      "type": "string",
+      "example": "Honda"
     },
     "model": {
       "description": "Model of rental car",
-      "type": "string"
+      "type": "string",
+      "example": "Civic"
     },
     "pickupLocation": {
       "description": "Where a taxi will pick up a passenger or a rental car can be picked up",
@@ -42,11 +50,24 @@
         "address": {
           "$ref": "./address.schema.json"
         }
+      },
+      "example": {
+        "@type": "Place",
+        "name": "Hertz San Diego Airport",
+        "address": {
+          "@type": "PostalAddress",
+          "street": "1500 Orange Avenue",
+          "cityName": "San Diego",
+          "regionCode": "CA",
+          "postalCode": "94043",
+          "countryCode": "US"
+        }
       }
     },
     "pickupTime": {
       "description": "When a taxi will pickup a passenger or a rental car can be picked up",
-      "type": "string"
+      "type": "string",
+      "example": "2017-08-05T16:00:00-07:00"
     },
     "dropoffLocation": {
       "description": "Where a rental car can be dropped off",
@@ -82,15 +103,29 @@
             }
           }
         }
+      },
+      "example": {
+        "@type": "Place",
+        "name": "Hertz LAX",
+        "address": {
+          "@type": "PostalAddress",
+          "street": "1500 Orange Avenue",
+          "cityName": "San Diego",
+          "regionCode": "CA",
+          "postalCode": "94043",
+          "countryCode": "US"
+        }
       }
     },
     "dropoffTime": {
       "description": "When a rental car can be dropped off",
-      "type": "string"
+      "type": "string",
+      "example": "2017-08-06T20:00:00-07:00"
     },
     "type": {
       "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
-      "type": "string"
+      "type": "string",
+      "example": "SUV"
     }
   },
   "required": [],
@@ -101,7 +136,9 @@
       "rel": "self",
       "href": "/autoRental",
       "method": "GET",
-      "targetSchema": {"rel": "self"}
+      "targetSchema": {
+        "rel": "self"
+      }
     }
   ]
 }

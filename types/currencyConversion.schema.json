@@ -7,19 +7,23 @@
   "properties": {
     "requestTimestamp": {
       "description": "Date and time for the currency API request",
-      "type": "string"
+      "type": "string",
+      "example": "2017-05-30 22:49:47"
     },
     "localCurrency": {
       "description": "Currency code conversion from",
-      "type": "string"
+      "type": "string",
+      "example": "USD"
     },
     "isHistorical": {
       "description": "True if the data was queried as historical data rather than the latest one",
-      "type": "boolean"
+      "type": "boolean",
+      "example": false
     },
     "exchangeRateDate": {
       "description": "Date of rate value. If historical is false then it matches timestamp",
-      "type": "string"
+      "type": "string",
+      "example": "2017-05-30 00:00:00"
     },
     "exchangeRates": {
       "description": "Currency codes conversion to and rate values",
@@ -33,19 +37,27 @@
           "description": "AFN",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Rate",
+        "AED": 3.67,
+        "AFN": 68.35
       }
     },
     "localAmount": {
       "description": "Amount to be converted",
-      "type": "number"
+      "type": "number",
+      "example": 321
     },
     "totalPriceUSD": {
       "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc. in USD",
-      "type": "number"
+      "type": "number",
+      "example": 321
     },
     "exchangeRateUSD": {
       "description": "Rate value for conversion rate to USD",
-      "type": "number"
+      "type": "number",
+      "example": 1
     }
   },
   "required": [],

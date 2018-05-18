@@ -6,35 +6,43 @@
   "properties": {
     "category": {
       "description": "MOBILE, TABLET, DESKTOP",
-      "type": "string"
+      "type": "string",
+      "example": "Mobile"
     },
     "screenResolution": {
       "description": "Specifies the screen resolution.",
-      "type": "string"
+      "type": "string",
+      "example": "360x600"
     },
     "mobileBranding": {
       "description": "Mobile manufacturer or branded name (e.g: Samsung, HTC, Verizon, T-Mobile, Apple)",
-      "type": "string"
+      "type": "string",
+      "example": "Apple"
     },
     "mobileModel": {
       "description": "Mobile device model (e.g.: Nexus S, iPhone, iPad, SM-G935F)",
-      "type": "string"
+      "type": "string",
+      "example": "iPhone"
     },
     "mobileName": {
       "description": "Mobile device brand and model (e.g. Galaxy S8, iPhone 6)",
-      "type": "string"
+      "type": "string",
+      "example": "iPhone 6"
     },
     "operatingSystem": {
       "description": "Device operating system (e.g. Windows, Android, iOS)",
-      "type": "string"
+      "type": "string",
+      "example": "iOS"
     },
     "operatingSystemVersion": {
       "description": "The version of the operating system",
-      "type": "string"
+      "type": "string",
+      "example": "9"
     },
     "isMobileApp": {
       "description": "True if mobile app is being used",
-      "type": "boolean"
+      "type": "boolean",
+      "example": true
     }
   },
   "required": [],

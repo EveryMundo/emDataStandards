@@ -6,15 +6,18 @@
   "properties": {
     "count": {
       "description": "Amount of passengers for a specific category",
-      "type": "number"
+      "type": "number",
+      "example": 4
     },
     "adultCount": {
       "description": "Amount of adult passengers",
-      "type": "number"
+      "type": "number",
+      "example": 2
     },
     "childCount": {
       "description": "Amount of child passengers",
-      "type": "number"
+      "type": "number",
+      "example": 2
     }
   },
   "required": [],

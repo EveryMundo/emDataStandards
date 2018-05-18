@@ -7,11 +7,13 @@
   "properties": {
     "environment": {
       "description": "DEVELOPMENT, PREPRODUCTION, PRODUCTION",
-      "type": "string"
+      "type": "string",
+      "example": "Production"
     },
     "indexStatus": {
       "description": "INDEX, FOLLOWNOINDEX, NOFOLLOW",
-      "type": "string"
+      "type": "string",
+      "example": "Index"
     },
     "additionalInfo": {
       "description": "Additional information not previously included",
@@ -25,6 +27,11 @@
           "description": "value",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "ExtraInfo",
+        "name": "name",
+        "value": "value"
       }
     }
   },

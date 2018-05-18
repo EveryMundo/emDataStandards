@@ -7,83 +7,103 @@
   "properties": {
     "accountName": {
       "description": "Adwords account name",
-      "type": "string"
+      "type": "string",
+      "example": "A3_GR (en)"
     },
     "accountId": {
       "description": "AdWords account unique identifier",
-      "type": "string"
+      "type": "string",
+      "example": "399-781-8285"
     },
     "campaignName": {
       "description": "Adwords campaign name",
-      "type": "string"
+      "type": "string",
+      "example": "GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]"
     },
     "campaignId": {
       "description": "Adwords campaign unique identifier",
-      "type": "string"
+      "type": "string",
+      "example": "329-581-8275"
     },
     "campaignType": {
       "description": "Adwords campaign type",
-      "type": "string"
+      "type": "string",
+      "example": "NonBrand"
     },
     "specialCampaign": {
       "description": "Identifier of special campaigns (ie., campaign test suffix)",
-      "type": "string"
+      "type": "string",
+      "example": "Bidto1"
     },
     "adgroupName": {
       "description": "Adwords ad group name",
-      "type": "string"
+      "type": "string",
+      "example": "GS:en-GR_NB\\IR=MAN>XX>HER/BM"
     },
     "adgroupId": {
       "description": "Adwords ad group unique identifier",
-      "type": "string"
+      "type": "string",
+      "example": "439-456-1255"
     },
     "geoTarget": {
       "description": "Location identifier for marketing purposes",
-      "type": "string"
+      "type": "string",
+      "example": "Miami"
     },
     "market": {
       "description": "Country ISO code of market",
-      "type": "string"
+      "type": "string",
+      "example": "US"
     },
     "languageIsoCode": {
       "description": "Adwords account language ISO code",
-      "type": "string"
+      "type": "string",
+      "example": "en"
     },
     "routeType": {
       "description": "NONSTOP, CONNECTING, CODESHARE",
-      "type": "string"
+      "type": "string",
+      "example": "Connecting"
     },
     "locationType": {
       "description": "Route location type regarding origin and destination",
-      "type": "string"
+      "type": "string",
+      "example": "City>City"
     },
     "keywordGroup": {
       "description": "Adwords keyword group",
-      "type": "string"
+      "type": "string",
+      "example": "General"
     },
     "keywordType": {
       "description": "Adwords keyword type",
-      "type": "string"
+      "type": "string",
+      "example": "Route"
     },
     "matchType": {
       "description": "Adwords keyword match type",
-      "type": "string"
+      "type": "string",
+      "example": "BM"
     },
     "audience": {
       "description": "Adwords audience",
-      "type": "string"
+      "type": "string",
+      "example": "2-30 days"
     },
     "marketingNetwork": {
       "description": "Adwords network type",
-      "type": "string"
+      "type": "string",
+      "example": "Search"
     },
     "searchEngine": {
       "description": "GOOGLE, BING, YANDEX, YAHOO, BAIDU, NAVER, YAHOO JAPAN",
-      "type": "string"
+      "type": "string",
+      "example": "Google"
     },
     "inputKey": {
       "description": "Single field including account name, campaign name, adgroup name, etc., delimited with '&&'",
-      "type": "string"
+      "type": "string",
+      "example": "Google&&A3_GR (en)&&GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]&&GS:en-GR_NB\\IR=MAN>XX>HER/BM"
     }
   },
   "required": [],

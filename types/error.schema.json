@@ -7,11 +7,13 @@
   "properties": {
     "identifier": {
       "description": "Identifier for defined errors",
-      "type": "string"
+      "type": "string",
+      "example": "1"
     },
     "message": {
       "description": "Error message corresponding to identifier",
-      "type": "string"
+      "type": "string",
+      "example": "Conflicting arrival date"
     }
   },
   "required": [],

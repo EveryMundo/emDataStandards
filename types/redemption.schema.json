@@ -7,11 +7,13 @@
   "properties": {
     "unit": {
       "description": "MILES, BITCOIN, POINTS, OTHER",
-      "type": "string"
+      "type": "string",
+      "example": "miles"
     },
     "amount": {
       "description": "Amount of redemption units",
-      "type": "number"
+      "type": "number",
+      "example": 1500
     },
     "conversion": {
       "description": "Redemption amount/unit equivalents",
@@ -25,6 +27,10 @@
           "description": "ratio",
           "type": "number"
         }
+      },
+      "example": {
+        "amount": 1500,
+        "ratio": 0.5
       }
     }
   },

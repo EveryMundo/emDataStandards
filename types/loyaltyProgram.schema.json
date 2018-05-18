@@ -7,7 +7,8 @@
   "properties": {
     "name": {
       "description": "Name of program",
-      "type": "string"
+      "type": "string",
+      "example": "Miles and Bonus"
     },
     "provider": {
       "description": "Name of the organization providing the Loyalty Program.",
@@ -17,19 +18,26 @@
           "description": "name",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Organization",
+        "name": "Aegean Airlines"
       }
     },
     "url": {
       "description": "Loyalty Program information URL.",
-      "type": "string"
+      "type": "string",
+      "example": "https://www.britishairways.com/en-gb/executive-club/about-the-club"
     },
     "certificateNumber": {
       "description": "The loyalty redemption certificate number.",
-      "type": "string"
+      "type": "string",
+      "example": "12854712"
     },
     "membershipLevel": {
       "description": "Loyalty Program Membership Level",
-      "type": "string"
+      "type": "string",
+      "example": "Gold"
     },
     "redemption": {
       "description": "Loyalty Program currency payment method.",
@@ -57,15 +65,26 @@
             }
           }
         }
+      },
+      "example": {
+        "@type": "Redemption",
+        "unit": "miles",
+        "amount": 1500,
+        "conversion": {
+          "amount": 1500,
+          "ratio": 0.5
+        }
       }
     },
     "milesEarned": {
       "description": "Total earned miles",
-      "type": "number"
+      "type": "number",
+      "example": 1000
     },
     "isLoggedIn": {
       "description": "Whether the user is logged in as Loyalty user or not in an airTRFX page",
-      "type": "boolean"
+      "type": "boolean",
+      "example": false
     }
   },
   "required": [],
