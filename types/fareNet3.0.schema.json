@@ -1,43 +1,14 @@
 {
-  "id": "/journey",
+  "id": "/fareNet",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey",
   "description": "Journey",
   "type": "object",
   "properties": {
-    "flightReservation": {
-      "description": "flightReservation",
-      "type": "object",
-      "properties": {
-        "boardingGroup": {
-          "description": "boardingGroup",
-          "type": "string"
-        },
-        "reservationStatus": {
-          "description": "reservationStatus",
-          "type": "string"
-        },
-        "passengerPriorityStatus": {
-          "description": "passengerPriorityStatus",
-          "type": "string"
-        },
-        "passengerSequenceNumber": {
-          "description": "passengerSequenceNumber",
-          "type": "string"
-        },
-        "bookingTime": {
-          "description": "bookingTime",
-          "type": "string"
-        },
-        "modifiedTime": {
-          "description": "modifiedTime",
-          "type": "string"
-        }
-      }
-    },
     "fullRoute": {
       "description": "fullRoute",
-      "type": "string"
+      "type": "string",
+      "example": "SFO>MIA>JFK|JFK>SFO"
     },
     "priceSpecification": {
       "description": "priceSpecification",
@@ -45,39 +16,43 @@
       "properties": {
         "price": {
           "description": "price",
-          "type": "number"
+          "type": "number",
+          "example": 234.21
         },
         "totalPrice": {
           "description": "totalPrice",
-          "type": "number"
+          "type": "number",
+          "example": 250.6
         },
         "taxPrice": {
           "description": "taxPrice",
-          "type": "number"
+          "type": "number",
+          "example": 16.39
         },
         "fuelPrice": {
           "description": "fuelPrice",
-          "type": "number"
+          "type": "number",
+          "example": 57.89
         },
         "additionalFeesPrice": {
           "description": "additionalFeesPrice",
-          "type": "number"
+          "type": "number",
+          "example": 12
         },
         "currency": {
           "description": "currency",
-          "type": "string"
+          "type": "string",
+          "example": "USD"
         },
         "currencySymbol": {
           "description": "currencySymbol",
-          "type": "string"
+          "type": "string",
+          "example": "$"
         },
         "priceMarketId": {
           "description": "priceMarketId",
-          "type": "string"
-        },
-        "lastUpdatePriceTime": {
-          "description": "lastUpdatePriceTime",
-          "type": "string"
+          "type": "string",
+          "example": "USD-US"
         },
         "redemption": {
           "description": "redemption",
@@ -85,11 +60,13 @@
           "properties": {
             "unit": {
               "description": "unit",
-              "type": "string"
+              "type": "string",
+              "example": "MILES"
             },
             "amount": {
               "description": "amount",
-              "type": "number"
+              "type": "number",
+              "example": 1500
             }
           }
         }
@@ -99,7 +76,24 @@
       "description": "passengerDetails",
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "properties": {
+          "category": {
+            "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+            "type": "string",
+            "example": "senior65Plus"
+          },
+          "mappedTo": {
+            "description": "Field that passenger count is being mapped to under type Passenger",
+            "type": "string",
+            "example": "seniorCount"
+          },
+          "count": {
+            "description": "Amount of passengers for a specific category",
+            "type": "number",
+            "example": 2
+          }
+        }
       }
     },
     "passenger": {
@@ -108,31 +102,38 @@
       "properties": {
         "count": {
           "description": "count",
-          "type": "number"
+          "type": "number",
+          "example": 3
         },
         "seniorCount": {
           "description": "seniorCount",
-          "type": "number"
+          "type": "number",
+          "example": 2
         },
         "adultCount": {
           "description": "adultCount",
-          "type": "number"
+          "type": "number",
+          "example": 2
         },
         "youngAdultCount": {
           "description": "youngAdultCount",
-          "type": "number"
+          "type": "number",
+          "example": 0
         },
         "childCount": {
           "description": "childCount",
-          "type": "number"
+          "type": "number",
+          "example": 1
         },
         "infantInLapCount": {
           "description": "infantInLapCount",
-          "type": "number"
+          "type": "number",
+          "example": 0
         },
         "infantInSeatCount": {
           "description": "infantInSeatCount",
-          "type": "number"
+          "type": "number",
+          "example": 0
         }
       }
     },
@@ -140,22 +141,15 @@
       "description": "fareTensor",
       "type": "object",
       "properties": {
-        "route": {
-          "description": "route",
-          "type": "string"
-        },
         "journeyType": {
           "description": "journeyType",
-          "type": "string"
+          "type": "string",
+          "example": "ROUND_TRIP"
         },
         "cells": {
-          "description": "cells",
-          "type": "array",
-          "items": {
-            "type": "object"
+          "$ref": "./cells.schema.json"
           }
         }
-      }
     },
     "outboundFlight": {
       "description": "outboundFlight",
@@ -834,13 +828,13 @@
       }
     }
   },
-  "required": [],
+  "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger"],
   "links": [
     {
-      "title": "Journey",
-      "description": "Journey",
+      "title": "fareNet",
+      "description": "fareNet details",
       "rel": "self",
-      "href": "/journey",
+      "href": "/fareNet",
       "method": "GET",
       "targetSchema": {
         "rel": "self"
