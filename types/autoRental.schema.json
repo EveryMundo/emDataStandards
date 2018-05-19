@@ -27,7 +27,7 @@
     "reservationStatus": {
       "description": "CONFIRMED, PENDING, CANCELLED",
       "type": "string",
-      "example": "Confirmed"
+      "example": "CONFIRMED"
     },
     "brand": {
       "description": "Brand of the rental car",
@@ -55,12 +55,7 @@
         "@type": "Place",
         "name": "Hertz San Diego Airport",
         "address": {
-          "@type": "PostalAddress",
-          "street": "1500 Orange Avenue",
-          "cityName": "San Diego",
-          "regionCode": "CA",
-          "postalCode": "94043",
-          "countryCode": "US"
+          "$ref": "./address.schema.json"
         }
       }
     },
@@ -75,54 +70,20 @@
       "properties": {
         "name": {
           "description": "Any name for the location",
-          "type": "string"
+          "type": "string",
+          "example": "Hertz LAX"
         },
         "address": {
-          "description": "address",
-          "type": "object",
-          "properties": {
-            "street": {
-              "description": "street",
-              "type": "string"
-            },
-            "cityName": {
-              "description": "cityName",
-              "type": "string"
-            },
-            "regionCode": {
-              "description": "regionCode",
-              "type": "string"
-            },
-            "postalCode": {
-              "description": "postalCode",
-              "type": "string"
-            },
-            "countryCode": {
-              "description": "countryCode",
-              "type": "string"
-            }
+          "$ref": "./address.schema.json"
           }
         }
-      },
-      "example": {
-        "@type": "Place",
-        "name": "Hertz LAX",
-        "address": {
-          "@type": "PostalAddress",
-          "street": "1500 Orange Avenue",
-          "cityName": "San Diego",
-          "regionCode": "CA",
-          "postalCode": "94043",
-          "countryCode": "US"
-        }
-      }
     },
     "dropoffTime": {
       "description": "When a rental car can be dropped off",
       "type": "string",
       "example": "2017-08-06T20:00:00-07:00"
     },
-    "type": {
+    "carType": {
       "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
       "type": "string",
       "example": "SUV"
