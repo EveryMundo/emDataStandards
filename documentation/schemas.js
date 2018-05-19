@@ -25,7 +25,7 @@ export default fromJS([
   require('../types/discount.schema.json'),
   require('../types/error.schema.json'),
   require('../types/extraInfo.schema.json'),
-  require('../types/fareNet.schema.json'),
+  require('../types/fareNet3.0.schema.json'),
   require('../types/fareTensor.schema.json'),
   require('../types/flexibleDate.schema.json'),
   require('../types/flight.schema.json'),
