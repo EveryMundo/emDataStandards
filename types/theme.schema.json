@@ -5,17 +5,17 @@
   "type": "object",
   "properties": {
     "activity": {
-      "description": "activity",
+      "description": "Search recommendations by theme (SHO = Shopping, GOL = Golf, CUL = Culture, BEA = Beach, EUR = European)",
       "type": "string",
       "example": "EUR"
     },
     "cityCode": {
-      "description": "cityCode",
+      "description": "Search activity by city of interest",
       "type": "string",
       "example": "MIA"
     },
     "isRegion": {
-      "description": "isRegion",
+      "description": "Identifier if theme is a region",
       "type": "boolean",
       "example": true
     }
