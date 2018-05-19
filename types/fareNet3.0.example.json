@@ -16,7 +16,7 @@
       "priceMarketId": "USD-US",      
       "redemption": {
         "@type": "Redemption",
-        "unit": "miles",
+        "unit": "MILES",
         "amount": 1500
       }
     },
