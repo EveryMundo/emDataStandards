@@ -157,11 +157,13 @@
       "properties": {
         "boundType": {
           "description": "boundType",
-          "type": "string"
+          "type": "string",
+          "example": "OUTBOUND"
         },
         "route": {
           "description": "route",
-          "type": "string"
+          "type": "string",
+          "example": "SFO>JFK"
         },
         "priceSpecification": {
           "description": "priceSpecification",
