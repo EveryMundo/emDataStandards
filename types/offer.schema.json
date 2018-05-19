@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "offerId": {
-      "description": "offerId",
+      "description": "When multiple offer items are sent to FareNet each in their own file, use offer Id as an identifier that they belong to the same offer.",
       "type": "string",
       "example": "123456789Kat"
     },
