@@ -11,7 +11,7 @@
       "example": "Murgstr. 5"
     },
     "cityName": {
-      "description": "city name",
+      "description": "City name",
       "type": "string",
       "example": "San Diego"
     },
