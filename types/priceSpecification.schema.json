@@ -61,7 +61,7 @@
       "example": "2018-02-12T16:49:13.131+0000"
     }
   },
-  "required": [],
+  "required": ["price", "totalPrice", "taxprice", "currency"],
   "links": [
     {
       "title": "PriceSpecification",

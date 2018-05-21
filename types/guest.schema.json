@@ -20,7 +20,7 @@
       "example": 2
     }
   },
-  "required": [],
+  "required": ["count"],
   "links": [
     {
       "title": "Guest",

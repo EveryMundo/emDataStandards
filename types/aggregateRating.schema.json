@@ -31,7 +31,7 @@
       "example": 11
     }
   },
-  "required": [],
+  "required": ["author", "ratingValue"],
   "links": [
     {
       "title": "Rating",

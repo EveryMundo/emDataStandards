@@ -1824,7 +1824,7 @@
       }
     }
   },
-  "required": [],
+  "required": ["offerId", "webPage", "device", "database"],
   "links": [
     {
       "title": "Offer",

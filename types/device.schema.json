@@ -2,6 +2,7 @@
   "id": "/device",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Device",
+  "description": "Device information",
   "type": "object",
   "properties": {
     "category": {
@@ -45,7 +46,7 @@
       "example": true
     }
   },
-  "required": [],
+  "required": ["category", "screenResolution", "operatingSystem"],
   "links": [
     {
       "title": "Device",

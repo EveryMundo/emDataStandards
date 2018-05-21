@@ -11,7 +11,7 @@
       "example": "Hertz"
     }
   },
-  "required": [],
+  "required": ["name"],
   "links": [
     {
       "title": "Organization",

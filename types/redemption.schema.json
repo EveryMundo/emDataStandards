@@ -34,7 +34,7 @@
       }
     }
   },
-  "required": [],
+  "required": ["unit", "amount"],
   "links": [
     {
       "title": "Redemption",

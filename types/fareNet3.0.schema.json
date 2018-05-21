@@ -1,840 +1,843 @@
 {
   "id": "/fareNet",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Journey",
-  "description": "Journey",
+  "title": "fareNet3.0",
+  "description": "fareNet 3.0 includes journey only",
   "type": "object",
   "properties": {
-    "fullRoute": {
-      "description": "fullRoute",
-      "type": "string",
-      "example": "SFO>MIA>JFK|JFK>SFO"
-    },
-    "priceSpecification": {
-      "description": "priceSpecification",
+    "journey": {
+      "description": "Journey",
       "type": "object",
       "properties": {
-        "price": {
-          "description": "price",
-          "type": "number",
-          "example": 234.21
-        },
-        "totalPrice": {
-          "description": "totalPrice",
-          "type": "number",
-          "example": 250.6
-        },
-        "taxPrice": {
-          "description": "taxPrice",
-          "type": "number",
-          "example": 16.39
-        },
-        "fuelPrice": {
-          "description": "fuelPrice",
-          "type": "number",
-          "example": 57.89
-        },
-        "additionalFeesPrice": {
-          "description": "additionalFeesPrice",
-          "type": "number",
-          "example": 12
-        },
-        "currency": {
-          "description": "currency",
+        "fullRoute": {
+          "description": "fullRoute",
           "type": "string",
-          "example": "USD"
+          "example": "SFO>MIA>JFK|JFK>SFO"
         },
-        "currencySymbol": {
-          "description": "currencySymbol",
-          "type": "string",
-          "example": "$"
-        },
-        "priceMarketId": {
-          "description": "priceMarketId",
-          "type": "string",
-          "example": "USD-US"
-        },
-        "redemption": {
-          "description": "redemption",
+        "priceSpecification": {
+          "description": "priceSpecification",
           "type": "object",
           "properties": {
-            "unit": {
-              "description": "unit",
-              "type": "string",
-              "example": "MILES"
-            },
-            "amount": {
-              "description": "amount",
+            "price": {
+              "description": "price",
               "type": "number",
-              "example": 1500
+              "example": 234.21
+            },
+            "totalPrice": {
+              "description": "totalPrice",
+              "type": "number",
+              "example": 250.6
+            },
+            "taxPrice": {
+              "description": "taxPrice",
+              "type": "number",
+              "example": 16.39
+            },
+            "fuelPrice": {
+              "description": "fuelPrice",
+              "type": "number",
+              "example": 57.89
+            },
+            "additionalFeesPrice": {
+              "description": "additionalFeesPrice",
+              "type": "number",
+              "example": 12
+            },
+            "currency": {
+              "description": "currency",
+              "type": "string",
+              "example": "USD"
+            },
+            "currencySymbol": {
+              "description": "currencySymbol",
+              "type": "string",
+              "example": "$"
+            },
+            "priceMarketId": {
+              "description": "priceMarketId",
+              "type": "string",
+              "example": "USD-US"
+            },
+            "redemption": {
+              "description": "redemption",
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "description": "unit",
+                  "type": "string",
+                  "example": "MILES"
+                },
+                "amount": {
+                  "description": "amount",
+                  "type": "number",
+                  "example": 1500
+                }
+              }
             }
           }
-        }
-      }
-    },
-    "passengerDetails": {
-      "description": "passengerDetails",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "category": {
-            "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
-            "type": "string",
-            "example": "senior65Plus"
-          },
-          "mappedTo": {
-            "description": "Field that passenger count is being mapped to under type Passenger",
-            "type": "string",
-            "example": "seniorCount"
-          },
-          "count": {
-            "description": "Amount of passengers for a specific category",
-            "type": "number",
-            "example": 2
+        },
+        "passengerDetails": {
+          "description": "passengerDetails",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+                "type": "string",
+                "example": "senior65Plus"
+              },
+              "mappedTo": {
+                "description": "Field that passenger count is being mapped to under type Passenger",
+                "type": "string",
+                "example": "seniorCount"
+              },
+              "count": {
+                "description": "Amount of passengers for a specific category",
+                "type": "number",
+                "example": 2
+              }
+            }
           }
-        }
-      }
-    },
-    "passenger": {
-      "description": "passenger",
-      "type": "object",
-      "properties": {
-        "count": {
-          "description": "count",
-          "type": "number",
-          "example": 3
         },
-        "seniorCount": {
-          "description": "seniorCount",
-          "type": "number",
-          "example": 2
+        "passenger": {
+          "description": "passenger",
+          "type": "object",
+          "properties": {
+            "count": {
+              "description": "count",
+              "type": "number",
+              "example": 3
+            },
+            "seniorCount": {
+              "description": "seniorCount",
+              "type": "number",
+              "example": 2
+            },
+            "adultCount": {
+              "description": "adultCount",
+              "type": "number",
+              "example": 0
+            },
+            "youngAdultCount": {
+              "description": "youngAdultCount",
+              "type": "number",
+              "example": 0
+            },
+            "childCount": {
+              "description": "childCount",
+              "type": "number",
+              "example": 0
+            },
+            "infantInLapCount": {
+              "description": "infantInLapCount",
+              "type": "number",
+              "example": 0
+            },
+            "infantInSeatCount": {
+              "description": "infantInSeatCount",
+              "type": "number",
+              "example": 0
+            }
+          }
         },
-        "adultCount": {
-          "description": "adultCount",
-          "type": "number",
-          "example": 2
+        "fareTensor": {
+          "description": "fareTensor",
+          "type": "object",
+          "properties": {
+            "journeyType": {
+              "description": "journeyType",
+              "type": "string",
+              "example": "ROUND_TRIP"
+            },
+            "cells": {
+              "$ref": "./cells.schema.json"
+              }
+            }
         },
-        "youngAdultCount": {
-          "description": "youngAdultCount",
-          "type": "number",
-          "example": 0
+        "outboundFlight": {
+          "description": "outboundFlight",
+          "type": "object",
+          "properties": {
+            "boundType": {
+              "description": "boundType",
+              "type": "string",
+              "example": "OUTBOUND"
+            },
+            "route": {
+              "description": "route",
+              "type": "string",
+              "example": "SFO>JFK"
+            },
+            "priceSpecification": {
+              "description": "priceSpecification",
+              "type": "object",
+              "properties": {
+                "price": {
+                  "description": "price",
+                  "type": "number",
+                  "example": 750.12
+                },
+                "totalPrice": {
+                  "description": "totalPrice",
+                  "type": "number",
+                  "example": 825.51
+                },
+                "taxPrice": {
+                  "description": "taxPrice",
+                  "type": "number",
+                  "example": 75.39
+                }
+              }
+            },
+            "fareClassInput": {
+              "description": "fareClassInput",
+              "type": "string",
+              "example": "Economy"
+            },
+            "fareClass": {
+              "description": "fareClass",
+              "type": "string",
+              "example": "Economy"
+            },
+            "departureAirportIataCode": {
+              "description": "departureAirportIataCode",
+              "type": "string",
+              "example": "SFO"
+            },
+            "arrivalAirportIataCode": {
+              "description": "arrivalAirportIataCode",
+              "type": "string",
+              "example": "JFK"
+            },
+            "departureDate": {
+              "description": "Departure Date",
+              "type": "string",
+              "example": "2017-12-07"
+            },
+            "estimatedDuration": {
+              "description": "estimatedDuration",
+              "type": "string",
+              "example": "PT9H45M"
+            },
+            "availableSeatsCount": {
+              "description": "availableSeatsCount",
+              "type": "string",
+              "example": "9+"
+            },
+            "legs": {
+              "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
+              "type": "array",
+              "properties": {
+                "flightNumber": {
+                  "description": "flightNumber",
+                  "type": "string",
+                  "example": "EM110"
+                },
+                "route": {
+                  "description": "route",
+                  "type": "string",
+                  "route": "SFO>MIA"
+                },
+                "departureAirport": {
+                  "description": "departureAirport",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "San Francisco Airport"
+                    },
+                    "iataCode": {
+                      "description": "iataCode",
+                      "type": "string",
+                      "example": "SFO"
+                    }
+                  }
+                },
+                "departureTime": {
+                  "description": "departureTime",
+                  "type": "string",
+                  "example": "2027-03-04T06:35:00-08:00"
+                },
+                "arrivalAirport": {
+                  "description": "arrivalAirport",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "Miami International Airport"
+                    },
+                    "iataCode": {
+                      "description": "iataCode",
+                      "type": "string",
+                      "example": "MIA"
+                    }
+                  }
+                },
+                "arrivalTime": {
+                  "description": "arrivalTime",
+                  "type": "string",
+                  "example": "2027-03-04T13:35:00-08:00"
+                },
+                "estimatedDuration": {
+                  "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+                  "type": "string",
+                  "example": "PT6H30M"
+                },
+                "departureCity": {
+                  "description": "departureCity",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "San Francisco"
+                    },
+                    "cityCode": {
+                      "description": "cityCode",
+                      "type": "string",
+                      "example": "SFO"
+                    }
+                  }
+                },
+                "departureCountry": {
+                  "description": "departureCountry",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "United States"
+                    },
+                    "isoCode": {
+                      "description": "isoCode",
+                      "type": "string",
+                      "example": "US"
+                    }
+                  }
+                },
+                "arrivalCity": {
+                  "description": "arrivalCity",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "Miami"
+                    },
+                    "cityCode": {
+                      "description": "cityCode",
+                      "type": "string",
+                      "example": "MIA"
+                    }
+                  }
+                },
+                "arrivalCountry": {
+                  "description": "arrivalCountry",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "United States"
+                    },
+                    "isoCode": {
+                      "description": "isoCode",
+                      "type": "string",
+                      "example": "US"
+                    }
+                  }
+                },
+                "flightType": {
+                  "description": "DOMESTIC, INTERNATIONAL",
+                  "type": "string",
+                  "example": "DOMESTIC"
+                },
+                "operatingAirline": {
+                  "description": "operatingAirline",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "EveryMundo"
+                    },
+                    "iataCode": {
+                      "description": "iataCode",
+                      "type": "string",
+                      "example": "EM"
+                    }
+                  }
+                },
+                "aircraft": {
+                  "description": "Aircraft brand",
+                  "type": "string",
+                  "example": "Boeing 747"
+                },
+                "additionalInfo": {
+                  "description": "additionalInfo",
+                  "type": "object",
+                  "properties": {
+                    "fields": {
+                      "description": "fields",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "description": "",
+                            "type": "string",
+                            "example": "classOfService"
+                          },
+                          "value": {
+                            "description": "",
+                            "type": "string",
+                            "example": "COACH_EC"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              }
+            },
+            "departureCity": {
+              "description": "departureCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "San Francisco"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "SFO"
+                }
+              }
+            },
+            "departureCountry": {
+              "description": "departureCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "arrivalCity": {
+              "description": "arrivalCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "New York"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "NYC"
+                }
+              }
+            },
+            "arrivalCountry": {
+              "description": "arrivalCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "flightType": {
+              "description": "flightType",
+              "type": "string",
+              "example": "DOMESTIC"
+            },
+            "routeType": {
+              "description": "routeType",
+              "type": "string",
+              "example": "CONNECTING"
+            },
+            "discount": {
+              "$ref": "./discount.schema.json"
+            },
+            "additionalInfo": {
+              "description": "additionalInfo",
+              "type": "object",
+              "properties": {
+                "fields": {
+                  "description": "fields",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "description": "",
+                        "type": "string",
+                        "example": "classOfService"
+                      },
+                      "value": {
+                        "description": "",
+                        "type": "string",
+                        "example": "COACH_EC"
+                      }
+                    }
+                  }
+                }
+              }
+            }
         },
-        "childCount": {
-          "description": "childCount",
-          "type": "number",
-          "example": 1
+        "inboundFlight": {
+          "description": "inboundFlight",
+          "type": "object",
+          "properties": {
+            "boundType": {
+              "description": "boundType",
+              "type": "string",
+              "example": "INBOUND"
+            },
+            "route": {
+              "description": "route",
+              "type": "string",
+              "example": "JFK>SFO"
+            },
+            "priceSpecification": {
+              "description": "priceSpecification",
+              "type": "object",
+              "properties": {
+                "price": {
+                  "description": "price",
+                  "type": "number",
+                  "example": 750.12
+                },
+                "totalPrice": {
+                  "description": "totalPrice",
+                  "type": "number",
+                  "example": 825.51
+                },
+                "taxPrice": {
+                  "description": "taxPrice",
+                  "type": "number",
+                  "example": 75.39
+                }
+              }
+            },
+            "fareClassInput": {
+              "description": "fareClassInput",
+              "type": "string",
+              "example": "Economy"
+            },
+            "fareClass": {
+              "description": "fareClass",
+              "type": "string",
+              "example": "Economy"
+            },
+            "departureAirportIataCode": {
+              "description": "departureAirportIataCode",
+              "type": "string",
+              "example": "JFK"
+            },
+            "arrivalAirportIataCode": {
+              "description": "arrivalAirportIataCode",
+              "type": "string",
+              "example": "SFO"
+            },
+            "departureDate": {
+              "description": "Departure Date",
+              "type": "string",
+              "example": "2017-12-10"
+            },
+            "estimatedDuration": {
+              "description": "estimatedDuration",
+              "type": "string",
+              "example": "PT9H45M"
+            },
+            "availableSeatsCount": {
+              "description": "availableSeatsCount",
+              "type": "string",
+              "example": "9+"
+            },
+            "legs": {
+              "description": "legs",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "departureCity": {
+              "description": "departureCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "New York"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "NYC"
+                }
+              }
+            },
+            "departureCountry": {
+              "description": "departureCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "arrivalCity": {
+              "description": "arrivalCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "San Francisco"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "SFO"
+                }
+              }
+            },
+            "arrivalCountry": {
+              "description": "arrivalCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "flightType": {
+              "description": "flightType",
+              "type": "string",
+              "example": "DOMESTIC"
+            },
+            "routeType": {
+              "description": "routeType",
+              "type": "string",
+              "example": "NONSTOP"
+            },
+            "discount": {
+              "$ref": "./discount.schema.json"
+            },
+            "additionalInfo": {
+                  "description": "additionalInfo",
+                  "type": "object",
+                  "properties": {
+                    "fields": {
+                      "description": "fields",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "description": "",
+                            "type": "string",
+                            "example": "classOfService"
+                          },
+                          "value": {
+                            "description": "",
+                            "type": "string",
+                            "example": "COACH_EC"
+                          }
+                        }
+                      }
+                    }
+                  }
+            }
+          }
         },
-        "infantInLapCount": {
-          "description": "infantInLapCount",
-          "type": "number",
-          "example": 0
+        "departureDate": {
+          "description": "departureDate",
+          "type": "string",
+          "example": "2017-12-07"
         },
-        "infantInSeatCount": {
-          "description": "infantInSeatCount",
-          "type": "number",
-          "example": 0
-        }
-      }
-    },
-    "fareTensor": {
-      "description": "fareTensor",
-      "type": "object",
-      "properties": {
+        "returnDate": {
+          "description": "returnDate",
+          "type": "string",
+          "example": "2017-12-10"
+        },
         "journeyType": {
           "description": "journeyType",
           "type": "string",
           "example": "ROUND_TRIP"
         },
-        "cells": {
-          "$ref": "./cells.schema.json"
-          }
-        }
-    },
-    "outboundFlight": {
-      "description": "outboundFlight",
-      "type": "object",
-      "properties": {
-        "boundType": {
-          "description": "boundType",
-          "type": "string",
-          "example": "OUTBOUND"
-        },
-        "route": {
-          "description": "route",
-          "type": "string",
-          "example": "SFO>JFK"
-        },
-        "priceSpecification": {
-          "description": "priceSpecification",
-          "type": "object",
-          "properties": {
-            "price": {
-              "description": "price",
-              "type": "number"
-            },
-            "totalPrice": {
-              "description": "totalPrice",
-              "type": "number"
-            },
-            "taxPrice": {
-              "description": "taxPrice",
-              "type": "number"
-            }
-          }
-        },
-        "fareClassInput": {
-          "description": "fareClassInput",
-          "type": "string"
-        },
-        "fareClass": {
-          "description": "fareClass",
-          "type": "string"
-        },
-        "departureAirportIataCode": {
-          "description": "departureAirportIataCode",
-          "type": "string"
-        },
-        "arrivalAirportIataCode": {
-          "description": "arrivalAirportIataCode",
-          "type": "string"
-        },
-        "estimatedDuration": {
-          "description": "estimatedDuration",
-          "type": "string"
-        },
-        "flightDistance": {
-          "description": "flightDistance",
-          "type": "string"
-        },
-        "availableSeatsCount": {
-          "description": "availableSeatsCount",
-          "type": "string"
-        },
-        "legs": {
-          "description": "legs",
-          "type": "array",
-          "items": {
-            "type": "object"
-          }
-        },
-        "departureCity": {
-          "description": "departureCity",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "cityCode": {
-              "description": "cityCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
-        },
-        "departureCountry": {
-          "description": "departureCountry",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "isoCode": {
-              "description": "isoCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
-        },
-        "arrivalCity": {
-          "description": "arrivalCity",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "cityCode": {
-              "description": "cityCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
-        },
-        "arrivalCountry": {
-          "description": "arrivalCountry",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "isoCode": {
-              "description": "isoCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
+        "isCodeShare": {
+          "description": "isCodeShare",
+          "type": "boolean",
+          "example": true
         },
         "flightType": {
           "description": "flightType",
-          "type": "string"
+          "type": "string",
+          "example": "DOMESTIC"
         },
-        "routeType": {
-          "description": "routeType",
-          "type": "string"
+        "segmentCount": {
+          "description": "segmentCount",
+          "type": "number",
+          "example": 2
         },
-        "discount": {
-          "description": "discount",
-          "type": "object",
-          "properties": {
-            "isDiscount": {
-              "description": "isDiscount",
-              "type": "boolean"
-            },
-            "code": {
-              "description": "code",
-              "type": "string"
-            },
-            "amount": {
-              "description": "amount",
-              "type": "number"
-            },
-            "percentage": {
-              "description": "percentage",
-              "type": "number"
-            },
-            "expirationDate": {
-              "description": "expirationDate",
-              "type": "string"
-            }
-          }
-        },
-        "baggage": {
-          "description": "baggage",
-          "type": "object",
-          "properties": {
-            "count": {
-              "description": "count",
-              "type": "number"
-            },
-            "checkedBags": {
-              "description": "checkedBags",
-              "type": "number"
-            },
-            "carryOnBags": {
-              "description": "carryOnBags",
-              "type": "number"
-            },
-            "priceSpecification": {
-              "description": "priceSpecification",
-              "type": "object",
-              "properties": {
-                "price": {
-                  "description": "price",
-                  "type": "number"
-                },
-                "totalPrice": {
-                  "description": "totalPrice",
-                  "type": "number"
-                },
-                "taxPrice": {
-                  "description": "taxPrice",
-                  "type": "number"
-                },
-                "currency": {
-                  "description": "currency",
-                  "type": "string"
-                },
-                "currencySymbol": {
-                  "description": "currencySymbol",
-                  "type": "string"
-                },
-                "priceMarketId": {
-                  "description": "priceMarketId",
-                  "type": "string"
-                },
-                "lastUpdatePriceTime": {
-                  "description": "lastUpdatePriceTime",
-                  "type": "string"
-                }
-              }
-            },
-            "prepaidInd": {
-              "description": "prepaidInd",
-              "type": "boolean"
-            }
-          }
-        },
-        "additionalInfo": {
-          "description": "additionalInfo",
-          "type": "object",
-          "properties": {
-            "fields": {
-              "description": "fields",
-              "type": "array",
-              "items": {
-                "type": "object"
-              }
-            }
-          }
-        }
-      }
-    },
-    "inboundFlight": {
-      "description": "inboundFlight",
-      "type": "object",
-      "properties": {
-        "boundType": {
-          "description": "boundType",
-          "type": "string"
-        },
-        "route": {
-          "description": "route",
-          "type": "string"
-        },
-        "priceSpecification": {
-          "description": "priceSpecification",
-          "type": "object",
-          "properties": {
-            "price": {
-              "description": "price",
-              "type": "number"
-            },
-            "totalPrice": {
-              "description": "totalPrice",
-              "type": "number"
-            },
-            "taxPrice": {
-              "description": "taxPrice",
-              "type": "number"
-            }
-          }
-        },
-        "fareClassInput": {
-          "description": "fareClassInput",
-          "type": "string"
-        },
-        "fareClass": {
-          "description": "fareClass",
-          "type": "string"
-        },
-        "departureAirportIataCode": {
-          "description": "departureAirportIataCode",
-          "type": "string"
-        },
-        "arrivalAirportIataCode": {
-          "description": "arrivalAirportIataCode",
-          "type": "string"
-        },
-        "estimatedDuration": {
-          "description": "estimatedDuration",
-          "type": "string"
-        },
-        "flightDistance": {
-          "description": "flightDistance",
-          "type": "string"
-        },
-        "availableSeatsCount": {
-          "description": "availableSeatsCount",
-          "type": "string"
-        },
-        "legs": {
-          "description": "legs",
-          "type": "array",
-          "items": {
-            "type": "object"
-          }
-        },
-        "departureCity": {
-          "description": "departureCity",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "cityCode": {
-              "description": "cityCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
-        },
-        "departureCountry": {
-          "description": "departureCountry",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "isoCode": {
-              "description": "isoCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
-        },
-        "arrivalCity": {
-          "description": "arrivalCity",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "cityCode": {
-              "description": "cityCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
-        },
-        "arrivalCountry": {
-          "description": "arrivalCountry",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string"
-            },
-            "isoCode": {
-              "description": "isoCode",
-              "type": "string"
-            },
-            "geo": {
-              "description": "geo",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "description": "latitude",
-                  "type": "number"
-                },
-                "longitude": {
-                  "description": "longitude",
-                  "type": "number"
-                }
-              }
-            },
-            "image": {
-              "description": "image",
-              "type": "string"
-            }
-          }
-        },
-        "flightType": {
-          "description": "flightType",
-          "type": "string"
-        },
-        "routeType": {
-          "description": "routeType",
-          "type": "string"
+        "flightCount": {
+          "description": "flightCount",
+          "type": "number",
+          "example": 3
         },
         "discount": {
-          "description": "discount",
-          "type": "object",
-          "properties": {
-            "isDiscount": {
-              "description": "isDiscount",
-              "type": "boolean"
-            },
-            "code": {
-              "description": "code",
-              "type": "string"
-            },
-            "amount": {
-              "description": "amount",
-              "type": "number"
-            },
-            "percentage": {
-              "description": "percentage",
-              "type": "number"
-            },
-            "expirationDate": {
-              "description": "expirationDate",
-              "type": "string"
-            }
-          }
+          "$ref": "./discount.schema.json"
         },
-        "baggage": {
-          "description": "baggage",
+        "airline": {
+          "description": "airline",
           "type": "object",
           "properties": {
-            "count": {
-              "description": "count",
-              "type": "number"
+            "name": {
+              "description": "name",
+              "type": "string",
+              "example": "EveryMundo"
             },
-            "checkedBags": {
-              "description": "checkedBags",
-              "type": "number"
-            },
-            "carryOnBags": {
-              "description": "carryOnBags",
-              "type": "number"
-            },
-            "priceSpecification": {
-              "description": "priceSpecification",
-              "type": "object",
-              "properties": {
-                "price": {
-                  "description": "price",
-                  "type": "number"
-                },
-                "totalPrice": {
-                  "description": "totalPrice",
-                  "type": "number"
-                },
-                "taxPrice": {
-                  "description": "taxPrice",
-                  "type": "number"
-                },
-                "currency": {
-                  "description": "currency",
-                  "type": "string"
-                },
-                "currencySymbol": {
-                  "description": "currencySymbol",
-                  "type": "string"
-                },
-                "priceMarketId": {
-                  "description": "priceMarketId",
-                  "type": "string"
-                },
-                "lastUpdatePriceTime": {
-                  "description": "lastUpdatePriceTime",
-                  "type": "string"
-                }
-              }
-            },
-            "prepaidInd": {
-              "description": "prepaidInd",
-              "type": "boolean"
-            }
-          }
-        },
-        "additionalInfo": {
-          "description": "additionalInfo",
-          "type": "object",
-          "properties": {
-            "fields": {
-              "description": "fields",
-              "type": "array",
-              "items": {
-                "type": "object"
-              }
+            "iataCode": {
+              "description": "iataCode",
+              "type": "string",
+              "example": "EM"
             }
           }
         }
       }
     },
-    "departureDate": {
-      "description": "departureDate",
-      "type": "string"
-    },
-    "departureDay": {
-      "description": "departureDay",
-      "type": "string"
-    },
-    "returnDate": {
-      "description": "returnDate",
-      "type": "string"
-    },
-    "returnDay": {
-      "description": "returnDay",
-      "type": "string"
-    },
-    "journeyType": {
-      "description": "journeyType",
-      "type": "string"
-    },
-    "isCodeShare": {
-      "description": "isCodeShare",
-      "type": "boolean"
-    },
-    "flightType": {
-      "description": "flightType",
-      "type": "string"
-    },
-    "segmentCount": {
-      "description": "segmentCount",
-      "type": "number"
-    },
-    "flightCount": {
-      "description": "flightCount",
-      "type": "number"
-    },
-    "discount": {
-      "description": "discount",
-      "type": "object",
-      "properties": {
-        "isDiscount": {
-          "description": "isDiscount",
-          "type": "boolean"
-        },
-        "code": {
-          "description": "code",
-          "type": "string"
-        },
-        "amount": {
-          "description": "amount",
-          "type": "number"
-        },
-        "percentage": {
-          "description": "percentage",
-          "type": "number"
-        },
-        "expirationDate": {
-          "description": "expirationDate",
-          "type": "string"
-        }
-      }
-    },
-    "airline": {
-      "description": "airline",
+    "webpage": {
+      "description": "WebPage",
       "type": "object",
       "properties": {
         "name": {
-          "description": "name",
-          "type": "string"
+          "description": "The name of the page",
+          "type": "string",
+          "example": "flights from miami to berlin"
         },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
+        "url": {
+          "description": "The page url",
+          "type": "string",
+          "example": "flights.everymundo.com/en/flights-from-miami-to-berlin"
         },
-        "image": {
-          "description": "image",
-          "type": "string"
+        "hostName": {
+          "description": "Host name",
+          "type": "string",
+          "example": "flights.everymundo.com"
+        },
+        "languageIsoCode": {
+          "description": "Language ISO 639-1 code",
+          "type": "string",
+          "example": "en"
+        },
+        "siteEdition": {
+          "description": "Site edition combination of ISO codes for language and country",
+          "type": "string",
+          "example": "en-US"
         }
       }
+    },
+    "device": {
+        "description": "Device information",
+        "type": "object",
+        "properties": {
+          "category": {
+            "description": "MOBILE, TABLET, DESKTOP",
+            "type": "string",
+            "example": "Mobile"
+          },
+          "screenResolution": {
+            "description": "Specifies the screen resolution.",
+            "type": "string",
+            "example": "360x600"
+          },
+          "operatingSystem": {
+            "description": "Device operating system (e.g. Windows, Android, iOS)",
+            "type": "string",
+            "example": "iOS"
+          }
+        }
+    },
+    "database": {
+        "description": "Database",
+        "type": "object",
+        "properties": {
+          "_id": {
+            "description": "Record unique identifier",
+            "type": "string",
+            "example": "14961881240552180.141840260"
+          },
+          "version": {
+            "description": "Version of the program that generated the record",
+            "type": "string",
+            "example": "2.1.0"
+          },
+          "__createdat": {
+            "description": "Record creation date",
+            "type": "string",
+            "example": "2017-11-28 15:46:02"
+          },
+          "__v": {
+            "description": "Datacore version, same number we find on the table name in Redshift",
+            "type": "number",
+            "example": 1
+          },
+          "trackingId": {
+            "description": "Unique identifier created through module interactions for event tracking",
+            "type": "string",
+            "example": "RTJFKFRA2017073120170824$0_123456KARIN"
+          },
+          "schemaVersion": {
+            "description": "Schema version of Data Standards",
+            "type": "number",
+            "example": 1
+          }
+        }
     }
   },
-  "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger"],
+  "required": ["journey", "webPage", "device", "database"],
   "links": [
     {
-      "title": "fareNet",
-      "description": "fareNet details",
+      "title": "Kat",
+      "description": "Kattest",
       "rel": "self",
       "href": "/fareNet",
       "method": "GET",

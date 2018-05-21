@@ -103,7 +103,7 @@
       "example": 10
     }
   },
-  "required": [],
+  "required": ["departureDate"],
   "links": [
     {
       "title": "FlexibleDate",

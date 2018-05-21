@@ -48,7 +48,7 @@
       ]
     }
   },
-  "required": [],
+  "required": ["name", "isoCode"],
   "links": [
     {
       "title": "Country",

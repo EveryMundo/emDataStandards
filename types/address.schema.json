@@ -15,7 +15,7 @@
       "type": "string",
       "example": "San Diego"
     },
-    "regionCode": {
+    "stateCode": {
       "description": "State identifier code",
       "type": "string",
       "example": "CA"
@@ -31,7 +31,7 @@
       "example": "US"
     }
   },
-  "required": [],
+  "required": ["cityName", "countryCode"],
   "links": [
     {
       "title": "PostalAddress",

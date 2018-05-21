@@ -48,7 +48,7 @@
       ]
     }
   },
-  "required": [],
+  "required": ["name", "stateCode"],
   "links": [
     {
       "title": "State",

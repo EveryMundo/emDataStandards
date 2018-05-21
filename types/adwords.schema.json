@@ -106,7 +106,7 @@
       "example": "Google&&A3_GR (en)&&GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]&&GS:en-GR_NB\\IR=MAN>XX>HER/BM"
     }
   },
-  "required": [],
+  "required": ["accountId", "campaignId"],
   "links": [
     {
       "title": "Adwords",

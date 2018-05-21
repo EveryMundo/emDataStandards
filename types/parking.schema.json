@@ -106,7 +106,7 @@
       }
     }
   },
-  "required": [],
+  "required": ["name", "airport", "priceSpecification"],
   "links": [
     {
       "title": "AirportParking",

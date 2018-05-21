@@ -16,7 +16,7 @@
       "example": "Conflicting arrival date"
     }
   },
-  "required": [],
+  "required": ["message"],
   "links": [
     {
       "title": "Error",

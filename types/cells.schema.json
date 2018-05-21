@@ -3,44 +3,43 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Cells",
   "type": "array",
-  "properties": [
-    {
-      "price": {
-        "description": "Price for the reservation or ticket",
-        "type": "number"
-      },
-      "boundType": {
-        "description": "OUTBOUND, INBOUND ",
-        "type": "string"
-      },
-      "isSoldOut": {
-        "description": "Whether price is sold out",
-        "type": "boolean"
-      },
-      "redemptionAmount": {
-        "description": "Amount of reedemed miles",
-        "type": "number"
-      },
-      "outboundDate": {
-        "description": "Outbound date",
-        "type": "string"
-      },
-      "inboundDate": {
-        "description": "Inbound date",
-        "type": "string"
-      },
-      "example": {
-        "@type": "Cell",
-        "price": 345.21,
-        "boundType": "Outbound",
-        "isSoldOut": false,
-        "redemptionAmount": 9999,
-        "outboundDate": "2017-03-06",
-        "inboundDate": "NULL"
+  "items":{
+    "title": "Cell",
+    "type": "object",
+    "properties": {
+        "price": {
+          "description": "Price for the reservation or ticket",
+          "type": "number",
+          "example": 345.21
+        },
+        "boundType": {
+          "description": "OUTBOUND, INBOUND ",
+          "type": "string",
+          "example": "OUTBOUND"
+        },
+        "isSoldOut": {
+          "description": "Whether price is sold out",
+          "type": "boolean",
+          "example": false
+        },
+        "redemptionAmount": {
+          "description": "Amount of reedemed miles",
+          "type": "number",
+          "example": 9999
+        },
+        "outboundDate": {
+          "description": "Outbound date",
+          "type": "string",
+          "example": "2017-03-06"
+        },
+        "inboundDate": {
+          "description": "Inbound date",
+          "type": "string",
+          "example": "NULL"
+        }
       }
-    }
-  ],
-  "required": [],
+  },
+  "required": ["price", "boundType", "isSoldOut"],
   "links": [
     {
       "title": "Cells",

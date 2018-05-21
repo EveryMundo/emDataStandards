@@ -2,7 +2,7 @@
   "@type": "PostalAddress",
   "street": "1500 Orange Avenue",
   "cityName": "San Diego",
-  "regionCode": "CA",
+  "stateCode": "CA",
   "postalCode": "94043",
   "countryCode": "US"
 }

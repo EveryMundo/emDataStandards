@@ -20,7 +20,7 @@
       "example": true
     }
   },
-  "required": [],
+  "required": ["activity", "cityCode"],
   "links": [
     {
       "title": "Theme",

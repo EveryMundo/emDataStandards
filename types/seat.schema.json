@@ -64,7 +64,7 @@
       }
     }
   },
-  "required": [],
+  "required": ["rowNumber", "cabinColumnId"],
   "links": [
     {
       "title": "Seat",

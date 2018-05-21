@@ -12,7 +12,8 @@
     },
     "version": {
       "description": "Version of the program that generated the record",
-      "type": "string"
+      "type": "string",
+      "example": "2.1.0"
     },
     "__createdat": {
       "description": "Record creation date",
@@ -55,7 +56,7 @@
       "example": "CopaNonbrand1"
     }
   },
-  "required": [],
+  "required": ["_id", "__createdat", "__v"],
   "links": [
     {
       "title": "Database",

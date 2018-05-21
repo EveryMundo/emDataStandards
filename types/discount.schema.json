@@ -31,7 +31,7 @@
       "example": "2017-12-31"
     }
   },
-  "required": [],
+  "required": ["isDiscount"],
   "links": [
     {
       "title": "Discount",

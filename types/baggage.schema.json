@@ -70,7 +70,7 @@
       "example": true
     }
   },
-  "required": [],
+  "required": ["count", "checkedBags", "carryOnBags"],
   "links": [
     {
       "title": "BaggageAllowance",

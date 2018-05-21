@@ -112,7 +112,6 @@
       "departureDate":"2017-12-07",
       "estimatedDuration": "PT9H45M",
       "availableSeatsCount": "9+",
-
       "legs": [
         {
           "flightNumber": "EM110",
@@ -250,7 +249,7 @@
         "isoCode": "US"
         },
       "flightType": "DOMESTIC",
-      "routeType": "Connecting",
+      "routeType": "CONNECTING",
       "discount": {
         "@type": "Discount",
         "isDiscount": true,
@@ -275,7 +274,7 @@
     },
     "inboundFlight": {
       "@type": "Journey",
-      "boundType": "Inbound",
+      "boundType": "INBOUND",
       "route": "JFK>SFO",
       "priceSpecification": {
         "@type": "PriceSpecification",
@@ -371,7 +370,7 @@
         "isoCode": "US"
       },
       "flightType": "DOMESTIC",
-      "routeType": "Nonstop",
+      "routeType": "NoONSTOP",
       "discount": {
         "@type": "Discount",
         "isDiscount": true,
@@ -414,7 +413,7 @@
       "name": "EveryMundo",
       "iataCode": "EM"
       }
-    },
+  },
   "webPage": {
     "@type": "WebPage",
     "name": "flights from miami to berlin",

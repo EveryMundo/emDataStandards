@@ -60,7 +60,7 @@
       "example": 1
     }
   },
-  "required": [],
+  "required": ["exchangeRateDate"],
   "links": [
     {
       "title": "CurrencyConversion",

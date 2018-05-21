@@ -87,7 +87,7 @@
       "example": false
     }
   },
-  "required": [],
+  "required": ["name", "provider", "membershipLevel", "milesEarned"],
   "links": [
     {
       "title": "LoyaltyProgram",

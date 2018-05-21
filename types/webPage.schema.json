@@ -46,7 +46,7 @@
       "example": "en-US"
     }
   },
-  "required": [],
+  "required": ["name", "url", "hostname", "languageIsoCode", "siteEdition"],
   "links": [
     {
       "title": "WebPage",

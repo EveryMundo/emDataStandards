@@ -2,15 +2,18 @@
   "id": "/legs",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Legs",
+  "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
   "type": "array",
   "properties": {
     "flightNumber": {
       "description": "flightNumber",
-      "type": "string"
+      "type": "string",
+      "example": "EM110"
     },
     "route": {
       "description": "route",
-      "type": "string"
+      "type": "string",
+      "route": "SFO>MIA"
     },
     "departureAirport": {
       "description": "departureAirport",
@@ -18,29 +21,35 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "San Francisco Airport"
         },
         "iataCode": {
           "description": "iataCode",
-          "type": "string"
+          "type": "string",
+          "example": "SFO"
         }
       }
     },
     "departureGate": {
       "description": "departureGate",
-      "type": "string"
+      "type": "string",
+      "example": "19"
     },
     "departureTerminal": {
       "description": "departureTerminal",
-      "type": "string"
+      "type": "string",
+      "example": "E"
     },
     "departureTime": {
       "description": "departureTime",
-      "type": "string"
+      "type": "string",
+      "example": "2027-03-04T06:35:00-08:00"
     },
     "departureTimeZone": {
       "description": "While departure time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
-      "type": "string"
+      "type": "string",
+      "example": "UTC"
     },
     "arrivalAirport": {
       "description": "arrivalAirport",
@@ -48,37 +57,45 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "Miami International Airport"
         },
         "iataCode": {
           "description": "iataCode",
-          "type": "string"
+          "type": "string",
+          "example": "MIA"
         }
       }
     },
     "arrivalGate": {
       "description": "arrivalGate",
-      "type": "string"
+      "type": "string",
+      "example": "19"
     },
     "arrivalTerminal": {
       "description": "arrivalTerminal",
-      "type": "string"
+      "type": "string",
+      "example": "E"
     },
     "arrivalTime": {
       "description": "arrivalTime",
-      "type": "string"
+      "type": "string",
+      "example": "2027-03-04T13:35:00-08:00"
     },
     "arrivalTimeZone": {
       "description": "While arrival time is assumed to be local time, this variable specified the departure timezone. Time offsets from UTC following the iSO 8601 standard",
-      "type": "string"
+      "type": "string",
+      "example": "UTC"
     },
     "estimatedDuration": {
       "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
-      "type": "string"
+      "type": "string",
+      "example": "PT6H30M"
     },
     "flightDistance": {
       "description": "flightDistance",
-      "type": "string"
+      "type": "string",
+      "example": "300km"
     },
     "departureCity": {
       "description": "departureCity",
@@ -86,11 +103,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "San Francisco"
         },
         "cityCode": {
           "description": "cityCode",
-          "type": "string"
+          "type": "string",
+          "example": "SFO"
         },
         "geo": {
           "description": "geo",
@@ -98,17 +117,20 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 23.12
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -168.32
             }
           }
         },
         "image": {
           "description": "image",
-          "type": "string"
+          "type": "string",
+          "example": "sanfrancisco.com/image.jpg"
         }
       }
     },
@@ -118,11 +140,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "United States"
         },
         "isoCode": {
           "description": "isoCode",
-          "type": "string"
+          "type": "string",
+          "example": "US"
         },
         "geo": {
           "description": "geo",
@@ -130,17 +154,20 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 37.42
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -108.32
             }
           }
         },
         "image": {
           "description": "image",
-          "type": "string"
+          "type": "string",
+          "example": "unitedstates.com/image.jpg"
         }
       }
     },
@@ -150,11 +177,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "Miami"
         },
         "cityCode": {
           "description": "cityCode",
-          "type": "string"
+          "type": "string",
+          "example": "MIA"
         },
         "geo": {
           "description": "geo",
@@ -162,17 +191,20 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 37.42
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -108.32
             }
           }
         },
         "image": {
           "description": "image",
-          "type": "string"
+          "type": "string",
+          "example": "miami.com/image.jpg"
         }
       }
     },
@@ -182,11 +214,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "United States"
         },
         "isoCode": {
           "description": "isoCode",
-          "type": "string"
+          "type": "string",
+          "example": "US"
         },
         "geo": {
           "description": "geo",
@@ -194,23 +228,27 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 37.42
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -108.32
             }
           }
         },
         "image": {
           "description": "image",
-          "type": "string"
+          "type": "string",
+          "example": "unitedstates.com/image.jpg"
         }
       }
     },
     "flightType": {
       "description": "DOMESTIC, INTERNATIONAL",
-      "type": "string"
+      "type": "string",
+      "example": "DOMESTIC"
     },
     "operatingAirline": {
       "description": "operatingAirline",
@@ -218,17 +256,20 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "EveryMundo"
         },
         "iataCode": {
           "description": "iataCode",
-          "type": "string"
+          "type": "string",
+          "example": "EM"
         }
       }
     },
     "aircraft": {
       "description": "Aircraft brand",
-      "type": "string"
+      "type": "string",
+      "example": "Boeing 747"
     },
     "additionalInfo": {
       "description": "additionalInfo",
@@ -238,13 +279,25 @@
           "description": "fields",
           "type": "array",
           "items": {
-            "type": "object"
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "",
+                "type": "string",
+                "example": "classOfService"
+              },
+              "value": {
+                "description": "",
+                "type": "string",
+                "example": "COACH_EC"
+              }
+            }
           }
         }
       }
     }
   },
-  "required": [],
+  "required": ["flightNumber", "route", "departureAirport", "departureTime", "arrivalAirport", "arrivalTime", "estimatedDuration", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "operatingAirline", "aircraft"],
   "links": [
     {
       "title": "Legs",

@@ -48,7 +48,7 @@
       ]
     }
   },
-  "required": [],
+  "required": ["name", "regionCode"],
   "links": [
     {
       "title": "Region",

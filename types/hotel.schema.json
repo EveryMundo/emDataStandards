@@ -194,7 +194,7 @@
       ]
     }
   },
-  "required": [],
+  "required": ["name", "cityCode"],
   "links": [
     {
       "title": "Hotel",
