@@ -126,13 +126,13 @@
             "name": "San Francisco Airport",
             "iataCode": "SFO"
             },          
-          "departureTime": "2027-03-04T06:35:00",          
+          "departureTime": "06:35",          
           "arrivalAirport": {
             "@type": "Airport",
             "name": "Miami International Airport",
             "iataCode": "MIA"
             },          
-          "arrivalTime": "2027-03-04T13:35:00",         
+          "arrivalTime": "13:35",         
           "estimatedDuration": "PT6H30M",          
           "departureCity": {
             "@type": "City",
@@ -183,13 +183,13 @@
             "name": "Miami International Airport",
             "iataCode": "MIA"
             },          
-          "departureTime": "2027-03-07T10:35:00",          
+          "departureTime": "10:35",          
           "arrivalAirport": {
             "@type": "Airport",
             "name": "John F. Kennedy International Airport",
             "iataCode": "JFK"
             },          
-          "arrivalTime": "2027-03-07T19:35:00",          
+          "arrivalTime": "19:35",          
           "estimatedDuration": "PT3H25M",          
           "departureCity": {
             "@type": "City",
@@ -303,13 +303,13 @@
             "name": "John F. Kennedy International Airport",
             "iataCode": "JFK"
             },          
-          "departureTime": "2017-03-04T06:35:00",
+          "departureTime": "06:35",
           "arrivalAirport": {
             "@type": "Airport",
             "name": "San Francisco Airport",
             "iataCode": "SFO"
             },          
-          "arrivalTime": "2017-03-04T13:35:00",          
+          "arrivalTime": "13:35",          
           "estimatedDuration": "PT7H30M",          
           "departureCity": {
             "@type": "City",
