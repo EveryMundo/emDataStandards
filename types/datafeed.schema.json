@@ -1,0 +1,37 @@
+{
+  "id": "/dataFeed",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DataFeed",
+  "description": "DataFeed",
+  "type": "object",
+  "properties": {
+    "publisher": {
+      "description": "The publisher of the data feed",
+      "type": "string",
+      "example": "Google ITA"
+    },
+    "type": {
+      "description": "Type of data feed: API",
+      "type": "string",
+      "example": "API"
+    },
+    "url": {
+      "description": "URL where datafeed is located",
+      "type": "string",
+      "example": "https://partner-client.google.com/travel/boombox/live/services/xml"
+    }
+  },
+  "required": ["publisher"],
+  "links": [
+    {
+      "title": "DataFeed",
+      "description": "DataFeed",
+      "rel": "self",
+      "href": "/dataFeed",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

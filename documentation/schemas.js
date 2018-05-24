@@ -19,6 +19,7 @@ export default fromJS([
   require('../types/country.schema.json'),
   require('../types/currencyConversion.schema.json'),
   require('../types/database.schema.json'),
+  require('../types/datafeed.schema.json'),
   require('../types/dateLimit.schema.json'),
   require('../types/device.schema.json'),
   require('../types/discount.schema.json'),
