@@ -1,7 +1,7 @@
 {
-  "id": "/webPage",
+  "id": "/page",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "WebPage",
+  "title": "Page",
   "description": "WebPage",
   "type": "object",
   "properties": {
@@ -49,10 +49,10 @@
   "required": ["name", "url", "hostname", "languageIsoCode", "siteEdition"],
   "links": [
     {
-      "title": "WebPage",
-      "description": "WebPage",
+      "title": "Page",
+      "description": "Page",
       "rel": "self",
-      "href": "/webPage",
+      "href": "/page",
       "method": "GET",
       "targetSchema": {
         "rel": "self"
