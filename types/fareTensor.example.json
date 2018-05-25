@@ -9,7 +9,7 @@
       "isSoldOut": false,
       "redemptionAmount": 9999,
       "outboundDate": "2017-03-06",
-      "inboundDate": "NULL"
+      "inboundDate": null
     }
   ]
 }
