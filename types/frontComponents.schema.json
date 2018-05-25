@@ -18,7 +18,7 @@
     "ariaLabel": {
       "description": "Accessibility Attribute: The aria-label attribute is used to define a string that labels the current element. Used in cases where a text label is not visible on the screen.",
       "type": "string",
-      "example": "NULL"
+      "example": null
     },
     "ariaLive": {
       "description": "Accessibility Attribute: ARIA live regions provide a way to programmatically expose dynamic content changes in a way that can be announced by assistive technologies. Available Options: 1. aria-live='polite' indicates that the screen reader should wait until the user is idle before presenting updates to the user. This is the most commonly used value, as interrupting the user with 'assertive' might interrupt their flow. 2. aria-atomic is not set (false by default) so that only the added or removed users should be spoken and not the entire roster each time. 3. aria-relevant='additions removals' ensures that both users added or removed to the roster will be spoken. Reference: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions",
@@ -75,7 +75,7 @@
     "additionalCssClasses": {
       "description": "CSS Classes to be applied to the Slider",
       "type": "string",
-      "example": "NULL"
+      "example": null
     },
     "showGeneralDisclaimer": {
       "description": "Whether to show module generic disclaimer at the UI level",
@@ -583,7 +583,7 @@
     "controlsTemplateLayout": {
       "description": "Template layout for controls refering to the labels and icons disposition",
       "type": "string",
-      "example": "NULL"
+      "example": null
     },
     "showTitle": {
       "description": "Whether to show the booking mask title at UI level",
@@ -665,22 +665,22 @@
     "airportsListFormat": {
       "description": "Airports list format referrencing items visualization",
       "type": "string",
-      "example": "NULL"
+      "example": null
     },
     "airportsListFilteringPriority": {
       "description": "Airports list filtering options when searching",
       "type": "string",
-      "example": "NULL"
+      "example": null
     },
     "datesFormatEdition": {
       "description": "Dates format for edition configured on airTRFX CMS",
       "type": "string",
-      "example": "NULL"
+      "example": null
     },
     "datesFormatDisplay": {
       "description": "Date format for display configured on airTRFX CMS",
       "type": "string",
-      "example": "NULL"
+      "example": null
     },
     "visibleMonthsMaxNumber": {
       "description": "Maximum number of visible months when selecting the departure/return dates",
