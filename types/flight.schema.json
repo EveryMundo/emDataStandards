@@ -101,7 +101,7 @@
     "fareClass": {
       "description": "ECONOMY, BUSINESS, FIRST",
       "type": "string",
-      "example": "Economy"
+      "example": "ECONOMY"
     },
     "departureAirport": {
       "description": "departureAirport",
@@ -404,12 +404,12 @@
     "flightType": {
       "description": "DOMESTIC, INTERNATIONAL",
       "type": "string",
-      "example": "Domestic"
+      "example": "DOMESTIC"
     },
     "routeType": {
       "description": "NONSTOP, CONNECTING, CODESHARE",
       "type": "string",
-      "example": "Nonstop"
+      "example": "NONSTOP"
     },
     "discount": {
       "description": "discount",
