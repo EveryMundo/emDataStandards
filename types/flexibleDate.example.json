@@ -20,5 +20,6 @@
     "plus2": "2017-12-19",
     "plus3": "2017-12-20"
   },
-  "stayDuration": 10
+  "stayDuration": 10,
+  "isFlexibleDates": true
 }

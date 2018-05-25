@@ -101,7 +101,12 @@
       "description": "Number of days between departure and return date",
       "type": "number",
       "example": 10
-    }
+    },
+    "isFlexibleDates": {
+      "description": "Whether the user selected flexible dates",
+      "type": "boolean",
+      "example": true
+    } 
   },
   "required": ["departureDate"],
   "links": [
