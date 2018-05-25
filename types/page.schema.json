@@ -16,22 +16,22 @@
       "example": "flights from miami to berlin"
     },
     "url": {
-      "description": "The page url",
+      "description": "Full url in lowercase (without query parameters to avoid collecting personal data by mistake)",
       "type": "string",
-      "example": "flights.everymundo.com/en/flights-from-miami-to-berlin"
+      "example": "https://flights.everymundo.com/en/flights-from-miami-to-berlin"
     },
     "hostName": {
-      "description": "Host name",
+      "description": "Host name in lowercase",
       "type": "string",
       "example": "flights.everymundo.com"
     },
     "typeName": {
-      "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED",
+      "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, COUNTRY_TO_COUNTRY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED, CUSTOM_PAGE",
       "type": "string",
       "example": "CITY_TO_CITY"
     },
     "typeCode": {
-      "description": "Page Type Code: HP, CICO, FCI, TCI, CICO, COCI, FCO, TCO, EXT",
+      "description": "Page Type Code: HP, CICO, FCI, TCI, CICI, COCI, COCO, FCO, TCO, EXT, CP",
       "type": "string",
       "example": "CICI"
     },
