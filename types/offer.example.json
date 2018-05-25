@@ -85,16 +85,16 @@
     "fareTensor": {
       "@type": "FlightTensor",
       "route": "SFO>JFK",
-      "journeyType": "RT",
+      "journeyType": "ROUND_TRIP",
       "cells": [
         {
           "@type": "Cell",
           "price": 345.21,
-          "boundType": "Outbound",
+          "boundType": "OOUTBOUND",
           "isSoldOut": false,
           "redemptionAmount": 9999,
           "outboundDate": "2017-03-06",
-          "inboundDate": "NULL"
+          "inboundDate": null
         }
       ]
     },
@@ -613,9 +613,9 @@
     "departureDay": "4",
     "returnDate": "2017-12-10",
     "returnDay": "7",
-    "journeyType": "RT",
+    "journeyType": "ROUND_TRIP",
     "isCodeShare": true,
-    "flightType": "Domestic",
+    "flightType": "DOMESTIC",
     "segmentCount": 2,
     "flightCount": 3,
     "discount": {
@@ -721,7 +721,7 @@
     "name": "flights from miami to berlin",
     "url": "flights.everymundo.com/en/flights-from-miami-to-berlin",
     "hostName": "flights.everymundo.com",
-    "typeName": "CityToCity",
+    "typeName": "CITY_TO_CITY",
     "typeCode": "CICI",
     "languageIsoCode": "en",
     "siteEdition": "en-US"
