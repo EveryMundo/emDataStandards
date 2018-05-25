@@ -3,6 +3,7 @@
   "description": "JOURNEY",
   "price": 234.21,
   "totalPrice": 250.6,
+  "totalPriceUSD": 250.6,
   "taxPrice": 16.39,
   "fuelPrice": 57.89,
   "additionalFeesPrice": 12,

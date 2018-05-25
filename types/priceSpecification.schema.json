@@ -20,6 +20,11 @@
       "type": "number",
       "example": 250.6
     },
+    "totalPriceUSD": {
+      "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+      "type": "number",
+      "example": 250.6
+    },
     "taxPrice": {
       "description": "The amount paid in taxes",
       "type": "number",
