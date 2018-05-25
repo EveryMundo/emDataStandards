@@ -1,0 +1,27 @@
+{
+  "id": "/tracking",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Tracking",
+  "description": "Acceptable exceptions to emDataStandards for Tracking purposes",
+  "type": "object",
+  "properties": {
+    "date": {
+      "description": "{Outbound date},{Inbound date}, e.g. 20180412,20180420, 20190101",
+      "type": "string",
+      "example": "20180518,20180522"
+    }
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "Tracking",
+      "description": "Tracking",
+      "rel": "self",
+      "href": "/tracking",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
