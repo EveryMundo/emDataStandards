@@ -6,9 +6,9 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "The name of the airline",
+      "description": "Full name of airline, capitalise each word kepping the space",
       "type": "string",
-      "example": "EveryMundo"
+      "example": "Everymundo Airlines"
     },
     "iataCode": {
       "description": "IATA identifier for the airline",
