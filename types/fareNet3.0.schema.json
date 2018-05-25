@@ -214,7 +214,7 @@
             "fareClass": {
               "description": "fareClass",
               "type": "string",
-              "example": "Economy"
+              "example": "ECONOMY"
             },
             "departureAirportIataCode": {
               "description": "departureAirportIataCode",
@@ -566,7 +566,7 @@
             "fareClass": {
               "description": "fareClass",
               "type": "string",
-              "example": "Economy"
+              "example": "ECONOMY"
             },
             "departureAirportIataCode": {
               "description": "departureAirportIataCode",
@@ -743,6 +743,11 @@
           "$ref": "./discount.schema.json"
         }
       }
+    },
+    "reservationStatus": {
+      "description": "IBE_SEARCH, IBE_FLIGHT_SEARCH, IBE_SUMMARY, IBE_PASSENGER_INFO, IBE_PASSENGER_ADDRESS, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
+      "type": "string",
+      "example": "IbeSearch"
     },
     "page": {
       "description": "WebPage",

@@ -96,7 +96,7 @@
           "isSoldOut": false,
           "redemptionAmount": 9999,
           "outboundDate": "2017-03-06",
-          "inboundDate": "NULL"
+          "inboundDate": null
         }
       ]
     },
@@ -374,7 +374,7 @@
         "isoCode": "US"
       },
       "flightType": "DOMESTIC",
-      "routeType": "NoONSTOP",
+      "routeType": "NONSTOP",
       "discount": {
         "@type": "Discount",
         "isDiscount": true,
@@ -413,6 +413,7 @@
       "expirationDate": "2017-12-31"
     }
   },
+  "reservationStatus": "IBE_SEARCH",
   "page": {
     "@type": "WebPage",
     "name": "flights from miami to berlin",
