@@ -2,5 +2,5 @@
   "@type": "DataFeed",
   "publisher": "Google ITA",
   "type": "API",
-  "url": "https://partner-client.google.com/travel/boombox/live/services/xml",
+  "url": "https://partner-client.google.com/travel/boombox/live/services/xml"
 }
