@@ -1,0 +1,38 @@
+{
+  "id": "/airindex",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "airIndex",
+  "description": "airIndex™ is EveryMundo’s proprietary KPI (numeric value between 0 and 1)",
+  "type": "object",
+  "properties": {
+    "airline": {
+        "description": "Airline",
+        "type": "object",
+        "properties": {
+          "iataCode": {
+            "description": "IATA identifier for the airline",
+            "type": "string",
+            "example": "EM"
+          }
+        }
+    },
+    "airIndex": {
+      "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
+      "type": "number",
+      "example": "Everymundo Airlines"
+    }
+  },
+  "required": ["name", "iataCode"],
+  "links": [
+    {
+      "title": "Airline",
+      "description": "Airline",
+      "rel": "self",
+      "href": "/airindex",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
