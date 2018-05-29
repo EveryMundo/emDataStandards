@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "_id": {
-      "description": "Record unique identifier",
+      "description": "Record unique identifier as given by MongoDB",
       "type": "string",
       "example": "14961881240552180.141840260"
     },
