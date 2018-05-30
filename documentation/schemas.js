@@ -49,5 +49,5 @@ export default fromJS([
   require('../types/seat.schema.json'),
   require('../types/state.schema.json'),
   require('../types/theme.schema.json'),
-  require('../types/webPage.schema.json'),
+  require('../types/page.schema.json'),
 ]);
