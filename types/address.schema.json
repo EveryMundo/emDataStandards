@@ -13,7 +13,7 @@
     "cityName": {
       "description": "City name",
       "type": "string",
-      "example": "San Diego"
+      "example": "San Francisco"
     },
     "stateCode": {
       "description": "State identifier code",
