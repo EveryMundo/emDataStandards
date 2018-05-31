@@ -413,7 +413,7 @@
       "expirationDate": "2017-12-31"
     }
   },
-  "reservationStatus": "IBE_SEARCH",
+  "reservationStatus": "IBE_FLIGHT_SELECTION",
   "page": {
     "@type": "WebPage",
     "name": "flights from miami to berlin",

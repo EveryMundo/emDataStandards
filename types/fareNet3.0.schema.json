@@ -745,7 +745,7 @@
       }
     },
     "reservationStatus": {
-      "description": "IBE_SEARCH, IBE_FLIGHT_SEARCH, IBE_SUMMARY, IBE_PASSENGER_INFO, IBE_PASSENGER_ADDRESS, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
+      "description": "IBE_FLIGHT_SELECTION, IBE_CONFIRMATION, IBE_PASSENGER_INFO, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
       "type": "string",
       "example": "IbeSearch"
     },
