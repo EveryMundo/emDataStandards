@@ -261,7 +261,7 @@
         "code": "AFFBFAN",
         "amount": 500,
         "percentage": 0.5,
-        "expirationDate": "2017-12-31"
+        "expiration": "2017-12-31"
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -381,7 +381,7 @@
         "code": "AFFBFAN",
         "amount": 500,
         "percentage": 0.5,
-        "expirationDate": "2017-12-31"
+        "expiration": "2017-12-31"
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -410,7 +410,7 @@
       "code": "AFFBFAN",
       "amount": 500,
       "percentage": 0.5,
-      "expirationDate": "2017-12-31"
+      "expiration": "2017-12-31"
     }
   },
   "reservationStatus": "IBE_FLIGHT_SELECTION",

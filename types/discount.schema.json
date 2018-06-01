@@ -25,7 +25,7 @@
       "type": "number",
       "example": 0.5
     },
-    "expirationDate": {
+    "expiration": {
       "description": "Promotion expiration date",
       "type": "string",
       "example": "2017-12-31"
