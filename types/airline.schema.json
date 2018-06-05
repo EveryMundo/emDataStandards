@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "Full name of airline, capitalise each word kepping the space",
+      "description": "Full name of airline, capitalise each word keeping the space",
       "type": "string",
       "example": "Everymundo Airlines"
     },
