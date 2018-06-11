@@ -781,10 +781,10 @@
       }
     },
     "device": {
-      "not": {
-        "$ref": "./device.schema.json",
-        "required": ["category", "screenResolution", "operatingSystem"]
-      }
+      "allOf": [
+        {"$ref": "./device.schema.json"},
+        {"required": ["category", "screenResolution", "operatingSystem"]}
+      ]
     },
     "database": {
         "description": "Database",
