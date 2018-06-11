@@ -784,7 +784,8 @@
       "allOf": [
         {"$ref": "./device.schema.json"},
         {"required": ["category", "screenResolution", "operatingSystem"]}
-      ]
+      ],
+      "additionalProperties": false
     },
     "database": {
         "description": "Database",
