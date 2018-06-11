@@ -781,25 +781,10 @@
       }
     },
     "device": {
-        "description": "Device information",
-        "type": "object",
-        "properties": {
-          "category": {
-            "description": "MOBILE, TABLET, DESKTOP",
-            "type": "string",
-            "example": "Mobile"
-          },
-          "screenResolution": {
-            "description": "Specifies the screen resolution.",
-            "type": "string",
-            "example": "360x600"
-          },
-          "operatingSystem": {
-            "description": "Device operating system (e.g. Windows, Android, iOS)",
-            "type": "string",
-            "example": "iOS"
-          }
-        }
+      "not": {
+        "$ref": "./device.schema.json",
+        "required": ["category", "screenResolution", "operatingSystem"]
+      }
     },
     "database": {
         "description": "Database",
