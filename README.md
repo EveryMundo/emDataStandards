@@ -35,15 +35,7 @@ https://everymundo.github.io/emDataStandards/documentation/build/
 **Note:** These commands assume that you have committed already all your changes in master. For Windows, run the commands in git bash.
 
 ```bash
-cd documentation
-npm run build
-git add .
-git commit -m 'new documentation automatic generated'
-git checkout gh-pages
-git pull origin gh-pages
-git merge master
-git push origin gh-pages
-git checkout master
+bash documentation/publish-gh-pages.sh
 ```
 
 ### Field Naming Convention
