@@ -29,6 +29,11 @@
       "description": "Populate variables that are not available with 'n/a'",
       "type": "string",
       "example": "n/a"
+    },
+    "totalPriceUSD": {
+      "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc. Two decimals only.",
+      "type": "number",
+      "example": 250.6
     }
   },
   "required": [],
