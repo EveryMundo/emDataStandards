@@ -19,7 +19,7 @@
     "airIndex": {
       "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
       "type": "number",
-      "example": "Everymundo Airlines"
+      "example": 0.5
     }
   },
   "required": ["name", "iataCode"],
