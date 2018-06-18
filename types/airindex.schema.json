@@ -93,12 +93,12 @@
     },
      "from_date": {
       "description": "Adwords network type",
-      "type": "timestamp",
+      "type": "string",
       "example": "2017-04-20 10:00:00"
     },
      "to_date": {
       "description": "Adwords network type",
-      "type": "timestamp",
+      "type": "string",
       "example": "2017-05-20 10:00:00"
     },
      "xid": {
@@ -108,7 +108,7 @@
     },
      "__createdat": {
       "description": "Record creation date",
-      "type": "timestamp",
+      "type": "string",
       "example": "2017-06-25 13:00:17"
     }
   },
