@@ -110,7 +110,7 @@
       "description": "Record creation date",
       "type": "timestamp",
       "example": "2017-06-25 13:00:17"
-    },
+    }
   },
   "required": ["name", "iataCode"],
   "links": [
