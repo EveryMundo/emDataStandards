@@ -16,11 +16,96 @@
           }
         }
     },
-    "airIndex": {
+    "orig": {
+      "description": "Origin",
+      "type": "string",
+      "example": "ACA"
+    },
+    "dest": {
+      "description": "Destination",
+      "type": "string",
+      "example": "AGU"
+    },
+    "air_index": {
       "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
       "type": "number",
-      "example": "Everymundo Airlines"
-    }
+      "example": "0.5"
+    },
+     "air_label": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "ais": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "sl": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "ml": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "ss": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "ms": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "s_rate_l": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "px": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "subset": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "sx": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "batch_id": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "from_date": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "to_date": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "xid": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
+     "__createdat": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "Search"
+    },
   },
   "required": ["name", "iataCode"],
   "links": [
