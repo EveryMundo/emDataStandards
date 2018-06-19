@@ -1,17 +1,32 @@
 {
+  "id": "/error",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Error",
   "description": "Error",
   "type": "object",
   "properties": {
     "identifier": {
-      "description": "identifier",
-      "type": "string"
+      "description": "Identifier for defined errors",
+      "type": "string",
+      "example": "1"
     },
     "message": {
-      "description": "message",
-      "type": "string"
+      "description": "Error message corresponding to identifier",
+      "type": "string",
+      "example": "Conflicting arrival date"
     }
   },
-  "required": []
+  "required": ["message"],
+  "links": [
+    {
+      "title": "Error",
+      "description": "Error",
+      "rel": "self",
+      "href": "/error",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

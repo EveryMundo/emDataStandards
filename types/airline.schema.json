@@ -1,25 +1,45 @@
 {
+  "id": "/airline",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Airline",
   "description": "Airline",
   "type": "object",
   "properties": {
     "name": {
-      "description": "The name of the airline",
-      "type": "string"
+      "description": "Full name of airline, capitalise each word keeping the space",
+      "type": "string",
+      "example": "Everymundo Airlines"
     },
     "iataCode": {
       "description": "IATA identifier for the airline",
-      "type": "string"
+      "type": "string",
+      "example": "EM"
     },
     "image": {
       "description": "Image URL for the airline",
-      "type": "string"
+      "type": "string",
+      "example": "everymundo.com/image.jpg"
     },
     "images": {
       "description": "Array of multiple image URLs for the airline",
-      "type": "array"
+      "type": "array",
+      "example": [
+        "everymundo.com/image.jpg",
+        "everymundo.com/image2.jpg"
+      ]
     }
   },
-  "required": []
+  "required": ["name", "iataCode"],
+  "links": [
+    {
+      "title": "Airline",
+      "description": "Airline",
+      "rel": "self",
+      "href": "/airline",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

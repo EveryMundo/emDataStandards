@@ -1,19 +1,35 @@
 {
+  "id": "/guest",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Guest",
   "type": "object",
   "properties": {
     "count": {
-      "description": "count",
-      "type": "number"
+      "description": "Amount of passengers for a specific category",
+      "type": "number",
+      "example": 4
     },
     "adultCount": {
-      "description": "adultCount",
-      "type": "number"
+      "description": "Amount of adult passengers",
+      "type": "number",
+      "example": 2
     },
     "childCount": {
-      "description": "childCount",
-      "type": "number"
+      "description": "Amount of child passengers",
+      "type": "number",
+      "example": 2
     }
   },
-  "required": []
+  "required": ["count"],
+  "links": [
+    {
+      "title": "Guest",
+      "rel": "self",
+      "href": "/guest",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

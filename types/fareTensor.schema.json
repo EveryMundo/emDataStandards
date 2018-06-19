@@ -1,20 +1,45 @@
 {
+  "id": "/flightTensor",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlightTensor",
   "description": "FlightTensor",
   "type": "object",
-  "properties": {    
+  "properties": {
     "journeyType": {
-      "description": "journeyType",
-      "type": "string"
+      "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
+      "type": "string",
+      "example": "ROUND_TRIP"
     },
     "cells": {
       "description": "cells",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "@type": "Cell",
+          "price": 345.21,
+          "boundType": "Outbound",
+          "isSoldOut": false,
+          "redemptionAmount": 9999,
+          "outboundDate": "2017-03-06",
+          "inboundDate": null
+        }
+      ]
     }
   },
-  "required": []
+  "required": ["journeyType", "cells"],
+  "links": [
+    {
+      "title": "FlightTensor",
+      "description": "FlightTensor",
+      "rel": "self",
+      "href": "/flightTensor",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

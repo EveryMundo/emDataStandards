@@ -91,7 +91,7 @@
         "isSoldOut": false,
         "redemptionAmount": 9999,
         "outboundDate": "2017-03-06",
-        "inboundDate": "NULL"
+        "inboundDate": null
       }
     ]
   },
@@ -607,9 +607,9 @@
     }
   },
   "departureDate": "2017-12-07",
-  "departureDay": "4",
+  "departureWeekDay": "4",
   "returnDate": "2017-12-10",
-  "returnDay": "7",
+  "returnWeekDay": "7",
   "journeyType": "RT",
   "isCodeShare": true,
   "flightType": "Domestic",

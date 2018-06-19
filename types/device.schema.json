@@ -1,39 +1,61 @@
 {
+  "id": "/device",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Device",
+  "description": "Device information",
   "type": "object",
   "properties": {
     "category": {
-      "description": "category",
-      "type": "string"
+      "description": "MOBILE, TABLET, DESKTOP",
+      "type": "string",
+      "example": "Mobile"
     },
     "screenResolution": {
-      "description": "screenResolution",
-      "type": "string"
+      "description": "Specifies the screen resolution.",
+      "type": "string",
+      "example": "360x600"
     },
     "mobileBranding": {
-      "description": "mobileBranding",
-      "type": "string"
+      "description": "Mobile manufacturer or branded name (e.g: Samsung, HTC, Verizon, T-Mobile, Apple)",
+      "type": "string",
+      "example": "Apple"
     },
     "mobileModel": {
-      "description": "mobileModel",
-      "type": "string"
+      "description": "Mobile device model (e.g.: Nexus S, iPhone, iPad, SM-G935F)",
+      "type": "string",
+      "example": "iPhone"
     },
     "mobileName": {
-      "description": "mobileName",
-      "type": "string"
+      "description": "Mobile device brand and model (e.g. Galaxy S8, iPhone 6)",
+      "type": "string",
+      "example": "iPhone 6"
     },
     "operatingSystem": {
-      "description": "operatingSystem",
-      "type": "string"
+      "description": "Device operating system (e.g. Windows, Android, iOS)",
+      "type": "string",
+      "example": "iOS"
     },
     "operatingSystemVersion": {
-      "description": "operatingSystemVersion",
-      "type": "string"
+      "description": "The version of the operating system",
+      "type": "string",
+      "example": "9"
     },
     "isMobileApp": {
-      "description": "isMobileApp",
-      "type": "boolean"
+      "description": "True if mobile app is being used",
+      "type": "boolean",
+      "example": true
     }
   },
-  "required": []
+  "required": ["category", "screenResolution", "operatingSystem"],
+  "links": [
+    {
+      "title": "Device",
+      "rel": "self",
+      "href": "/device",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

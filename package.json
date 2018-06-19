@@ -1,0 +1,25 @@
+{
+  "name": "@everymundo/em-data-standards",
+  "version": "0.2.0",
+  "description": "Everymundo DataStandards Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git checkout gh-pages && git merge master && git pull origin gh-pages && cd documentation && npm run build && git add . && git commit -m \"new documentation automatic generated\" && git push origin gh-pages && git checkout master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EveryMundo/emDataStandards.git"
+  },
+  "keywords": [
+    "everymundo",
+    "airlines",
+    "bigdata"
+  ],
+  "author": "team@everymundo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EveryMundo/emDataStandards/issues"
+  },
+  "homepage": "https://github.com/EveryMundo/emDataStandards#readme"
+}

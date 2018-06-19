@@ -1,33 +1,52 @@
 {
+  "id": "/flightReservation",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlightReservation",
   "description": "FlightReservation",
   "type": "object",
   "properties": {
     "boardingGroup": {
-      "description": "boardingGroup",
-      "type": "string"
+      "description": "The airline-specific indicator of boarding order",
+      "type": "string",
+      "example": "B"
     },
     "reservationStatus": {
-      "description": "reservationStatus",
-      "type": "string"
+      "description": "IBE_SEARCH, IBE_FLIGHT_SEARCH, IBE_SUMMARY, IBE_PASSENGER_INFO, IBE_PASSENGER_ADDRESS, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
+      "type": "string",
+      "example": "IbeSearch"
     },
     "passengerPriorityStatus": {
-      "description": "passengerPriorityStatus",
-      "type": "string"
+      "description": "The priority status assigned to a passenger for security or boarding",
+      "type": "string",
+      "example": "FastTrack"
     },
     "passengerSequenceNumber": {
-      "description": "passengerSequenceNumber",
-      "type": "string"
+      "description": "The passenger's sequence number as assigned by the airline",
+      "type": "string",
+      "example": "ABC123"
     },
     "bookingTime": {
-      "description": "bookingTime",
-      "type": "string"
+      "description": "The date and time the reservation was booked",
+      "type": "string",
+      "example": "2027-01-14T13:05:00-05:00"
     },
     "modifiedTime": {
-      "description": "modifiedTime",
-      "type": "string"
+      "description": "The date and time the reservation was modified",
+      "type": "string",
+      "example": "2027-03-14T13:05:00-05:00"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "FlightReservation",
+      "description": "FlightReservation",
+      "rel": "self",
+      "href": "/flightReservation",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

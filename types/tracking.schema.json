@@ -1,0 +1,52 @@
+{
+  "id": "/tracking",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Tracking",
+  "description": "Acceptable exceptions to emDataStandards for Tracking purposes",
+  "type": "object",
+  "properties": {
+    "label": {
+      "description": "Action label giving more details to event action",
+      "type": "string",
+      "example": "open-booking-popup"
+    },
+    "provider": {
+      "description": "Airline name without space",
+      "type": "string",
+      "example": "AmericanAirlines"
+    },
+    "journeyType": {
+      "description": "ROUND_TRIP = RT, ONE_WAY = OW, MULTI_CITY=MC",
+      "type": "string",
+      "example": "RT"
+    },
+    "date": {
+      "description": "{Outbound date},{Inbound date}, e.g. 20180412,20180420, 20190101",
+      "type": "string",
+      "example": "20180518,20180522"
+    },
+    "discountCode": {
+      "description": "Populate variables that are not available with 'n/a'",
+      "type": "string",
+      "example": "n/a"
+    },
+    "totalPriceUSD": {
+      "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc. Two decimals only.",
+      "type": "number",
+      "example": 250.6
+    }
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "Tracking",
+      "description": "Tracking",
+      "rel": "self",
+      "href": "/tracking",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

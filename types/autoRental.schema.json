@@ -1,119 +1,105 @@
 {
+  "id": "/autoRental",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "AutoRental",
   "description": "AutoRental",
   "type": "object",
   "properties": {
     "provider": {
-      "description": "provider",
+      "description": "Car rental provider",
       "type": "object",
       "properties": {
         "name": {
           "description": "name",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Organization",
+        "name": "Hertz"
       }
     },
     "reservationId": {
-      "description": "reservationId",
-      "type": "string"
+      "description": "Unique identifier for the reservation",
+      "type": "string",
+      "example": "546323"
     },
     "reservationStatus": {
-      "description": "reservationStatus",
-      "type": "string"
+      "description": "CONFIRMED, PENDING, CANCELLED",
+      "type": "string",
+      "example": "CONFIRMED"
     },
     "brand": {
-      "description": "brand",
-      "type": "string"
+      "description": "Brand of the rental car",
+      "type": "string",
+      "example": "Honda"
     },
     "model": {
-      "description": "model",
-      "type": "string"
+      "description": "Model of rental car",
+      "type": "string",
+      "example": "Civic"
     },
     "pickupLocation": {
-      "description": "pickupLocation",
+      "description": "Where a taxi will pick up a passenger or a rental car can be picked up",
       "type": "object",
       "properties": {
         "name": {
-          "description": "name",
+          "description": "Any name for the location",
           "type": "string"
         },
         "address": {
-          "description": "address",
-          "type": "object",
-          "properties": {
-            "street": {
-              "description": "street",
-              "type": "string"
-            },
-            "cityName": {
-              "description": "cityName",
-              "type": "string"
-            },
-            "regionCode": {
-              "description": "regionCode",
-              "type": "string"
-            },
-            "postalCode": {
-              "description": "postalCode",
-              "type": "string"
-            },
-            "countryCode": {
-              "description": "countryCode",
-              "type": "string"
-            }
-          }
+          "$ref": "./address.schema.json"
+        }
+      },
+      "example": {
+        "@type": "Place",
+        "name": "Hertz San Diego Airport",
+        "address": {
+          "$ref": "./address.schema.json"
         }
       }
     },
     "pickupTime": {
-      "description": "pickupTime",
-      "type": "string"
+      "description": "When a taxi will pickup a passenger or a rental car can be picked up",
+      "type": "string",
+      "example": "2017-08-05T16:00:00-07:00"
     },
     "dropoffLocation": {
-      "description": "dropoffLocation",
+      "description": "Where a rental car can be dropped off",
       "type": "object",
       "properties": {
         "name": {
-          "description": "name",
-          "type": "string"
+          "description": "Any name for the location",
+          "type": "string",
+          "example": "Hertz LAX"
         },
         "address": {
-          "description": "address",
-          "type": "object",
-          "properties": {
-            "street": {
-              "description": "street",
-              "type": "string"
-            },
-            "cityName": {
-              "description": "cityName",
-              "type": "string"
-            },
-            "regionCode": {
-              "description": "regionCode",
-              "type": "string"
-            },
-            "postalCode": {
-              "description": "postalCode",
-              "type": "string"
-            },
-            "countryCode": {
-              "description": "countryCode",
-              "type": "string"
-            }
+          "$ref": "./address.schema.json"
           }
         }
-      }
     },
     "dropoffTime": {
-      "description": "dropoffTime",
-      "type": "string"
+      "description": "When a rental car can be dropped off",
+      "type": "string",
+      "example": "2017-08-06T20:00:00-07:00"
     },
-    "type": {
-      "description": "type",
-      "type": "string"
+    "carType": {
+      "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
+      "type": "string",
+      "example": "SUV"
     }
   },
-  "required": []
+  "required": ["provider"],
+  "links": [
+    {
+      "title": "AutoRental",
+      "description": "AutoRental details",
+      "rel": "self",
+      "href": "/autoRental",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

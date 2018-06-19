@@ -21,7 +21,7 @@
     }
   },
   "fareClassInput": "Economy",
-  "fareClass": "Economy",
+  "fareClass": "ECONOMY",
   "departureAirport": {
     "@type": "Airport",
     "name": "San Francisco Airport",
@@ -96,8 +96,8 @@
     },
     "image": "unitedstates.com/image.jpg"
   },
-  "flightType": "Domestic",
-  "routeType": "Nonstop",
+  "flightType": "DOMESTIC",
+  "routeType": "NONSTOP",
   "discount": {
     "@type": "Discount",
     "isDiscount": true,

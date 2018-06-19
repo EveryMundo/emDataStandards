@@ -1,19 +1,35 @@
 {
+  "id": "/theme",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Theme",
   "type": "object",
   "properties": {
     "activity": {
-      "description": "activity",
-      "type": "string"
+      "description": "Search recommendations by theme (SHO = Shopping, GOL = Golf, CUL = Culture, BEA = Beach, EUR = European)",
+      "type": "string",
+      "example": "EUR"
     },
     "cityCode": {
-      "description": "cityCode",
-      "type": "string"
+      "description": "Search activity by city of interest",
+      "type": "string",
+      "example": "MIA"
     },
     "isRegion": {
-      "description": "isRegion",
-      "type": "boolean"
+      "description": "Identifier if theme is a region",
+      "type": "boolean",
+      "example": true
     }
   },
-  "required": []
+  "required": ["activity", "cityCode"],
+  "links": [
+    {
+      "title": "Theme",
+      "rel": "self",
+      "href": "/theme",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

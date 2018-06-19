@@ -1,0 +1,42 @@
+{
+  "@type": "airIndex",
+  "airline":{
+    "@type": "Airline",
+    "iataCode": "EM"
+  },
+  "departureAirport": {
+    "@type": "Airport",
+    "iataCode": "SFO"
+  },
+  "arrivalAirport": {
+    "@type": "Airport",
+    "iataCode": "MIA"
+  },
+  "departureCountry": {
+    "@type": "Country",
+    "isoCode": "US"
+  },
+  "arrivalCountry": {
+    "@type": "Country",
+    "isoCode": "US"
+  },
+  "page": {
+    "@type": "Page",
+    "siteEdition": "en-US"
+  },
+  "airIndex": 0.5,
+  "label": "EM",
+  "sl": 387,
+  "ml": 150.96,
+  "ss": 17,
+  "ms": 153.43,
+  "s_rate_l": 12.9,
+  "px": 1.02,
+  "subset": true,
+  "sx": 1.32,
+  "batch_id": "1705201000_1704201000_1706251255_ALL",
+  "from_date": "2017-04-20 10:00:00",
+  "to_date": "2017-05-20 10:00:00",
+  "xid": "1705201000_1704201000_1706251255_EM:ACA>AGU",
+  "__createdat": "2017-06-25 13:00:17"
+}

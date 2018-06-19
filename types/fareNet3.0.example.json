@@ -3,6 +3,11 @@
   "offerId": "123456789Kat",
   "journey": {
     "@type": "Journey",
+    "airline": {
+      "@type": "Airline",
+      "name": "EveryMundo",
+      "iataCode": "EM"
+     },
     "fullRoute": "SFO>MIA>JFK|JFK>SFO",
     "priceSpecification": {
       "@type": "priceSpecification",
@@ -16,7 +21,7 @@
       "priceMarketId": "USD-US",      
       "redemption": {
         "@type": "Redemption",
-        "unit": "miles",
+        "unit": "MILES",
         "amount": 1500
       }
     },
@@ -91,7 +96,7 @@
           "isSoldOut": false,
           "redemptionAmount": 9999,
           "outboundDate": "2017-03-06",
-          "inboundDate": "NULL"
+          "inboundDate": null
         }
       ]
     },
@@ -122,13 +127,13 @@
             "name": "San Francisco Airport",
             "iataCode": "SFO"
             },          
-          "departureTime": "2027-03-04T06:35:00-08:00",          
+          "departureTime": "06:35",          
           "arrivalAirport": {
             "@type": "Airport",
             "name": "Miami International Airport",
             "iataCode": "MIA"
             },          
-          "arrivalTime": "2027-03-04T13:35:00-08:00",         
+          "arrivalTime": "13:35",         
           "estimatedDuration": "PT6H30M",          
           "departureCity": {
             "@type": "City",
@@ -179,13 +184,13 @@
             "name": "Miami International Airport",
             "iataCode": "MIA"
             },          
-          "departureTime": "2027-03-07T10:35:00-08:00",          
+          "departureTime": "10:35",          
           "arrivalAirport": {
             "@type": "Airport",
             "name": "John F. Kennedy International Airport",
             "iataCode": "JFK"
             },          
-          "arrivalTime": "2027-03-07T19:35:00-08:00",          
+          "arrivalTime": "19:35",          
           "estimatedDuration": "PT3H25M",          
           "departureCity": {
             "@type": "City",
@@ -250,14 +255,14 @@
         "isoCode": "US"
         },
       "flightType": "DOMESTIC",
-      "routeType": "Connecting",
+      "routeType": "CONNECTING",
       "discount": {
         "@type": "Discount",
         "isDiscount": true,
         "code": "AFFBFAN",
         "amount": 500,
         "percentage": 0.5,
-        "expirationDate": "2017-12-31"
+        "expiration": "2017-12-31"
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -275,7 +280,7 @@
     },
     "inboundFlight": {
       "@type": "Journey",
-      "boundType": "Inbound",
+      "boundType": "INBOUND",
       "route": "JFK>SFO",
       "priceSpecification": {
         "@type": "PriceSpecification",
@@ -299,14 +304,13 @@
             "name": "John F. Kennedy International Airport",
             "iataCode": "JFK"
             },          
-          "departureTime": "2017-03-04T06:35:00-08:00",
-          "departureTimeZone": "UTC",
+          "departureTime": "06:35",
           "arrivalAirport": {
             "@type": "Airport",
             "name": "San Francisco Airport",
             "iataCode": "SFO"
             },          
-          "arrivalTime": "2017-03-04T13:35:00-08:00",          
+          "arrivalTime": "13:35",          
           "estimatedDuration": "PT7H30M",          
           "departureCity": {
             "@type": "City",
@@ -371,14 +375,14 @@
         "isoCode": "US"
       },
       "flightType": "DOMESTIC",
-      "routeType": "Nonstop",
+      "routeType": "NONSTOP",
       "discount": {
         "@type": "Discount",
         "isDiscount": true,
         "code": "AFFBFAN",
         "amount": 500,
         "percentage": 0.5,
-        "expirationDate": "2017-12-31"
+        "expiration": "2017-12-31"
       },
       "additionalInfo": {
         "@type": "AdditionalInfo",
@@ -407,15 +411,11 @@
       "code": "AFFBFAN",
       "amount": 500,
       "percentage": 0.5,
-      "expirationDate": "2017-12-31"
-    },
-    "airline": {
-      "@type": "Airline",
-      "name": "EveryMundo",
-      "iataCode": "EM"
-      }
-    },
-  "webPage": {
+      "expiration": "2017-12-31"
+    }
+  },
+  "reservationStatus": "IBE_FLIGHT_SELECTION",
+  "page": {
     "@type": "WebPage",
     "name": "flights from miami to berlin",
     "url": "flights.everymundo.com/en/flights-from-miami-to-berlin",

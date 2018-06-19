@@ -1,4 +1,5 @@
 {
+  "id": "/organization",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Organization",
   "description": "Organization",
@@ -6,8 +7,21 @@
   "properties": {
     "name": {
       "description": "name",
-      "type": "string"
+      "type": "string",
+      "example": "Hertz"
     }
   },
-  "required": []
+  "required": ["name"],
+  "links": [
+    {
+      "title": "Organization",
+      "description": "Organization",
+      "rel": "self",
+      "href": "/organization",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

@@ -1,0 +1,128 @@
+{
+  "id": "/airindex",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "airIndex",
+  "description": "airIndex™ is EveryMundo’s proprietary KPI (numeric value between 0 and 1)",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "Record unique identifier as given by MongoDB",
+      "type": "string",
+      "example": "14961881240552180.141840260"
+    },
+     "airline": {
+        "description": "Airline",
+        "type": "object",
+        "properties": {
+          "iataCode": {
+            "description": "IATA identifier for the airline",
+            "type": "string",
+            "example": "EM"
+          }
+        }
+    },
+    "orig": {
+      "description": "Origin",
+      "type": "string",
+      "example": "ACA"
+    },
+    "dest": {
+      "description": "Destination",
+      "type": "string",
+      "example": "AGU"
+    },
+    "air_index": {
+      "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
+      "type": "number",
+      "example": 0.5
+    },
+     "air_label": {
+      "description": "Label with suggestion to pull/push a route",
+      "type": "string",
+      "example": "no_change"
+    },
+     "ais": {
+      "description": "air_index",
+      "type": "number",
+      "example": 0.5
+    },
+     "sl": {
+      "description": "Average searches in last 30 days",
+      "type": "integer",
+      "example": 387
+    },
+     "ml": {
+      "description": "Median price in last 30 days",
+      "type": "number",
+      "example": 150.96
+    },
+     "ss": {
+      "description": "Average searches in last 24 hours",
+      "type": "integer",
+      "example": 17
+    },
+     "ms": {
+      "description": "Medium price in last 24 hours",
+      "type": "number",
+      "example": 153.43
+    },
+     "s_rate_l": {
+      "description": "daily search rate in the last 30 days",
+      "type": "number",
+      "example": 12.9
+    },
+     "px": {
+      "description": "Price",
+      "type": "number",
+      "example": "Search"
+    },
+     "subset": {
+      "description": "Adwords network type",
+      "type": "boolean",
+      "example": "true"
+    },
+     "sx": {
+      "description": "Searches",
+      "type": "number",
+      "example": "Search"
+    },
+     "batch_id": {
+      "description": "Unique batch identifier",
+      "type": "string",
+      "example": "1705201000_1704201000_1706251255_ALL"
+    },
+     "from_date": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "2017-04-20 10:00:00"
+    },
+     "to_date": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "2017-05-20 10:00:00"
+    },
+     "xid": {
+      "description": "Adwords network type",
+      "type": "string",
+      "example": "1705201000_1704201000_1706251255_xx:ACA>AGU"
+    },
+     "__createdat": {
+      "description": "Record creation date",
+      "type": "string",
+      "example": "2017-06-25 13:00:17"
+    }
+  },
+  "required": ["name", "iataCode"],
+  "links": [
+    {
+      "title": "Airline",
+      "description": "Airline",
+      "rel": "self",
+      "href": "/airindex",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

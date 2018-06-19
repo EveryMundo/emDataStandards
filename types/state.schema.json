@@ -1,4 +1,5 @@
 {
+  "id": "/state",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "State",
   "description": "State",
@@ -6,11 +7,13 @@
   "properties": {
     "name": {
       "description": "The name of the state",
-      "type": "string"
+      "type": "string",
+      "example": "Florida"
     },
     "stateCode": {
       "description": "ISO code for the state",
-      "type": "string"
+      "type": "string",
+      "example": "FL"
     },
     "geo": {
       "description": "geo",
@@ -24,16 +27,38 @@
           "description": "The longitude of the state",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
       }
     },
     "image": {
       "description": "Image URL for the state",
-      "type": "string"
+      "type": "string",
+      "example": "florida.com/image.jpg"
     },
     "images": {
       "description": "Array of image URLs for the state",
-      "type": "array"
+      "type": "array",
+      "example": [
+        "florida.com/image.jpg",
+        "florida.com/image2.jpg"
+      ]
     }
   },
-  "required": []
+  "required": ["name", "stateCode"],
+  "links": [
+    {
+      "title": "State",
+      "description": "State",
+      "rel": "self",
+      "href": "/state",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

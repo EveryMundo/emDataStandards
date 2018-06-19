@@ -1,19 +1,22 @@
 {
+  "id": "/extraInfo",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "ExtraInfo",
   "description": "ExtraInfo",
   "type": "object",
   "properties": {
     "environment": {
-      "description": "environment",
-      "type": "string"
+      "description": "DEVELOPMENT, PREPRODUCTION, PRODUCTION",
+      "type": "string",
+      "example": "Production"
     },
     "indexStatus": {
-      "description": "indexStatus",
-      "type": "string"
+      "description": "INDEX, FOLLOWNOINDEX, NOFOLLOW",
+      "type": "string",
+      "example": "Index"
     },
     "additionalInfo": {
-      "description": "additionalInfo",
+      "description": "Additional information not previously included",
       "type": "object",
       "properties": {
         "name": {
@@ -24,8 +27,25 @@
           "description": "value",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "ExtraInfo",
+        "name": "name",
+        "value": "value"
       }
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "ExtraInfo",
+      "description": "ExtraInfo",
+      "rel": "self",
+      "href": "/extraInfo",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

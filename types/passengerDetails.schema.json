@@ -1,5 +1,7 @@
 {
+  "id": "/passengerDetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "PassengerDetails",
   "type": "array",
   "properties": {
     "category": {
@@ -15,5 +17,16 @@
       "type": "number"
     }
   },
-  "required": []
+  "required": ["category", "mappedTo", "count"],
+  "links": [
+    {
+      "title": "PassengerDetails",
+      "rel": "self",
+      "href": "/passengerDetails",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

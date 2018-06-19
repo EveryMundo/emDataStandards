@@ -1,17 +1,32 @@
 {
+  "id": "/budget",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Budget",
   "description": "Budget",
   "type": "object",
   "properties": {
     "minimumAmount": {
-      "description": "minimumAmount",
-      "type": "number"
+      "description": "Minimum amount user is willing to pay",
+      "type": "number",
+      "example": 50
     },
     "maximumAmount": {
-      "description": "maximumAmount",
-      "type": "number"
+      "description": "Maximum amount user is willing to pay",
+      "type": "number",
+      "example": 300
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Budget",
+      "description": "Budget",
+      "rel": "self",
+      "href": "/budget",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

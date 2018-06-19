@@ -1,45 +1,72 @@
 {
+  "id": "/database",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Database",
   "description": "Database",
   "type": "object",
   "properties": {
     "_id": {
-      "description": "_id",
-      "type": "string"
+      "description": "Record unique identifier as given by MongoDB",
+      "type": "string",
+      "example": "14961881240552180.141840260"
+    },
+    "version": {
+      "description": "Version of the program that generated the record",
+      "type": "string",
+      "example": "2.1.0"
     },
     "__createdat": {
-      "description": "__createdat",
-      "type": "string"
+      "description": "Record creation date",
+      "type": "string",
+      "example": "2017-11-28 15:46:02"
     },
     "timeZone": {
-      "description": "timeZone",
-      "type": "string"
+      "description": "Timezone of record creation",
+      "type": "string",
+      "example": "EST"
     },
     "__v": {
-      "description": "__v",
-      "type": "number"
+      "description": "Datacore version, same number we find on the table name in Redshift",
+      "type": "number",
+      "example": 1
     },
     "farenetId": {
-      "description": "farenetId",
-      "type": "string"
+      "description": "API specific field for back-reference: Farenet record unique identifier",
+      "type": "string",
+      "example": "bcxtwjjyxgshxx4rvgqm9"
     },
     "trackingId": {
-      "description": "trackingId",
-      "type": "string"
+      "description": "Unique identifier created through module interactions for event tracking",
+      "type": "string",
+      "example": "RTJFKFRA2017073120170824$0_123456KARIN"
     },
     "schemaVersion": {
-      "description": "schemaVersion",
-      "type": "number"
+      "description": "Schema version of Data Standards",
+      "type": "number",
+      "example": 1
     },
     "batchId": {
-      "description": "batchId",
-      "type": "string"
+      "description": "Unique batch identifier",
+      "type": "string",
+      "example": "201711281029"
     },
     "parserRegexId": {
-      "description": "parserRegexId",
-      "type": "string"
+      "description": "ID of regex pattern that matched",
+      "type": "string",
+      "example": "CopaNonbrand1"
     }
   },
-  "required": []
+  "required": ["_id", "__createdat", "__v"],
+  "links": [
+    {
+      "title": "Database",
+      "description": "Database",
+      "rel": "self",
+      "href": "/database",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

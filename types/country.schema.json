@@ -1,4 +1,5 @@
 {
+  "id": "/country",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Country",
   "description": "Country",
@@ -6,11 +7,13 @@
   "properties": {
     "name": {
       "description": "The name of the country",
-      "type": "string"
+      "type": "string",
+      "example": "United States"
     },
     "isoCode": {
       "description": "The country code (in 2 letter codes from ISO 3166-1)",
-      "type": "string"
+      "type": "string",
+      "example": "US"
     },
     "geo": {
       "description": "geo",
@@ -24,16 +27,38 @@
           "description": "The longitude of the country",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Geocoordinates",
+        "latitude": 37.42,
+        "longitude": -108.32
       }
     },
     "image": {
       "description": "Image URL for the country",
-      "type": "string"
+      "type": "string",
+      "example": "unitedstates.com/image.jpg"
     },
     "images": {
       "description": "Array of image URLs for the country",
-      "type": "array"
+      "type": "array",
+      "example": [
+        "unitedstates.com/image.jpg",
+        "unitedstates.com/image2.jpg"
+      ]
     }
   },
-  "required": []
+  "required": ["name", "isoCode"],
+  "links": [
+    {
+      "title": "Country",
+      "description": "Country",
+      "rel": "self",
+      "href": "/country",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

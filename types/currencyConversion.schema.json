@@ -1,27 +1,32 @@
 {
+  "id": "/currencyConversion",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "CurrencyConversion",
   "description": "CurrencyConversion",
   "type": "object",
   "properties": {
     "requestTimestamp": {
-      "description": "requestTimestamp",
-      "type": "string"
+      "description": "Date and time for the currency API request",
+      "type": "string",
+      "example": "2017-05-30 22:49:47"
     },
     "localCurrency": {
-      "description": "localCurrency",
-      "type": "string"
+      "description": "Currency code conversion from",
+      "type": "string",
+      "example": "USD"
     },
     "isHistorical": {
-      "description": "isHistorical",
-      "type": "boolean"
+      "description": "True if the data was queried as historical data rather than the latest one",
+      "type": "boolean",
+      "example": false
     },
     "exchangeRateDate": {
-      "description": "exchangeRateDate",
-      "type": "string"
+      "description": "Date of rate value. If historical is false then it matches timestamp",
+      "type": "string",
+      "example": "2017-05-30 00:00:00"
     },
     "exchangeRates": {
-      "description": "exchangeRates",
+      "description": "Currency codes conversion to and rate values",
       "type": "object",
       "properties": {
         "AED": {
@@ -32,20 +37,40 @@
           "description": "AFN",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Rate",
+        "AED": 3.67,
+        "AFN": 68.35
       }
     },
     "localAmount": {
-      "description": "localAmount",
-      "type": "number"
+      "description": "Amount to be converted",
+      "type": "number",
+      "example": 321
     },
     "totalPriceUSD": {
-      "description": "totalPriceUSD",
-      "type": "number"
+      "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc. in USD",
+      "type": "number",
+      "example": 321
     },
     "exchangeRateUSD": {
-      "description": "exchangeRateUSD",
-      "type": "number"
+      "description": "Rate value for conversion rate to USD",
+      "type": "number",
+      "example": 1
     }
   },
-  "required": []
+  "required": ["exchangeRateDate"],
+  "links": [
+    {
+      "title": "CurrencyConversion",
+      "description": "CurrencyConversion",
+      "rel": "self",
+      "href": "/currencyConversion",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

@@ -1,54 +1,65 @@
 {
+  "id": "/flexibleDate",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlexibleDate",
   "description": "FlexibleDate",
   "type": "object",
   "properties": {
     "departureDate": {
-      "description": "departureDate",
-      "type": "string"
+      "description": "Date of departure",
+      "type": "string",
+      "example": "2017-12-07"
     },
     "departureDayInterval": {
-      "description": "departureDayInterval",
-      "type": "number"
+      "description": "Flexible number of days before or after departure/arrival date",
+      "type": "number",
+      "example": 3
     },
     "departureFlexibleDate": {
-      "description": "departureFlexibleDate",
+      "description": "Array of flexible dates",
       "type": "object",
       "properties": {
         "minus3": {
-          "description": "minus3",
-          "type": "string"
+          "description": "3 Days before initial departure date",
+          "type": "string",
+          "example": "2017-12-04"
         },
         "minus2": {
-          "description": "minus2",
-          "type": "string"
+          "description": "2 Days before initial departure date",
+          "type": "string",
+          "example": "2017-12-05"
         },
         "minus1": {
-          "description": "minus1",
-          "type": "string"
+          "description": "1 Day before initial departure date",
+          "type": "string",
+          "example": "2017-12-06"
         },
         "plus1": {
-          "description": "plus1",
-          "type": "string"
+          "description": "1 Day after initial departure date",
+          "type": "string",
+          "example": "2017-12-08"
         },
         "plus2": {
-          "description": "plus2",
-          "type": "string"
+          "description": "2 Days after initial departure date",
+          "type": "string",
+          "example": "2017-12-09"
         },
         "plus3": {
-          "description": "plus3",
-          "type": "string"
+          "description": "3 Days after initial departure date",
+          "type": "string",
+          "example": "2017-12-10"
         }
       }
     },
     "returnDate": {
       "description": "returnDate",
-      "type": "string"
+      "type": "string",
+      "example": "2017-12-17"
     },
     "returnDayInterval": {
-      "description": "returnDayInterval",
-      "type": "number"
+      "description": "Flexible number of days before or after departure/arrival date",
+      "type": "number",
+      "example": 3
     },
     "returnFlexibleDate": {
       "description": "returnFlexibleDate",
@@ -56,34 +67,58 @@
       "properties": {
         "minus3": {
           "description": "minus3",
-          "type": "string"
+          "type": "string",
+          "example": "2017-12-14"
         },
         "minus2": {
           "description": "minus2",
-          "type": "string"
+          "type": "string",
+          "example": "2017-12-15"
         },
         "minus1": {
           "description": "minus1",
-          "type": "string"
+          "type": "string",
+          "example": "2017-12-16"
         },
         "plus1": {
           "description": "plus1",
-          "type": "string"
+          "type": "string",
+          "example": "2017-12-18"
         },
         "plus2": {
           "description": "plus2",
-          "type": "string"
+          "type": "string",
+          "example": "2017-12-19"
         },
         "plus3": {
           "description": "plus3",
-          "type": "string"
+          "type": "string",
+          "example": "2017-12-20"
         }
       }
     },
     "stayDuration": {
-      "description": "stayDuration",
-      "type": "number"
-    }
+      "description": "Number of days between departure and return date",
+      "type": "number",
+      "example": 10
+    },
+    "isFlexibleDates": {
+      "description": "Whether the user selected flexible dates",
+      "type": "boolean",
+      "example": true
+    } 
   },
-  "required": []
+  "required": ["departureDate"],
+  "links": [
+    {
+      "title": "FlexibleDate",
+      "description": "FlexibleDate",
+      "rel": "self",
+      "href": "/flexibleDate",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

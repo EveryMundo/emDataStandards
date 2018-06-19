@@ -1,4 +1,5 @@
 {
+  "id": "/passenger",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Passenger",
   "description": "Passenger",
@@ -6,32 +7,51 @@
   "properties": {
     "count": {
       "description": "Amount of passengers for a specific category",
-      "type": "number"
+      "type": "number",
+      "example": 3
     },
     "seniorCount": {
       "description": "Amount of senior passengers",
-      "type": "number"
+      "type": "number",
+      "example": 0
     },
     "adultCount": {
       "description": "Amount of adult passengers",
-      "type": "number"
+      "type": "number",
+      "example": 2
     },
     "youngAdultCount": {
       "description": "Amount of young adults passengers",
-      "type": "number"
+      "type": "number",
+      "example": 0
     },
     "childCount": {
       "description": "Amount of children passengers",
-      "type": "number"
+      "type": "number",
+      "example": 1
     },
     "infantInLapCount": {
       "description": "Amount of in lap infants passengers",
-      "type": "number"
+      "type": "number",
+      "example": 0
     },
     "infantInSeatCount": {
       "description": "Amount of in seat infants passengers",
-      "type": "number"
+      "type": "number",
+      "example": 0
     }
   },
-  "required": []
+  "required": ["count"],
+  "links": [
+    {
+      "title": "Passenger",
+      "description": "Passenger",
+      "rel": "self",
+      "href": "/passenger",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

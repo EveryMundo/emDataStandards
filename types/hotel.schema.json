@@ -1,20 +1,24 @@
 {
+  "id": "/hotel",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Hotel",
   "description": "Hotel",
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
-      "type": "string"
+      "description": "Hotel name",
+      "type": "string",
+      "example": "Holiday Inn"
     },
     "group": {
-      "description": "group",
-      "type": "string"
+      "description": "Hotel group where hotels are under the same management and belong to the same brand of hotels.",
+      "type": "string",
+      "example": "IHG"
     },
     "cityCode": {
-      "description": "cityCode",
-      "type": "string"
+      "description": "ISO code for the city",
+      "type": "string",
+      "example": "SAN"
     },
     "priceSpecification": {
       "description": "priceSpecification",
@@ -52,6 +56,17 @@
           "description": "lastUpdatePriceTime",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "priceSpecification",
+        "price": 234.21,
+        "totalPrice": 250.6,
+        "taxPrice": 16.39,
+        "additionalFeesPrice": 12,
+        "currency": "USD",
+        "currencySymbol": "$",
+        "priceMarketId": "USD-US",
+        "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
       }
     },
     "guest": {
@@ -70,10 +85,15 @@
           "description": "childCount",
           "type": "number"
         }
+      },
+      "example": {
+        "count": 4,
+        "adultCount": 2,
+        "childCount": 2
       }
     },
     "address": {
-      "description": "address",
+      "description": "Where the hotel is located",
       "type": "object",
       "properties": {
         "street": {
@@ -96,26 +116,38 @@
           "description": "countryCode",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "PostalAddress",
+        "street": "1500 Orange Avenue",
+        "cityName": "San Diego",
+        "regionCode": "CA",
+        "postalCode": "94043",
+        "countryCode": "US"
       }
     },
     "checkinTime": {
-      "description": "checkinTime",
-      "type": "string"
+      "description": "The earliest someone may check into a lodging establishment",
+      "type": "string",
+      "example": "2017-08-05T16:00:00-07:00"
     },
     "checkoutTime": {
-      "description": "checkoutTime",
-      "type": "string"
+      "description": "The latest someone may check out of a lodging establishment",
+      "type": "string",
+      "example": "2017-08-06T20:00:00-07:00"
     },
     "roomCount": {
-      "description": "roomCount",
-      "type": "number"
+      "description": "Number of rooms",
+      "type": "number",
+      "example": 1
     },
     "starRating": {
-      "description": "starRating",
-      "type": "string"
+      "description": "An official rating for the hotel, e.g. from national associations or standards bodies: 5-star hotel",
+      "type": "string",
+      "example": "5"
     },
     "aggregateRating": {
-      "description": "aggregateRating",
+      "description": "Rating of hotel",
       "type": "object",
       "properties": {
         "author": {
@@ -138,16 +170,41 @@
           "description": "ratingCount",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Rating",
+        "author": "Tripadvisor",
+        "bestRating": 5,
+        "ratingValue": 3,
+        "worstRating": 1,
+        "ratingCount": 11
       }
     },
     "image": {
-      "description": "image",
-      "type": "string"
+      "description": "Image URL for the hotel",
+      "type": "string",
+      "example": "everymundo.com/image.jpg"
     },
     "images": {
-      "description": "images",
-      "type": "array"
+      "description": "Image URLs for the hotel",
+      "type": "array",
+      "example": [
+        "everymundo.com/image.jpg",
+        "everymundo.com/image2.jpg"
+      ]
     }
   },
-  "required": []
+  "required": ["name", "cityCode"],
+  "links": [
+    {
+      "title": "Hotel",
+      "description": "Hotel",
+      "rel": "self",
+      "href": "/hotel",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

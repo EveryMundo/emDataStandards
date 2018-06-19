@@ -1,15 +1,19 @@
 {
+  "id": "/lounge",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "type": "array",
-  "properties": [
-    {
+  "title": "Lounge",
+  "description": "Lounge Pass",
+  "type": "object",
+  "properties": {
       "airportIataCode": {
         "description": "airportIataCode",
-        "type": "string"
+        "type": "string",
+        "example": "MIA"
       },
       "passCount": {
         "description": "passCount",
-        "type": "number"
+        "type": "number",
+        "example": 1
       },
       "priceSpecification": {
         "description": "priceSpecification",
@@ -17,35 +21,52 @@
         "properties": {
           "price": {
             "description": "price",
-            "type": "number"
+            "type": "number",
+            "example": 234.21
           },
           "totalPrice": {
             "description": "totalPrice",
-            "type": "number"
+            "type": "number",
+            "example": 250.6
           },
           "taxPrice": {
             "description": "taxPrice",
-            "type": "number"
+            "type": "number",
+            "example": 16.39
           },
           "currency": {
             "description": "currency",
-            "type": "string"
+            "type": "string",
+            "example": "USD"
           },
           "currencySymbol": {
             "description": "currencySymbol",
-            "type": "string"
+            "type": "string",
+            "example": "$"
           },
           "priceMarketId": {
             "description": "priceMarketId",
-            "type": "string"
+            "type": "string",
+            "example": "USD-US"
           },
           "lastUpdatePriceTime": {
             "description": "lastUpdatePriceTime",
-            "type": "string"
+            "type": "string",
+            "example": "2018-02-12T16:49:13.131+0000"
           }
         }
       }
+  },
+  "required": ["airportIataCode", "passCount", "priceSpecification"],
+  "links": [
+    {
+      "title": "Lounge",
+      "rel": "self",
+      "href": "/lounge",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
     }
-  ],
-  "required": []
+  ]
 }

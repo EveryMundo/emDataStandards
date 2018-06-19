@@ -1,129 +1,199 @@
 {
+  "id": "/frontComponent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "frontComponent",
   "description": "frontComponent",
   "type": "object",
   "properties": {
     "showLoading": {
-      "description": "showLoading",
-      "type": "boolean"
+      "description": "Whether to show loading animation display",
+      "type": "boolean",
+      "example": true
     },
     "role": {
-      "description": "role",
-      "type": "string"
+      "description": "Accessibility Attribute: Used to communicate an important and usually time-sensitive message to the user. When this role is added to an element, the browser will send out an accessible alert event to assistive technology products which can then notify the user about it. Additional options: https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute",
+      "type": "string",
+      "example": "Alert"
     },
     "ariaLabel": {
-      "description": "ariaLabel",
-      "type": "string"
+      "description": "Accessibility Attribute: The aria-label attribute is used to define a string that labels the current element. Used in cases where a text label is not visible on the screen.",
+      "type": "string",
+      "example": null
     },
     "ariaLive": {
-      "description": "ariaLive",
-      "type": "string"
+      "description": "Accessibility Attribute: ARIA live regions provide a way to programmatically expose dynamic content changes in a way that can be announced by assistive technologies. Available Options: 1. aria-live='polite' indicates that the screen reader should wait until the user is idle before presenting updates to the user. This is the most commonly used value, as interrupting the user with 'assertive' might interrupt their flow. 2. aria-atomic is not set (false by default) so that only the added or removed users should be spoken and not the entire roster each time. 3. aria-relevant='additions removals' ensures that both users added or removed to the roster will be spoken. Reference: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions",
+      "type": "string",
+      "example": "Polite"
     },
     "isAriaBusy": {
-      "description": "isAriaBusy",
-      "type": "boolean"
+      "description": "Accessibility Attribute: ARIA-busy state should be used by the content authors when a portion on a web page has auto updating content. Ref:  http://www.maxability.co.in/2014/02/aria-busy/",
+      "type": "boolean",
+      "example": false
     },
     "loadingLabel": {
-      "description": "loadingLabel",
-      "type": "string"
+      "description": "Loading Label to be displayed",
+      "type": "string",
+      "example": "Loading"
     },
     "priceSpecification": {
-      "description": "priceSpecification",
+      "description": "Details on fares",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "airline": {
+            "@type": "Airline",
+            "name": "EveryMundo",
+            "iataCode": "EM",
+            "image": "everymundo.com/image.jpg"
+          },
+          "currency": "USD",
+          "currencySymbol": "$",
+          "totalPrice": 234.5,
+          "departureTime": "2018-03-07T19:44:02.092Z",
+          "departureTimeZone": "UTC",
+          "returnTime": "2018-03-12T19:44:02.092Z",
+          "returnTimeZone": "UTC",
+          "formattedTotalPrice": "234.50",
+          "formattedDepartureDate": "07/03/18",
+          "formattedReturnDate": "07/12/18"
+        }
+      ]
     },
     "showSorting": {
-      "description": "showSorting",
-      "type": "boolean"
+      "description": "Whether to show sorting option. Only available for the following modules so far: Fares List_Mosaic Grid, Fares List_Horizontal Tile, Fares Filterable List_Horizontal Tile",
+      "type": "boolean",
+      "example": true
     },
     "defaultImage": {
-      "description": "defaultImage",
-      "type": "string"
+      "description": "Default Destination Image for cases where the destination location do not have an associated image. Future Implementation: The destination image will be automatically returned by the Fares Microservices when no location image is found.",
+      "type": "string",
+      "example": "arrivalimage.com"
     },
     "additionalCssClasses": {
-      "description": "additionalCssClasses",
-      "type": "string"
+      "description": "CSS Classes to be applied to the Slider",
+      "type": "string",
+      "example": null
     },
     "showGeneralDisclaimer": {
-      "description": "showGeneralDisclaimer",
-      "type": "boolean"
+      "description": "Whether to show module generic disclaimer at the UI level",
+      "type": "boolean",
+      "example": false
     },
     "showGeneralDisclaimerOnTop": {
-      "description": "showGeneralDisclaimerOnTop",
-      "type": "boolean"
+      "description": "Whether to show on top the module generic disclaimer at the UI level",
+      "type": "boolean",
+      "example": true
     },
     "showCallToAction": {
-      "description": "showCallToAction",
-      "type": "boolean"
+      "description": "Whether to show Book CTA at the UI level",
+      "type": "boolean",
+      "example": false
     },
     "showPricing": {
-      "description": "showPricing",
-      "type": "boolean"
+      "description": "Whether to show fare pricing at the UI level",
+      "type": "boolean",
+      "example": true
     },
     "showDiscountFare": {
-      "description": "showDiscountFare",
-      "type": "boolean"
+      "description": "Whether to show fare promo flag at the UI levele",
+      "type": "boolean",
+      "example": true
     },
     "showDots": {
-      "description": "showDots",
-      "type": "boolean"
+      "description": "Whether to show navigation dots at the UI level (Usually activated for 4 or less cards)",
+      "type": "boolean",
+      "example": false
     },
     "className": {
-      "description": "className",
-      "type": "string"
+      "description": "CSS Class for the component functionality",
+      "type": "string",
+      "example": "ExploreSlider"
     },
     "isScrollInfinite": {
-      "description": "isScrollInfinite",
-      "type": "boolean"
+      "description": "Whether the infinite scroll behavior is to be activated",
+      "type": "boolean",
+      "example": false
     },
     "isLazyLoad": {
-      "description": "isLazyLoad",
-      "type": "boolean"
+      "description": "Whether is present lazy load for performance optimization",
+      "type": "boolean",
+      "example": true
     },
     "slidesToShowNumber": {
-      "description": "slidesToShowNumber",
-      "type": "number"
+      "description": "Default number of cards to show at the UI level",
+      "type": "number",
+      "example": 3
     },
     "slidesToScrollNumber": {
-      "description": "slidesToScrollNumber",
-      "type": "number"
+      "description": "Default number of cards when scrolling at the UI level",
+      "type": "number",
+      "example": 2
     },
     "responsiveDetails": {
-      "description": "responsiveDetails",
+      "description": "Array of responsive details",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "breakpoint": 1200,
+          "settings": {
+            "slidesToShow": 3,
+            "slidesToScroll": 3
+          }
+        },
+        {
+          "breakpoint": 850,
+          "settings": {
+            "slidesToShow": 2,
+            "slidesToScroll": 2
+          }
+        },
+        {
+          "breakpoint": 600,
+          "settings": {
+            "slidesToShow": 1,
+            "slidesToScroll": 1
+          }
+        }
+      ]
     },
     "initialSlide": {
-      "description": "initialSlide",
-      "type": "number"
+      "description": "Initial slide to display when querying. Defaults to 0",
+      "type": "number",
+      "example": 1
     },
     "showArrows": {
-      "description": "showArrows",
-      "type": "boolean"
+      "description": "Whether to show right and left navigation arrows at the UI level",
+      "type": "boolean",
+      "example": true
     },
     "isAutoDisplay": {
-      "description": "isAutoDisplay",
-      "type": "boolean"
+      "description": "Whether to activate autodisplay behaviour at the UI level",
+      "type": "boolean",
+      "example": false
     },
     "isRightToLeft": {
-      "description": "isRightToLeft",
-      "type": "boolean"
+      "description": "Whether to activate right to left depending on the language. Defaults to false",
+      "type": "boolean",
+      "example": false
     },
     "isFullWidth": {
-      "description": "isFullWidth",
-      "type": "boolean"
+      "description": "Whether to show sorting full width at the UI level",
+      "type": "boolean",
+      "example": true
     },
     "showBlankOption": {
-      "description": "showBlankOption",
-      "type": "boolean"
+      "description": "Whether to display the default sorting option in blank at the UI level",
+      "type": "boolean",
+      "example": false
     },
     "typeLabelsSorting": {
-      "description": "typeLabelsSorting",
+      "description": "Available sorting type labels",
       "type": "object",
       "properties": {
         "mostPopular": {
@@ -158,29 +228,48 @@
           "description": "flightDurationAsc",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Sorting",
+        "mostPopular": "fareMostPopular",
+        "mostSearched": "fareMostPopular",
+        "priceLowToHigh": "fareLowToHigh",
+        "priceHighToLow": "fareHighToLow",
+        "date": "fareDate",
+        "tripLength": "fareTripLength",
+        "departureAsc": "fareDepartureAsc",
+        "flightDurationAsc": "fareFlightDurationAsc"
       }
     },
     "sortingTypes": {
-      "description": "sortingTypes",
+      "description": "Available sorting types",
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "example": [
+        "priceLowToHigh",
+        "priceHighToLow",
+        "date"
+      ]
     },
     "journeyType": {
-      "description": "journeyType",
-      "type": "string"
+      "description": "Journey type",
+      "type": "string",
+      "example": "OW"
     },
     "fareClass": {
-      "description": "fareClass",
-      "type": "string"
+      "description": "ECONOMY, BUSINESS, FIRST",
+      "type": "string",
+      "example": "Economy"
     },
     "totalPrice": {
-      "description": "totalPrice",
-      "type": "number"
+      "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
+      "type": "number",
+      "example": 312
     },
     "departureAirport": {
-      "description": "departureAirport",
+      "description": "Airport details where the flight originates",
       "type": "object",
       "properties": {
         "name": {
@@ -204,11 +293,21 @@
               "type": "number"
             }
           }
+        }
+      },
+      "example": {
+        "@type": "Airport",
+        "name": "San Francisco Airport",
+        "iataCode": "SFO",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 23.12,
+          "longitude": -168.32
         }
       }
     },
     "departureCity": {
-      "description": "departureCity",
+      "description": "City details where the flight originates",
       "type": "object",
       "properties": {
         "name": {
@@ -237,10 +336,21 @@
           "description": "image",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "City",
+        "name": "San Francisco",
+        "cityCode": "SFO",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 23.12,
+          "longitude": -168.32
+        },
+        "image": "sanfrancisco.com/image.jpg"
       }
     },
     "arrivalAirport": {
-      "description": "arrivalAirport",
+      "description": "Airport details where the flight terminates",
       "type": "object",
       "properties": {
         "name": {
@@ -269,10 +379,21 @@
           "description": "image",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Airport",
+        "name": "Miami International Airport",
+        "iataCode": "MIA",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 37.42,
+          "longitude": -108.32
+        },
+        "image": "mia.com/image.jpg"
       }
     },
     "arrivalCity": {
-      "description": "arrivalCity",
+      "description": "City details where the flight terminates",
       "type": "object",
       "properties": {
         "name": {
@@ -301,17 +422,30 @@
           "description": "image",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "City",
+        "name": "Miami",
+        "cityCode": "MIA",
+        "geo": {
+          "@type": "Geocoordinates",
+          "latitude": 37.42,
+          "longitude": -108.32
+        },
+        "image": "miami.com/image.jpg"
       }
     },
     "departureDate": {
-      "description": "departureDate",
-      "type": "string"
+      "description": "Expected departure date",
+      "type": "string",
+      "example": "2017-12-07"
     },
     "returnDate": {
-      "description": "returnDate",
-      "type": "string"
+      "description": "Expected return date",
+      "type": "string",
+      "example": "2017-12-10"
     },
-    "airline": {
+    "provider": {
       "description": "airline",
       "type": "object",
       "properties": {
@@ -329,171 +463,317 @@
         }
       }
     },
+    "showArrivalAirportImage": {
+      "description": "Whether to show the arrival airport image at the UI level",
+      "type": "boolean"
+    },
+    "showDepartureCityName": {
+      "description": "Whether to show the departure city name at the UI level",
+      "type": "boolean"
+    },
+    "showDepartureAirportIataCode": {
+      "description": "Whether to show the departure airport IATA code at the UI level",
+      "type": "boolean"
+    },
+    "showArrivalCityName": {
+      "description": "Whether to show the arrival city name at the UI level",
+      "type": "boolean"
+    },
+    "showArrivalAirportIataCode": {
+      "description": "Whether to show the arrival airport IATA code at the UI level",
+      "type": "boolean"
+    },
+    "showRoute": {
+      "description": "Whether to show the route at the UI level",
+      "type": "boolean"
+    },
+    "showDepartureDate": {
+      "description": "Whether to show the departure date at the UI level",
+      "type": "boolean"
+    },
+    "showReturnDate": {
+      "description": "Whether to show the return date at the UI level",
+      "type": "boolean"
+    },
+    "showDateSeparator": {
+      "description": "Whteher to show date separator at the UI level",
+      "type": "boolean"
+    },
+    "showJourneyType": {
+      "description": "Whether to show journey type at the UI level",
+      "type": "boolean"
+    },
+    "showCallToActionSubtitle": {
+      "description": "Whether to show CTA subtitle at the UI level",
+      "type": "boolean"
+    },
+    "showRouteOnDepartureDate": {
+      "description": "Whether to show route on departure date at the UI level",
+      "type": "boolean"
+    },
+    "showRouteOnReturnDate": {
+      "description": "Whether to show route on return date at the UI level",
+      "type": "boolean"
+    },
+    "showFareClass": {
+      "description": "Whether to show the fare class at the UI level",
+      "type": "boolean"
+    },
+    "showTripLength": {
+      "description": "Whether to show the trip length at the UI level",
+      "type": "boolean"
+    },
+    "showAirlineLogo": {
+      "description": "Whether to show the airline logo at the UI level",
+      "type": "boolean"
+    },
+    "showAirlineName": {
+      "description": "Whether to show the airline name at the UI level",
+      "type": "boolean"
+    },
+    "showFareDisclaimer": {
+      "description": "Whether to show the fare disclaimer at the UI level",
+      "type": "boolean"
+    },
+    "showTotalPrice": {
+      "description": "Whether to show the total price at the UI level",
+      "type": "boolean"
+    },
+    "showDiscountFlag": {
+      "description": "Whether to show promo flag at the UI level",
+      "type": "boolean"
+    },
+    "showDepartureDateLabel": {
+      "description": "Whether to show departure date label at the UI level",
+      "type": "boolean"
+    },
+    "showReturnDateLabel": {
+      "description": "Whether to show return date label at the UI level",
+      "type": "boolean"
+    },
+    "currency": {
+      "description": "The currency (in 3-letter ISO 4217 format) of the price",
+      "type": "boolean"
+    },
     "currencySymbol": {
-      "description": "currencySymbol",
-      "type": "string"
+      "description": "Displayed currency symbol",
+      "type": "string",
+      "example": "$"
     },
     "formattedTotalPrice": {
-      "description": "formattedTotalPrice",
-      "type": "string"
+      "description": "Formatted total price",
+      "type": "string",
+      "example": "234.00"
     },
     "showcurrency": {
-      "description": "showcurrency",
-      "type": "boolean"
+      "description": "Whether to show the price currency code at the UI level",
+      "type": "boolean",
+      "example": true
     },
     "showcurrencySymbol": {
-      "description": "showcurrencySymbol",
-      "type": "boolean"
+      "description": "Whether to show the price currency symbol at the UI level",
+      "type": "boolean",
+      "example": true
     },
     "templateLayout": {
-      "description": "templateLayout",
-      "type": "string"
+      "description": "Booking layout template display at UI level",
+      "type": "string",
+      "example": "Extended"
     },
     "controlsTemplateLayout": {
-      "description": "controlsTemplateLayout",
-      "type": "string"
+      "description": "Template layout for controls refering to the labels and icons disposition",
+      "type": "string",
+      "example": null
     },
     "showTitle": {
-      "description": "showTitle",
-      "type": "boolean"
+      "description": "Whether to show the booking mask title at UI level",
+      "type": "boolean",
+      "example": true
     },
     "showSubtitle": {
-      "description": "showSubtitle",
-      "type": "boolean"
+      "description": "Whether to show the booking mask subtitle at UI level",
+      "type": "boolean",
+      "example": false
     },
     "isFocusOnCurrentField": {
-      "description": "isFocusOnCurrentField",
-      "type": "boolean"
+      "description": "Whether focus should be on current field",
+      "type": "boolean",
+      "example": false
     },
     "showErrors": {
-      "description": "showErrors",
-      "type": "boolean"
+      "description": "Whether to show validation errors when interacting with the booking form",
+      "type": "boolean",
+      "example": true
     },
     "showJourneyTypes": {
-      "description": "showJourneyTypes",
+      "description": "Whether to show each journey type at the UI level",
       "type": "array",
       "items": {
         "type": "boolean"
-      }
+      },
+      "example": [
+        false,
+        true
+      ]
     },
     "journeyTypes": {
-      "description": "journeyTypes",
+      "description": "Journey types display at the UI level",
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "example": [
+        "OW",
+        "RT"
+      ]
     },
     "journeyTypeControl": {
-      "description": "journeyTypeControl",
-      "type": "string"
+      "description": "Journey Type Control display at the UI level",
+      "type": "string",
+      "example": "RadioButton"
     },
     "showMultiCity": {
-      "description": "showMultiCity",
-      "type": "boolean"
+      "description": "Whether to show multi city at the UI level",
+      "type": "boolean",
+      "example": false
     },
     "multiCityUrl": {
-      "description": "multiCityUrl",
-      "type": "string"
+      "description": "Journey types multi-city link to core website.",
+      "type": "string",
+      "example": "multicity.com"
     },
     "showAirportsList": {
-      "description": "showAirportsList",
-      "type": "boolean"
+      "description": "Whether to show airports list at the UI level",
+      "type": "boolean",
+      "example": false
     },
     "airportsListMaxNumber": {
-      "description": "airportsListMaxNumber",
-      "type": "number"
+      "description": "Maximun number of origin/destination airports to show",
+      "type": "number",
+      "example": 40
     },
     "isAirportsClearableButton": {
-      "description": "isAirportsClearableButton",
-      "type": "boolean"
+      "description": "Whether there is a button to clear airports list",
+      "type": "boolean",
+      "example": false
     },
     "isAirportsAutocomplete": {
-      "description": "isAirportsAutocomplete",
-      "type": "boolean"
+      "description": "Whether there is autocompletion on airport lists",
+      "type": "boolean",
+      "example": true
     },
     "airportsListFormat": {
-      "description": "airportsListFormat",
-      "type": "string"
+      "description": "Airports list format referrencing items visualization",
+      "type": "string",
+      "example": null
     },
     "airportsListFilteringPriority": {
-      "description": "airportsListFilteringPriority",
-      "type": "string"
+      "description": "Airports list filtering options when searching",
+      "type": "string",
+      "example": null
     },
     "datesFormatEdition": {
-      "description": "datesFormatEdition",
-      "type": "string"
+      "description": "Dates format for edition configured on airTRFX CMS",
+      "type": "string",
+      "example": null
     },
     "datesFormatDisplay": {
-      "description": "datesFormatDisplay",
-      "type": "string"
+      "description": "Date format for display configured on airTRFX CMS",
+      "type": "string",
+      "example": null
     },
     "visibleMonthsMaxNumber": {
-      "description": "visibleMonthsMaxNumber",
-      "type": "number"
+      "description": "Maximum number of visible months when selecting the departure/return dates",
+      "type": "number",
+      "example": 8
     },
     "showFlexibleDays": {
-      "description": "showFlexibleDays",
-      "type": "boolean"
+      "description": "Whether to show flexible days around departure/return date at UI level",
+      "type": "boolean",
+      "example": true
     },
     "daysUntilReturnDate": {
-      "description": "daysUntilReturnDate",
-      "type": "number"
+      "description": "Number of days until Retutn date for its autopopulation",
+      "type": "number",
+      "example": 5
     },
     "isBlackoutDates": {
-      "description": "isBlackoutDates",
-      "type": "boolean"
+      "description": "Whether blackout dates are enabled",
+      "type": "boolean",
+      "example": true
     },
     "showFareClasses": {
-      "description": "showFareClasses",
+      "description": "Whether to show each fare class at the UI level",
       "type": "array",
       "items": {
         "type": "boolean"
-      }
+      },
+      "example": [
+        false,
+        true
+      ]
     },
     "fareClasses": {
-      "description": "fareClasses",
+      "description": "Fare classes (Should be provided by the airline)",
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "example": [
+        "Economy",
+        "Business",
+        "FirstClass"
+      ]
     },
     "fareClassDefault": {
-      "description": "fareClassDefault",
-      "type": "string"
+      "description": "Fare class default value",
+      "type": "string",
+      "example": "Economy"
     },
     "showPassengerCount": {
-      "description": "showPassengerCount",
-      "type": "boolean"
+      "description": "Whether to show passenger count",
+      "type": "boolean",
+      "example": true
     },
     "passengersType": {
-      "description": "passengersType",
+      "description": "Passengers type (Should be provided by the airline)",
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "example": [
+        "Adults",
+        "Children",
+        "Infants"
+      ]
     },
     "passengersTypeDefault": {
-      "description": "passengersTypeDefault",
-      "type": "string"
+      "description": "Passenger type default value",
+      "type": "string",
+      "example": "Adults"
     },
     "showDiscountCode": {
-      "description": "showDiscountCode",
-      "type": "boolean"
+      "description": "Whether to show the promotional code",
+      "type": "boolean",
+      "example": true
     },
     "isCallToActionDisabledOnError": {
-      "description": "isCallToActionDisabledOnError",
-      "type": "boolean"
+      "description": "Whether the Flight search initiation call to action button is disabled on error",
+      "type": "boolean",
+      "example": true
     },
     "PassengerCountMaxNumber": {
-      "description": "PassengerCountMaxNumber",
-      "type": "number"
+      "description": "Maximun number of passengers",
+      "type": "number",
+      "example": 4
     },
     "PassengerCountMinNumber": {
-      "description": "PassengerCountMinNumber",
-      "type": "number"
+      "description": "Minimum number of passengers",
+      "type": "number",
+      "example": 1
     },
     "PassengerCountByTypeMaxNumber": {
-      "description": "PassengerCountByTypeMaxNumber",
+      "description": "Maximum number of passenger by type",
       "type": "object",
       "properties": {
         "adultsCount": {
@@ -504,10 +784,15 @@
           "description": "childrenCount",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Passenger",
+        "adultsCount": 9,
+        "childrenCount": 5
       }
     },
     "PassengerCountByTypeMinNumber": {
-      "description": "PassengerCountByTypeMinNumber",
+      "description": "Minimum number of passenger by type",
       "type": "object",
       "properties": {
         "adultsCount": {
@@ -518,42 +803,70 @@
           "description": "childrenCount",
           "type": "number"
         }
+      },
+      "example": {
+        "@type": "Passenger",
+        "adultsCount": 1,
+        "childrenCount": 1
       }
     },
     "departureAirportIataCodeDefault": {
-      "description": "departureAirportIataCodeDefault",
-      "type": "string"
+      "description": "Departure airport IATA code for prepoluation",
+      "type": "string",
+      "example": "SFO"
     },
     "arrivalAirportIataCodeDefault": {
-      "description": "arrivalAirportIataCodeDefault",
-      "type": "string"
+      "description": "Arrival airport IATA code for prepopulation",
+      "type": "string",
+      "example": "MIA"
     },
     "departureDateDefault": {
-      "description": "departureDateDefault",
-      "type": "string"
+      "description": "Default departure date value",
+      "type": "string",
+      "example": "2017-12-11"
     },
     "returnDateDefault": {
-      "description": "returnDateDefault",
-      "type": "string"
+      "description": "Default return date value",
+      "type": "string",
+      "example": "2017-12-18"
     },
     "flexibleDaysDefault": {
-      "description": "flexibleDaysDefault",
-      "type": "number"
+      "description": "Number of days around departure/return date default value",
+      "type": "number",
+      "example": 3
     },
     "labelKeys": {
-      "description": "labelKeys",
+      "description": "Label keys list",
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "example": [
+        "EmCmpFrom"
+      ]
     },
     "accessibilityLabelKeys": {
-      "description": "accessibilityLabelKeys",
+      "description": "Accessibility label keys list",
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "example": [
+        "AccEmCmpFrom"
+      ]
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "frontComponent",
+      "description": "frontComponent",
+      "rel": "self",
+      "href": "/frontComponent",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

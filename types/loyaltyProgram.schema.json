@@ -1,37 +1,46 @@
 {
+  "id": "/loyaltyProgram",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "LoyaltyProgram",
   "description": "LoyaltyProgram",
   "type": "object",
   "properties": {
     "name": {
-      "description": "name",
-      "type": "string"
+      "description": "Name of program",
+      "type": "string",
+      "example": "Miles and Bonus"
     },
     "provider": {
-      "description": "provider",
+      "description": "Name of the organization providing the Loyalty Program.",
       "type": "object",
       "properties": {
         "name": {
           "description": "name",
           "type": "string"
         }
+      },
+      "example": {
+        "@type": "Organization",
+        "name": "Aegean Airlines"
       }
     },
     "url": {
-      "description": "url",
-      "type": "string"
+      "description": "Loyalty Program information URL.",
+      "type": "string",
+      "example": "https://www.britishairways.com/en-gb/executive-club/about-the-club"
     },
     "certificateNumber": {
-      "description": "certificateNumber",
-      "type": "string"
+      "description": "The loyalty redemption certificate number.",
+      "type": "string",
+      "example": "12854712"
     },
     "membershipLevel": {
-      "description": "membershipLevel",
-      "type": "string"
+      "description": "Loyalty Program Membership Level",
+      "type": "string",
+      "example": "Gold"
     },
     "redemption": {
-      "description": "redemption",
+      "description": "Loyalty Program currency payment method.",
       "type": "object",
       "properties": {
         "unit": {
@@ -56,16 +65,39 @@
             }
           }
         }
+      },
+      "example": {
+        "@type": "Redemption",
+        "unit": "miles",
+        "amount": 1500,
+        "conversion": {
+          "amount": 1500,
+          "ratio": 0.5
+        }
       }
     },
     "milesEarned": {
-      "description": "milesEarned",
-      "type": "number"
+      "description": "Total earned miles",
+      "type": "number",
+      "example": 1000
     },
     "isLoggedIn": {
-      "description": "isLoggedIn",
-      "type": "boolean"
+      "description": "Whether the user is logged in as Loyalty user or not in an airTRFX page",
+      "type": "boolean",
+      "example": false
     }
   },
-  "required": []
+  "required": ["name", "provider", "membershipLevel", "milesEarned"],
+  "links": [
+    {
+      "title": "LoyaltyProgram",
+      "description": "LoyaltyProgram",
+      "rel": "self",
+      "href": "/loyaltyProgram",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

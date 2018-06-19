@@ -1,21 +1,37 @@
 {
+  "id": "/payment",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Payment",
   "description": "Payment",
   "type": "object",
   "properties": {
     "method": {
-      "description": "method",
-      "type": "string"
+      "description": "Method of payment",
+      "type": "string",
+      "example": "CreditCard"
     },
     "cardName": {
-      "description": "cardName",
-      "type": "string"
+      "description": "Name of credit card",
+      "type": "string",
+      "example": "Amex"
     },
     "isSaved": {
-      "description": "isSaved",
-      "type": "boolean"
+      "description": "Whether the card was saved",
+      "type": "boolean",
+      "example": true
     }
   },
-  "required": []
+  "required": ["method"],
+  "links": [
+    {
+      "title": "Payment",
+      "description": "Payment",
+      "rel": "self",
+      "href": "/payment",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

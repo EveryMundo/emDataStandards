@@ -1,667 +1,840 @@
 {
-  "@type": "Offer",
-  "offerId": "123456789Kat",
-  "journey": {
-    "@type": "Journey",
-    "flightReservation": {
-      "@type": "FlightReservation",
-      "boardingGroup": "B",
-      "reservationStatus": "IbeSearch",
-      "passengerPriorityStatus": "FastTrack",
-      "passengerSequenceNumber": "ABC123",
-      "bookingTime": "2027-01-14T13:05:00-05:00",
-      "modifiedTime": "2027-03-14T13:05:00-05:00"
-    },
-    "fullRoute": "SFO>MIA>JFK|JFK>SFO",
-    "priceSpecification": {
-      "@type": "priceSpecification",
-      "price": 234.21,
-      "totalPrice": 250.6,
-      "taxPrice": 16.39,
-      "fuelPrice": 57.89,
-      "additionalFeesPrice": 12,
-      "currency": "USD",
-      "currencySymbol": "$",
-      "priceMarketId": "USD-US",
-      "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
-      "redemption": {
-        "@type": "Redemption",
-        "unit": "miles",
-        "amount": 1500
-      }
-    },
-    "passengerDetails": [
-      {
-        "@type": "Passenger",
-        "category": "senior65Plus",
-        "count": 2
-      },
-      {
-        "@type": "Passenger",
-        "category": "adult12PlusCount",
-        "count": 0
-      },
-      {
-        "@type": "Passenger",
-        "category": "adult18To64Count",
-        "count": 2
-      },
-      {
-        "@type": "Passenger",
-        "category": "child15To17Count",
-        "count": 0
-      },
-      {
-        "@type": "Passenger",
-        "category": "child12To14Count",
-        "count": 1
-      },
-      {
-        "@type": "Passenger",
-        "category": "child5To11Count",
-        "count": 1
-      },
-      {
-        "@type": "Passenger",
-        "category": "child2To4Count",
-        "count": 0
-      },
-      {
-        "@type": "Passenger",
-        "category": "infant0To2Count",
-        "count": 0
-      }
-    ],
-    "passenger": {
-      "@type": "Passenger",
-      "count": 3,
-      "seniorCount": 0,
-      "adultCount": 2,
-      "youngAdultCount": 0,
-      "childCount": 1,
-      "infantInLapCount": 0,
-      "infantInSeatCount": 0
-    },
-    "fareTensor": {
-      "@type": "FlightTensor",
-      "route": "SFO>JFK",
-      "journeyType": "RT",
-      "cells": [
-        {
-          "@type": "Cell",
-          "price": 345.21,
-          "boundType": "Outbound",
-          "isSoldOut": false,
-          "redemptionAmount": 9999,
-          "outboundDate": "2017-03-06",
-          "inboundDate": "NULL"
-        }
-      ]
-    },
-    "outboundFlight": {
-      "@type": "Flight",
-      "boundType": "Outbound",
-      "route": "SFO>JFK",
-      "priceSpecification": {
-        "@type": "PriceSpecification",
-        "price": 750.12,
-        "totalPrice": 825.51,
-        "taxPrice": 75.39
-      },
-      "fareClassInput": "Economy",
-      "fareClass": "Economy",
-      "departureAirportIataCode": "SFO",
-      "arrivalAirportIataCode": "JFK",
-      "estimatedDuration": "PT9H45M",
-      "flightDistance": "1200km",
-      "availableSeatsCount": "9+",
-      "legs": [
-        {
-          "flightNumber": "EM110",
-          "route": "SFO>MIA",
-          "departureAirport": {
-            "@type": "Airport",
-            "name": "San Francisco Airport",
-            "iataCode": "SFO",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 23.12,
-              "longitude": -168.32
+  "id": "/fareNet",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "fareNet3.0",
+  "description": "fareNet 3.0 includes journey only",
+  "type": "object",
+  "properties": {
+    "journey": {
+      "description": "Journey",
+      "type": "object",
+      "properties": {
+        "airline": {
+          "description": "airline",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "name",
+              "type": "string",
+              "example": "EveryMundo"
             },
-            "image": "sfo.com/image.jpg"
-          },
-          "departureGate": "11",
-          "departureTerminal": "B",
-          "departureTime": "2027-03-04T06:35:00-08:00",
-          "departureTimeZone": "UTC",
-          "arrivalAirport": {
-            "@type": "Airport",
-            "name": "Miami International Airport",
-            "iataCode": "MIA",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "mia.com/image.jpg"
-          },
-          "arrivalGate": "21",
-          "arrivalTerminal": "D",
-          "arrivalTime": "2027-03-04T13:35:00-08:00",
-          "arrivalTimeZone": "UTC",
-          "estimatedDuration": "PT6H30M",
-          "flightDistance": "900km",
-          "departureCity": {
-            "@type": "City",
-            "name": "San Francisco",
-            "cityCode": "SFO",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 23.12,
-              "longitude": -168.32
-            },
-            "image": "sanfrancisco.com/image.jpg"
-          },
-          "departureCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "isoCode": "US",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "unitedstates.com/image.jpg"
-          },
-          "arrivalCity": {
-            "@type": "City",
-            "name": "Miami",
-            "cityCode": "MIA",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "miami.com/image.jpg"
-          },
-          "arrivalCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "isoCode": "US",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "unitedstates.com/image.jpg"
-          },
-          "flightType": "Domestic",
-          "operatingAirline": {
-            "@type": "Airline",
-            "name": "EveryMundo",
-            "iataCode": "EM",
-            "image": "everymundo.com/image.jpg"
-          },
-          "aircraft": "Boeing 747",
-          "additionalInfo": {
-            "@type": "AdditionalInfo",
-            "fields": [
-              {
-                "name": "classOfService",
-                "value": "COACH_EC"
-              },
-              {
-                "name": "fareBasis",
-                "value": "NNNJ6SBM+"
-              }
-            ]
+            "iataCode": {
+              "description": "iataCode",
+              "type": "string",
+              "example": "EM"
+            }
           }
         },
-        {
-          "flightNumber": "EM111",
-          "route": "MIA>JFK",
-          "departureAirport": {
-            "@type": "Airport",
-            "name": "Miami International Airport",
-            "iataCode": "MIA",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "mia.com/image.jpg"
-          },
-          "departureGate": "32",
-          "departureTerminal": "A",
-          "departureTime": "2027-03-07T10:35:00-08:00",
-          "departureTimeZone": "UTC",
-          "arrivalAirport": {
-            "@type": "Airport",
-            "name": "John F. Kennedy International Airport",
-            "iataCode": "JFK",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 211.42,
-              "longitude": -118.32
-            },
-            "image": "jfk.com/image.jpg"
-          },
-          "arrivalGate": "12",
-          "arrivalTerminal": "B",
-          "arrivalTime": "2027-03-07T19:35:00-08:00",
-          "arrivalTimeZone": "UTC",
-          "estimatedDuration": "PT3H25M",
-          "flightDistance": "300km",
-          "departureCity": {
-            "@type": "City",
-            "name": "Miami",
-            "cityCode": "MIA",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "mia.com/image.jpg"
-          },
-          "departureCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "isoCode": "US",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "unitedstates.com/image.jpg"
-          },
-          "arrivalCity": {
-            "@type": "City",
-            "name": "New York",
-            "cityCode": "NYC",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 211.42,
-              "longitude": -118.32
-            },
-            "image": "newyork.com/image.jpg"
-          },
-          "arrivalCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "isoCode": "US",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "unitedstates.com/image.jpg"
-          },
-          "flightType": "Domestic",
-          "operatingAirline": {
-            "@type": "Airline",
-            "name": "EveryMundo",
-            "iataCode": "EM",
-            "image": "everymundo.com/image.jpg"
-          },
-          "aircraft": "Boeing 747",
-          "additionalInfo": {
-            "@type": "AdditionalInfo",
-            "fields": [
-              {
-                "name": "classOfService",
-                "value": "COACH_EC"
-              },
-              {
-                "name": "fareBasis",
-                "value": "NNNJ6SBM+"
-              }
-            ]
-          }
-        }
-      ],
-      "departureCity": {
-        "@type": "City",
-        "name": "San Francisco",
-        "cityCode": "SFO",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 23.12,
-          "longitude": -168.32
+        "fullRoute": {
+          "description": "fullRoute",
+          "type": "string",
+          "example": "SFO>MIA>JFK|JFK>SFO"
         },
-        "image": "sanfrancisco.com/image.jpg"
-      },
-      "departureCountry": {
-        "@type": "Country",
-        "name": "United States",
-        "isoCode": "US",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "unitedstates.com/image.jpg"
-      },
-      "arrivalCity": {
-        "@type": "City",
-        "name": "New York",
-        "cityCode": "NYC",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 211.42,
-          "longitude": -118.32
-        },
-        "image": "newyork.com/image.jpg"
-      },
-      "arrivalCountry": {
-        "@type": "Country",
-        "name": "United States",
-        "isoCode": "US",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "unitedstates.com/image.jpg"
-      },
-      "flightType": "Domestic",
-      "routeType": "Connecting",
-      "discount": {
-        "@type": "Discount",
-        "isDiscount": true,
-        "code": "AFFBFAN",
-        "amount": 500,
-        "percentage": 0.5,
-        "expirationDate": "2017-12-31"
-      },
-      "baggage": {
-        "@type": "BaggageAllowance",
-        "count": 2,
-        "checkedBags": 1,
-        "carryOnBags": 1,
         "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": 234.21,
-          "totalPrice": 250.6,
-          "taxPrice": 16.39,
-          "currency": "USD",
-          "currencySymbol": "$",
-          "priceMarketId": "USD-US",
-          "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
-        },
-        "prepaidInd": true
-      },
-      "additionalInfo": {
-        "@type": "AdditionalInfo",
-        "fields": [
-          {
-            "name": "classOfService",
-            "value": "COACH_EC"
-          },
-          {
-            "name": "fareBasis",
-            "value": "NNNJ6SBM+"
+          "description": "priceSpecification",
+          "type": "object",
+          "properties": {
+            "price": {
+              "description": "price",
+              "type": "number",
+              "example": 234.21
+            },
+            "totalPrice": {
+              "description": "totalPrice",
+              "type": "number",
+              "example": 250.6
+            },
+            "taxPrice": {
+              "description": "taxPrice",
+              "type": "number",
+              "example": 16.39
+            },
+            "fuelPrice": {
+              "description": "fuelPrice",
+              "type": "number",
+              "example": 57.89
+            },
+            "additionalFeesPrice": {
+              "description": "additionalFeesPrice",
+              "type": "number",
+              "example": 12
+            },
+            "currency": {
+              "description": "currency",
+              "type": "string",
+              "example": "USD"
+            },
+            "currencySymbol": {
+              "description": "currencySymbol",
+              "type": "string",
+              "example": "$"
+            },
+            "priceMarketId": {
+              "description": "priceMarketId",
+              "type": "string",
+              "example": "USD-US"
+            },
+            "redemption": {
+              "description": "redemption",
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "description": "unit",
+                  "type": "string",
+                  "example": "MILES"
+                },
+                "amount": {
+                  "description": "amount",
+                  "type": "number",
+                  "example": 1500
+                }
+              }
+            }
           }
-        ]
+        },
+        "passengerDetails": {
+          "description": "passengerDetails",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+                "type": "string",
+                "example": "senior65Plus"
+              },
+              "mappedTo": {
+                "description": "Field that passenger count is being mapped to under type Passenger",
+                "type": "string",
+                "example": "seniorCount"
+              },
+              "count": {
+                "description": "Amount of passengers for a specific category",
+                "type": "number",
+                "example": 2
+              }
+            }
+          }
+        },
+        "passenger": {
+          "description": "passenger",
+          "type": "object",
+          "properties": {
+            "count": {
+              "description": "count",
+              "type": "number",
+              "example": 3
+            },
+            "seniorCount": {
+              "description": "seniorCount",
+              "type": "number",
+              "example": 2
+            },
+            "adultCount": {
+              "description": "adultCount",
+              "type": "number",
+              "example": 0
+            },
+            "youngAdultCount": {
+              "description": "youngAdultCount",
+              "type": "number",
+              "example": 0
+            },
+            "childCount": {
+              "description": "childCount",
+              "type": "number",
+              "example": 0
+            },
+            "infantInLapCount": {
+              "description": "infantInLapCount",
+              "type": "number",
+              "example": 0
+            },
+            "infantInSeatCount": {
+              "description": "infantInSeatCount",
+              "type": "number",
+              "example": 0
+            }
+          }
+        },
+        "fareTensor": {
+          "description": "fareTensor",
+          "type": "object",
+          "properties": {
+            "journeyType": {
+              "description": "journeyType",
+              "type": "string",
+              "example": "ROUND_TRIP"
+            },
+            "cells": {
+              "$ref": "./cells.schema.json"
+              }
+            }
+        },
+        "outboundFlight": {
+          "description": "outboundFlight",
+          "type": "object",
+          "properties": {
+            "boundType": {
+              "description": "boundType",
+              "type": "string",
+              "example": "OUTBOUND"
+            },
+            "route": {
+              "description": "route",
+              "type": "string",
+              "example": "SFO>JFK"
+            },
+            "priceSpecification": {
+              "description": "priceSpecification",
+              "type": "object",
+              "properties": {
+                "price": {
+                  "description": "price",
+                  "type": "number",
+                  "example": 750.12
+                },
+                "totalPrice": {
+                  "description": "totalPrice",
+                  "type": "number",
+                  "example": 825.51
+                },
+                "taxPrice": {
+                  "description": "taxPrice",
+                  "type": "number",
+                  "example": 75.39
+                }
+              }
+            },
+            "fareClassInput": {
+              "description": "fareClassInput",
+              "type": "string",
+              "example": "Economy"
+            },
+            "fareClass": {
+              "description": "fareClass",
+              "type": "string",
+              "example": "ECONOMY"
+            },
+            "departureAirportIataCode": {
+              "description": "departureAirportIataCode",
+              "type": "string",
+              "example": "SFO"
+            },
+            "arrivalAirportIataCode": {
+              "description": "arrivalAirportIataCode",
+              "type": "string",
+              "example": "JFK"
+            },
+            "departureDate": {
+              "description": "Departure Date",
+              "type": "string",
+              "example": "2017-12-07"
+            },
+            "estimatedDuration": {
+              "description": "estimatedDuration",
+              "type": "string",
+              "example": "PT9H45M"
+            },
+            "availableSeatsCount": {
+              "description": "availableSeatsCount",
+              "type": "string",
+              "example": "9+"
+            },
+            "legs": {
+              "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
+              "type": "array",
+              "properties": {
+                "flightNumber": {
+                  "description": "flightNumber",
+                  "type": "string",
+                  "example": "EM110"
+                },
+                "route": {
+                  "description": "route",
+                  "type": "string",
+                  "route": "SFO>MIA"
+                },
+                "departureAirport": {
+                  "description": "departureAirport",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "San Francisco Airport"
+                    },
+                    "iataCode": {
+                      "description": "iataCode",
+                      "type": "string",
+                      "example": "SFO"
+                    }
+                  }
+                },
+                "departureTime": {
+                  "description": "departureTime",
+                  "type": "string",
+                  "example": "06:35"
+                },
+                "arrivalAirport": {
+                  "description": "arrivalAirport",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "Miami International Airport"
+                    },
+                    "iataCode": {
+                      "description": "iataCode",
+                      "type": "string",
+                      "example": "MIA"
+                    }
+                  }
+                },
+                "arrivalTime": {
+                  "description": "arrivalTime",
+                  "type": "string",
+                  "example": "13:35"
+                },
+                "estimatedDuration": {
+                  "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+                  "type": "string",
+                  "example": "PT6H30M"
+                },
+                "departureCity": {
+                  "description": "departureCity",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "San Francisco"
+                    },
+                    "cityCode": {
+                      "description": "cityCode",
+                      "type": "string",
+                      "example": "SFO"
+                    }
+                  }
+                },
+                "departureCountry": {
+                  "description": "departureCountry",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "United States"
+                    },
+                    "isoCode": {
+                      "description": "isoCode",
+                      "type": "string",
+                      "example": "US"
+                    }
+                  }
+                },
+                "arrivalCity": {
+                  "description": "arrivalCity",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "Miami"
+                    },
+                    "cityCode": {
+                      "description": "cityCode",
+                      "type": "string",
+                      "example": "MIA"
+                    }
+                  }
+                },
+                "arrivalCountry": {
+                  "description": "arrivalCountry",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "United States"
+                    },
+                    "isoCode": {
+                      "description": "isoCode",
+                      "type": "string",
+                      "example": "US"
+                    }
+                  }
+                },
+                "flightType": {
+                  "description": "DOMESTIC, INTERNATIONAL",
+                  "type": "string",
+                  "example": "DOMESTIC"
+                },
+                "operatingAirline": {
+                  "description": "operatingAirline",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "name",
+                      "type": "string",
+                      "example": "EveryMundo"
+                    },
+                    "iataCode": {
+                      "description": "iataCode",
+                      "type": "string",
+                      "example": "EM"
+                    }
+                  }
+                },
+                "aircraft": {
+                  "description": "Aircraft brand",
+                  "type": "string",
+                  "example": "Boeing 747"
+                },
+                "additionalInfo": {
+                  "description": "additionalInfo",
+                  "type": "object",
+                  "properties": {
+                    "fields": {
+                      "description": "fields",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "description": "",
+                            "type": "string",
+                            "example": "classOfService"
+                          },
+                          "value": {
+                            "description": "",
+                            "type": "string",
+                            "example": "COACH_EC"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              }
+            },
+            "departureCity": {
+              "description": "departureCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "San Francisco"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "SFO"
+                }
+              }
+            },
+            "departureCountry": {
+              "description": "departureCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "arrivalCity": {
+              "description": "arrivalCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "New York"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "NYC"
+                }
+              }
+            },
+            "arrivalCountry": {
+              "description": "arrivalCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "flightType": {
+              "description": "flightType",
+              "type": "string",
+              "example": "DOMESTIC"
+            },
+            "routeType": {
+              "description": "routeType",
+              "type": "string",
+              "example": "CONNECTING"
+            },
+            "discount": {
+              "$ref": "./discount.schema.json"
+            },
+            "additionalInfo": {
+              "description": "additionalInfo",
+              "type": "object",
+              "properties": {
+                "fields": {
+                  "description": "fields",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "description": "",
+                        "type": "string",
+                        "example": "classOfService"
+                      },
+                      "value": {
+                        "description": "",
+                        "type": "string",
+                        "example": "COACH_EC"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+        },
+        "inboundFlight": {
+          "description": "inboundFlight",
+          "type": "object",
+          "properties": {
+            "boundType": {
+              "description": "boundType",
+              "type": "string",
+              "example": "INBOUND"
+            },
+            "route": {
+              "description": "route",
+              "type": "string",
+              "example": "JFK>SFO"
+            },
+            "priceSpecification": {
+              "description": "priceSpecification",
+              "type": "object",
+              "properties": {
+                "price": {
+                  "description": "price",
+                  "type": "number",
+                  "example": 750.12
+                },
+                "totalPrice": {
+                  "description": "totalPrice",
+                  "type": "number",
+                  "example": 825.51
+                },
+                "taxPrice": {
+                  "description": "taxPrice",
+                  "type": "number",
+                  "example": 75.39
+                }
+              }
+            },
+            "fareClassInput": {
+              "description": "fareClassInput",
+              "type": "string",
+              "example": "Economy"
+            },
+            "fareClass": {
+              "description": "fareClass",
+              "type": "string",
+              "example": "ECONOMY"
+            },
+            "departureAirportIataCode": {
+              "description": "departureAirportIataCode",
+              "type": "string",
+              "example": "JFK"
+            },
+            "arrivalAirportIataCode": {
+              "description": "arrivalAirportIataCode",
+              "type": "string",
+              "example": "SFO"
+            },
+            "departureDate": {
+              "description": "Departure Date",
+              "type": "string",
+              "example": "2017-12-10"
+            },
+            "estimatedDuration": {
+              "description": "estimatedDuration",
+              "type": "string",
+              "example": "PT9H45M"
+            },
+            "availableSeatsCount": {
+              "description": "availableSeatsCount",
+              "type": "string",
+              "example": "9+"
+            },
+            "legs": {
+              "description": "legs",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "departureCity": {
+              "description": "departureCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "New York"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "NYC"
+                }
+              }
+            },
+            "departureCountry": {
+              "description": "departureCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "arrivalCity": {
+              "description": "arrivalCity",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "San Francisco"
+                },
+                "cityCode": {
+                  "description": "cityCode",
+                  "type": "string",
+                  "example": "SFO"
+                }
+              }
+            },
+            "arrivalCountry": {
+              "description": "arrivalCountry",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string",
+                  "example": "United States"
+                },
+                "isoCode": {
+                  "description": "isoCode",
+                  "type": "string",
+                  "example": "US"
+                }
+              }
+            },
+            "flightType": {
+              "description": "flightType",
+              "type": "string",
+              "example": "DOMESTIC"
+            },
+            "routeType": {
+              "description": "routeType",
+              "type": "string",
+              "example": "NONSTOP"
+            },
+            "discount": {
+              "$ref": "./discount.schema.json"
+            },
+            "additionalInfo": {
+                  "description": "additionalInfo",
+                  "type": "object",
+                  "properties": {
+                    "fields": {
+                      "description": "fields",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "description": "",
+                            "type": "string",
+                            "example": "classOfService"
+                          },
+                          "value": {
+                            "description": "",
+                            "type": "string",
+                            "example": "COACH_EC"
+                          }
+                        }
+                      }
+                    }
+                  }
+            }
+          }
+        },
+        "departureDate": {
+          "description": "departureDate",
+          "type": "string",
+          "example": "2017-12-07"
+        },
+        "returnDate": {
+          "description": "returnDate",
+          "type": "string",
+          "example": "2017-12-10"
+        },
+        "journeyType": {
+          "description": "journeyType",
+          "type": "string",
+          "example": "ROUND_TRIP"
+        },
+        "isCodeShare": {
+          "description": "isCodeShare",
+          "type": "boolean",
+          "example": true
+        },
+        "flightType": {
+          "description": "flightType",
+          "type": "string",
+          "example": "DOMESTIC"
+        },
+        "segmentCount": {
+          "description": "segmentCount",
+          "type": "number",
+          "example": 2
+        },
+        "flightCount": {
+          "description": "flightCount",
+          "type": "number",
+          "example": 3
+        },
+        "discount": {
+          "$ref": "./discount.schema.json"
+        }
       }
     },
-    "inboundFlight": {
-      "@type": "Journey",
-      "boundType": "Inbound",
-      "route": "JFK>SFO",
-      "priceSpecification": {
-        "@type": "PriceSpecification",
-        "price": 750.12,
-        "totalPrice": 825.51,
-        "taxPrice": 75.39
-      },
-      "fareClassInput": "Economy",
-      "fareClass": "Economy",
-      "departureAirportIataCode": "JFK",
-      "arrivalAirportIataCode": "SFO",
-      "estimatedDuration": "PT7H30M",
-      "flightDistance": "1023km",
-      "availableSeatsCount": "9+",
-      "legs": [
-        {
-          "flightNumber": "EM110",
-          "route": "JFK>SFO",
-          "departureAirport": {
-            "@type": "Airport",
-            "name": "John F. Kennedy International Airport",
-            "iataCode": "JFK",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 211.42,
-              "longitude": -118.32
-            },
-            "image": "jfk.com/image.jpg"
+    "reservationStatus": {
+      "description": "IBE_FLIGHT_SELECTION, IBE_CONFIRMATION, IBE_PASSENGER_INFO, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
+      "type": "string",
+      "example": "IbeSearch"
+    },
+    "page": {
+      "description": "WebPage",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the page",
+          "type": "string",
+          "example": "flights from miami to berlin"
+        },
+        "url": {
+          "description": "The page url",
+          "type": "string",
+          "example": "flights.everymundo.com/en/flights-from-miami-to-berlin"
+        },
+        "hostName": {
+          "description": "Host name",
+          "type": "string",
+          "example": "flights.everymundo.com"
+        },
+        "languageIsoCode": {
+          "description": "Language ISO 639-1 code",
+          "type": "string",
+          "example": "en"
+        },
+        "siteEdition": {
+          "description": "Site edition combination of ISO codes for language and country",
+          "type": "string",
+          "example": "en-US"
+        }
+      }
+    },
+    "device": {
+      "allOf": [
+        {"$ref": "./device.schema.json"},
+        {"required": ["category", "screenResolution", "operatingSystem"]}
+      ],
+      "additionalProperties": false
+    },
+    "database": {
+        "description": "Database",
+        "type": "object",
+        "properties": {
+          "_id": {
+            "description": "Record unique identifier",
+            "type": "string",
+            "example": "14961881240552180.141840260"
           },
-          "departureGate": "17",
-          "departureTerminal": "D",
-          "departureTime": "2017-03-04T06:35:00-08:00",
-          "departureTimeZone": "UTC",
-          "arrivalAirport": {
-            "@type": "Airport",
-            "name": "San Francisco Airport",
-            "iataCode": "SFO",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 23.42,
-              "longitude": -168.32
-            },
-            "image": "jfk.com/image.jpg"
+          "version": {
+            "description": "Version of the program that generated the record",
+            "type": "string",
+            "example": "2.1.0"
           },
-          "arrivalGate": "19",
-          "arrivalTerminal": "E",
-          "arrivalTime": "2017-03-04T13:35:00-08:00",
-          "arrivalTimeZone": "UTC",
-          "estimatedDuration": "PT7H30M",
-          "flightDistance": "1023km",
-          "departureCity": {
-            "@type": "City",
-            "name": "New York",
-            "cityCode": "NYC",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 211.42,
-              "longitude": -118.32
-            },
-            "image": "newyork.com/image.jpg"
+          "__createdat": {
+            "description": "Record creation date",
+            "type": "string",
+            "example": "2017-11-28 15:46:02"
           },
-          "departureCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "isoCode": "US",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "unitedstates.com/image.jpg"
+          "__v": {
+            "description": "Datacore version, same number we find on the table name in Redshift",
+            "type": "number",
+            "example": 1
           },
-          "arrivalCity": {
-            "@type": "City",
-            "name": "San Francisco",
-            "cityCode": "SFO",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 23.42,
-              "longitude": -168.32
-            },
-            "image": "sanfrancisco.com/image.jpg"
+          "trackingId": {
+            "description": "Unique identifier created through module interactions for event tracking",
+            "type": "string",
+            "example": "RTJFKFRA2017073120170824$0_123456KARIN"
           },
-          "arrivalCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "isoCode": "US",
-            "geo": {
-              "@type": "Geocoordinates",
-              "latitude": 37.42,
-              "longitude": -108.32
-            },
-            "image": "unitedstates.com/image.jpg"
-          },
-          "flightType": "Domestic",
-          "operatingAirline": {
-            "@type": "Airline",
-            "name": "EveryMundo",
-            "iataCode": "EM",
-            "image": "everymundo.com/image.jpg"
-          },
-          "aircraft": "Boeing 747",
-          "additionalInfo": {
-            "@type": "AdditionalInfo",
-            "fields": [
-              {
-                "name": "classOfService",
-                "value": "COACH_EC"
-              },
-              {
-                "name": "fareBasis",
-                "value": "NNNJ6SBM+"
-              }
-            ]
+          "schemaVersion": {
+            "description": "Schema version of Data Standards",
+            "type": "number",
+            "example": 1
           }
         }
-      ],
-      "departureCity": {
-        "@type": "City",
-        "name": "New York",
-        "cityCode": "NYC",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 211.42,
-          "longitude": -118.32
-        },
-        "image": "newyork.com/image.jpg"
-      },
-      "departureCountry": {
-        "@type": "Country",
-        "name": "United States",
-        "isoCode": "US",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "unitedstates.com/image.jpg"
-      },
-      "arrivalCity": {
-        "@type": "City",
-        "name": "San Francisco",
-        "cityCode": "SFO",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 23.42,
-          "longitude": -168.32
-        },
-        "image": "sanfrancisco.com/image.jpg"
-      },
-      "arrivalCountry": {
-        "@type": "Country",
-        "name": "United States",
-        "isoCode": "US",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "unitedstates.com/image.jpg"
-      },
-      "flightType": "Domestic",
-      "routeType": "Nonstop",
-      "discount": {
-        "@type": "Discount",
-        "isDiscount": true,
-        "code": "AFFBFAN",
-        "amount": 500,
-        "percentage": 0.5,
-        "expirationDate": "2017-12-31"
-      },
-      "baggage": {
-        "@type": "BaggageAllowance",
-        "count": 2,
-        "checkedBags": 1,
-        "carryOnBags": 1,
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": 234.21,
-          "totalPrice": 250.6,
-          "taxPrice": 16.39,
-          "currency": "USD",
-          "currencySymbol": "$",
-          "priceMarketId": "USD-US",
-          "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
-        },
-        "prepaidInd": true
-      },
-      "additionalInfo": {
-        "@type": "AdditionalInfo",
-        "fields": [
-          {
-            "name": "classOfService",
-            "value": "COACH_EC"
-          },
-          {
-            "name": "fareBasis",
-            "value": "NNNJ6SBM+"
-          }
-        ]
-      }
-    },
-    "departureDate": "2017-12-07",
-    "departureDay": "4",
-    "returnDate": "2017-12-10",
-    "returnDay": "7",
-    "journeyType": "RT",
-    "isCodeShare": true,
-    "flightType": "Domestic",
-    "segmentCount": 2,
-    "flightCount": 3,
-    "discount": {
-      "@type": "Discount",
-      "isDiscount": true,
-      "code": "AFFBFAN",
-      "amount": 500,
-      "percentage": 0.5,
-      "expirationDate": "2017-12-31"
-    },
-    "airline": {
-      "@type": "Airline",
-      "name": "EveryMundo",
-      "iataCode": "EM",
-      "image": "everymundo.com/image.jpg"
     }
   },
-  "webPage": {
-    "@type": "WebPage",
-    "name": "flights from miami to berlin",
-    "url": "flights.everymundo.com/en/flights-from-miami-to-berlin",
-    "hostName": "flights.everymundo.com",
-    "typeName": "CityToCity",
-    "typeCode": "CICI",
-    "languageIsoCode": "en",
-    "siteEdition": "en-US"
-  },
-  "device": {
-    "category": "Mobile",
-    "screenResolution": "360x600",
-    "mobileBranding": "Apple",
-    "mobileModel": "iPhone",
-    "mobileName": "iPhone 6",
-    "operatingSystem": "iOS",
-    "operatingSystemVersion": "9",
-    "isMobileApp": true
-  },
-  "database": {
-    "@type": "Database",
-    "_id": "14961881240552180.141840260",
-    "version": "2.1.0",
-    "__createdat": "2017-11-28 15:46:02",
-    "__v": 1,
-    "farenetId": "14961881240552180.141840260",
-    "trackingId": "RTJFKFRA2017073120170824$0_123456KARIN",
-    "schemaVersion": 1,
-    "batchId": "201711281029"
-  }
+  "required": ["journey", "page", "device", "database"],
+  "links": [
+    {
+      "title": "Kat",
+      "description": "Kattest",
+      "rel": "self",
+      "href": "/fareNet",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

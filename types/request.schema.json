@@ -1,4 +1,5 @@
 {
+  "id": "/request",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Request",
   "description": "Request",
@@ -9,28 +10,68 @@
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "name": "EveryMundo",
+          "iataCode": "EM"
+        },
+        {
+          "name": "Aegean",
+          "iataCode": "A3"
+        }
+      ]
     },
     "departureAirports": {
       "description": "departureAirports",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "name": "San Francisco Airport",
+          "iataCode": "SFO"
+        },
+        {
+          "name": "Miami International Airport",
+          "iataCode": "MIA"
+        }
+      ]
     },
     "arrivalAirports": {
       "description": "arrivalAirports",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "name": "Miami International Airport",
+          "iataCode": "MIA"
+        },
+        {
+          "name": "John F. Kennedy International Airport",
+          "iataCode": "JFK"
+        }
+      ]
     },
     "countries": {
       "description": "countries",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "name": "Colombia",
+          "isoCode": "CO"
+        },
+        {
+          "name": "Greece",
+          "isoCode": "GR"
+        }
+      ]
     },
     "dateLimit": {
       "description": "dateLimit",
@@ -44,6 +85,10 @@
           "description": "latestDate",
           "type": "string"
         }
+      },
+      "example": {
+        "earliestDate": "2017-01-12",
+        "latestDate": "2017-01-25"
       }
     },
     "departureDateLimit": {
@@ -58,6 +103,10 @@
           "description": "latestDate",
           "type": "string"
         }
+      },
+      "example": {
+        "earliestDate": "2017-01-12",
+        "latestDate": "2017-01-25"
       }
     },
     "returnDateLimit": {
@@ -72,6 +121,10 @@
           "description": "latestDate",
           "type": "string"
         }
+      },
+      "example": {
+        "earliestDate": "2017-02-01",
+        "latestDate": "2017-02-15"
       }
     },
     "priceSpecification": {
@@ -102,6 +155,14 @@
           "description": "priceThousandSeparator",
           "type": "string"
         }
+      },
+      "example": {
+        "currency": "USD",
+        "budgetMinimumAmount": 128,
+        "budgetMaximumAmount": 235,
+        "decimalDigitsNumber": 2,
+        "priceDecimalSeparator": ".",
+        "priceThousandSeparator": ","
       }
     },
     "journeyTypes": {
@@ -109,72 +170,134 @@
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "journeyType": "OW"
+        },
+        {
+          "journeyType": "RT"
+        }
+      ]
     },
     "flightType": {
       "description": "flightType",
-      "type": "string"
+      "type": "string",
+      "example": "Domestic"
     },
     "languageIsoCode": {
       "description": "languageIsoCode",
-      "type": "string"
+      "type": "string",
+      "example": "en"
     },
     "dateFormat": {
       "description": "dateFormat",
-      "type": "string"
+      "type": "string",
+      "example": "dd/MM/yy"
     },
     "faresMaxNumber": {
       "description": "faresMaxNumber",
-      "type": "number"
+      "type": "number",
+      "example": 10
     },
     "faresPerRouteMaxNumber": {
       "description": "faresPerRouteMaxNumber",
-      "type": "number"
+      "type": "number",
+      "example": 5
     },
     "routesMaxNumber": {
       "description": "routesMaxNumber",
-      "type": "number"
+      "type": "number",
+      "example": 23
     },
     "dataLoopBackWindow": {
       "description": "dataLoopBackWindow",
-      "type": "string"
+      "type": "string",
+      "example": "2d"
     },
     "timeInterval": {
       "description": "timeInterval",
-      "type": "string"
+      "type": "string",
+      "example": "1m"
     },
     "isGroupedByRoute": {
       "description": "isGroupedByRoute",
-      "type": "boolean"
+      "type": "boolean",
+      "example": false
     },
     "paginationDetails": {
       "description": "paginationDetails",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "paginationType": "Route",
+          "paginationElementNumber": 5,
+          "paginationStep": 3
+        }
+      ]
     },
     "sortingDetails": {
       "description": "sortingDetails",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "field": "date",
+          "order": "Desc"
+        },
+        {
+          "field": "price",
+          "order": "Asc"
+        }
+      ]
     },
     "selectedOutputFields": {
       "description": "selectedOutputFields",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "field": "date"
+        },
+        {
+          "field": "fareClass"
+        }
+      ]
     },
     "selectedOutputCurrencies": {
       "description": "selectedOutputCurrencies",
       "type": "array",
       "items": {
         "type": "object"
-      }
+      },
+      "example": [
+        {
+          "currency": "USD"
+        },
+        {
+          "currency": "EUR"
+        }
+      ]
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "Request",
+      "description": "Request",
+      "rel": "self",
+      "href": "/request",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

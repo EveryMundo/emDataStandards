@@ -1,4 +1,5 @@
 {
+  "id": "/discount",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Discount",
   "description": "Discount",
@@ -6,24 +7,41 @@
   "properties": {
     "isDiscount": {
       "description": "Whether there is a promotion",
-      "type": "boolean"
+      "type": "boolean",
+      "example": true
     },
     "code": {
       "description": "Discount promotion code",
-      "type": "string"
+      "type": "string",
+      "example": "AFFBFAN"
     },
     "amount": {
       "description": "Discount amount applied to the price",
-      "type": "number"
+      "type": "number",
+      "example": 500
     },
     "percentage": {
       "description": "Discount percentage applied to the price",
-      "type": "number"
+      "type": "number",
+      "example": 0.5
     },
-    "expirationDate": {
+    "expiration": {
       "description": "Promotion expiration date",
-      "type": "string"
+      "type": "string",
+      "example": "2017-12-31"
     }
   },
-  "required": []
+  "required": ["isDiscount"],
+  "links": [
+    {
+      "title": "Discount",
+      "description": "Discount",
+      "rel": "self",
+      "href": "/discount",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }

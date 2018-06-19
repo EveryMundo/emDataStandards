@@ -1,4 +1,5 @@
 {
+  "id": "/dateLimit",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "DateLimit",
   "description": "DateLimit",
@@ -6,12 +7,26 @@
   "properties": {
     "earliestDate": {
       "description": "earliestDate",
-      "type": "string"
+      "type": "string",
+      "example": "2017-01-12"
     },
     "latestDate": {
       "description": "latestDate",
-      "type": "string"
+      "type": "string",
+      "example": "2017-01-25"
     }
   },
-  "required": []
+  "required": [],
+  "links": [
+    {
+      "title": "DateLimit",
+      "description": "DateLimit",
+      "rel": "self",
+      "href": "/dateLimit",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
 }
