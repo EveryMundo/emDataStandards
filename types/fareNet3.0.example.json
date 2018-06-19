@@ -117,6 +117,7 @@
       "departureDate":"2017-12-07",
       "estimatedDuration": "PT9H45M",
       "availableSeatsCount": "9+",
+
       "legs": [
         {
           "flightNumber": "EM110",
