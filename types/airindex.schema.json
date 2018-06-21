@@ -10,17 +10,11 @@
       "type": "string",
       "example": "14961881240552180.141840260"
     },
-     "airline": {
-        "description": "Airline",
-        "type": "object",
-        "properties": {
-          "iataCode": {
-            "description": "IATA identifier for the airline",
+     "airline_code": {
+            "description": "iataCode",
             "type": "string",
             "example": "EM"
-          }
-        }
-    },
+          },
     "orig": {
       "description": "Origin",
       "type": "string",
@@ -42,7 +36,7 @@
       "example": "no_change"
     },
      "ais": {
-      "description": "air_index",
+      "description": "Shorter version of air_index",
       "type": "number",
       "example": 0.5
     },
@@ -72,19 +66,19 @@
       "example": 12.9
     },
      "px": {
-      "description": "Price",
+      "description": "Price Index",
       "type": "number",
-      "example": "Search"
+      "example": 0.73
     },
      "subset": {
-      "description": "Adwords network type",
+      "description": "Define whether a specific row comes from subsets of original dataset",
       "type": "boolean",
       "example": "true"
     },
      "sx": {
-      "description": "Searches",
+      "description": "Searches Index",
       "type": "number",
-      "example": "Search"
+      "example": 0.62
     },
      "batch_id": {
       "description": "Unique batch identifier",
@@ -92,17 +86,17 @@
       "example": "1705201000_1704201000_1706251255_ALL"
     },
      "from_date": {
-      "description": "Adwords network type",
+      "description": "Departure Date",
       "type": "string",
       "example": "2017-04-20 10:00:00"
     },
      "to_date": {
-      "description": "Adwords network type",
+      "description": "Arrival Date",
       "type": "string",
       "example": "2017-05-20 10:00:00"
     },
      "xid": {
-      "description": "Adwords network type",
+      "description": "Id to identify a single unique row in a batch with the purpose of deduplication",
       "type": "string",
       "example": "1705201000_1704201000_1706251255_xx:ACA>AGU"
     },
