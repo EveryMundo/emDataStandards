@@ -10,62 +10,62 @@
       "type": "string",
       "example": "14961881240552180.141840260"
     },
-     "airline_code": {
+     "airlineCode": {
             "description": "iataCode",
             "type": "string",
             "example": "EM"
           },
-    "orig": {
+    "origin": {
       "description": "Origin",
       "type": "string",
       "example": "ACA"
     },
-    "dest": {
+    "destination": {
       "description": "Destination",
       "type": "string",
       "example": "AGU"
     },
-    "air_index": {
+    "airIndex": {
       "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
       "type": "number",
       "example": 0.5
     },
-     "air_label": {
+     "airLabel": {
       "description": "Label with suggestion to pull/push a route",
       "type": "string",
       "example": "no_change"
     },
-     "ais": {
+     "airIndex_s": {
       "description": "Shorter version of air_index",
       "type": "number",
       "example": 0.5
     },
-     "sl": {
+     "searches_l": {
       "description": "Average searches in last 30 days",
       "type": "integer",
       "example": 387
     },
-     "ml": {
+     "medianPrice_l": {
       "description": "Median price in last 30 days",
       "type": "number",
       "example": 150.96
     },
-     "ss": {
+     "searches_s": {
       "description": "Average searches in last 24 hours",
       "type": "integer",
       "example": 17
     },
-     "ms": {
+     "medianPrice_s": {
       "description": "Medium price in last 24 hours",
       "type": "number",
       "example": 153.43
     },
-     "s_rate_l": {
+     "searchRate_l": {
       "description": "daily search rate in the last 30 days",
       "type": "number",
       "example": 12.9
     },
-     "px": {
+     "priceIndex": {
       "description": "Price Index",
       "type": "number",
       "example": 0.73
@@ -75,22 +75,22 @@
       "type": "boolean",
       "example": "true"
     },
-     "sx": {
+     "searchIndex": {
       "description": "Searches Index",
       "type": "number",
       "example": 0.62
     },
-     "batch_id": {
+     "batchId": {
       "description": "Unique batch identifier",
       "type": "string",
       "example": "1705201000_1704201000_1706251255_ALL"
     },
-     "from_date": {
+     "departureDate": {
       "description": "Departure Date",
       "type": "string",
       "example": "2017-04-20 10:00:00"
     },
-     "to_date": {
+     "arrivalDate": {
       "description": "Arrival Date",
       "type": "string",
       "example": "2017-05-20 10:00:00"
