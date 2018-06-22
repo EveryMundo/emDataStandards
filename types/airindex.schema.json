@@ -5,23 +5,18 @@
   "description": "airIndex™ is EveryMundo’s proprietary KPI (numeric value between 0 and 1)",
   "type": "object",
   "properties": {
-    "Id": {
-      "description": "Record unique identifier as given by MongoDB",
+    "airlineIataCode": {
+      "description": "iataCode",
       "type": "string",
-      "example": "14961881240552180.141840260"
+      "example": "EM"
     },
-     "airlineCode": {
-            "description": "iataCode",
-            "type": "string",
-            "example": "EM"
-          },
-    "origin": {
-      "description": "Origin",
+    "originAirportCode": {
+      "description": "Origin Airport Code",
       "type": "string",
       "example": "ACA"
     },
-    "destination": {
-      "description": "Destination",
+    "destinationAirportCode": {
+      "description": "Destination Airport Code",
       "type": "string",
       "example": "AGU"
     },
@@ -30,15 +25,10 @@
       "type": "number",
       "example": 0.5
     },
-     "airLabel": {
+     "airIndexLabel": {
       "description": "Label with suggestion to pull/push a route",
       "type": "string",
       "example": "no_change"
-    },
-     "airIndexShort": {
-      "description": "Shorter version of air_index",
-      "type": "number",
-      "example": 0.5
     },
      "searchesLong": {
       "description": "Average searches in last 30 days",
@@ -85,29 +75,24 @@
       "type": "string",
       "example": "1705201000_1704201000_1706251255_ALL"
     },
-     "departureDate": {
-      "description": "Departure Date",
+     "fromDate": {
+      "description": "30 day time frame start date",
       "type": "string",
       "example": "2017-04-20 10:00:00"
     },
-     "arrivalDate": {
-      "description": "Arrival Date",
+     "toDate": {
+      "description": "30 day time frame end date",
       "type": "string",
-      "example": "2017-05-20 10:00:00"
+      "example": "2017-04-20 10:00:00"
     },
      "xid": {
       "description": "Id to identify a single unique row in a batch with the purpose of deduplication",
       "type": "string",
       "example": "1705201000_1704201000_1706251255_xx:ACA>AGU"
-    },
-     "createDate": {
-      "description": "Record creation date",
-      "type": "string",
-      "example": "2017-06-25 13:00:17"
     }
   },
-  "required": ["Id", "airlineCode","origin","destination","airIndex","airLabel","searchesLong","medianPriceLong","searchesShort",
-               "medianPriceShort","searchRateLong","priceIndex","searchIndex","departureDate","arrivalDate","createDate"],
+  "required": ["airlineIataCode","originAirportCode","destinationAirportCode","airIndex","airIndexLabel","searchesLong","medianPriceLong","searchesShort",
+               "medianPriceShort","searchRateLong","priceIndex","searchIndex","fromDate","toDate"],
   "links": [
     {
       "title": "Airline",
