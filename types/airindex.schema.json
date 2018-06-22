@@ -5,7 +5,7 @@
   "description": "airIndex™ is EveryMundo’s proprietary KPI (numeric value between 0 and 1)",
   "type": "object",
   "properties": {
-    "_id": {
+    "Id": {
       "description": "Record unique identifier as given by MongoDB",
       "type": "string",
       "example": "14961881240552180.141840260"
@@ -35,32 +35,32 @@
       "type": "string",
       "example": "no_change"
     },
-     "airIndex_s": {
+     "airIndexShort": {
       "description": "Shorter version of air_index",
       "type": "number",
       "example": 0.5
     },
-     "searches_l": {
+     "searchesLong": {
       "description": "Average searches in last 30 days",
       "type": "integer",
       "example": 387
     },
-     "medianPrice_l": {
+     "medianPriceLong": {
       "description": "Median price in last 30 days",
       "type": "number",
       "example": 150.96
     },
-     "searches_s": {
+     "searchesShort": {
       "description": "Average searches in last 24 hours",
       "type": "integer",
       "example": 17
     },
-     "medianPrice_s": {
+     "medianPriceShort": {
       "description": "Medium price in last 24 hours",
       "type": "number",
       "example": 153.43
     },
-     "searchRate_l": {
+     "searchRateLong": {
       "description": "daily search rate in the last 30 days",
       "type": "number",
       "example": 12.9
@@ -100,13 +100,14 @@
       "type": "string",
       "example": "1705201000_1704201000_1706251255_xx:ACA>AGU"
     },
-     "__createdat": {
+     "createDate": {
       "description": "Record creation date",
       "type": "string",
       "example": "2017-06-25 13:00:17"
     }
   },
-  "required": ["name", "iataCode"],
+  "required": ["Id", "airlineCode","origin","destination","airIndex","airLabel","searchesLong","medianPriceLong","searchesShort",
+               "medianPriceShort","searchRateLong","priceIndex","searchIndex","departureDate","arrivalDate","createDate"],
   "links": [
     {
       "title": "Airline",
