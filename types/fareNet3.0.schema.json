@@ -744,11 +744,6 @@
         }
       }
     },
-    "reservationStatus": {
-      "description": "IBE_FLIGHT_SELECTION, IBE_CONFIRMATION, IBE_PASSENGER_INFO, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
-      "type": "string",
-      "example": "IbeSearch"
-    },
     "page": {
       "description": "WebPage",
       "type": "object",
@@ -787,44 +782,45 @@
       ],
       "additionalProperties": false
     },
-    "database": {
-        "description": "Database",
-        "type": "object",
-        "properties": {
-          "_id": {
-            "description": "Record unique identifier",
-            "type": "string",
-            "example": "14961881240552180.141840260"
-          },
-          "version": {
-            "description": "Version of the program that generated the record",
-            "type": "string",
-            "example": "2.1.0"
-          },
-          "__createdat": {
-            "description": "Record creation date",
-            "type": "string",
-            "example": "2017-11-28 15:46:02"
-          },
-          "__v": {
-            "description": "Datacore version, same number we find on the table name in Redshift",
-            "type": "number",
-            "example": 1
-          },
-          "trackingId": {
-            "description": "Unique identifier created through module interactions for event tracking",
-            "type": "string",
-            "example": "RTJFKFRA2017073120170824$0_123456KARIN"
-          },
-          "schemaVersion": {
-            "description": "Schema version of Data Standards",
-            "type": "number",
-            "example": 1
+    "metadata": {
+      "description": "Metadata",
+      "type": "object",
+      "properties": {
+        "app": {
+          "description": "App",
+          "type": "object",
+          "properties": {
+              "name": {
+                  "description": "Farenet | GoogleITA UA Client",
+                  "type":"string",
+                  "example": "Farenet | GoogleITA UA Client"
+              },
+              "version": {
+                  "description": "Version of the program that generated the record",
+                  "type":"string",
+                  "example": "2.1.0"
+              },
+              "datasource": {
+                  "description": "IBE_FLIGHT_SELECTION, IBE_CONFIRMATION, IBE_PASSENGER_INFO, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
+                  "type":"string",
+                  "example": "IBE_FLIGHT_SELECTION"   
+              }
           }
+        },
+        "trackingId": {
+          "description": "Unique identifier created through module interactions for event tracking",
+          "type": "string",
+          "example": "RTJFKFRA2017073120170824$0_123456KARIN"
+        },
+        "schemaVersion": {
+          "description": "Schema version of Data Standards",
+          "type": "number",
+          "example": "0.0.1"
         }
     }
+    }
   },
-  "required": ["journey", "page", "device", "database"],
+  "required": ["journey", "page", "device", "metadata"],
   "links": [
     {
       "title": "Kat",
