@@ -5,114 +5,94 @@
   "description": "airIndex™ is EveryMundo’s proprietary KPI (numeric value between 0 and 1)",
   "type": "object",
   "properties": {
-    "_id": {
-      "description": "Record unique identifier as given by MongoDB",
+    "airlineIataCode": {
+      "description": "iataCode",
       "type": "string",
-      "example": "14961881240552180.141840260"
+      "example": "EM"
     },
-     "airline": {
-        "description": "Airline",
-        "type": "object",
-        "properties": {
-          "iataCode": {
-            "description": "IATA identifier for the airline",
-            "type": "string",
-            "example": "EM"
-          }
-        }
-    },
-    "orig": {
-      "description": "Origin",
+    "originAirportCode": {
+      "description": "Origin Airport Code",
       "type": "string",
       "example": "ACA"
     },
-    "dest": {
-      "description": "Destination",
+    "destinationAirportCode": {
+      "description": "Destination Airport Code",
       "type": "string",
       "example": "AGU"
     },
-    "air_index": {
+    "airIndex": {
       "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
       "type": "number",
       "example": 0.5
     },
-     "air_label": {
+     "airIndexLabel": {
       "description": "Label with suggestion to pull/push a route",
       "type": "string",
       "example": "no_change"
     },
-     "ais": {
-      "description": "air_index",
-      "type": "number",
-      "example": 0.5
-    },
-     "sl": {
+     "searchesLong": {
       "description": "Average searches in last 30 days",
       "type": "integer",
       "example": 387
     },
-     "ml": {
+     "medianPriceLong": {
       "description": "Median price in last 30 days",
       "type": "number",
       "example": 150.96
     },
-     "ss": {
+     "searchesShort": {
       "description": "Average searches in last 24 hours",
       "type": "integer",
       "example": 17
     },
-     "ms": {
+     "medianPriceShort": {
       "description": "Medium price in last 24 hours",
       "type": "number",
       "example": 153.43
     },
-     "s_rate_l": {
+     "searchRateLong": {
       "description": "daily search rate in the last 30 days",
       "type": "number",
       "example": 12.9
     },
-     "px": {
-      "description": "Price",
+     "priceIndex": {
+      "description": "Price Index",
       "type": "number",
-      "example": "Search"
+      "example": 0.73
     },
      "subset": {
-      "description": "Adwords network type",
+      "description": "Define whether a specific row comes from subsets of original dataset",
       "type": "boolean",
       "example": "true"
     },
-     "sx": {
-      "description": "Searches",
+     "searchIndex": {
+      "description": "Searches Index",
       "type": "number",
-      "example": "Search"
+      "example": 0.62
     },
-     "batch_id": {
+     "batchId": {
       "description": "Unique batch identifier",
       "type": "string",
       "example": "1705201000_1704201000_1706251255_ALL"
     },
-     "from_date": {
-      "description": "Adwords network type",
+     "fromDate": {
+      "description": "30 day time frame start date",
       "type": "string",
       "example": "2017-04-20 10:00:00"
     },
-     "to_date": {
-      "description": "Adwords network type",
+     "toDate": {
+      "description": "30 day time frame end date",
       "type": "string",
-      "example": "2017-05-20 10:00:00"
+      "example": "2017-04-20 10:00:00"
     },
      "xid": {
-      "description": "Adwords network type",
+      "description": "Id to identify a single unique row in a batch with the purpose of deduplication",
       "type": "string",
       "example": "1705201000_1704201000_1706251255_xx:ACA>AGU"
-    },
-     "__createdat": {
-      "description": "Record creation date",
-      "type": "string",
-      "example": "2017-06-25 13:00:17"
     }
   },
-  "required": ["name", "iataCode"],
+  "required": ["airlineIataCode","originAirportCode","destinationAirportCode","airIndex","airIndexLabel","searchesLong","medianPriceLong","searchesShort",
+               "medianPriceShort","searchRateLong","priceIndex","searchIndex","fromDate","toDate"],
   "links": [
     {
       "title": "Airline",
