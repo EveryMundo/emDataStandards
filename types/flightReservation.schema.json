@@ -10,11 +10,6 @@
       "type": "string",
       "example": "B"
     },
-    "reservationStatus": {
-      "description": "IBE_FLIGHT_SELECTION, IBE_CONFIRMATION, IBE_PASSENGER_INFO, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
-      "type": "string",
-      "example": "IbeSearch"
-    },
     "passengerPriorityStatus": {
       "description": "The priority status assigned to a passenger for security or boarding",
       "type": "string",
