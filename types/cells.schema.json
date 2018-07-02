@@ -13,7 +13,7 @@
           "example": 345.21
         },
         "boundType": {
-          "description": "OUTBOUND, INBOUND ",
+          "description": "OUTBOUND, INBOUND, MATRIX",
           "type": "string",
           "example": "OUTBOUND"
         },
