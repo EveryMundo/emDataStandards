@@ -49,11 +49,6 @@
               "type": "number",
               "example": 16.39
             },
-            "fuelPrice": {
-              "description": "fuelPrice",
-              "type": "number",
-              "example": 57.89
-            },
             "additionalFeesPrice": {
               "description": "additionalFeesPrice",
               "type": "number",
@@ -207,9 +202,9 @@
               }
             },
             "fareClassInput": {
-              "description": "fareClassInput",
+              "description": "Name of the fare class given by airline in sentence case, e.g. Economy Basic",
               "type": "string",
-              "example": "Economy"
+              "example": "Economy Basic"
             },
             "fareClass": {
               "description": "fareClass",
