@@ -68,9 +68,6 @@ If the field name is being used in multiple properties, combine parent property 
 - Populate variable with null if not available
 - User upper case and underscore for defined list of output values, otherwise use upper camel case: fareClass (ECONOMY, BUSINESS, FIRST), journeyType, flightType, routeType
 - Use comma (",") to separate list items when together in a string. Use | as a fall back. 
-- **priceSpecification**
-  - If price has value & taxPrice equals null, then totalPrice does not include taxes
-  - If price & taxPrice equal null, then totalPrice includes taxes
 
 **Notes:**
 - In JSON, numbers do not require formatting rules, unless there is a need to be very strict, e.g. miles can only be an integer.
