@@ -61,7 +61,7 @@
       "example": false
     }
   },
-  "required": ["price", "totalPrice", "taxprice", "currency"],
+  "required": ["advertisedPrice", "totalPrice", "currencyCode"],
   "links": [
     {
       "title": "PriceSpecification",
