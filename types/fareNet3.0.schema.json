@@ -34,7 +34,7 @@
           "description": "priceSpecification",
           "type": "object",
           "properties": {
-            "price": {
+            "priceBeforeTaxesAndFees": {
               "description": "price",
               "type": "number",
               "example": 234.21
@@ -44,17 +44,17 @@
               "type": "number",
               "example": 250.6
             },
-            "taxPrice": {
+            "taxAmount": {
               "description": "taxPrice",
               "type": "number",
               "example": 16.39
             },
-            "additionalFeesPrice": {
+            "additionalFeesAmount": {
               "description": "additionalFeesPrice",
               "type": "number",
               "example": 12
             },
-            "currency": {
+            "currencyCode": {
               "description": "currency",
               "type": "string",
               "example": "USD"
@@ -64,7 +64,7 @@
               "type": "string",
               "example": "$"
             },
-            "priceMarketId": {
+            "pricingGroupId": {
               "description": "priceMarketId",
               "type": "string",
               "example": "USD-US"
@@ -184,7 +184,7 @@
               "description": "priceSpecification",
               "type": "object",
               "properties": {
-                "price": {
+                "priceBeforeTaxesAndFees": {
                   "description": "price",
                   "type": "number",
                   "example": 750.12
@@ -194,7 +194,7 @@
                   "type": "number",
                   "example": 825.51
                 },
-                "taxPrice": {
+                "taxAmount": {
                   "description": "taxPrice",
                   "type": "number",
                   "example": 75.39
@@ -536,7 +536,7 @@
               "description": "priceSpecification",
               "type": "object",
               "properties": {
-                "price": {
+                "priceBeforeTaxesAndFees": {
                   "description": "price",
                   "type": "number",
                   "example": 750.12
@@ -546,7 +546,7 @@
                   "type": "number",
                   "example": 825.51
                 },
-                "taxPrice": {
+                "taxAmount": {
                   "description": "taxPrice",
                   "type": "number",
                   "example": 75.39
