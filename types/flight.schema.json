@@ -16,49 +16,7 @@
       "example": "SFO>JFK"
     },
     "priceSpecification": {
-      "description": "Fare details",
-      "type": "object",
-      "properties": {
-        "price": {
-          "description": "price",
-          "type": "number"
-        },
-        "totalPrice": {
-          "description": "totalPrice",
-          "type": "number"
-        },
-        "taxPrice": {
-          "description": "taxPrice",
-          "type": "number"
-        },
-        "fuelPrice": {
-          "description": "fuelPrice",
-          "type": "number"
-        },
-        "additionalFeesPrice": {
-          "description": "additionalFeesPrice",
-          "type": "number"
-        },
-        "currency": {
-          "description": "currency",
-          "type": "string"
-        },
-        "currencySymbol": {
-          "description": "currencySymbol",
-          "type": "string"
-        },
-        "priceMarketId": {
-          "description": "priceMarketId",
-          "type": "string"
-        },
-        "isSoldOut": {
-          "description": "isSoldOut",
-          "type": "boolean"
-        },
-        "lastUpdatePriceTime": {
-          "description": "lastUpdatePriceTime",
-          "type": "string"
-        },
+        "$ref": "./priceSpecification.schema.json",
         "redemption": {
           "description": "redemption",
           "type": "object",
@@ -72,24 +30,6 @@
               "type": "number"
             }
           }
-        }
-      },
-      "example": {
-        "@type": "PriceSpecification",
-        "price": 234.21,
-        "totalPrice": 250.6,
-        "taxPrice": 16.39,
-        "fuelPrice": 57.89,
-        "additionalFeesPrice": 12,
-        "currency": "USD",
-        "currencySymbol": "$",
-        "priceMarketId": "USD-US",
-        "isSoldOut": false,
-        "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000",
-        "redemption": {
-          "@type": "Redemption",
-          "unit": "miles",
-          "amount": 1500
         }
       }
     },
@@ -109,11 +49,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "San Francisco Airport"
         },
         "iataCode": {
           "description": "iataCode",
-          "type": "string"
+          "type": "string",
+          "example": "SFO"
         },
         "geo": {
           "description": "geo",
@@ -121,23 +63,15 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 23.12
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -168.32
             }
           }
-        }
-      },
-      "example": {
-        "@type": "Airport",
-        "name": "San Francisco Airport",
-        "iataCode": "SFO",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 23.12,
-          "longitude": -168.32
         }
       }
     },
@@ -167,11 +101,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "Miami International Airport"
         },
         "iataCode": {
           "description": "iataCode",
-          "type": "string"
+          "type": "string",
+          "example": "MIA"
         },
         "geo": {
           "description": "geo",
@@ -179,23 +115,15 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 37.42
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -108.32
             }
           }
-        }
-      },
-      "example": {
-        "@type": "Airport",
-        "name": "Miami International Airport",
-        "iataCode": "MIA",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
         }
       }
     },
@@ -235,11 +163,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "San Francisco"
         },
         "cityCode": {
           "description": "cityCode",
-          "type": "string"
+          "type": "string",
+          "example": "SFO"
         },
         "geo": {
           "description": "geo",
@@ -247,11 +177,13 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 23.12
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -168.32
             }
           }
         },
@@ -259,17 +191,6 @@
           "description": "image",
           "type": "string"
         }
-      },
-      "example": {
-        "@type": "City",
-        "name": "San Francisco",
-        "cityCode": "SFO",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 23.12,
-          "longitude": -168.32
-        },
-        "image": "sanfrancisco.com/image.jpg"
       }
     },
     "departureCountry": {
@@ -278,11 +199,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "United States"
         },
         "isoCode": {
           "description": "isoCode",
-          "type": "string"
+          "type": "string",
+          "example": "US"
         },
         "geo": {
           "description": "geo",
@@ -290,11 +213,13 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 37.42
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -108.32
             }
           }
         },
@@ -302,17 +227,6 @@
           "description": "image",
           "type": "string"
         }
-      },
-      "example": {
-        "@type": "Country",
-        "name": "United States",
-        "isoCode": "US",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "unitedstates.com/image.jpg"
       }
     },
     "arrivalCity": {
@@ -321,11 +235,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "Miami"
         },
         "cityCode": {
           "description": "cityCode",
-          "type": "string"
+          "type": "string",
+          "example": "MIA"
         },
         "geo": {
           "description": "geo",
@@ -333,11 +249,13 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 37.42
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -108.32
             }
           }
         },
@@ -345,17 +263,6 @@
           "description": "image",
           "type": "string"
         }
-      },
-      "example": {
-        "@type": "City",
-        "name": "Miami",
-        "cityCode": "MIA",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "miami.com/image.jpg"
       }
     },
     "arrivalCountry": {
@@ -364,11 +271,13 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "United States"
         },
         "isoCode": {
           "description": "isoCode",
-          "type": "string"
+          "type": "string",
+          "example": "US"
         },
         "geo": {
           "description": "geo",
@@ -376,11 +285,13 @@
           "properties": {
             "latitude": {
               "description": "latitude",
-              "type": "number"
+              "type": "number",
+              "example": 37.42
             },
             "longitude": {
               "description": "longitude",
-              "type": "number"
+              "type": "number",
+              "example": -108.32
             }
           }
         },
@@ -388,17 +299,6 @@
           "description": "image",
           "type": "string"
         }
-      },
-      "example": {
-        "@type": "Country",
-        "name": "United States",
-        "isoCode": "US",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "unitedstates.com/image.jpg"
       }
     },
     "flightType": {
@@ -412,138 +312,35 @@
       "example": "NONSTOP"
     },
     "discount": {
-      "description": "discount",
-      "type": "object",
-      "properties": {
-        "isDiscount": {
-          "description": "isDiscount",
-          "type": "boolean"
-        },
-        "code": {
-          "description": "code",
-          "type": "string"
-        },
-        "amount": {
-          "description": "amount",
-          "type": "number"
-        },
-        "percentage": {
-          "description": "percentage",
-          "type": "number"
-        },
-        "expirationDate": {
-          "description": "expirationDate",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "Discount",
-        "isDiscount": true,
-        "code": "AFFBFAN",
-        "amount": 500,
-        "percentage": 0.5,
-        "expirationDate": "2017-12-31"
-      }
+      "$ref": "./discount.schema.json"
     },
     "baggage": {
-      "description": "baggage",
-      "type": "object",
-      "properties": {
-        "count": {
-          "description": "count",
-          "type": "number"
-        },
-        "checkedBags": {
-          "description": "checkedBags",
-          "type": "number"
-        },
-        "carryOnBags": {
-          "description": "carryOnBags",
-          "type": "number"
-        },
-        "priceSpecification": {
-          "description": "priceSpecification",
-          "type": "object",
-          "properties": {
-            "price": {
-              "description": "price",
-              "type": "number"
-            },
-            "totalPrice": {
-              "description": "totalPrice",
-              "type": "number"
-            },
-            "taxPrice": {
-              "description": "taxPrice",
-              "type": "number"
-            },
-            "currency": {
-              "description": "currency",
-              "type": "string"
-            },
-            "currencySymbol": {
-              "description": "currencySymbol",
-              "type": "string"
-            },
-            "priceMarketId": {
-              "description": "priceMarketId",
-              "type": "string"
-            },
-            "lastUpdatePriceTime": {
-              "description": "lastUpdatePriceTime",
-              "type": "string"
-            }
-          }
-        },
-        "prepaidInd": {
-          "description": "prepaidInd",
-          "type": "boolean"
-        }
-      },
-      "example": {
-        "@type": "BaggageAllowance",
-        "count": 2,
-        "checkedBags": 1,
-        "carryOnBags": 1,
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": 234.21,
-          "totalPrice": 250.6,
-          "taxPrice": 16.39,
-          "currency": "USD",
-          "currencySymbol": "$",
-          "priceMarketId": "USD-US",
-          "lastUpdatePriceTime": "2018-02-12T16:49:13.131+0000"
-        },
-        "prepaidInd": true
-      }
+      "$ref": "./baggage.schema.json"
     },
     "additionalInfo": {
-      "description": "Additional information regarding the flight",
+      "description": "additionalInfo",
       "type": "object",
       "properties": {
         "fields": {
           "description": "fields",
           "type": "array",
           "items": {
-            "type": "object"
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "",
+                "type": "string",
+                "example": "classOfService"
+              },
+              "value": {
+                "description": "",
+                "type": "string",
+                "example": "COACH_EC"
+              }
+            }
           }
         }
-      },
-      "example": {
-        "@type": "AdditionalInfo",
-        "fields": [
-          {
-            "name": "classOfService",
-            "value": "COACH_EC"
-          },
-          {
-            "name": "fareBasis",
-            "value": "NNNJ6SBM+"
-          }
-        ]
       }
-    }
   },
   "required": ["boundType", "route", "priceSpecification", "fareClassInput", "fareClass", "departureAirportIataCode", "arrivalAirportIataCode", "departureDate", "estimatedDuration", "availableSeatsCount", "legs", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "routeType", "discount"],
   "links": [
