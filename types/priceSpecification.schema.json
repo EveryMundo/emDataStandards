@@ -10,7 +10,7 @@
       "type": "string",
       "example": "JOURNEY"
     },
-    "price": {
+    "priceBeforeTaxesAndFees": {
       "description": "Price for the reservation or ticket",
       "type": "number",
       "example": 234.21
@@ -25,7 +25,7 @@
       "type": "number",
       "example": 250.6
     },
-    "taxPrice": {
+    "taxAmount": {
       "description": "The amount paid in taxes",
       "type": "number",
       "example": 16.39
@@ -35,12 +35,12 @@
       "type": "number",
       "example": 57.89
     },
-    "additionalFeesPrice": {
+    "additionalFeesAmount": {
       "description": "Airline additional fees",
       "type": "number",
       "example": 12
     },
-    "currency": {
+    "currencyCode": {
       "description": "The currency (in 3-letter ISO 4217 format) of the price.",
       "type": "string",
       "example": "USD"
@@ -50,7 +50,7 @@
       "type": "string",
       "example": "$"
     },
-    "priceMarketId": {
+    "pricingGroupId": {
       "description": "A unique identifier for price market combining ISO codes for currency and country",
       "type": "string",
       "example": "USD-US"
@@ -59,11 +59,6 @@
       "description": "Whether fare is sold out - if isSoldOut=true, fare = NULL",
       "type": "boolean",
       "example": false
-    },
-    "lastUpdatePriceTime": {
-      "description": "Time of last price update/collection",
-      "type": "string",
-      "example": "2018-02-12T16:49:13.131+0000"
     }
   },
   "required": ["price", "totalPrice", "taxprice", "currency"],
