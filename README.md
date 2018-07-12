@@ -69,6 +69,9 @@ If the field name is being used in multiple properties, combine parent property 
 - User upper case and underscore for defined list of output values, otherwise use upper camel case: fareClass (ECONOMY, BUSINESS, FIRST), journeyType, flightType, routeType
 - Use comma (",") to separate list items when together in a string. Use | as a fall back. 
 
+### Review Process
+Introduced CODEOWNERS: Pull requests to the master branch now automatically require at least three approved reviews by EM Code Owners
+
 **Notes:**
 - In JSON, numbers do not require formatting rules, unless there is a need to be very strict, e.g. miles can only be an integer.
 - **Tracking:**
