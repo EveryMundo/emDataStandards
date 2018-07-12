@@ -1,8 +1,8 @@
-# These owners will be the default owners for everything in the repo
-@yartiles
-@danielsan
-@darielnoel
-@anahiem
-@renecairo
-@howardem
-@neilgoldman
+# These owners will be the default owners for all files in the types folder of the master branch
+types/ @yartiles
+types/ @danielsan
+types/ @darielnoel
+types/ @anahiem
+types/ @renecairo
+types/ @howardem
+types/ @neilgoldman
