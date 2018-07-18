@@ -32,7 +32,7 @@ https://everymundo.github.io/emDataStandards/documentation/build/
 
 #### Deploy to gihub pages manually
 
-**Note:** These commands assume that you have committed already all your changes in master. For Windows, run the commands in git bash.
+**Note:** The following command assumes that you have committed already all your changes in master. For Windows, run the commands in git bash.
 
 ```bash
 bash documentation/publish-gh-pages.sh
