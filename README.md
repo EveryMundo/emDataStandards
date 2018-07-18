@@ -3,7 +3,7 @@
 Data standards are the rules by which data are described and recorded. In order to share, exchange, and understand data, we must standardize the format as well as the meaning.
 
 ## Why do we need Data Standards?
-Using standards makes using things easier. Standards provide data integrity, accuracy and consistency, clarify ambiguous meanings, minimize redundant data, and document business rules. The data become usable to more than just the project or person that created the data, because you know the data will be in an expected format and you know what is represented by the data.
+Using standards makes using things easier. Standards provide data integrity, accuracy and consistency, clarify ambiguous meanings, minimize redundant data, and document business rules. The data becomes usable to more than just the project or person that created the data, because you know the data will be in an expected format and you know what is represented by the data.
  
 ## Why does EveryMundo develop its own Data Standards?
 EveryMundo develops its own technology and integrates with international airlines around the world who use different technologies. EveryMundo’s internal departments can create superior products through efficient collaboration by speaking the same language - data standards. It is best practice to leverage existing data standards where applicable. EveryMundo created its own standards based on NDC  (New Distribution Capability) and Schema.org.
