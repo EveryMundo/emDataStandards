@@ -1,6 +1,0 @@
-{
-  "@type": "Payment",
-  "method": "CreditCard",
-  "cardName": "Amex",
-  "isSaved": true
-}

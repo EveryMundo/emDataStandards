@@ -1,9 +1,0 @@
-{
-  "@type": "Redemption",
-  "unit": "miles",
-  "amount": 1500,
-  "conversion": {
-    "amount": 1500,
-    "ratio": 0.5
-  }
-}

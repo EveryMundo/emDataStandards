@@ -1,8 +1,0 @@
-{
-  "@type": "PostalAddress",
-  "street": "1500 Orange Avenue",
-  "cityName": "San Diego",
-  "stateCode": "CA",
-  "postalCode": "94043",
-  "countryCode": "US"
-}

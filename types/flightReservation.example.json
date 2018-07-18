@@ -1,9 +1,0 @@
-{
-  "@type": "FlightReservation",
-  "boardingGroup": "B",
-  "reservationStatus": "IBE_SEARCH",
-  "passengerPriorityStatus": "FastTrack",
-  "passengerSequenceNumber": "ABC123",
-  "bookingTime": "2027-01-14T13:05:00-05:00",
-  "modifiedTime": "2027-03-14T13:05:00-05:00"
-}
