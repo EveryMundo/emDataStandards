@@ -8,6 +8,7 @@
         }
     },
     "page": {
+        "name": "flights from miami to berlin",
         "url": "https://flights.everymundo.com/en/flights-from-miami-to-berlin",
         "hostname": "flights.everymundo.com",
         "uri": "/en/flights-from-miami-to-berlin",
@@ -18,10 +19,9 @@
     },
     "device": {
         "category": "DESKTOP"
-    }
+    },
     "extraInfo": {
-        "environment": "DEVELOPMENT",
-        "indexStatus": "INDEX",
-        "browser": "Google Chrome"
+        "timestamp": "",
+        "accessibility": ""
     }
 }
