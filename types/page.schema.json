@@ -40,6 +40,11 @@
       "type": "string",
       "example": "en"
     },
+    "countryIsoCode": {
+      "description": "The country code (in 2 letter codes from ISO 3166-1)",
+      "type": "string",
+      "example": "US"
+    },
     "siteEdition": {
       "description": "Site edition combination of ISO codes for language and country",
       "type": "string",
