@@ -13,7 +13,12 @@
     "indexStatus": {
       "description": "INDEX, FOLLOWNOINDEX, NOFOLLOW",
       "type": "string",
-      "example": "Index"
+      "example": "INDEX"
+    },
+    "browser": {
+      "description": "The name of users' browsers, for example, Internet Explorer or Firefox.",
+      "type": "string",
+      "example": "Google Chrome"
     },
     "additionalInfo": {
       "description": "Additional information not previously included",
