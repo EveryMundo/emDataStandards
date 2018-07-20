@@ -1,0 +1,27 @@
+{
+    "journey": {        
+        "currency": "USD",
+        "currencySymbol": "$",
+        "airline": {
+            "name": "Spirit",
+            "iataCode": "NK"
+        }
+    },
+    "page": {
+        "url": "https://flights.everymundo.com/en/flights-from-miami-to-berlin",
+        "hostname": "flights.everymundo.com",
+        "uri": "/en/flights-from-miami-to-berlin",
+        "typeName": "CITY_TO_CITY",
+        "languageIsoCode": "en",
+        "countryIsoCode": "US",
+        "siteEdition": "en-US"
+    },
+    "device": {
+        "category": "DESKTOP"
+    }
+    "extraInfo": {
+        "environment": "DEVELOPMENT",
+        "indexStatus": "INDEX",
+        "browser": "Google Chrome"
+    }
+}
