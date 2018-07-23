@@ -1,27 +1,31 @@
 {
-    "journey": {        
-        "currency": "USD",
-        "currencySymbol": "$",
-        "airline": {
-            "name": "Spirit",
-            "iataCode": "NK"
-        }
-    },
     "page": {
+       "author": "EveryMundo",
         "name": "flights from miami to berlin",
         "url": "https://flights.everymundo.com/en/flights-from-miami-to-berlin",
         "hostname": "flights.everymundo.com",
         "uri": "/en/flights-from-miami-to-berlin",
+        "fullURL": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google",
+        "breadcrumb": "Home | Flights | Miami (MFL) To Berlin (BER)",
         "typeName": "CITY_TO_CITY",
+        "previousPageName": "flights from miami to berlin",
+        "previousPageURL": "https://flights.everymundo.com/en/flights-from-miami",
+        "previousPageLinkName": "Flight Destinations",
         "languageIsoCode": "en",
         "countryIsoCode": "US",
-        "siteEdition": "en-US"
+        "siteEdition": "en-US",
+        "webDesign": "RESPONSIVE",
+        "dateCreated": "2017-01-12",
+        "accessibility": true
     },
     "device": {
-        "category": "DESKTOP"
+        "category": "DESKTOP",
+        "viewportSize": "Small",
+        "appVersion": ""
+
     },
     "extraInfo": {
-        "timestamp": "",
-        "accessibility": ""
+        "timestamp": "2027-03-04T06:35:00-08:00",
+        "environment": "PRODUCTION"
     }
 }
