@@ -15,6 +15,11 @@
       "type": "string",
       "example": "360x600"
     },
+    "viewportSize": {
+      "description": "Small; Medium; Large",
+      "type": "string",
+      "example": "Small"
+    },
     "mobileBranding": {
       "description": "Mobile manufacturer or branded name (e.g: Samsung, HTC, Verizon, T-Mobile, Apple)",
       "type": "string",
@@ -44,6 +49,11 @@
       "description": "True if mobile app is being used",
       "type": "boolean",
       "example": true
+    },
+    "appVersion": {
+      "description": "App Version",
+      "type": "string",
+      "example": "1.3.2"
     }
   },
   "required": ["category", "screenResolution", "operatingSystem"],
