@@ -13,7 +13,7 @@
     "route": {
       "description": "route",
       "type": "string",
-      "route": "SFO>MIA"
+      "example": "SFO>MIA"
     },
     "departureAirport": {
       "description": "departureAirport",
