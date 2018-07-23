@@ -55,6 +55,11 @@
         "description": "ID of regex pattern that matched",
         "type": "string",
         "example": "CopaNonbrand1"
+      },
+      "timestamp": {
+        "description": "CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601",
+        "type": "string",
+        "example": "2027-03-04T06:35:00-08:00"
       }
     },
     "required": ["app", "schemaVersion"],
