@@ -6,7 +6,6 @@ export default fromJS([
   // The "getting started" schema provides table-of-contents links
   // for the sections in src/client/introduction.js.  You are free
   // to customize or remove both the schema and the introduction component.
-  require('../types/additionalInfo.schema.json'),
   require('../types/address.schema.json'),
   require('../types/adwords.schema.json'),
   require('../types/aggregateRating.schema.json'),
@@ -37,7 +36,6 @@ export default fromJS([
   require('../types/hotel.schema.json'),
   require('../types/insurance.schema.json'),
   require('../types/journey.schema.json'),
-  require('../types/legs.schema.json'),
   require('../types/lounge.schema.json'),
   require('../types/loyaltyProgram.schema.json'),
   require('../types/metadata.schema.json'),
@@ -45,7 +43,6 @@ export default fromJS([
   require('../types/page.schema.json'),
   require('../types/parking.schema.json'),
   require('../types/passenger.schema.json'),
-  require('../types/passengerDetails.schema.json'),
   require('../types/payment.schema.json'),
   require('../types/priceSpecification.schema.json'),
   require('../types/provider.schema.json'),
