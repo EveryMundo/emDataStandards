@@ -5,6 +5,11 @@
   "description": "WebPage",
   "type": "object",
   "properties": {
+    "author": {
+      "description": "The author of this content",
+      "type": "string",
+      "example": "EveryMundo"
+    },
     "publisher": {
       "description": "The publisher of the creative work",
       "type": "string",
@@ -19,6 +24,11 @@
       "description": "Full url in lowercase (without query parameters to avoid collecting personal data by mistake)",
       "type": "string",
       "example": "https://flights.everymundo.com/en/flights-from-miami-to-berlin"
+    },
+    "fullURL": {
+      "description": "Full url in lowercase (wit query parameters)",
+      "type": "string",
+      "example": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google"
     },
     "hostName": {
       "description": "Host name in lowercase",
@@ -35,6 +45,26 @@
       "type": "string",
       "example": "CICI"
     },
+    "previousPageName": {
+      "description": "Page name of previous page",
+      "type": "string",
+      "example": "flights from miami"
+    },
+    "previousPageURL": {
+      "description": "Full url in lowercase (without query parameters to avoid collecting personal data by mistake) of previous Page",
+      "type": "string",
+      "example": "https://flights.everymundo.com/en/flights-from-miami"
+    },
+    "previousPageLinkName": {
+      "description": "Link name that was clicked to arrive on the page",
+      "type": "string",
+      "example": "Flight Destinations"
+    },
+    "breadcrumb": {
+      "description": "A set of links that can help a user understand and navigate a website hierarchy.",
+      "type": "string",
+      "example": "Home | Flights | To Miami (MFL)"
+    },
     "languageIsoCode": {
       "description": "Language ISO 639-1 code",
       "type": "string",
@@ -49,6 +79,21 @@
       "description": "Site edition combination of ISO codes for language and country",
       "type": "string",
       "example": "en-US"
+    },
+    "dateCreated": {
+      "description": "The date on which the CreativeWork was created",
+      "type": "string",
+      "example": "2017-01-12"
+    },
+    "webDesign": {
+      "description": "RESPONSIVE, FIXED, FLUID, ADAPTIVE",
+      "type": "string",
+      "example": "RESPONSIVE"
+    },
+    "accessibility": {
+      "description": "Capture 'true' if page is accessible and 'false' if it is not",
+      "type": "boolean",
+      "example": "true"
     }
   },
   "required": ["name", "url", "hostname", "languageIsoCode", "siteEdition"],
