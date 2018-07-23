@@ -771,10 +771,21 @@
       }
     },
     "device": {
-      "allOf": [
-        {"$ref": "./device.schema.json"},
-        {"required": ["category", "screenResolution", "operatingSystem"]}
-      ],
+      "category": {
+        "description": "MOBILE, TABLET, DESKTOP",
+        "type": "string",
+        "example": "Mobile"
+      },
+      "screenResolution": {
+        "description": "Specifies the screen resolution.",
+        "type": "string",
+        "example": "360x600"
+      },
+      "operatingSystem": {
+        "description": "Device operating system (e.g. Windows, Android, iOS)",
+        "type": "string",
+        "example": "iOS"
+      },
       "additionalProperties": false
     },
     "metadata": {
@@ -818,8 +829,8 @@
   "required": ["journey", "page", "device", "metadata"],
   "links": [
     {
-      "title": "Kat",
-      "description": "Kattest",
+      "title": "FareNet 3.0",
+      "description": "FareNet 3.0",
       "rel": "self",
       "href": "/fareNet",
       "method": "GET",
