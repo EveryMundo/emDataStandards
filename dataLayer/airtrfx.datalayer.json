@@ -8,6 +8,7 @@
         "fullURL": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google",
         "breadcrumb": "Home | Flights | Miami (MFL) To Berlin (BER)",
         "typeName": "CITY_TO_CITY",
+        "typeCode": "CICI",
         "previousPageName": "flights from miami to berlin",
         "previousPageURL": "https://flights.everymundo.com/en/flights-from-miami",
         "previousPageLinkName": "Flight Destinations",
@@ -17,6 +18,32 @@
         "webDesign": "RESPONSIVE",
         "dateCreated": "2017-01-12",
         "accessibility": true
+    },
+    "originCity": {
+        "name": "Miami",
+        "cityCode": "MIA"
+
+    },
+    "destinationCity": {
+        "name": "Berlin",
+        "cityCode": "BER"
+    },
+    "originCountry": {
+        "name": "Miami",
+        "isoCode": "MIA"
+
+    },
+    "destinationCountry": {
+        "name": "Berlin",
+        "isoCode": "BER"
+    },
+    "originAirport": {
+        "iataCode": "MIA"
+
+    },
+    "destinationAirport": {
+        "name": "Berlin",
+        "iataCode": "BER"
     },
     "device": {
         "category": "DESKTOP",
