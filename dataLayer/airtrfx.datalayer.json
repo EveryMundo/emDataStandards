@@ -1,6 +1,6 @@
 {
     "page": {
-       "author": "EveryMundo",
+        "author": "EveryMundo",
         "name": "flights from miami to berlin",
         "url": "https://flights.everymundo.com/en/flights-from-miami-to-berlin",
         "hostname": "flights.everymundo.com",
@@ -22,32 +22,30 @@
     "originCity": {
         "name": "Miami",
         "cityCode": "MIA"
-
     },
     "destinationCity": {
         "name": "Berlin",
         "cityCode": "BER"
     },
     "originCountry": {
-        "name": "Miami",
-        "isoCode": "MIA"
+        "name": "United States",
+        "isoCode": "US"
 
     },
     "destinationCountry": {
-        "name": "Berlin",
-        "isoCode": "BER"
+        "name": "United States",
+        "isoCode": "US"
     },
     "originAirport": {
         "iataCode": "MIA"
 
     },
     "destinationAirport": {
-        "name": "Berlin",
-        "iataCode": "BER"
+        "iataCode": "TXL"
     },
     "device": {
         "category": "DESKTOP",
-        "viewportSize": "Small",
+        "viewportSize": "SMALL",
         "appVersion": ""
 
     },
