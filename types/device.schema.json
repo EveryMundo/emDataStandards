@@ -16,9 +16,9 @@
       "example": "360x600"
     },
     "viewportSize": {
-      "description": "Small; Medium; Large",
+      "description": "SMALL; MEDIUM; LARGE",
       "type": "string",
-      "example": "Small"
+      "example": "SMALL"
     },
     "mobileBranding": {
       "description": "Mobile manufacturer or branded name (e.g: Samsung, HTC, Verizon, T-Mobile, Apple)",
