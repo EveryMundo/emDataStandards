@@ -1,4 +1,13 @@
 {
+    "user": {
+        "id": "123456789"
+    },
+    "campaign": {
+        "name": "airTRFX"
+    },
+    "priceSpecification": {
+        "currencyCode": "USD"
+    },
     "page": {
         "author": "EveryMundo",
         "name": "flights from miami to berlin",
