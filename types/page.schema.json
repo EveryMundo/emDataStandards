@@ -36,12 +36,12 @@
       "example": "flights.everymundo.com"
     },
     "typeName": {
-      "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, COUNTRY_TO_COUNTRY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED, CUSTOM_PAGE",
+      "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, COUNTRY_TO_COUNTRY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED, CUSTOM_PAGE, 404_PAGE",
       "type": "string",
       "example": "CITY_TO_CITY"
     },
     "typeCode": {
-      "description": "Page Type Code: HP, CICO, FCI, TCI, CICI, COCI, COCO, FCO, TCO, EXT, CP",
+      "description": "Page Type Code: HP, CICO, FCI, TCI, CICI, COCI, COCO, FCO, TCO, EXT, CP, 404",
       "type": "string",
       "example": "CICI"
     },
