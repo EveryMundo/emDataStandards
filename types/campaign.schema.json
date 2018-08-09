@@ -1,0 +1,27 @@
+{
+  "id": "/campaign",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Campaign",
+  "description": "Campaign",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Campaign Name",
+      "type": "string",
+      "example": "airTRFX"
+    }
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "Campaign",
+      "description": "Campaign",
+      "rel": "self",
+      "href": "/campaign",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
