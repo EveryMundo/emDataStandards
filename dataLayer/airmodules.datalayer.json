@@ -1,7 +1,7 @@
 {
     "journeyType": "ROUND_TRIP",
-    "origin": "MIA",
-    "destination": "YQT",
+    "originAirportIataCode": "MIA",
+    "destinationAirportIataCode": "YQT",
     "route": "MIA>YQT",
     "departureDate": "2018-08-20",
     "departureWeekDay": 1,
