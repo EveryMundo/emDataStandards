@@ -1,0 +1,193 @@
+{
+  "journey": {
+    "airline": {
+      "name": "EveryMundo",
+      "iataCode": "EM"
+    },
+    "fullRoute": "SFO>MIA>JFK|JFK>SFO",
+    "priceSpecification": {
+      "priceBeforeTaxesAndFees": 234.21,
+      "totalPrice": 250.6,
+      "taxAmount": 16.39,
+      "additionalFeesAmount": 12,
+      "currencyCode": "USD",
+      "currencySymbol": "$",
+      "pricingGroupId": "USD-US",
+      "redemption": {
+        "unit": "MILES",
+        "amount": 1500
+      }
+    },
+    "passengerDetails": [
+      {
+        "category": "senior65Plus",
+        "mappedTo": "seniorCount",
+        "count": 2
+      }
+    ],
+    "passenger": {
+      "count": 3,
+      "seniorCount": 2,
+      "adultCount": 0,
+      "youngAdultCount": 0,
+      "childCount": 0,
+      "infantInLapCount": 0,
+      "infantInSeatCount": 0
+    },
+    "fareTensor": {
+      "journeyType": "ROUND_TRIP",
+      "cells": [
+        {
+          "price": 345.21,
+          "boundType": "OUTBOUND",
+          "isSoldOut": false,
+          "redemptionAmount": 9999,
+          "outboundDate": "2017-03-06",
+          "inboundDate": "NULL"
+        }
+      ]
+    },
+    "outboundFlight": {
+      "boundType": "OUTBOUND",
+      "route": "SFO>JFK",
+      "priceSpecification": {
+        "priceBeforeTaxesAndFees": 750.12,
+        "totalPrice": 825.51,
+        "taxAmount": 75.39
+      },
+      "fareClassInput": "Economy Basic",
+      "fareClass": "ECONOMY",
+      "departureAirportIataCode": "SFO",
+      "arrivalAirportIataCode": "JFK",
+      "departureDate": "2017-12-07",
+      "estimatedDuration": "PT9H45M",
+      "availableSeatsCount": "9+",
+      "legs": {
+        "flightNumber": "EM110",
+        "departureAirport": {
+          "name": "San Francisco Airport",
+          "iataCode": "SFO"
+        },
+        "departureTime": "06:35",
+        "arrivalAirport": {
+          "name": "Miami International Airport",
+          "iataCode": "MIA"
+        },
+        "arrivalTime": "13:35",
+        "estimatedDuration": "PT6H30M",
+        "departureCity": {
+          "name": "San Francisco",
+          "cityCode": "SFO"
+        },
+        "departureCountry": {
+          "name": "United States",
+          "isoCode": "US"
+        },
+        "arrivalCity": {
+          "name": "Miami",
+          "cityCode": "MIA"
+        },
+        "arrivalCountry": {
+          "name": "United States",
+          "isoCode": "US"
+        },
+        "flightType": "DOMESTIC",
+        "operatingAirline": {
+          "name": "EveryMundo",
+          "iataCode": "EM"
+        },
+        "aircraft": "Boeing 747",
+        "additionalInfo": {
+          "fields": [
+            {
+              "name": "classOfService",
+              "value": "COACH_EC"
+            }
+          ]
+        }
+      }
+    },
+    "inboundFlight": {
+      "boundType": "INBOUND",
+      "route": "JFK>SFO",
+      "priceSpecification": {
+        "priceBeforeTaxesAndFees": 750.12,
+        "totalPrice": 825.51,
+        "taxAmount": 75.39
+      },
+      "fareClassInput": "Economy",
+      "fareClass": "ECONOMY",
+      "departureAirportIataCode": "JFK",
+      "arrivalAirportIataCode": "SFO",
+      "departureDate": "2017-12-10",
+      "estimatedDuration": "PT9H45M",
+      "availableSeatsCount": "9+",
+      "legs": [
+        {}
+      ],
+      "departureCity": {
+        "name": "New York",
+        "cityCode": "NYC"
+      },
+      "departureCountry": {
+        "name": "United States",
+        "isoCode": "US"
+      },
+      "arrivalCity": {
+        "name": "San Francisco",
+        "cityCode": "SFO"
+      },
+      "arrivalCountry": {
+        "name": "United States",
+        "isoCode": "US"
+      },
+      "flightType": "DOMESTIC",
+      "routeType": "NONSTOP",
+      "discount": {
+        "isDiscount": true,
+        "code": "AFFBFAN",
+        "amount": 500,
+        "percentage": 0.5,
+        "expiration": "2017-12-31"
+      },
+      "additionalInfo": {
+        "fields": [
+          {
+            "name": "classOfService",
+            "value": "COACH_EC"
+          }
+        ]
+      }
+    },
+    "departureDate": "2017-12-07",
+    "returnDate": "2017-12-10",
+    "journeyType": "ROUND_TRIP",
+    "isCodeShare": true,
+    "flightType": "DOMESTIC",
+    "segmentCount": 2,
+    "flightCount": 3,
+    "discount": {
+      "isDiscount": true,
+      "code": "AFFBFAN",
+      "amount": 500,
+      "percentage": 0.5,
+      "expiration": "2017-12-31"
+    }
+  },
+  "page": {
+    "name": "flights from miami to berlin",
+    "url": "flights.everymundo.com/en/flights-from-miami-to-berlin",
+    "hostName": "flights.everymundo.com",
+    "languageIsoCode": "en",
+    "siteEdition": "en-US"
+  },
+  "metadata": {
+    "app": {
+      "name": "Farenet | GoogleITA UA Client",
+      "version": "2.1.0",
+      "datasource": "IBE_FLIGHT_SELECTION"
+    },
+    "trackingId": "RTJFKFRA2017073120170824$0_123456KARIN",
+    "schemaVersion": "0.0.1"
+  }
+}
