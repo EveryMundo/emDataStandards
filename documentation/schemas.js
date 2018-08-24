@@ -36,6 +36,8 @@ export default fromJS([
   require('../types/hotel.schema.json'),
   require('../types/insurance.schema.json'),
   require('../types/journey.schema.json'),
+  require('../types/legs_base.schema.json'),
+  require('../types/legs.schema.json'),
   require('../types/lounge.schema.json'),
   require('../types/loyaltyProgram.schema.json'),
   require('../types/metadata.schema.json'),
