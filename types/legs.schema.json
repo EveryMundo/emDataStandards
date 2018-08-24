@@ -11,7 +11,9 @@
       "items": {
         "type": "object",
         "properties": {
-          "$ref": "./legs_base.schema.json",
+          "base": {
+            "$ref": "./legs_base.schema.json"
+          },
           "departureGate": {
             "description": "departureGate",
             "type": "string",
