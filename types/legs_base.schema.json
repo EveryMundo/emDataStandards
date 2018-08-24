@@ -1,7 +1,7 @@
 {
-    "id": "/legs",
+    "id": "/legs_base",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Legs",
+    "title": "Legs Base",
     "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
     "type": "array",
     "properties": {
@@ -190,10 +190,10 @@
     "required": ["flightNumber", "route", "departureAirport", "departureTime", "arrivalAirport", "arrivalTime", "estimatedDuration", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "operatingAirline", "aircraft"],
     "links": [
       {
-        "title": "Legs",
-        "description": "Legs",
+        "title": "Legs Base",
+        "description": "Legs Base",
         "rel": "self",
-        "href": "/legs",
+        "href": "/legs_base",
         "method": "GET",
         "targetSchema": {
           "rel": "self"
