@@ -55,6 +55,7 @@
   "links": [
     {
       "title": "Legs",
+      "description": "Legs",
       "rel": "self",
       "href": "/legs",
       "method": "GET",
