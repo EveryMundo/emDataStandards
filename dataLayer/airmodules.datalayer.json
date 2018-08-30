@@ -1,4 +1,6 @@
 {
+    "eventCategory": "em-booking-mask",
+    "eventAction": "fsi",
     "journeyType": "ROUND_TRIP",
     "originAirportIataCode": "MIA",
     "destinationAirportIataCode": "YQT",
