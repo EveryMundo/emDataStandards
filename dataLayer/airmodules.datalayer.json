@@ -8,7 +8,7 @@
     "returnDate": "2018-08-30",
     "returnWeekDay": 4,
     "tripLength": 20,
-    "isFlexibleDates": "false",
+    "isFlexibleDates": false,
     "discountCode": "Summer20",
     "fareClass": "ECONOMY",
     "totalPrice": 609,
