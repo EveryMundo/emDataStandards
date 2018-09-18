@@ -105,15 +105,15 @@
       "type": "object",
       "properties": {
         "$ref": "./discount.schema.json"
+      }
     },
     "airline": {
-      "description": "airline",
-      "type": "object",
-      "properties": {
-        "$ref": "./airline.schema.json"
+    "description": "airline",
+    "type": "object",
+    "properties": {
+      "$ref": "./airline.schema.json"
       }
-    }
-  },
+    },
   "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "isCodeShare", "flightType", "segmentCount", "flightCount", "discount", "airline"],
   "links": [
     {
