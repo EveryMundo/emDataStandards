@@ -32,7 +32,7 @@
       "$ref": "./metadata.schema.json"
     }
   },
-  "required": ["offerId", "journey", "hotel", "page", "device", "metadata"],
+  "required": ["offerId", "journey", "page", "device", "metadata"],
   "links": [
     {
       "title": "Offer",
