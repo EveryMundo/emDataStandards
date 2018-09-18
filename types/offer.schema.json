@@ -11,53 +11,25 @@
       "example": "123456789Kat"
     },
     "priceSpecification": {
-      "description": "priceSpecification",
-      "type": "object",
-        "properties": {
-          "$ref": "./priceSpecification.schema.json"
-        }
+      "$ref": "./priceSpecification.schema.json"
     },
     "journey": {
-      "description": "journey",
-      "type": "object",
-      "properties": {
-        "$ref": "./journey.schema.json"
-      }
+      "$ref": "./journey.schema.json"
     },
     "hotels": {
-      "description": "hotels",
-      "type": "array",
-      "properties": {
-        "$ref": "./hotel.schema.json"
-      }
+      "$ref": "./hotel.schema.json"
     },
     "autoRental": {
-      "description": "autoRental",
-      "type": "object",
-      "properties": {
-        "$ref": "./autoRental.schema.json"
-      }
+      "$ref": "./autoRental.schema.json"
     },
     "page": {
-      "description": "webPage",
-      "type": "object",
-      "properties": {
-        "$ref": "./page.schema.json"
-      }
+      "$ref": "./page.schema.json"
     },
     "device": {
-      "description": "device",
-      "type": "object",
-      "properties": {
-        "$ref": "./device.schema.json"
-      }
+      "$ref": "./device.schema.json"
     },
     "metadata": {
-      "description": "metadata",
-      "type": "object",
-      "properties": {
-        "$ref": "./metadata.schema.json"
-      }
+      "$ref": "./metadata.schema.json"
     }
   },
   "required": ["offerId", "journey", "hotel", "page", "device", "metadata"],
