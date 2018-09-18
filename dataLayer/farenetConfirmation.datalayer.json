@@ -1,0 +1,134 @@
+{
+    "journey": {
+        "currency": "USD",
+        "currencySymbol": "$",
+        "passengerDetails": [
+            {
+                "category": "adult",
+                "count": 1
+            },
+            {
+                "category": "child0to17",
+                "count": 1
+            }
+        ],
+        "flights": [
+            {
+                "boundType": "OUTBOUND",
+                "priceSpecification": {
+                    "priceBeforeTaxesAndFees": 106.19,
+                    "totalPrice": 106.19,
+                    "taxAmount": null,
+                    "fuelPrice": null,
+                    "additionalFeesAmount": null
+                },
+                "fareClassInput": "STANDARD",
+                "fareClass": "ECONOMY",
+                "departureAirportIataCode": "FLL",
+                "arrivalAirportIataCode": "LGA",
+                "departureDate": "2018-07-26",
+                "estimatedDuration": "PT3H",
+                "availableSeatsCount": 5,
+                "legs": [
+                    {
+                        "flightNumber": "604",
+                        "route": "FLL>LGA",
+                        "departureAirport": {
+                            "name": "Fort Lauderdale–Hollywood International Airport",
+                            "iataCode": "FLL"
+                        },
+                        "departureTime": "7:05",
+                        "arrivalAirport": {
+                            "name": "LaGuardia Airport",
+                            "iataCode": "LGA"
+                        },
+                        "arrivalTime": "10:05",
+                        "estimatedDuration": "PT3H"
+                    }
+                ],
+                "departureCity": {
+                    "name": "Fort Lauderdale",
+                    "cityCode": "FLL"
+                },
+                "departureCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "arrivalCity": {
+                    "name": "New York",
+                    "cityCode": "NYC"
+                },
+                "arrivalCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "flightType": "DOMESTIC",
+                "routeType": "NONSTOP"
+            },
+            {
+                "boundType": "INBOUND",
+                "priceSpecification": {
+                    "priceBeforeTaxesAndFees": 121.18,
+                    "totalPrice": 121.18,
+                    "taxAmount": null,
+                    "fuelPrice": null,
+                    "additionalFeesAmount": null
+                },
+                "fareClassInput": "STANDARD",
+                "fareClass": "ECONOMY",
+                "departureAirportIataCode": "LGA",
+                "arrivalAirportIataCode": "FLL",
+                "departureDate": "2018-07-29",
+                "estimatedDuration": "PT3H1M",
+                "availableSeatsCount": 5,
+                "legs": [
+                    {
+                        "flightNumber": "779",
+                        "route": "LGA>FLL",
+                        "departureAirport": {
+                            "name": "LaGuardia Airport",
+                            "iataCode": "LGA"
+                        },
+                        "departureTime": "20:29",
+                        "arrivalAirport": {
+                            "name": "Fort Lauderdale–Hollywood International Airport",
+                            "iataCode": "FLL"
+                        },
+                        "arrivalTime": "23:30",
+                        "estimatedDuration": "PT3H1M"
+                    }
+                ],
+                "departureCity": {
+                    "name": "New York",
+                    "cityCode": "NYC"
+                },
+                "departureCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "arrivalCity": {
+                    "name": "Fort Lauderdale",
+                    "cityCode": "FLL"
+                },
+                "arrivalCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "flightType": "DOMESTIC",
+                "routeType": "NONSTOP"
+            }
+        ],
+        "departureDate": "2018-07-26",
+        "returnDate": "2018-07-29",
+        "journeyType": "ROUND_TRIP",
+        "flightType": "DOMESTIC",
+        "airline": {
+            "name": "Spirit",
+            "iataCode": "NK"
+        }
+    },
+    "page": {
+        "languageIsoCode": "en",
+        "siteEdition": "en-US"
+    }
+}
