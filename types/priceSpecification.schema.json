@@ -10,8 +10,10 @@
       "type": "string",
       "example": "JOURNEY"
     },
-    "$ref": "./priceSpecification_base.schema.json",
-    "pricingGroupId": {
+    "base": {
+      "$ref": "./priceSpecification_base.schema.json"
+    },
+      "pricingGroupId": {
       "description": "A unique identifier for price market combining ISO codes for currency and country",
       "type": "string",
       "example": "USD-US"
