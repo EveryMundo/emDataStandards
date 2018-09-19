@@ -1,0 +1,62 @@
+{
+    "id": "/priceSpecification",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "PriceSpecification",
+    "description": "PriceSpecification",
+    "type": "object",
+    "properties": {
+      "priceBeforeTaxesAndFees": {
+        "description": "Price for the reservation or ticket",
+        "type": "number",
+        "example": 234.21
+      },
+      "totalPrice": {
+        "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 250.6
+      },
+      "totalPriceUSD": {
+        "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 250.6
+      },
+      "taxAmount": {
+        "description": "The amount paid in taxes",
+        "type": "number",
+        "example": 16.39
+      },
+      "fuelPrice": {
+        "description": "Airline fuel charges",
+        "type": "number",
+        "example": 57.89
+      },
+      "additionalFeesAmount": {
+        "description": "Airline additional fees",
+        "type": "number",
+        "example": 12
+      },
+      "currencyCode": {
+        "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+        "type": "string",
+        "example": "USD"
+      },
+      "currencySymbol": {
+        "description": "Currency symbol",
+        "type": "string",
+        "example": "$"
+      }
+    },
+    "required": ["totalPrice", "currencyCode"],
+    "links": [
+      {
+        "title": "PriceSpecification",
+        "description": "PriceSpecification",
+        "rel": "self",
+        "href": "/priceSpecification",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }
