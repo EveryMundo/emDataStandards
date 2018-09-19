@@ -11,6 +11,7 @@
       "example": "123456789Kat"
     },
     "priceSpecification": {
+      "description": "HOTEL|JOURNEY",
       "$ref": "./priceSpecification.schema.json"
     },
     "journey": {
