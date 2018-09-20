@@ -1,5 +1,5 @@
 {
-    "id": "/priceSpecification",
+    "id": "/priceSpecification_base",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "PriceSpecification",
     "description": "PriceSpecification",
@@ -52,7 +52,7 @@
         "title": "PriceSpecification",
         "description": "PriceSpecification",
         "rel": "self",
-        "href": "/priceSpecification",
+        "href": "/priceSpecification_base",
         "method": "GET",
         "targetSchema": {
           "rel": "self"
