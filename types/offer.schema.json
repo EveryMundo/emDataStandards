@@ -11,9 +11,16 @@
       "example": "123456789Kat"
     },
     "priceSpecification": {
-      "description": "HOTEL|JOURNEY",
-      "$ref": "./priceSpecification.schema.json"
-    },
+      "properties": {
+        "description": {
+          "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
+          "type": "string",
+          "example": "HOTEL|JOURNEY"
+        }
+      },
+      "allOf": [
+        {"$ref": "./priceSpecification.schema.json"}
+    ]},
     "journey": {
       "$ref": "./journey.schema.json"
     },
