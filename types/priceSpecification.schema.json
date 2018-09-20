@@ -1,40 +1,46 @@
 {
-  
-  
-      "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "/priceSpecification",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "PriceSpecification",
+  "description": "PriceSpecification",
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
+      "type": "string",
+      "example": "JOURNEY"
+    },
+    "allOf": 
+    {
+      "$ref": "./priceSpecification_base.schema.json"
+    }, 
+    "priceAdvertised": {
+      "description": "Price advertised",
+      "type": "number",
+      "example": 250.6  
+    },
+    "pricingGroupId": {
+      "description": "A unique identifier for price market combining ISO codes for currency and country",
+      "type": "string",
+      "example": "USD-US"
+    },
+    "isSoldOut": {
+      "description": "Whether fare is sold out - if isSoldOut=true, fare = NULL",
+      "type": "boolean",
+      "example": false
+    }
+  },
+  "required": ["advertisedPrice", "totalPrice", "currencyCode"],
+  "links": [
+    {
       "title": "PriceSpecification",
       "description": "PriceSpecification",
-      "type": "object",  
-      "properties": {
-        "description": {
-          "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
-          "type": "string",
-          "example": "JOURNEY"
-        },
-        "allOf": 
-          {
-            "$ref": "./priceSpecification_base.schema.json"
-          },  
-        "pricingGroupId": {
-          "description": "A unique identifier for price market combining ISO codes for currency and country",
-          "type": "string",
-          "example": "USD-US"
-        },
-        "isSoldOut": {
-          "description": "Whether fare is sold out - if isSoldOut=true, fare = NULL",
-          "type": "boolean",
-          "example": false
-        }
-      },
-      "required": ["advertisedPrice", "totalPrice", "currencyCode"],
-      "links": [
-        {
-          "rel": "self",
-          "href": "/priceSpecification",
-          "method": "GET",
-          "targetSchema": {
-            "rel": "self"
-          }
-        }
-      ]
+      "rel": "self",
+      "href": "/priceSpecification",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
     }
+  ]
+}
