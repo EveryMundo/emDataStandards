@@ -7,7 +7,6 @@
   "properties": {
     "flightReservation": {
       "$ref": "./flightReservation.schema.json"
-      }
     },
     "fullRoute": {
       "description": "Full itinerary with connections including stop over",
@@ -27,9 +26,6 @@
       "$ref": "./fareTensor.schema.json"
     },
     "outboundFlight": {
-      "description": "Outbound journey details",
-      "type": "object",
-      "properties": {
         "$ref": "./flight.schema.json"
       }
     },
