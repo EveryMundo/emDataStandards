@@ -1,9 +1,6 @@
 {
-  "allOf": [
-    {
-      "$ref": "./priceSpecification_base.schema.json"
-    },  
-    {
+  
+  
       "$schema": "http://json-schema.org/draft-06/schema#",
       "title": "PriceSpecification",
       "description": "PriceSpecification",
@@ -14,6 +11,10 @@
           "type": "string",
           "example": "JOURNEY"
         },
+        "allOf": 
+          {
+            "$ref": "./priceSpecification_base.schema.json"
+          },  
         "pricingGroupId": {
           "description": "A unique identifier for price market combining ISO codes for currency and country",
           "type": "string",
@@ -37,5 +38,3 @@
         }
       ]
     }
-  ]
-}
