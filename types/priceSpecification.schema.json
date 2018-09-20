@@ -4,16 +4,15 @@
   "title": "PriceSpecification",
   "description": "PriceSpecification",
   "type": "object",
+  "allOf": [{
+      "$ref": "./priceSpecification_base.schema.json"
+  }], 
   "properties": {
     "description": {
       "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
       "type": "string",
       "example": "JOURNEY"
     },
-    "allOf": 
-    {
-      "$ref": "./priceSpecification_base.schema.json"
-    }, 
     "priceAdvertised": {
       "description": "Price advertised",
       "type": "number",
