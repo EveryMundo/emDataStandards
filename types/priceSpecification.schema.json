@@ -4,7 +4,6 @@
       "$ref": "./priceSpecification_base.schema.json"
     },  
     {
-      "id": "/priceSpecification",
       "$schema": "http://json-schema.org/draft-06/schema#",
       "title": "PriceSpecification",
       "description": "PriceSpecification",
@@ -29,8 +28,6 @@
       "required": ["advertisedPrice", "totalPrice", "currencyCode"],
       "links": [
         {
-          "title": "PriceSpecification",
-          "description": "PriceSpecification",
           "rel": "self",
           "href": "/priceSpecification",
           "method": "GET",
