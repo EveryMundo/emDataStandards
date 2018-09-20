@@ -12,7 +12,7 @@
     },
     "priceSpecification": {
       "allOf": [
-        {"$ref": "./priceSpecification.schema.json"},
+        {"$ref": "./priceSpecification_base.schema.json"},
       {
         "properties": {
           "description": {
@@ -28,9 +28,6 @@
     },
     "hotels": {
       "$ref": "./hotel.schema.json"
-    },
-    "autoRental": {
-      "$ref": "./autoRental.schema.json"
     },
     "page": {
       "$ref": "./page.schema.json"
