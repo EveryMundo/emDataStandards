@@ -24,19 +24,49 @@
       }]
     },
     "journey": {
-      "$ref": "./journey.schema.json"
+      "allOf": [
+        {"$ref": "./journey_base.schema.json"},
+      {
+        "properties": {
+
+        }
+      }]
     },
     "hotels": {
-      "$ref": "./hotel.schema.json"
+      "allOf": [
+        {"$ref": "./hotel.schema.json"},
+      {
+        "properties": {
+          
+        }
+      }]
     },
     "page": {
-      "$ref": "./page.schema.json"
+      "allOf": [
+        {"$ref": "./page.schema.json"},
+      {
+        "properties": {
+
+        }
+      }]    
     },
     "device": {
-      "$ref": "./device.schema.json"
+      "allOf": [
+        {"$ref": "./device.schema.json"},
+      {
+        "properties": {
+
+        }
+      }]    
     },
     "metadata": {
-      "$ref": "./metadata.schema.json"
+      "allOf": [
+        {"$ref": "./metadata.schema.json"},
+      {
+        "properties": {
+          
+        }
+      }]  
     }
   },
   "required": ["offerId", "journey", "page", "device", "metadata"],
