@@ -5,7 +5,7 @@
   "description": "Device information",
   "type": "object",
   "allOf": [
-    {"$ref": "./guest.schema.json"},
+    {"$ref": "./device_base.schema.json"},
   {
   "properties": {
     "viewportSize": {
