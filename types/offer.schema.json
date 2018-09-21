@@ -39,7 +39,7 @@
     },
     "page": {
       "allOf": [
-        {"$ref": "./page.schema.json"},
+        {"$ref": "./page_base.schema.json"},
       {
         "properties": {
 
