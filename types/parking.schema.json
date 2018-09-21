@@ -11,55 +11,7 @@
       "example": "P1"
     },
     "airport": {
-      "description": "airport",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number"
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number"
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        },
-        "images": {
-          "description": "images",
-          "type": "array"
-        }
-      },
-      "example": {
-        "@type": "Airport",
-        "name": "Miami International Airport",
-        "iataCode": "MIA",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "mia.com/image.jpg",
-        "images": [
-          "mia.com/image.jpg",
-          "mia.com/image2.jpg"
-        ]
-      }
+      "$ref": "./airport.schema.json"
     },
     "priceSpecification": {
       "description": "priceSpecification",
