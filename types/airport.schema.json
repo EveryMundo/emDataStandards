@@ -34,11 +34,6 @@
         "longitude": -108.32
       }
     },
-    "image": {
-      "description": "Image URL for the airport",
-      "type": "string",
-      "example": "mia.com/image.jpg"
-    },
     "images": {
       "description": "Array of image URLs for the airport",
       "type": "array",
