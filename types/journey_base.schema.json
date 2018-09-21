@@ -23,19 +23,14 @@
         "$ref": "./fareTensor.schema.json"
       },
       "outboundFlight": {
-          "$ref": "./flight.schema.json"
+          "$ref": "./flight_base.schema.json"
         }
-      },
-      "multicityFlight": {
-        "description": "Flights between outbound and inbound flights for multi-city flights.",
-        "type": "object",
-        "properties": {}
       },
       "inboundFlight": {
         "description": "Inbound journey details",
         "type": "object",
         "properties": {
-          "$ref": "./flight.schema.json"
+          "$ref": "./flight_base.schema.json"
         }
       },
       "departureDate": {
@@ -43,40 +38,15 @@
         "type": "string",
         "example": "2017-12-07"
       },
-      "departureWeekDay": {
-        "description": "Day corresponding to departure date for the journey",
-        "type": "string",
-        "example": "4"
-      },
       "returnDate": {
         "description": "Expected return date for the journey",
         "type": "string",
         "example": "2017-12-10"
       },
-      "returnWeekDay": {
-        "description": "Day corresponding to return date for the journey",
-        "type": "string",
-        "example": "7"
-      },
-      "daysUntilFlight": {
-        "description": "Number of days between current date and first departure date",
-        "type": "number",
-        "example": 7
-      },
-      "tripLength": {
-        "description": "Days between first departure date and return date",
-        "type": "number",
-        "example": 7
-      },
       "journeyType": {
         "description": "Type of journey",
         "type": "string",
         "example": "ROUND_TRIP"
-      },
-      "isCodeShare": {
-        "description": "Whether the segment is codeshare",
-        "type": "boolean",
-        "example": true
       },
       "flightType": {
         "description": "Type of flight",
@@ -101,13 +71,13 @@
         }
       },
       "airline": {
-      "description": "airline",
-      "type": "object",
-      "properties": {
-        "$ref": "./airline.schema.json"
-        }
+        "description": "airline",
+        "type": "object",
+        "properties": {
+          "$ref": "./airline.schema.json"
+          }
       },
-    "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "isCodeShare", "flightType", "segmentCount", "flightCount", "discount", "airline"],
+    "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "flightType", "segmentCount", "flightCount", "discount", "airline"],
     "links": [
       {
         "title": "Journey",

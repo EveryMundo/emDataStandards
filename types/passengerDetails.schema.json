@@ -7,17 +7,17 @@
     "category": {
       "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
       "type": "string",
-      "example": ""
+      "example": "Adult"
     },
     "mappedTo": {
       "description": "Field that passenger count is being mapped to under type Passenger",
       "type": "number",
-      "example": ""
+      "example": "adultCount"
     },
     "count": {
       "description": "Amount of passengers for a specific category",
       "type": "number",
-      "example": ""
+      "example": 1
     }
   },
   "required": ["category", "mappedTo", "count"],

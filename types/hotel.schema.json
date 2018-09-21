@@ -21,64 +21,13 @@
       "example": "SAN"
     },
     "priceSpecification": {
-      "$ref": "./priceSpecification.schema.json"
+      "$ref": "./priceSpecification_base.schema.json"
     },
     "guest": {
-      "description": "guest",
-      "type": "object",
-      "properties": {
-        "count": {
-          "description": "count",
-          "type": "number"
-        },
-        "adultCount": {
-          "description": "adultCount",
-          "type": "number"
-        },
-        "childCount": {
-          "description": "childCount",
-          "type": "number"
-        }
-      },
-      "example": {
-        "count": 4,
-        "adultCount": 2,
-        "childCount": 2
-      }
+      "$ref": "./guest.schema.json"
     },
     "address": {
-      "description": "Where the hotel is located",
-      "type": "object",
-      "properties": {
-        "street": {
-          "description": "street",
-          "type": "string"
-        },
-        "cityName": {
-          "description": "cityName",
-          "type": "string"
-        },
-        "regionCode": {
-          "description": "regionCode",
-          "type": "string"
-        },
-        "postalCode": {
-          "description": "postalCode",
-          "type": "string"
-        },
-        "countryCode": {
-          "description": "countryCode",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "PostalAddress",
-        "street": "1500 Orange Avenue",
-        "cityName": "San Diego",
-        "regionCode": "CA",
-        "postalCode": "94043",
-        "countryCode": "US"
-      }
+      "$ref": "./address.schema.json"
     },
     "checkinTime": {
       "description": "The earliest someone may check into a lodging establishment",
@@ -101,38 +50,7 @@
       "example": "5"
     },
     "aggregateRating": {
-      "description": "Rating of hotel",
-      "type": "object",
-      "properties": {
-        "author": {
-          "description": "author",
-          "type": "string"
-        },
-        "bestRating": {
-          "description": "bestRating",
-          "type": "number"
-        },
-        "ratingValue": {
-          "description": "ratingValue",
-          "type": "number"
-        },
-        "worstRating": {
-          "description": "worstRating",
-          "type": "number"
-        },
-        "ratingCount": {
-          "description": "ratingCount",
-          "type": "number"
-        }
-      },
-      "example": {
-        "@type": "Rating",
-        "author": "Tripadvisor",
-        "bestRating": 5,
-        "ratingValue": 3,
-        "worstRating": 1,
-        "ratingCount": 11
-      }
+      "$ref": "./aggregateRating.schema.json"
     },
     "image": {
       "description": "Image URL for the hotel",

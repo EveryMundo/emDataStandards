@@ -25,12 +25,8 @@
     },
     "journey": {
       "allOf": [
-        {"$ref": "./journey_base.schema.json"},
-      {
-        "properties": {
-
-        }
-      }]
+        {"$ref": "./journey_base.schema.json"}
+      ]
     },
     "hotels": {
       "allOf": [

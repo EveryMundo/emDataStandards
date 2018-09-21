@@ -4,44 +4,15 @@
   "title": "Flight",
   "description": "Flight",
   "type": "object",
+  "allOf": [
+    {"$ref": "./flight_base.schema.json"}
+  ,
+  {
   "properties": {
     "flightNumber": {
       "description": "flightNumber",
       "type": "string",
       "example": "EM110"
-    },
-    "route": {
-      "description": "Departure and arrival airport IATA codes for each bound",
-      "type": "string",
-      "example": "SFO>JFK"
-    },
-    "priceSpecification": {
-        "$ref": "./priceSpecification.schema.json",
-        "redemption": {
-          "description": "redemption",
-          "type": "object",
-          "properties": {
-            "unit": {
-              "description": "unit",
-              "type": "string"
-            },
-            "amount": {
-              "description": "amount",
-              "type": "number"
-            }
-          }
-        }
-      }
-    },
-    "fareClassInput": {
-      "description": "Flight fare class",
-      "type": "string",
-      "example": "Economy"
-    },
-    "fareClass": {
-      "description": "ECONOMY, BUSINESS, FIRST",
-      "type": "string",
-      "example": "ECONOMY"
     },
     "departureAirport": {
       "description": "departureAirport",
@@ -147,201 +118,16 @@
       "type": "string",
       "example": "UTC"
     },
-    "estimatedDuration": {
-      "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. (ISO 8601 duration format)",
-      "type": "string",
-      "example": "PT9H45M"
-    },
     "flightDistance": {
       "description": "The distance of the flight",
       "type": "string",
       "example": "3200KM"
     },
-    "departureCity": {
-      "description": "The city details where the flight originates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "San Francisco"
-        },
-        "cityCode": {
-          "description": "cityCode",
-          "type": "string",
-          "example": "SFO"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number",
-              "example": 23.12
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number",
-              "example": -168.32
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      }
-    },
-    "departureCountry": {
-      "description": "The country details where the flight originates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "United States"
-        },
-        "isoCode": {
-          "description": "isoCode",
-          "type": "string",
-          "example": "US"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number",
-              "example": 37.42
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number",
-              "example": -108.32
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      }
-    },
-    "arrivalCity": {
-      "description": "The city details where the flight terminates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "Miami"
-        },
-        "cityCode": {
-          "description": "cityCode",
-          "type": "string",
-          "example": "MIA"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number",
-              "example": 37.42
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number",
-              "example": -108.32
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      }
-    },
-    "arrivalCountry": {
-      "description": "The country details where the flight terminates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "United States"
-        },
-        "isoCode": {
-          "description": "isoCode",
-          "type": "string",
-          "example": "US"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number",
-              "example": 37.42
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number",
-              "example": -108.32
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      }
-    },
-    "flightType": {
-      "description": "DOMESTIC, INTERNATIONAL",
-      "type": "string",
-      "example": "DOMESTIC"
-    },
-    "routeType": {
-      "description": "NONSTOP, CONNECTING, CODESHARE",
-      "type": "string",
-      "example": "NONSTOP"
-    },
-    "discount": {
-      "$ref": "./discount.schema.json"
-    },
     "baggage": {
       "$ref": "./baggage.schema.json"
-    },
-    "additionalInfo": {
-      "description": "additionalInfo",
-      "type": "object",
-      "properties": {
-        "fields": {
-          "description": "fields",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "description": "",
-                "type": "string",
-                "example": "classOfService"
-              },
-              "value": {
-                "description": "",
-                "type": "string",
-                "example": "COACH_EC"
-              }
-            }
-          }
-        }
-      }
-  },
+    }
+  }
+  }],
   "required": ["boundType", "route", "priceSpecification", "fareClassInput", "fareClass", "departureAirportIataCode", "arrivalAirportIataCode", "departureDate", "estimatedDuration", "availableSeatsCount", "legs", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "routeType", "discount"],
   "links": [
     {
