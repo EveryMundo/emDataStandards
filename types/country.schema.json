@@ -34,11 +34,6 @@
         "longitude": -108.32
       }
     },
-    "image": {
-      "description": "Image URL for the country",
-      "type": "string",
-      "example": "unitedstates.com/image.jpg"
-    },
     "images": {
       "description": "Array of image URLs for the country",
       "type": "array",
