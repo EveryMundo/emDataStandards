@@ -5,7 +5,7 @@
   "description": "WebPage",
   "type": "object",
   "allOf": [
-    {"$ref": "./legs_base.schema.json"},
+    {"$ref": "./page_base.schema.json"},
   {
   "properties": {
     "author": {
