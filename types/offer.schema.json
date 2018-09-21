@@ -23,6 +23,11 @@
         }
       }]
     },
+    "tripLength": {
+      "description": "For round trip flights, the tripLength is the number of days between first departure date and return date. For one way flights, the tripLength is the number of days between the hotel checkout date and the flight departure date.",
+      "type": "number",
+      "example": 7
+    },
     "journey": {
       "allOf": [
         {"$ref": "./journey_base.schema.json"}
