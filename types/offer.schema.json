@@ -48,12 +48,8 @@
     },
     "device": {
       "allOf": [
-        {"$ref": "./device.schema.json"},
-      {
-        "properties": {
-
-        }
-      }]    
+        {"$ref": "./device_base.schema.json"}
+      ]    
     },
     "metadata": {
       "allOf": [
