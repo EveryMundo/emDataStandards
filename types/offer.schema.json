@@ -30,21 +30,13 @@
     },
     "hotels": {
       "allOf": [
-        {"$ref": "./hotel.schema.json"},
-      {
-        "properties": {
-          
-        }
-      }]
+        {"$ref": "./hotel.schema.json"}
+      ]
     },
     "page": {
       "allOf": [
-        {"$ref": "./page_base.schema.json"},
-      {
-        "properties": {
-
-        }
-      }]    
+        {"$ref": "./page_base.schema.json"}
+      ]    
     },
     "device": {
       "allOf": [
@@ -53,12 +45,8 @@
     },
     "metadata": {
       "allOf": [
-        {"$ref": "./metadata.schema.json"},
-      {
-        "properties": {
-          
-        }
-      }]  
+        {"$ref": "./metadata_base.schema.json"}
+      ]  
     }
   },
   "required": ["offerId", "journey", "page", "device", "metadata"],
