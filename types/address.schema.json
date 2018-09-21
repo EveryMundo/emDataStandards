@@ -1,43 +1,36 @@
 {
-  "id": "/postalAddress",
+  "id": "/address",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "PostalAddress",
   "description": "PostalAddress",
   "type": "object",
+  "allOf": [
+    {"$ref": "./address_base.schema.json"}
+  ,
+  {
   "properties": {
-    "street": {
-      "description": "Street address name",
-      "type": "string",
-      "example": "Murgstr. 5"
-    },
-    "cityName": {
-      "description": "City name",
-      "type": "string",
-      "example": "San Francisco"
-    },
-    "stateCode": {
-      "description": "State identifier code",
-      "type": "string",
-      "example": "CA"
-    },
-    "postalCode": {
-      "description": "Postal code number",
-      "type": "string",
-      "example": "94043"
-    },
-    "countryCode": {
-      "description": "Country ISO code",
-      "type": "string",
-      "example": "US"
+    "geo": {
+      "description": "geo",
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "description": "The latitude of the  airport",
+          "type": "number"
+        },
+        "longitude": {
+          "description": "The longitude of the airport",
+          "type": "number"
+        }
+      }
     }
-  },
+  }}],
   "required": ["cityName", "countryCode"],
   "links": [
     {
       "title": "PostalAddress",
       "description": "PostalAddress",
       "rel": "self",
-      "href": "/postalAddress",
+      "href": "/address",
       "method": "GET",
       "targetSchema": {
         "rel": "self"
