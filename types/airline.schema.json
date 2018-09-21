@@ -15,11 +15,6 @@
       "type": "string",
       "example": "EM"
     },
-    "image": {
-      "description": "Image URL for the airline",
-      "type": "string",
-      "example": "everymundo.com/image.jpg"
-    },
     "images": {
       "description": "Array of multiple image URLs for the airline",
       "type": "array",
