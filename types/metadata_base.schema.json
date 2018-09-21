@@ -1,5 +1,5 @@
 {
-    "id": "/metadata",
+    "id": "/metadata_base",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Metadata",
     "description": "Metadata",
@@ -43,7 +43,7 @@
         "title": "Metadata",
         "description": "Metadata",
         "rel": "self",
-        "href": "/metadata",
+        "href": "/metadata_base",
         "method": "GET",
         "targetSchema": {
           "rel": "self"
