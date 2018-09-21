@@ -40,27 +40,7 @@
       "type": "array",
       "items": {
         "type": "object"
-      },
-      "example": [
-        {
-          "airline": {
-            "@type": "Airline",
-            "name": "EveryMundo",
-            "iataCode": "EM",
-            "image": "everymundo.com/image.jpg"
-          },
-          "currency": "USD",
-          "currencySymbol": "$",
-          "totalPrice": 234.5,
-          "departureTime": "2018-03-07T19:44:02.092Z",
-          "departureTimeZone": "UTC",
-          "returnTime": "2018-03-12T19:44:02.092Z",
-          "returnTimeZone": "UTC",
-          "formattedTotalPrice": "234.50",
-          "formattedDepartureDate": "07/03/18",
-          "formattedReturnDate": "07/12/18"
-        }
-      ]
+      }
     },
     "showSorting": {
       "description": "Whether to show sorting option. Only available for the following modules so far: Fares List_Mosaic Grid, Fares List_Horizontal Tile, Fares Filterable List_Horizontal Tile",
@@ -198,60 +178,57 @@
       "properties": {
         "mostPopular": {
           "description": "mostPopular",
-          "type": "string"
+          "type": "string",
+          "example": "fareMostPopular"
         },
         "mostSearched": {
           "description": "mostSearched",
-          "type": "string"
+          "type": "string",
+          "example": "fareMostPopular"
         },
         "priceLowToHigh": {
           "description": "priceLowToHigh",
-          "type": "string"
+          "type": "string",
+          "example": "fareLowToHigh"
         },
         "priceHighToLow": {
           "description": "priceHighToLow",
-          "type": "string"
+          "type": "string",
+          "example": "fareHighToLow"
         },
         "date": {
           "description": "date",
-          "type": "string"
+          "type": "string",
+          "example": "fareDate"
         },
         "tripLength": {
           "description": "tripLength",
-          "type": "string"
+          "type": "string",
+          "example": "fareTripLength"
         },
         "departureAsc": {
           "description": "departureAsc",
-          "type": "string"
+          "type": "string",
+          "example": "fareDepartureAsc"
         },
         "flightDurationAsc": {
           "description": "flightDurationAsc",
-          "type": "string"
+          "type": "string",
+          "example": "fareFlightDurationAsc"
         }
-      },
-      "example": {
-        "@type": "Sorting",
-        "mostPopular": "fareMostPopular",
-        "mostSearched": "fareMostPopular",
-        "priceLowToHigh": "fareLowToHigh",
-        "priceHighToLow": "fareHighToLow",
-        "date": "fareDate",
-        "tripLength": "fareTripLength",
-        "departureAsc": "fareDepartureAsc",
-        "flightDurationAsc": "fareFlightDurationAsc"
       }
     },
     "sortingTypes": {
       "description": "Available sorting types",
       "type": "array",
       "items": {
-        "type": "string"
-      },
-      "example": [
-        "priceLowToHigh",
-        "priceHighToLow",
-        "date"
-      ]
+        "type": "string",
+        "example": [
+          "priceLowToHigh",
+          "priceHighToLow",
+          "date"
+        ]
+      }
     },
     "journeyType": {
       "description": "Journey type",
@@ -269,171 +246,16 @@
       "example": 312
     },
     "departureAirport": {
-      "description": "Airport details where the flight originates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number"
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number"
-            }
-          }
-        }
-      },
-      "example": {
-        "@type": "Airport",
-        "name": "San Francisco Airport",
-        "iataCode": "SFO",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 23.12,
-          "longitude": -168.32
-        }
-      }
+      "$ref": "./airport.schema.json"
     },
     "departureCity": {
-      "description": "City details where the flight originates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "cityCode": {
-          "description": "cityCode",
-          "type": "string"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number"
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number"
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "City",
-        "name": "San Francisco",
-        "cityCode": "SFO",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 23.12,
-          "longitude": -168.32
-        },
-        "image": "sanfrancisco.com/image.jpg"
-      }
+      "$ref": "./city.schema.json"
     },
     "arrivalAirport": {
-      "description": "Airport details where the flight terminates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number"
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number"
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "Airport",
-        "name": "Miami International Airport",
-        "iataCode": "MIA",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "mia.com/image.jpg"
-      }
+      "$ref": "./airport.schema.json"
     },
     "arrivalCity": {
-      "description": "City details where the flight terminates",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "cityCode": {
-          "description": "cityCode",
-          "type": "string"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number"
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number"
-            }
-          }
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "City",
-        "name": "Miami",
-        "cityCode": "MIA",
-        "geo": {
-          "@type": "Geocoordinates",
-          "latitude": 37.42,
-          "longitude": -108.32
-        },
-        "image": "miami.com/image.jpg"
-      }
+      "$ref": "./city.schema.json"
     },
     "departureDate": {
       "description": "Expected departure date",
@@ -445,115 +267,123 @@
       "type": "string",
       "example": "2017-12-10"
     },
-    "provider": {
-      "description": "airline",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      }
+    "airline": {
+      "$ref": "./airline.schema.json"
     },
     "showArrivalAirportImage": {
       "description": "Whether to show the arrival airport image at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showDepartureCityName": {
       "description": "Whether to show the departure city name at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showDepartureAirportIataCode": {
       "description": "Whether to show the departure airport IATA code at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showArrivalCityName": {
       "description": "Whether to show the arrival city name at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showArrivalAirportIataCode": {
       "description": "Whether to show the arrival airport IATA code at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showRoute": {
       "description": "Whether to show the route at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showDepartureDate": {
       "description": "Whether to show the departure date at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showReturnDate": {
       "description": "Whether to show the return date at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showDateSeparator": {
       "description": "Whteher to show date separator at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showJourneyType": {
       "description": "Whether to show journey type at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showCallToActionSubtitle": {
       "description": "Whether to show CTA subtitle at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showRouteOnDepartureDate": {
       "description": "Whether to show route on departure date at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showRouteOnReturnDate": {
       "description": "Whether to show route on return date at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showFareClass": {
       "description": "Whether to show the fare class at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showTripLength": {
       "description": "Whether to show the trip length at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showAirlineLogo": {
       "description": "Whether to show the airline logo at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showAirlineName": {
       "description": "Whether to show the airline name at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showFareDisclaimer": {
       "description": "Whether to show the fare disclaimer at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showTotalPrice": {
       "description": "Whether to show the total price at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showDiscountFlag": {
       "description": "Whether to show promo flag at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showDepartureDateLabel": {
       "description": "Whether to show departure date label at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "showReturnDateLabel": {
       "description": "Whether to show return date label at the UI level",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "currency": {
       "description": "The currency (in 3-letter ISO 4217 format) of the price",
-      "type": "boolean"
+      "type": "boolean",
+      "example": ""
     },
     "currencySymbol": {
       "description": "Displayed currency symbol",
@@ -609,12 +439,11 @@
       "description": "Whether to show each journey type at the UI level",
       "type": "array",
       "items": {
-        "type": "boolean"
-      },
-      "example": [
-        false,
-        true
-      ]
+        "type": "boolean",
+        "example": [
+          false,
+          true
+        ]
     },
     "journeyTypes": {
       "description": "Journey types display at the UI level",
@@ -778,17 +607,14 @@
       "properties": {
         "adultsCount": {
           "description": "adultsCount",
-          "type": "number"
+          "type": "number",
+          "example": 9
         },
         "childrenCount": {
           "description": "childrenCount",
-          "type": "number"
+          "type": "number",
+          "example": 5
         }
-      },
-      "example": {
-        "@type": "Passenger",
-        "adultsCount": 9,
-        "childrenCount": 5
       }
     },
     "PassengerCountByTypeMinNumber": {
@@ -797,17 +623,14 @@
       "properties": {
         "adultsCount": {
           "description": "adultsCount",
-          "type": "number"
+          "type": "number",
+          "example": 1
         },
         "childrenCount": {
           "description": "childrenCount",
-          "type": "number"
+          "type": "number",
+          "example": 1
         }
-      },
-      "example": {
-        "@type": "Passenger",
-        "adultsCount": 1,
-        "childrenCount": 1
       }
     },
     "departureAirportIataCodeDefault": {
@@ -839,21 +662,21 @@
       "description": "Label keys list",
       "type": "array",
       "items": {
-        "type": "string"
-      },
-      "example": [
-        "EmCmpFrom"
-      ]
+        "type": "string",
+        "example": [
+          "EmCmpFrom"
+        ]
+      }
     },
     "accessibilityLabelKeys": {
       "description": "Accessibility label keys list",
       "type": "array",
       "items": {
-        "type": "string"
-      },
-      "example": [
-        "AccEmCmpFrom"
-      ]
+        "type": "string",
+        "example": [
+          "AccEmCmpFrom"
+        ]
+      }
     }
   },
   "required": [],
