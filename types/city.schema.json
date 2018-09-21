@@ -34,11 +34,6 @@
         "longitude": -108.32
       }
     },
-    "image": {
-      "description": "Image URL for the city",
-      "type": "string",
-      "example": "miami.com/image.jpg"
-    },
     "images": {
       "description": "Array of image URLs for the city",
       "type": "array",
