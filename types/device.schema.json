@@ -4,17 +4,10 @@
   "title": "Device",
   "description": "Device information",
   "type": "object",
+  "allOf": [
+    {"$ref": "./guest.schema.json"},
+  {
   "properties": {
-    "category": {
-      "description": "MOBILE, TABLET, DESKTOP",
-      "type": "string",
-      "example": "Mobile"
-    },
-    "screenResolution": {
-      "description": "Specifies the screen resolution.",
-      "type": "string",
-      "example": "360x600"
-    },
     "viewportSize": {
       "description": "SMALL; MEDIUM; LARGE",
       "type": "string",
@@ -35,11 +28,6 @@
       "type": "string",
       "example": "iPhone 6"
     },
-    "operatingSystem": {
-      "description": "Device operating system (e.g. Windows, Android, iOS)",
-      "type": "string",
-      "example": "iOS"
-    },
     "operatingSystemVersion": {
       "description": "The version of the operating system",
       "type": "string",
@@ -55,7 +43,7 @@
       "type": "string",
       "example": "1.3.2"
     }
-  },
+  }}],
   "required": ["category", "screenResolution", "operatingSystem"],
   "links": [
     {
