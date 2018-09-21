@@ -4,6 +4,9 @@
   "title": "Page",
   "description": "WebPage",
   "type": "object",
+  "allOf": [
+    {"$ref": "./legs_base.schema.json"},
+  {
   "properties": {
     "author": {
       "description": "The author of this content",
@@ -15,25 +18,10 @@
       "type": "string",
       "example": "Emirates Airlines"
     },
-    "name": {
-      "description": "The name of the page",
-      "type": "string",
-      "example": "flights from miami to berlin"
-    },
-    "url": {
-      "description": "Full url in lowercase (without query parameters to avoid collecting personal data by mistake)",
-      "type": "string",
-      "example": "https://flights.everymundo.com/en/flights-from-miami-to-berlin"
-    },
     "fullURL": {
       "description": "Full url in lowercase (wit query parameters)",
       "type": "string",
       "example": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google"
-    },
-    "hostName": {
-      "description": "Host name in lowercase",
-      "type": "string",
-      "example": "flights.everymundo.com"
     },
     "typeName": {
       "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, COUNTRY_TO_COUNTRY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED, CUSTOM_PAGE, 404_PAGE",
@@ -65,20 +53,10 @@
       "type": "string",
       "example": "Home | Flights | To Miami (MFL)"
     },
-    "languageIsoCode": {
-      "description": "Language ISO 639-1 code",
-      "type": "string",
-      "example": "en"
-    },
     "countryIsoCode": {
       "description": "The country code (in 2 letter codes from ISO 3166-1)",
       "type": "string",
       "example": "US"
-    },
-    "siteEdition": {
-      "description": "Site edition combination of ISO codes for language and country",
-      "type": "string",
-      "example": "en-US"
     },
     "dateCreated": {
       "description": "The date on which the CreativeWork was created",
@@ -95,7 +73,7 @@
       "type": "boolean",
       "example": "true"
     }
-  },
+  }}],
   "required": ["name", "url", "hostname", "languageIsoCode", "siteEdition"],
   "links": [
     {
