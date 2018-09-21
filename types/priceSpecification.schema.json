@@ -8,10 +8,10 @@
     {"$ref": "./priceSpecification_base.schema.json"},
     { 
   "properties": {
-    "description": {
-      "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
-      "type": "string",
-      "example": "JOURNEY"
+    "priceOffers": {
+      "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare: 'HOTEL', 'JOURNEY', 'CAR'",
+      "type": "array",
+      "example": ["JOURNEY", "HOTEL"]
     },
     "totalPriceUSD": {
       "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
@@ -39,7 +39,7 @@
       "example": "USD-US"
     }
   }}],
-  "required": ["advertisedPrice", "totalPrice", "currencyCode"],
+  "required": ["totalPrice", "currencyCode"],
   "links": [
     {
       "title": "PriceSpecification",
