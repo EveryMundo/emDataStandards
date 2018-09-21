@@ -5,6 +5,11 @@
   "description": "Hotel",
   "type": "object",
   "properties": {
+    "hotelId": {
+      "description": "Hotel identifier",
+      "type": "string",
+      "example": "Hotel123456789Kat"
+    },
     "name": {
       "description": "Hotel name",
       "type": "string",
@@ -14,6 +19,11 @@
       "description": "Hotel group where hotels are under the same management and belong to the same brand of hotels.",
       "type": "string",
       "example": "IHG"
+    },
+    "subGroup": {
+      "description": "Hotel subGroup where hotels are under the same management and belong to the same brand of hotels.",
+      "type": "string",
+      "example": "ABC"
     },
     "cityCode": {
       "description": "ISO code for the city",
@@ -70,6 +80,11 @@
         "everymundo.com/image.jpg",
         "everymundo.com/image2.jpg"
       ]
+    },
+    "amenities": {
+      "description": "Amenities",
+      "type": "array",
+      "example": ["Golf", "Pool"]
     }
   },
   "required": ["name", "cityCode"],
