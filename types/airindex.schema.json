@@ -10,12 +10,12 @@
       "type": "string",
       "example": "EM"
     },
-    "originAirportCode": {
+    "originAirportIataCode": {
       "description": "Origin Airport Code",
       "type": "string",
       "example": "ACA"
     },
-    "destinationAirportCode": {
+    "destinationAirportIataCode": {
       "description": "Destination Airport Code",
       "type": "string",
       "example": "AGU"
