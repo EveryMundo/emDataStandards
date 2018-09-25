@@ -6,12 +6,27 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "Campaign Name",
+      "description": "Campaign Name (e.g. 'airTRFX' for airTRFX dataLayer or 'GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]' for SEM",
       "type": "string",
-      "example": "airTRFX"
+      "example": "GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]"
+    },
+    "id": {
+      "description": "Adwords campaign unique identifier",
+      "type": "string",
+      "example": "329-581-8275"
+    },
+    "searchEngine": {
+      "description": "GOOGLE, BING, YANDEX, YAHOO, BAIDU, NAVER, YAHOO JAPAN",
+      "type": "string",
+      "example": "GOOGLE"
+    },
+    "locationTypeCode": {
+      "description": "'\\CC-' in the campaign name describes the type code, e.g. CC (City to City), CN (City to Nation), NN, NC",
+      "type": "string",
+      "example": "CC"
     }
   },
-  "required": [],
+  "required": ["id"],
   "links": [
     {
       "title": "Campaign",
