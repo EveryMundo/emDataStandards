@@ -27,8 +27,8 @@
   "required": ["cityName", "countryCode"],
   "links": [
     {
-      "title": "PostalAddress",
-      "description": "PostalAddress",
+      "title": "Address",
+      "description": "Address",
       "rel": "self",
       "href": "/address",
       "method": "GET",
