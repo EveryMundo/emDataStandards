@@ -68,7 +68,7 @@
     "locationType": {
       "description": "Route location type regarding origin and destination",
       "type": "string",
-      "example": "City>City"
+      "example": "CITY_TO_CITY"
     },
     "keywordGroup": {
       "description": "Adwords keyword group",
@@ -98,7 +98,7 @@
     "searchEngine": {
       "description": "GOOGLE, BING, YANDEX, YAHOO, BAIDU, NAVER, YAHOO JAPAN",
       "type": "string",
-      "example": "Google"
+      "example": "GOOGLE"
     },
     "inputKey": {
       "description": "Single field including account name, campaign name, adgroup name, etc., delimited with '&&'",
