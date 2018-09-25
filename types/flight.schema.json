@@ -5,8 +5,7 @@
   "description": "Flight",
   "type": "object",
   "allOf": [
-    {"$ref": "./flight_base.schema.json"}
-  ,
+    {"$ref": "./flight_base.schema.json"},
   {
   "properties": {
     "flightNumber": {
