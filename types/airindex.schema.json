@@ -95,8 +95,8 @@
                "medianPriceShort","searchRateLong","priceIndex","searchIndex","fromDate","toDate"],
   "links": [
     {
-      "title": "Airline",
-      "description": "Airline",
+      "title": "airIndex",
+      "description": "airIndex",
       "rel": "self",
       "href": "/airindex",
       "method": "GET",
