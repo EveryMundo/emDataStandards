@@ -27,7 +27,6 @@
     },
     "outboundFlight": {
         "$ref": "./flight.schema.json"
-      }
     },
     "multicityFlight": {
       "description": "Flights between outbound and inbound flights for multi-city flights.",
@@ -97,19 +96,12 @@
       "example": 3
     },
     "discount": {
-      "description": "discount",
-      "type": "object",
-      "properties": {
         "$ref": "./discount.schema.json"
-      }
     },
     "airline": {
-    "description": "airline",
-    "type": "object",
-    "properties": {
-      "$ref": "./airline.schema.json"
+      "$ref": "./airline_base.schema.json"
       }
-    },
+  },
   "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "isCodeShare", "flightType", "segmentCount", "flightCount", "discount", "airline"],
   "links": [
     {
