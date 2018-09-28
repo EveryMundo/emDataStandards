@@ -21,23 +21,7 @@
       "example": "Google Chrome"
     },
     "additionalInfo": {
-      "description": "Additional information not previously included",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "value": {
-          "description": "value",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "ExtraInfo",
-        "name": "name",
-        "value": "value"
-      }
+      "$ref": "./additionalInfo.schema.json"
     }
   },
   "required": [],
