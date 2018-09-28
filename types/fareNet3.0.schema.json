@@ -10,20 +10,7 @@
       "type": "object",
       "properties": {
         "airline": {
-          "description": "airline",
-          "type": "object",
-          "properties": {
-            "name": {
-              "description": "name",
-              "type": "string",
-              "example": "EveryMundo"
-            },
-            "iataCode": {
-              "description": "iataCode",
-              "type": "string",
-              "example": "EM"
-            }
-          }
+          "$ref": "./airline_base.schema.json"
         },
         "fullRoute": {
           "description": "fullRoute",
@@ -259,29 +246,7 @@
               "$ref": "./discount.schema.json"
             },
             "additionalInfo": {
-              "description": "additionalInfo",
-              "type": "object",
-              "properties": {
-                "fields": {
-                  "description": "fields",
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "name": {
-                        "description": "",
-                        "type": "string",
-                        "example": "classOfService"
-                      },
-                      "value": {
-                        "description": "",
-                        "type": "string",
-                        "example": "COACH_EC"
-                      }
-                    }
-                  }
-                }
-              }
+              "$ref": "./additionalInfo.schema.json"
             }
         },
         "inboundFlight": {
@@ -439,29 +404,7 @@
               "$ref": "./discount.schema.json"
             },
             "additionalInfo": {
-                  "description": "additionalInfo",
-                  "type": "object",
-                  "properties": {
-                    "fields": {
-                      "description": "fields",
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "name": {
-                            "description": "",
-                            "type": "string",
-                            "example": "classOfService"
-                          },
-                          "value": {
-                            "description": "",
-                            "type": "string",
-                            "example": "COACH_EC"
-                          }
-                        }
-                      }
-                    }
-                  }
+              "$ref": "./additionalInfo.schema.json"
             }
           }
         },
