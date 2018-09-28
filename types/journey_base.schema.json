@@ -24,14 +24,9 @@
       },
       "outboundFlight": {
           "$ref": "./flight_base.schema.json"
-        }
       },
       "inboundFlight": {
-        "description": "Inbound journey details",
-        "type": "object",
-        "properties": {
           "$ref": "./flight_base.schema.json"
-        }
       },
       "departureDate": {
         "description": "Expected departure date for the journey",
@@ -64,19 +59,12 @@
         "example": 3
       },
       "discount": {
-        "description": "discount",
-        "type": "object",
-        "properties": {
           "$ref": "./discount.schema.json"
-        }
       },
       "airline": {
-        "description": "airline",
-        "type": "object",
-        "properties": {
-          "$ref": "./airline.schema.json"
-          }
-      },
+          "$ref": "./airline_base.schema.json"
+      }
+     },
     "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "flightType", "segmentCount", "flightCount", "discount", "airline"],
     "links": [
       {
