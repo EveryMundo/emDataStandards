@@ -14,36 +14,7 @@
       "example": "EM110"
     },
     "departureAirport": {
-      "description": "departureAirport",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "San Francisco Airport"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string",
-          "example": "SFO"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number",
-              "example": 23.12
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number",
-              "example": -168.32
-            }
-          }
-        }
-      }
+      "$ref": "./airport.schema.json"
     },
     "departureGate": {
       "description": "departureGate",
@@ -66,36 +37,7 @@
       "example": "UTC"
     },
     "arrivalAirport": {
-      "description": "arrivalAirport",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "Miami International Airport"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string",
-          "example": "MIA"
-        },
-        "geo": {
-          "description": "geo",
-          "type": "object",
-          "properties": {
-            "latitude": {
-              "description": "latitude",
-              "type": "number",
-              "example": 37.42
-            },
-            "longitude": {
-              "description": "longitude",
-              "type": "number",
-              "example": -108.32
-            }
-          }
-        }
-      }
+      "$ref": "./airport.schema.json"
     },
     "arrivalGate": {
       "description": "arrivalGate",
