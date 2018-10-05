@@ -1,0 +1,32 @@
+{
+  "id": "/airport_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Airport",
+  "description": "Airport",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the airport",
+      "type": "string",
+      "example": "Miami International Airport"
+    },
+    "iataCode": {
+      "description": "IATA identifier for the airport",
+      "type": "string",
+      "example": "MIA"
+    }
+  },
+  "required": ["name", "iataCode"],
+  "links": [
+    {
+      "title": "Airport",
+      "description": "Airport",
+      "rel": "self",
+      "href": "/airport_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
