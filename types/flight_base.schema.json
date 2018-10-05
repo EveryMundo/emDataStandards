@@ -42,7 +42,7 @@
         "example": "Economy Basic"
       },
       "fareClass": {
-        "description": "fareClass",
+        "description": "fareClass mapped to either 'ECONOMY', 'BUSINESS' or 'FIRST' class",
         "type": "string",
         "example": "ECONOMY"
       },
