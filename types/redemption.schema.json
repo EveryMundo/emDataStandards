@@ -21,17 +21,20 @@
       "properties": {
         "amount": {
           "description": "amount",
-          "type": "number"
+          "type": "number",
+          "example": 1500
         },
         "ratio": {
           "description": "ratio",
-          "type": "number"
+          "type": "number",
+          "example": 0.5
         }
-      },
-      "example": {
-        "amount": 1500,
-        "ratio": 0.5
       }
+    },
+    "category": {
+      "description": "xxx",
+      "type": "string",
+      "example": ""
     }
   },
   "required": ["unit", "amount"],
