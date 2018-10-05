@@ -4,17 +4,10 @@
   "title": "Country",
   "description": "Country",
   "type": "object",
+  "allOf": [
+    {"$ref": "./country_base.schema.json"},
+  {
   "properties": {
-    "name": {
-      "description": "The name of the country",
-      "type": "string",
-      "example": "United States"
-    },
-    "isoCode": {
-      "description": "The country code (in 2 letter codes from ISO 3166-1)",
-      "type": "string",
-      "example": "US"
-    },
     "geo": {
       "description": "geo",
       "type": "object",
@@ -42,7 +35,7 @@
         "unitedstates.com/image2.jpg"
       ]
     }
-  },
+  }}],
   "required": ["name", "isoCode"],
   "links": [
     {
