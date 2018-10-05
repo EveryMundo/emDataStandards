@@ -14,11 +14,11 @@
       "type": "object",
       "properties": {
         "latitude": {
-          "description": "The latitude of the  airport",
+          "description": "The latitude of the  address",
           "type": "number"
         },
         "longitude": {
-          "description": "The longitude of the airport",
+          "description": "The longitude of the address",
           "type": "number"
         }
       }
