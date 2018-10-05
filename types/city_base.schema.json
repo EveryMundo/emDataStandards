@@ -1,0 +1,32 @@
+{
+  "id": "/city_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "City",
+  "description": "City",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the city",
+      "type": "string",
+      "example": "Miami"
+    },
+    "cityCode": {
+      "description": "ISO code for the city",
+      "type": "string",
+      "example": "MIA"
+    }
+  },
+  "required": ["name", "cityCode"],
+  "links": [
+    {
+      "title": "City",
+      "description": "City",
+      "rel": "self",
+      "href": "/city_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
