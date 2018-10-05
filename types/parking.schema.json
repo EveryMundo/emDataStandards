@@ -11,7 +11,7 @@
       "example": "P1"
     },
     "airport": {
-      "$ref": "./airport.schema.json"
+      "$ref": "./airport_base.schema.json"
     },
     "priceSpecification": {
       "$ref": "./priceSpecification_base.schema.json"

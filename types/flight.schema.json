@@ -14,7 +14,7 @@
       "example": "EM110"
     },
     "departureAirport": {
-      "$ref": "./airport.schema.json"
+      "$ref": "./airport_base.schema.json"
     },
     "departureGate": {
       "description": "departureGate",
@@ -37,7 +37,7 @@
       "example": "UTC"
     },
     "arrivalAirport": {
-      "$ref": "./airport.schema.json"
+      "$ref": "./airport_base.schema.json"
     },
     "arrivalGate": {
       "description": "arrivalGate",
