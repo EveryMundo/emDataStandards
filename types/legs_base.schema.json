@@ -22,20 +22,7 @@
               "example": "SFO>MIA"
             },
             "departureAirport": {
-              "description": "departureAirport",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "San Francisco Airport"
-                },
-                "iataCode": {
-                  "description": "iataCode",
-                  "type": "string",
-                  "example": "SFO"
-                }
-              }
+              "$ref": "./airport_base.schema.json"
             },
             "departureTime": {
               "description": "departureTime",
@@ -43,20 +30,7 @@
               "example": "2027-03-04T06:35:00-08:00"
             },
             "arrivalAirport": {
-              "description": "arrivalAirport",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "Miami International Airport"
-                },
-                "iataCode": {
-                  "description": "iataCode",
-                  "type": "string",
-                  "example": "MIA"
-                }
-              }
+              "$ref": "./airport_base.schema.json"
             },
             "arrivalTime": {
               "description": "arrivalTime",
