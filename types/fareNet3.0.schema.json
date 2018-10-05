@@ -169,68 +169,16 @@
               }
             },
             "departureCity": {
-              "description": "departureCity",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "San Francisco"
-                },
-                "cityCode": {
-                  "description": "cityCode",
-                  "type": "string",
-                  "example": "SFO"
-                }
-              }
+              "$ref": "./city_base.schema.json"
             },
             "departureCountry": {
-              "description": "departureCountry",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "United States"
-                },
-                "isoCode": {
-                  "description": "isoCode",
-                  "type": "string",
-                  "example": "US"
-                }
-              }
+              "$ref": "./country_base.schema.json"
             },
             "arrivalCity": {
-              "description": "arrivalCity",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "New York"
-                },
-                "cityCode": {
-                  "description": "cityCode",
-                  "type": "string",
-                  "example": "NYC"
-                }
-              }
+              "$ref": "./city_base.schema.json"
             },
             "arrivalCountry": {
-              "description": "arrivalCountry",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "United States"
-                },
-                "isoCode": {
-                  "description": "isoCode",
-                  "type": "string",
-                  "example": "US"
-                }
-              }
+              "$ref": "./country_base.schema.json"
             },
             "flightType": {
               "description": "flightType",
@@ -327,68 +275,16 @@
               }
             },
             "departureCity": {
-              "description": "departureCity",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "New York"
-                },
-                "cityCode": {
-                  "description": "cityCode",
-                  "type": "string",
-                  "example": "NYC"
-                }
-              }
+              "$ref": "./city_base.schema.json"
             },
             "departureCountry": {
-              "description": "departureCountry",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "United States"
-                },
-                "isoCode": {
-                  "description": "isoCode",
-                  "type": "string",
-                  "example": "US"
-                }
-              }
+              "$ref": "./country_base.schema.json"
             },
             "arrivalCity": {
-              "description": "arrivalCity",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "San Francisco"
-                },
-                "cityCode": {
-                  "description": "cityCode",
-                  "type": "string",
-                  "example": "SFO"
-                }
-              }
+              "$ref": "./city_base.schema.json"
             },
             "arrivalCountry": {
-              "description": "arrivalCountry",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "United States"
-                },
-                "isoCode": {
-                  "description": "isoCode",
-                  "type": "string",
-                  "example": "US"
-                }
-              }
+              "$ref": "./country_base.schema.json"
             },
             "flightType": {
               "description": "flightType",
