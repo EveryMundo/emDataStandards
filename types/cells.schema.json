@@ -6,6 +6,9 @@
   "items":{
     "title": "Cell",
     "type": "object",
+    "allOf": [
+      {"$ref": "./redemption_base.schema.json"}, 
+    {
     "properties": {
         "price": {
           "description": "Price for the reservation or ticket",
@@ -22,11 +25,6 @@
           "type": "boolean",
           "example": false
         },
-        "redemptionAmount": {
-          "description": "Amount of reedemed miles",
-          "type": "number",
-          "example": 9999
-        },
         "outboundDate": {
           "description": "Outbound date",
           "type": "string",
@@ -37,7 +35,7 @@
           "type": "string",
           "example": null
         }
-      }
+      }}]
   },
   "required": ["price", "boundType", "isSoldOut"],
   "links": [
