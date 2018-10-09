@@ -6,14 +6,14 @@
   "items":{
     "title": "Cell",
     "type": "object",
-    "allOf": [
-      {"$ref": "./redemption_base.schema.json"}, 
-    {
     "properties": {
         "price": {
           "description": "Price for the reservation or ticket",
           "type": "number",
           "example": 345.21
+        },
+        "redemption": {
+          "$ref": "./redemption_base.schema.json"
         },
         "boundType": {
           "description": "OUTBOUND, INBOUND, MATRIX",
@@ -35,7 +35,7 @@
           "type": "string",
           "example": null
         }
-      }}]
+      }
   },
   "required": ["price", "boundType", "isSoldOut"],
   "links": [
