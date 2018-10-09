@@ -57,20 +57,7 @@
               "example": "USD-US"
             },
             "redemption": {
-              "description": "redemption",
-              "type": "object",
-              "properties": {
-                "unit": {
-                  "description": "unit",
-                  "type": "string",
-                  "example": "MILES"
-                },
-                "amount": {
-                  "description": "amount",
-                  "type": "number",
-                  "example": 1500
-                }
-              }
+              "$ref": "./redemption_base.schema.json"
             }
           }
         },
@@ -126,6 +113,9 @@
                   "description": "taxPrice",
                   "type": "number",
                   "example": 75.39
+                },
+                "redemption": {
+                  "$ref": "./redemption_base.schema.json"
                 }
               }
             },
@@ -229,6 +219,9 @@
                   "description": "taxPrice",
                   "type": "number",
                   "example": 75.39
+                },
+                "redemption": {
+                  "$ref": "./redemption_base.schema.json"
                 }
               }
             },
