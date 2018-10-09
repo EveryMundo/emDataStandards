@@ -8,7 +8,7 @@
     "unit": {
       "description": "MILES, BITCOIN, POINTS, OTHER",
       "type": "string",
-      "example": "miles"
+      "example": "MILES"
     },
     "amount": {
       "description": "Amount of redemption units",
