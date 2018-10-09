@@ -68,18 +68,7 @@
           "$ref": "./passenger.schema.json"
         },
         "fareTensor": {
-          "description": "fareTensor",
-          "type": "object",
-          "properties": {
-            "journeyType": {
-              "description": "journeyType",
-              "type": "string",
-              "example": "ROUND_TRIP"
-            },
-            "cells": {
-              "$ref": "./cells.schema.json"
-              }
-            }
+          "$ref": "./fareTensor.schema.json"
         },
         "outboundFlight": {
           "description": "outboundFlight",
