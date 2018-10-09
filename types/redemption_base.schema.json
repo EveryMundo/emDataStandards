@@ -1,0 +1,47 @@
+{
+  "id": "/redemption_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Redemption",
+  "description": "Redemption",
+  "type": "object",
+  "properties": {
+    "unit": {
+      "description": "MILES, BITCOIN, POINTS, OTHER",
+      "type": "string",
+      "example": "miles"
+    },
+    "amount": {
+      "description": "Amount of redemption units",
+      "type": "number",
+      "example": 1500
+    },
+    "taxAmount": {
+      "description": "The amount paid in taxes",
+      "type": "number",
+      "example": 16.39
+    },
+    "taxCurrencyCode": {
+      "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+      "type": "string",
+      "example": "USD"
+    },
+    "category": {
+      "description": "Miles Category Name",
+      "type": "string",
+      "example": "Economy MileSAAver"
+    }
+  },
+  "required": ["unit", "amount"],
+  "links": [
+    {
+      "title": "Redemption",
+      "description": "Redemption",
+      "rel": "self",
+      "href": "/redemption_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
