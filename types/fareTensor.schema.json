@@ -1,5 +1,5 @@
 {
-  "id": "/flightTensor",
+  "id": "/fareTensor",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlightTensor",
   "description": "FlightTensor",
@@ -20,7 +20,7 @@
       "title": "FlightTensor",
       "description": "FlightTensor",
       "rel": "self",
-      "href": "/flightTensor",
+      "href": "/fareTensor",
       "method": "GET",
       "targetSchema": {
         "rel": "self"
