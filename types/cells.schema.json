@@ -7,14 +7,20 @@
     "title": "Cell",
     "type": "object",
     "properties": {
-        "price": {
-          "description": "Price for the reservation or ticket",
-          "type": "number",
-          "example": 345.21
-        },
-        "redemption": {
-          "$ref": "./redemption_base.schema.json"
-        },
+      "priceSpecification": {
+        "description": "priceSpecification",
+        "type": "object",
+        "properties": {
+          "totalPrice": {
+            "description": "totalPrice",
+            "type": "number",
+            "example": 825.51
+          },
+          "redemption": {
+            "$ref": "./redemption_base.schema.json"
+          }
+        }
+      },
         "boundType": {
           "description": "OUTBOUND, INBOUND, MATRIX",
           "type": "string",
