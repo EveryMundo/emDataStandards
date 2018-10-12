@@ -27,6 +27,9 @@ The NDC Standard enhances the capability of communications between airlines and 
 
 ## How to get started
 
+### Complete the emDataStandards course
+It takes max. 1h to complete the course and teaches the basics of the data standards, which are also described below.
+
 ### Documentation 
 https://everymundo.github.io/emDataStandards/documentation/build/
 
