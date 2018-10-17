@@ -22,7 +22,7 @@
           "type": "object",
           "properties": {
             "priceBeforeTaxesAndFees": {
-              "description": "price",
+              "description": "priceBeforeTaxesAndFees",
               "type": "number",
               "example": 234.21
             },
@@ -32,12 +32,12 @@
               "example": 250.6
             },
             "taxAmount": {
-              "description": "taxPrice",
+              "description": "taxAmount",
               "type": "number",
               "example": 16.39
             },
             "additionalFeesAmount": {
-              "description": "additionalFeesPrice",
+              "description": "additionalFeesAmount",
               "type": "number",
               "example": 12
             },
@@ -89,7 +89,7 @@
               "type": "object",
               "properties": {
                 "priceBeforeTaxesAndFees": {
-                  "description": "price",
+                  "description": "priceBeforeTaxesAndFees",
                   "type": "number",
                   "example": 750.12
                 },
@@ -99,7 +99,7 @@
                   "example": 825.51
                 },
                 "taxAmount": {
-                  "description": "taxPrice",
+                  "description": "taxAmount",
                   "type": "number",
                   "example": 75.39
                 },
@@ -195,7 +195,7 @@
               "type": "object",
               "properties": {
                 "priceBeforeTaxesAndFees": {
-                  "description": "price",
+                  "description": "priceBeforeTaxesAndFees",
                   "type": "number",
                   "example": 750.12
                 },
@@ -205,7 +205,7 @@
                   "example": 825.51
                 },
                 "taxAmount": {
-                  "description": "taxPrice",
+                  "description": "taxAmount",
                   "type": "number",
                   "example": 75.39
                 },
