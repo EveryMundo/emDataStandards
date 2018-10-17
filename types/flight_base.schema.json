@@ -20,7 +20,7 @@
         "type": "object",
         "properties": {
           "priceBeforeTaxesAndFees": {
-            "description": "price",
+            "description": "priceBeforeTaxesAndFees",
             "type": "number",
             "example": 750.12
           },
@@ -30,7 +30,7 @@
             "example": 825.51
           },
           "taxAmount": {
-            "description": "taxPrice",
+            "description": "taxAmount",
             "type": "number",
             "example": 75.39
           }
