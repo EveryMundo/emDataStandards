@@ -1,14 +1,14 @@
 {
     "journey": {        
-        "currency": "USD",
+        "currencyCode": "USD",
         "currencySymbol": "$",        
         "passengerDetails": [
             {
-                "category": "adult",               
+                "category": "Adult",               
                 "count": 1
             },
             {
-                "category": "child0to17",               
+                "category": "Child0to17",               
                 "count": 1
             }
         ],
@@ -16,13 +16,12 @@
             {
                 "boundType": "OUTBOUND",               
                 "priceSpecification": {
-                    "price": 106.19,
+                    "priceBeforeTaxesAndFees": 106.19,
                     "totalPrice": 106.19,
-                    "taxPrice": null,
-                    "fuelPrice": null,
-                    "additionalFeesPrice": null
+                    "taxAmount": null,
+                    "additionalFeesAmount": null
                 },
-                "fareClassInput": "STANDARD",
+                "fareClassInput": "Standard",
                 "fareClass": "ECONOMY",
                 "departureAirportIataCode": "FLL",
                 "arrivalAirportIataCode": "LGA",
@@ -68,11 +67,10 @@
             {
                 "boundType": "INBOUND",                
                 "priceSpecification": {
-                    "price": 121.18,
+                    "priceBeforeTaxesAndFees": 121.18,
                     "totalPrice": 121.18,
-                    "taxPrice": null,
-                    "fuelPrice": null,
-                    "additionalFeesPrice": null
+                    "taxAmount": null,
+                    "additionalFeesAmount": null
                 },
                 "fareClassInput": "STANDARD",
                 "fareClass": "ECONOMY",
@@ -122,7 +120,9 @@
             "journeyType": "ROUND_TRIP",
             "cells": [
                 {
-                    "price": 106.19,
+                    "priceSpecification": {
+                        "totalPrice": 106.19
+                    },
                     "boundType": "OUTBOUND",
                     "isSoldOut": false,
                     "redemptionAmount": null,
@@ -130,7 +130,9 @@
                     "inboundDate": null
                 },
                 {
-                    "price": 81.19,
+                    "priceSpecification": {
+                        "totalPrice": 81.19
+                    },
                     "boundType": "INBOUND",
                     "isSoldOut": false,
                     "redemptionAmount": null,
@@ -138,7 +140,9 @@
                     "inboundDate": "2018-07-28"
                 },
                 {
-                    "price": 187.38,
+                    "priceSpecification": {
+                        "totalPrice": 187.38
+                    },
                     "boundType": "MATRIX",
                     "isSoldOut": false,
                     "redemptionAmount": null,
