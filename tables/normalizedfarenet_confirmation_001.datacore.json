@@ -10,6 +10,8 @@
   "exchangeRate": 1,
   "redemptionUnit": "MILES",
   "redemptionAmount": 1500,
+  "redemptionTaxAmount": 16.39,
+  "redemptionCategory": "Economy MileSAAver",
   "passengerCount": 3,
   "adultCount": 3,
   "outboundDepartureAirportIataCode": "SFO",
