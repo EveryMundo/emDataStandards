@@ -25,7 +25,7 @@
         "countryIsoCode": "US",
         "siteEdition": "en-US",
         "webDesign": "RESPONSIVE",
-        "dateCreated": "2017-01-12",
+        "dateCreated": "YYYY-MM-DD",
         "accessibility": true
     },
     "originCity": {
@@ -42,8 +42,8 @@
 
     },
     "destinationCountry": {
-        "name": "United States",
-        "isoCode": "US"
+        "name": "Germany",
+        "isoCode": "DE"
     },
     "originAirport": {
         "iataCode": "MIA"
@@ -54,9 +54,7 @@
     },
     "device": {
         "category": "DESKTOP",
-        "viewportSize": "SMALL",
-        "appVersion": ""
-
+        "viewportSize": "SMALL"
     },
     "extraInfo": {
         "timestamp": "2027-03-04T06:35:00-08:00",
