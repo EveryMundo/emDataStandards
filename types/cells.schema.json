@@ -43,7 +43,7 @@
         }
       }
   },
-  "required": ["price", "boundType", "isSoldOut"],
+  "required": ["totalPrice", "boundType", "isSoldOut"],
   "links": [
     {
       "title": "Cells",
