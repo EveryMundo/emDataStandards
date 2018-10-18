@@ -50,7 +50,7 @@
       "example": "C"
     },
     "arrivalTime": {
-      "description": "arrivalTime",
+      "description": "Time of Arrival",
       "type": "string",
       "example": "2027-03-05T13:30:00-05:00"
     },

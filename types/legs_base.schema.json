@@ -12,12 +12,12 @@
           "type": "object",
           "properties": {
             "flightNumber": {
-              "description": "flightNumber",
+              "description": "Flight Number",
               "type": "string",
               "example": "EM110"
             },
             "route": {
-              "description": "route",
+              "description": "Origin City and Destination City",
               "type": "string",
               "example": "SFO>MIA"
             },
@@ -33,7 +33,7 @@
               "$ref": "./airport_base.schema.json"
             },
             "arrivalTime": {
-              "description": "arrivalTime",
+              "description": "Time of Arrival",
               "type": "string",
               "example": "2027-03-04T13:35:00-08:00"
             },

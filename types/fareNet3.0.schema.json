@@ -134,7 +134,7 @@
               "example": "2017-12-07"
             },
             "estimatedDuration": {
-              "description": "estimatedDuration",
+              "description": "Estimated Duration of the flight",
               "type": "string",
               "example": "PT9H45M"
             },
@@ -297,7 +297,7 @@
           "example": "2017-12-10"
         },
         "journeyType": {
-          "description": "journeyType",
+          "description": "ROUND_TRIP, ONE_WAY, or MULTI_CITY",
           "type": "string",
           "example": "ROUND_TRIP"
         },
@@ -307,7 +307,7 @@
           "example": true
         },
         "flightType": {
-          "description": "flightType",
+          "description": "DOMESTIC, INTERNATIONAL",
           "type": "string",
           "example": "DOMESTIC"
         },

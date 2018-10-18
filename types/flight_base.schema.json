@@ -62,12 +62,12 @@
         "example": "2017-12-07"
       },
       "estimatedDuration": {
-        "description": "estimatedDuration",
+        "description": "Estimated Duration of the flight",
         "type": "string",
         "example": "PT9H45M"
       },
       "availableSeatsCount": {
-        "description": "availableSeatsCount",
+        "description": "Number of available Seats",
         "type": "string",
         "example": "9+"
       },
@@ -144,7 +144,7 @@
         "example": "DOMESTIC"
       },
       "routeType": {
-        "description": "routeType",
+        "description": "DIRECT or CONNECTING depending on the number of stops",
         "type": "string",
         "example": "CONNECTING"
       },
