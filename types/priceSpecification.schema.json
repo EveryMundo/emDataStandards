@@ -8,6 +8,16 @@
     {"$ref": "./priceSpecification_base.schema.json"},
     { 
   "properties": {
+    "currencyCode": {
+      "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+      "type": "string",
+      "example": "USD"
+    },
+    "currencySymbol": {
+      "description": "Currency symbol",
+      "type": "string",
+      "example": "$"
+    },
     "priceOffers": {
       "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare: 'HOTEL', 'JOURNEY', 'CAR'",
       "type": "array",
