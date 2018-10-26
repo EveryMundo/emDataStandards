@@ -21,7 +21,7 @@
       "example": 1
     },
     "priceSpecification": {
-      "$ref": "./priceSpecification.schema.json"
+      "$ref": "./priceSpecification_base.schema.json"
     },
     "prepaidInd": {
       "description": "When true, indicates the baggage is prepaid",
