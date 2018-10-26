@@ -31,17 +31,14 @@
       "properties": {
         "AED": {
           "description": "AED",
-          "type": "number"
+          "type": "number",
+          "example": 3.67
         },
         "AFN": {
           "description": "AFN",
-          "type": "number"
+          "type": "number",
+          "example": 68.35
         }
-      },
-      "example": {
-        "@type": "Rate",
-        "AED": 3.67,
-        "AFN": 68.35
       }
     },
     "localAmount": {
