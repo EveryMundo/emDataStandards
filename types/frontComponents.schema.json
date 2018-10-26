@@ -36,10 +36,7 @@
       "example": "Loading"
     },
     "priceSpecification": {
-      "description": "Details on fares",
-      "type": "array",
-      "items": {
-        "type": "object"
+      "$ref": "./priceSpecification.schema.json"
       }
     },
     "showSorting": {
@@ -115,33 +112,38 @@
     "responsiveDetails": {
       "description": "Array of responsive details",
       "type": "array",
-      "items": {
-        "type": "object"
-      },
-      "example": [
-        {
-          "breakpoint": 1200,
-          "settings": {
-            "slidesToShow": 3,
-            "slidesToScroll": 3
-          }
-        },
-        {
-          "breakpoint": 850,
-          "settings": {
-            "slidesToShow": 2,
-            "slidesToScroll": 2
-          }
-        },
-        {
-          "breakpoint": 600,
-          "settings": {
-            "slidesToShow": 1,
-            "slidesToScroll": 1
+      "properties": {
+        "fields": {
+          "description": "fields",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "breakpoint": {
+                "description": "Breakpoint",
+                "type": "number",
+                "example": 1200
+              },
+              "settings": {
+                "description": "Settings",
+                "type": "object",
+                "properties": {
+                  "slidesToShow": {
+                    "description": "Slides to Show",
+                    "type": "number",
+                    "example": 3
+                  },
+                  "slidesToScroll": {
+                    "description": "Slides to Scroll",
+                    "type": "number",
+                    "example": 3
+                  }
+                } 
+              }
+            }
           }
         }
-      ]
-    },
+    }},
     "initialSlide": {
       "description": "Initial slide to display when querying. Defaults to 0",
       "type": "number",
