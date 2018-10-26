@@ -10,15 +10,21 @@
       "type": "string",
       "example": "123456789Kat"
     },
-    "currencyCode": {
-      "description": "The currency (in 3-letter ISO 4217 format) of the price.",
-      "type": "string",
-      "example": "USD"
-    },
-    "currencySymbol": {
-      "description": "Currency symbol",
-      "type": "string",
-      "example": "$"
+    "priceSpecification": {
+      "description": "Price Specification",
+      "type": "object",
+      "properties": {
+        "currencyCode": {
+          "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+          "type": "string",
+          "example": "USD"
+        },
+        "currencySymbol": {
+          "description": "Currency symbol",
+          "type": "string",
+          "example": "$"
+        }
+      }
     },
     "journey": {
       "allOf": [
