@@ -38,7 +38,7 @@
       "type": "number",
       "example": 12
     },
-    "priceAdvertised": {
+    "advertisedPrice": {
       "description": "Price advertised",
       "type": "number",
       "example": 250.6  
