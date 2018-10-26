@@ -103,6 +103,7 @@
           "example": [
             "usa.com/image.jpg"
           ]
+        }
       }
     },
     "arrivalCountry": {
@@ -120,6 +121,7 @@
           "example": [
             "usa.com/image2.jpg"
           ]
+        }
       }
     },
     "departureRegion": {
@@ -137,6 +139,7 @@
           "example": [
             "northamerica.com/image.jpg"
           ]
+        }
       }
     },
     "arrivalRegion": {
@@ -155,7 +158,7 @@
           "example": [
             "northamerica.com/image.jpg"
           ]
-      }
+        }
       }
     },
     "currencyCode": {
