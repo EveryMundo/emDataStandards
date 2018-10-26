@@ -21,17 +21,14 @@
       "properties": {
         "latitude": {
           "description": "The latitude of the region",
-          "type": "number"
+          "type": "number",
+          "example": 37.42
         },
         "longitude": {
           "description": "The longitude of the region",
-          "type": "number"
+          "type": "number",
+          "example": -108.32
         }
-      },
-      "example": {
-        "@type": "Geocoordinates",
-        "latitude": 37.42,
-        "longitude": -108.32
       }
     },
     "images": {
