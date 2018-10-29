@@ -2,11 +2,8 @@
     "user": {
         "id": "123456789"
     },
-    "campaign": {
+    "product": {
         "name": "airTRFX"
-    },
-    "priceSpecification": {
-        "currencyCode": "USD"
     },
     "page": {
         "author": "EveryMundo",
@@ -26,7 +23,8 @@
         "siteEdition": "en-US",
         "webDesign": "RESPONSIVE",
         "dateCreated": "YYYY-MM-DD",
-        "accessibility": true
+        "accessibility": true,
+        "countryCurrencyCode": "USD"
     },
     "originCity": {
         "name": "Miami",
