@@ -44,6 +44,7 @@ export default fromJS([
   require('../types/passenger.schema.json'),
   require('../types/payment.schema.json'),
   require('../types/priceSpecification.schema.json'),
+  require('../types/product.schema.json'),
   require('../types/provider.schema.json'),
   require('../types/redemption.schema.json'),
   require('../types/region.schema.json'),
