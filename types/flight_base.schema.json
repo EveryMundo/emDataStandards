@@ -144,7 +144,7 @@
         "example": "DOMESTIC"
       },
       "routeType": {
-        "description": "DIRECT or CONNECTING depending on the number of stops",
+        "description": "NONSTOP, DIRECT (plane may stop but people do not get off) or CONNECTING depending on the number of stops",
         "type": "string",
         "example": "CONNECTING"
       },
