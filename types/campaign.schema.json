@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "Campaign Name (e.g. 'airTRFX' for airTRFX dataLayer or 'GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]' for SEM",
+      "description": "SEM campaign name",
       "type": "string",
       "example": "GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]"
     },
