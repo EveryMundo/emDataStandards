@@ -72,6 +72,8 @@
         "example": "9+"
       },
       "legs": {
+        "description": "Legs",
+        "type": "array",
         "$ref": "./legs_base.schema.json"
       },
       "departureCity": {
