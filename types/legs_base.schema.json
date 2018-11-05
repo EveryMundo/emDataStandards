@@ -5,9 +5,6 @@
     "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
     "type": "array",
     "properties": {
-      "fields": {
-        "description": "fields",
-        "type": "array",
         "items": {
           "type": "object",
           "properties": {
@@ -134,7 +131,6 @@
             }
           }
         }
-      }
     },
     "required": ["flightNumber", "route", "departureAirport", "departureTime", "arrivalAirport", "arrivalTime", "estimatedDuration", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "operatingAirline", "aircraft"],
     "links": [
