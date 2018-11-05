@@ -34,7 +34,9 @@
       "properties": {}
     },
     "inboundFlight": {
-      
+      "description": "Inbound flight information",
+      "type": "object",
+      "properties": {} 
     },
     "departureDate": {
       "description": "Expected departure date for the journey",
