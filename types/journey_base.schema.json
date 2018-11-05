@@ -1,8 +1,8 @@
 {
-    "id": "/journey",
+    "id": "/journey_base",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Journey",
-    "description": "Journey",
+    "title": "Journey Base",
+    "description": "Journey Base",
     "type": "object",
     "properties": {
       "fullRoute": {
@@ -68,10 +68,10 @@
     "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "flightType", "segmentCount", "flightCount", "discount", "airline"],
     "links": [
       {
-        "title": "Journey",
-        "description": "Journey",
+        "title": "Journey Base",
+        "description": "Journey Base",
         "rel": "self",
-        "href": "/journey",
+        "href": "/journey_base",
         "method": "GET",
         "targetSchema": {
           "rel": "self"
