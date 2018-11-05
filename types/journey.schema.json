@@ -34,11 +34,7 @@
       "properties": {}
     },
     "inboundFlight": {
-      "description": "Inbound journey details",
-      "type": "object",
-      "properties": {
         "$ref": "./flight.schema.json"
-      }
     },
     "departureDate": {
       "description": "Expected departure date for the journey",
