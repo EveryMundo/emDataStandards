@@ -5,132 +5,127 @@
     "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
     "type": "array",
     "properties": {
-        "items": {
-          "type": "object",
-          "properties": {
-            "flightNumber": {
-              "description": "Flight Number",
-              "type": "string",
-              "example": "EM110"
-            },
-            "route": {
-              "description": "Origin City and Destination City",
-              "type": "string",
-              "example": "SFO>MIA"
-            },
-            "departureAirport": {
-              "$ref": "./airport_base.schema.json"
-            },
-            "departureTime": {
-              "description": "departureTime",
-              "type": "string",
-              "example": "2027-03-04T06:35:00-08:00"
-            },
-            "arrivalAirport": {
-              "$ref": "./airport_base.schema.json"
-            },
-            "arrivalTime": {
-              "description": "Time of Arrival",
-              "type": "string",
-              "example": "2027-03-04T13:35:00-08:00"
-            },
-            "estimatedDuration": {
-              "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
-              "type": "string",
-              "example": "PT6H30M"
-            },
-            "departureCity": {
-              "description": "departureCity",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "San Francisco"
-                },
-                "cityCode": {
-                  "description": "cityCode",
-                  "type": "string",
-                  "example": "SFO"
-                }
-              }
-            },
-            "departureCountry": {
-              "description": "departureCountry",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "United States"
-                },
-                "isoCode": {
-                  "description": "isoCode",
-                  "type": "string",
-                  "example": "US"
-                }
-              }
-            },
-            "arrivalCity": {
-              "description": "arrivalCity",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "Miami"
-                },
-                "cityCode": {
-                  "description": "cityCode",
-                  "type": "string",
-                  "example": "MIA"
-                }
-              }
-            },
-            "arrivalCountry": {
-              "description": "arrivalCountry",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "United States"
-                },
-                "isoCode": {
-                  "description": "isoCode",
-                  "type": "string",
-                  "example": "US"
-                }
-              }
-            },
-            "flightType": {
-              "description": "DOMESTIC, INTERNATIONAL",
-              "type": "string",
-              "example": "DOMESTIC"
-            },
-            "operatingAirline": {
-              "description": "operatingAirline",
-              "type": "object",
-              "properties": {
-                "name": {
-                  "description": "name",
-                  "type": "string",
-                  "example": "EveryMundo"
-                },
-                "iataCode": {
-                  "description": "iataCode",
-                  "type": "string",
-                  "example": "EM"
-                }
-              }
-            },
-            "aircraft": {
-              "description": "Aircraft brand",
-              "type": "string",
-              "example": "Boeing 747"
-            }
+      "flightNumber": {
+        "description": "Flight Number",
+        "type": "string",
+        "example": "EM110"
+      },
+      "route": {
+        "description": "Origin City and Destination City",
+        "type": "string",
+        "example": "SFO>MIA"
+      },
+      "departureAirport": {
+        "$ref": "./airport_base.schema.json"
+      },
+      "departureTime": {
+        "description": "departureTime",
+        "type": "string",
+        "example": "2027-03-04T06:35:00-08:00"
+      },
+      "arrivalAirport": {
+        "$ref": "./airport_base.schema.json"
+      },
+      "arrivalTime": {
+        "description": "Time of Arrival",
+        "type": "string",
+        "example": "2027-03-04T13:35:00-08:00"
+      },
+      "estimatedDuration": {
+        "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+        "type": "string",
+        "example": "PT6H30M"
+      },
+      "departureCity": {
+        "description": "departureCity",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string",
+            "example": "San Francisco"
+          },
+          "cityCode": {
+            "description": "cityCode",
+            "type": "string",
+            "example": "SFO"
           }
         }
+      },
+      "departureCountry": {
+        "description": "departureCountry",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string",
+            "example": "United States"
+          },
+          "isoCode": {
+            "description": "isoCode",
+            "type": "string",
+            "example": "US"
+          }
+        }
+      },
+      "arrivalCity": {
+        "description": "arrivalCity",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string",
+            "example": "Miami"
+          },
+          "cityCode": {
+            "description": "cityCode",
+            "type": "string",
+            "example": "MIA"
+          }
+        }
+      },
+      "arrivalCountry": {
+        "description": "arrivalCountry",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string",
+            "example": "United States"
+          },
+          "isoCode": {
+            "description": "isoCode",
+            "type": "string",
+            "example": "US"
+          }
+        }
+      },
+      "flightType": {
+        "description": "DOMESTIC, INTERNATIONAL",
+        "type": "string",
+        "example": "DOMESTIC"
+      },
+      "operatingAirline": {
+        "description": "operatingAirline",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name",
+            "type": "string",
+            "example": "EveryMundo"
+          },
+          "iataCode": {
+            "description": "iataCode",
+            "type": "string",
+            "example": "EM"
+          }
+        }
+      },
+      "aircraft": {
+        "description": "Aircraft brand",
+        "type": "string",
+        "example": "Boeing 747"
+      }
     },
     "required": ["flightNumber", "route", "departureAirport", "departureTime", "arrivalAirport", "arrivalTime", "estimatedDuration", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "operatingAirline", "aircraft"],
     "links": [
