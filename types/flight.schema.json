@@ -8,11 +8,6 @@
     {"$ref": "./flight_base.schema.json"},
   {
   "properties": {
-    "flightNumber": {
-      "description": "flightNumber",
-      "type": "string",
-      "example": "EM110"
-    },
     "departureAirport": {
       "$ref": "./airport_base.schema.json"
     },
