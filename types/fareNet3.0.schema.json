@@ -49,7 +49,7 @@
             }
           }
           }
-        ],
+        ]},
         "passengerDetails": {
           "$ref": "./passengerDetails.schema.json"
         },
@@ -313,7 +313,6 @@
         "discount": {
           "$ref": "./discount.schema.json"
         }
-      }
     },
     "page": {
       "description": "WebPage",
