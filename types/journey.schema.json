@@ -4,54 +4,22 @@
   "title": "Journey",
   "description": "Journey",
   "type": "object",
+  "allOf": [
+    {"$ref": "./journey_base.schema.json"},
+  {
   "properties": {
     "flightReservation": {
       "$ref": "./flightReservation.schema.json"
-    },
-    "fullRoute": {
-      "description": "Full itinerary with connections including stop over",
-      "type": "string",
-      "example": "SFO>MIA>JFK|JFK>SFO"
-    },
-    "priceSpecification": {
-      "$ref": "./priceSpecification.schema.json"
-    },
-    "passengerDetails": {
-      "$ref": "./passengerDetails.schema.json"
-    },
-    "passenger": {
-      "$ref": "./passenger.schema.json"
-    },
-    "fareTensor": {
-      "$ref": "./fareTensor.schema.json"
-    },
-    "outboundFlight": {
-        "$ref": "./flight.schema.json"
     },
     "multicityFlight": {
       "description": "Flights between outbound and inbound flights for multi-city flights.",
       "type": "object",
       "properties": {}
     },
-    "inboundFlight": {
-      "description": "Inbound flight information",
-      "type": "object",
-      "properties": {} 
-    },
-    "departureDate": {
-      "description": "Expected departure date for the journey",
-      "type": "string",
-      "example": "2017-12-07"
-    },
     "departureWeekDay": {
       "description": "Day corresponding to departure date for the journey",
       "type": "string",
       "example": "4"
-    },
-    "returnDate": {
-      "description": "Expected return date for the journey",
-      "type": "string",
-      "example": "2017-12-10"
     },
     "returnWeekDay": {
       "description": "Day corresponding to return date for the journey",
@@ -68,38 +36,13 @@
       "type": "number",
       "example": 7
     },
-    "journeyType": {
-      "description": "Type of journey",
-      "type": "string",
-      "example": "ROUND_TRIP"
-    },
     "isCodeShare": {
       "description": "Whether the segment is codeshare",
       "type": "boolean",
       "example": true
-    },
-    "flightType": {
-      "description": "Type of flight",
-      "type": "string",
-      "example": "Domestic"
-    },
-    "segmentCount": {
-      "description": "Amount of segments",
-      "type": "number",
-      "example": 2
-    },
-    "flightCount": {
-      "description": "Amount of flights or legs",
-      "type": "number",
-      "example": 3
-    },
-    "discount": {
-        "$ref": "./discount.schema.json"
-    },
-    "airline": {
-      "$ref": "./airline_base.schema.json"
-      }
-  },
+    }
+    }
+  }],
   "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "isCodeShare", "flightType", "segmentCount", "flightCount", "discount", "airline"],
   "links": [
     {

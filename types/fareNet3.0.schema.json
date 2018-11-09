@@ -20,22 +20,10 @@
         "priceSpecification": {
           "description": "priceSpecification",
           "type": "object",
+          "allOf": [
+            {"$ref": "./priceSpecification_base.schema.json"},
+          {
           "properties": {
-            "priceBeforeTaxesAndFees": {
-              "description": "priceBeforeTaxesAndFees",
-              "type": "number",
-              "example": 234.21
-            },
-            "totalPrice": {
-              "description": "totalPrice",
-              "type": "number",
-              "example": 250.6
-            },
-            "taxAmount": {
-              "description": "taxAmount",
-              "type": "number",
-              "example": 16.39
-            },
             "additionalFeesAmount": {
               "description": "additionalFeesAmount",
               "type": "number",
@@ -60,7 +48,8 @@
               "$ref": "./redemption_base.schema.json"
             }
           }
-        },
+          }
+        ],
         "passengerDetails": {
           "$ref": "./passengerDetails.schema.json"
         },
@@ -148,13 +137,13 @@
               }
             },
             "departureCity": {
-              "$ref": "./city_base.schema.json"
+              "$ref": "./departureCity_base.schema.json"
             },
             "departureCountry": {
               "$ref": "./country_base.schema.json"
             },
             "arrivalCity": {
-              "$ref": "./city_base.schema.json"
+              "$ref": "./arrivalCity_base.schema.json"
             },
             "arrivalCountry": {
               "$ref": "./country_base.schema.json"
@@ -257,13 +246,13 @@
               }
             },
             "departureCity": {
-              "$ref": "./city_base.schema.json"
+              "$ref": "./departureCity_base.schema.json"
             },
             "departureCountry": {
               "$ref": "./country_base.schema.json"
             },
             "arrivalCity": {
-              "$ref": "./city_base.schema.json"
+              "$ref": "./arrivalCity_base.schema.json"
             },
             "arrivalCountry": {
               "$ref": "./country_base.schema.json"
@@ -412,7 +401,7 @@
         }
     }
     }
-  },
+  }},
   "required": ["journey", "page", "device", "metadata"],
   "links": [
     {

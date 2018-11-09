@@ -15,42 +15,10 @@
       "$ref": "./airport.schema.json"
     },
     "departureCity": {
-      "description": "departureCity",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "San Francisco"
-        },
-        "images": {
-          "description": "Array of image URLs for the state",
-          "type": "array",
-          "example": [
-            "sfo.com/image.jpg",
-            "sfo.com/image2.jpg"
-          ]
-        }
-      }
+      "$ref": "./departureCity_base.schema.json"
     },
     "arrivalCity": {
-      "description": "arrivalCity",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string",
-          "example": "Miami"
-        },
-        "images": {
-          "description": "Array of image URLs for the state",
-          "type": "array",
-          "example": [
-            "mia.com/image.jpg",
-            "mia.com/image2.jpg"
-          ]
-        }
-      }
+      "$ref": "./arrivalCity_base.schema.json"
     },
     "departureState": {
       "description": "departureState",

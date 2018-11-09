@@ -37,68 +37,16 @@
         "example": "PT6H30M"
       },
       "departureCity": {
-        "description": "departureCity",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "San Francisco"
-          },
-          "cityCode": {
-            "description": "cityCode",
-            "type": "string",
-            "example": "SFO"
-          }
-        }
+        "$ref": "./departureCity_base.schema.json"
       },
       "departureCountry": {
-        "description": "departureCountry",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "United States"
-          },
-          "isoCode": {
-            "description": "isoCode",
-            "type": "string",
-            "example": "US"
-          }
-        }
+        "$ref": "./country_base.schema.json"
       },
       "arrivalCity": {
-        "description": "arrivalCity",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "Miami"
-          },
-          "cityCode": {
-            "description": "cityCode",
-            "type": "string",
-            "example": "MIA"
-          }
-        }
+        "$ref": "./arrivalCity_base.schema.json"
       },
       "arrivalCountry": {
-        "description": "arrivalCountry",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "United States"
-          },
-          "isoCode": {
-            "description": "isoCode",
-            "type": "string",
-            "example": "US"
-          }
-        }
+        "$ref": "./country_base.schema.json"
       },
       "flightType": {
         "description": "DOMESTIC, INTERNATIONAL",
@@ -106,20 +54,7 @@
         "example": "DOMESTIC"
       },
       "operatingAirline": {
-        "description": "operatingAirline",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "EveryMundo"
-          },
-          "iataCode": {
-            "description": "iataCode",
-            "type": "string",
-            "example": "EM"
-          }
-        }
+        "$ref": "./airline_base.schema.json"
       },
       "aircraft": {
         "description": "Aircraft brand",

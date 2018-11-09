@@ -16,25 +16,7 @@
         "example": "SFO>JFK"
       },
       "priceSpecification": {
-        "description": "priceSpecification",
-        "type": "object",
-        "properties": {
-          "priceBeforeTaxesAndFees": {
-            "description": "priceBeforeTaxesAndFees",
-            "type": "number",
-            "example": 750.12
-          },
-          "totalPrice": {
-            "description": "totalPrice",
-            "type": "number",
-            "example": 825.51
-          },
-          "taxAmount": {
-            "description": "taxAmount",
-            "type": "number",
-            "example": 75.39
-          }
-        }
+        "$ref": "./priceSpecification_base.schema.json"
       },
       "fareClassInput": {
         "description": "Name of the fare class given by airline in sentence case, e.g. Economy Basic",
@@ -72,73 +54,19 @@
         "example": "9+"
       },
       "legs": {
-        "description": "Legs",
-        "type": "array",
         "$ref": "./legs_base.schema.json"
       },
       "departureCity": {
-        "description": "departureCity",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "San Francisco"
-          },
-          "cityCode": {
-            "description": "cityCode",
-            "type": "string",
-            "example": "SFO"
-          }
-        }
+        "$ref": "./departureCity_base.schema.json"
       },
       "departureCountry": {
-        "description": "departureCountry",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "United States"
-          },
-          "isoCode": {
-            "description": "isoCode",
-            "type": "string",
-            "example": "US"
-          }
-        }
+        "$ref": "./country_base.schema.json"
       },
       "arrivalCity": {
-        "description": "arrivalCity",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "New York"
-          },
-          "cityCode": {
-            "description": "cityCode",
-            "type": "string",
-            "example": "NYC"
-          }
-        }
+        "$ref": "./arrivalCity_base.schema.json"
       },
       "arrivalCountry": {
-        "description": "arrivalCountry",
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "name",
-            "type": "string",
-            "example": "United States"
-          },
-          "isoCode": {
-            "description": "isoCode",
-            "type": "string",
-            "example": "US"
-          }
-        }
+        "$ref": "./country_base.schema.json"
       },
       "flightType": {
         "description": "flightType",

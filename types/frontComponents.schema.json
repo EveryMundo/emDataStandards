@@ -251,13 +251,13 @@
       "$ref": "./airport.schema.json"
     },
     "departureCity": {
-      "$ref": "./city.schema.json"
+      "$ref": "./departureCity.schema.json"
     },
     "arrivalAirport": {
       "$ref": "./airport.schema.json"
     },
     "arrivalCity": {
-      "$ref": "./city.schema.json"
+      "$ref": "./arrivalCity.schema.json"
     },
     "departureDate": {
       "description": "Expected departure date",
