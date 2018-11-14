@@ -12,15 +12,20 @@
       "description": "Redemption amount/unit equivalents",
       "type": "object",
       "properties": {
+        "unit": {
+          "description": "MILES, BITCOIN, POINTS, CURRENCY, OTHER",
+          "type": "string",
+          "example": "CURRENCY"
+        },
+        "ratio": {
+          "description": "conversion ratio",
+          "type": "number",
+          "example": 0.5
+        },
         "amount": {
           "description": "amount",
           "type": "number",
-          "example": 1500
-        },
-        "ratio": {
-          "description": "ratio",
-          "type": "number",
-          "example": 0.5
+          "example": 750
         }
       }
     }
