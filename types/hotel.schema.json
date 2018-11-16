@@ -70,8 +70,8 @@
       "type": "string",
       "example": "5"
     },
-    "aggregateRating": {
-      "$ref": "./aggregateRating.schema.json"
+    "aggregatedRating": {
+      "$ref": "./aggregatedRating.schema.json"
     },
     "images": {
       "description": "Image URLs for the hotel",
