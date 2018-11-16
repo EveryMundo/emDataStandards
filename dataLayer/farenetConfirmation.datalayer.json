@@ -1,7 +1,9 @@
 {
-    "journey": {
+    "priceSpecification": {
         "currencyCode": "USD",
-        "currencySymbol": "$",
+        "currencySymbol": "$"
+    }, 
+    "journey": {
         "passengerDetails": [
             {
                 "category": "Adult",
