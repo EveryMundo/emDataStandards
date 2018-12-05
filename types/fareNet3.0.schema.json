@@ -315,90 +315,13 @@
         }
     },
     "page": {
-      "description": "WebPage",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "The name of the page",
-          "type": "string",
-          "example": "flights from miami to berlin"
-        },
-        "url": {
-          "description": "The page url",
-          "type": "string",
-          "example": "flights.everymundo.com/en/flights-from-miami-to-berlin"
-        },
-        "hostName": {
-          "description": "Host name",
-          "type": "string",
-          "example": "flights.everymundo.com"
-        },
-        "languageIsoCode": {
-          "description": "Language ISO 639-1 code",
-          "type": "string",
-          "example": "en"
-        },
-        "siteEdition": {
-          "description": "Site edition combination of ISO codes for language and country",
-          "type": "string",
-          "example": "en-US"
-        }
-      }
+      "$ref": "./page_base.schema.json"
     },
     "device": {
-      "category": {
-        "description": "MOBILE, TABLET, DESKTOP",
-        "type": "string",
-        "example": "Mobile"
-      },
-      "screenResolution": {
-        "description": "Specifies the screen resolution.",
-        "type": "string",
-        "example": "360x600"
-      },
-      "operatingSystem": {
-        "description": "Device operating system (e.g. Windows, Android, iOS)",
-        "type": "string",
-        "example": "iOS"
-      },
-      "additionalProperties": false
+      "$ref": "./device_base.schema.json"
     },
     "metadata": {
-      "description": "Metadata",
-      "type": "object",
-      "properties": {
-        "app": {
-          "description": "App",
-          "type": "object",
-          "properties": {
-              "name": {
-                  "description": "Farenet | GoogleITA UA Client",
-                  "type":"string",
-                  "example": "Farenet | GoogleITA UA Client"
-              },
-              "version": {
-                  "description": "Version of the program that generated the record",
-                  "type":"string",
-                  "example": "2.1.0"
-              },
-              "datasource": {
-                  "description": "IBE_FLIGHT_SELECTION, IBE_CONFIRMATION, IBE_PASSENGER_INFO, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
-                  "type":"string",
-                  "example": "IBE_FLIGHT_SELECTION"   
-              }
-          }
-        },
-        "trackingId": {
-          "description": "Unique identifier created through module interactions for event tracking",
-          "type": "string",
-          "example": "RTJFKFRA2017073120170824$0_123456KARIN"
-        },
-        "schemaVersion": {
-          "description": "Schema version of Data Standards",
-          "type": "number",
-          "example": "0.0.1"
-        }
-    }
+      "$ref": "./metadata_base.schema.json"
     }
   }},
   "required": ["journey", "page", "device", "metadata"],
