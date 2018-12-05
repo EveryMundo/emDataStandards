@@ -5,6 +5,9 @@
     "description": "Journey Base",
     "type": "object",
     "properties": {
+      "airline": {
+        "$ref": "./airline_base.schema.json"
+      },
       "fullRoute": {
         "description": "Full itinerary with connections including stop over",
         "type": "string",
@@ -60,9 +63,6 @@
       },
       "discount": {
           "$ref": "./discount.schema.json"
-      },
-      "airline": {
-          "$ref": "./airline_base.schema.json"
       }
      },
     "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "flightType", "segmentCount", "flightCount", "discount", "airline"],
