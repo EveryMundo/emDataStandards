@@ -5,28 +5,28 @@
   "description": "Campaign",
   "type": "object",
   "properties": {
-    "name": {
+    "campaignName": {
       "description": "SEM campaign name",
       "type": "string",
       "example": "GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]"
     },
-    "id": {
+    "campaignId": {
       "description": "Adwords campaign unique identifier",
+      "type": "number",
+      "example": "23232323"
+    },
+    "campaignType": {
+      "description": "Adwords campaign type NonBrand, Brand, Hybrid",
       "type": "string",
-      "example": "329-581-8275"
+      "example": "NonBrand"
     },
     "searchEngine": {
       "description": "GOOGLE, BING, YANDEX, YAHOO, BAIDU, NAVER, YAHOO JAPAN",
       "type": "string",
       "example": "GOOGLE"
-    },
-    "locationTypeCode": {
-      "description": "'\\CC-' in the campaign name describes the type code, e.g. CC (City to City), CN (City to Nation), NN, NC",
-      "type": "string",
-      "example": "CC"
     }
   },
-  "required": ["id"],
+  "required": ["campaignName","campaignId"],
   "links": [
     {
       "title": "Campaign",
