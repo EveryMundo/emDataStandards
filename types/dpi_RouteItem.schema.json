@@ -1,0 +1,74 @@
+{
+  "id": "/dpi_routeItem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DPI Route Identifier",
+  "description": "Element inside a business feed, defines a route with its price",
+  "type": "object",
+  "properties": {
+     "routeIdentifier":{
+       "$ref": "./dpi_routeIdentifier.schema.json"
+     },
+     "price":{
+      "description": "Route lowest price from DataCore",
+      "type": "number",
+      "example": "123.6"
+     },
+     "priceFormat":{
+       "$ref": "./priceFormat.schema.json"
+     },
+     "campaignId": {
+      "description": "AdWords Campaign Id",
+      "type": "number",
+      "example": "12324"
+    },
+    "campaignName": {
+      "description": "Adwords Campaign Name",
+      "type": "string",
+      "example": "City 1345"
+    },
+    "campaignType": {
+      "description": "NON_BRAND, BRAND, HYBRID",
+      "type": "string",
+      "example": "NON_BRAND"
+    },
+    "adgroupId": {
+      "description": "Adwords AdGroup Id",
+      "type": "number",
+      "example": "23232"
+    },
+    "adgroupName": {
+      "description": "Adwords AdGroup Id",
+      "type": "number",
+      "example": "23232"
+    },
+    "market": {
+      "description": "Country ISO code of market",
+      "type": "string",
+      "example": "US"
+    },
+    "languageIsoCode": {
+      "description": "Language",
+      "type": "string",
+      "example": "en"
+    },
+    "routeLocale": {
+      "description": "DOMESTIC, INTERATIONAL",
+      "type": "string",
+      "example": "DOMESTIC"
+    }
+     
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "DPI Route Item",
+      "description": "DPI Route Item",
+      "rel": "self",
+      "href": "/dpi_routeItem",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

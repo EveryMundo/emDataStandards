@@ -1,0 +1,52 @@
+{
+  "id": "/priceFormat",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Price Format",
+  "description": "Dynamic price insertion schema",
+  "type": "object",
+  "properties": {
+    "currencyIsoCode": {
+      "description": "Currency ISO Code",
+      "type": "string",
+      "example": "USD"
+    },
+    "useCurrencyCode": {
+      "description": "Currency ISO Code",
+      "type": "boolean",
+      "example": "true"
+    },
+    "useCents": {
+      "description": "Currency ISO Code",
+      "type": "boolean",
+      "example": "true"
+    },
+    "currencyPosition": {
+      "description": "AFTER, BEFORE",
+      "type": "string",
+      "example": "AFTER"
+    },
+    "priceDecimalSeparator": {
+      "description": "priceDecimalSeparator",
+      "type": "string",
+      "example": "."
+    },
+    "priceThousandSeparator": {
+      "description": "priceThousandSeparator",
+      "type": "string",
+      "example": ","
+    }
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "Price Format",
+      "description": "Price Format",
+      "rel": "self",
+      "href": "/priceFormat",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
