@@ -1,0 +1,28 @@
+{
+  "id": "/dpi",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DPI Schema",
+  "description": "Dynamic price insertion schema",
+  "type": "object",
+  "properties": {
+    "routeItems": {
+      "$ref": "./dpi_routeItem.schema.json"
+    },
+    "feed": {
+      "$ref": "./dpi_feed.schema.json"
+    }
+  },
+  "required": ["routeItems", "feed"],
+  "links": [
+    {
+      "title": "DPI Schema",
+      "description": "DPI Schema",
+      "rel": "self",
+      "href": "/dpi",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
