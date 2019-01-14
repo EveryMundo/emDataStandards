@@ -43,7 +43,6 @@
                             }
                         }
                     }
-                    
                 },
                 "flights": {
                     "description": "Flight",
@@ -143,7 +142,66 @@
                               "example": "9+"
                             },
                             "legs": {
-                                "$ref": "./legs_base.schema.json"
+                                "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
+                                "type": "array",
+                                "properties": {
+                                  "flightNumber": {
+                                    "description": "Flight Number",
+                                    "type": "string",
+                                    "example": "EM110"
+                                  },
+                                  "route": {
+                                    "description": "Origin City and Destination City",
+                                    "type": "string",
+                                    "example": "SFO>MIA"
+                                  },
+                                  "departureAirport": {
+                                    "$ref": "./airport_base.schema.json"
+                                  },
+                                  "departureTime": {
+                                    "description": "departureTime",
+                                    "type": "string",
+                                    "example": "2027-03-04T06:35:00-08:00"
+                                  },
+                                  "arrivalAirport": {
+                                    "$ref": "./airport_base.schema.json"
+                                  },
+                                  "arrivalTime": {
+                                    "description": "Time of Arrival",
+                                    "type": "string",
+                                    "example": "2027-03-04T13:35:00-08:00"
+                                  },
+                                  "estimatedDuration": {
+                                    "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+                                    "type": "string",
+                                    "example": "PT6H30M"
+                                  },
+                                  "departureCity": {
+                                    "$ref": "./departureCity_base.schema.json"
+                                  },
+                                  "departureCountry": {
+                                    "$ref": "./country_base.schema.json"
+                                  },
+                                  "arrivalCity": {
+                                    "$ref": "./arrivalCity_base.schema.json"
+                                  },
+                                  "arrivalCountry": {
+                                    "$ref": "./country_base.schema.json"
+                                  },
+                                  "flightType": {
+                                    "description": "DOMESTIC, INTERNATIONAL",
+                                    "type": "string",
+                                    "example": "DOMESTIC"
+                                  },
+                                  "operatingAirline": {
+                                    "$ref": "./airline_base.schema.json"
+                                  },
+                                  "aircraft": {
+                                    "description": "Aircraft brand",
+                                    "type": "string",
+                                    "example": "Boeing 747"
+                                  }
+                                }
                             },
                             "departureCity": {
                               "$ref": "./departureCity_base.schema.json"
