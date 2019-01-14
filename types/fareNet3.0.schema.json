@@ -64,7 +64,7 @@
           "type": "object",
           "properties": {
             "boundType": {
-              "description": "boundType",
+              "description": "OUTBOUND, INBOUND, MATRIX",
               "type": "string",
               "example": "OUTBOUND"
             },
@@ -170,7 +170,7 @@
           "type": "object",
           "properties": {
             "boundType": {
-              "description": "boundType",
+              "description": "OUTBOUND, INBOUND, MATRIX",
               "type": "string",
               "example": "INBOUND"
             },

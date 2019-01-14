@@ -46,7 +46,7 @@
                     "type": "array",
                     "properties": {
                         "boundType": {
-                            "description": "Bound type can be INBOUND or OUTBOUND",
+                            "description": "OUTBOUND, INBOUND, MATRIX",
                             "type": "string",
                             "example": "OUTBOUND"
                         },
@@ -327,24 +327,24 @@
                                     }
                                 },
                                 "boundType": {
-                                "description": "OUTBOUND, INBOUND, MATRIX",
-                                "type": "string",
-                                "example": "MATRIX"
+                                    "description": "OUTBOUND, INBOUND, MATRIX",
+                                    "type": "string",
+                                    "example": "MATRIX"
                                 },
                                 "isSoldOut": {
-                                "description": "Whether price is sold out",
-                                "type": "boolean",
-                                "example": false
+                                    "description": "Whether price is sold out",
+                                    "type": "boolean",
+                                    "example": false
                                 },
                                 "outboundDate": {
-                                "description": "Outbound date",
-                                "type": "string",
-                                "example": "2017-03-06"
+                                    "description": "Outbound date",
+                                    "type": "string",
+                                    "example": "2017-03-06"
                                 },
                                 "inboundDate": {
-                                "description": "Inbound date",
-                                "type": "string",
-                                "example": "2017-03-26"
+                                    "description": "Inbound date",
+                                    "type": "string",
+                                    "example": "2017-03-26"
                                 }
                             }
                         }
