@@ -152,7 +152,20 @@
                     "example": "SFO>MIA"
                   },
                   "departureAirport": {
-                    "$ref": "./airport_base.schema.json"
+                    "description": "Departure Airport",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "description": "The name of the airport",
+                        "type": "string",
+                        "example": "Miami International Airport"
+                        },
+                        "iataCode": {
+                        "description": "IATA identifier for the airport",
+                        "type": "string",
+                        "example": "MIA"
+                        }
+                    }
                   },
                   "departureTime": {
                     "description": "departureTime",
@@ -160,7 +173,20 @@
                     "example": "2027-03-04T06:35:00-08:00"
                   },
                   "arrivalAirport": {
-                    "$ref": "./airport_base.schema.json"
+                    "description": "Arrival Airport",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "description": "The name of the airport",
+                        "type": "string",
+                        "example": "Miami International Airport"
+                        },
+                        "iataCode": {
+                        "description": "IATA identifier for the airport",
+                        "type": "string",
+                        "example": "MIA"
+                        }
+                    }
                   },
                   "arrivalTime": {
                     "description": "Time of Arrival",
@@ -173,16 +199,68 @@
                     "example": "PT6H30M"
                   },
                   "departureCity": {
-                    "$ref": "./departureCity_base.schema.json"
+                    "description": "City",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "description": "The name of the city",
+                        "type": "string",
+                        "example": "Miami"
+                        },
+                        "cityCode": {
+                        "description": "ISO code for the city",
+                        "type": "string",
+                        "example": "MIA"
+                        }
+                    }
                   },
                   "departureCountry": {
-                    "$ref": "./country_base.schema.json"
+                    "description": "Country",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "description": "The name of the country",
+                        "type": "string",
+                        "example": "United States"
+                        },
+                        "isoCode": {
+                        "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                        "type": "string",
+                        "example": "US"
+                        }
+                    }
                   },
                   "arrivalCity": {
-                    "$ref": "./arrivalCity_base.schema.json"
+                    "description": "City",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "description": "The name of the city",
+                        "type": "string",
+                        "example": "Miami"
+                        },
+                        "cityCode": {
+                        "description": "ISO code for the city",
+                        "type": "string",
+                        "example": "MIA"
+                        }
+                    }
                   },
                   "arrivalCountry": {
-                    "$ref": "./country_base.schema.json"
+                    "description": "Country",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "description": "The name of the country",
+                        "type": "string",
+                        "example": "United States"
+                        },
+                        "isoCode": {
+                        "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                        "type": "string",
+                        "example": "US"
+                        }
+                    }
                   },
                   "flightType": {
                     "description": "DOMESTIC, INTERNATIONAL",
@@ -200,16 +278,68 @@
                 }
               },
               "departureCity": {
-                "$ref": "./departureCity_base.schema.json"
+                "description": "City",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the city",
+                    "type": "string",
+                    "example": "Miami"
+                    },
+                    "cityCode": {
+                    "description": "ISO code for the city",
+                    "type": "string",
+                    "example": "MIA"
+                    }
+                }
               },
               "departureCountry": {
-                "$ref": "./country_base.schema.json"
+                "description": "Country",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the country",
+                    "type": "string",
+                    "example": "United States"
+                    },
+                    "isoCode": {
+                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                    "type": "string",
+                    "example": "US"
+                    }
+                }
               },
               "arrivalCity": {
-                "$ref": "./arrivalCity_base.schema.json"
+                "description": "City",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the city",
+                    "type": "string",
+                    "example": "Miami"
+                    },
+                    "cityCode": {
+                    "description": "ISO code for the city",
+                    "type": "string",
+                    "example": "MIA"
+                    }
+                }
               },
               "arrivalCountry": {
-                "$ref": "./country_base.schema.json"
+                "description": "Country",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the country",
+                    "type": "string",
+                    "example": "United States"
+                    },
+                    "isoCode": {
+                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                    "type": "string",
+                    "example": "US"
+                    }
+                }
               },
               "flightType": {
                 "description": "flightType",
@@ -332,16 +462,68 @@
                 }
               },
               "departureCity": {
-                "$ref": "./departureCity_base.schema.json"
+                "description": "City",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the city",
+                    "type": "string",
+                    "example": "Miami"
+                    },
+                    "cityCode": {
+                    "description": "ISO code for the city",
+                    "type": "string",
+                    "example": "MIA"
+                    }
+                }
               },
               "departureCountry": {
-                "$ref": "./country_base.schema.json"
+                "description": "Country",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the country",
+                    "type": "string",
+                    "example": "United States"
+                    },
+                    "isoCode": {
+                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                    "type": "string",
+                    "example": "US"
+                    }
+                }
               },
               "arrivalCity": {
-                "$ref": "./arrivalCity_base.schema.json"
+                "description": "City",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the city",
+                    "type": "string",
+                    "example": "Miami"
+                    },
+                    "cityCode": {
+                    "description": "ISO code for the city",
+                    "type": "string",
+                    "example": "MIA"
+                    }
+                }
               },
               "arrivalCountry": {
-                "$ref": "./country_base.schema.json"
+                "description": "Country",
+                "type": "object",
+                "properties": {
+                    "name": {
+                    "description": "The name of the country",
+                    "type": "string",
+                    "example": "United States"
+                    },
+                    "isoCode": {
+                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                    "type": "string",
+                    "example": "US"
+                    }
+                }
               },
               "flightType": {
                 "description": "flightType",
@@ -352,12 +534,6 @@
                 "description": "routeType",
                 "type": "string",
                 "example": "NONSTOP"
-              },
-              "discount": {
-                "$ref": "./discount.schema.json"
-              },
-              "additionalInfo": {
-                "$ref": "./additionalInfo.schema.json"
               }
             }
           },
