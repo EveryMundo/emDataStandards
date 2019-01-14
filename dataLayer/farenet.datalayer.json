@@ -80,7 +80,30 @@
                                         "example": 12
                                     },
                                     "redemption": {
-                                        "$ref": "./redemption_base.schema.json"
+                                        "description": "Redemption",
+                                        "type": "object",
+                                        "properties": {
+                                            "unit": {
+                                            "description": "MILES, BITCOIN, POINTS, OTHER",
+                                            "type": "string",
+                                            "example": "MILES"
+                                            },
+                                            "amount": {
+                                            "description": "Amount of redemption units",
+                                            "type": "number",
+                                            "example": 1500
+                                            },
+                                            "taxAmount": {
+                                            "description": "The amount paid in taxes",
+                                            "type": "number",
+                                            "example": 16.39
+                                            },
+                                            "category": {
+                                            "description": "Miles Category Name",
+                                            "type": "string",
+                                            "example": "Economy MileSAAver"
+                                            }
+                                        }
                                     }
                                 }
                             },
