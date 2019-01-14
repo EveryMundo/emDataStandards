@@ -103,7 +103,7 @@
               "example": "Economy Basic"
             },
             "fareClass": {
-              "description": "fareClass",
+              "description": "Standardized fare class can only be ECONOMY, BUSINESS, FIRST",
               "type": "string",
               "example": "ECONOMY"
             },
@@ -154,7 +154,7 @@
               "example": "DOMESTIC"
             },
             "routeType": {
-              "description": "routeType",
+              "description": "route type can be CONNECTING or DIRECT",
               "type": "string",
               "example": "CONNECTING"
             },
