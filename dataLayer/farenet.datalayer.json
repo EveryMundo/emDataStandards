@@ -551,7 +551,78 @@
             }
           },
           "fareTensor": {
-            "$ref": "./fareTensor.schema.json"
+            "description": "FlightTensor",
+            "type": "object",
+            "properties": {
+                "journeyType": {
+                "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
+                "type": "string",
+                "example": "ROUND_TRIP"
+                },
+                "cells": {
+                    "description": "Cells in the matrix",
+    "type": "object",
+    "properties": {
+      "priceSpecification": {
+        "description": "priceSpecification",
+        "type": "object",
+        "properties": {
+          "totalPrice": {
+            "description": "totalPrice",
+            "type": "number",
+            "example": 825.51
+          },
+          "redemption": {
+            "description": "Redemption",
+            "type": "object",
+            "properties": {
+                "unit": {
+                "description": "MILES, BITCOIN, POINTS, OTHER",
+                "type": "string",
+                "example": "MILES"
+                },
+                "amount": {
+                "description": "Amount of redemption units",
+                "type": "number",
+                "example": 1500
+                },
+                "taxAmount": {
+                "description": "The amount paid in taxes",
+                "type": "number",
+                "example": 16.39
+                },
+                "category": {
+                "description": "Miles Category Name",
+                "type": "string",
+                "example": "Economy MileSAAver"
+                }
+            }
+          }
+        }
+      },
+        "boundType": {
+          "description": "OUTBOUND, INBOUND, MATRIX",
+          "type": "string",
+          "example": "MATRIX"
+        },
+        "isSoldOut": {
+          "description": "Whether price is sold out",
+          "type": "boolean",
+          "example": false
+        },
+        "outboundDate": {
+          "description": "Outbound date",
+          "type": "string",
+          "example": "2017-03-06"
+        },
+        "inboundDate": {
+          "description": "Inbound date",
+          "type": "string",
+          "example": "2017-03-26"
+        }
+    }
+                }
+            }
           },
           "departureDate": {
             "description": "departureDate",

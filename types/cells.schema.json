@@ -5,6 +5,7 @@
   "type": "array",
   "items":{
     "title": "Cell",
+    "description": "Cells in the matrix",
     "type": "object",
     "properties": {
       "priceSpecification": {
@@ -41,7 +42,7 @@
           "type": "string",
           "example": "2017-03-26"
         }
-      }
+    }
   },
   "required": ["totalPrice", "boundType", "isSoldOut"],
   "links": [
