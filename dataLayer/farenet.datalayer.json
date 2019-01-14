@@ -75,7 +75,9 @@
                     "example": 75.39
                   },
                   "redemption": {
-                    "$ref": "./redemption_base.schema.json"
+                    "allOf": [
+                        {"$ref": "./redemption_base.schema.json"}
+                    ]                   
                   }
                 }
               },
