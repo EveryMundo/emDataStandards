@@ -8,7 +8,7 @@ export default fromJS([
   // to customize or remove both the schema and the introduction component.
   require('../types/address.schema.json'),
   require('../types/adwords.schema.json'),
-  require('../types/aggregateRating.schema.json'),
+  require('../types/aggregatedRating.schema.json'),
   require('../types/airindex.schema.json'),
   require('../types/airline.schema.json'),
   require('../types/airport.schema.json'),
