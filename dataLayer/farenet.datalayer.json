@@ -26,7 +26,20 @@
         "type": "object",
         "properties": {
           "passengerDetails": {
-            "$ref": "./passengerDetails.schema.json"
+            "description": "Passenger Details captured from IBE",
+            "type": "array",
+            "properties": {
+                "category": {
+                "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+                "type": "string",
+                "example": "Adult"
+                },
+                "count": {
+                "description": "Amount of passengers for a specific category",
+                "type": "number",
+                "example": 1
+                }
+            }
           },
           "outboundFlight": {
             "description": "outboundFlight",
