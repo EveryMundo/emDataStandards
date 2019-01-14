@@ -1,7 +1,7 @@
 {
   "id": "/fareNet",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "fareNet3.0",
+  "title": "FareNet3.0",
   "description": "fareNet 3.0 includes journey only",
   "type": "object",
   "properties": {
