@@ -2,6 +2,7 @@
   "id": "/passengerDetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "PassengerDetails",
+  "description": "Passenger Details captured from IBE",
   "type": "array",
   "properties": {
     "category": {
