@@ -679,7 +679,7 @@
             }
         }
     },
-    "required": ["journey", "page", "device", "metadata"],
+    "required": ["priceSpecification","journey", "page"],
     "links": [
       {
         "title": "FareNet DataLayer",
