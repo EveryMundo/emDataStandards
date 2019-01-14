@@ -21,194 +21,176 @@
                 }
             }
         },  
-        "journey": {                      
-            "passengerDetails": [
-                {
-                    "category": "Adult",               
-                    "count": 1
+        "journey": {
+            "description": "Journey",
+            "type": "object",
+            "properties": {
+                "passengerDetails": {
+                    "description": "Passenger Details captured from IBE",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "category": {
+                                "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+                                "type": "string",
+                                "example": "Adult"
+                            },
+                            "count": {
+                                "description": "Amount of passengers for a specific category",
+                                "type": "number",
+                                "example": 1
+                            }
+                        }
+                    }
+                    
                 },
-                {
-                    "category": "Child0to17",               
-                    "count": 1
-                }
-            ],
-            "flights": [
-                {
-                    "boundType": "OUTBOUND",               
-                    "priceSpecification": {
-                        "priceBeforeTaxesAndFees": 106.19,
-                        "totalPrice": 106.19,
-                        "taxAmount": null,
-                        "additionalFeesAmount": null,
-                        "redemption": {
-                            "unit": "MILES",
-                            "amount": 1500,
-                            "taxAmount": 16.39,
-                            "category": "Economy MileSAAver"
-                        }
-                    },
-                    "fareClassInput": "Standard",
-                    "fareClass": "ECONOMY",
-                    "departureAirportIataCode": "FLL",
-                    "arrivalAirportIataCode": "LGA",
-                    "departureDate": "2018-07-26",
-                    "estimatedDuration": "PT3H",
-                    "availableSeatsCount": 5,
-                    "legs": [
-                        {
-                            "flightNumber": "604",
-                            "route": "FLL>LGA",
-                            "departureAirport": {
-                                "name": "Fort Lauderdale–Hollywood International Airport",
-                                "iataCode": "FLL"
+                "flights": {
+                    "description": "Flight",
+                    "type": "array",
+                    "items": {
+                        "properties": {
+                            "boundType": {
+                              "description": "boundType",
+                              "type": "string",
+                              "example": "OUTBOUND"
                             },
-                            "departureTime": "7:05",
-                            "arrivalAirport": {
-                                "name": "LaGuardia Airport",
-                                "iataCode": "LGA"
+                            "priceSpecification": {
+                                "description": "PriceSpecification",
+                                "type": "object",
+                                "properties": {
+                                    "priceBeforeTaxesAndFees": {
+                                        "description": "Price for the reservation or ticket",
+                                        "type": "number",
+                                        "example": 234.21
+                                    },
+                                    "totalPrice": {
+                                        "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
+                                        "type": "number",
+                                        "example": 250.6
+                                    },
+                                    "taxAmount": {
+                                        "description": "The amount paid in taxes",
+                                        "type": "number",
+                                        "example": 16.39
+                                    },
+                                    "additionalFeesAmount": {
+                                        "description": "Airline additional fees",
+                                        "type": "number",
+                                        "example": 12
+                                    },
+                                    "redemption": {
+                                        "$ref": "./redemption_base.schema.json"
+                                    }
+                                }
                             },
-                            "arrivalTime": "10:05",
-                            "estimatedDuration": "PT3H"
+                            "fareClassInput": {
+                              "description": "Name of the fare class given by airline in sentence case, e.g. Economy Basic",
+                              "type": "string",
+                              "example": "Economy Basic"
+                            },
+                            "fareClass": {
+                              "description": "fareClass mapped to either 'ECONOMY', 'BUSINESS' or 'FIRST' class",
+                              "type": "string",
+                              "example": "ECONOMY"
+                            },
+                            "departureAirportIataCode": {
+                              "description": "departureAirportIataCode",
+                              "type": "string",
+                              "example": "SFO"
+                            },
+                            "arrivalAirportIataCode": {
+                              "description": "arrivalAirportIataCode",
+                              "type": "string",
+                              "example": "JFK"
+                            },
+                            "departureDate": {
+                              "description": "Departure Date",
+                              "type": "string",
+                              "example": "2017-12-07"
+                            },
+                            "estimatedDuration": {
+                              "description": "Estimated Duration of the flight",
+                              "type": "string",
+                              "example": "PT9H45M"
+                            },
+                            "availableSeatsCount": {
+                              "description": "Number of available Seats",
+                              "type": "string",
+                              "example": "9+"
+                            },
+                            "legs": {
+                                "$ref": "./legs_base.schema.json"
+                            },
+                            "departureCity": {
+                              "$ref": "./departureCity_base.schema.json"
+                            },
+                            "departureCountry": {
+                              "$ref": "./country_base.schema.json"
+                            },
+                            "arrivalCity": {
+                              "$ref": "./arrivalCity_base.schema.json"
+                            },
+                            "arrivalCountry": {
+                              "$ref": "./country_base.schema.json"
+                            },
+                            "flightType": {
+                              "description": "flightType",
+                              "type": "string",
+                              "example": "DOMESTIC"
+                            },
+                            "routeType": {
+                              "description": "NONSTOP, DIRECT (plane may stop but people do not get off) or CONNECTING depending on the number of stops",
+                              "type": "string",
+                              "example": "CONNECTING"
+                            }
+                         
                         }
-                    ],
-                    "departureCity": {
-                        "name": "Fort Lauderdale",
-                        "cityCode": "FLL"
-                    },
-                    "departureCountry": {
-                        "name": "United States",
-                        "isoCode": "US"
-                    },
-                    "arrivalCity": {
-                        "name": "New York",
-                        "cityCode": "NYC"
-                    },
-                    "arrivalCountry": {
-                        "name": "United States",
-                        "isoCode": "US"
-                    },
-                    "flightType": "DOMESTIC",
-                    "routeType": "DIRECT"
+                    }  
                 },
-                {
-                    "boundType": "INBOUND",                
-                    "priceSpecification": {
-                        "priceBeforeTaxesAndFees": 121.18,
-                        "totalPrice": 121.18,
-                        "taxAmount": null,
-                        "additionalFeesAmount": null,
-                        "redemption": {
-                            "unit": "MILES",
-                            "amount": 1500,
-                            "taxAmount": 16.39,
-                            "category": "Economy MileSAAver"
-                        }
-                    },
-                    "fareClassInput": "STANDARD",
-                    "fareClass": "ECONOMY",
-                    "departureAirportIataCode": "LGA",
-                    "arrivalAirportIataCode": "FLL",
-                    "departureDate": "2018-07-29",
-                    "estimatedDuration": "PT3H1M",
-                    "availableSeatsCount": 5,
-                    "legs": [
-                        {
-                            "flightNumber": "779",
-                            "route": "LGA>FLL",
-                            "departureAirport": {
-                                "name": "LaGuardia Airport",
-                                "iataCode": "LGA"
-                            },
-                            "departureTime": "20:29",
-                            "arrivalAirport": {
-                                "name": "Fort Lauderdale–Hollywood International Airport",
-                                "iataCode": "FLL"
-                            },
-                            "arrivalTime": "23:30",
-                            "estimatedDuration": "PT3H1M"
-                        }
-                    ],
-                    "departureCity": {
-                        "name": "New York",
-                        "cityCode": "NYC"
-                    },
-                    "departureCountry": {
-                        "name": "United States",
-                        "isoCode": "US"
-                    },
-                    "arrivalCity": {
-                        "name": "Fort Lauderdale",
-                        "cityCode": "FLL"
-                    },
-                    "arrivalCountry": {
-                        "name": "United States",
-                        "isoCode": "US"
-                    },
-                    "flightType": "DOMESTIC",
-                    "routeType": "DIRECT"
+                "fareTensor": {
+                    "$ref": "./fareTensor_base.schema.json"
+                },
+                "departureDate": {
+                    "description": "Departure Date",
+                    "type": "string",
+                    "example": "2018-07-26"
+                },
+                "returnDate": {
+                    "description": "Return Date",
+                    "type": "string",
+                    "example": "2018-07-29"
+                },
+                "journeyType": {
+                    "description": "ROUND_TRIP, ONE_WAY, or MULTI_CITY",
+                    "type": "string",
+                    "example": "ROUND_TRIP"
+                },
+                "flightType": {
+                    "description": "DOMESTIC, INTERNATIONAL",
+                    "type": "string",
+                    "example": "DOMESTIC"
+                },
+                "airline": {
+                    "$ref": "./airline_base.schema.json"
                 }
-            ],
-            "fareTensor": {
-                "journeyType": "ROUND_TRIP",
-                "cells": [
-                    {
-                        "priceSpecification": {
-                            "totalPrice": 106.19,
-                            "redemption": {
-                                "unit": "MILES",
-                                "amount": 1500,
-                                "taxAmount": 16.39,
-                                "category": "Economy MileSAAver"
-                            }
-                        },
-                        "boundType": "OUTBOUND",
-                        "isSoldOut": false,
-                        "outboundDate": "2018-07-25",
-                        "inboundDate": null
-                    },
-                    {
-                        "priceSpecification": {
-                            "totalPrice": 81.19,
-                            "redemption": {
-                                "unit": "MILES",
-                                "amount": 1500,
-                                "taxAmount": 16.39,
-                                "category": "Economy MileSAAver"
-                            }
-                        },
-                        "boundType": "INBOUND",
-                        "isSoldOut": false,
-                        "outboundDate": null,
-                        "inboundDate": "2018-07-28"
-                    },
-                    {
-                        "priceSpecification": {
-                            "totalPrice": 187.38,
-                            "redemption": {
-                                "unit": "MILES",
-                                "amount": 1500,
-                                "taxAmount": 16.39,
-                                "category": "Economy MileSAAver"
-                            }
-                        },
-                        "boundType": "MATRIX",
-                        "isSoldOut": false,
-                        "outboundDate": "2018-07-26",
-                        "inboundDate": "2018-07-29"
-                    }]
-            },
-            "departureDate": "2018-07-26",
-            "returnDate": "2018-07-29",
-            "journeyType": "ROUND_TRIP",
-            "flightType": "DOMESTIC",
-            "airline": {
-                "name": "Spirit",
-                "iataCode": "NK"
             }
         },
         "page": {
-            "languageIsoCode": "en",
-            "siteEdition": "en-US"
+            "description": "WebPage",
+            "type": "object",
+            "properties": {
+                "languageIsoCode": {
+                    "description": "Language ISO 639-1 code",
+                    "type": "string",
+                    "example": "en"
+                  },
+                  "siteEdition": {
+                    "description": "Site edition combination of ISO codes for language and country",
+                    "type": "string",
+                    "example": "en-US"
+                  }
+            }
         }
     },
     "required": [],
