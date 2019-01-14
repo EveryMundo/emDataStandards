@@ -50,11 +50,6 @@
                 "type": "string",
                 "example": "OUTBOUND"
               },
-              "route": {
-                "description": "route",
-                "type": "string",
-                "example": "SFO>JFK"
-              },
               "priceSpecification": {
                 "description": "priceSpecification",
                 "type": "object",
@@ -74,10 +69,36 @@
                     "type": "number",
                     "example": 75.39
                   },
+                  "additionalFeesAmount": {
+                    "description": "Airline additional fees",
+                    "type": "number",
+                    "example": 12
+                  },
                   "redemption": {
-                    "allOf": [
-                        {"$ref": "./redemption_base.schema.json"}
-                    ]                   
+                    "description": "Redemption",
+                    "type": "object",
+                    "properties": {
+                        "unit": {
+                        "description": "MILES, BITCOIN, POINTS, OTHER",
+                        "type": "string",
+                        "example": "MILES"
+                        },
+                        "amount": {
+                        "description": "Amount of redemption units",
+                        "type": "number",
+                        "example": 1500
+                        },
+                        "taxAmount": {
+                        "description": "The amount paid in taxes",
+                        "type": "number",
+                        "example": 16.39
+                        },
+                        "category": {
+                        "description": "Miles Category Name",
+                        "type": "string",
+                        "example": "Economy MileSAAver"
+                        }
+                    }                  
                   }
                 }
               },
@@ -182,8 +203,36 @@
                     "type": "number",
                     "example": 75.39
                   },
+                  "additionalFeesAmount": {
+                    "description": "Airline additional fees",
+                    "type": "number",
+                    "example": 12
+                  },
                   "redemption": {
-                    "$ref": "./redemption_base.schema.json"
+                    "description": "Redemption",
+                    "type": "object",
+                    "properties": {
+                        "unit": {
+                        "description": "MILES, BITCOIN, POINTS, OTHER",
+                        "type": "string",
+                        "example": "MILES"
+                        },
+                        "amount": {
+                        "description": "Amount of redemption units",
+                        "type": "number",
+                        "example": 1500
+                        },
+                        "taxAmount": {
+                        "description": "The amount paid in taxes",
+                        "type": "number",
+                        "example": 16.39
+                        },
+                        "category": {
+                        "description": "Miles Category Name",
+                        "type": "string",
+                        "example": "Economy MileSAAver"
+                        }
+                    }
                   }
                 }
               },
