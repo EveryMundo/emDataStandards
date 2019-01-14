@@ -45,158 +45,160 @@
                     "description": "outboundFlight",
                     "type": "array",
                     "properties": {
-                    "boundType": {
-                        "description": "Bound type can be INBOUND or OUTBOUND",
-                        "type": "string",
-                        "example": "OUTBOUND"
-                    },
-                    "priceSpecification": {
-                        "description": "priceSpecification",
-                        "type": "object",
-                        "properties": {
-                        "priceBeforeTaxesAndFees": {
-                            "description": "priceBeforeTaxesAndFees",
-                            "type": "number",
-                            "example": 750.12
+                        "boundType": {
+                            "description": "Bound type can be INBOUND or OUTBOUND",
+                            "type": "string",
+                            "example": "OUTBOUND"
                         },
-                        "totalPrice": {
-                            "description": "totalPrice",
-                            "type": "number",
-                            "example": 825.51
-                        },
-                        "taxAmount": {
-                            "description": "taxAmount",
-                            "type": "number",
-                            "example": 75.39
-                        },
-                        "additionalFeesAmount": {
-                            "description": "Airline additional fees",
-                            "type": "number",
-                            "example": 12
-                        },
-                        "redemption": {
-                            "description": "Redemption",
+                        "priceSpecification": {
+                            "description": "priceSpecification",
                             "type": "object",
                             "properties": {
-                                "unit": {
-                                "description": "MILES, BITCOIN, POINTS, OTHER",
-                                "type": "string",
-                                "example": "MILES"
-                                },
-                                "amount": {
-                                "description": "Amount of redemption units",
+                            "priceBeforeTaxesAndFees": {
+                                "description": "priceBeforeTaxesAndFees",
                                 "type": "number",
-                                "example": 1500
-                                },
-                                "taxAmount": {
-                                "description": "The amount paid in taxes",
+                                "example": 750.12
+                            },
+                            "totalPrice": {
+                                "description": "totalPrice",
                                 "type": "number",
-                                "example": 16.39
-                                },
-                                "category": {
-                                "description": "Miles Category Name",
-                                "type": "string",
-                                "example": "Economy MileSAAver"
-                                }
-                            }                  
-                        }
-                        }
-                    },
-                    "fareClassInput": {
-                        "description": "Name of the fare class given by airline in sentence case, e.g. Economy Basic",
-                        "type": "string",
-                        "example": "Economy Basic"
-                    },
-                    "fareClass": {
-                        "description": "fareClass",
-                        "type": "string",
-                        "example": "ECONOMY"
-                    },
-                    "departureAirportIataCode": {
-                        "description": "departureAirportIataCode",
-                        "type": "string",
-                        "example": "SFO"
-                    },
-                    "arrivalAirportIataCode": {
-                        "description": "arrivalAirportIataCode",
-                        "type": "string",
-                        "example": "JFK"
-                    },
-                    "departureDate": {
-                        "description": "Departure Date",
-                        "type": "string",
-                        "example": "2017-12-07"
-                    },
-                    "estimatedDuration": {
-                        "description": "Estimated Duration of the flight",
-                        "type": "string",
-                        "example": "PT9H45M"
-                    },
-                    "availableSeatsCount": {
-                        "description": "availableSeatsCount",
-                        "type": "string",
-                        "example": "9+"
-                    },
-                    "legs": {
-                        "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
-                        "type": "array",
-                        "properties": {
-                        "flightNumber": {
-                            "description": "Flight Number",
-                            "type": "string",
-                            "example": "EM110"
-                        },
-                        "route": {
-                            "description": "Origin City and Destination City",
-                            "type": "string",
-                            "example": "SFO>MIA"
-                        },
-                        "departureAirport": {
-                            "description": "Departure Airport",
-                            "type": "object",
-                            "properties": {
-                                "name": {
-                                "description": "The name of the airport",
-                                "type": "string",
-                                "example": "Miami International Airport"
-                                },
-                                "iataCode": {
-                                "description": "IATA identifier for the airport",
-                                "type": "string",
-                                "example": "MIA"
-                                }
+                                "example": 825.51
+                            },
+                            "taxAmount": {
+                                "description": "taxAmount",
+                                "type": "number",
+                                "example": 75.39
+                            },
+                            "additionalFeesAmount": {
+                                "description": "Airline additional fees",
+                                "type": "number",
+                                "example": null
+                            },
+                            "redemption": {
+                                "description": "Redemption",
+                                "type": "object",
+                                "properties": {
+                                    "unit": {
+                                    "description": "MILES, BITCOIN, POINTS, OTHER",
+                                    "type": "string",
+                                    "example": "MILES"
+                                    },
+                                    "amount": {
+                                    "description": "Amount of redemption units",
+                                    "type": "number",
+                                    "example": 1500
+                                    },
+                                    "taxAmount": {
+                                    "description": "The amount paid in taxes",
+                                    "type": "number",
+                                    "example": 16.39
+                                    },
+                                    "category": {
+                                    "description": "Miles Category Name",
+                                    "type": "string",
+                                    "example": "Economy MileSAAver"
+                                    }
+                                }                  
+                            }
                             }
                         },
-                        "departureTime": {
-                            "description": "departureTime",
+                        "fareClassInput": {
+                            "description": "Name of the fare class given by airline in sentence case, e.g. Economy Basic",
                             "type": "string",
-                            "example": "2027-03-04T06:35:00-08:00"
+                            "example": "Economy Basic"
                         },
-                        "arrivalAirport": {
-                            "description": "Arrival Airport",
-                            "type": "object",
-                            "properties": {
-                                "name": {
-                                "description": "The name of the airport",
-                                "type": "string",
-                                "example": "Miami International Airport"
-                                },
-                                "iataCode": {
-                                "description": "IATA identifier for the airport",
-                                "type": "string",
-                                "example": "MIA"
-                                }
-                            }
-                        },
-                        "arrivalTime": {
-                            "description": "Time of Arrival",
+                        "fareClass": {
+                            "description": "Standardized fare class can only be ECONOMY, BUSINESS, FIRST",
                             "type": "string",
-                            "example": "2027-03-04T13:35:00-08:00"
+                            "example": "ECONOMY"
+                        },
+                        "departureAirportIataCode": {
+                            "description": "departureAirportIataCode",
+                            "type": "string",
+                            "example": "FLL"
+                        },
+                        "arrivalAirportIataCode": {
+                            "description": "arrivalAirportIataCode",
+                            "type": "string",
+                            "example": "LGA"
+                        },
+                        "departureDate": {
+                            "description": "Departure Date",
+                            "type": "string",
+                            "example": "2017-12-07"
                         },
                         "estimatedDuration": {
-                            "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+                            "description": "Estimated Duration of the flight",
                             "type": "string",
-                            "example": "PT6H30M"
+                            "example": "PT9H45M"
+                        },
+                        "availableSeatsCount": {
+                            "description": "availableSeatsCount",
+                            "type": "string",
+                            "example": "9+"
+                        },
+                        "legs": {
+                            "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
+                            "type": "array",
+                            "properties": {
+                                "flightNumber": {
+                                    "description": "Flight Number",
+                                    "type": "string",
+                                    "example": "EM110"
+                                },
+                                "route": {
+                                    "description": "Origin City and Destination City",
+                                    "type": "string",
+                                    "example": "FLL>LGA"
+                                },
+                                "departureAirport": {
+                                    "description": "Departure Airport",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                        "description": "The name of the airport",
+                                        "type": "string",
+                                        "example": "Fort Lauderdale–Hollywood International Airport"
+                                        },
+                                        "iataCode": {
+                                        "description": "IATA identifier for the airport",
+                                        "type": "string",
+                                        "example": "FLL"
+                                        }
+                                    }
+                                },
+                                "departureTime": {
+                                    "description": "departureTime",
+                                    "type": "string",
+                                    "example": "2027-03-04T06:35:00-08:00"
+                                },
+                                "arrivalAirport": {
+                                    "description": "Arrival Airport",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                        "description": "The name of the airport",
+                                        "type": "string",
+                                        "example": "LaGuardia Airport"
+                                        },
+                                        "iataCode": {
+                                        "description": "IATA identifier for the airport",
+                                        "type": "string",
+                                        "example": "LGA"
+                                        }
+                                    }
+                                },
+                                "arrivalTime": {
+                                    "description": "Time of Arrival",
+                                    "type": "string",
+                                    "example": "2027-03-04T13:35:00-08:00"
+                                },
+                                "estimatedDuration": {
+                                    "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+                                    "type": "string",
+                                    "example": "PT6H30M"
+                                }
+                            }
                         },
                         "departureCity": {
                             "description": "City",
@@ -205,12 +207,12 @@
                                 "name": {
                                 "description": "The name of the city",
                                 "type": "string",
-                                "example": "Miami"
+                                "example": "Fort Lauderdale"
                                 },
                                 "cityCode": {
                                 "description": "ISO code for the city",
                                 "type": "string",
-                                "example": "MIA"
+                                "example": "FLL"
                                 }
                             }
                         },
@@ -237,12 +239,12 @@
                                 "name": {
                                 "description": "The name of the city",
                                 "type": "string",
-                                "example": "Miami"
+                                "example": "New York"
                                 },
                                 "cityCode": {
                                 "description": "ISO code for the city",
                                 "type": "string",
-                                "example": "MIA"
+                                "example": "NYC"
                                 }
                             }
                         },
@@ -263,107 +265,15 @@
                             }
                         },
                         "flightType": {
-                            "description": "DOMESTIC, INTERNATIONAL",
+                            "description": "flightType",
                             "type": "string",
                             "example": "DOMESTIC"
                         },
-                        "operatingAirline": {
-                            "description": "Airline",
-                            "type": "object",
-                            "properties": {
-                                "name": {
-                                "description": "Full name of airline, capitalise each word keeping the space",
-                                "type": "string",
-                                "example": "Everymundo Airlines"
-                                },
-                                "iataCode": {
-                                "description": "IATA identifier for the airline",
-                                "type": "string",
-                                "example": "EM"
-                                }
-                            }
-                        },
-                        "aircraft": {
-                            "description": "Aircraft brand",
+                        "routeType": {
+                            "description": "route type can be DIRECT or CONNECTING",
                             "type": "string",
-                            "example": "Boeing 747"
+                            "example": "CONNECTING"
                         }
-                        }
-                    },
-                    "departureCity": {
-                        "description": "City",
-                        "type": "object",
-                        "properties": {
-                            "name": {
-                            "description": "The name of the city",
-                            "type": "string",
-                            "example": "Miami"
-                            },
-                            "cityCode": {
-                            "description": "ISO code for the city",
-                            "type": "string",
-                            "example": "MIA"
-                            }
-                        }
-                    },
-                    "departureCountry": {
-                        "description": "Country",
-                        "type": "object",
-                        "properties": {
-                            "name": {
-                            "description": "The name of the country",
-                            "type": "string",
-                            "example": "United States"
-                            },
-                            "isoCode": {
-                            "description": "The country code (in 2 letter codes from ISO 3166-1)",
-                            "type": "string",
-                            "example": "US"
-                            }
-                        }
-                    },
-                    "arrivalCity": {
-                        "description": "City",
-                        "type": "object",
-                        "properties": {
-                            "name": {
-                            "description": "The name of the city",
-                            "type": "string",
-                            "example": "Miami"
-                            },
-                            "cityCode": {
-                            "description": "ISO code for the city",
-                            "type": "string",
-                            "example": "MIA"
-                            }
-                        }
-                    },
-                    "arrivalCountry": {
-                        "description": "Country",
-                        "type": "object",
-                        "properties": {
-                            "name": {
-                            "description": "The name of the country",
-                            "type": "string",
-                            "example": "United States"
-                            },
-                            "isoCode": {
-                            "description": "The country code (in 2 letter codes from ISO 3166-1)",
-                            "type": "string",
-                            "example": "US"
-                            }
-                        }
-                    },
-                    "flightType": {
-                        "description": "flightType",
-                        "type": "string",
-                        "example": "DOMESTIC"
-                    },
-                    "routeType": {
-                        "description": "routeType",
-                        "type": "string",
-                        "example": "CONNECTING"
-                    }
                     }
                 },
                 "fareTensor": {
