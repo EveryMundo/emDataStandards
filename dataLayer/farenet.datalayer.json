@@ -268,7 +268,20 @@
                     "example": "DOMESTIC"
                   },
                   "operatingAirline": {
-                    "$ref": "./airline_base.schema.json"
+                    "description": "Airline",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "description": "Full name of airline, capitalise each word keeping the space",
+                        "type": "string",
+                        "example": "Everymundo Airlines"
+                        },
+                        "iataCode": {
+                        "description": "IATA identifier for the airline",
+                        "type": "string",
+                        "example": "EM"
+                        }
+                    }
                   },
                   "aircraft": {
                     "description": "Aircraft brand",
@@ -561,7 +574,20 @@
             "example": "DOMESTIC"
           },
           "airline": {
-            "$ref": "./airline_base.schema.json"
+            "description": "Airline",
+            "type": "object",
+            "properties": {
+                "name": {
+                "description": "Full name of airline, capitalise each word keeping the space",
+                "type": "string",
+                "example": "Everymundo Airlines"
+                },
+                "iataCode": {
+                "description": "IATA identifier for the airline",
+                "type": "string",
+                "example": "EM"
+                }
+            }
           }
       },
       "page": {
