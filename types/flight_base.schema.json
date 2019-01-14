@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
       "boundType": {
-        "description": "boundType",
+        "description": "Bound type can be INBOUND or OUTBOUND",
         "type": "string",
         "example": "OUTBOUND"
       },
