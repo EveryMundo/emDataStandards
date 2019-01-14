@@ -16,6 +16,9 @@
 "outboundDepartureAirportIataCode": "SFO",
 "outboundDepartureCityName": "San Francisco",
 "outboundDepartureCountryIsoCode": "US",
+"outboundArrivalAirportIataCode": "HKG", -- New Column to record Arrival Airport in case of One Way
+"outboundArrivalCityName": "Hong Kong", -- New Column to record Arrival City in case of One Way
+"outboundArrivalCountryIsoCode": "CN", -- New Column to record Arrival Country in case of One Way
 "outboundPriceBeforeTaxesAndFees": 750.12,
 "outboundTotalPrice": 825.51,
 "outboundTaxAmount": 75.39,
