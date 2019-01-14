@@ -55,5 +55,5 @@ export default fromJS([
   require('../types/theme.schema.json'),
   require('../types/timeLimits.schema.json'),
   require('../types/tracking.schema.json'),
-  require('../types/farenet.datalayer.json'),
+  require('../dataLayer/farenet.datalayer.json'),
 ]);
