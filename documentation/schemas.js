@@ -56,4 +56,5 @@ export default fromJS([
   require('../types/timeLimits.schema.json'),
   require('../types/tracking.schema.json'),
   require('../dataLayer/farenet.datalayer.json'),
+  require('../kpis/airline.kpis.json'),
 ]);

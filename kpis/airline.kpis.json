@@ -1,0 +1,53 @@
+{
+    "id": "/airline",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Airline KPIs",
+    "description": "Airline Industry Key Performance Indicators (KPIs)",
+    "type": "object",
+    "properties": {
+      "airIndex": {
+        "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
+        "type": "number",
+        "example": 0.5
+      },
+       "priceIndex": {
+        "description": "Price Index",
+        "type": "number",
+        "example": 0.73
+      },
+       "searchIndex": {
+        "description": "Searches Index",
+        "type": "number",
+        "example": 0.62
+      },
+      "viewableImpressions": {
+        "description": "Viewable Impressions describes when a user sees at least 50% of a fare visualization and displays in the browser for more than one continuous second.",
+        "type": "number",
+        "example": 0.5
+      },
+      "fsi": {
+        "description": "Flight Search Initiation (FSI)",
+        "type": "number",
+        "example": 0.5
+      },
+      "afs": {
+        "description": "Assisted Flight Searches (AFS)",
+        "type": "number",
+        "example": 0.5
+      }
+    },
+    "required": [],
+    "links": [
+      {
+        "title": "Airline KPIs",
+        "description": "Airline KPIs",
+        "rel": "self",
+        "href": "/airline",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }
+  
