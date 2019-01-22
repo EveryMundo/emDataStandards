@@ -1,4 +1,4 @@
-{  
+{
   "airlineIataCode": "EM",
   "fullRoute": "ORD>HKG|HKG>ORD",
   "priceBeforeTaxesAndFees": 234.21,
@@ -42,4 +42,4 @@
   "schemaVersion": "0.0.1",
   "farenetConfirmationId": "bcxtwjjyxgshxx4rvgqm9",
   "farenetConfirmationTimestamp": "2018-07-11"
-  }
+}
