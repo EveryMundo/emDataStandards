@@ -21,12 +21,17 @@
         "example": 0.62
       },
       "viewableImpressions": {
-        "description": "Viewable Impressions describes when a user sees at least 50% of a fare visualization and displays in the browser for more than one continuous second.",
+        "description": "Number of module views where the user has seen at least 50% of a fare visualization or search module for one continuous second",
         "type": "number",
-        "example": 0.5
+        "example": 10000
       },
       "fsi": {
-        "description": "Flight Search Initiation (FSI)",
+        "description": "Number of Flight Search Initiations (FSI) after viewing a module",
+        "type": "number",
+        "example": 5000
+      },
+      "fsiRate": {
+        "description": "The percentage of flight search initiations after viewing a module",
         "type": "number",
         "example": 0.5
       },
@@ -34,6 +39,36 @@
         "description": "Assisted Flight Searches (AFS)",
         "type": "number",
         "example": 0.5
+      },
+      "afsRate": {
+        "description": "The percentage of Assisted Flight Searches (AFS) after visiting an airTRFX page with multiple modules",
+        "type": "number",
+        "example": 0.5
+      },
+      "userInteractions": {
+        "description": "Number of clicks on fare visualizations or search modules",
+        "type": "number",
+        "example": 0.5
+      },
+      "imprAssistedConvRate": {
+        "description": "The percentage of flight bookings after viewing a module",
+        "type": "number",
+        "example": 0.5
+      },
+      "fsiAssistedConversions": {
+        "description": "The number of flight bookings after initiating a flight search",
+        "type": "number",
+        "example": 1000
+      },
+      "fsiAssistedConvRate": {
+        "description": "The percentage of flight bookings after viewing a module",
+        "type": "number",
+        "example": 0.5
+      },
+      "fsiAssistedRevenue": {
+        "description": "The total revenue booked after users initiated a flight search after clicking on a module",
+        "type": "number",
+        "example": 1000
       }
     },
     "required": [],
