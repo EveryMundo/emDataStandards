@@ -1,0 +1,73 @@
+{
+    "id": "/parameters",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "URL Parameters",
+    "description": "Short URL Parameters",
+    "type": "object",
+    "properties": {
+      "o": {
+        "description": "Origin Airport IATA Code",
+        "type": "string",
+        "example": "o=MIA"
+      },
+      "d": {
+        "description": "Destination Airport IATA Code",
+        "type": "string",
+        "example": "d=NYC"
+      },
+      "pc": {
+        "description": "Passenger Count is a number",
+        "type": "string",
+        "example": "pc=1"
+      },
+      "jt": {
+        "description": "Journey Type should be OW, RT, MC",
+        "type": "string",
+        "example": "jt=OW"
+      },
+      "dd": {
+        "description": "Departure Date YYYY-MM-DD",
+        "type": "string",
+        "example": "dd=2019-03-26"
+      },
+      "rd": {
+        "description": "Return Date YYYY-MM-DD",
+        "type": "string",
+        "example": "rd=2019-03-26"
+      },
+      "dc": {
+        "description": "Dicount Code",
+        "type": "string",
+        "example": "dc=ATH12345"
+      },
+      "fc": {
+        "description": "Fare Class should be EC (Economy), FC (First Class), BC (Business Class)",
+        "type": "string",
+        "example": "fc=EC"
+      },
+      "fd": {
+        "description": "Flexible Dates should be t (true) or f (false)",
+        "type": "string",
+        "example": "fd=f"
+      },
+      "b": {
+        "description": "Maximum Budget",
+        "type": "string",
+        "example": "b=300"
+      }
+    },
+    "required": [],
+    "links": [
+      {
+        "title": "URL Parameters",
+        "description": "URL Parameters",
+        "rel": "self",
+        "href": "/parameters",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }
+  
