@@ -5,6 +5,21 @@
     "description": "Airline Industry Key Performance Indicators (KPIs)",
     "type": "object",
     "properties": {
+      "searches": {
+        "description": "Any time a user sees the Flight Results page for a selected route, this counts as one search.",
+        "type": "number",
+        "example": 1000
+      },
+      "medianFare": {
+        "description": "This is the median fare that has been collected from the Flight Results page for a given route. FareNet usually collects the lowest fare though exceptions may apply.",
+        "type": "number",
+        "example": 100.00
+      },
+      "bookings": {
+        "description": "Bookings are counted whenever a user completes a flight reservation for a given route in the selected date range.",
+        "type": "number",
+        "example": 1000
+      },
       "airIndex": {
         "description": "Numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
         "type": "number",
@@ -61,7 +76,7 @@
         "example": 1000
       },
       "lookToBook": {
-        "description": "Look-to-Book Ratio is the number of conversions divided by the number of searchs on the Flight Results Page in the IBE",
+        "description": "Look-to-Book Ratio is the number of conversions divided by the number of searches on the Flight Results Page in the IBE",
         "type": "number",
         "example": 0.3
       },
@@ -77,6 +92,11 @@
       },
       "returningUsers": {
         "description": "Returning Users",
+        "type": "number",
+        "example": 1000
+      },
+      "revenue": {
+        "description": "This is the total income that an airline has from flight bookings.",
         "type": "number",
         "example": 1000
       }
