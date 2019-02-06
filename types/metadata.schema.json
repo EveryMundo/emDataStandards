@@ -13,6 +13,11 @@
         "type": "string",
         "example": "EST"
       },
+      "emClientId": {
+        "description": "Used in product tracking to identify user interactions across modules",
+        "type": "string",
+        "example": "123456"
+      },
       "farenetId": {
         "description": "API specific field for back-reference: Farenet record unique identifier",
         "type": "string",
