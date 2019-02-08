@@ -28,6 +28,11 @@
       "type": "number",
       "example": 250.6
     },
+    "totalTaxUSD": {
+      "description": "The total tax for the reservation or ticket in USD",
+      "type": "number",
+      "example": 250.6
+    },
     "fuelPrice": {
       "description": "Airline fuel charges",
       "type": "number",
