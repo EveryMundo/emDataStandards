@@ -15,6 +15,11 @@
         "everymundo.com/image.jpg",
         "everymundo.com/image2.jpg"
       ]
+    },
+    "logo": {
+      "description": "Array of multiple image URLs for the airline",
+      "type": "string",
+      "example": "https://em-airline.com/cool-logo.png"
     }
   }}],
   "required": ["name", "iataCode"],
