@@ -76,7 +76,7 @@
         "example": 1000
       },
       "lookToBook": {
-        "description": "Look-to-Book Rate is the number of conversions divided by the number of searches in the IBE",
+        "description": "Look-to-Book Rate is the number of bookings divided by the number of searches in the IBE",
         "type": "number",
         "example": 0.3
       },
@@ -101,7 +101,7 @@
         "example": 1000
       },
       "revenue": {
-        "description": "Specifies the total income associated with the transaction (flight bookings).",
+        "description": "The total income associated with the transaction (flight bookings).",
         "type": "number",
         "example": 1000
       }
