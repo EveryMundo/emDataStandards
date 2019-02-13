@@ -11,12 +11,12 @@
         "example": 1000
       },
       "medianFare": {
-        "description": "This is the median fare that has been collected from the Flight Results page for a given route. FareNet usually collects the lowest fare though exceptions may apply.",
+        "description": "This is the 'middle' value of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply.",
         "type": "number",
         "example": 100.00
       },
       "bookings": {
-        "description": "Bookings are counted whenever a user completes a flight reservation for a given route in the selected date range.",
+        "description": "Bookings are counted whenever a user completes a flight reservation, also known as number of transactions.",
         "type": "number",
         "example": 1000
       },
@@ -76,7 +76,7 @@
         "example": 1000
       },
       "lookToBook": {
-        "description": "Look-to-Book Ratio is the number of conversions divided by the number of searches on the Flight Results Page in the IBE",
+        "description": "Look-to-Book Rate is the number of conversions divided by the number of searches in the IBE",
         "type": "number",
         "example": 0.3
       },
@@ -95,8 +95,13 @@
         "type": "number",
         "example": 1000
       },
+      "passengers": {
+        "description": "Amount of passengers including adults, children, infants, and seniors.",
+        "type": "number",
+        "example": 1000
+      },
       "revenue": {
-        "description": "This is the total income that an airline has from flight bookings.",
+        "description": "Specifies the total income associated with the transaction (flight bookings).",
         "type": "number",
         "example": 1000
       }
