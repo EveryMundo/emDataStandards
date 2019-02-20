@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
       "searches": {
-        "description": "Any time a user sees the Flight Results page for a selected route, this counts as one search.",
+        "description": "A search is counted when a user sees the IBE Flight Results page for a selected route.",
         "type": "number",
         "example": 1000
       },
