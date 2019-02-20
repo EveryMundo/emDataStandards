@@ -36,7 +36,7 @@
         "example": "rd=2019-03-26"
       },
       "dc": {
-        "description": "Dicount Code",
+        "description": "Discount Code",
         "type": "string",
         "example": "dc=ATH12345"
       },
