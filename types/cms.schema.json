@@ -13,7 +13,7 @@
     "provider": {
         "description": "Client",
         "type": "string",
-        "example": "AY"
+        "example": "Finnair"
     },
     "languageIsoCode": {
         "description": "Language",
