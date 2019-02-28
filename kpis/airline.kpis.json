@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
       "searches": {
-        "description": "A search is counted when a user sees the IBE Flight Results page for a selected route.",
+        "description": "A search is counted when any user sees the IBE Flight Results page for a selected route.",
         "type": "number",
         "example": 1000
       },
@@ -96,7 +96,7 @@
         "example": 1000
       },
       "passengers": {
-        "description": "Amount of passengers including adults, children, infants, and seniors.",
+        "description": "Amount of passengers including adults, children, infants, and seniors in the booking.",
         "type": "number",
         "example": 1000
       },
