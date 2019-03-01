@@ -54,6 +54,11 @@
         "description": "Maximum Budget",
         "type": "string",
         "example": "b=300"
+      },
+      "fw": {
+        "description": "FareWire Tracking Parameter consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}{Endpoint name or id}_{random 8 number id}",
+        "type": "string",
+        "example": "em_fw=A3ATHSKGEUR41Facebook_12345678 "
       }
     },
     "required": [],
