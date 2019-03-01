@@ -29,7 +29,7 @@
       "trackingId": {
         "description": "Unique identifier created through module interactions for event tracking",
         "type": "string",
-        "example": "RTJFKFRA2017073120170824$0_123456KARIN"
+        "example": "RTJFKFRA2017073120170824$0_12345678"
       },
       "schemaVersion": {
         "description": "Schema version of Data Standards",

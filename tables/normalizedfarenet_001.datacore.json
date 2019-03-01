@@ -56,7 +56,7 @@
   "appName": "Farenet | GoogleITA UA Client",
   "appVersion": "2.1.0",
   "appDatasource": "IBE_FLIGHT_SELECTION",
-  "trackingId": "RTJFKFRA2017073120170824$0_123456KARIN",
+  "trackingId": "RTJFKFRA2017073120170824$0_12345678",
   "schemaVersion": "0.0.1",
   "errorIdentifier": "UA.6",
   "errorMessage": "Invalid Farenet Travel Class [Business]",
