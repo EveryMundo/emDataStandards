@@ -59,6 +59,11 @@
         "description": "FareWire Tracking Parameter consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}{Endpoint name or id}_{random 8 number id}",
         "type": "string",
         "example": "em_fw=A3ATHSKGEUR41Facebook_12345678 "
+      },
+      "fai": {
+        "description": "Fare Alert Id consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}_{random 8 number id}",
+        "type": "string",
+        "example": "em_fai=A3ATHSKGEUR41_12345678 "
       }
     },
     "required": [],
