@@ -46,7 +46,7 @@
                     "type": "array",
                     "properties": {
                         "boundType": {
-                            "description": "OUTBOUND, INBOUND, MATRIX",
+                            "description": "OUTBOUND, INBOUND",
                             "type": "string",
                             "example": "OUTBOUND"
                         },
