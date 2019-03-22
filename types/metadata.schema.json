@@ -38,6 +38,11 @@
         "type": "string",
         "example": "em_fw=A3ATHSKGEUR41Facebook_12345678"
       },
+      "fareAlertId": {
+        "description": "Fare Alert Id",
+        "type": "string",
+        "example": "A3ATHSKGEUR41_12345678"
+      },
       "timestamp": {
         "description": "CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601",
         "type": "string",
