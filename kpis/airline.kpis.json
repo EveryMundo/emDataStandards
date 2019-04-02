@@ -15,6 +15,11 @@
         "type": "number",
         "example": 100.00
       },
+      "averageFare": {
+        "description": "Average of all fares collected from the Flight Results page.",
+        "type": "number",
+        "example": 100.00
+      },
       "bookings": {
         "description": "Bookings are counted whenever a user completes a flight reservation, also known as number of transactions.",
         "type": "number",
