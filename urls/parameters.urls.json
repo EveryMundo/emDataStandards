@@ -5,62 +5,62 @@
     "description": "Short URL Parameters",
     "type": "object",
     "properties": {
-      "o": {
+      "em_o": {
         "description": "Origin Airport IATA Code",
         "type": "string",
-        "example": "o=MIA"
+        "example": "em_o=MIA"
       },
-      "d": {
+      "em_d": {
         "description": "Destination Airport IATA Code",
         "type": "string",
-        "example": "d=NYC"
+        "example": "em_d=NYC"
       },
-      "pc": {
+      "em_pc": {
         "description": "Passenger Count is a number",
         "type": "string",
-        "example": "pc=1"
+        "example": "em_pc=1"
       },
-      "jt": {
+      "em_jt": {
         "description": "Journey Type should be OW, RT, MC",
         "type": "string",
-        "example": "jt=OW"
+        "example": "em_jt=OW"
       },
-      "dd": {
+      "em_dd": {
         "description": "Departure Date YYYY-MM-DD",
         "type": "string",
-        "example": "dd=2019-03-26"
+        "example": "em_dd=2019-03-26"
       },
-      "rd": {
+      "em_rd": {
         "description": "Return Date YYYY-MM-DD",
         "type": "string",
-        "example": "rd=2019-03-26"
+        "example": "em_rd=2019-03-26"
       },
-      "dc": {
+      "em_dc": {
         "description": "Discount Code",
         "type": "string",
-        "example": "dc=ATH12345"
+        "example": "em_dc=ATH12345"
       },
-      "fc": {
+      "em_fc": {
         "description": "Fare Class should be EC (Economy), FC (First Class), BC (Business Class)",
         "type": "string",
-        "example": "fc=EC"
+        "example": "em_fc=EC"
       },
-      "fd": {
+      "em_fd": {
         "description": "Flexible Dates should be t (true) or f (false)",
         "type": "string",
-        "example": "fd=f"
+        "example": "em_fd=f"
       },
-      "b": {
+      "em_b": {
         "description": "Maximum Budget",
         "type": "string",
-        "example": "b=300"
+        "example": "em_b=300"
       },
-      "fw": {
+      "em_fw": {
         "description": "FareWire Tracking Parameter consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}{Endpoint name or id}_{random 8 number id}",
         "type": "string",
         "example": "em_fw=A3ATHSKGEUR41Facebook_12345678 "
       },
-      "fai": {
+      "em_fai": {
         "description": "Fare Alert Id consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}_{random 8 number id}",
         "type": "string",
         "example": "em_fai=A3ATHSKGEUR41_12345678 "
