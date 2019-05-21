@@ -16,7 +16,7 @@
         "example": 100.00
       },
       "averageFare": {
-        "description": "Average of all fares collected from the Flight Results page.",
+        "description": "Average of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply.",
         "type": "number",
         "example": 100.00
       },
@@ -107,6 +107,11 @@
       },
       "revenue": {
         "description": "The total income associated with the transaction (flight bookings).",
+        "type": "number",
+        "example": 1000
+      },
+      "revenuePerImpression": {
+        "description": "Abbreviated: Rev/Impr. Total Revenue divided by number of Impressions shows how much revenue each impression brings.",
         "type": "number",
         "example": 1000
       }
