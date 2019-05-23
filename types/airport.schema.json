@@ -31,6 +31,21 @@
         "mia.com/image.jpg",
         "mia.com/image2.jpg"
       ]
+    },
+    "geoId": {
+      "description": "Unique location id",
+      "type": "string",
+      "example": "-5128581"
+    },
+    "defaultAirport": {
+      "description": "Airport chosen to display by default. Three-letter Iata Code",
+      "type": "string",
+      "example": "JFK"
+    },
+    "nearestAirport": {
+      "description": "Airport chosen to display by default. Three-letter Iata Code",
+      "type": "string",
+      "example": "JFK"
     }
   }}],
   "required": ["name", "iataCode"],
