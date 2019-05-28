@@ -265,7 +265,7 @@
                             }
                         },
                         "flightType": {
-                            "description": "flightType",
+                            "description": "DOMESTIC or INTERNATIONAL",
                             "type": "string",
                             "example": "DOMESTIC"
                         },
