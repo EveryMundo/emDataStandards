@@ -125,6 +125,11 @@
         "type": "number",
         "example": 3.86
       },
+      "revenueUSD": {
+        "description": "Total Revenue in USD",
+        "type": "number",
+        "example": 10000
+      },
       "rpm": {
         "description": "Revenue Passenger Miles (RPMs) is the basic measure of airline passenger traffic. It reflects how many of an airline's available seats were actually sold. For example, if 200 passengers fly 500 miles on a flight, this generates 100,000 RPMs.",
         "type": "number",
