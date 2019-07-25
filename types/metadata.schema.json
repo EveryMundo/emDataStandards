@@ -13,10 +13,15 @@
         "type": "string",
         "example": "EST"
       },
-      "emClientId": {
+      "emcid": {
         "description": "Used in product tracking to identify user interactions across modules",
         "type": "string",
         "example": "123456"
+      },
+      "emtid": {
+        "description": "Same as trackingId. Unique identifier created through module interactions for event tracking",
+        "type": "string",
+        "example": "RTJFKFRA2017073120170824$0_12345678"
       },
       "farenetId": {
         "description": "API specific field for back-reference: Farenet record unique identifier",
