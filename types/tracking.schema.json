@@ -21,7 +21,7 @@
       "example": "RT"
     },
     "date": {
-      "description": "{Outbound date},{Inbound date}, e.g. 20180412,20180420, 20190101",
+      "description": "{Outbound date},{Inbound date}, e.g. 20180412,20180420",
       "type": "string",
       "example": "20180518,20180522"
     },
