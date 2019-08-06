@@ -5,40 +5,35 @@
     "description": "Short URL Parameters",
     "type": "object",
     "properties": {
-      "em_o": {
-        "description": "Origin Airport IATA Code",
+      "em_b": {
+        "description": "Maximum Budget",
         "type": "string",
-        "example": "em_o=MIA"
+        "example": "em_b=300"
       },
       "em_d": {
         "description": "Destination Airport IATA Code",
         "type": "string",
         "example": "em_d=NYC"
       },
-      "em_pc": {
-        "description": "Passenger Count is a number",
+      "em_dc": {
+        "description": "Discount Code",
         "type": "string",
-        "example": "em_pc=1"
-      },
-      "em_jt": {
-        "description": "Journey Type should be OW, RT, MC",
-        "type": "string",
-        "example": "em_jt=OW"
+        "example": "em_dc=ATH12345"
       },
       "em_dd": {
         "description": "Departure Date YYYY-MM-DD",
         "type": "string",
         "example": "em_dd=2019-03-26"
       },
-      "em_rd": {
-        "description": "Return Date YYYY-MM-DD",
+      "em_dse": {
+        "description": "Deeplink site edition",
         "type": "string",
-        "example": "em_rd=2019-03-26"
+        "example": "em_dse=en-HK"
       },
-      "em_dc": {
-        "description": "Discount Code",
+      "em_fai": {
+        "description": "Fare Alert Id consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}_{random 8 number id}",
         "type": "string",
-        "example": "em_dc=ATH12345"
+        "example": "em_fai=A3ATHSKGEUR41_12345678 "
       },
       "em_fc": {
         "description": "Fare Class should be EC (Economy), FC (First Class), BC (Business Class)",
@@ -50,20 +45,35 @@
         "type": "string",
         "example": "em_fd=f"
       },
-      "em_b": {
-        "description": "Maximum Budget",
-        "type": "string",
-        "example": "em_b=300"
-      },
       "em_fw": {
         "description": "FareWire Tracking Parameter consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}{Endpoint name or id}_{random 8 number id}",
         "type": "string",
         "example": "em_fw=A3ATHSKGEUR41Facebook_12345678 "
       },
-      "em_fai": {
-        "description": "Fare Alert Id consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}_{random 8 number id}",
+      "em_jt": {
+        "description": "Journey Type should be OW, RT, MC",
         "type": "string",
-        "example": "em_fai=A3ATHSKGEUR41_12345678 "
+        "example": "em_jt=OW"
+      },
+      "em_m": {
+        "description": "Miles",
+        "type": "string",
+        "example": "em_m=true"
+      },
+      "em_o": {
+        "description": "Origin Airport IATA Code",
+        "type": "string",
+        "example": "em_o=MIA"
+      },
+      "em_pc": {
+        "description": "Passenger Count is a number",
+        "type": "string",
+        "example": "em_pc=1"
+      },
+      "em_rd": {
+        "description": "Return Date YYYY-MM-DD",
+        "type": "string",
+        "example": "em_rd=2019-03-26"
       }
     },
     "required": [],
