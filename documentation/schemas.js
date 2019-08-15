@@ -26,7 +26,6 @@ export default fromJS([
   require('../types/discount.schema.json'),
   require('../types/error.schema.json'),
   require('../types/extraInfo.schema.json'),
-  require('../types/fareNet3.0.schema.json'),
   require('../types/fareTensor.schema.json'),
   require('../types/flexibleDate.schema.json'),
   require('../types/flight.schema.json'),
@@ -54,7 +53,6 @@ export default fromJS([
   require('../types/state.schema.json'),
   require('../types/theme.schema.json'),
   require('../types/timeLimits.schema.json'),
-  require('../types/tracking.schema.json'),
   require('../dataLayer/farenet.datalayer.json'),
   require('../kpis/airline.kpis.json'),
 ]);
