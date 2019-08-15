@@ -39,7 +39,7 @@ https://everymundo.github.io/emDataStandards/documentation/build/
 **Note:** The following command assumes that you have committed already all your changes in master. For Windows, run the command in git bash.
 
 ```bash
-bash documentation/publish-gh-pages.sh
+bash ./publish-gh-pages.sh
 ```
 
 ### Field Naming Convention
