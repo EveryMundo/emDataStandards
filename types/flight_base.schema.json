@@ -78,6 +78,11 @@
         "type": "string",
         "example": "CONNECTING"
       },
+      "isCodeshare": {
+        "description": "isCodeshare",
+        "type": "boolean",
+        "example": true
+      },
       "discount": {
         "$ref": "./discount.schema.json"
       },
