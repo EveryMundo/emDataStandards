@@ -64,7 +64,7 @@
     }
   }
   }],
-  "required": ["boundType", "route", "priceSpecification", "fareClassInput", "fareClass", "departureAirportIataCode", "arrivalAirportIataCode", "departureDate", "estimatedDuration", "availableSeatsCount", "legs", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "routeType", "discount"],
+  "required": ["boundType", "route", "priceSpecification", "fareClassInput", "fareClass", "departureAirportIataCode", "arrivalAirportIataCode", "departureDate", "estimatedDuration", "availableSeatsCount", "legs", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "discount"],
   "links": [
     {
       "title": "Flight",
