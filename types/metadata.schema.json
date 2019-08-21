@@ -4,28 +4,10 @@
     "title": "Metadata",
     "description": "Metadata",
     "type": "object",
+    "allOf": [
+      {"$ref": "./metadata_base.schema.json"},
+    {
     "properties": {
-      "app": {
-        "description": "App",
-        "type": "object",
-        "properties": {
-            "name": {
-                "description": "Farenet | GoogleITA UA Client",
-                "type":"string",
-                "example": "Farenet | GoogleITA UA Client"
-            },
-            "version": {
-                "description": "Version of the program that generated the record",
-                "type":"string",
-                "example": "2.1.0"
-            },
-            "datasource": {
-                "description": "IBE_FLIGHT_SELECTION, IBE_CONFIRMATION, IBE_PASSENGER_INFO, IBE_CHECK, IBE_EXTRAS, IBE_SEATS_SELECTION, IBE_PAYMENT",
-                "type":"string",
-                "example": "IBE_FLIGHT_SELECTION"   
-            }
-        }
-      },
       "timeZone": {
         "description": "Timezone of record creation",
         "type": "string",
@@ -35,16 +17,6 @@
         "description": "API specific field for back-reference: Farenet record unique identifier",
         "type": "string",
         "example": "bcxtwjjyxgshxx4rvgqm9"
-      },
-      "trackingId": {
-        "description": "Unique identifier created through module interactions for event tracking",
-        "type": "string",
-        "example": "RTJFKFRA2017073120170824$0_123456KARIN"
-      },
-      "schemaVersion": {
-        "description": "Schema version of Data Standards",
-        "type": "number",
-        "example": "0.0.1"
       },
       "batchId": {
         "description": "Unique batch identifier",
@@ -56,12 +28,22 @@
         "type": "string",
         "example": "CopaNonbrand1"
       },
+      "farewireId": {
+        "description": "FareWire Tracking Id",
+        "type": "string",
+        "example": "em_fw=A3ATHSKGEUR41Facebook_12345678"
+      },
+      "fareAlertId": {
+        "description": "Fare Alert Id",
+        "type": "string",
+        "example": "A3ATHSKGEUR41_12345678"
+      },
       "timestamp": {
         "description": "CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601",
         "type": "string",
         "example": "2027-03-04T06:35:00-08:00"
       }
-    },
+    }}],
     "required": ["app", "schemaVersion"],
     "links": [
       {

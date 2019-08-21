@@ -1,0 +1,42 @@
+{
+    "id": "/priceSpecification_base",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "PriceSpecification",
+    "description": "PriceSpecification",
+    "type": "object",
+    "properties": {
+      "priceBeforeTaxesAndFees": {
+        "description": "Price for the reservation or ticket",
+        "type": "number",
+        "example": 234.21
+      },
+      "totalPrice": {
+        "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 250.6
+      },
+      "taxAmount": {
+        "description": "The amount paid in taxes",
+        "type": "number",
+        "example": 16.39
+      },
+      "isSoldOut": {
+        "description": "Whether fare is sold out - if isSoldOut=true, fare = NULL",
+        "type": "boolean",
+        "example": false
+      }
+    },
+    "required": ["totalPrice", "currencyCode"],
+    "links": [
+      {
+        "title": "PriceSpecification",
+        "description": "PriceSpecification",
+        "rel": "self",
+        "href": "/priceSpecification_base",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }

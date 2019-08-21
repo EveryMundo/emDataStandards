@@ -5,13 +5,28 @@
   "description": "Campaign",
   "type": "object",
   "properties": {
-    "name": {
-      "description": "Campaign Name",
+    "campaignName": {
+      "description": "SEM campaign name",
       "type": "string",
-      "example": "airTRFX"
+      "example": "GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]"
+    },
+    "campaignId": {
+      "description": "Adwords campaign unique identifier",
+      "type": "number",
+      "example": "23232323"
+    },
+    "campaignType": {
+      "description": "Adwords campaign type NonBrand, Brand, Hybrid",
+      "type": "string",
+      "example": "NonBrand"
+    },
+    "searchEngine": {
+      "description": "GOOGLE, BING, YANDEX, YAHOO, BAIDU, NAVER, YAHOO JAPAN",
+      "type": "string",
+      "example": "GOOGLE"
     }
   },
-  "required": [],
+  "required": ["campaignName","campaignId"],
   "links": [
     {
       "title": "Campaign",

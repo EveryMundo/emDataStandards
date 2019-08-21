@@ -2,11 +2,8 @@
     "user": {
         "id": "123456789"
     },
-    "campaign": {
+    "product": {
         "name": "airTRFX"
-    },
-    "priceSpecification": {
-        "currencyCode": "USD"
     },
     "page": {
         "author": "EveryMundo",
@@ -25,8 +22,9 @@
         "countryIsoCode": "US",
         "siteEdition": "en-US",
         "webDesign": "RESPONSIVE",
-        "dateCreated": "2017-01-12",
-        "accessibility": true
+        "dateCreated": "YYYY-MM-DD",
+        "accessibility": true,
+        "countryCurrencyCode": "USD"
     },
     "originCity": {
         "name": "Miami",
@@ -42,8 +40,8 @@
 
     },
     "destinationCountry": {
-        "name": "United States",
-        "isoCode": "US"
+        "name": "Germany",
+        "isoCode": "DE"
     },
     "originAirport": {
         "iataCode": "MIA"
@@ -54,9 +52,7 @@
     },
     "device": {
         "category": "DESKTOP",
-        "viewportSize": "SMALL",
-        "appVersion": ""
-
+        "viewportSize": "SMALL"
     },
     "extraInfo": {
         "timestamp": "2027-03-04T06:35:00-08:00",

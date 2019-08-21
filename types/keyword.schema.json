@@ -1,0 +1,37 @@
+{
+  "id": "/keyword",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "keyword",
+  "description": "keyword",
+  "type": "object",
+  "properties": {
+    "keywordGroup": {
+    "description": "Adwords keyword group",
+    "type": "string",
+    "example": "General"
+    },
+    "keywordType": {
+      "description": "Adwords keyword type",
+      "type": "string",
+      "example": "Route"
+    },
+    "matchType": {
+      "description": "Adwords keyword match type",
+      "type": "string",
+      "example": "BM"
+    }
+  },
+  "required": ["id","name"],
+  "links": [
+    {
+      "title": "keyword",
+      "description": "keyword",
+      "rel": "self",
+      "href": "/keyword",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

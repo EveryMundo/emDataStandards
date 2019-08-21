@@ -1,0 +1,106 @@
+{
+  "id": "/flight_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Flight",
+  "description": "Flight",
+  "type": "object",
+  "properties": {
+      "boundType": {
+        "description": "Bound type can be INBOUND or OUTBOUND",
+        "type": "string",
+        "example": "OUTBOUND"
+      },
+      "route": {
+        "description": "route",
+        "type": "string",
+        "example": "SFO>JFK"
+      },
+      "priceSpecification": {
+        "$ref": "./priceSpecification_base.schema.json"
+      },
+      "fareClassInput": {
+        "description": "Name of the fare class given by airline in sentence case, e.g. Economy Basic",
+        "type": "string",
+        "example": "Economy Basic"
+      },
+      "fareClass": {
+        "description": "fareClass mapped to either 'ECONOMY', 'BUSINESS' or 'FIRST' class",
+        "type": "string",
+        "example": "ECONOMY"
+      },
+      "departureAirportIataCode": {
+        "description": "departureAirportIataCode",
+        "type": "string",
+        "example": "SFO"
+      },
+      "arrivalAirportIataCode": {
+        "description": "arrivalAirportIataCode",
+        "type": "string",
+        "example": "JFK"
+      },
+      "departureDate": {
+        "description": "Departure Date",
+        "type": "string",
+        "example": "2017-12-07"
+      },
+      "estimatedDuration": {
+        "description": "Estimated Duration of the flight",
+        "type": "string",
+        "example": "PT9H45M"
+      },
+      "availableSeatsCount": {
+        "description": "Number of available Seats",
+        "type": "string",
+        "example": "9+"
+      },
+      "legs": {
+        "$ref": "./legs_base.schema.json"
+      },
+      "departureCity": {
+        "$ref": "./departureCity_base.schema.json"
+      },
+      "departureCountry": {
+        "$ref": "./country_base.schema.json"
+      },
+      "arrivalCity": {
+        "$ref": "./arrivalCity_base.schema.json"
+      },
+      "arrivalCountry": {
+        "$ref": "./country_base.schema.json"
+      },
+      "flightType": {
+        "description": "flightType",
+        "type": "string",
+        "example": "DOMESTIC"
+      },
+      "routeType": {
+        "description": "NONSTOP, DIRECT (plane may stop but people do not get off) or CONNECTING depending on the number of stops",
+        "type": "string",
+        "example": "CONNECTING"
+      },
+      "isCodeshare": {
+        "description": "isCodeshare",
+        "type": "boolean",
+        "example": true
+      },
+      "discount": {
+        "$ref": "./discount.schema.json"
+      },
+      "additionalInfo": {
+        "$ref": "./additionalInfo.schema.json"
+      }
+  },
+  "required": ["boundType", "route", "priceSpecification", "fareClassInput", "fareClass", "departureAirportIataCode", "arrivalAirportIataCode", "departureDate", "estimatedDuration", "availableSeatsCount", "legs", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "routeType", "discount"],
+  "links": [
+    {
+      "title": "Flight",
+      "description": "Flight",
+      "rel": "self",
+      "href": "/flight_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

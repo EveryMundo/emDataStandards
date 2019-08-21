@@ -1,0 +1,32 @@
+{
+  "id": "/airline_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Airline",
+  "description": "Airline",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Full name of airline, capitalise each word keeping the space",
+      "type": "string",
+      "example": "Everymundo Airlines"
+    },
+    "iataCode": {
+      "description": "IATA identifier for the airline",
+      "type": "string",
+      "example": "EM"
+    }
+  },
+  "required": ["name", "iataCode"],
+  "links": [
+    {
+      "title": "Airline",
+      "description": "Airline",
+      "rel": "self",
+      "href": "/airline_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

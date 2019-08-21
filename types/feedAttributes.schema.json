@@ -1,0 +1,37 @@
+{
+  "id": "/feedAttributes",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Feed Attributes",
+  "description": "Feed Attributes",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier at feed level.",
+      "type": "number",
+      "example": "5235467"
+    },
+    "name": {
+      "description": "Feed Attribute name",
+      "type": "string",
+      "example": "Origin"
+    },
+    "type": {
+      "description": "Data type",
+      "type": "string",
+      "example": "FLOAT"
+    }
+  },
+  "required": ["id", "name", "type"],
+  "links": [
+    {
+      "title": "Feed Attributes",
+      "description": "Feed Attributes",
+      "rel": "self",
+      "href": "/feedAttributes",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

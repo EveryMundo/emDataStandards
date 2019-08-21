@@ -6,18 +6,7 @@
   "type": "object",
   "properties": {
     "provider": {
-      "description": "Car rental provider",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "Organization",
-        "name": "Hertz"
-      }
+      "$ref": "./provider.schema.json"
     },
     "reservationId": {
       "description": "Unique identifier for the reservation",
@@ -45,15 +34,9 @@
       "properties": {
         "name": {
           "description": "Any name for the location",
-          "type": "string"
+          "type": "string",
+          "example": "Hertz San Diego Airport"
         },
-        "address": {
-          "$ref": "./address.schema.json"
-        }
-      },
-      "example": {
-        "@type": "Place",
-        "name": "Hertz San Diego Airport",
         "address": {
           "$ref": "./address.schema.json"
         }

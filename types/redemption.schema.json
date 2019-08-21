@@ -4,36 +4,32 @@
   "title": "Redemption",
   "description": "Redemption",
   "type": "object",
+  "allOf": [
+    {"$ref": "./redemption_base.schema.json"},
+  {
   "properties": {
-    "unit": {
-      "description": "MILES, BITCOIN, POINTS, OTHER",
-      "type": "string",
-      "example": "miles"
-    },
-    "amount": {
-      "description": "Amount of redemption units",
-      "type": "number",
-      "example": 1500
-    },
     "conversion": {
       "description": "Redemption amount/unit equivalents",
       "type": "object",
       "properties": {
-        "amount": {
-          "description": "amount",
-          "type": "number"
+        "unit": {
+          "description": "MILES, BITCOIN, POINTS, CURRENCY, OTHER",
+          "type": "string",
+          "example": "CURRENCY"
         },
         "ratio": {
-          "description": "ratio",
-          "type": "number"
+          "description": "conversion ratio",
+          "type": "number",
+          "example": 0.5
+        },
+        "amount": {
+          "description": "amount",
+          "type": "number",
+          "example": 750
         }
-      },
-      "example": {
-        "amount": 1500,
-        "ratio": 0.5
       }
     }
-  },
+  }}],
   "required": ["unit", "amount"],
   "links": [
     {

@@ -1,0 +1,47 @@
+{
+  "id": "/cms",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "CMS",
+  "description": "CMS",
+  "type": "object",
+  "properties": {
+    "userType": {
+        "description": "ADMIN",
+        "type": "string",
+        "example": "ADMIN"
+    },
+    "provider": {
+        "description": "Client",
+        "type": "string",
+        "example": "Finnair"
+    },
+    "languageIsoCode": {
+        "description": "Language",
+        "type": "string",
+        "example": "en"
+    },
+    "section": {
+        "description": "Main menu names",
+        "type": "string",
+        "example": "Pages   "
+    },
+    "subSection": {
+        "description": "Sub-menu names",
+        "type": "string",
+        "example": "Custom Pages"
+    }
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "CMS",
+      "description": "CMS",
+      "rel": "self",
+      "href": "/cms",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

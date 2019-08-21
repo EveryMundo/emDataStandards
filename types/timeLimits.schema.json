@@ -1,7 +1,7 @@
 {
   "id": "/timeLimits",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "/timeLimits",
+  "title": "Time Limits",
   "description": "Offer-level time limits",
   "type": "object",
   "properties": {

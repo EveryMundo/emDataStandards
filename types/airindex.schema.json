@@ -10,12 +10,12 @@
       "type": "string",
       "example": "EM"
     },
-    "originAirportCode": {
+    "originAirportIataCode": {
       "description": "Origin Airport Code",
       "type": "string",
       "example": "ACA"
     },
-    "destinationAirportCode": {
+    "destinationAirportIataCode": {
       "description": "Destination Airport Code",
       "type": "string",
       "example": "AGU"
@@ -95,8 +95,8 @@
                "medianPriceShort","searchRateLong","priceIndex","searchIndex","fromDate","toDate"],
   "links": [
     {
-      "title": "Airline",
-      "description": "Airline",
+      "title": "airIndex",
+      "description": "airIndex",
       "rel": "self",
       "href": "/airindex",
       "method": "GET",

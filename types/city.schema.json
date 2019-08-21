@@ -4,40 +4,25 @@
   "title": "City",
   "description": "City",
   "type": "object",
+  "allOf": [
+    {"$ref": "./city_base.schema.json"},
+  {
   "properties": {
-    "name": {
-      "description": "The name of the city",
-      "type": "string",
-      "example": "Miami"
-    },
-    "cityCode": {
-      "description": "ISO code for the city",
-      "type": "string",
-      "example": "MIA"
-    },
     "geo": {
       "description": "geo",
       "type": "object",
       "properties": {
         "latitude": {
           "description": "The latitude of the city",
-          "type": "number"
+          "type": "number",
+          "example": 37.42
         },
         "longitude": {
           "description": "The longitude of the city",
-          "type": "number"
+          "type": "number",
+          "example": -108.32
         }
-      },
-      "example": {
-        "@type": "Geocoordinates",
-        "latitude": 37.42,
-        "longitude": -108.32
       }
-    },
-    "image": {
-      "description": "Image URL for the city",
-      "type": "string",
-      "example": "miami.com/image.jpg"
     },
     "images": {
       "description": "Array of image URLs for the city",
@@ -47,7 +32,7 @@
         "miami.com/image2.jpg"
       ]
     }
-  },
+  }}],
   "required": ["name", "cityCode"],
   "links": [
     {

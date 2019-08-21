@@ -5,6 +5,11 @@
   "description": "Hotel",
   "type": "object",
   "properties": {
+    "hotelId": {
+      "description": "Hotel identifier",
+      "type": "string",
+      "example": "Hotel123456789Kat"
+    },
     "name": {
       "description": "Hotel name",
       "type": "string",
@@ -15,70 +20,35 @@
       "type": "string",
       "example": "IHG"
     },
+    "subGroup": {
+      "description": "Hotel subGroup where hotels are under the same management and belong to the same brand of hotels.",
+      "type": "string",
+      "example": "ABC"
+    },
     "cityCode": {
       "description": "ISO code for the city",
       "type": "string",
       "example": "SAN"
     },
     "priceSpecification": {
-      "$ref": "./priceSpecification.schema.json"
+      "allOf": [
+        {"$ref": "./priceSpecification_base.schema.json"},      
+      {
+        "properties": {
+          "priceOffers": {
+            "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
+            "type": "string",
+            "example": "JOURNEY"
+          }
+        }
+      }
+      ]
     },
     "guest": {
-      "description": "guest",
-      "type": "object",
-      "properties": {
-        "count": {
-          "description": "count",
-          "type": "number"
-        },
-        "adultCount": {
-          "description": "adultCount",
-          "type": "number"
-        },
-        "childCount": {
-          "description": "childCount",
-          "type": "number"
-        }
-      },
-      "example": {
-        "count": 4,
-        "adultCount": 2,
-        "childCount": 2
-      }
+      "$ref": "./guest.schema.json"
     },
     "address": {
-      "description": "Where the hotel is located",
-      "type": "object",
-      "properties": {
-        "street": {
-          "description": "street",
-          "type": "string"
-        },
-        "cityName": {
-          "description": "cityName",
-          "type": "string"
-        },
-        "regionCode": {
-          "description": "regionCode",
-          "type": "string"
-        },
-        "postalCode": {
-          "description": "postalCode",
-          "type": "string"
-        },
-        "countryCode": {
-          "description": "countryCode",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "PostalAddress",
-        "street": "1500 Orange Avenue",
-        "cityName": "San Diego",
-        "regionCode": "CA",
-        "postalCode": "94043",
-        "countryCode": "US"
-      }
+      "$ref": "./address.schema.json"
     },
     "checkinTime": {
       "description": "The earliest someone may check into a lodging establishment",
@@ -100,44 +70,8 @@
       "type": "string",
       "example": "5"
     },
-    "aggregateRating": {
-      "description": "Rating of hotel",
-      "type": "object",
-      "properties": {
-        "author": {
-          "description": "author",
-          "type": "string"
-        },
-        "bestRating": {
-          "description": "bestRating",
-          "type": "number"
-        },
-        "ratingValue": {
-          "description": "ratingValue",
-          "type": "number"
-        },
-        "worstRating": {
-          "description": "worstRating",
-          "type": "number"
-        },
-        "ratingCount": {
-          "description": "ratingCount",
-          "type": "number"
-        }
-      },
-      "example": {
-        "@type": "Rating",
-        "author": "Tripadvisor",
-        "bestRating": 5,
-        "ratingValue": 3,
-        "worstRating": 1,
-        "ratingCount": 11
-      }
-    },
-    "image": {
-      "description": "Image URL for the hotel",
-      "type": "string",
-      "example": "everymundo.com/image.jpg"
+    "aggregatedRating": {
+      "$ref": "./aggregatedRating.schema.json"
     },
     "images": {
       "description": "Image URLs for the hotel",
@@ -146,6 +80,11 @@
         "everymundo.com/image.jpg",
         "everymundo.com/image2.jpg"
       ]
+    },
+    "amenities": {
+      "description": "Amenities",
+      "type": "array",
+      "example": ["Golf", "Pool"]
     }
   },
   "required": ["name", "cityCode"],

@@ -74,95 +74,41 @@
       ]
     },
     "dateLimit": {
-      "description": "dateLimit",
-      "type": "object",
-      "properties": {
-        "earliestDate": {
-          "description": "earliestDate",
-          "type": "string"
-        },
-        "latestDate": {
-          "description": "latestDate",
-          "type": "string"
-        }
-      },
-      "example": {
-        "earliestDate": "2017-01-12",
-        "latestDate": "2017-01-25"
-      }
+      "$ref": "./dateLimit.schema.json"
     },
     "departureDateLimit": {
-      "description": "departureDateLimit",
-      "type": "object",
-      "properties": {
-        "earliestDate": {
-          "description": "earliestDate",
-          "type": "string"
-        },
-        "latestDate": {
-          "description": "latestDate",
-          "type": "string"
-        }
-      },
-      "example": {
-        "earliestDate": "2017-01-12",
-        "latestDate": "2017-01-25"
-      }
+      "$ref": "./dateLimit.schema.json"
     },
     "returnDateLimit": {
-      "description": "returnDateLimit",
-      "type": "object",
-      "properties": {
-        "earliestDate": {
-          "description": "earliestDate",
-          "type": "string"
-        },
-        "latestDate": {
-          "description": "latestDate",
-          "type": "string"
-        }
-      },
-      "example": {
-        "earliestDate": "2017-02-01",
-        "latestDate": "2017-02-15"
-      }
+      "$ref": "./dateLimit.schema.json"
     },
     "priceSpecification": {
       "description": "priceSpecification",
       "type": "object",
       "properties": {
-        "currency": {
+        "currencyCode": {
           "description": "currency",
-          "type": "string"
+          "type": "string",
+          "example": "USD"
         },
-        "budgetMinimumAmount": {
-          "description": "budgetMinimumAmount",
-          "type": "number"
-        },
-        "budgetMaximumAmount": {
-          "description": "budgetMaximumAmount",
-          "type": "number"
+        "budget": {
+          "$ref": "./budget.schema.json"
         },
         "decimalDigitsNumber": {
           "description": "decimalDigitsNumber",
-          "type": "number"
+          "type": "number",
+          "example": 2
         },
         "priceDecimalSeparator": {
           "description": "priceDecimalSeparator",
-          "type": "string"
+          "type": "string",
+          "example": "."
         },
         "priceThousandSeparator": {
           "description": "priceThousandSeparator",
-          "type": "string"
+          "type": "string",
+          "example": ","
         }
-      },
-      "example": {
-        "currency": "USD",
-        "budgetMinimumAmount": 128,
-        "budgetMaximumAmount": 235,
-        "decimalDigitsNumber": 2,
-        "priceDecimalSeparator": ".",
-        "priceThousandSeparator": ","
       }
     },
     "journeyTypes": {

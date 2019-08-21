@@ -27,6 +27,10 @@ The NDC Standard enhances the capability of communications between airlines and 
 
 ## How to get started
 
+### Complete the emDataStandards course
+It takes max. 1h to complete the course and teaches the basics of the data standards, which are also described below.
+https://everymundo-university.teachable.com/p/emdatastandards
+
 ### Documentation 
 https://everymundo.github.io/emDataStandards/documentation/build/
 
@@ -35,7 +39,7 @@ https://everymundo.github.io/emDataStandards/documentation/build/
 **Note:** The following command assumes that you have committed already all your changes in master. For Windows, run the command in git bash.
 
 ```bash
-bash documentation/publish-gh-pages.sh
+bash ./publish-gh-pages.sh
 ```
 
 ### Field Naming Convention

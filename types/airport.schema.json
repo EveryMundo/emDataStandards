@@ -4,40 +4,25 @@
   "title": "Airport",
   "description": "Airport",
   "type": "object",
+  "allOf": [
+    {"$ref": "./airport_base.schema.json"},
+  {
   "properties": {
-    "name": {
-      "description": "The name of the airport",
-      "type": "string",
-      "example": "Miami International Airport"
-    },
-    "iataCode": {
-      "description": "IATA identifier for the airport",
-      "type": "string",
-      "example": "MIA"
-    },
     "geo": {
       "description": "geo",
       "type": "object",
       "properties": {
         "latitude": {
           "description": "The latitude of the  airport",
-          "type": "number"
+          "type": "number",
+          "example": 37.42
         },
         "longitude": {
           "description": "The longitude of the airport",
-          "type": "number"
+          "type": "number",
+          "example": -108.32
         }
-      },
-      "example": {
-        "@type": "Geocoordinates",
-        "latitude": 37.42,
-        "longitude": -108.32
       }
-    },
-    "image": {
-      "description": "Image URL for the airport",
-      "type": "string",
-      "example": "mia.com/image.jpg"
     },
     "images": {
       "description": "Array of image URLs for the airport",
@@ -46,8 +31,23 @@
         "mia.com/image.jpg",
         "mia.com/image2.jpg"
       ]
+    },
+    "geoId": {
+      "description": "Unique location id",
+      "type": "string",
+      "example": "-5128581"
+    },
+    "defaultAirport": {
+      "description": "Airport chosen to display by default. Three-letter Iata Code",
+      "type": "string",
+      "example": "JFK"
+    },
+    "nearestAirport": {
+      "description": "Airport chosen to display by default. Three-letter Iata Code",
+      "type": "string",
+      "example": "JFK"
     }
-  },
+  }}],
   "required": ["name", "iataCode"],
   "links": [
     {

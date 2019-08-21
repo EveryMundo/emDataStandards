@@ -1,0 +1,32 @@
+{
+  "id": "/country_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Country",
+  "description": "Country",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the country",
+      "type": "string",
+      "example": "United States"
+    },
+    "isoCode": {
+      "description": "The country code (in 2 letter codes from ISO 3166-1)",
+      "type": "string",
+      "example": "US"
+    }
+  },
+  "required": ["name", "isoCode"],
+  "links": [
+    {
+      "title": "Country",
+      "description": "Country",
+      "rel": "self",
+      "href": "/country_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
