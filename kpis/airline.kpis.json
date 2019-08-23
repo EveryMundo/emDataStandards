@@ -30,6 +30,11 @@
         "type": "number",
         "example": 1000
       },
+      "cos": {
+        "description": "Cost of Sales (CoS) is Cost divided by Revenue",
+        "type": "number",
+        "example": 0.5
+      },
       "ctr": {
         "description": "Click-through rate (CTR) is the number of clicks divided by impressions.",
         "type": "number",
@@ -129,6 +134,11 @@
         "description": "Total Revenue in USD",
         "type": "number",
         "example": 10000
+      },
+      "roi": {
+        "description": "Return on Investment (ROI) is revenue divided by cost",
+        "type": "number",
+        "example": 87.1
       },
       "rpm": {
         "description": "Revenue Passenger Miles (RPMs) is the basic measure of airline passenger traffic. It reflects how many of an airline's available seats were actually sold. For example, if 200 passengers fly 500 miles on a flight, this generates 100,000 RPMs.",
