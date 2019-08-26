@@ -60,6 +60,11 @@
       "type": "string",
       "example": "2017-08-06T20:00:00-07:00"
     },
+    "nightCount": {
+      "description": "Number of nights the guest is staying at the hotel",
+      "type": "number",
+      "example": 4
+    },
     "roomCount": {
       "description": "Number of rooms",
       "type": "number",
