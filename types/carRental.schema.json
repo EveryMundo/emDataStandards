@@ -1,8 +1,8 @@
 {
-  "id": "/autoRental",
+  "id": "/car",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "AutoRental",
-  "description": "AutoRental",
+  "title": "Car",
+  "description": "Car",
   "type": "object",
   "properties": {
     "provider": {
@@ -75,10 +75,10 @@
   "required": ["provider"],
   "links": [
     {
-      "title": "AutoRental",
-      "description": "AutoRental details",
+      "title": "Car",
+      "description": "Car details",
       "rel": "self",
-      "href": "/autoRental",
+      "href": "/car",
       "method": "GET",
       "targetSchema": {
         "rel": "self"
