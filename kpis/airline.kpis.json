@@ -36,7 +36,7 @@
         "example": 0.5
       },
       "ctr": {
-        "description": "Click-through rate (CTR) is the number of clicks divided by impressions.",
+        "description": "Click-through rate (CTR) is the number of clicks divided by impressions. For airModule tracking more specifically: Click-through rate (CTR) is the number of clicks on the call-to-action button divided by viewable impressions.",
         "type": "number",
         "example": 1000
       },
@@ -61,12 +61,22 @@
         "example": 1000
       },
       "fsiRate": {
-        "description": "The percentage of flight search initiations after viewing a module",
+        "description": "The percentage of flight search initiations after viewing an airModule.",
         "type": "number",
         "example": 0.5
       },
       "imprAssistedConvRate": {
         "description": "The percentage of flight bookings after viewing a module",
+        "type": "number",
+        "example": 0.5
+      },
+      "interactions": {
+        "description": "Number of clicks on fare visualizations or search modules",
+        "type": "number",
+        "example": 100
+      },
+      "interactionRate": {
+        "description": "Number of clicks on fare visualizations or search modules divided by Viewable Impressions",
         "type": "number",
         "example": 0.5
       },
@@ -165,13 +175,8 @@
         "type": "number",
         "example": 1000
       },
-      "userInteractions": {
-        "description": "Number of clicks on fare visualizations or search modules",
-        "type": "number",
-        "example": 0.5
-      },
       "viewableImpressions": {
-        "description": "Number of module views where the user has seen at least 50% of a fare visualization or search module for one continuous second",
+        "description": "Number of views where the user has seen at least 50% of the module for one continuous second",
         "type": "number",
         "example": 10000
       }
