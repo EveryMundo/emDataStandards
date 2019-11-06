@@ -71,12 +71,12 @@
         "example": 0.5
       },
       "interactions": {
-        "description": "Number of clicks on fare visualizations or search modules",
+        "description": "Number of clicks on airModules. This includes filter selections, button clicks, tab changes, toggle interactions, arrow clicks, link clicks, sort selections, slider interactions, filter resets and open-booking-popup depending on the airModule.",
         "type": "number",
         "example": 100
       },
       "interactionRate": {
-        "description": "Number of clicks on fare visualizations or search modules divided by Viewable Impressions",
+        "description": "Number of clicks on airModules divided by Viewable Impressions",
         "type": "number",
         "example": 0.5
       },
@@ -176,7 +176,7 @@
         "example": 1000
       },
       "viewableImpressions": {
-        "description": "Number of views where the user has seen at least 50% of the module for one continuous second",
+        "description": "Number of views where the user has seen at least 50% of the airModule for one continuous second.",
         "type": "number",
         "example": 10000
       }
