@@ -8,7 +8,7 @@
     "environment": {
       "description": "DEVELOPMENT, PREPRODUCTION, PRODUCTION",
       "type": "string",
-      "example": "Production"
+      "example": "PRODUCTION"
     },
     "indexStatus": {
       "description": "INDEX, FOLLOWNOINDEX, NOFOLLOW",
