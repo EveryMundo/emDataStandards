@@ -5,6 +5,26 @@
   "description": "Error",
   "type": "object",
   "properties": {
+    "airlineIataCode": {
+      "description": "IATA identifier for the airline",
+      "type": "string",
+      "example": "EM"
+    },
+    "airModule": {
+      "description": "airModule Name",
+      "type": "string",
+      "example": "booking-mask"
+    },
+    "deviceCategory": {
+      "description": "MOBILE, TABLET, DESKTOP",
+      "type": "string",
+      "example": "MOBILE"
+    },
+    "environment": {
+      "description": "DEVELOPMENT, PREPRODUCTION, PRODUCTION",
+      "type": "string",
+      "example": "PRODUCTION"
+    },
     "identifier": {
       "description": "Identifier for defined errors",
       "type": "string",
@@ -14,6 +34,16 @@
       "description": "Error message corresponding to identifier",
       "type": "string",
       "example": "Conflicting arrival date"
+    },
+    "pageTypeCode": {
+      "description": "Page Type Code: HP, CICO, FCI, TCI, CICI, COCI, COCO, FCO, TCO, EXT, CP, 404, SM, BS, IS",
+      "type": "string",
+      "example": "CICI"
+    },
+    "url": {
+      "description": "Full url in lowercase (without query parameters to avoid collecting personal data by mistake)",
+      "type": "string",
+      "example": "https://flights.everymundo.com/en/flights-from-miami-to-berlin"
     }
   },
   "required": ["message"],
