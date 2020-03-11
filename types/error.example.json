@@ -1,5 +1,14 @@
 {
   "@type": "Error",
-  "identifier": "1",
-  "message": "Conflicting arrival date"
+  "airline": "Spirit Airline",
+  "errorLevel": "error",
+  "errorType": "RCRenderHandlerError",
+  "errorMessage":"em-cmp-lib-prices__fare-list--mosaic--grid__2.3.29|ghl__to-city__en-us => m.fareRestClient.loadData is not a function",
+  "deviceCategory": "desktop",
+  "environment": "Production",
+  "url": "https://www.latam.com/pt-us/voos-de-joinville-para-sao-jose-dos-campos",
+  "Service": "baikonur-service-v2",
+  "identifier": "airTRFX",
+  "eventCategory": "featured-destinations",
+  "eventAction": "viewable-impression"
 }
