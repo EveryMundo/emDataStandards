@@ -5,16 +5,61 @@
   "description": "Error",
   "type": "object",
   "properties": {
-    "identifier": {
-      "description": "Identifier for defined errors",
+    "airline": {
+      "description": "Full name of airline, capitalise each word keeping the space",
       "type": "string",
-      "example": "1"
+      "example": "Everymundo Airlines"
     },
-    "message": {
-      "description": "Error message corresponding to identifier",
+    "errorLevel": {
+      "description": "Level of Error Severity",
       "type": "string",
-      "example": "Conflicting arrival date"
-    }
+      "example": "error"
+    },
+    "errorType": {
+      "description": "Type of Error",
+      "type": "string",
+      "example": "RCRenderHandlerError"
+    },
+    "errorMessage": {
+      "description": "Description of defined errors",
+      "type": "string",
+      "example": "em-cmp-lib-prices__fare-list--mosaic--grid__2.3.29|ghl__to-city__en-us => m.fareRestClient.loadData is not a function"
+    },
+    "deviceCategory": {
+      "description": "Device information",
+      "type": "string",
+      "example": "desktop"
+    },
+    "environment": {
+      "description": "Identifier for the environment of defined errors",
+      "type": "string",
+      "example": "Production"
+    },
+    "url": {
+      "description": "Url Information for errors",
+      "type": "string",
+      "example": "https://www.latam.com/pt-us/voos-de-joinville-para-sao-jose-dos-campos"
+    },
+    "Service": {
+      "description": "Source and Version of Service",
+      "type": "string",
+      "example": "baikonur-service-v2"
+    },
+    "identifier": {
+      "description": "Identifier for airTRFX and externalized airModule",
+      "type": "string",
+      "example": "airTRFX"
+    },
+    "eventCategory": {
+      "description": "Name of airModule for defined errors",
+      "type": "string",
+      "example": "featured-destinations"
+    },
+    "eventAction": {
+      "description": "Name of action for defined errors",
+      "type": "string",
+      "example": "viewable-impression"
+    },
   },
   "required": ["message"],
   "links": [
