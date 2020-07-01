@@ -1,0 +1,77 @@
+{
+  "id": "/error",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Error",
+  "description": "Error",
+  "type": "object",
+  "properties": {
+    "airline": {
+      "description": "Full name of airline, capitalise each word keeping the space",
+      "type": "string",
+      "example": "Everymundo Airline"
+    },
+    "errorLevel": {
+      "description": "Level of Error Severity",
+      "type": "string",
+      "example": "ERROR|WARNING"
+    },
+    "errorType": {
+      "description": "Type of Error",
+      "type": "string",
+      "example": "RCRenderHandlerError"
+    },
+    "errorMessage": {
+      "description": "Description of defined errors",
+      "type": "string",
+      "example": "m.fareRestClient.loadData is not a function"
+    },
+    "deviceCategory": {
+      "description": "Device information",
+      "type": "string",
+      "example": "DESKTOP|MOBILE|TABLET"
+    },
+    "environment": {
+      "description": "Identifier for the environment of defined errors",
+      "type": "string",
+      "example": "PRODUCTION|DEVELOPMENT|PRE-PRODUCTION"
+    },
+    "url": {
+      "description": "Url Information for errors",
+      "type": "string",
+      "example": "https://www.latam.com/pt-us/voos-de-joinville-para-sao-jose-dos-campos"
+    },
+    "service": {
+      "description": "Source and Version of Service",
+      "type": "string",
+      "example": "baikonur-service-v2"
+    },
+    "product": {
+      "description": "Name of product for defined errors",
+      "type": "string",
+      "example": "airTRFX|airTRFX CONTROL|MICROSERVICES|FRONTCOMPONENTS_PARTNER|FRONTCOMPONENT_INTERNAL|FRONTCOMPONENTS_CLIENT|TRACKING LIBRARY"
+    },
+    "airModule": {
+      "description": "Name of airModule for defined errors",
+      "type": "string",
+      "example": "featured-destinations"
+    },
+    "eventAction": {
+      "description": "Name of action for defined errors",
+      "type": "string",
+      "example": "viewable-impression"
+    },
+  },
+  "required": ["message"],
+  "links": [
+    {
+      "title": "Error",
+      "description": "Error",
+      "rel": "self",
+      "href": "/error",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}
