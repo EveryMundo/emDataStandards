@@ -5,15 +5,15 @@
   "description": "Error",
   "type": "object",
   "properties": {
-    "airline": {
-      "description": "Full name of airline, capitalise each word keeping the space",
+    "airlineIataCode": {
+      "description": "IATA identifier for the airline",
       "type": "string",
-      "example": "Everymundo Airlines"
+      "example": "EM"
     },
     "errorLevel": {
       "description": "Level of Error Severity",
       "type": "string",
-      "example": "error"
+      "example": "ERROR|WARNING"
     },
     "errorType": {
       "description": "Type of Error",
@@ -23,43 +23,43 @@
     "errorMessage": {
       "description": "Description of defined errors",
       "type": "string",
-      "example": "em-cmp-lib-prices__fare-list--mosaic--grid__2.3.29|ghl__to-city__en-us => m.fareRestClient.loadData is not a function"
+      "example": "m.fareRestClient.loadData is not a function"
     },
     "deviceCategory": {
       "description": "Device information",
       "type": "string",
-      "example": "desktop"
+      "example": "DESKTOP|MOBILE|TABLET"
     },
     "environment": {
       "description": "Identifier for the environment of defined errors",
       "type": "string",
-      "example": "Production"
+      "example": "PRODUCTION|DEVELOPMENT|PRE-PRODUCTION"
     },
     "url": {
       "description": "Url Information for errors",
       "type": "string",
       "example": "https://www.latam.com/pt-us/voos-de-joinville-para-sao-jose-dos-campos"
     },
-    "Service": {
+    "service": {
       "description": "Source and Version of Service",
       "type": "string",
       "example": "baikonur-service-v2"
     },
-    "identifier": {
-      "description": "Identifier for airTRFX and externalized airModule",
+    "product": {
+      "description": "Name of product for defined errors",
       "type": "string",
-      "example": "airTRFX"
+      "example": "airTRFX|airTRFX CONTROL|MICROSERVICES|FRONTCOMPONENTS_PARTNER|FRONTCOMPONENT_INTERNAL|FRONTCOMPONENTS_CLIENT|TRACKING LIBRARY"
     },
-    "eventCategory": {
-      "description": "Name of airModule for defined errors",
+    "airModule": {
+      "description": "Name of airModule for defined errors (Optional, required only for FRONTCOMPONENTS_PARTNER,FRONTCOMPONENT_INTERNAL and TRACKING LIBRARY)",
       "type": "string",
       "example": "featured-destinations"
     },
     "eventAction": {
-      "description": "Name of action for defined errors",
+      "description": "Name of action for defined errors (Optional, required only for TRACKING LIBRARY)",
       "type": "string",
       "example": "viewable-impression"
-    },
+    }
   },
   "required": ["message"],
   "links": [
