@@ -1,6 +1,6 @@
 {
   "@type": "Error",
-  "airline": "Spirit Airline",
+  "airlineIataCode": "NK",
   "errorLevel": "ERROR",
   "errorType": "RCRenderHandlerError",
   "errorMessage":"m.fareRestClient.loadData is not a function",

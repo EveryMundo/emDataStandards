@@ -5,10 +5,10 @@
   "description": "Error",
   "type": "object",
   "properties": {
-    "airline": {
-      "description": "Full name of airline, capitalise each word keeping the space",
+    "airlineIataCode": {
+      "description": "IATA identifier for the airline",
       "type": "string",
-      "example": "Everymundo Airline"
+      "example": "EM"
     },
     "errorLevel": {
       "description": "Level of Error Severity",
@@ -51,12 +51,12 @@
       "example": "airTRFX|airTRFX CONTROL|MICROSERVICES|FRONTCOMPONENTS_PARTNER|FRONTCOMPONENT_INTERNAL|FRONTCOMPONENTS_CLIENT|TRACKING LIBRARY"
     },
     "airModule": {
-      "description": "Name of airModule for defined errors",
+      "description": "Name of airModule for defined errors (Optional, required only for FRONTCOMPONENTS_PARTNER,FRONTCOMPONENT_INTERNAL and TRACKING LIBRARY)",
       "type": "string",
       "example": "featured-destinations"
     },
     "eventAction": {
-      "description": "Name of action for defined errors",
+      "description": "Name of action for defined errors (Optional, required only for TRACKING LIBRARY)",
       "type": "string",
       "example": "viewable-impression"
     },
