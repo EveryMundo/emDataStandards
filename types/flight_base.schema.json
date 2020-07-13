@@ -23,6 +23,11 @@
         "type": "string",
         "example": "Economy Basic"
       },
+      "brandedFareClass": {
+        "description": "Standardized fare class name based on the fareClassInput",
+        "type": "string",
+        "example": "PREMIUM_ECONOMY"
+      },
       "fareClass": {
         "description": "fareClass mapped to either 'ECONOMY', 'BUSINESS' or 'FIRST' class",
         "type": "string",
