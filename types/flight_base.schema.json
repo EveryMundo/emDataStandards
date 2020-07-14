@@ -24,12 +24,12 @@
         "example": "Economy Basic"
       },
       "brandedFareClass": {
-        "description": "Standardized fare class name based on the fareClassInput",
+        "description": "Standardized fare class name based on the fareClassInput, e.g. ECONOMY_1, ECONOMY_2, ECONOMY_3, MIXED_CABIN_ECONOMY, BUSINESS_1, BUSINESS_2, MIXED_CABIN_BUSINESS, FIRST_1, MIXED_CABIN_FIRST",
         "type": "string",
-        "example": "PREMIUM_ECONOMY"
+        "example": "MIXED_CABIN_ECONOMY"
       },
       "fareClass": {
-        "description": "fareClass mapped to either 'ECONOMY', 'BUSINESS' or 'FIRST' class",
+        "description": "fareClass mapped to either 'ECONOMY', 'BUSINESS', 'PREMIUM_ECONOMY' or 'FIRST' class",
         "type": "string",
         "example": "ECONOMY"
       },
