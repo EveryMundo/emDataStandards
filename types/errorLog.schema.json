@@ -50,6 +50,11 @@
       "type": "string",
       "example": "airTRFX|airTRFX CONTROL|MICROSERVICES|FRONTCOMPONENTS_PARTNER|FRONTCOMPONENT_INTERNAL|FRONTCOMPONENTS_CLIENT|TRACKING LIBRARY"
     },
+    "userAgent": {
+      "description": "Name, version and platform of the browser sent to the server",
+      "type": "string",
+      "example": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+    },
     "airModule": {
       "description": "Name of airModule for defined errors (Optional, required only for FRONTCOMPONENTS_PARTNER,FRONTCOMPONENT_INTERNAL and TRACKING LIBRARY)",
       "type": "string",
