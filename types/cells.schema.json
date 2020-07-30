@@ -5,27 +5,32 @@
   "type": "array",
   "items":{
     "title": "Cell",
+    "description": "Cells in the matrix",
     "type": "object",
     "properties": {
-        "price": {
-          "description": "Price for the reservation or ticket",
-          "type": "number",
-          "example": 345.21
-        },
+      "priceSpecification": {
+        "description": "priceSpecification",
+        "type": "object",
+        "properties": {
+          "totalPrice": {
+            "description": "totalPrice",
+            "type": "number",
+            "example": 825.51
+          },
+          "redemption": {
+            "$ref": "./redemption_base.schema.json"
+          }
+        }
+      },
         "boundType": {
-          "description": "OUTBOUND, INBOUND ",
+          "description": "OUTBOUND, INBOUND, MATRIX",
           "type": "string",
-          "example": "OUTBOUND"
+          "example": "MATRIX"
         },
         "isSoldOut": {
           "description": "Whether price is sold out",
           "type": "boolean",
           "example": false
-        },
-        "redemptionAmount": {
-          "description": "Amount of reedemed miles",
-          "type": "number",
-          "example": 9999
         },
         "outboundDate": {
           "description": "Outbound date",
@@ -35,11 +40,11 @@
         "inboundDate": {
           "description": "Inbound date",
           "type": "string",
-          "example": "NULL"
+          "example": "2017-03-26"
         }
-      }
+    }
   },
-  "required": ["price", "boundType", "isSoldOut"],
+  "required": ["totalPrice", "boundType", "isSoldOut"],
   "links": [
     {
       "title": "Cells",

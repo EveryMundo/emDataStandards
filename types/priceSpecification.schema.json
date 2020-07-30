@@ -4,43 +4,11 @@
   "title": "PriceSpecification",
   "description": "PriceSpecification",
   "type": "object",
+  "allOf": [
+    {"$ref": "./priceSpecification_base.schema.json"},
+    { 
   "properties": {
-    "description": {
-      "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
-      "type": "string",
-      "example": "JOURNEY"
-    },
-    "price": {
-      "description": "Price for the reservation or ticket",
-      "type": "number",
-      "example": 234.21
-    },
-    "totalPrice": {
-      "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
-      "type": "number",
-      "example": 250.6
-    },
-    "totalPriceUSD": {
-      "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
-      "type": "number",
-      "example": 250.6
-    },
-    "taxPrice": {
-      "description": "The amount paid in taxes",
-      "type": "number",
-      "example": 16.39
-    },
-    "fuelPrice": {
-      "description": "Airline fuel charges",
-      "type": "number",
-      "example": 57.89
-    },
-    "additionalFeesPrice": {
-      "description": "Airline additional fees",
-      "type": "number",
-      "example": 12
-    },
-    "currency": {
+    "currencyCode": {
       "description": "The currency (in 3-letter ISO 4217 format) of the price.",
       "type": "string",
       "example": "USD"
@@ -50,23 +18,43 @@
       "type": "string",
       "example": "$"
     },
-    "priceMarketId": {
+    "priceOffers": {
+      "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare: 'HOTEL', 'JOURNEY', 'CAR'",
+      "type": "array",
+      "example": ["JOURNEY", "HOTEL"]
+    },
+    "totalPriceUSD": {
+      "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+      "type": "number",
+      "example": 250.6
+    },
+    "totalTaxUSD": {
+      "description": "The total tax for the reservation or ticket in USD",
+      "type": "number",
+      "example": 250.6
+    },
+    "fuelPrice": {
+      "description": "Airline fuel charges",
+      "type": "number",
+      "example": 57.89
+    },
+    "additionalFeesAmount": {
+      "description": "Airline additional fees",
+      "type": "number",
+      "example": 12
+    },
+    "advertisedPrice": {
+      "description": "Price advertised",
+      "type": "number",
+      "example": 250.6  
+    },
+    "pricingGroupId": {
       "description": "A unique identifier for price market combining ISO codes for currency and country",
       "type": "string",
       "example": "USD-US"
-    },
-    "isSoldOut": {
-      "description": "Whether fare is sold out - if isSoldOut=true, fare = NULL",
-      "type": "boolean",
-      "example": false
-    },
-    "lastUpdatePriceTime": {
-      "description": "Time of last price update/collection",
-      "type": "string",
-      "example": "2018-02-12T16:49:13.131+0000"
     }
-  },
-  "required": ["price", "totalPrice", "taxprice", "currency"],
+  }}],
+  "required": ["totalPrice", "currencyCode"],
   "links": [
     {
       "title": "PriceSpecification",

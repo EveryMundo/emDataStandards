@@ -4,16 +4,14 @@
   "title": "Device",
   "description": "Device information",
   "type": "object",
+  "allOf": [
+    {"$ref": "./device_base.schema.json"},
+  {
   "properties": {
-    "category": {
-      "description": "MOBILE, TABLET, DESKTOP",
+    "viewportSize": {
+      "description": "SMALL; MEDIUM; LARGE",
       "type": "string",
-      "example": "Mobile"
-    },
-    "screenResolution": {
-      "description": "Specifies the screen resolution.",
-      "type": "string",
-      "example": "360x600"
+      "example": "SMALL"
     },
     "mobileBranding": {
       "description": "Mobile manufacturer or branded name (e.g: Samsung, HTC, Verizon, T-Mobile, Apple)",
@@ -30,11 +28,6 @@
       "type": "string",
       "example": "iPhone 6"
     },
-    "operatingSystem": {
-      "description": "Device operating system (e.g. Windows, Android, iOS)",
-      "type": "string",
-      "example": "iOS"
-    },
     "operatingSystemVersion": {
       "description": "The version of the operating system",
       "type": "string",
@@ -44,8 +37,13 @@
       "description": "True if mobile app is being used",
       "type": "boolean",
       "example": true
+    },
+    "appVersion": {
+      "description": "App Version",
+      "type": "string",
+      "example": "1.3.2"
     }
-  },
+  }}],
   "required": ["category", "screenResolution", "operatingSystem"],
   "links": [
     {

@@ -1,0 +1,49 @@
+{
+  "id": "/user",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User",
+  "description": "User",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "User ID",
+      "type": "string",
+      "example": "123456789"
+    },
+    "city": {
+      "description": "City where user is located",
+      "type": "object",
+      "properties": {
+        "geo": {
+          "description": "Geo coordinates of the city where user is located",
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "description": "The latitude of the  city",
+              "type": "number",
+              "example": 37.42
+            },
+            "longitude": {
+              "description": "The longitude of the city",
+              "type": "number",
+              "example": -108.32
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "User",
+      "description": "User",
+      "rel": "self",
+      "href": "/user",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

@@ -8,31 +8,20 @@
     "environment": {
       "description": "DEVELOPMENT, PREPRODUCTION, PRODUCTION",
       "type": "string",
-      "example": "Production"
+      "example": "PRODUCTION"
     },
     "indexStatus": {
       "description": "INDEX, FOLLOWNOINDEX, NOFOLLOW",
       "type": "string",
-      "example": "Index"
+      "example": "INDEX"
+    },
+    "browser": {
+      "description": "The name of users' browsers, for example, Internet Explorer or Firefox.",
+      "type": "string",
+      "example": "Google Chrome"
     },
     "additionalInfo": {
-      "description": "Additional information not previously included",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "value": {
-          "description": "value",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "ExtraInfo",
-        "name": "name",
-        "value": "value"
-      }
+      "$ref": "./additionalInfo.schema.json"
     }
   },
   "required": [],

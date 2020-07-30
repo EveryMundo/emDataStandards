@@ -21,23 +21,15 @@
       "properties": {
         "latitude": {
           "description": "The latitude of the region",
-          "type": "number"
+          "type": "number",
+          "example": 37.42
         },
         "longitude": {
           "description": "The longitude of the region",
-          "type": "number"
+          "type": "number",
+          "example": -108.32
         }
-      },
-      "example": {
-        "@type": "Geocoordinates",
-        "latitude": 37.42,
-        "longitude": -108.32
       }
-    },
-    "image": {
-      "description": "Image URL for the region",
-      "type": "string",
-      "example": "northamerica.com/image.jpg"
     },
     "images": {
       "description": "Array of image URLs for the region",

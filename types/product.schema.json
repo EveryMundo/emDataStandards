@@ -1,0 +1,27 @@
+{
+  "id": "/product",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product",
+  "description": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Product name",
+      "type": "string",
+      "example": "airTRFX"
+    }
+  },
+  "required": ["id"],
+  "links": [
+    {
+      "title": "Product",
+      "description": "Product",
+      "rel": "self",
+      "href": "/product",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

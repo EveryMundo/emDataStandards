@@ -1,0 +1,41 @@
+{
+  "id": "/additionalInfo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AdditionalInfo",
+  "description": "Additional Information that may be available",
+  "type": "array",
+  "properties": {
+    "fields": {
+      "description": "fields",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "",
+            "type": "string",
+            "example": "classOfService"
+          },
+          "value": {
+            "description": "",
+            "type": "string",
+            "example": "COACH_EC"
+          }
+        }
+      }
+    }
+   },
+   "required": [],
+   "links": [
+  {
+    "title": "Additional Info",
+    "description": "Additional Info",
+    "rel": "self",
+    "href": "/additionalInfo",
+    "method": "GET",
+    "targetSchema": {
+      "rel": "self"
+    }
+  }
+]
+}

@@ -1,5 +1,5 @@
 {
-  "id": "/flightTensor",
+  "id": "/fareTensor",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlightTensor",
   "description": "FlightTensor",
@@ -11,22 +11,7 @@
       "example": "ROUND_TRIP"
     },
     "cells": {
-      "description": "cells",
-      "type": "array",
-      "items": {
-        "type": "object"
-      },
-      "example": [
-        {
-          "@type": "Cell",
-          "price": 345.21,
-          "boundType": "Outbound",
-          "isSoldOut": false,
-          "redemptionAmount": 9999,
-          "outboundDate": "2017-03-06",
-          "inboundDate": null
-        }
-      ]
+      "$ref": "./cells.schema.json"
     }
   },
   "required": ["journeyType", "cells"],
@@ -35,7 +20,7 @@
       "title": "FlightTensor",
       "description": "FlightTensor",
       "rel": "self",
-      "href": "/flightTensor",
+      "href": "/fareTensor",
       "method": "GET",
       "targetSchema": {
         "rel": "self"

@@ -1,0 +1,36 @@
+{
+  "id": "/device_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Device",
+  "description": "Device information",
+  "type": "object",
+  "properties": {
+    "category": {
+      "description": "MOBILE, TABLET, DESKTOP",
+      "type": "string",
+      "example": "MOBILE"
+    },
+    "screenResolution": {
+      "description": "Specifies the screen resolution.",
+      "type": "string",
+      "example": "360x600"
+    },
+    "operatingSystem": {
+      "description": "Device operating system (e.g. Windows, Android, iOS)",
+      "type": "string",
+      "example": "iOS"
+    }
+  },
+  "required": ["category", "screenResolution", "operatingSystem"],
+  "links": [
+    {
+      "title": "Device",
+      "rel": "self",
+      "href": "/device_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

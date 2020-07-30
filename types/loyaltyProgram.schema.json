@@ -16,12 +16,9 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "Aegean Airlines"
         }
-      },
-      "example": {
-        "@type": "Organization",
-        "name": "Aegean Airlines"
       }
     },
     "url": {
@@ -40,41 +37,7 @@
       "example": "Gold"
     },
     "redemption": {
-      "description": "Loyalty Program currency payment method.",
-      "type": "object",
-      "properties": {
-        "unit": {
-          "description": "unit",
-          "type": "string"
-        },
-        "amount": {
-          "description": "amount",
-          "type": "number"
-        },
-        "conversion": {
-          "description": "conversion",
-          "type": "object",
-          "properties": {
-            "amount": {
-              "description": "amount",
-              "type": "number"
-            },
-            "ratio": {
-              "description": "ratio",
-              "type": "number"
-            }
-          }
-        }
-      },
-      "example": {
-        "@type": "Redemption",
-        "unit": "miles",
-        "amount": 1500,
-        "conversion": {
-          "amount": 1500,
-          "ratio": 0.5
-        }
-      }
+      "$ref": "./redemption_base.schema.json"
     },
     "milesEarned": {
       "description": "Total earned miles",

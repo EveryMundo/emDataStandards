@@ -1,0 +1,47 @@
+{
+  "id": "/address_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "PostalAddress",
+  "description": "PostalAddress",
+  "type": "object",
+  "properties": {
+    "street": {
+      "description": "Street address name",
+      "type": "string",
+      "example": "Murgstr. 5"
+    },
+    "cityName": {
+      "description": "City name",
+      "type": "string",
+      "example": "San Francisco"
+    },
+    "stateCode": {
+      "description": "State identifier code",
+      "type": "string",
+      "example": "CA"
+    },
+    "postalCode": {
+      "description": "Postal code number",
+      "type": "string",
+      "example": "94043"
+    },
+    "countryCode": {
+      "description": "Country ISO code",
+      "type": "string",
+      "example": "US"
+    }
+  },
+  "required": ["cityName", "countryCode"],
+  "links": [
+    {
+      "title": "PostalAddress",
+      "description": "PostalAddress",
+      "rel": "self",
+      "href": "/address_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

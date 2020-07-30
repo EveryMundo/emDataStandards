@@ -1,0 +1,32 @@
+{
+  "id": "/arrivalCity_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Arrival City",
+  "description": "Arrival City",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the city",
+      "type": "string",
+      "example": "Miami"
+    },
+    "cityCode": {
+      "description": "ISO code for the city",
+      "type": "string",
+      "example": "MIA"
+    }
+  },
+  "required": ["name", "cityCode"],
+  "links": [
+    {
+      "title": "Arrival City",
+      "description": "Arrival City",
+      "rel": "self",
+      "href": "/arrivalCity_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

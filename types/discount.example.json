@@ -1,8 +1,0 @@
-{
-  "@type": "Discount",
-  "isDiscount": true,
-  "code": "AFFBFAN",
-  "amount": 500,
-  "percentage": 0.5,
-  "expiration": "2017-12-31"
-}

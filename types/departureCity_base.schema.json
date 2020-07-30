@@ -1,0 +1,32 @@
+{
+  "id": "/departureCity_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Departure City",
+  "description": "Departure City",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the city",
+      "type": "string",
+      "example": "San Francisco"
+    },
+    "cityCode": {
+      "description": "ISO code for the city",
+      "type": "string",
+      "example": "SFO"
+    }
+  },
+  "required": ["name", "cityCode"],
+  "links": [
+    {
+      "title": "Departure City",
+      "description": "Departure City",
+      "rel": "self",
+      "href": "/departureCity_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

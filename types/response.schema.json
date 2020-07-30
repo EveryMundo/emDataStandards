@@ -6,114 +6,19 @@
   "type": "object",
   "properties": {
     "airline": {
-      "description": "airline",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "Airline",
-        "name": "EveryMundo",
-        "iataCode": "EM",
-        "image": "everymundo.com/image.jpg"
-      }
+      "$ref": "./airline.schema.json"
     },
     "departureAirport": {
-      "description": "departureAirport",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "Airport",
-        "name": "San Francisco Airport",
-        "iataCode": "SFO",
-        "image": "sfo.com/image.jpg"
-      }
+      "$ref": "./airport.schema.json"
     },
     "arrivalAirport": {
-      "description": "arrivalAirport",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "iataCode": {
-          "description": "iataCode",
-          "type": "string"
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "Airport",
-        "name": "Miami International Airport",
-        "iataCode": "MIA",
-        "image": "mia.com/image.jpg"
-      }
+      "$ref": "./airport.schema.json"
     },
     "departureCity": {
-      "description": "departureCity",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "City",
-        "name": "San Francisco",
-        "image": "sanfrancisco.com/image.jpg"
-      }
+      "$ref": "./departureCity_base.schema.json"
     },
     "arrivalCity": {
-      "description": "arrivalCity",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "name",
-          "type": "string"
-        },
-        "image": {
-          "description": "image",
-          "type": "string"
-        }
-      },
-      "example": {
-        "@type": "City",
-        "name": "Miami",
-        "image": "miami.com/image.jpg"
-      }
+      "$ref": "./arrivalCity_base.schema.json"
     },
     "departureState": {
       "description": "departureState",
@@ -121,17 +26,16 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "California"
         },
-        "image": {
-          "description": "image",
-          "type": "string"
+        "images": {
+          "description": "Array of image URLs for the state",
+          "type": "array",
+          "example": [
+            "california.com/image.jpg"
+          ]
         }
-      },
-      "example": {
-        "@type": "State",
-        "name": "California",
-        "image": "california.com/image.jpg"
       }
     },
     "arrivalState": {
@@ -140,17 +44,16 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "Florida"
         },
-        "image": {
-          "description": "image",
-          "type": "string"
+        "images": {
+          "description": "Array of image URLs for the state",
+          "type": "array",
+          "example": [
+            "florida.com/image.jpg"
+          ]
         }
-      },
-      "example": {
-        "@type": "State",
-        "name": "Florida",
-        "image": "florida.com/image.jpg"
       }
     },
     "departureCountry": {
@@ -159,17 +62,16 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "United States"
         },
-        "image": {
-          "description": "image",
-          "type": "string"
+        "images": {
+          "description": "Array of image URLs for the state",
+          "type": "array",
+          "example": [
+            "usa.com/image.jpg"
+          ]
         }
-      },
-      "example": {
-        "@type": "Country",
-        "name": "United States",
-        "image": "unitedstates.com/image.jpg"
       }
     },
     "arrivalCountry": {
@@ -178,17 +80,16 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "United States"
         },
-        "image": {
-          "description": "image",
-          "type": "string"
+        "images": {
+          "description": "Array of image URLs for the state",
+          "type": "array",
+          "example": [
+            "usa.com/image2.jpg"
+          ]
         }
-      },
-      "example": {
-        "@type": "Country",
-        "name": "United States",
-        "image": "unitedstates.com/image.jpg"
       }
     },
     "departureRegion": {
@@ -197,17 +98,16 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "North America"
         },
-        "image": {
-          "description": "image",
-          "type": "string"
+        "images": {
+          "description": "Array of image URLs for the state",
+          "type": "array",
+          "example": [
+            "northamerica.com/image.jpg"
+          ]
         }
-      },
-      "example": {
-        "@type": "Region",
-        "name": "North America",
-        "image": "northamerica.com/image.jpg"
       }
     },
     "arrivalRegion": {
@@ -216,20 +116,20 @@
       "properties": {
         "name": {
           "description": "name",
-          "type": "string"
+          "type": "string",
+          "example": "North America"
+          
         },
-        "image": {
-          "description": "image",
-          "type": "string"
+        "images": {
+          "description": "Array of image URLs for the state",
+          "type": "array",
+          "example": [
+            "northamerica.com/image.jpg"
+          ]
         }
-      },
-      "example": {
-        "@type": "Region",
-        "name": "North America",
-        "image": "northamerica.com/image.jpg"
       }
     },
-    "currency": {
+    "currencyCode": {
       "description": "currency",
       "type": "string",
       "example": "USD"
@@ -294,155 +194,24 @@
       "type": "array",
       "items": {
         "type": "object"
-      },
-      "example": [
-        {
-          "departureAirport": {
-            "@type": "Airport",
-            "name": "San Francisco Airport",
-            "iataCode": "SFO",
-            "image": "sfo.com/image.jpg"
-          },
-          "arrivalAirport": {
-            "@type": "Airport",
-            "name": "Miami International Airport",
-            "iataCode": "MIA",
-            "image": "mia.com/image.jpg"
-          },
-          "departureCity": {
-            "@type": "City",
-            "name": "San Francisco",
-            "image": "sanfrancisco.com/image.jpg"
-          },
-          "arrivalCity": {
-            "@type": "City",
-            "name": "Miami",
-            "image": "miami.com/image.jpg"
-          },
-          "departureState": {
-            "@type": "State",
-            "name": "California",
-            "image": "california.com/image.jpg"
-          },
-          "arrivalState": {
-            "@type": "State",
-            "name": "Florida",
-            "image": "florida.com/image.jpg"
-          },
-          "departureCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "image": "unitedstates.com/image.jpg"
-          },
-          "arrivalCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "image": "unitedstates.com/image.jpg"
-          },
-          "departureRegion": {
-            "@type": "Region",
-            "name": "North America",
-            "image": "northamerica.com/image.jpg"
-          },
-          "arrivalRegion": {
-            "@type": "Region",
-            "name": "North America",
-            "image": "northamerica.com/image.jpg"
-          },
-          "popularity": 234,
-          "airIndex": 0.76
-        }
-      ]
+      }
     },
     "priceSpecification": {
-      "description": "priceSpecification",
-      "type": "array",
-      "items": {
-        "type": "object"
-      },
-      "example": [
-        {
-          "airline": {
-            "@type": "Airline",
-            "name": "EveryMundo",
-            "iataCode": "EM",
-            "image": "everymundo.com/image.jpg"
-          },
-          "currency": "USD",
-          "currencySymbol": "$",
-          "totalPrice": 234.5,
-          "departureTime": "2018-03-07T19:44:02.092Z",
-          "departureTimeZone": "UTC",
-          "returnTime": "2018-03-12T19:44:02.092Z",
-          "returnTimeZone": "UTC",
-          "formattedTotalPrice": "234.50",
-          "formattedDepartureDate": "07/03/18",
-          "formattedReturnDate": "07/12/18"
-        }
-      ]
+      "$ref": "./priceSpecification.schema.json"
     },
     "locationDetails": {
       "description": "locationDetails",
       "type": "array",
       "items": {
         "type": "object"
-      },
-      "example": [
-        {
-          "departureCity": {
-            "@type": "City",
-            "name": "San Francisco",
-            "image": "sanfrancisco.com/image.jpg"
-          },
-          "departureCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "image": "unitedstates.com/image.jpg"
-          },
-          "arrivalCity": {
-            "@type": "City",
-            "name": "Miami",
-            "image": "miami.com/image.jpg"
-          },
-          "arrivalCountry": {
-            "@type": "Country",
-            "name": "United States",
-            "image": "unitedstates.com/image.jpg"
-          }
-        }
-      ]
+      }
     },
     "histogramDetails": {
       "description": "histogramDetails",
       "type": "array",
       "items": {
         "type": "object"
-      },
-      "example": [
-        {
-          "dateTick": "2017-08-12",
-          "priceSpecification": [
-            {
-              "airline": {
-                "@type": "Airline",
-                "name": "EveryMundo",
-                "iataCode": "EM",
-                "image": "everymundo.com/image.jpg"
-              },
-              "currency": "USD",
-              "currencySymbol": "$",
-              "totalPrice": 234.5,
-              "departureTime": "2018-03-07T19:44:02.092Z",
-              "departureTimeZone": "UTC",
-              "returnTime": "2018-03-12T19:44:02.092Z",
-              "returnTimeZone": "UTC",
-              "formattedTotalPrice": "234.50",
-              "formattedDepartureDate": "07/03/18",
-              "formattedReturnDate": "07/12/18"
-            }
-          ]
-        }
-      ]
+      }
     }
   },
   "required": [],

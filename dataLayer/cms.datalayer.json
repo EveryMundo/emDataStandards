@@ -1,0 +1,14 @@
+{
+    "user": {
+        "id": "123456"
+    },
+    "cms": {
+        "userType": "ADMIN",
+        "airlineIataCode": "AY",
+        "provider": "Finnair", 
+        "languageIsoCode": "en"
+   },
+   "device": {
+        "category": "DESKTOP"
+    }
+}

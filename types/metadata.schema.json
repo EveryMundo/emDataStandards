@@ -1,0 +1,65 @@
+{
+    "id": "/metadata",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Metadata",
+    "description": "Metadata",
+    "type": "object",
+    "allOf": [
+      {"$ref": "./metadata_base.schema.json"},
+    {
+    "properties": {
+      "timeZone": {
+        "description": "Timezone of record creation",
+        "type": "string",
+        "example": "EST"
+      },
+      "farenetId": {
+        "description": "API specific field for back-reference: Farenet record unique identifier",
+        "type": "string",
+        "example": "bcxtwjjyxgshxx4rvgqm9"
+      },
+      "searchId": {
+        "description": "FareNet Search Id that joins the data between the FareNet Search Data Table and Fare Data Table.",
+        "type": "string",
+        "example": "bcxtwjjyxgshxx4rvgqm9"
+      },
+      "batchId": {
+        "description": "Unique batch identifier",
+        "type": "string",
+        "example": "201711281029"
+      },
+      "parserRegexId": {
+        "description": "ID of regex pattern that matched",
+        "type": "string",
+        "example": "CopaNonbrand1"
+      },
+      "farewireId": {
+        "description": "FareWire Tracking Id",
+        "type": "string",
+        "example": "em_fw=A3ATHSKGEUR41Facebook_12345678"
+      },
+      "fareAlertId": {
+        "description": "Fare Alert Id",
+        "type": "string",
+        "example": "A3ATHSKGEUR41_12345678"
+      },
+      "timestamp": {
+        "description": "CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601",
+        "type": "string",
+        "example": "2027-03-04T06:35:00-08:00"
+      }
+    }}],
+    "required": ["app", "schemaVersion"],
+    "links": [
+      {
+        "title": "Metadata",
+        "description": "Metadata",
+        "rel": "self",
+        "href": "/metadata",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }

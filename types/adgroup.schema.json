@@ -1,0 +1,35 @@
+{
+  "id": "/adgroup",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "adgroup",
+  "description": "adgroup",
+  "type": "object",
+  "properties": {
+    "adgroupName": {
+      "description": "Adwords ad group name",
+      "type": "string",
+      "example": "GS:en-GR_NB\\IR=MAN>XX>HER/BM"
+    },
+    "adgroupId": {
+      "description": "Adwords ad group unique identifier",
+      "type": "number",
+      "example": "234324324"
+    },
+    "campaignId":{
+      "description": "Adwords campaign id"
+    }
+  },
+  "required": ["adgroupName","adgroupId"],
+  "links": [
+    {
+      "title": "adgroup",
+      "description": "adgroup",
+      "rel": "self",
+      "href": "/adgroup",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

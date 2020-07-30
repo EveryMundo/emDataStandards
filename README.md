@@ -3,7 +3,7 @@
 Data standards are the rules by which data are described and recorded. In order to share, exchange, and understand data, we must standardize the format as well as the meaning.
 
 ## Why do we need Data Standards?
-Using standards makes using things easier. Standards provide data integrity, accuracy and consistency, clarify ambiguous meanings, minimize redundant data, and document business rules. The data become usable to more than just the project or person that created the data, because you know the data will be in an expected format and you know what is represented by the data.
+Using standards makes using things easier. Standards provide data integrity, accuracy and consistency, clarify ambiguous meanings, minimize redundant data, and document business rules. The data becomes usable to more than just the project or person that created the data, because you know the data will be in an expected format and you know what is represented by the data.
  
 ## Why does EveryMundo develop its own Data Standards?
 EveryMundo develops its own technology and integrates with international airlines around the world who use different technologies. EveryMundo’s internal departments can create superior products through efficient collaboration by speaking the same language - data standards. It is best practice to leverage existing data standards where applicable. EveryMundo created its own standards based on NDC  (New Distribution Capability) and Schema.org.
@@ -27,15 +27,19 @@ The NDC Standard enhances the capability of communications between airlines and 
 
 ## How to get started
 
+### Complete the emDataStandards course
+It takes max. 1h to complete the course and teaches the basics of the data standards, which are also described below.
+https://everymundo-university.teachable.com/p/emdatastandards
+
 ### Documentation 
 https://everymundo.github.io/emDataStandards/documentation/build/
 
 #### Deploy to gihub pages manually
 
-**Note:** These commands assume that you have committed already all your changes in master. For Windows, run the commands in git bash.
+**Note:** The following command assumes that you have committed already all your changes in master. For Windows, run the command in git bash.
 
 ```bash
-bash documentation/publish-gh-pages.sh
+bash ./publish-gh-pages.sh
 ```
 
 ### Field Naming Convention
@@ -68,9 +72,9 @@ If the field name is being used in multiple properties, combine parent property 
 - Populate variable with null if not available
 - User upper case and underscore for defined list of output values, otherwise use upper camel case: fareClass (ECONOMY, BUSINESS, FIRST), journeyType, flightType, routeType
 - Use comma (",") to separate list items when together in a string. Use | as a fall back. 
-- **priceSpecification**
-  - If price has value & taxPrice equals null, then totalPrice does not include taxes
-  - If price & taxPrice equal null, then totalPrice includes taxes
+
+### Review Process
+Introduced CODEOWNERS: Pull requests to the master branch now automatically require at least three approved reviews by EM Code Owners
 
 **Notes:**
 - In JSON, numbers do not require formatting rules, unless there is a need to be very strict, e.g. miles can only be an integer.

@@ -4,22 +4,10 @@
   "title": "Airline",
   "description": "Airline",
   "type": "object",
+  "allOf": [
+    {"$ref": "./airline_base.schema.json"},
+  {
   "properties": {
-    "name": {
-      "description": "Full name of airline, capitalise each word keeping the space",
-      "type": "string",
-      "example": "Everymundo Airlines"
-    },
-    "iataCode": {
-      "description": "IATA identifier for the airline",
-      "type": "string",
-      "example": "EM"
-    },
-    "image": {
-      "description": "Image URL for the airline",
-      "type": "string",
-      "example": "everymundo.com/image.jpg"
-    },
     "images": {
       "description": "Array of multiple image URLs for the airline",
       "type": "array",
@@ -27,8 +15,13 @@
         "everymundo.com/image.jpg",
         "everymundo.com/image2.jpg"
       ]
+    },
+    "logo": {
+      "description": "Array of multiple image URLs for the airline",
+      "type": "string",
+      "example": "https://em-airline.com/cool-logo.png"
     }
-  },
+  }}],
   "required": ["name", "iataCode"],
   "links": [
     {

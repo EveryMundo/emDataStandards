@@ -13,6 +13,6 @@ git add .
 git commit -m 'new documentation automatically generated'
 git checkout gh-pages
 git pull origin gh-pages
-git rebase master
+git merge --strategy-option theirs master
 git push origin gh-pages
 git checkout master

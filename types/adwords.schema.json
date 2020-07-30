@@ -15,35 +15,14 @@
       "type": "string",
       "example": "399-781-8285"
     },
-    "campaignName": {
-      "description": "Adwords campaign name",
-      "type": "string",
-      "example": "GS:en-GR_NB\\CC-Route=MAN>XX>HER/Geo@GR[Bidto1]"
+    "campaign":{
+      "$ref": "./campaign.schema.json"
     },
-    "campaignId": {
-      "description": "Adwords campaign unique identifier",
-      "type": "string",
-      "example": "329-581-8275"
+    "adgroup":{
+      "$ref": "./adgroup.schema.json"
     },
-    "campaignType": {
-      "description": "Adwords campaign type",
-      "type": "string",
-      "example": "NonBrand"
-    },
-    "specialCampaign": {
-      "description": "Identifier of special campaigns (ie., campaign test suffix)",
-      "type": "string",
-      "example": "Bidto1"
-    },
-    "adgroupName": {
-      "description": "Adwords ad group name",
-      "type": "string",
-      "example": "GS:en-GR_NB\\IR=MAN>XX>HER/BM"
-    },
-    "adgroupId": {
-      "description": "Adwords ad group unique identifier",
-      "type": "string",
-      "example": "439-456-1255"
+    "keyword":{
+      "$ref": "./keyword.schema.json"
     },
     "geoTarget": {
       "description": "Location identifier for marketing purposes",
@@ -68,22 +47,12 @@
     "locationType": {
       "description": "Route location type regarding origin and destination",
       "type": "string",
-      "example": "City>City"
+      "example": "CITY_TO_CITY"
     },
-    "keywordGroup": {
-      "description": "Adwords keyword group",
+    "locationTypeCode": {
+      "description": "'\\CC-' in the campaign name describes the type code, e.g. CC (City to City), CN (City to Nation), NN, NC",
       "type": "string",
-      "example": "General"
-    },
-    "keywordType": {
-      "description": "Adwords keyword type",
-      "type": "string",
-      "example": "Route"
-    },
-    "matchType": {
-      "description": "Adwords keyword match type",
-      "type": "string",
-      "example": "BM"
+      "example": "CC"
     },
     "audience": {
       "description": "Adwords audience",
@@ -98,7 +67,7 @@
     "searchEngine": {
       "description": "GOOGLE, BING, YANDEX, YAHOO, BAIDU, NAVER, YAHOO JAPAN",
       "type": "string",
-      "example": "Google"
+      "example": "GOOGLE"
     },
     "inputKey": {
       "description": "Single field including account name, campaign name, adgroup name, etc., delimited with '&&'",

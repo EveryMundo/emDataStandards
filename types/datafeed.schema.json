@@ -5,6 +5,60 @@
   "description": "DataFeed",
   "type": "object",
   "properties": {
+    "pageData": {
+      "description": "Page-level data",
+      "type": "array",
+      "properties": {
+        "viewableImpressions": {
+          "description": "See airline.kpis.json for for standardized KPI list",
+          "type": "number",
+          "properties": {
+            "total": {
+              "description": "Total number of viewable impressions in given date range",
+              "type": "number",
+              "example": 10000
+            },
+            "daily": {
+              "description": "Daily numbers of viewable impressions in given date range",
+              "type": "array",
+              "example": [10000,5000,8000,6000]
+            },
+            "priorPeriodChange": {
+              "description": "Change compared to previous date period",
+              "type": "number",
+              "example": 0.8
+            }
+          }
+        }
+      }
+    },
+    "aggreagtedData": {
+      "description": "Aggregated performance data",
+      "type": "array",
+      "properties": {
+        "viewableImpressions": {
+          "description": "See airline.kpis.json for for standardized KPI list",
+          "type": "number",
+          "properties": {
+            "total": {
+              "description": "Total number of viewable impressions in given date range",
+              "type": "number",
+              "example": 10000
+            },
+            "daily": {
+              "description": "Daily numbers of viewable impressions in given date range",
+              "type": "array",
+              "example": [10000,5000,8000,6000]
+            },
+            "priorPeriodChange": {
+              "description": "Change compared to previous date period",
+              "type": "number",
+              "example": 0.8
+            }
+          }
+        }
+      }
+    },
     "publisher": {
       "description": "The publisher of the data feed",
       "type": "string",

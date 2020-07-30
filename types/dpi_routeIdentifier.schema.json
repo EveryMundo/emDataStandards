@@ -1,0 +1,47 @@
+{
+  "id": "/dpi_routeIdentifier",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DPI Route Identifier",
+  "description": "Record ID received from Kinesis stream, helps to identify the correct pricing data for a feed item.",
+  "type": "object",
+  "properties": {
+      "airId": {
+        "description": "Two letter airline code",
+        "type": "string",
+        "example": "A3"
+      },
+      "o": {
+        "description": "Origin IATA code",
+        "type": "string",
+        "example": "MIA"
+      },
+      "d": {
+        "description": "Destination IATA code",
+        "type": "string",
+        "example": "JFK"
+      },
+      "curC": {
+        "description": "currency",
+        "type": "string",
+        "example": "USD"
+      },
+      "bound": {
+        "description": "Bound",
+        "type": "string",
+        "example": "OUT"
+      }
+  },
+  "required": ["airId", "o", "d", "curC", "bound"],
+  "links": [
+    {
+      "title": "DPI Route Identifiers",
+      "description": "DPI Route Identifier",
+      "rel": "self",
+      "href": "/dpi_routeIdentifier",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

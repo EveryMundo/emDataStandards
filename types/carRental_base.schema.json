@@ -1,0 +1,88 @@
+{
+  "id": "/car_base",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Car",
+  "description": "Car",
+  "type": "object",
+  "properties": {
+    "provider": {
+      "$ref": "./provider.schema.json"
+    },
+    "reservationId": {
+      "description": "Unique identifier for the reservation",
+      "type": "string",
+      "example": "546323"
+    },
+    "reservationStatus": {
+      "description": "CONFIRMED, PENDING, CANCELLED",
+      "type": "string",
+      "example": "CONFIRMED"
+    },
+    "brand": {
+      "description": "Brand of the rental car",
+      "type": "string",
+      "example": "Honda"
+    },
+    "model": {
+      "description": "Model of rental car",
+      "type": "string",
+      "example": "Civic"
+    },
+    "pickupLocation": {
+      "description": "Where a taxi will pick up a passenger or a rental car can be picked up",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Any name for the location",
+          "type": "string",
+          "example": "Hertz San Diego Airport"
+        },
+        "address": {
+          "$ref": "./address.schema.json"
+        }
+      }
+    },
+    "pickupTime": {
+      "description": "When a taxi will pickup a passenger or a rental car can be picked up",
+      "type": "string",
+      "example": "2017-08-05T16:00:00-07:00"
+    },
+    "dropoffLocation": {
+      "description": "Where a rental car can be dropped off",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Any name for the location",
+          "type": "string",
+          "example": "Hertz LAX"
+        },
+        "address": {
+          "$ref": "./address.schema.json"
+          }
+        }
+    },
+    "dropoffTime": {
+      "description": "When a rental car can be dropped off",
+      "type": "string",
+      "example": "2017-08-06T20:00:00-07:00"
+    },
+    "carType": {
+      "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
+      "type": "string",
+      "example": "SUV"
+    }
+  },
+  "required": ["provider"],
+  "links": [
+    {
+      "title": "Car",
+      "description": "Car details",
+      "rel": "self",
+      "href": "/car_base",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
+      }
+    }
+  ]
+}

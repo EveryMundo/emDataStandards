@@ -64,7 +64,7 @@
       "description": "Name of action for defined errors (Optional, required only for TRACKING LIBRARY)",
       "type": "string",
       "example": "viewable-impression"
-    },
+    }
   },
   "required": ["message"],
   "links": [

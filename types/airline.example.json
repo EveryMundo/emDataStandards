@@ -1,9 +1,0 @@
-{
-  "@type": "Airline",
-  "name": "Everymundo Airlines",
-  "iataCode": "EM",
-  "image": "everymundo.com/image.jpg",
-  "images": [
-    "everymundo.com/image.jpg", "everymundo.com/image2.jpg"
-  ]
-}
