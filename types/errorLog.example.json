@@ -1,0 +1,15 @@
+{
+  "@type": "Error",
+  "airlineIataCode": "NK",
+  "errorLevel": "ERROR",
+  "errorType": "RCRenderHandlerError",
+  "errorMessage":"m.fareRestClient.loadData is not a function",
+  "deviceCategory": "DESKTOP",
+  "environment": "PRODUCTION",
+  "url": "https://www.latam.com/pt-us/voos-de-joinville-para-sao-jose-dos-campos",
+  "service": "baikonur-service-v2",
+  "product": "airTRFX",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+  "airModule": "null",
+  "eventAction": "null"
+}
