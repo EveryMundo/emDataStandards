@@ -14,6 +14,7 @@ export default fromJS([
   require('../types/airport.schema.json'),
   require('../types/baggage.schema.json'),
   require('../types/budget.schema.json'),
+  require('../types/carRental_base.schema.json'),
   require('../types/carRental.schema.json'),
   require('../types/cells.schema.json'),
   require('../types/city.schema.json'),
