@@ -41,7 +41,7 @@
         "iataCode": "TXL"
     },
     "device": {
-        "category": "DESKTOP",
+        "category": "DESKTOP"
     },
     "extraInfo": {
         "environment": "PRODUCTION"
