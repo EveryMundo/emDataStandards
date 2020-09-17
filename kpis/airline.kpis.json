@@ -30,8 +30,13 @@
         "type": "number",
         "example": 1000
       },
+      "cos": {
+        "description": "Cost of Sales (CoS) is Cost divided by Revenue",
+        "type": "number",
+        "example": 0.5
+      },
       "ctr": {
-        "description": "Click-through rate (CTR) is the number of clicks divided by impressions.",
+        "description": "Click-through rate (CTR) is the number of clicks divided by impressions. For airModule tracking more specifically: Click-through rate (CTR) is the number of clicks on the call-to-action button divided by viewable impressions.",
         "type": "number",
         "example": 1000
       },
@@ -56,12 +61,22 @@
         "example": 1000
       },
       "fsiRate": {
-        "description": "The percentage of flight search initiations after viewing a module",
+        "description": "The percentage of flight search initiations after viewing an airModule.",
         "type": "number",
         "example": 0.5
       },
       "imprAssistedConvRate": {
         "description": "The percentage of flight bookings after viewing a module",
+        "type": "number",
+        "example": 0.5
+      },
+      "interactions": {
+        "description": "Number of clicks on airModules. This includes filter selections, button clicks, tab changes, toggle interactions, arrow clicks, link clicks, sort selections, slider interactions, filter resets and open-booking-popup depending on the airModule.",
+        "type": "number",
+        "example": 100
+      },
+      "interactionRate": {
+        "description": "Number of clicks on airModules divided by Viewable Impressions",
         "type": "number",
         "example": 0.5
       },
@@ -130,6 +145,11 @@
         "type": "number",
         "example": 10000
       },
+      "roi": {
+        "description": "Return on Investment (ROI) is revenue divided by cost",
+        "type": "number",
+        "example": 87.1
+      },
       "rpm": {
         "description": "Revenue Passenger Miles (RPMs) is the basic measure of airline passenger traffic. It reflects how many of an airline's available seats were actually sold. For example, if 200 passengers fly 500 miles on a flight, this generates 100,000 RPMs.",
         "type": "number",
@@ -155,13 +175,8 @@
         "type": "number",
         "example": 1000
       },
-      "userInteractions": {
-        "description": "Number of clicks on fare visualizations or search modules",
-        "type": "number",
-        "example": 0.5
-      },
       "viewableImpressions": {
-        "description": "Number of module views where the user has seen at least 50% of a fare visualization or search module for one continuous second",
+        "description": "Number of views where the user has seen at least 50% of the airModule for one continuous second.",
         "type": "number",
         "example": 10000
       }

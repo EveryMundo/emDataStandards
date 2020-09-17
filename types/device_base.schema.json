@@ -8,7 +8,7 @@
     "category": {
       "description": "MOBILE, TABLET, DESKTOP",
       "type": "string",
-      "example": "Mobile"
+      "example": "MOBILE"
     },
     "screenResolution": {
       "description": "Specifies the screen resolution.",

@@ -36,6 +36,11 @@
         {"$ref": "./hotel.schema.json"}
       ]
     },
+    "carRentals": {
+      "allOf": [
+        {"$ref": "./carRental.schema.json"}
+      ]
+    },
     "page": {
       "allOf": [
         {"$ref": "./page_base.schema.json"}

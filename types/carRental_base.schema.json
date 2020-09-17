@@ -1,12 +1,15 @@
 {
-  "id": "/autoRental",
+  "id": "/car_base",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "AutoRental",
-  "description": "AutoRental",
+  "title": "Car",
+  "description": "Car",
   "type": "object",
   "properties": {
     "provider": {
       "$ref": "./provider.schema.json"
+    },
+    "priceSpecification": {
+      "$ref": "./priceSpecification_base.schema.json"
     },
     "reservationId": {
       "description": "Unique identifier for the reservation",
@@ -75,10 +78,10 @@
   "required": ["provider"],
   "links": [
     {
-      "title": "AutoRental",
-      "description": "AutoRental details",
+      "title": "Car",
+      "description": "Car details",
       "rel": "self",
-      "href": "/autoRental",
+      "href": "/car_base",
       "method": "GET",
       "targetSchema": {
         "rel": "self"

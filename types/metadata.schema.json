@@ -18,6 +18,11 @@
         "type": "string",
         "example": "bcxtwjjyxgshxx4rvgqm9"
       },
+      "searchId": {
+        "description": "FareNet Search Id that joins the data between the FareNet Search Data Table and Fare Data Table.",
+        "type": "string",
+        "example": "bcxtwjjyxgshxx4rvgqm9"
+      },
       "batchId": {
         "description": "Unique batch identifier",
         "type": "string",
