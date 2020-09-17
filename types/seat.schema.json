@@ -4,6 +4,11 @@
   "title": "Seat",
   "type": "object",
   "properties": {
+    "count": {
+      "description": "Max. number of passengers in car rental",
+      "type": "number",
+      "example": 4
+    },
     "rowNumber": {
       "description": "Number assigned to a row in the aircraft, typically used to identify seat assignments.",
       "type": "string",
