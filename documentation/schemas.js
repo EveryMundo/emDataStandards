@@ -25,7 +25,7 @@ export default fromJS([
   require('../types/dateLimit.schema.json'),
   require('../types/device.schema.json'),
   require('../types/discount.schema.json'),
-  require('../types/error.schema.json'),
+  // require('../types/error.schema.json'),
   require('../types/extraInfo.schema.json'),
   require('../types/fareTensor.schema.json'),
   require('../types/flexibleDate.schema.json'),
