@@ -51,8 +51,8 @@
       "type": "string",
       "example": "Civic"
     },
-    "passengerCount": {
-      "description": "Max. number of passengers",
+    "seatCount": {
+      "description": "Max. number of passengers in car rental",
       "type": "number",
       "example": 4
     },
