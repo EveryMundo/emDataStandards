@@ -9,36 +9,47 @@
       "$ref": "./provider.schema.json"
     },
     "priceSpecification": {
-      "allOf": [
-        {"$ref": "./priceSpecification_base.schema.json"},      
-      {
-        "properties": {
-          "currencyCode": {
-            "description": "The currency (in 3-letter ISO 4217 format) of the price.",
-            "type": "string",
-            "example": "USD"
-          },
-          "averageDailyPriceUSD": {
-            "description": "The average daily price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
-            "type": "number",
-            "example": 25.6
-          },
-          "totalPriceUSD": {
-            "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
-            "type": "number",
-            "example": 250.6
-          },
-          "totalTaxUSD": {
-            "description": "The total tax for the reservation or ticket in USD",
-            "type": "number",
-            "example": 250.6
-          },
-          "priceOffers": {
-            "description": "Description and identifier for combined service pricing, e.g. car rental price includes flight fare: 'HOTEL', 'JOURNEY', 'CAR'",
-            "type": "array",
-            "example": ["JOURNEY", "CAR"]
-          }
-    }}]},
+      "priceBeforeTaxesAndFees": {
+        "description": "Price for the reservation or ticket",
+        "type": "number",
+        "example": 234.21
+      },
+      "totalPrice": {
+        "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 250.6
+      },
+      "taxAmount": {
+        "description": "The amount paid in taxes",
+        "type": "number",
+        "example": 16.39
+      },
+      "currencyCode": {
+        "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+        "type": "string",
+        "example": "USD"
+      },
+      "averageDailyPriceUSD": {
+        "description": "The average daily price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 25.6
+      },
+      "totalPriceUSD": {
+        "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 250.6
+      },
+      "totalTaxUSD": {
+        "description": "The total tax for the reservation or ticket in USD",
+        "type": "number",
+        "example": 250.6
+      },
+      "priceOffers": {
+        "description": "Description and identifier for combined service pricing, e.g. car rental price includes flight fare: 'HOTEL', 'JOURNEY', 'CAR'",
+        "type": "array",
+        "example": ["JOURNEY", "CAR"]
+      }
+    },
     "carType": {
       "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
       "type": "string",
