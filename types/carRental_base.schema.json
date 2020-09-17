@@ -1,25 +1,45 @@
 {
   "id": "/car_base",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Car",
-  "description": "Car",
+  "title": "Car Rental (Base)",
+  "description": "Car Rental Base Schema",
   "type": "object",
   "properties": {
     "provider": {
       "$ref": "./provider.schema.json"
     },
     "priceSpecification": {
-      "$ref": "./priceSpecification_base.schema.json"
+      "$ref": "./priceSpecification_base.schema.json",
+      "currencyCode": {
+        "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+        "type": "string",
+        "example": "USD"
+      },
+      "averageDailyPriceUSD": {
+        "description": "The average daily price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 25.6
+      },
+      "totalPriceUSD": {
+        "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+        "type": "number",
+        "example": 250.6
+      },
+      "totalTaxUSD": {
+        "description": "The total tax for the reservation or ticket in USD",
+        "type": "number",
+        "example": 250.6
+      },
+      "priceOffers": {
+        "description": "Description and identifier for combined service pricing, e.g. car rental price includes flight fare: 'HOTEL', 'JOURNEY', 'CAR'",
+        "type": "array",
+        "example": ["JOURNEY", "CAR"]
+      }
     },
-    "reservationId": {
-      "description": "Unique identifier for the reservation",
+    "carType": {
+      "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
       "type": "string",
-      "example": "546323"
-    },
-    "reservationStatus": {
-      "description": "CONFIRMED, PENDING, CANCELLED",
-      "type": "string",
-      "example": "CONFIRMED"
+      "example": "SUV"
     },
     "brand": {
       "description": "Brand of the rental car",
@@ -31,55 +51,37 @@
       "type": "string",
       "example": "Civic"
     },
-    "pickupLocation": {
-      "description": "Where a taxi will pick up a passenger or a rental car can be picked up",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "Any name for the location",
-          "type": "string",
-          "example": "Hertz San Diego Airport"
-        },
-        "address": {
-          "$ref": "./address.schema.json"
-        }
-      }
+    "passengerCount": {
+      "description": "Max. number of passengers",
+      "type": "number",
+      "example": 4
     },
-    "pickupTime": {
-      "description": "When a taxi will pickup a passenger or a rental car can be picked up",
+    "baggageCount": {
+      "description": "Total number of baggages",
+      "type": "number",
+      "example": 2
+    },
+    "transmissionType": {
+      "description": "Transmission Type can be AUTOMATIC, MANUAL, CVT, SEMI-AUTOMATIC, DUAL-CLUTCH_TRANSMISSION",
       "type": "string",
-      "example": "2017-08-05T16:00:00-07:00"
+      "example": "AUTOMATIC"
     },
-    "dropoffLocation": {
-      "description": "Where a rental car can be dropped off",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "Any name for the location",
-          "type": "string",
-          "example": "Hertz LAX"
-        },
-        "address": {
-          "$ref": "./address.schema.json"
-          }
-        }
+    "unlimitedMileage": {
+      "description": "Flag indicating whether there is a mileage limitation or not",
+      "type": "boolean",
+      "example": true
     },
-    "dropoffTime": {
-      "description": "When a rental car can be dropped off",
-      "type": "string",
-      "example": "2017-08-06T20:00:00-07:00"
-    },
-    "carType": {
-      "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
-      "type": "string",
-      "example": "SUV"
+    "airCondition": {
+      "description": "Flag indicating whether the vehicle has air condition or not",
+      "type": "boolean",
+      "example": true
     }
   },
   "required": ["provider"],
   "links": [
     {
-      "title": "Car",
-      "description": "Car details",
+      "title": "Car Rental (Base)",
+      "description": "Car Rental Base Schema",
       "rel": "self",
       "href": "/car_base",
       "method": "GET",
