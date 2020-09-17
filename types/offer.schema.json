@@ -38,7 +38,7 @@
     },
     "carRentals": {
       "allOf": [
-        {"$ref": "./carRental.schema.json"}
+        {"$ref": "./carRental_base.schema.json"}
       ]
     },
     "page": {
