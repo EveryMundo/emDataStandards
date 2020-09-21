@@ -30,20 +30,10 @@
         "type": "string",
         "example": "USD"
       },
-      "averageDailyPriceUSD": {
-        "description": "The average daily price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
+      "averageDailyPrice": {
+        "description": "The average daily price for the reservation or ticket, including applicable taxes, shipping, etc. This field only applies if the priceOffer is CAR only.",
         "type": "number",
         "example": 25.6
-      },
-      "totalPriceUSD": {
-        "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
-        "type": "number",
-        "example": 250.6
-      },
-      "totalTaxUSD": {
-        "description": "The total tax for the reservation or ticket in USD",
-        "type": "number",
-        "example": 250.6
       },
       "priceOffers": {
         "description": "Description and identifier for combined service pricing, e.g. car rental price includes flight fare: 'HOTEL', 'JOURNEY', 'CAR'",
