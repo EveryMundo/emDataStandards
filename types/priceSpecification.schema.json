@@ -23,6 +23,11 @@
       "type": "array",
       "example": ["JOURNEY", "HOTEL"]
     },
+    "averageDailyPrice": {
+      "description": "The average daily price for the reservation or ticket, including applicable taxes, shipping, etc.",
+      "type": "number",
+      "example": 25.6
+    },
     "averageDailyPriceUSD": {
       "description": "The average daily price for the reservation or ticket in USD, including applicable taxes, shipping, etc.",
       "type": "number",
