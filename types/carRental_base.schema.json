@@ -11,7 +11,7 @@
     "priceSpecification": {
       "properties": {
       "priceBeforeTaxesAndFees": {
-        "description": "Price for the reservation or ticket",
+        "description": "Price for the reservation or ticket. Optional field.",
         "type": "number",
         "example": 234.21
       },
