@@ -1,0 +1,53 @@
+{
+    "product": {
+        "name": "airTRFX"
+    },
+    "airline": {
+        "iataCode": "DL",
+        "name": "Delta Air Lines"
+    },
+    "page": {
+        "author": "EveryMundo",
+        "name": "flights from miami to berlin",
+        "url": "https://flights.everymundo.com/en/flights-from-miami-to-berlin",
+        "hostname": "flights.everymundo.com",
+        "uri": "/en/flights-from-miami-to-berlin",
+        "fullURL": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google",
+        "typeName": "CITY_TO_CITY",
+        "typeCode": "CICI",
+        "languageIsoCode": "en",
+        "countryIsoCode": "US",
+        "siteEdition": "en-US",
+        "countryCurrencyCode": "USD"
+    },
+    "originCity": {
+        "name": "Miami",
+        "cityCode": "MIA"
+    },
+    "destinationCity": {
+        "name": "Berlin",
+        "cityCode": "BER"
+    },
+    "originCountry": {
+        "name": "United States",
+        "isoCode": "US"
+
+    },
+    "destinationCountry": {
+        "name": "Germany",
+        "isoCode": "DE"
+    },
+    "originAirport": {
+        "iataCode": "MIA"
+
+    },
+    "destinationAirport": {
+        "iataCode": "TXL"
+    },
+    "device": {
+        "category": "DESKTOP"
+    },
+    "extraInfo": {
+        "environment": "PRODUCTION"
+    }
+}
