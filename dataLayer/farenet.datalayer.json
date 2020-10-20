@@ -30,14 +30,14 @@
                     "type": "array",
                     "properties": {
                         "category": {
-                        "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
-                        "type": "string",
-                        "example": "Adult"
+                            "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+                            "type": "string",
+                            "example": "Adult"
                         },
                         "count": {
-                        "description": "Amount of passengers for a specific category",
-                        "type": "number",
-                        "example": 1
+                            "description": "Amount of passengers for a specific category",
+                            "type": "number",
+                            "example": 1
                         }
                     }
                 },
@@ -156,14 +156,14 @@
                                     "type": "object",
                                     "properties": {
                                         "name": {
-                                        "description": "The name of the airport",
-                                        "type": "string",
-                                        "example": "Fort Lauderdale–Hollywood International Airport"
+                                            "description": "The name of the airport",
+                                            "type": "string",
+                                            "example": "Fort Lauderdale–Hollywood International Airport"
                                         },
                                         "iataCode": {
-                                        "description": "IATA identifier for the airport",
-                                        "type": "string",
-                                        "example": "FLL"
+                                            "description": "IATA identifier for the airport",
+                                            "type": "string",
+                                            "example": "FLL"
                                         }
                                     }
                                 },
