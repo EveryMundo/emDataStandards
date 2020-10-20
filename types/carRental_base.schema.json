@@ -9,6 +9,8 @@
       "$ref": "./provider.schema.json"
     },
     "priceSpecification": {
+      "description": "PriceSpecification",
+      "type": "object",
       "properties": {
       "priceBeforeTaxesAndFees": {
         "description": "Price for the reservation or ticket. Optional field.",
