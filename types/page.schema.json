@@ -74,7 +74,7 @@
       "example": true
     },
     "urlParameters": {
-        "$ref": ".urls/parameters.urls.json"
+        "$ref": "urls/parameters.urls.json"
     }
   }}],
   "required": ["name", "url", "hostname", "languageIsoCode", "siteEdition"],
