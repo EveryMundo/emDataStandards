@@ -72,6 +72,9 @@
       "description": "Capture 'true' if page is accessible and 'false' if it is not",
       "type": "boolean",
       "example": true
+    },
+    "urlParameters": {
+        "$ref": "./parameters.urls.json"
     }
   }}],
   "required": ["name", "url", "hostname", "languageIsoCode", "siteEdition"],
