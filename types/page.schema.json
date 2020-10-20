@@ -72,6 +72,152 @@
       "description": "Capture 'true' if page is accessible and 'false' if it is not",
       "type": "boolean",
       "example": true
+    },
+    "urlParameters": {
+      "description": "Short URL Parameters",
+      "type": "object",
+      "properties": {
+        "em_aic": {
+          "description": "Airline Iata Code",
+          "type": "string",
+          "example": "em_aic=AA"
+        },
+        "em_b": {
+          "description": "Maximum Budget",
+          "type": "string",
+          "example": "em_b=300"
+        },
+        "em_c": {
+          "description": "Currency Code",
+          "type": "string",
+          "example": "em_c=GBP"
+        },
+        "em_d": {
+          "description": "Destination Airport IATA Code",
+          "type": "string",
+          "example": "em_d=NYC"
+        },
+        "em_dc": {
+          "description": "Discount Code",
+          "type": "string",
+          "example": "em_dc=ATH12345"
+        },
+        "em_dct": {
+          "description": "Device Category: DESKTOP, TABLET, MOBILE",
+          "type": "string",
+          "example": "em_dct=MOBILE"
+        },
+        "em_dd": {
+          "description": "Departure Date YYYY-MM-DD",
+          "type": "string",
+          "example": "em_dd=2019-03-26"
+        },
+        "em_dse": {
+          "description": "Deeplink site edition",
+          "type": "string",
+          "example": "em_dse=en-HK"
+        },
+        "em_dt": {
+          "description": "{Outbound date},{Inbound date}, e.g. 20180412,20180420",
+          "type": "string",
+          "example": "em_dt=20180505,20180606"
+        },
+        "em_fai": {
+          "description": "Fare Alert Id consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}_{random 8 number id}",
+          "type": "string",
+          "example": "em_fai=A3ATHSKGEUR41_12345678 "
+        },
+        "em_fc": {
+          "description": "Fare Class should be EC (Economy), FC (First Class), BC (Business Class). In tracking the full fare class name is used (ECONOMY, BUSINESS, FIRST_CLASS)",
+          "type": "string",
+          "example": "em_fc=EC"
+        },
+        "em_fd": {
+          "description": "Flexible Dates should be t (true) or f (false)",
+          "type": "string",
+          "example": "em_fd=f"
+        },
+        "em_fw": {
+          "description": "FareWire Tracking Parameter consisting of {airlineIataCode}{origin_airport}{destination_airport}{currencyCode}{price}{Endpoint name or id}_{random 8 number id}",
+          "type": "string",
+          "example": "em_fw=A3ATHSKGEUR41Facebook_12345678 "
+        },
+        "em_jt": {
+          "description": "Journey Type should be ROUND_TRIP = RT, ONE_WAY = OW, MULTI_CITY=MC",
+          "type": "string",
+          "example": "em_jt=OW"
+        },
+        "em_l": {
+          "description": "Action label giving more details to event action. Used in the tracking library.",
+          "type": "string",
+          "example": "em_l=view-deal"
+        },
+        "em_m": {
+          "description": "Miles",
+          "type": "string",
+          "example": "em_m=true"
+        },
+        "em_o": {
+          "description": "Origin Airport IATA Code",
+          "type": "string",
+          "example": "em_o=MIA"
+        },
+        "em_p": {
+          "description": "Provider. Airline name without space.",
+          "type": "string",
+          "example": "em_p=AmericanAirlines"
+        },
+        "em_pc": {
+          "description": "Passenger Count",
+          "type": "string",
+          "example": "em_pc=1"
+        },
+        "em_ptc": {
+          "description": "Page Type Code",
+          "type": "string",
+          "example": "em_pc=CICI"
+        },
+        "em_r": {
+          "description": "Route",
+          "type": "string",
+          "example": "em_r=SFO>JFK"
+        },
+        "em_ra": {
+          "description": "Redemption Amount",
+          "type": "string",
+          "example": "em_ra=39937"
+        },
+        "em_rd": {
+          "description": "Return Date YYYY-MM-DD",
+          "type": "string",
+          "example": "em_rd=2019-03-26"
+        },
+        "em_ta": {
+          "description": "Tax Amount",
+          "type": "string",
+          "example": "em_ta=50"
+        },
+        "em_tp": {
+          "description": "Total Price",
+          "type": "string",
+          "example": "em_tp=399.37"
+        },
+        "em_tpu": {
+          "description": "The total price for the reservation or ticket in USD, including applicable taxes, shipping, etc. Two decimals only.",
+          "type": "string",
+          "example": "em_tpu=530.62"
+        },
+        "em_ttu": {
+          "description": "Total Tax in USD",
+          "type": "string",
+          "example": "em_ttu=40"
+        },
+        "em_se": {
+          "description": "Site Edition",
+          "type": "string",
+          "example": "em_se=en-HK"
+        }
+      }
     }
   }}],
   "required": ["name", "url", "hostname", "languageIsoCode", "siteEdition"],

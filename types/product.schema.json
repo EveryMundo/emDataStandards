@@ -9,6 +9,11 @@
       "description": "Product name",
       "type": "string",
       "example": "airTRFX"
+    },
+    "version": {
+      "description": "Product version",
+      "type": "string",
+      "example": "2.0"
     }
   },
   "required": ["id"],

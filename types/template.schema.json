@@ -1,0 +1,46 @@
+{
+    "id": "/template",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Template",
+    "description": "Page Template",
+    "type": "object",
+    "properties": {
+      "variables": {
+        "description": "Array of all applicable variables for the template",
+        "type": "array",
+        "example": [
+            "Destination.City",
+            "Origin.City"
+        ]
+      },
+      "modules": {
+        "description": "Array including Objects for each Front Component on the page",
+        "type": "array",
+        "properties": {
+            "id": {
+                "description": "TRFX Front Component ID",
+                "type": "string",
+                "example": "page_title_h1"
+            },
+            "name": {
+                "description": "TRFX Front Component Name",
+                "type": "string",
+                "example": "Page Title [H1]"
+            }
+        }
+      }
+    },
+    "required": [],
+    "links": [
+      {
+        "title": "Template",
+        "description": "Template",
+        "rel": "self",
+        "href": "/template",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }

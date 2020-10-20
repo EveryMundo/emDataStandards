@@ -1,0 +1,64 @@
+{
+    "product": {
+        "name": "airTRFX",
+        "version": "2.0"
+    },
+    "airline": {
+        "iataCode": "DL",
+        "name": "Delta Air Lines"
+    },
+    "page": {
+        "author": "EveryMundo",
+        "name": "flights from miami to berlin",
+        "url": "https://flights.everymundo.com/en/flights-from-miami-to-berlin",
+        "hostname": "flights.everymundo.com",
+        "uri": "/en/flights-from-miami-to-berlin",
+        "fullURL": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google",
+        "typeName": "CITY_TO_CITY",
+        "typeCode": "CICI",
+        "languageIsoCode": "en",
+        "countryIsoCode": "US",
+        "siteEdition": "en-US",
+        "countryCurrencyCode": "USD",
+        "urlParameters": [
+            {"o": "MIA", "d": "NYC", "pc": "1", "jt": "OW", "dd": "2019-03-26", "rd": "2019-03-26", "dc": "ATH12345", "fc": "EC", "fd": "f", "b": "300"}
+            ]
+    },
+    "originCity": {
+        "name": "Miami",
+        "cityCode": "MIA"
+    },
+    "destinationCity": {
+        "name": "Berlin",
+        "cityCode": "BER"
+    },
+    "originCountry": {
+        "name": "United States",
+        "isoCode": "US"
+
+    },
+    "destinationCountry": {
+        "name": "Germany",
+        "isoCode": "DE"
+    },
+    "originAirport": {
+        "iataCode": "MIA"
+
+    },
+    "destinationAirport": {
+        "iataCode": "TXL"
+    },
+    "device": {
+        "category": "DESKTOP"
+    },
+    "template": {
+        "variables": ["Origin.City", "Destination.City"],
+        "modules": [
+            {"id": "page_title_h1", "name": "Page Title [H1]"},
+            {"id": "campaign_id_5f03503681805416b72001be", "name": "[Campaign] Banners - Peace of Mind and Change Fee Waiver"}
+        ]
+    },
+    "extraInfo": {
+        "environment": "PRODUCTION"
+    }
+}
