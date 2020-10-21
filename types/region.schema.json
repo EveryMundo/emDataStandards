@@ -28,9 +28,24 @@
           "description": "The longitude of the region",
           "type": "number",
           "example": -108.32
+        },
+        "id": {
+          "description": "GEOIDs are numeric codes that uniquely identify all administrative/legal and statistical geographic areas",
+          "type": "string",
+          "example": "6252001"
         }
       }
     },
+    "fromPrepositionName": {
+      "description": "The name of the country with the 'from' preposition based on Core Dictionary",
+      "type": "string",
+      "example": "North America"
+    },
+    "toPrepositionName": {
+      "description": "The name of the country with the 'to' preposition based on Core Dictionary",
+      "type": "string",
+      "example": "North America"
+    },    
     "images": {
       "description": "Array of image URLs for the region",
       "type": "array",

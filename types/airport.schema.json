@@ -21,8 +21,23 @@
           "description": "The longitude of the airport",
           "type": "number",
           "example": -108.32
+        },
+        "id": {
+          "description": "GEOIDs are numeric codes that uniquely identify all administrative/legal and statistical geographic areas",
+          "type": "string",
+          "example": "6252001"
         }
       }
+    },
+    "fromPrepositionName": {
+      "description": "The name of the country with the 'from' preposition based on Core Dictionary",
+      "type": "string",
+      "example": "Miami International Airport"
+    },
+    "toPrepositionName": {
+      "description": "The name of the country with the 'to' preposition based on Core Dictionary",
+      "type": "string",
+      "example": "Miami International Airport"
     },
     "images": {
       "description": "Array of image URLs for the airport",
