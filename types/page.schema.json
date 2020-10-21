@@ -58,6 +58,11 @@
       "type": "string",
       "example": "US"
     },
+    "countryGeoId": {
+      "description": "The GEOID for the country of the site edition.",
+      "type": "string",
+      "example": "US"
+    },
     "dateCreated": {
       "description": "The date on which the CreativeWork was created",
       "type": "string",
@@ -72,6 +77,20 @@
       "description": "Capture 'true' if page is accessible and 'false' if it is not",
       "type": "boolean",
       "example": true
+    },
+    "originAirportIataCodes": {
+      "description": "Array including all Origin Airports that apply to the Page",
+      "type": "array",
+      "example": [
+        "MIA"
+      ]
+    },
+    "destinationAirportIataCodes": {
+        "description": "Array including all Destination Airports that apply to the Page",
+        "type": "array",
+        "example": [
+          "BER", "TXL", "SXF"
+        ]
     },
     "urlParameters": {
       "description": "Short URL Parameters",
