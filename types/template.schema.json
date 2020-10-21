@@ -28,6 +28,11 @@
                 "example": "Page Title [H1]"
             }
         }
+      },
+      "textDirection": {
+        "description": "Left-to-right (LTR) or Right-to-left (RTL)",
+        "type": "string",
+        "example": "LTR"
       }
     },
     "required": [],
