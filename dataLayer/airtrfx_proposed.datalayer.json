@@ -21,6 +21,7 @@
         "countryIsoCode": "US",
         "countryGeoId": "6252001",
         "siteEdition": "en-US",
+        "siteEditionCustomerMapping": "en",
         "countryCurrencyCode": "USD",
         "originAirportIataCodes": [
             "MIA"
@@ -30,9 +31,17 @@
         ],
         "urlParameters": [
             {"o": "MIA", "d": "NYC", "pc": "1", "jt": "OW", "dd": "2019-03-26", "rd": "2019-03-26", "dc": "ATH12345", "fc": "EC", "fd": "f", "b": "300"}
-            ]
+            ],
+        "dateFormat": "dd/MM/yy",
+        "currencyInFront": true
     },
     "origin": {
+        "airport": {
+            "name": "Miami International Airport",
+            "iataCode": "MIA",
+            "geoId": "12345",
+            "default": "MIA"
+        },
         "city": {
             "name": "Miami",
             "cityCode": "MIA",
@@ -47,17 +56,23 @@
             "fromPrepositionName": "the United States",
             "toPrepositionName": "the United States"
         },
-        "airport": {
-            "iataCode": "MIA",
-            "geoId": "12345"
-        },
         "state": {
             "name": "Florida",
             "fromPrepositionName": "Florida",
             "toPrepositionName": "Florida"
+        },
+        "region": {
+            "name": "North America",
+            "geoId": "123456"
         }
     },
     "destination": {
+        "airport": {
+            "name": "Berlin-Tegel Airport",
+            "iataCode": "TXL",
+            "geoId": "12345",
+            "default": "BER"
+        },
         "city": {
             "name": "Berlin",
             "cityCode": "BER",
@@ -72,14 +87,14 @@
             "fromPrepositionName": "Germany",
             "toPrepositionName": "Germany"
         },
-        "airport": {
-            "iataCode": "TXL",
-            "geoId": "12345"
-        },
         "state": {
             "name": "Brandenburg",
             "fromPrepositionName": "Brandenburg",
             "toPrepositionName": "Brandenburg"
+        },
+        "region": {
+            "name": "Europe",
+            "geoId": "123456"
         }
     },
     "device": {
