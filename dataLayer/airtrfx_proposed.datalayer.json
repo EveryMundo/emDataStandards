@@ -14,39 +14,88 @@
         "hostname": "flights.everymundo.com",
         "uri": "/en/flights-from-miami-to-berlin",
         "fullURL": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google",
+        "previousPageURL": "https://www.aa.com/en-us/flights-to-guadalajara",
         "typeName": "CITY_TO_CITY",
         "typeCode": "CICI",
         "languageIsoCode": "en",
         "countryIsoCode": "US",
+        "countryGeoId": "6252001",
         "siteEdition": "en-US",
+        "siteEditionCustomerMapping": "en",
         "countryCurrencyCode": "USD",
+        "originAirportIataCodes": [
+            "MIA"
+        ],
+        "destinationAirportIataCodes": [
+            "BER", "TXL", "SXF"
+        ],
         "urlParameters": [
             {"o": "MIA", "d": "NYC", "pc": "1", "jt": "OW", "dd": "2019-03-26", "rd": "2019-03-26", "dc": "ATH12345", "fc": "EC", "fd": "f", "b": "300"}
-            ]
+            ],
+        "dateFormat": "dd/MM/yy",
+        "currencyInFront": true
     },
-    "originCity": {
-        "name": "Miami",
-        "cityCode": "MIA"
+    "origin": {
+        "airport": {
+            "name": "Miami International Airport",
+            "iataCode": "MIA",
+            "geoId": "12345",
+            "default": "MIA"
+        },
+        "city": {
+            "name": "Miami",
+            "cityCode": "MIA",
+            "geoId": "12345",
+            "fromPrepositionName": "Miami",
+            "toPrepositionName": "Miami"
+        },
+        "country": {
+            "name": "United States",
+            "isoCode": "US",
+            "geoId": "12345",
+            "fromPrepositionName": "the United States",
+            "toPrepositionName": "the United States"
+        },
+        "state": {
+            "name": "Florida",
+            "fromPrepositionName": "Florida",
+            "toPrepositionName": "Florida"
+        },
+        "region": {
+            "name": "North America",
+            "geoId": "123456"
+        }
     },
-    "destinationCity": {
-        "name": "Berlin",
-        "cityCode": "BER"
-    },
-    "originCountry": {
-        "name": "United States",
-        "isoCode": "US"
-
-    },
-    "destinationCountry": {
-        "name": "Germany",
-        "isoCode": "DE"
-    },
-    "originAirport": {
-        "iataCode": "MIA"
-
-    },
-    "destinationAirport": {
-        "iataCode": "TXL"
+    "destination": {
+        "airport": {
+            "name": "Berlin-Tegel Airport",
+            "iataCode": "TXL",
+            "geoId": "12345",
+            "default": "BER"
+        },
+        "city": {
+            "name": "Berlin",
+            "cityCode": "BER",
+            "geoId": "12345",
+            "fromPrepositionName": "Berlin",
+            "toPrepositionName": "Berlin"
+        },
+        "country": {
+            "name": "Germany",
+            "isoCode": "DE",
+            "geoId": "12345",
+            "fromPrepositionName": "Germany",
+            "toPrepositionName": "Germany"
+        },
+        "state": {
+            "name": "Brandenburg",
+            "fromPrepositionName": "Brandenburg",
+            "toPrepositionName": "Brandenburg"
+        },
+        "region": {
+            "name": "Europe",
+            "geoId": "123456"
+        }
     },
     "device": {
         "category": "DESKTOP"
@@ -56,7 +105,8 @@
         "modules": [
             {"id": "page_title_h1", "name": "Page Title [H1]"},
             {"id": "campaign_id_5f03503681805416b72001be", "name": "[Campaign] Banners - Peace of Mind and Change Fee Waiver"}
-        ]
+        ],
+        "textDirection": "LTR"
     },
     "extraInfo": {
         "environment": "PRODUCTION"
