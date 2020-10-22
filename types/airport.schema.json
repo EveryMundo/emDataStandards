@@ -39,6 +39,11 @@
       "type": "string",
       "example": "Miami International Airport"
     },
+    "default": {
+      "description": "Default Airport Code when setup in TRFX for airlines that have more than one Airport for the location",
+      "type": "string",
+      "example": "MIA"
+    },
     "images": {
       "description": "Array of image URLs for the airport",
       "type": "array",
