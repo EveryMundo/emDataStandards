@@ -48,6 +48,35 @@
       "description": "Whether the user is logged in as Loyalty user or not in an airTRFX page",
       "type": "boolean",
       "example": false
+    },
+    "lastSearchedRoutes": {
+      "description": "Routes that have been recently searched",
+      "type": "array",
+      "example": [
+        "MIA>LAX","LGA>FLL"
+      ]
+    },
+    "homeAirportIataCode": {
+      "description": "The most frequent departure airport for a user. This is usually set in the loyalty account.",
+      "type": "string",
+      "example": "MIA"
+    },
+    "savedRoutes": {
+      "description": "Routes that the user has saved",
+      "type": "array",
+      "example": [
+        "MIA>LAX","LGA>FLL"
+      ]
+    },
+    "preferredFareClass": {
+      "description": "Preferred Fare Class",
+      "type": "string",
+      "example": "BUSINESS"
+    },
+    "preferredJourneyType": {
+      "description": "Preferred Journey Type",
+      "type": "string",
+      "example": "ONE_WAY"
     }
   },
   "required": ["name", "provider", "membershipLevel", "milesEarned"],
