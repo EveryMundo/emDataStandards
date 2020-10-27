@@ -1,2 +1,17 @@
-{
-}
+MMdataLayer = [{
+    'languageIsoCode': 'en',
+    'countryIsoCode ': 'US',
+    'originAirportIataCodes ': 'MIA,TXL,SXF',
+    'destinationAirportIataCodes': 'LHR,MIL,LAX',
+    'fareClass': 'ECONOMY',
+    'journeyType': 'ONE_WAY',
+    'isLoggedIn': 'TRUE',
+    'membershipLevel': 'Basic',
+    'redemptionUnit': 'miles',
+    'redemptionBalance': 2500,
+    'lastSearchedRoutes': 'MIA>JFK',
+    'homeAirportIataCode': 'MIA',
+    'savedRoutes': 'NYC>CHI,ORD>MIA',
+    'preferredFareClass': 'BUSINESS',
+    'preferredJourneyType': 'ROUND_TRIP'
+  }];
