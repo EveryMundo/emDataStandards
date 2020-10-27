@@ -28,7 +28,11 @@
           "example": 750
         }
       }
-    }
+    }},
+    "balance": {
+      "description": "The balance of MILES, BITCOIN, POINTS, CURRENCY, OTHER that the user has available to spent",
+      "type": "number",
+      "example": 70000
   }}],
   "required": ["unit", "amount"],
   "links": [
