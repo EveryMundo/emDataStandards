@@ -22,7 +22,6 @@
         "countryGeoId": "6252001",
         "siteEdition": "en-US",
         "siteEditionCustomerMapping": "en",
-        "countryCurrencyCode": "USD",
         "originAirportIataCodes": [
             "MIA"
         ],
@@ -33,7 +32,15 @@
             {"o": "MIA", "d": "NYC", "pc": "1", "jt": "OW", "dd": "2019-03-26", "rd": "2019-03-26", "dc": "ATH12345", "fc": "EC", "fd": "f", "b": "300"}
             ],
         "dateFormat": "dd/MM/yy",
-        "currencyInFront": true
+        "priceFormat": {
+            "currencyIsoCode": "USD",
+            "useCurrencyCode": true,
+            "currencyInFront": true,
+            "priceThousandSeparator": ",",
+            "priceDecimalSeparator": ".",
+            "priceDecimalCount": 2
+        }
+        
     },
     "origin": {
         "airport": {
