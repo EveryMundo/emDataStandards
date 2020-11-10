@@ -109,10 +109,8 @@
       "type": "string",
       "example": "dd/MM/yy"
     },
-    "currencyInFront": {
-      "description": "Boolean to determine if the currency is in front of the price",
-      "type": "boolean",
-      "example": true
+    "priceFormat":{
+      "$ref": "./priceFormat.schema.json"
     }
     }
   }],
