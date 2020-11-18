@@ -1,0 +1,37 @@
+{
+  "_id":16003008073681351.7753aafw,
+  "airlineIataCode": "AC",
+  "componentName": "booking-flights",
+  "eventCategory": "em-booking-mask",
+  "eventAction": "viewable-impression",
+  "label": 'Book-Now',
+  "provider": "AirCanada",
+  "url": "https://www.aircanada.com/fr-ca/vols-de-montreal-ca",
+  "deviceCategory": "MOBILE",
+  "siteEdition": "en-US",
+  "deeplinkSiteEdition": "en-US",
+  "pageTypeCode": "TCI",
+  "journeyType": "ROUND_TRIP",
+  "originAirportIataCode": "JFK",
+  "destinationAirportIataCode": "AUS",
+  "departureDate": "2017-12-07",
+  "returnDate": "2017-12-10",
+  "FareClass": "ECONOMY",
+  "passengerCount": 3,
+  "isFlexibleDates": true,
+  "discountCode": "rytHUN",
+  "miles":false,
+  "totalPrice": 123.45,
+  "currencyCode": "CAD",
+  "taxAmount": 234.67,
+  "redemptionAmount": 560.34,
+  "totalPriceUSD":340.90,
+  "totalTaxUSD":240.00
+  "emcid": "6KOIaY"
+  "userLatitude": -17.34908
+  "userLongitude": -17.34908
+  "version": "2.1.0",
+  "referrer": "flights.everymundo.com/en/flights-from-miami-to-berlin", 
+  "browser": "Safari 3.0+",
+  "__createdat":2020-11-15 00:00:02.000000
+}
