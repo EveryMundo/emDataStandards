@@ -10,6 +10,16 @@
       "type": "string",
       "example": "airTRFX"
     },
+    "category": {
+      "description": "For Flights, this is populated with the journeyType",
+      "type": "string",
+      "example": "ONE_WAY"
+    },
+    "type": {
+      "description": "For Flights, this is populated with the fareClass",
+      "type": "string",
+      "example": "BUSINESS"
+    },
     "version": {
       "description": "Product version",
       "type": "string",
