@@ -37,7 +37,7 @@
         "example": "RTJFKFRA2017073120170824$92_12345678"
       },
       "emcid": {
-        "description": "Used in product tracking to identify user interactions across modules",
+        "description": "Unique idenfier used in product tracking to identify user interactions across modules",
         "type": "string",
         "example": "123456"
       },
