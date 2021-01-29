@@ -24,12 +24,12 @@
       "example": "https://flights.everymundo.com/en/flights-from-miami-to-berlin&utm_source=google"
     },
     "typeName": {
-      "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, COUNTRY_TO_COUNTRY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED, CUSTOM_PAGE, 404_PAGE, SITEMAP, BUS_STATION, FROM_STATE", 
+      "description": "Template name: HOMEPAGE, CITY_TO_CITY, FROM_CITY, TO_CITY, CITY_TO_COUNTRY, COUNTRY_TO_CITY, COUNTRY_TO_COUNTRY, FROM_COUNTRY, TO_COUNTRY, EXTERNALIZED, CUSTOM_PAGE, 404_PAGE, SITEMAP, BUS_STATION, FROM_STATE, FROM_AIRPORT", 
       "type": "string",
       "example": "CITY_TO_CITY"
     },
     "typeCode": {
-      "description": "Page Type Code: HP, CICO, FCI, TCI, CICI, COCI, COCO, FCO, TCO, EXT, CP, 404, SM, BS, FS",
+      "description": "Page Type Code: HP, CICO, FCI, TCI, CICI, COCI, COCO, FCO, TCO, EXT, CP, 404, SM, BS, FS, FA",
       "type": "string",
       "example": "CICI"
     },
