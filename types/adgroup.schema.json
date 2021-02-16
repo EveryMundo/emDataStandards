@@ -14,7 +14,12 @@
       "description": "Adwords ad group unique identifier",
       "type": "string",
       "example": "234324324"
-    }
+    },
+    "campaignId": {
+      "description": "Adwords campaign unique identifier",
+      "type": "number",
+      "example": "23232323"
+    },
   },
   "required": ["name","id"],
   "links": [
