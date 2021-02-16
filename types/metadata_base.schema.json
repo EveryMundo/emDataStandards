@@ -26,16 +26,6 @@
             }
         }
       },
-      "trackingId": {
-        "description": "Same as emtid. This parameter is supposed to be deprecated in the long-run",
-        "type": "string",
-        "example": "RTJFKFRA2017073120170824$0_12345678"
-      },
-      "emtid": {
-        "description": "Same as trackingId. Unique identifier created through module interactions for event tracking",
-        "type": "string",
-        "example": "RTJFKFRA2017073120170824$92_12345678"
-      },
       "emcid": {
         "description": "Unique idenfier used in product tracking to identify user interactions across modules",
         "type": "string",
