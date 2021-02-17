@@ -1,0 +1,12 @@
+MMdataLayer_iframe = [{
+
+    "ad": {
+        "id": "234324324",
+        "groupId": "234324324",
+        "campaignId": "234324324"
+    },
+    "publisher": {
+        "id": "XYZ"
+    },
+    "iframe": true
+}];
