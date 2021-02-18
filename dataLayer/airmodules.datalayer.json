@@ -1,5 +1,5 @@
 dataLayer.push({
-    'event': 'viewable-impression’,
+    'event': 'viewable-impression',
     'module': 'em-booking-popup-abstract',
     'eventAction': 'viewable - impression',
     'actionLabel': null,
@@ -14,9 +14,7 @@ dataLayer.push({
     'totalPriceUSD': null,
     'fareClass': 'ECONOMY',
     'departureDate': '2021-03-13',
-    'departureWeekDay': 6,
     'returnDate': '2021-06-14',
-    'returnWeekDay': 1,
     'daysUntilFlight': 25,
     'tripLength': 93,
     'isFlexibleDates': null,
