@@ -9,6 +9,11 @@
         "description": "Publisher unique identifier",
         "type": "string",
         "example": "234324324"
+      },
+      "code": {
+        "description": "Publisher code",
+        "type": "string",
+        "example": "AC"
       }
     },
     "required": ["id"],
