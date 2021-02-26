@@ -1,0 +1,32 @@
+{
+    "id": "/advertiser",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Advertiser",
+    "description": "Advertiser",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "Advertiser unique identifier",
+        "type": "string",
+        "example": "234324324"
+      },
+      "code": {
+        "description": "Advertiser code as defined in the EM Registry",
+        "type": "string",
+        "example": "AC"
+      }
+    },
+    "required": ["id"],
+    "links": [
+      {
+        "title": "Advertiser",
+        "description": "Advertiser",
+        "rel": "self",
+        "href": "/advertiser",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }
