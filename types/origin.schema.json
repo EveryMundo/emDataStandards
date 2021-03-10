@@ -1,0 +1,29 @@
+{
+    "id": "/origin",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Origin",
+    "description": "Origin",
+    "type": "object",
+    "properties": {
+      "locations": {
+        "description": "For Airlines, these are the originAirportIataCodes",
+        "type": "array",
+        "example": [
+            "MIA", "TXL", "SXF"
+        ]
+      }
+    },
+    "required": [],
+    "links": [
+      {
+        "title": "Origin",
+        "description": "Origin",
+        "rel": "self",
+        "href": "/origin",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }

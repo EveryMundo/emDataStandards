@@ -12,14 +12,16 @@
     },
     "adgroupId": {
       "description": "Adwords ad group unique identifier",
-      "type": "number",
+      "type": "string",
       "example": "234324324"
     },
-    "campaignId":{
-      "description": "Adwords campaign id"
-    }
+    "campaignId": {
+      "description": "Adwords campaign unique identifier",
+      "type": "number",
+      "example": "23232323"
+    },
   },
-  "required": ["adgroupName","adgroupId"],
+  "required": ["name","id"],
   "links": [
     {
       "title": "adgroup",

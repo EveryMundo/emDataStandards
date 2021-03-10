@@ -1,0 +1,37 @@
+{
+    "id": "/ad",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Ad",
+    "description": "Ad",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "Ad Unit Id in Module Manager",
+        "type": "string",
+        "example": "234324324"
+      },
+      "groupId":{
+        "description": "Component Group Id in Module Manager",
+        "type": "string",
+        "example": "234324324"
+      },
+      "campaignId":{
+        "description": "Campaign id in Module Manager",
+        "type": "string",
+        "example": "234324324"
+      }
+    },
+    "required": ["id"],
+    "links": [
+      {
+        "title": "Ad",
+        "description": "Ad",
+        "rel": "self",
+        "href": "/ad",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }

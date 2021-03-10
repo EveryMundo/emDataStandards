@@ -48,6 +48,35 @@
       "description": "Whether the user is logged in as Loyalty user or not in an airTRFX page",
       "type": "boolean",
       "example": false
+    },
+    "lastSearchedProducts": {
+      "description": "For Flights, lastSearchedProducts is populated with the routes that have been recently searched",
+      "type": "array",
+      "example": [
+        "MIA>LAX","LGA>FLL"
+      ]
+    },
+    "homeLocation": {
+      "description": "For Flights, the homeLocation is the most frequent departure airport for a user. This is usually set in the loyalty account.",
+      "type": "string",
+      "example": "MIA"
+    },
+    "savedProducts": {
+      "description": "For Flights, savedProducts is populated with routes that the user has saved",
+      "type": "array",
+      "example": [
+        "MIA>LAX","LGA>FLL"
+      ]
+    },
+    "preferredProductCategory": {
+      "description": "For Flights, the preferredProductCategory is the preferred Journey Type",
+      "type": "string",
+      "example": "ONE_WAY"
+    },
+    "preferredProductType": {
+      "description": "For Flights, the preferredProductType is the preferred Fare Class",
+      "type": "string",
+      "example": "BUSINESS"
     }
   },
   "required": ["name", "provider", "membershipLevel", "milesEarned"],

@@ -1,0 +1,32 @@
+{
+    "id": "/publisher",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Publisher",
+    "description": "Publisher",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "Publisher unique identifier",
+        "type": "string",
+        "example": "234324324"
+      },
+      "code": {
+        "description": "Publisher code",
+        "type": "string",
+        "example": "AC"
+      }
+    },
+    "required": ["id"],
+    "links": [
+      {
+        "title": "Publisher",
+        "description": "Publisher",
+        "rel": "self",
+        "href": "/publisher",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }
