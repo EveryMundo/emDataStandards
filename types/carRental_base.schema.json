@@ -43,10 +43,15 @@
         "example": ["JOURNEY", "CAR"]
       }}
     },
-    "carType": {
-      "description": "SUV, MINIVAN, CONVERTIBLE, STANDARD, LUXURY, COMPACT",
+    "vehicleType": {
+      "description": "CAR, SUV, TRUCK, VAN",
       "type": "string",
-      "example": "SUV"
+      "example": "CAR"
+    },
+    "vehicleClass": {
+      "description": "ECONOMY, COMPACT, MIDSIZE, CONVERTIBLE, STANDARD, FULL_SIZE, PREMIUM, PREMIUM_SPECIAL, LUXURY",
+      "type": "string",
+      "example": "ECONOMY"
     },
     "brand": {
       "description": "Brand of the rental car",
