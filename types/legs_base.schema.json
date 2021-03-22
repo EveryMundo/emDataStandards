@@ -48,11 +48,6 @@
       "arrivalCountry": {
         "$ref": "./country_base.schema.json"
       },
-      "flightType": {
-        "description": "DOMESTIC, INTERNATIONAL",
-        "type": "string",
-        "example": "DOMESTIC"
-      },
       "operatingAirline": {
         "$ref": "./airline_base.schema.json"
       },

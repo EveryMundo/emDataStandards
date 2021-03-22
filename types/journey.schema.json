@@ -8,6 +8,11 @@
     {"$ref": "./journey_base.schema.json"},
   {
   "properties": {
+    "flightType": {
+      "description": "Type of flight",
+      "type": "string",
+      "example": "Domestic"
+    },
     "flightReservation": {
       "$ref": "./flightReservation.schema.json"
     },
@@ -43,7 +48,7 @@
     }
     }
   }],
-  "required": ["fullRoute", "priceSpecification", "passengerDetails", "passenger", "fareTensor", "outboundFlight", "inboundFlight", "departureDate", "returnDate", "journeyType", "isCodeShare", "flightType", "segmentCount", "flightCount", "discount", "airline"],
+  "required": ["journey_base"],
   "links": [
     {
       "title": "Journey",

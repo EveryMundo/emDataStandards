@@ -49,6 +49,11 @@
             "type": "string",
             "example": "300km"
           },
+          "flightType": {
+            "description": "DOMESTIC, INTERNATIONAL",
+            "type": "string",
+            "example": "DOMESTIC"
+          },
           "additionalInfo": {
             "$ref": "./additionalInfo.schema.json"
           }
@@ -56,7 +61,7 @@
       }
     }
   },
-  "required": ["flightNumber", "route", "departureAirport", "departureTime", "arrivalAirport", "arrivalTime", "estimatedDuration", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "operatingAirline", "aircraft"],
+  "required": ["leg_base"],
   "links": [
     {
       "title": "Legs",
