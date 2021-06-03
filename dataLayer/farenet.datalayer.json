@@ -276,9 +276,9 @@
                     "type": "object",
                     "properties": {
                         "journeyType": {
-                        "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
-                        "type": "string",
-                        "example": "ROUND_TRIP"
+                            "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
+                            "type": "string",
+                            "example": "ROUND_TRIP"
                         },
                         "cells": {
                             "description": "Cells in the matrix",
