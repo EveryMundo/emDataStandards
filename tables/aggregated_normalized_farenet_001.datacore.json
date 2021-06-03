@@ -1,0 +1,21 @@
+{ "farenetDate": "2021-02-10"
+  "departureAirportIataCode": "TSN",
+  "arrivalAirportIataCode": "XMN"
+  "departureDate": "2021-02-16",
+  "returnDate": "2021-02-26",
+  "flightType": "DOMESTIC",
+  "journeyType": "ONE_WAY",
+  "deviceCategory": "DESKTOP",
+  "siteEdition": "en-US",
+  "outboundFareClass": "ECONOMY",
+  "inboundFareClass": "ECONOMY",
+  "searches": 5,
+  "averagePriceUSD": 250.6,
+  "passengerCount": 3,
+  "minfarenetTimestamp": "2021-02-10 00:13:40.000",
+  "maxfarenetTimestamp": "2021-02-10 00:13:40.000",
+  "airlineIataCode": "EM",
+  "day":23,
+  "month": 09,
+  "year": 2021
+}
