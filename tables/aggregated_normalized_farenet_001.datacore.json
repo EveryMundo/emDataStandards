@@ -1,6 +1,6 @@
-{ "farenetDate": "2021-02-10"
+{ "farenetDate": "2021-02-10",
   "departureAirportIataCode": "TSN",
-  "arrivalAirportIataCode": "XMN"
+  "arrivalAirportIataCode": "XMN",
   "departureDate": "2021-02-16",
   "returnDate": "2021-02-26",
   "flightType": "DOMESTIC",
