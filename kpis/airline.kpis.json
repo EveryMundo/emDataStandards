@@ -61,7 +61,7 @@
         "example": 1000
       },
       "fsiRate": {
-        "description": "The percentage of flight search initiations after viewing an airModule.",
+        "description": "The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule.",
         "type": "number",
         "example": 0.5
       },
