@@ -1,0 +1,22 @@
+{
+  "_id": "15830129180073441.4163aaho-00045",
+  "year": 2020,
+  "month": "2020-01-01 00:00:00",
+  "accountname": "EM_JP (ja)",
+  "accountid": "1010900",
+  "campaignid": "2062350",
+  "campaignname": "JS:ja-JP_NB\\CC-Route=HKG>00>CNX/Geo@JP",
+  "adgroupid": "490351261",
+  "adgroupname": "JS:ja-JP_NB\\IR=HKG>00>CNX/EX",
+  "device": "Mobile devices with full browsers",
+  "impressions": 31,
+  "clicks": 1,
+  "cost": 107,
+  "conversions": 1,
+  "convvalue": 7658.08,
+  "day": "2020-01-29 00:00:00",
+  "airline": "EM",
+  "batch_id": "202002291643",
+  "__v": 2,
+  "__createdat": "2020-02-29 21:48:38"
+}
