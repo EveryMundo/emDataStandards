@@ -1,0 +1,20 @@
+{
+  "date": "2018-01-30 00:00:00",
+  "customerid": "846184",
+  "keywordid": "nkw-a001-01-000000003315501",
+  "adid": "nad-a001-01-000000010862645",
+  "businesschannelid": "bsn-m001-00-000000001401499",
+  "mediacode": "27758",
+  "devicetype": "P",
+  "campaignname": "NS:ko-KR_NB\\Generic/Geo@KR",
+  "adgroupname": "NS:ko-KR_NB\\Generic/@HKFlight2",
+  "campaign_id": "cmp-m001-01-000000043788314",
+  "adgroup_id": "grp-m001-01-000002091639161",
+  "impressions": 7,
+  "clicks": 0,
+  "cost": 0,
+  "totalrank": 19,
+  "conversionmethod": "Direct",
+  "conversions": 0,
+  "accountname": "everymundo355"
+}
