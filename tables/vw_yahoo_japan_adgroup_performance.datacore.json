@@ -1,0 +1,19 @@
+{
+  "accountname": "EM_JP (ja)",
+  "accountid": "1010900",
+  "day": "2020-01-29 00:00:00",
+  "month": "2020-01-01 00:00:00",
+  "year": 2020,
+  "adgroupid": "483336329",
+  "adgroupname": "JS:ja-JP_BR\\Core=EM/EX@Everymundo_jp",
+  "campaignid": "1888819",
+  "campaignname": "JS:ja-JP_BR\\Core/Geo@FUK",
+  "device": "Computers",
+  "impressions": 33,
+  "clicks": 6,
+  "cost": 224,
+  "conversions": 0,
+  "convvalue": 0,
+  "airline": "EM",
+  "batch_id": "202002291643"
+}

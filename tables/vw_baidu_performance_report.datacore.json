@@ -1,0 +1,20 @@
+{
+  "account": "HKD-Everymundo-1407",
+  "account_id": "7506285",
+  "date": "2016-01-09 00:00:00",
+  "adgroup_id": "662161744",
+  "adgroup": "清迈机票",
+  "campaign_id": "19007954",
+  "campaign": "Asia Pacific - Cities",
+  "device": "mobile",
+  "impressions": 47,
+  "clicks": 1,
+  "conversions": 0,
+  "bridge_conversions": 0,
+  "phone_conversions": 0,
+  "spend": 8.43,
+  "ctr": 0,
+  "cpm": 179.36,
+  "airline": "EM",
+  "batch_id": "static"
+}
