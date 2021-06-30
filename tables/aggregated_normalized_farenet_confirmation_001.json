@@ -1,0 +1,22 @@
+{
+    "farenetconfirmationdate": "2019-08-26",
+    "departureairportiatacode": "KGS",	
+    "arrivalairportiatacode": "ATH",	
+    "departuredate": "2019-09-02",	
+    "returndate": "2019-09-02",	
+    "flighttype": "DOMESTIC",	
+    "journeytype": "ROUND_TRIP",	
+    "devicecategory": "DESKTOP",	
+    "siteedition": "A3RESPONSIVE",
+    "outboundfareclass": "ECONOMY",
+    "inboundfareclass": "ECONOMY",	
+    "bookings": 1,	
+    "passengercount": 1,	
+    "revenue": 216.55,
+    "minfarenetconfirmationtimestamp": "2019-08-26 06:57:01.000",
+    "maxfarenetconfirmationtimestamp": "2019-08-26 06:57:01.000",
+    "airlineiatacode":	"A3",
+    "year": 2019,	
+    "month": 8,	
+    "day": 26
+}
