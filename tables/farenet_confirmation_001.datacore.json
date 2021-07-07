@@ -1,0 +1,11 @@
+{
+    "_id": "15306418884843600.373789535",
+    "journey": {"$ref":"./journey_base.schema.json"},
+    "page": {"$ref":"./page_base.schema.json"},
+    "device": {"$ref":"./device_base.schema.json"},
+    "metadata": {"$ref":"./metadata_base.schema.json"},
+    "__v": "1",
+    "__createdat": "2018-07-03 18:18:00",
+    "hotel": {"$ref":"./hotel.schema.json"},
+    "pricespecification": {"$ref":"./priceSpecification_base.schema.json"}
+}

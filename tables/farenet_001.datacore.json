@@ -1,0 +1,12 @@
+{
+    "_id": "15778368010780310.7005aahr",
+    "journey": {"$ref":"./journey_base.schema.json"},
+    "hotel": {"$ref":"./hotel.schema.json"},
+    "page": {"$ref":"./page_base.schema.json"},
+    "device": {"$ref":"./device_base.schema.json"},
+    "metadata": {"$ref":"./metadata_base.schema.json"},
+    "__v": "1",
+    "__createdat": "2020-01-01 00:00:01",
+    "pricespecification": {"$ref":"./priceSpecification_base.schema.json"},
+    "carrentals":{"$ref":"./carRental_base.schema.json"}
+}
