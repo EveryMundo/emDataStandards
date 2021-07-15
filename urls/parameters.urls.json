@@ -144,6 +144,11 @@
         "description": "Site Edition",
         "type": "string",
         "example": "em_se=en-HK"
+      },
+       "em_i": {
+        "description": "Interlinking",
+        "type": "string",
+        "example": "em_i=true"
       }
     },
     "required": [],
