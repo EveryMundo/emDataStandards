@@ -62,6 +62,11 @@
       "description": "A unique identifier for price market combining ISO codes for currency and country",
       "type": "string",
       "example": "USD-US"
+    },
+    "pnr": {
+      "description": "Unique Passenger Name Record that is provided by the reservations system when a booking is completed",
+      "type": "string",
+      "example": "7WR8PK"
     }
   }}],
   "required": ["totalPrice", "currencyCode"],
