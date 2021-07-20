@@ -5,10 +5,10 @@
   "description": "Offer",
   "type": "object",
   "properties": {
-    "offerId": {
-      "description": "When multiple offer items are sent to FareNet each in their own file, use offer Id as an identifier that they belong to the same offer.",
+    "pnr": {
+      "description": "Unique Passenger Name Record that is provided by the reservations system when a booking is completed",
       "type": "string",
-      "example": "123456789Kat"
+      "example": "7WR8PK"
     },
     "priceSpecification": {
       "description": "Price Specification",
@@ -23,11 +23,6 @@
           "description": "Currency symbol",
           "type": "string",
           "example": "$"
-        },
-        "pnr": {
-          "description": "Unique Passenger Name Record that is provided by the reservations system when a booking is completed",
-          "type": "string",
-          "example": "7WR8PK"
         }
       }
     },
