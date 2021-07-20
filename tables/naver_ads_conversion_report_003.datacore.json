@@ -1,0 +1,21 @@
+{
+  "_id": "15184535042850360.969231665-00004",
+  "devicetype": "P",
+  "mediacode": "27758",
+  "campaign_id": "cmp-m001-01-000000043788314",
+  "campaignname": "NS:ko-KR_NB\\Generic/Geo@KR",
+  "adgroup_id": "grp-m001-01-000002091639161",
+  "adgroupname": "NS:ko-KR_NB\\Generic/@HKFlight2",
+  "keywordid": "nkw-a001-01-000000003315501",
+  "adid": "nad-a001-01-000000010862645",
+  "date": "2018-02-03 00:00:00",
+  "businesschannelid": "bsn-m001-00-000000001401499",
+  "customerid": "846184",
+  "conversionmethod": "Direct",
+  "conversiontype": "Purchasing",
+  "conversioncount": 1,
+  "salesbyconversion": 1491100.0,
+  "batch_id": "2018-02-12T16:34:05.780860",
+  "__v": 3,
+  "__createdat": "2018-02-12 16:38:24"
+}

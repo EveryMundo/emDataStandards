@@ -1,0 +1,23 @@
+{
+  "_id": "16006866467695781.5368aagz-00003",
+  "date": "2020-07-14 00:00:00",
+  "account_id": "7506285",
+  "account": "HKD-Everymundo-1407",
+  "campaign_id": "87619220",
+  "campaign": "DS:cn-CN_NB\\Route/Geo@CN",
+  "adgroup_id": "3235187019",
+  "adgroup": "CC-Route=SPN>0>HKG",
+  "device": "desktop",
+  "impressions": 9,
+  "clicks": 1,
+  "spend": 0.51,
+  "ctr": 0,
+  "cpc": 0.51,
+  "cpm": 56.67,
+  "conversions": 0,
+  "bridge_conversions": 0,
+  "phone_conversions": 0,
+  "batch_id": "202009211000",
+  "__v": 2,
+  "__createdat": "2020-09-21 11:10:46"
+}

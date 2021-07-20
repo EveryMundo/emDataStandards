@@ -69,7 +69,6 @@
                     "name": "United States",
                     "isoCode": "US"
                 },
-                "flightType": "DOMESTIC",
                 "routeType": "NONSTOP"
             },
             {
@@ -126,14 +125,12 @@
                     "name": "United States",
                     "isoCode": "US"
                 },
-                "flightType": "DOMESTIC",
                 "routeType": "NONSTOP"
             }
         ],
         "departureDate": "2018-07-26",
         "returnDate": "2018-07-29",
         "journeyType": "ROUND_TRIP",
-        "flightType": "DOMESTIC",
         "airline": {
             "name": "Spirit",
             "iataCode": "NK"

@@ -1,0 +1,12 @@
+{
+    "_id": "15463008009216090.193485983",
+    "airline_code": "y4",
+    "event": "booking-flights--y4--mobile",
+    "event_category": "em-booking-mask",
+    "event_action": "viewable-impression",
+    "variables": "",
+    "extra_info": {"$ref":"./extraInfo.schema.json"},
+    "context": "",
+    "__v": "1",
+    "__createdat":"2019-01-01 00:00:00"
+}

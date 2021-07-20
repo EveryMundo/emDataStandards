@@ -23,6 +23,11 @@
           "description": "Currency symbol",
           "type": "string",
           "example": "$"
+        },
+        "pnr": {
+          "description": "Unique Passenger Name Record that is provided by the reservations system when a booking is completed",
+          "type": "string",
+          "example": "7WR8PK"
         }
       }
     },

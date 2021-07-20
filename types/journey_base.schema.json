@@ -46,11 +46,6 @@
         "type": "string",
         "example": "ROUND_TRIP"
       },
-      "flightType": {
-        "description": "Type of flight",
-        "type": "string",
-        "example": "Domestic"
-      },
       "segmentCount": {
         "description": "Amount of segments",
         "type": "number",

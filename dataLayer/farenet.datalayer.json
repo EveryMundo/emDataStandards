@@ -264,11 +264,6 @@
                                 }
                             }
                         },
-                        "flightType": {
-                            "description": "DOMESTIC or INTERNATIONAL",
-                            "type": "string",
-                            "example": "DOMESTIC"
-                        },
                         "routeType": {
                             "description": "route type can be DIRECT or CONNECTING",
                             "type": "string",
@@ -281,9 +276,9 @@
                     "type": "object",
                     "properties": {
                         "journeyType": {
-                        "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
-                        "type": "string",
-                        "example": "ROUND_TRIP"
+                            "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
+                            "type": "string",
+                            "example": "ROUND_TRIP"
                         },
                         "cells": {
                             "description": "Cells in the matrix",
@@ -364,11 +359,6 @@
                     "description": "ROUND_TRIP, ONE_WAY, or MULTI_CITY",
                     "type": "string",
                     "example": "ROUND_TRIP"
-                },
-                "flightType": {
-                    "description": "DOMESTIC, INTERNATIONAL",
-                    "type": "string",
-                    "example": "DOMESTIC"
                 },
                 "airline": {
                     "description": "Airline",

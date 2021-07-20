@@ -61,10 +61,15 @@
     },
     "baggage": {
       "$ref": "./baggage.schema.json"
+    },
+    "flightType": {
+      "description": "DOMESTIC or INTERNATIONAL",
+      "type": "string",
+      "example": "DOMESTIC"
     }
   }
   }],
-  "required": ["boundType", "route", "priceSpecification", "fareClassInput", "fareClass", "departureAirportIataCode", "arrivalAirportIataCode", "departureDate", "estimatedDuration", "availableSeatsCount", "legs", "departureCity", "departureCountry", "arrivalCity", "arrivalCountry", "flightType", "discount"],
+  "required": ["flight_base"],
   "links": [
     {
       "title": "Flight",

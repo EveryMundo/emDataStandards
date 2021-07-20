@@ -73,11 +73,6 @@
       "arrivalCountry": {
         "$ref": "./country_base.schema.json"
       },
-      "flightType": {
-        "description": "flightType",
-        "type": "string",
-        "example": "DOMESTIC"
-      },
       "routeType": {
         "description": "NONSTOP, DIRECT (plane may stop but people do not get off) or CONNECTING depending on the number of stops",
         "type": "string",

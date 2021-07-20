@@ -1,0 +1,21 @@
+{
+  "_id": "15831004004432731.5229aahm-00001",
+  "accountname": "EM_JP (ja)",
+  "accountid": "1010900",
+  "campaignid": "2615377",
+  "campaignname": "JS:ja-JP_NB\\CC-Route=KMJ>00>HKG/Geo@JP",
+  "adgroupid": "497419268",
+  "adgroupname": "JS:ja-JP_NB\\IR=KMJ>00>HKG/EX",
+  "device": "Computers",
+  "impressions": 31,
+  "clicks": 1,
+  "cost": 107,
+  "conversions": 1,
+  "convvalue": 7658.08,
+  "day": "2020-01-29 00:00:00",
+  "month": "2020-01-01 00:00:00",
+  "year": 2020,
+  "airline": "EM",
+  "__v": 1,
+  "__createdat": "2020-03-01 22:06:40"
+}

@@ -1,0 +1,11 @@
+{
+    "_id": "15646176016898450.7924aaic-00002",
+    "journey": {"$ref": "./journey_base.schema.json"},
+    "page": {"$ref":"./page_base.schema.json"},
+    "hotels": {"$ref":"./hotel.schema.json"},
+    "device": {"$ref":"./device_base.schema.json"},
+    "metadata": {"$ref":"./metadata_base.schema.json"},
+    "pricespecification": {"$ref":"./priceSpecification_base.schema.json"},
+    "__v": "1",
+    "__createdat": "2019-08-01 00:00:01"
+}

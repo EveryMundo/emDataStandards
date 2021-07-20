@@ -144,6 +144,11 @@
         "description": "Site Edition",
         "type": "string",
         "example": "em_se=en-HK"
+      },
+       "em_i": {
+        "description": "Interlinking from the customer core site to airTRFX",
+        "type": "string",
+        "example": "em_i=true"
       }
     },
     "required": [],

@@ -1,0 +1,20 @@
+{
+  "_id": "15174346341604700.876636504-00009",
+  "customerid": "846184",
+  "devicetype": "M",
+  "mediacode": "103582",
+  "campaign_id": "cmp-m001-01-000000043788314",
+  "campaignname": "NS:ko-KR_BR\\Modifiers/Geo@KR",
+  "adgroup_id": "grp-a001-01-000000003794294",
+  "adgroupname": "NS:ko-KR_BR\\Modi=UO/@Offers",
+  "keywordid": "nkw-a001-01-000000708187103",
+  "adid": "nad-a001-01-000000015588529",
+  "date": "2018-01-30 00:00:00",
+  "businesschannelid": "bsn-m001-00-000000001401499",
+  "impressions": 1,
+  "clicks": 0,
+  "cost": 0,
+  "sumofadrank": 2,
+  "__v": 4,
+  "__createdat": "2018-01-31 21:37:14"
+}
