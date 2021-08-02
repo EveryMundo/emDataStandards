@@ -5,8 +5,13 @@
   "description": "Payment",
   "type": "object",
   "properties": {
-    "method": {
+    "methodInput": {
       "description": "Method of payment",
+      "type": "string",
+      "example": "CreditCard"
+    },
+    "method": {
+      "description": "methodnput mapped to either 'CREDIT_CARD', 'DEBIT_CARD', 'EBPP', 'PAYPAL'",
       "type": "string",
       "example": "CreditCard"
     },
