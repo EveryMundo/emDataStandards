@@ -1,198 +1,202 @@
 {
-    "id": "/airline",
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Airline KPIs",
-    "description": "Airline Industry Key Performance Indicators (KPIs)",
-    "type": "object",
-    "properties": {
-      "airIndex": {
-        "description": "airIndex is a numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
-        "type": "number",
-        "example": 0.5
-      },
-      "ask": {
-        "description": "Available Seat Kilometres (ASKs) is the measure of flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance travelled in kilometres.",
-        "type": "number",
-        "example": 100.00
-      },
-      "asm": {
-        "description": "Available Seat Miles (ASMs) is the measure of flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance travelled in miles.",
-        "type": "number",
-        "example": 100.00
-      },
-      "averageFare": {
-        "description": "The average fare is the average of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply.",
-        "type": "number",
-        "example": 100.00
-      },
-      "bookings": {
-        "description": "Bookings are counted whenever a user completes a flight reservation, also known as number of transactions.",
-        "type": "number",
-        "example": 1000
-      },
-      "cos": {
-        "description": "Cost of Sales (CoS) is Cost divided by Revenue",
-        "type": "number",
-        "example": 0.5
-      },
-      "ctr": {
-        "description": "Click-through rate (CTR) is the number of clicks divided by impressions. For airModule tracking more specifically: Click-through rate (CTR) is the number of clicks on the call-to-action button divided by viewable impressions.",
-        "type": "number",
-        "example": 1000
-      },
-      "fsi": {
-        "description": "Number of Flight Search Initiations (FSI) are counted when the user initiates a search and the next step is the Flight Results page in the IBE.",
-        "type": "number",
-        "example": 5000
-      },
-      "fsiAssistedConversions": {
-        "description": "The number of flight bookings after initiating a flight search",
-        "type": "number",
-        "example": 1000
-      },
-      "fsiAssistedConvRate": {
-        "description": "The percentage of flight bookings after viewing a module",
-        "type": "number",
-        "example": 0.5
-      },
-      "fsiAssistedRevenue": {
-        "description": "The total revenue booked after users initiated a flight search after clicking on a module",
-        "type": "number",
-        "example": 1000
-      },
-      "fsiRate": {
-        "description": "The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule.",
-        "type": "number",
-        "example": 0.5
-      },
-      "imprAssistedConvRate": {
-        "description": "The percentage of flight bookings after viewing a module",
-        "type": "number",
-        "example": 0.5
-      },
-      "interactions": {
-        "description": "Number of clicks on airModules. This includes filter selections, button clicks, tab changes, toggle interactions, arrow clicks, link clicks, sort selections, slider interactions, filter resets and open-booking-popup depending on the airModule.",
-        "type": "number",
-        "example": 100
-      },
-      "interactionRate": {
-        "description": "Number of clicks on airModules divided by Viewable Impressions",
-        "type": "number",
-        "example": 0.5
-      },
-      "loadFactor": {
-        "description": "The number of Revenue Passenger Miles (RPMs) expressed as a percentage of ASMs, either on a particular flight or for the entire system. Load factor represents the proportion of airline output that is actually consumed. To calculate this figure, divide RPMs by ASMs. Load factor for a single flight can also be calculated by dividing the number of passengers by the number of seats.",
-        "type": "number",
-        "example": 0.3
-      },
-      "lookToBookRate": {
-        "description": "Look-to-Book Rate is the number of bookings divided by the number of searches in the IBE",
-        "type": "number",
-        "example": 0.3
-      },
-      "medianFare": {
-        "description": "This is the 'middle' value of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply.",
-        "type": "number",
-        "example": 100.00
-      },
-      "openPopup": {
-        "description": "Number of clicks on the module which resulted in the user viewing a popup window.",
-        "type": "number",
-        "example": 1000
-      },
-      "openPopupRate": {
-        "description": "Number of clicks on the module which resulted in the user viewing a popup window divided by the number of viewable impressions.",
-        "type": "number",
-        "example": 1000
-      },
-      "passengers": {
-        "description": "Amount of passengers including adults, children, infants, and seniors in the booking.",
-        "type": "number",
-        "example": 1000
-      },
-      "passengerYield": {
-        "description": "Measure of average fare paid per mile, per passenger, calculated by dividing passenger revenue by revenue passenger miles (RPMs). Typically the measure is presented in cents per mile and is useful measure in assessing changes in fares over time. Yield is not useful for comparisons across markets and/or airlines, as it varies dramatically by the average distance flown and does not incorporate load factor (unlike PRASM)",
-        "type": "number",
-        "example": 1000
-      },
-      "prasm": {
-        "description": "Passenger Revenue per Available Seat Mile (PRASM) is calculated by dividing passenger revenue by available seat miles. Typically the measure is presented in terms of cents per mile. This measure is equivalent to the product of load factor and passenger yield.",
-        "type": "number",
-        "example": 1000
-      },
-      "priceIndex": {
-        "description": "Price Index",
-        "type": "number",
-        "example": 0.73
-      },
-      "returningUsers": {
-        "description": "Returning Users",
-        "type": "number",
-        "example": 1000
-      },
-      "revenue": {
-        "description": "The total income associated with the transaction (flight bookings).",
-        "type": "number",
-        "example": 1000
-      },
-      "revenuePerImpression": {
-        "description": "Abbreviated: Rev/Impr. Total Revenue divided by number of Impressions shows how much revenue each impression brings.",
-        "type": "number",
-        "example": 3.86
-      },
-      "revenueUSD": {
-        "description": "Total Revenue in USD",
-        "type": "number",
-        "example": 10000
-      },
-      "roi": {
-        "description": "Return on Investment (ROI) is revenue divided by cost",
-        "type": "number",
-        "example": 87.1
-      },
-      "rpm": {
-        "description": "Revenue Passenger Miles (RPMs) is the basic measure of airline passenger traffic. It reflects how many of an airline's available seats were actually sold. For example, if 200 passengers fly 500 miles on a flight, this generates 100,000 RPMs.",
-        "type": "number",
-        "example": 1000
-      },
-      "searches": {
-        "description": "A search is counted when any user sees the IBE Flight Results page for a selected route.",
-        "type": "number",
-        "example": 1000
-      },
-       "searchIndex": {
-        "description": "Searches Index",
-        "type": "number",
-        "example": 0.62
-      },
-      "uniquePageviews": {
-        "description": "Unique Pageviews aggregates pageviews that are generated by the same user during the same session. A unique pageview represents the number of sessions during which that page was viewed one or more times.",
-        "type": "number",
-        "example": 1000
-      },
-      "uniquePageviewFsiRate": {
-        "description": "Number of clicks on a fare visualization or flight search module divided by Unique Pageviews.",
-        "type": "number",
-        "example": 1000
-      },
-      "viewableImpressions": {
-        "description": "Number of views where the user has seen at least 50% of the airModule for one continuous second.",
-        "type": "number",
-        "example": 10000
-      }
+  "id": "/airline",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Airline KPIs",
+  "description": "Airline Industry Key Performance Indicators (KPIs)",
+  "type": "object",
+  "properties": {
+    "airIndex": {
+      "description": "airIndex is a numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route",
+      "type": "number",
+      "example": 0.5
     },
-    "required": [],
-    "links": [
-      {
-        "title": "Airline KPIs",
-        "description": "Airline KPIs",
-        "rel": "self",
-        "href": "/airline",
-        "method": "GET",
-        "targetSchema": {
-          "rel": "self"
-        }
+    "ask": {
+      "description": "Available Seat Kilometres (ASKs) is the measure of flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance travelled in kilometres.",
+      "type": "number",
+      "example": 100.0
+    },
+    "asm": {
+      "description": "Available Seat Miles (ASMs) is the measure of flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance travelled in miles.",
+      "type": "number",
+      "example": 100.0
+    },
+    "averageFare": {
+      "description": "The average fare is the average of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply.",
+      "type": "number",
+      "example": 100.0
+    },
+    "bookings": {
+      "description": "Bookings are counted whenever a user completes a flight reservation, also known as number of transactions.",
+      "type": "number",
+      "example": 1000
+    },
+    "cos": {
+      "description": "Cost of Sales (CoS) is Cost divided by Revenue",
+      "type": "number",
+      "example": 0.5
+    },
+    "ctr": {
+      "description": "Click-through rate (CTR) is the number of clicks divided by impressions. For airModule tracking more specifically: Click-through rate (CTR) is the number of clicks on the call-to-action button divided by viewable impressions.",
+      "type": "number",
+      "example": 1000
+    },
+    "fsi": {
+      "description": "Number of Flight Search Initiations (FSI) are counted when the user initiates a search and the next step is the Flight Results page in the IBE.",
+      "type": "number",
+      "example": 5000
+    },
+    "fsiAssistedConversions": {
+      "description": "The number of flight bookings after initiating a flight search",
+      "type": "number",
+      "example": 1000
+    },
+    "fsiAssistedConvRate": {
+      "description": "The percentage of flight bookings after viewing a module",
+      "type": "number",
+      "example": 0.5
+    },
+    "fsiAssistedRevenue": {
+      "description": "The total revenue booked after users initiated a flight search after clicking on a module",
+      "type": "number",
+      "example": 1000
+    },
+    "fsiRate": {
+      "description": "The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule.",
+      "type": "number",
+      "example": 0.5
+    },
+    "imprAssistedConvRate": {
+      "description": "The percentage of flight bookings after viewing a module",
+      "type": "number",
+      "example": 0.5
+    },
+    "interactions": {
+      "description": "Number of clicks on airModules. This includes filter selections, button clicks, tab changes, toggle interactions, arrow clicks, link clicks, sort selections, slider interactions, filter resets and open-booking-popup depending on the airModule.",
+      "type": "number",
+      "example": 100
+    },
+    "interactionRate": {
+      "description": "Number of clicks on airModules divided by Viewable Impressions",
+      "type": "number",
+      "example": 0.5
+    },
+    "loadFactor": {
+      "description": "The number of Revenue Passenger Miles (RPMs) expressed as a percentage of ASMs, either on a particular flight or for the entire system. Load factor represents the proportion of airline output that is actually consumed. To calculate this figure, divide RPMs by ASMs. Load factor for a single flight can also be calculated by dividing the number of passengers by the number of seats.",
+      "type": "number",
+      "example": 0.3
+    },
+    "lookToBookRate": {
+      "description": "Look-to-Book Rate is the number of bookings divided by the number of searches in the IBE",
+      "type": "number",
+      "example": 0.3
+    },
+    "medianFare": {
+      "description": "This is the 'middle' value of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply.",
+      "type": "number",
+      "example": 100.0
+    },
+    "openPopup": {
+      "description": "Number of clicks on the module which resulted in the user viewing a popup window.",
+      "type": "number",
+      "example": 1000
+    },
+    "openPopupRate": {
+      "description": "Number of clicks on the module which resulted in the user viewing a popup window divided by the number of viewable impressions.",
+      "type": "number",
+      "example": 1000
+    },
+    "passengers": {
+      "description": "Amount of passengers including adults, children, infants, and seniors in the booking.",
+      "type": "number",
+      "example": 1000
+    },
+    "passengerYield": {
+      "description": "Measure of average fare paid per mile, per passenger, calculated by dividing passenger revenue by revenue passenger miles (RPMs). Typically the measure is presented in cents per mile and is useful measure in assessing changes in fares over time. Yield is not useful for comparisons across markets and/or airlines, as it varies dramatically by the average distance flown and does not incorporate load factor (unlike PRASM)",
+      "type": "number",
+      "example": 1000
+    },
+    "prasm": {
+      "description": "Passenger Revenue per Available Seat Mile (PRASM) is calculated by dividing passenger revenue by available seat miles. Typically the measure is presented in terms of cents per mile. This measure is equivalent to the product of load factor and passenger yield.",
+      "type": "number",
+      "example": 1000
+    },
+    "priceIndex": {
+      "description": "Price Index",
+      "type": "number",
+      "example": 0.73
+    },
+    "returningUsers": {
+      "description": "Returning Users",
+      "type": "number",
+      "example": 1000
+    },
+    "revenue": {
+      "description": "The total income associated with the transaction (flight bookings).",
+      "type": "number",
+      "example": 1000
+    },
+    "revenuePerImpression": {
+      "description": "Abbreviated: Rev/Impr. Total Revenue divided by number of Impressions shows how much revenue each impression brings.",
+      "type": "number",
+      "example": 3.86
+    },
+    "revenuePerBooking": {
+      "description": "Abbreviated: Rev./Bookings Total Revenue divided by number of Bookings shows how much, on average, each of bookings is worth.",
+      "type": "number",
+      "example": 273
+    },
+    "revenueUSD": {
+      "description": "Total Revenue in USD",
+      "type": "number",
+      "example": 10000
+    },
+    "roi": {
+      "description": "Return on Investment (ROI) is revenue divided by cost",
+      "type": "number",
+      "example": 87.1
+    },
+    "rpm": {
+      "description": "Revenue Passenger Miles (RPMs) is the basic measure of airline passenger traffic. It reflects how many of an airline's available seats were actually sold. For example, if 200 passengers fly 500 miles on a flight, this generates 100,000 RPMs.",
+      "type": "number",
+      "example": 1000
+    },
+    "searches": {
+      "description": "A search is counted when any user sees the IBE Flight Results page for a selected route.",
+      "type": "number",
+      "example": 1000
+    },
+    "searchIndex": {
+      "description": "Searches Index",
+      "type": "number",
+      "example": 0.62
+    },
+    "uniquePageviews": {
+      "description": "Unique Pageviews aggregates pageviews that are generated by the same user during the same session. A unique pageview represents the number of sessions during which that page was viewed one or more times.",
+      "type": "number",
+      "example": 1000
+    },
+    "uniquePageviewFsiRate": {
+      "description": "Number of clicks on a fare visualization or flight search module divided by Unique Pageviews.",
+      "type": "number",
+      "example": 1000
+    },
+    "viewableImpressions": {
+      "description": "Number of views where the user has seen at least 50% of the airModule for one continuous second.",
+      "type": "number",
+      "example": 10000
+    }
+  },
+  "required": [],
+  "links": [
+    {
+      "title": "Airline KPIs",
+      "description": "Airline KPIs",
+      "rel": "self",
+      "href": "/airline",
+      "method": "GET",
+      "targetSchema": {
+        "rel": "self"
       }
-    ]
-  }
-  
+    }
+  ]
+}
