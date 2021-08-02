@@ -11,9 +11,9 @@
       "example": "CreditCard"
     },
     "method": {
-      "description": "methodnput mapped to either 'CREDIT_CARD', 'DEBIT_CARD', 'EBPP', 'PAYPAL'",
+      "description": "methodnput mapped to either 'CREDIT_CARD', 'DEBIT_CARD', 'EBPP', 'PAYPAL'. For miles, bitcoin, ponts or voucher see redemptionUnt.",
       "type": "string",
-      "example": "CreditCard"
+      "example": "CREDIT_CARD"
     },
     "cardName": {
       "description": "Name of credit card",
