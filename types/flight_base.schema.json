@@ -29,7 +29,7 @@
         "example": "MIXED_CABIN_ECONOMY"
       },
       "fareClass": {
-        "description": "fareClass mapped to either 'ECONOMY', 'BUSINESS', 'PREMIUM_ECONOMY' or 'FIRST' class",
+        "description": "fareClassInput mapped to either 'ECONOMY', 'BUSINESS', 'PREMIUM_ECONOMY' or 'FIRST' class",
         "type": "string",
         "example": "ECONOMY"
       },
