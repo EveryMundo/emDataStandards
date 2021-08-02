@@ -10,6 +10,22 @@
       "type": "string",
       "example": "7WR8PK"
     },
+    "payment": {
+      "description": "Payment. In the future, this object can hold other data points like the card name and if thepayment method was saved",
+      "type": "object",
+      "properties": {
+        "methodInput": {
+          "description": "Method of payment",
+          "type": "string",
+          "example": "CreditCard"
+        },
+        "method": {
+          "description": "Method of payment.",
+          "type": "string",
+          "example": "CreditCard"
+        }
+      }
+    },
     "priceSpecification": {
       "description": "Price Specification",
       "type": "object",
