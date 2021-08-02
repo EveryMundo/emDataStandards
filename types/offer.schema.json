@@ -20,9 +20,9 @@
           "example": "CreditCard"
         },
         "method": {
-          "description": "Method of payment.",
+          "description": "methodnput mapped to either 'CREDIT_CARD', 'DEBIT_CARD', 'EBPP', 'PAYPAL'. For miles, bitcoin, ponts or voucher see redemptionUnt.",
           "type": "string",
-          "example": "CreditCard"
+          "example": "CREDIT_CARD"
         }
       }
     },
