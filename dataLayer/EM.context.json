@@ -1,0 +1,79 @@
+{
+    "airline": {
+        "code": "aa",
+        "name": "American Arlines"
+    },
+    "audience": {
+        "browser": "",
+        "city": -1,
+        "country": -1,
+        "device_category": "desktop",
+        "language": "en-US",
+        "ctx_version": "1.0"
+    },
+    "datasource": {
+        "hostname": "www.aa.com",
+        "pathname": "/en-us/flights",
+        "referrer": "",
+        "step": "home",
+        "template_id": "5c8916057e86b60c00000014",
+        "type": "default",
+        "url": "https://www.aa.com/en-us/flights",
+        "variables": []
+    },
+    "extra_info": {
+        "airports": {
+            "destination": [],
+            "origin": ["PNS", "MFR", "BKG"]
+        },
+        "route": {
+            "status": ""
+        }
+    },
+    "geo": {
+        "language": {
+            "lang": "en",
+            "languageBeforeMarket": true,
+            "separator": "-",
+            "siteEditionLanguage": "en",
+            "siteEditionMarket": "us",
+            "site_edition": "en-us",
+            "site_edition_country_geo_id": "6252001",
+            "textDirection": "LTR",
+            "uppercaseLanguage": false,
+            "uppercaseMarket": false
+        },
+        "location": {
+            "destination_country_preposition_to": "the United States",
+            "destination_geo_id": "4164138",
+            "level_destination": "City",
+            "level-origin": -1,
+            "origin_geo_id": -1,
+            "user_input_destination_airport_code": "MIA",
+            "user_input_destination_city_name": "Miami",
+            "user_input_destination_country_name": "United States",
+            "user_input_destination_state_name": "Florida",
+            "user_input_origin_airport_code": -1,
+            "user_input_origin_city_name": -1,
+            "user_input_orgin_country_name": -1
+        }
+    },
+    "modules": [
+        {
+            "id": "page_title_h1",
+            "name": "Page Title [H1]"
+        },
+        {
+            "id": "breadcrumbs",
+            "name": "Breadcrumbs"
+        }
+    ],
+    "product_scope": {
+        "name": "airTRFX",
+        "version": "2.0"
+    },
+    "timestamp": 1628182316357,
+    "urlParams": [
+
+    ]
+}
