@@ -75,5 +75,19 @@
     "timestamp": 1628182316357,
     "urlParams": [
 
-    ]
+    ],
+    "loyaltyProgram":{
+        "isLoggedIn": true,
+        "membershipLevel": "Basic",
+        "redemptionUnit": "MILES",
+        "redemptionBalance": 2500
+        },
+      "lastSearchedProducts": [
+          "MIA>JFK"
+      ],
+      "savedProducts": [
+        "NYC>CHI","ORD>MIA"
+      ],
+      "preferredProductCategory": "ROUND_TRIP",
+      "preferredProductType": "BUSINESS"
 }
