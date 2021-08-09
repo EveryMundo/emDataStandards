@@ -13,15 +13,15 @@ MMdataLayer = [{
       "isLoggedIn": true,
       "membershipLevel": "Basic",
       "redemptionUnit": "MILES",
-      "redemptionBalance": 2500
-      },
-    "lastSearchedProducts": [
+      "redemptionBalance": 2500,
+      "lastSearchedProducts": [
         "MIA>JFK"
-    ],
-    "homeLocation": "MIA",
-    "savedProducts": [
-      "NYC>CHI","ORD>MIA"
-    ],
+      ],
+      "homeLocation": "MIA",
+      "savedProducts": [
+        "NYC>CHI","ORD>MIA"
+      ],
     "preferredProductCategory": "ROUND_TRIP",
     "preferredProductType": "BUSINESS"
+    }
   }];
