@@ -44,7 +44,7 @@
       "type": "boolean",
       "example": true
     },
-    "defaultImage": {
+    "imageDefault": {
       "description": "Default Destination Image for cases where the destination location do not have an associated image. Future Implementation: The destination image will be automatically returned by the Fares Microservices when no location image is found.",
       "type": "string",
       "example": "arrivalimage.com"
