@@ -78,10 +78,7 @@
     ],
     "budgetMaximumAmount": 10000,
     "passengerCount": 5,
-    "redemption": {
-        "unit": "MILES",
-        "amount": 15000
-    },
+    "redemptionUnit": "MILES",
     "productCategory": "ROUND_TRIP",
     "productType": "BUSINESS",
     "isFlexibleDates": false,
