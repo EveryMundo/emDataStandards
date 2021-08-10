@@ -69,12 +69,12 @@
       ]
     },
     "preferredProductCategory": {
-      "description": "For Flights, the preferredProductCategory is the preferred Journey Type",
+      "description": "For Flights, the preferredProductCategory is the preferred Journey Type (ONE_WAY|ROUND_TRIP). For Hotels, it is the preferred Room Type (“DELUXED“ | JUNIOR_SUITE | etc.). For Events, it is Experience Type == (Ticket Only | Experiences ).",
       "type": "string",
       "example": "ONE_WAY"
     },
     "preferredProductType": {
-      "description": "For Flights, the preferredProductType is the preferred Fare Class",
+      "description": "For Flights, the preferredProductType is the preferred Fare Class (ECONOMY|BUSINESS|FIRST). For Events, it is the Ticket Type (Ticket Only | Ticket + Dinner Dinning | Ticket + Tennis Experience | Etc.)",
       "type": "string",
       "example": "BUSINESS"
     }
