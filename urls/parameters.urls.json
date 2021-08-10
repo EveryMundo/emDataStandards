@@ -80,11 +80,6 @@
         "type": "string",
         "example": "em_l=view-deal"
       },
-      "em_m": {
-        "description": "Miles",
-        "type": "string",
-        "example": "em_m=true"
-      },
       "em_o": {
         "description": "Origin Airport IATA Code",
         "type": "string",
@@ -120,6 +115,11 @@
         "type": "string",
         "example": "em_rd=2019-03-26"
       },
+      "em_re": {
+        "description": "Redemption",
+        "type": "string",
+        "example": "em_re=true"
+      },
       "em_ta": {
         "description": "Tax Amount",
         "type": "string",
@@ -144,11 +144,6 @@
         "description": "Site Edition",
         "type": "string",
         "example": "em_se=en-HK"
-      },
-       "em_i": {
-        "description": "Interlinking from the customer core site to airTRFX",
-        "type": "string",
-        "example": "em_i=true"
       }
     },
     "required": [],
