@@ -76,15 +76,17 @@
     "urlParams": [
 
     ],
-    "budgetMaximumAmount": 10000,
-    "passengerCount": 5,
-    "isRedemption": false,
-    "productCategory": "ROUND_TRIP",
-    "productType": "BUSINESS",
-    "isFlexibleDates": false,
-    "discountCode": "RA1097",
-    "departureDate": "2021-09-11",
-    "returnDate": "2021-09-17",
+    "urlParameters": {
+        "budgetMaximumAmount": 10000,
+        "passengerCount": 5,
+        "isRedemption": false,
+        "productCategory": "ROUND_TRIP",
+        "productType": "BUSINESS",
+        "isFlexibleDates": false,
+        "discountCode": "RA1097",
+        "departureDate": "2021-09-11",
+        "returnDate": "2021-09-17"
+    },
     "loyaltyProgram":{
         "isLoggedIn": true,
         "membershipLevel": "Basic",
