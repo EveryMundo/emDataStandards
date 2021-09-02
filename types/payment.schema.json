@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "methodInput": {
-      "description": "Method of payment",
+      "description": "Method of payment, e.g. SADAD",
       "type": "string",
       "example": "CreditCard"
     },
