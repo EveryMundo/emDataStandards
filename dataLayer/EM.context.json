@@ -76,7 +76,7 @@
     "urlParams": [
 
     ],
-    "urlParameters": {
+    "dynamicContext": {
         "budgetMaximumAmount": 10000,
         "passengerCount": 5,
         "isRedemption": false,
@@ -85,20 +85,26 @@
         "isFlexibleDates": false,
         "discountCode": "RA1097",
         "departureDate": "2021-09-11",
-        "returnDate": "2021-09-17"
-    },
-    "loyaltyProgram":{
-        "isLoggedIn": true,
-        "membershipLevel": "Basic",
-        "redemptionUnit": "MILES",
-        "redemptionBalance": 2500,
-        "lastSearchedProducts": [
-          "MIA>JFK"
-        ],
-        "savedProducts": [
-          "NYC>CHI","ORD>MIA"
-        ],
-        "preferredProductCategory": "ROUND_TRIP",
-        "preferredProductType": "BUSINESS"
+        "returnDate": "2021-09-17",
+        "originLocation": "NYC",
+        "destinationLocation": "MIA",
+        "originLocations ": ["MIA","TXL","SXF"],
+        "destinationLocations": ["LHR","MIL","LAX"],
+        "loyaltyProgram":{
+          "isLoggedIn": true,
+          "membershipLevel": "Basic",
+          "redemptionUnit": "MILES",
+          "redemptionBalance": 2500,
+          "lastSearchedProducts": [
+            "MIA>JFK"
+          ],
+          "savedProducts": [
+            "NYC>CHI","ORD>MIA"
+          ],
+          "preferredProductCategory": "ROUND_TRIP",
+          "preferredProductType": "BUSINESS"
+        },
+        "__urlParameters": {},
+        "__mmDataLayer": {}
     }
 }
