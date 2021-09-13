@@ -6,12 +6,12 @@
   "type": "object",
   "properties": {
     "methodInput": {
-      "description": "Method of payment, e.g. SADAD",
+      "description": "Method of payment as provided by the customer",
       "type": "string",
       "example": "CreditCard"
     },
     "method": {
-      "description": "methodInput mapped to either 'CREDIT_CARD', 'DEBIT_CARD', 'EBPP', 'PAYPAL', 'APPLE_PAY', 'CREDIT_SHELL'. For miles, bitcoin, points or voucher see redemptionUnit.",
+      "description": "methodInput mapped to either 'CREDIT_CARD', 'DEBIT_CARD', 'SADAD', 'PAYPAL', 'APPLE_PAY', 'CREDIT_SHELL'. For miles, bitcoin, points or voucher see redemptionUnit.",
       "type": "string",
       "example": "CREDIT_CARD"
     },
