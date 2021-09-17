@@ -13,9 +13,14 @@
         "type": "object",
         "properties": {
           "totalPrice": {
-            "description": "totalPrice",
+            "description": "totalPrice does not include additionalFeesAmount",
             "type": "number",
             "example": 825.51
+          },
+          "additionalFeesAmount": {
+            "description": "Airline additional fees",
+            "type": "number",
+            "example": 12
           },
           "redemption": {
             "$ref": "./redemption_base.schema.json"

@@ -11,7 +11,7 @@
         "example": 234.21
       },
       "totalPrice": {
-        "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
+        "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc. but does not include additionalFeesAmount",
         "type": "number",
         "example": 250.6
       },
@@ -19,6 +19,11 @@
         "description": "The amount paid in taxes",
         "type": "number",
         "example": 16.39
+      },
+      "additionalFeesAmount": {
+        "description": "Airline additional fees",
+        "type": "number",
+        "example": 12
       },
       "isSoldOut": {
         "description": "Whether fare is sold out - if isSoldOut=true, fare = NULL",
