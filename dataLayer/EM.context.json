@@ -78,6 +78,7 @@
     ],
     "dynamicContext": {
         "budgetMaximumAmount": 10000,
+        "budgetRedemptionUnit": "CURRENCY",
         "passengerCount": 5,
         "isRedemption": false,
         "productCategory": "ROUND_TRIP",

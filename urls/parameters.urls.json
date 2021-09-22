@@ -15,6 +15,11 @@
         "type": "string",
         "example": "em_b=300"
       },
+      "em_bre": {
+        "description": "budgetRedemptionUnit: MILES, BITCOIN, POINTS, CURRENCY, OTHER",
+        "type": "string",
+        "example": "MILES"
+      },
       "em_c": {
         "description": "Currency Code",
         "type": "string",
