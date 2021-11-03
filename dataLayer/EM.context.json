@@ -58,8 +58,7 @@
             "user_input_orgin_country_name": -1
         }
     },
-    "modules": [
-        {
+    "modules": [{
             "id": "page_title_h1",
             "name": "Page Title [H1]"
         },
@@ -89,23 +88,34 @@
         "returnDate": "2021-09-17",
         "originLocation": "NYC",
         "destinationLocation": "MIA",
-        "originLocations ": ["MIA","TXL","SXF"],
-        "destinationLocations": ["LHR","MIL","LAX"],
-        "loyaltyProgram":{
-          "isLoggedIn": true,
-          "membershipLevel": "Basic",
-          "redemptionUnit": "MILES",
-          "redemptionBalance": 2500,
-          "lastSearchedProducts": [
-            "MIA>JFK"
-          ],
-          "savedProducts": [
-            "NYC>CHI","ORD>MIA"
-          ],
-          "preferredProductCategory": "ROUND_TRIP",
-          "preferredProductType": "BUSINESS"
+        "originLocations ": ["MIA", "TXL", "SXF"],
+        "destinationLocations": ["LHR", "MIL", "LAX"],
+        "loyaltyProgram": {
+            "isLoggedIn": true,
+            "membershipLevel": "Basic",
+            "redemptionUnit": "MILES",
+            "redemptionBalance": 2500,
+            "lastSearchedProducts": [
+                "MIA>JFK"
+            ],
+            "savedProducts": [
+                "NYC>CHI", "ORD>MIA"
+            ],
+            "preferredProductCategory": "ROUND_TRIP",
+            "preferredProductType": "BUSINESS"
         },
         "__urlParameters": {},
         "__mmDataLayer": {}
+    },
+    "experience": {
+        "type": ["Ticket Only", "Dining"],
+        "name": ["Rod Laver Arena Reserved Seat", "Penfolds Restaurant"]
+    },
+    "event": {
+        "location": ["Margaret Court Arena", "Rod Laver Arena"],
+        "date": [1, 2, 3, 4, 14],
+        "session": ["Night", "Day", "Twilight"],
+        "time": ["11:00 AM", "8:00 PM"]
     }
+}
 }
