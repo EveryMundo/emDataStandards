@@ -27,7 +27,7 @@
         }
       },
       "emcid": {
-        "description": "Unique idenfier used in product tracking to identify user interactions across modules",
+        "description": "Unique idenfier used in product tracking to identify user interactions across modules. emcid stands for emClientId.",
         "type": "string",
         "example": "123456"
       },
