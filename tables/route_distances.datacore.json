@@ -1,0 +1,9 @@
+{
+    "originAirportIataCode": "SFO",
+    "destinationAirportIataCode": "JFK",
+    "originLatitude": "37.7749",
+    "originLongitude": "122.4194",
+    "destinationLatitude": "40.6413",
+    "destinationLongitude": "73.7781",
+    "kmDistance": "4729.3"
+}
