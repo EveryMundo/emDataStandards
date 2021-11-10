@@ -1,7 +1,7 @@
 dataLayer.push({
     'event': 'viewable-impression',
     'module': 'em-booking-popup-abstract',
-    'eventAction': 'viewable - impression',
+    'eventAction': 'viewable-impression',
     'actionLabel': null,
     'airlineIataCode': 'UL',
     'provider': 'SriLankanAirlines',
