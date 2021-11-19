@@ -13,11 +13,6 @@
                     "description": "The currency (in 3-letter ISO 4217 format) of the price.",
                     "type": "string",
                     "example": "USD"
-                },
-                "currencySymbol": {
-                    "description": "Currency symbol",
-                    "type": "string",
-                    "example": "$"
                 }
             }
         },
@@ -270,21 +265,10 @@
             "type": "string",
             "example": "ROUND_TRIP"
         },
-        "trainCompany": {
-            "description": "Train",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "description": "Full name of the train company, capitalise each word keeping the space",
-                    "type": "string",
-                    "example": "Everymundo Trains"
-                },
-                "trainCode": {
-                    "description": "Unique identifier for the train company",
-                    "type": "string",
-                    "example": "EM"
-                }
-            }
+        "trainCompanyCode": {
+            "description": "Unique identifier for the train company",
+            "type": "string",
+            "example": "EM"
         }
     },
     "page": {
