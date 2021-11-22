@@ -5,21 +5,10 @@
     "description": "fareNet 3.0 includes journey only",
     "type": "object",
     "properties": {
-        "priceSpecification": {
-            "description": "priceSpecification",
-            "type": "object",
-            "properties": {
-                "currencyCode": {
-                    "description": "The currency (in 3-letter ISO 4217 format) of the price.",
-                    "type": "string",
-                    "example": "USD"
-                  },
-                  "currencySymbol": {
-                    "description": "Currency symbol",
-                    "type": "string",
-                    "example": "$"
-                  }
-            }
+        "currencyCode": {
+            "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+            "type": "string",
+            "example": "USD"
         },
         "journey": {
             "description": "Journey",
@@ -54,52 +43,52 @@
                             "description": "priceSpecification",
                             "type": "object",
                             "properties": {
-                            "priceBeforeTaxesAndFees": {
-                                "description": "priceBeforeTaxesAndFees",
-                                "type": "number",
-                                "example": 750.12
-                            },
-                            "totalPrice": {
-                                "description": "totalPrice",
-                                "type": "number",
-                                "example": 825.51
-                            },
-                            "taxAmount": {
-                                "description": "taxAmount",
-                                "type": "number",
-                                "example": 75.39
-                            },
-                            "additionalFeesAmount": {
-                                "description": "Airline additional fees",
-                                "type": "number",
-                                "example": null
-                            },
-                            "redemption": {
-                                "description": "Redemption",
-                                "type": "object",
-                                "properties": {
-                                    "unit": {
-                                    "description": "MILES, BITCOIN, POINTS, OTHER",
-                                    "type": "string",
-                                    "example": "MILES"
-                                    },
-                                    "amount": {
-                                    "description": "Amount of redemption units",
+                                "priceBeforeTaxesAndFees": {
+                                    "description": "priceBeforeTaxesAndFees",
                                     "type": "number",
-                                    "example": 1500
-                                    },
-                                    "taxAmount": {
-                                    "description": "The amount paid in taxes",
+                                    "example": 750.12
+                                },
+                                "totalPrice": {
+                                    "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc. but does not include additionalFeesAmount",
                                     "type": "number",
-                                    "example": 16.39
-                                    },
-                                    "category": {
-                                    "description": "Miles Category Name",
-                                    "type": "string",
-                                    "example": "Economy MileSAAver"
+                                    "example": 825.51
+                                },
+                                "taxAmount": {
+                                    "description": "taxAmount",
+                                    "type": "number",
+                                    "example": 75.39
+                                },
+                                "additionalFeesAmount": {
+                                    "description": "Airline additional fees",
+                                    "type": "number",
+                                    "example": null
+                                },
+                                "redemption": {
+                                    "description": "Redemption",
+                                    "type": "object",
+                                    "properties": {
+                                        "unit": {
+                                            "description": "MILES, BITCOIN, POINTS, OTHER",
+                                            "type": "string",
+                                            "example": "MILES"
+                                        },
+                                        "amount": {
+                                            "description": "Amount of redemption units",
+                                            "type": "number",
+                                            "example": 1500
+                                        },
+                                        "taxAmount": {
+                                            "description": "The amount paid in taxes",
+                                            "type": "number",
+                                            "example": 16.39
+                                        },
+                                        "category": {
+                                            "description": "Miles Category Name",
+                                            "type": "string",
+                                            "example": "Economy MileSAAver"
+                                        }
                                     }
-                                }                  
-                            }
+                                }
                             }
                         },
                         "fareClassInput": {
@@ -138,7 +127,7 @@
                             "example": "9+"
                         },
                         "legs": {
-                            "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station", 
+                            "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station",
                             "type": "array",
                             "properties": {
                                 "flightNumber": {
@@ -177,14 +166,14 @@
                                     "type": "object",
                                     "properties": {
                                         "name": {
-                                        "description": "The name of the airport",
-                                        "type": "string",
-                                        "example": "LaGuardia Airport"
+                                            "description": "The name of the airport",
+                                            "type": "string",
+                                            "example": "LaGuardia Airport"
                                         },
                                         "iataCode": {
-                                        "description": "IATA identifier for the airport",
-                                        "type": "string",
-                                        "example": "LGA"
+                                            "description": "IATA identifier for the airport",
+                                            "type": "string",
+                                            "example": "LGA"
                                         }
                                     }
                                 },
@@ -205,14 +194,14 @@
                             "type": "object",
                             "properties": {
                                 "name": {
-                                "description": "The name of the city",
-                                "type": "string",
-                                "example": "Fort Lauderdale"
+                                    "description": "The name of the city",
+                                    "type": "string",
+                                    "example": "Fort Lauderdale"
                                 },
                                 "cityCode": {
-                                "description": "ISO code for the city",
-                                "type": "string",
-                                "example": "FLL"
+                                    "description": "ISO code for the city",
+                                    "type": "string",
+                                    "example": "FLL"
                                 }
                             }
                         },
@@ -221,14 +210,14 @@
                             "type": "object",
                             "properties": {
                                 "name": {
-                                "description": "The name of the country",
-                                "type": "string",
-                                "example": "United States"
+                                    "description": "The name of the country",
+                                    "type": "string",
+                                    "example": "United States"
                                 },
                                 "isoCode": {
-                                "description": "The country code (in 2 letter codes from ISO 3166-1)",
-                                "type": "string",
-                                "example": "US"
+                                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                                    "type": "string",
+                                    "example": "US"
                                 }
                             }
                         },
@@ -237,14 +226,14 @@
                             "type": "object",
                             "properties": {
                                 "name": {
-                                "description": "The name of the city",
-                                "type": "string",
-                                "example": "New York"
+                                    "description": "The name of the city",
+                                    "type": "string",
+                                    "example": "New York"
                                 },
                                 "cityCode": {
-                                "description": "ISO code for the city",
-                                "type": "string",
-                                "example": "NYC"
+                                    "description": "ISO code for the city",
+                                    "type": "string",
+                                    "example": "NYC"
                                 }
                             }
                         },
@@ -253,14 +242,14 @@
                             "type": "object",
                             "properties": {
                                 "name": {
-                                "description": "The name of the country",
-                                "type": "string",
-                                "example": "United States"
+                                    "description": "The name of the country",
+                                    "type": "string",
+                                    "example": "United States"
                                 },
                                 "isoCode": {
-                                "description": "The country code (in 2 letter codes from ISO 3166-1)",
-                                "type": "string",
-                                "example": "US"
+                                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                                    "type": "string",
+                                    "example": "US"
                                 }
                             }
                         },
@@ -288,37 +277,37 @@
                                     "description": "priceSpecification",
                                     "type": "object",
                                     "properties": {
-                                    "totalPrice": {
-                                        "description": "totalPrice",
-                                        "type": "number",
-                                        "example": 825.51
-                                    },
-                                    "redemption": {
-                                        "description": "Redemption",
-                                        "type": "object",
-                                        "properties": {
-                                            "unit": {
-                                            "description": "MILES, BITCOIN, POINTS, OTHER",
-                                            "type": "string",
-                                            "example": "MILES"
-                                            },
-                                            "amount": {
-                                            "description": "Amount of redemption units",
+                                        "totalPrice": {
+                                            "description": "totalPrice",
                                             "type": "number",
-                                            "example": 1500
-                                            },
-                                            "taxAmount": {
-                                            "description": "The amount paid in taxes",
-                                            "type": "number",
-                                            "example": 16.39
-                                            },
-                                            "category": {
-                                            "description": "Miles Category Name",
-                                            "type": "string",
-                                            "example": "Economy MileSAAver"
+                                            "example": 825.51
+                                        },
+                                        "redemption": {
+                                            "description": "Redemption",
+                                            "type": "object",
+                                            "properties": {
+                                                "unit": {
+                                                    "description": "MILES, BITCOIN, POINTS, OTHER",
+                                                    "type": "string",
+                                                    "example": "MILES"
+                                                },
+                                                "amount": {
+                                                    "description": "Amount of redemption units",
+                                                    "type": "number",
+                                                    "example": 1500
+                                                },
+                                                "taxAmount": {
+                                                    "description": "The amount paid in taxes",
+                                                    "type": "number",
+                                                    "example": 16.39
+                                                },
+                                                "category": {
+                                                    "description": "Miles Category Name",
+                                                    "type": "string",
+                                                    "example": "Economy MileSAAver"
+                                                }
                                             }
                                         }
-                                    }
                                     }
                                 },
                                 "boundType": {
@@ -360,52 +349,45 @@
                     "type": "string",
                     "example": "ROUND_TRIP"
                 },
-                "airline": {
-                    "description": "Airline",
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                        "description": "Full name of airline, capitalise each word keeping the space",
-                        "type": "string",
-                        "example": "Everymundo Airlines"
-                        },
-                        "iataCode": {
-                        "description": "IATA identifier for the airline",
-                        "type": "string",
-                        "example": "EM"
-                        }
-                    }
-                }
-            }
-        },
-        "page": {
-            "description": "WebPage",
-            "type": "object",
-            "properties": {
-                "languageIsoCode": {
-                    "description": "Language ISO 639-1 code",
+                "airlineIataCode": {
+                    "description": "IATA identifier for the airline",
                     "type": "string",
-                    "example": "en"
-                },
-                "siteEdition": {
-                    "description": "Site edition combination of ISO codes for language and country",
-                    "type": "string",
-                    "example": "en-US"
+                    "example": "EM"
                 }
             }
         }
     },
-    "required": ["priceSpecification","journey", "page"],
-    "links": [
-      {
-        "title": "FareNet DataLayer",
-        "description": "FareNet DataLayer",
-        "rel": "self",
-        "href": "/farenet.datalayer",
-        "method": "GET",
-        "targetSchema": {
-          "rel": "self"
+    "page": {
+        "description": "WebPage",
+        "type": "object",
+        "properties": {
+            "languageIsoCode": {
+                "description": "Language ISO 639-1 code",
+                "type": "string",
+                "example": "en"
+            },
+            "siteEdition": {
+                "description": "Site edition combination of ISO codes for language and country",
+                "type": "string",
+                "example": "en-US"
+            }
         }
-      }
+    },
+    "required": [
+        "priceSpecification",
+        "journey",
+        "page"
+    ],
+    "links": [
+        {
+            "title": "FareNet DataLayer",
+            "description": "FareNet DataLayer",
+            "rel": "self",
+            "href": "/farenet.datalayer",
+            "method": "GET",
+            "targetSchema": {
+                "rel": "self"
+            }
+        }
     ]
-  }
+}
