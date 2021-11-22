@@ -48,11 +48,6 @@
       "type": "number",
       "example": 57.89
     },
-    "additionalFeesAmount": {
-      "description": "Airline additional fees",
-      "type": "number",
-      "example": 12
-    },
     "advertisedPrice": {
       "description": "Price advertised",
       "type": "number",
