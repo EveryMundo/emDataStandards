@@ -1,0 +1,93 @@
+{
+    "currencyCode": "USD",
+    "trains": [
+        {
+            "boundType": "OUTBOUND",
+            "priceSpecification": {
+                "priceBeforeTaxesAndFees": 106.19,
+                "totalPrice": 106.19,
+                "taxAmount": null,
+                "additionalFeesAmount": null,
+                "redemption": {
+                    "unit": "MILES",
+                    "amount": 1500,
+                    "taxAmount": 16.39,
+                    "category": "Economy MileSAAver"
+                }
+            },
+            "fareClassInput": "Standard",
+            "fareClass": "ECONOMY",
+            "departureTrainStationCode": "FLL",
+            "arrivalTrainStationCode": "LGA",
+            "departureDate": "2018-07-26",
+            "estimatedDuration": "PT3H",
+            "availableSeatsCount": 5,
+            "legs": [
+                {
+                    "trainNumber": "604",
+                    "route": "FLL>LGA",
+                    "departureTrainStationCode": "FLL",
+                    "departureTime": "7:05",
+                    "arrivalTrainStationCode": "LGA",
+                    "arrivalTime": "10:05",
+                    "estimatedDuration": "PT3H"
+                }
+            ],
+            "routeType": "NONSTOP"
+        },
+        {
+            "boundType": "INBOUND",
+            "priceSpecification": {
+                "priceBeforeTaxesAndFees": 121.18,
+                "totalPrice": 121.18,
+                "taxAmount": null,
+                "additionalFeesAmount": null,
+                "redemption": {
+                    "unit": "MILES",
+                    "amount": 1500,
+                    "taxAmount": 16.39,
+                    "category": "Economy MileSAAver"
+                }
+            },
+            "fareClassInput": "STANDARD",
+            "fareClass": "ECONOMY",
+            "departureTrainStationCode": "LGA",
+            "arrivalTrainStationCode": "FLL",
+            "departureDate": "2018-07-29",
+            "estimatedDuration": "PT3H1M",
+            "availableSeatsCount": 5,
+            "legs": [
+                {
+                    "trainNumber": "779",
+                    "route": "LGA>FLL",
+                    "departureTrainStationCode": "LGA",
+                    "departureTime": "20:29",
+                    "arrivalTrainStationCode": "FLL",
+                    "arrivalTime": "23:30",
+                    "estimatedDuration": "PT3H1M"
+                }
+            ],
+            "routeType": "NONSTOP"
+        },
+        {
+            "passengerDetails": [
+                {
+                    "category": "Adult",
+                    "count": 1
+                },
+                {
+                    "category": "Child0to17",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "departureDate": "2018-07-26",
+    "returnDate": "2018-07-29",
+    "journeyType": "ROUND_TRIP",
+    "trainCompanyCode": "TGV",
+    "page": {
+        "languageIsoCode": "en",
+        "siteEdition": "en-US"
+    }
+}
