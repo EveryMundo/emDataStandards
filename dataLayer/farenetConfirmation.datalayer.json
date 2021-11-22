@@ -1,8 +1,5 @@
 {
-    "priceSpecification": {
-        "currencyCode": "USD",
-        "currencySymbol": "$"
-    }, 
+    "currencyCode": "USD",
     "journey": {
         "passengerDetails": [
             {
@@ -131,10 +128,7 @@
         "departureDate": "2018-07-26",
         "returnDate": "2018-07-29",
         "journeyType": "ROUND_TRIP",
-        "airline": {
-            "name": "Spirit",
-            "iataCode": "NK"
-        }
+        "airlineIataCode": "NK"
     },
     "page": {
         "languageIsoCode": "en",
