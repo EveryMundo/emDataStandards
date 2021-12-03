@@ -1,8 +1,8 @@
 {
-    "id": "/hotel",
+    "id": "/hotel_base",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Hotel",
-    "description": "Hotel",
+    "title": "Hotel Base",
+    "description": "Hotel Base Schema",
     "type": "object",
     "properties": {
         "tenantCode": {
@@ -109,10 +109,10 @@
     ],
     "links": [
         {
-            "title": "Hotel",
-            "description": "Hotel",
+            "title": "Hotel Base",
+            "description": "Hotel Base Schema",
             "rel": "self",
-            "href": "/hotel",
+            "href": "/hotel_base",
             "method": "GET",
             "targetSchema": {
                 "rel": "self"
