@@ -5,6 +5,11 @@
   "description": "Hotel",
   "type": "object",
   "properties": {
+    "tenantCode": {
+      "description": "Tenant Code",
+      "type": "string",
+      "example": "XXX"
+    },
     "hotelId": {
       "description": "Hotel identifier",
       "type": "string",
@@ -32,16 +37,28 @@
     },
     "priceSpecification": {
       "allOf": [
-        {"$ref": "./priceSpecification_base.schema.json"},      
-      {
-        "properties": {
-          "priceOffers": {
-            "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
-            "type": "string",
-            "example": "JOURNEY"
+        {
+          "$ref": "./priceSpecification_base.schema.json"
+        },
+        {
+          "properties": {
+            "priceOffers": {
+              "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
+              "type": "string",
+              "example": "JOURNEY"
+            },
+            "currencyCode": {
+              "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+              "type": "string",
+              "example": "USD"
+            },
+            "rateCode": {
+              "description": "Room rate code",
+              "type": "string",
+              "example": "XXX"
+            }
           }
         }
-      }
       ]
     },
     "guest": {
@@ -65,10 +82,20 @@
       "type": "number",
       "example": 4
     },
+    "roomType": {
+      "description": "Room type",
+      "type": "string",
+      "example": "Suite"
+    },
     "roomCount": {
       "description": "Number of rooms",
       "type": "number",
       "example": 1
+    },
+    "siteEdition": {
+      "description": "Site edition",
+      "type": "string",
+      "example": "en-US"
     },
     "starRating": {
       "description": "An official rating for the hotel, e.g. from national associations or standards bodies: 5-star hotel",
@@ -89,10 +116,21 @@
     "amenities": {
       "description": "Amenities",
       "type": "array",
-      "example": ["Golf", "Pool"]
+      "example": [
+        "Golf",
+        "Pool"
+      ]
+    },
+    "sourceId": {
+      "description": "ID used for debugging",
+      "type": "string",
+      "example": "XADPLIK7890"
     }
   },
-  "required": ["name", "cityCode"],
+  "required": [
+    "hotelId",
+    "name"
+  ],
   "links": [
     {
       "title": "Hotel",
