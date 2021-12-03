@@ -42,11 +42,6 @@
                 },
                 {
                     "properties": {
-                        "priceOffers": {
-                            "description": "Description and identifier for combined service pricing, e.g. hotel price includes flight fare (alphabetical order): HOTEL|JOURNEY, CAR|HOTEL|JOURNEY, JOURNEY, etc.",
-                            "type": "string",
-                            "example": "JOURNEY"
-                        },
                         "currencyCode": {
                             "description": "The currency (in 3-letter ISO 4217 format) of the price.",
                             "type": "string",
@@ -63,9 +58,6 @@
         },
         "guest": {
             "$ref": "./guest.schema.json"
-        },
-        "address": {
-            "$ref": "./address.schema.json"
         },
         "checkinTime": {
             "description": "The earliest someone may check into a lodging establishment",
