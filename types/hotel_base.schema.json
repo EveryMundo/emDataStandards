@@ -15,6 +15,16 @@
             "type": "string",
             "example": "Hotel123456789Kat"
         },
+        "roomCode": {
+            "description": "Room code",
+            "type": "string",
+            "example": "XLV"
+        },
+        "rateCode": {
+            "description": "Room rate code",
+            "type": "string",
+            "example": "XXX"
+        },
         "name": {
             "description": "Hotel name",
             "type": "string",
@@ -30,11 +40,6 @@
             "type": "string",
             "example": "ABC"
         },
-        "cityCode": {
-            "description": "ISO code for the city",
-            "type": "string",
-            "example": "SAN"
-        },
         "priceSpecification": {
             "allOf": [
                 {
@@ -46,11 +51,6 @@
                             "description": "The currency (in 3-letter ISO 4217 format) of the price.",
                             "type": "string",
                             "example": "USD"
-                        },
-                        "rateCode": {
-                            "description": "Room rate code",
-                            "type": "string",
-                            "example": "XXX"
                         }
                     }
                 }
@@ -59,45 +59,41 @@
         "guest": {
             "$ref": "./guest.schema.json"
         },
-        "checkinTime": {
-            "description": "The earliest someone may check into a lodging establishment",
+        "checkinDate": {
+            "description": "Check in date",
             "type": "string",
-            "example": "2017-08-05T16:00:00-07:00"
+            "example": "2017-08-05"
         },
-        "checkoutTime": {
-            "description": "The latest someone may check out of a lodging establishment",
+        "checkoutDate": {
+            "description": "Check out date",
             "type": "string",
-            "example": "2017-08-06T20:00:00-07:00"
+            "example": "2017-08-06"
         },
         "nightCount": {
             "description": "Number of nights the guest is staying at the hotel",
             "type": "number",
             "example": 4
         },
-        "roomType": {
-            "description": "Room type",
-            "type": "string",
-            "example": "Suite"
-        },
         "roomCount": {
             "description": "Number of rooms",
             "type": "number",
             "example": 1
         },
-        "siteEdition": {
-            "description": "Site edition",
-            "type": "string",
-            "example": "en-US"
-        },
         "sourceId": {
-            "description": "ID used for debuggins",
+            "description": "ID used for debugging",
             "type": "string",
             "example": "XADPLIK7890"
         }
     },
     "required": [
         "hotelId",
-        "name"
+        "roomCode",
+        "rateCode",
+        "name",
+        "totalPrice",
+        "guest.count",
+        "checkinDate",
+        "checkoutDate"
     ],
     "links": [
         {

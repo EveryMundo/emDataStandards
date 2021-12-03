@@ -15,6 +15,16 @@
       "type": "string",
       "example": "Hotel123456789Kat"
     },
+    "roomCode": {
+      "description": "Room code",
+      "type": "string",
+      "example": "XLV"
+    },
+    "rateCode": {
+      "description": "Room rate code",
+      "type": "string",
+      "example": "XXX"
+    },
     "name": {
       "description": "Hotel name",
       "type": "string",
@@ -51,11 +61,6 @@
               "description": "The currency (in 3-letter ISO 4217 format) of the price.",
               "type": "string",
               "example": "USD"
-            },
-            "rateCode": {
-              "description": "Room rate code",
-              "type": "string",
-              "example": "XXX"
             }
           }
         }
@@ -67,15 +72,25 @@
     "address": {
       "$ref": "./address.schema.json"
     },
+    "checkinDate": {
+      "description": "Check in date",
+      "type": "string",
+      "example": "2017-08-05"
+    },
+    "checkoutDate": {
+      "description": "Check out date",
+      "type": "string",
+      "example": "2017-08-06"
+    },
     "checkinTime": {
       "description": "The earliest someone may check into a lodging establishment",
       "type": "string",
-      "example": "2017-08-05T16:00:00-07:00"
+      "example": "16:00:00"
     },
     "checkoutTime": {
       "description": "The latest someone may check out of a lodging establishment",
       "type": "string",
-      "example": "2017-08-06T20:00:00-07:00"
+      "example": "20:00:00"
     },
     "nightCount": {
       "description": "Number of nights the guest is staying at the hotel",
@@ -129,7 +144,13 @@
   },
   "required": [
     "hotelId",
-    "name"
+    "roomCode",
+    "rateCode",
+    "name",
+    "totalPrice",
+    "guest.count",
+    "checkinDate",
+    "checkoutDate"
   ],
   "links": [
     {
