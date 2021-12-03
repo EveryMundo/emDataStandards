@@ -32,6 +32,7 @@ export default fromJS([
   require('../types/flight.schema.json'),
   require('../types/flightReservation.schema.json'),
   require('../types/guest.schema.json'),
+  require('../types/hotel_base.schema.json'),
   require('../types/hotel.schema.json'),
   require('../types/insurance.schema.json'),
   require('../types/journey.schema.json'),
