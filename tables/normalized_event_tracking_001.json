@@ -20,7 +20,7 @@
     "passengerCount": 3,
     "isFlexibleDates": true,
     "discountCode": "rytHUN",
-    "miles":false,
+    "miles": false,
     "totalPrice": 123.45,
     "currencyCode": "CAD",
     "totalPriceUSD":340.90,
