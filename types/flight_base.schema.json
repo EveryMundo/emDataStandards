@@ -79,7 +79,7 @@
         "example": "CONNECTING"
       },
       "isCodeshare": {
-        "description": "isCodeshare",
+        "description": "If at least one leg is codeshare, the flight will be tagged as isCodeshare = true",
         "type": "boolean",
         "example": true
       },
