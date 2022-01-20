@@ -25,11 +25,6 @@
             "type": "string",
             "example": "XXX"
         },
-        "name": {
-            "description": "Hotel name",
-            "type": "string",
-            "example": "Holiday Inn"
-        },
         "group": {
             "description": "Hotel group where hotels are under the same management and belong to the same brand of hotels.",
             "type": "string",
@@ -89,7 +84,6 @@
         "hotelId",
         "roomCode",
         "rateCode",
-        "name",
         "totalPrice",
         "guest.count",
         "checkinDate",
