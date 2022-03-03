@@ -1,8 +1,8 @@
 {
-    "id": "/hotel_base",
+    "id": "/property_base",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Hotel Base",
-    "description": "Hotel Base Schema",
+    "title": "Property Base",
+    "description": "Property Base Schema",
     "type": "object",
     "properties": {
         "tenantCode": {
@@ -10,8 +10,8 @@
             "type": "string",
             "example": "XXX"
         },
-        "hotelId": {
-            "description": "Hotel identifier",
+        "propertyId": {
+            "description": "Property identifier",
             "type": "string",
             "example": "Hotel123456789Kat"
         },
@@ -70,7 +70,7 @@
             "example": "2017-08-06"
         },
         "nightCount": {
-            "description": "Number of nights the guest is staying at the hotel",
+            "description": "Number of nights the guest is staying at the property",
             "type": "number",
             "example": 4
         },
@@ -86,7 +86,7 @@
         }
     },
     "required": [
-        "hotelId",
+        "propertyId",
         "roomCode",
         "rateCode",
         "name",
@@ -97,10 +97,10 @@
     ],
     "links": [
         {
-            "title": "Hotel Base",
-            "description": "Hotel Base Schema",
+            "title": "Property Base",
+            "description": "Property Base Schema",
             "rel": "self",
-            "href": "/hotel_base",
+            "href": "/property_base",
             "method": "GET",
             "targetSchema": {
                 "rel": "self"
