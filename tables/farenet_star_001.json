@@ -1,0 +1,11 @@
+{
+    "_id": "15912173004984711.0278aaig-00003",
+    "journey": {"$ref":"./journey_base.schema.json"},
+    "page": {"$ref":"./page_base.schema.json"},
+    "hotel": {"$ref":"./hotel.schema.json"},
+    "device": {"$ref":"./device_base.schema.json"},
+    "metadata": {"$ref":"./metadata_base.schema.json"},
+    "pricespecification": {"$ref":"./priceSpecification_base.schema.json"},
+    "__idgroup": "15912164431979241.5917aaig",
+    "__createdat": "2020-01-01 00:00:01"
+}
