@@ -1,0 +1,47 @@
+{
+    "product": {
+        "name": "airTRFX"
+    },
+    "tenant": {
+        "type": "Hotel",
+        "code": "HY",
+        "name": "Hyatt"
+    },
+    "page": {
+        "author": "EveryMundo",
+        "name": "hyatt miami beach", //this content should always be in ENGLSIH
+        "url": "https://www.everymundo.com/en/hyatt-miami-beach",
+        "hostname": "www.everymundo.com",
+        "uri": "/en/hyatt-miami-beach",
+        "fullURL": "https://flights.everymundo.com/en/hyatt-miami-beach&utm_source=google",
+        "typeName": "PROPERTY",
+        "typeCode": "PR",           
+        "languageIsoCode": "en",
+        "countryIsoCode": "US",
+        "siteEdition": "en-US",
+        "countryCurrencyCode": ["USD"]
+    },
+    "region": {
+        "name": "North America" //this content should always be in ENGLSIH
+        "geoId": "112233"
+    },
+    "country": {
+        "name": "United States", //this content should always be in ENGLSIH
+        "isoCode": "US",
+        "geoId": "112233"
+    },
+    "city": {
+        "name": "Miami", //this content should always be in ENGLSIH
+        "geoId": "941974309"
+    },
+    "property": {
+        "name": "Hyatt Miami Beach", //this content should always be in ENGLSIH
+        "code": "HYMIA91470"
+    },
+    "device": {
+        "category": "DESKTOP"
+    },
+    "extraInfo": {
+        "environment": "PRODUCTION"
+    }
+}
