@@ -26,7 +26,7 @@
         "example": "en"
       },
       "siteEdition": {
-        "description": "Site edition combination of ISO codes for language and country",
+        "description": "Site edition combination of ISO codes for language and country. The country reflects the market (POS).",
         "type": "string",
         "example": "en-US"
       }
