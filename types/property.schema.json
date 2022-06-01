@@ -129,7 +129,7 @@
       ]
     },
     "amenities": {
-      "description": "Amenities",
+      "description": "Amenities will only be collected from the Results Page",
       "type": "array",
       "example": [
         "Golf",
