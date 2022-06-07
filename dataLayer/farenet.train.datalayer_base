@@ -1,0 +1,55 @@
+{
+    "page": {
+        "languageIsoCode": "en",
+        "siteEdition": "en-US"
+    },
+    "priceSpecification": {
+        "priceBeforeTaxesAndFees": null,
+        "totalPrice": 250,
+        "taxAmount": null,
+        "currencyCode": "GBP",
+        "isDiscount": true
+    },
+    "originTrainStationId": "2968",
+    "originTrainStationName": "Manchester Piccadilly",
+    "destinationTrainStationId": "1444",
+    "destinationTrainStationName": "London Euston",
+    "passengerCount": 5,
+    "adultCount": 3,
+    "childCount": 2,
+    "journeyList": [
+        {
+            "outbound": {
+                "departureTime": "2022-04-20T15:55:00",
+                "arrivalTime": "2022-04-20T18:07:00",
+                "trainChangeCount": 0,
+                "estimatedDurationMinutes": 132,
+                "ticketType": "Advance Single",
+                "journeyType": "ONE_WAY",
+                "fareClassInput": "First",
+                "routeCode": "00515",
+                "priceSpecification": {
+                    "priceBeforeTaxesAndFees": null,
+                    "totalPrice": 100,
+                    "taxAmount": null,
+                    "currencyCode": "GBP"
+                }
+            },
+            "inbound": {
+                "departureTime": "2022-04-27T20:00:00",
+                "arrivalTime": "2022-04-27T22:03:00",
+                "trainChangeCount": 0,
+                "estimatedDurationMinutes": 123,
+                "ticketType": "Rail Sale",
+                "journeyType": "ONE_WAY",
+                "fareClassInput": "First",
+                "routeCode": "00474",
+                "priceSpecification": {
+                    "priceBeforeTaxesAndFees": null,
+                    "totalPrice": 150,
+                    "taxAmount": null,
+                    "currencyCode": "GBP"
+                }
+            }
+        }
+    }
