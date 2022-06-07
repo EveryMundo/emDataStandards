@@ -1,0 +1,75 @@
+{
+    "page": {
+        "languageIsoCode": "en",
+        "siteEdition": "en-US"
+    },
+    "pnr": 772,
+    "tenantCode": "TGV",
+    "priceSpecification": {
+        "priceBeforeTaxesAndFees": 240,
+        "totalPrice": 250,
+        "taxAmount": 10,
+        "currencyCode": "USD",
+        "paymentDetails": {
+            "methodInput": "CreditCard",
+            "cardName": "VISA"
+        }
+    },
+    "train": [{
+            "tripNumber": 1,
+            "originTrainStationId": "2968",
+            "originTrainStationName": "Manchester Piccadilly",
+            "destinationTrainStationId": "1444",
+            "destinationTrainStationName": "London Euston",
+            "totalPrice": 150,
+            "passengerCount": 5,
+            "adultCount": 3,
+            "childCount": 2,
+            "journeyList": [{
+                "outbound": {
+                    "departureTime": "2022-04-20T15:55:00",
+                    "arrivalTime": "2022-04-20T18:07:00",
+                    "trainChangeCount": 0,
+                    "estimatedDurationMinutes": 132,
+                    "ticketType": "Advance Single",
+                    "journeyType": "ONE_WAY",
+                    "fareClassInput": "First"
+                },
+                "inbound": {
+                    "departureTime": "2022-04-27T20:00:00",
+                    "arrivalTime": "2022-04-27T22:03:00",
+                    "trainChangeCount": 0,
+                    "duration": 123,
+                    "ticketType": "Rail Sale",
+                    "journeyType": "ONE_WAY",
+                    "fareClassInput": "First"
+                }
+            }]
+        },
+        {
+            "tripNumber": 2,
+            "originTrainStationId": "6121",
+            "originTrainStationName": "London Kings Cross",
+            "destinationTrainStationId": "9328",
+            "destinationTrainStationName": "Edinburgh",
+            "totalPrice": 100,
+            "passengerCount": 4,
+            "adultCount": 2,
+            "childCount": 2,
+            "journeyList": [{
+                "outbound": {
+                    "journeyTimeTableList": [{
+                        "departureTime": "2022-04-20T15:55:00",
+                        "arrivalTime": "2022-04-20T18:07:00",
+                        "trainChangeCount": 0,
+                        "estimatedDurationMinutes": 132
+                    }],
+                    "ticketType": "Advance Single",
+                    "journeyType": "ONE_WAY",
+                    "fareClassInput": "First"
+                },
+                "inbound": null
+            }]
+        }
+    ]
+}
