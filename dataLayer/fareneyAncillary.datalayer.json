@@ -1,0 +1,467 @@
+{
+    "id": "/farenetAncillary.datalayer",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "FareNet Ancillary DataLayer",
+    "description": "FareNet Ancillary DataLayer",
+    "type": "object",
+    "properties": {
+        "currencyCode": {
+            "description": "The currency (in 3-letter ISO 4217 format) of the price.",
+            "type": "string",
+            "example": "USD"
+        },
+        "journey": {
+            "description": "Journey",
+            "type": "object",
+            "properties": {
+                "passengerDetails": {
+                    "description": "Passenger Details captured from IBE",
+                    "type": "array",
+                    "properties": {
+                        "category": {
+                            "description": "Any passenger category following the format category[Age]To[Age]Count or category[Age]Plus",
+                            "type": "string",
+                            "example": "Adult"
+                        },
+                        "count": {
+                            "description": "Amount of passengers for a specific category",
+                            "type": "number",
+                            "example": 1
+                        }
+                    }
+                },
+                "flights": {
+                    "description": "outboundFlight",
+                    "type": "array",
+                    "properties": {
+                        "boundType": {
+                            "description": "OUTBOUND, INBOUND",
+                            "type": "string",
+                            "example": "OUTBOUND"
+                        },
+                        "priceSpecification": {
+                            "description": "priceSpecification",
+                            "type": "object",
+                            "properties": {
+                                "priceBeforeTaxesAndFees": {
+                                    "description": "priceBeforeTaxesAndFees",
+                                    "type": "number",
+                                    "example": 750.12
+                                },
+                                "totalPrice": {
+                                    "description": "The total price for the reservation or ticket, including applicable taxes, shipping, etc. but does not include additionalFeesAmount",
+                                    "type": "number",
+                                    "example": 825.51
+                                },
+                                "taxAmount": {
+                                    "description": "taxAmount",
+                                    "type": "number",
+                                    "example": 75.39
+                                },
+                                "additionalFeesAmount": {
+                                    "description": "Airline additional fees",
+                                    "type": "number",
+                                    "example": null
+                                },
+                                "redemption": {
+                                    "description": "Redemption",
+                                    "type": "object",
+                                    "properties": {
+                                        "unit": {
+                                            "description": "MILES, BITCOIN, POINTS, OTHER",
+                                            "type": "string",
+                                            "example": "MILES"
+                                        },
+                                        "amount": {
+                                            "description": "Amount of redemption units",
+                                            "type": "number",
+                                            "example": 1500
+                                        },
+                                        "taxAmount": {
+                                            "description": "The amount paid in taxes",
+                                            "type": "number",
+                                            "example": 16.39
+                                        },
+                                        "category": {
+                                            "description": "Miles Category Name",
+                                            "type": "string",
+                                            "example": "Economy MileSAAver"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "fareClassInput": {
+                            "description": "Name of the fare class given by airline in sentence case, e.g. Economy Basic",
+                            "type": "string",
+                            "example": "Economy Basic"
+                        },
+                        "fareClass": {
+                            "description": "Standardized fare class can only be ECONOMY, BUSINESS, FIRST",
+                            "type": "string",
+                            "example": "ECONOMY"
+                        },
+                        "departureAirportIataCode": {
+                            "description": "departureAirportIataCode",
+                            "type": "string",
+                            "example": "FLL"
+                        },
+                        "arrivalAirportIataCode": {
+                            "description": "arrivalAirportIataCode",
+                            "type": "string",
+                            "example": "LGA"
+                        },
+                        "departureDate": {
+                            "description": "Departure Date",
+                            "type": "string",
+                            "example": "2017-12-07"
+                        },
+                        "estimatedDuration": {
+                            "description": "Estimated Duration of the flight",
+                            "type": "string",
+                            "example": "PT9H45M"
+                        },
+                        "availableSeatsCount": {
+                            "description": "availableSeatsCount",
+                            "type": "string",
+                            "example": "9+"
+                        },
+                        "legs": {
+                            "description": "Leg is the operation of an aircraft from one scheduled departure station to its next scheduled arrival station",
+                            "type": "array",
+                            "properties": {
+                                "flightNumber": {
+                                    "description": "Flight Number",
+                                    "type": "string",
+                                    "example": "EM110"
+                                },
+                                "route": {
+                                    "description": "Origin City and Destination City",
+                                    "type": "string",
+                                    "example": "FLL>LGA"
+                                },
+                                "departureAirport": {
+                                    "description": "Departure Airport",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "description": "The name of the airport",
+                                            "type": "string",
+                                            "example": "Fort Lauderdale–Hollywood International Airport"
+                                        },
+                                        "iataCode": {
+                                            "description": "IATA identifier for the airport",
+                                            "type": "string",
+                                            "example": "FLL"
+                                        }
+                                    }
+                                },
+                                "departureTime": {
+                                    "description": "departureTime",
+                                    "type": "string",
+                                    "example": "2027-03-04T06:35:00-08:00"
+                                },
+                                "arrivalAirport": {
+                                    "description": "Arrival Airport",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "description": "The name of the airport",
+                                            "type": "string",
+                                            "example": "LaGuardia Airport"
+                                        },
+                                        "iataCode": {
+                                            "description": "IATA identifier for the airport",
+                                            "type": "string",
+                                            "example": "LGA"
+                                        }
+                                    }
+                                },
+                                "arrivalTime": {
+                                    "description": "Time of Arrival",
+                                    "type": "string",
+                                    "example": "2027-03-04T13:35:00-08:00"
+                                },
+                                "estimatedDuration": {
+                                    "description": "Total journey time including the combined air time and connection times.  In case of stopover, this may or may not include stopover durations. ISO 8601 format",
+                                    "type": "string",
+                                    "example": "PT6H30M"
+                                }
+                            }
+                        },
+                        "departureCity": {
+                            "description": "City",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "The name of the city",
+                                    "type": "string",
+                                    "example": "Fort Lauderdale"
+                                },
+                                "cityCode": {
+                                    "description": "ISO code for the city",
+                                    "type": "string",
+                                    "example": "FLL"
+                                }
+                            }
+                        },
+                        "departureCountry": {
+                            "description": "Country",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "The name of the country",
+                                    "type": "string",
+                                    "example": "United States"
+                                },
+                                "isoCode": {
+                                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                                    "type": "string",
+                                    "example": "US"
+                                }
+                            }
+                        },
+                        "arrivalCity": {
+                            "description": "City",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "The name of the city",
+                                    "type": "string",
+                                    "example": "New York"
+                                },
+                                "cityCode": {
+                                    "description": "ISO code for the city",
+                                    "type": "string",
+                                    "example": "NYC"
+                                }
+                            }
+                        },
+                        "arrivalCountry": {
+                            "description": "Country",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "The name of the country",
+                                    "type": "string",
+                                    "example": "United States"
+                                },
+                                "isoCode": {
+                                    "description": "The country code (in 2 letter codes from ISO 3166-1)",
+                                    "type": "string",
+                                    "example": "US"
+                                }
+                            }
+                        },
+                        "routeType": {
+                            "description": "route type can be DIRECT or CONNECTING",
+                            "type": "string",
+                            "example": "CONNECTING"
+                        }
+                    }
+                },
+                "fareTensor": {
+                    "description": "FlightTensor",
+                    "type": "object",
+                    "properties": {
+                        "journeyType": {
+                            "description": "ROUND_TRIP, ONE_WAY, MULTI_CITY",
+                            "type": "string",
+                            "example": "ROUND_TRIP"
+                        },
+                        "cells": {
+                            "description": "Cells in the matrix",
+                            "type": "object",
+                            "properties": {
+                                "priceSpecification": {
+                                    "description": "priceSpecification",
+                                    "type": "object",
+                                    "properties": {
+                                        "totalPrice": {
+                                            "description": "totalPrice",
+                                            "type": "number",
+                                            "example": 825.51
+                                        },
+                                        "redemption": {
+                                            "description": "Redemption",
+                                            "type": "object",
+                                            "properties": {
+                                                "unit": {
+                                                    "description": "MILES, BITCOIN, POINTS, OTHER",
+                                                    "type": "string",
+                                                    "example": "MILES"
+                                                },
+                                                "amount": {
+                                                    "description": "Amount of redemption units",
+                                                    "type": "number",
+                                                    "example": 1500
+                                                },
+                                                "taxAmount": {
+                                                    "description": "The amount paid in taxes",
+                                                    "type": "number",
+                                                    "example": 16.39
+                                                },
+                                                "category": {
+                                                    "description": "Miles Category Name",
+                                                    "type": "string",
+                                                    "example": "Economy MileSAAver"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "boundType": {
+                                    "description": "OUTBOUND, INBOUND, MATRIX",
+                                    "type": "string",
+                                    "example": "MATRIX"
+                                },
+                                "isSoldOut": {
+                                    "description": "Whether price is sold out",
+                                    "type": "boolean",
+                                    "example": false
+                                },
+                                "outboundDate": {
+                                    "description": "Outbound date",
+                                    "type": "string",
+                                    "example": "2017-03-06"
+                                },
+                                "inboundDate": {
+                                    "description": "Inbound date",
+                                    "type": "string",
+                                    "example": "2017-03-26"
+                                }
+                            }
+                        }
+                    }
+                },
+                "departureDate": {
+                    "description": "departureDate",
+                    "type": "string",
+                    "example": "2017-12-07"
+                },
+                "returnDate": {
+                    "description": "returnDate",
+                    "type": "string",
+                    "example": "2017-12-10"
+                },
+                "journeyType": {
+                    "description": "ROUND_TRIP, ONE_WAY, or MULTI_CITY",
+                    "type": "string",
+                    "example": "ROUND_TRIP"
+                },
+                "airlineIataCode": {
+                    "description": "IATA identifier for the airline",
+                    "type": "string",
+                    "example": "EM"
+                }
+            }
+        }
+    },
+    "hotels": {
+        "allOf": [
+            {
+                "$ref": "./hotel.schema.json"
+            }
+        ]
+    },
+    "carRentals": {
+        "allOf": [
+            {
+                "$ref": "./carRental_base.schema.json"
+            }
+        ]
+    },
+    "insurance": {
+        "brand": {
+            "description": "Travel insurance provider",
+            "type": "string",
+            "example": "Platinum Plan"
+        },
+        "name": {
+            "description": "name",
+            "type": "string",
+            "example": "AIG Travel Guard"
+        },
+        "priceSpecification": {
+            "$ref": "./priceSpecification_base.schema.json"
+        }
+    },
+    "baggage": {
+        "count": {
+            "description": "Total number of baggages",
+            "type": "number",
+            "example": 2
+        },
+        "checkedBags": {
+            "description": "checkedBags",
+            "type": "number",
+            "example": 1
+        },
+        "carryOnBags": {
+            "description": "carryOnBags",
+            "type": "number",
+            "example": 1
+        },
+        "priceSpecification": {
+            "$ref": "./priceSpecification_base.schema.json"
+        },
+        "prepaidInd": {
+            "description": "When true, indicates the baggage is prepaid",
+            "type": "boolean",
+            "example": true
+        }
+    },
+    "seat": {
+        "count": {
+            "description": "Max. number of passengers in car rental",
+            "type": "number",
+            "example": 4
+        },
+        "rowNumber": {
+            "description": "Number assigned to a row in the aircraft, typically used to identify seat assignments.",
+            "type": "string",
+            "example": "16"
+        },
+        "cabinColumnId": {
+            "description": "Identifier of the column (e.g. A, B, C, etc.)",
+            "type": "string",
+            "example": "A"
+        },
+        "priceSpecification": {
+            "$ref": "./priceSpecification_base.schema.json"
+        }
+    },
+    "page": {
+        "description": "WebPage",
+        "type": "object",
+        "properties": {
+            "languageIsoCode": {
+                "description": "Language ISO 639-1 code",
+                "type": "string",
+                "example": "en"
+            },
+            "siteEdition": {
+                "description": "Site edition combination of ISO codes for language and country",
+                "type": "string",
+                "example": "en-US"
+            }
+        }
+    },
+    "required": [
+        "priceSpecification",
+        "journey",
+        "page"
+    ],
+    "links": [
+        {
+            "title": "FareNet Ancillary DataLayer",
+            "description": "FareNet Ancillary DataLayer",
+            "rel": "self",
+            "href": "/farenetAncillary.datalayer",
+            "method": "GET",
+            "targetSchema": {
+                "rel": "self"
+            }
+        }
+    ]
+}
