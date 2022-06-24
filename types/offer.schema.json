@@ -47,7 +47,7 @@
         {"$ref": "./journey_base.schema.json"}
       ]
     },
-    "hotels": {
+    "property": {
       "allOf": [
         {"$ref": "./property.schema.json"}
       ]
