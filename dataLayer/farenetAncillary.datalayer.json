@@ -360,14 +360,14 @@
     "property": {
         "allOf": [
             {
-                "$ref": "./property.schema.json"
+                "$ref": "../types/property.schema.json"
             }
         ]
     },
     "carRentals": {
         "allOf": [
             {
-                "$ref": "./carRental_base.schema.json"
+                "$ref": "../types/carRental_base.schema.json"
             }
         ]
     },
