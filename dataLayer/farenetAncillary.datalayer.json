@@ -357,10 +357,10 @@
             }
         }
     },
-    "hotels": {
+    "property": {
         "allOf": [
             {
-                "$ref": "./hotel.schema.json"
+                "$ref": "./property.schema.json"
             }
         ]
     },
