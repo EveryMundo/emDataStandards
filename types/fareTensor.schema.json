@@ -2,7 +2,7 @@
   "id": "/fareTensor",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "FlightTensor",
-  "description": "FlightTensor",
+  "description": "FlightTensor is used to collect fares in a calendar view",
   "type": "object",
   "properties": {
     "journeyType": {

@@ -1,8 +1,8 @@
 {
-  "id": "/hotel",
+  "id": "/property",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Hotel",
-  "description": "Hotel",
+  "title": "Property",
+  "description": "Property",
   "type": "object",
   "properties": {
     "tenantCode": {
@@ -10,8 +10,8 @@
       "type": "string",
       "example": "XXX"
     },
-    "hotelId": {
-      "description": "Hotel identifier",
+    "propertyId": {
+      "description": "Property identifier",
       "type": "string",
       "example": "Hotel123456789Kat"
     },
@@ -26,7 +26,7 @@
       "example": "XXX"
     },
     "name": {
-      "description": "Hotel name",
+      "description": "Property name",
       "type": "string",
       "example": "Holiday Inn"
     },
@@ -93,7 +93,7 @@
       "example": "20:00:00"
     },
     "nightCount": {
-      "description": "Number of nights the guest is staying at the hotel",
+      "description": "Number of nights the guest is staying at the property",
       "type": "number",
       "example": 4
     },
@@ -113,7 +113,7 @@
       "example": "en-US"
     },
     "starRating": {
-      "description": "An official rating for the hotel, e.g. from national associations or standards bodies: 5-star hotel",
+      "description": "An official rating for the property, e.g. from national associations or standards bodies: 5-star hotel",
       "type": "string",
       "example": "5"
     },
@@ -121,7 +121,7 @@
       "$ref": "./aggregatedRating.schema.json"
     },
     "images": {
-      "description": "Image URLs for the hotel",
+      "description": "Image URLs for the property",
       "type": "array",
       "example": [
         "everymundo.com/image.jpg",
@@ -129,7 +129,7 @@
       ]
     },
     "amenities": {
-      "description": "Amenities",
+      "description": "Amenities will only be collected from the Results Page",
       "type": "array",
       "example": [
         "Golf",
@@ -143,7 +143,7 @@
     }
   },
   "required": [
-    "hotelId",
+    "propertyId",
     "roomCode",
     "rateCode",
     "name",
@@ -154,10 +154,10 @@
   ],
   "links": [
     {
-      "title": "Hotel",
-      "description": "Hotel",
+      "title": "Property",
+      "description": "Property",
       "rel": "self",
-      "href": "/hotel",
+      "href": "/property",
       "method": "GET",
       "targetSchema": {
         "rel": "self"
