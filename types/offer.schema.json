@@ -49,7 +49,7 @@
     },
     "hotels": {
       "allOf": [
-        {"$ref": "./hotel.schema.json"}
+        {"$ref": "./property.schema.json"}
       ]
     },
     "carRentals": {
