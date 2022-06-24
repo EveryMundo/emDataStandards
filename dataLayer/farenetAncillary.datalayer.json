@@ -383,7 +383,7 @@
             "example": "AIG Travel Guard"
         },
         "priceSpecification": {
-            "$ref": "./priceSpecification_base.schema.json"
+            "$ref": "../types/priceSpecification_base.schema.json"
         }
     },
     "baggage": {
@@ -403,7 +403,7 @@
             "example": 1
         },
         "priceSpecification": {
-            "$ref": "./priceSpecification_base.schema.json"
+            "$ref": "../types/priceSpecification_base.schema.json"
         },
         "prepaidInd": {
             "description": "When true, indicates the baggage is prepaid",
@@ -428,7 +428,7 @@
             "example": "A"
         },
         "priceSpecification": {
-            "$ref": "./priceSpecification_base.schema.json"
+            "$ref": "../types/priceSpecification_base.schema.json"
         }
     },
     "page": {
