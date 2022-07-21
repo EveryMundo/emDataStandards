@@ -149,6 +149,36 @@
         "description": "Site Edition",
         "type": "string",
         "example": "em_se=en-HK"
+      },
+        "em_en": {
+        "description": "Experience Name",
+        "type": "string",
+        "example": "em_en=Rod Laver Arena Reserved Seat"
+      },
+        "em_etp": {
+        "description": "Experience Type",
+        "type": "string",
+        "example": "em_etp=Ticket Only"
+      },
+        "em_el": {
+        "description": "Event Location",
+        "type": "string",
+        "example": "em_el=40"
+      },
+        "em_ed": {
+        "description": "Event Date",
+        "type": "string",
+        "example": "em_ed=1"
+      },
+        "em_es": {
+        "description": "Event Session",
+        "type": "string",
+        "example": "em_es=Night"
+      },
+        "em_etm": {
+        "description": "Event Time",
+        "type": "string",
+        "example": "em_etm=11:00 AM"
       }
     },
     "required": [],
