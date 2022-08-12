@@ -14,7 +14,7 @@
 | FSI Assisted Conversions | The number of flight bookings after initiating a flight search | Number | 1000 |
 | FSI Assisted Conv. Rate | The percentage of flight bookings after viewing a module | Percentage | 8.5% |
 | FSI Assisted Revenue | The total revenue booked after users initiated a flight search after clicking on a module | Number | 1000 |
-| FSI Rate | The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule. | Percentage | 5% |
+| FSI Rate | The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule. | Percentage | 5.5% |
 | IBE Bookings | Number of bookings recorded from the IBE Flight Confirmation Page | Number | 1000 |
 | IBE Revenue (USD) | Total revenue recorded from the IBE Flight Confirmation Page | Number | $10,000 |
 | IBE Searches | See: _Searches_ | Number | 1000 |
