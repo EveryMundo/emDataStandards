@@ -7,6 +7,7 @@
 | Bookings | Bookings are counted whenever a user completes a flight reservation, also known as number of transactions. | Number | 1000 |
 | Clicks | Google Ads clicks are counted when someone clicks on ads | Number | 1000 |
 | Confirmations | See: _Bookings_ | Number | 1000 |
+| Conversion Rate | Abbreviated: Conv. Rate. Conversion rates are calculated by taking the number of conversions and dividing that by the number of total ad interactions that can be tracked to a conversion during the same time period. | Percentage | 3.5% |
 | CoS | Cost of Sales (CoS) is Cost divided by Revenue | Percentage | 1.2% |
 | CTR | Click-through rate (CTR) is the number of clicks divided by impressions. For airModule tracking more specifically: Click-through rate (CTR) is the number of clicks on the call-to-action button divided by viewable impressions. | Percentage | 0.8% |
 | FSI | Number of Flight Search Initiations (FSI) are counted when the user initiates a search and the next step is the Flight Results page in the IBE. | Number | 5000 |
@@ -14,6 +15,9 @@
 | FSI Assisted Conv. Rate | The percentage of flight bookings after viewing a module | Percentage | 8.5% |
 | FSI Assisted Revenue | The total revenue booked after users initiated a flight search after clicking on a module | Number | 1000 |
 | FSI Rate | The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule. | Percentage | 5% |
+| IBE Bookings | Number of bookings recorded from the IBE Flight Confirmation Page | Number | 1000 |
+| IBE Revenue (USD) | Total revenue recorded from the IBE Flight Confirmation Page | Number | $10,000 |
+| IBE Searches | See: _Searches_ | Number | 1000 |
 | Impr. Assisted Conv. Rate | The percentage of flight bookings after viewing a module | Percentage | 0.5% |
 | Interactions | Number of clicks on airModules. This includes filter selections, button clicks, tab changes, toggle interactions, arrow clicks, link clicks, sort selections, slider interactions, filter resets and open-booking-popup depending on the airModule. | Number | 100|
 | Interaction Rate | Number of clicks on airModules divided by Viewable Impressions | Percentage | 0.5% |
@@ -30,7 +34,7 @@
 | Revenue | The total income associated with the transaction (flight bookings). | Number | 1000 |
 | Rev./Impr. | Abbreviation of Revenue per Impression. Total Revenue divided by number of Impressions shows how much revenue each impression brings. | Number | 3.86 |
 | Rev./Booking | Abbreviation of Revenue per Booking. Total Revenue divided by number of Bookings shows how much, on average, each of bookings is worth. | Number | 273 |
-| Revenue (USD) | Total Revenue in USD | Number | 10000 |
+| Revenue (USD) | Total Revenue in USD | Number | $10,000 |
 | ROI | Return on Investment (ROI) is revenue divided by cost | Number | 87.1 |
 | RPM | Revenue Passenger Miles (RPMs) is the basic measure of airline passenger traffic. It reflects how many of an airline's available seats were actually sold. For example, if 200 passengers fly 500 miles on a flight, this generates 100,000 RPMs. | Number | 1000 |
 | Search Index | Search Index | Number | 0.62 |
