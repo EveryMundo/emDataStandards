@@ -3,7 +3,7 @@
 | airIndex  | airIndex is a numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route  | Number  | 0.5  |
 | ASKs  | Available Seat Kilometres (ASKs) is the measure of flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance travelled in kilometres.  | Number  | 100  |
 | ASMs | Available Seat Miles (ASMs) is the measure of flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance travelled in miles. | Number | 100 |
-| Average Fare | The average fare is the average of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply. | Number | 100.0 |
+| Average Fare | The average fare is the average of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply. | Number | 100 |
 | Bookings | Bookings are counted whenever a user completes a flight reservation, also known as number of transactions. | Number | 1000 |
 | Clicks | Google Ads clicks are counted when someone clicks on ads | Number | 1000 |
 | Confirmations | See: _Bookings_ | Number | 1000 |
