@@ -5,6 +5,7 @@
 | ASMs | Available Seat Miles (ASMs) is the measure of flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance travelled in miles. | Number | 100 |
 | Average Fare | The average fare is the average of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply. | Number | 100.0 |
 | Bookings | Bookings are counted whenever a user completes a flight reservation, also known as number of transactions. | Number | 1000 |
+| Clicks | Google Ads clicks are counted when someone clicks on ads | Number | 1000 |
 | Confirmations | See: _Bookings_ | Number | 1000 |
 | CoS | Cost of Sales (CoS) is Cost divided by Revenue | Percentage | 1.2% |
 | CTR | Click-through rate (CTR) is the number of clicks divided by impressions. For airModule tracking more specifically: Click-through rate (CTR) is the number of clicks on the call-to-action button divided by viewable impressions. | Percentage | 0.8% |
@@ -12,7 +13,7 @@
 | FSI Assisted Conversions | The number of flight bookings after initiating a flight search | Number | 1000 |
 | FSI Assisted Conv. Rate | The percentage of flight bookings after viewing a module | Percentage | 8.5% |
 | FSI Assisted Revenue | The total revenue booked after users initiated a flight search after clicking on a module | Number | 1000 |
-| FSI Rate | The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule. | Percentage | Number | 5% |
+| FSI Rate | The percentage of flight search initiations after viewing an airTRFX Page or after viewing an Externalized airModule. | Percentage | 5% |
 | Impr. Assisted Conv. Rate | The percentage of flight bookings after viewing a module | Percentage | 0.5% |
 | Interactions | Number of clicks on airModules. This includes filter selections, button clicks, tab changes, toggle interactions, arrow clicks, link clicks, sort selections, slider interactions, filter resets and open-booking-popup depending on the airModule. | Number | 100|
 | Interaction Rate | Number of clicks on airModules divided by Viewable Impressions | Percentage | 0.5% |
