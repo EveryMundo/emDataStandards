@@ -9,7 +9,7 @@
 | Confirmations | See: _Bookings_ | Number | 1000 |
 | Conversion Rate | Abbreviated: Conv. Rate. Conversion rates are calculated by taking the number of conversions and dividing that by the number of total ad interactions that can be tracked to a conversion during the same period. | Percentage | 3.5% |
 | CoS | Cost of Sales (CoS) is Cost divided by Revenue | Percentage | 1.2% |
-| CTR | Click-through rate (CTR) is the number of clicks divided by impressions. For airModule tracking more specifically: Click-through rate (CTR) is the number of clicks on the call-to-action button divided by viewable impressions. | Percentage | 0.8% |
+| CTR | Click-through rate (CTR) is the number of clicks divided by impressions. | Percentage | 0.8% |
 | FSI | Number of Flight Search Initiations (FSI) are counted when the user initiates a search and the next step is the Flight Results page in the IBE. | Number | 5000 |
 | FSI Assisted Conversions | The number of flight bookings after initiating a flight search | Number | 1000 |
 | FSI Assisted Conv. Rate | The percentage of flight bookings after viewing a module | Percentage | 8.5% |
