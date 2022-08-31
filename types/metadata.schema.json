@@ -8,6 +8,11 @@
       {"$ref": "./metadata_base.schema.json"},
     {
     "properties": {
+      "sessionId": {
+        "description": "Unique string that a Web site's server assigns a specific user for the duration of that user's visit (session)",
+        "type": "string",
+        "example": "84266fdbd31d4c2c6d0665f7e8380fa3"
+      },
       "timeZone": {
         "description": "Timezone of record creation",
         "type": "string",
