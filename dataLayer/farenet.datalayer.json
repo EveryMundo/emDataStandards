@@ -44,7 +44,7 @@
                             "type": "object",
                             "properties": {
                                 "priceBeforeTaxesAndFees": {
-                                    "description": "priceBeforeTaxesAndFees",
+                                    "description": "Base price for the reservation or ticket",
                                     "type": "number",
                                     "example": 750.12
                                 },
