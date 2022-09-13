@@ -1,0 +1,23 @@
+{
+    "airlineiatacode": "EM",
+    "originairportiatacode": "MIA",
+    "destinationairportiatacode": "FRA",
+    "departuredate": "2022-09-13",
+    "returndate": "2022-10-27",
+    "journeytype": "ROUND_TRIP",
+    "fareclass": "ECONOMY",
+    "fareclasssearched": "Economy",
+    "passengercount": 1,
+    "passengeradultcount": 1,
+    "passengerchildcount": 0,
+    "passengerinfantcount": 0,
+    "emcid": "S-123456789",
+    "sessionid": "",
+    "siteedition": "en-US",
+    "devicecategory": "MOBILE",
+    "url": "ibe.everymundo.com",
+    "isfareavailable": true,
+    "fullroute": "MIA>FRA",
+    "__createdat": ""
+
+}
