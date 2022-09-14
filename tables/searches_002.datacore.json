@@ -18,6 +18,7 @@
     "url": "ibe.everymundo.com",
     "isfareavailable": true,
     "fullroute": "MIA>FRA",
-    "__createdat": ""
+    "__createdat": "",
+    "errormessage": ""
 
 }
