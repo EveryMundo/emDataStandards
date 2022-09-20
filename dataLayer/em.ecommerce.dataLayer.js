@@ -11,7 +11,7 @@ window.dataLayer.push({
   total_adult: 1,
   total_child: 1,
   total_infant: 0,
-  flight_trip: 'MIA>MVD',
+  flight_trip: 'MIA>PAR',
   flight_type: 'ROUND_TRIP',
   total_ancillary: '7', //Total of distinct selected ancillaries -> item_id (Does not include Flights)
   additional_fees: 115.07, //Anything that the airline changes extra that is not taxes. For example: Airport fees
@@ -28,26 +28,26 @@ window.dataLayer.push({
     currency: 'EUR',
     coupon: 'AFFBFAN',
     items: [{
-      item_name: 'MIA>MVD',
+      item_name: 'MIA>PAR',
       item_id: 'FLIGHT',
       price: 300.50,
       item_category: 'First Class', //Fareclass Category
       item_category2: '2021-11-14', //Flight departure date
-      item_category3: 'AA477', //Flight number(s)
+      item_category3: 'EM477', //Flight number(s)
       item_category4: 'PT3H1M', //Estimated flight duration
       item_category5: 'Adult', //Passenger type
-      item_variant: 'MIA>JFK>MVD', //Full route
+      item_variant: 'MIA>JFK>PAR', //Full route
       quantity: 2
     }, {
-      item_name: 'MVD>MIA',
+      item_name: 'PAR>MIA',
       item_id: 'FLIGHT',
       price: 299.00,
       item_category: 'Business Class',
       item_category2: '2021-11-30', //Flight departure date
-      item_category3: 'AA901', //Flight number(s)
+      item_category3: 'EM901', //Flight number(s)
       item_category4: 'PT3H1M', //Estimated flight duration
       item_category5: 'Adult', //Passenger type
-      item_variant: 'MVD>JFK>MIA', //Full route
+      item_variant: 'PAR>JFK>MIA', //Full route
       quantity: 2
     }, {
       item_name: 'First Class', //Lie Flat, Business Class, First Class, Extra Leg Room, Front of Aircraft, Economy
@@ -135,7 +135,7 @@ window.dataLayer.push({
       quantity: 1
     }, {
       item_name: 'Movie', //Movie, Wifi
-      item_id: 'In-Flight Entretainment',
+      item_id: 'IN-FLIGHT ENTRETAINMENT',
       price: 15.25,
       item_category: 'Interview with the Vampire',
       item_list_id: 'PDIE',
@@ -163,7 +163,7 @@ window.dataLayer.push({
       item_name: 'Lounge', //Lounge, Flight Flex
       item_id: 'EXTRA',
       price: 15.25,
-      item_category: 'Longe',
+      item_category: 'Lounge',
       item_list_id: 'PDLG',
       quantity: 1
     }, {
