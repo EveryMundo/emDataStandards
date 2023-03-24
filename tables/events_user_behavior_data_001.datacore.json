@@ -1,5 +1,6 @@
 {
     "airlineIataCode": "ETA",
+    "moduleId": "123456789",
     "module": "em-booking-popup-abstract",
     "eventAction": "search-initiation",
     "actionLabel": null,
