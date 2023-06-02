@@ -3,7 +3,8 @@
         "name": "airTRFX",
         "version": "2.0"
     },
-    "airline": {
+    "tenant": {
+        "type": "AIRLINE"
         "iataCode": "DL",
         "name": "Delta Air Lines"
     },
