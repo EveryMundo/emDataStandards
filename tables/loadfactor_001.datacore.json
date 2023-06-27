@@ -1,0 +1,14 @@
+{
+  "sourceDate": "2023-06-01",
+  "tenantCode": "CM",
+  "flightNumber": "CM123",
+  "flightDate": "2023-07-01",
+  "departureAirportIataCode": "SFO",
+  "arrivalAirportIataCode": "JFK",
+  "compartmentCode: "Y",
+  "totalBooked": 13000,
+  "adjustedCapacity": 67000,
+  "constrainedOut": 50000,
+  "loadFactorBooked": 0.19,
+  "loadFactorForecasted": 0.75
+}
