@@ -5,7 +5,7 @@
   "flightDate": "2023-07-01",
   "departureAirportIataCode": "SFO",
   "arrivalAirportIataCode": "JFK",
-  "compartmentCode: "Y",
+  "compartmentCode": "Y",
   "totalBooked": 13000,
   "adjustedCapacity": 67000,
   "constrainedOut": 50000,
