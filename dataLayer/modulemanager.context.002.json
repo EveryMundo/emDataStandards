@@ -1,0 +1,95 @@
+{
+  "ctxVersion": "1.0", //Internal Usage.
+  "tenant": {
+      "type": "HOSPITALITY",
+      "code": "HHY1",
+      "name": "Hyatt ASPAC"
+   },
+  "datasource": {
+    "step": "to-country", //Used by airModules/DA
+    "placement": "airTRFX", //New - relevant for DA
+    "parentUrl": "https://www.aircanada.com/en-ma/"
+  },
+  "audience": {
+    "deviceCategory": "DESKTOP" //only field used by airModules
+  },
+  "siteEdition": {
+     "id": "en-HK",
+     "countryGeoId": "1819730",
+     "language": "en",
+     "market": "HK",
+     "dateFormat": "mm/dd/yyyy",
+     "textDirection": "LTR",
+     "currencyCode": "USD" //or NULL for multiple currencies
+  }
+  "location": {
+     "origin": {
+        "level": "", //Only use by industries with O&D - e.g.: airlines
+        "locationCodes": { //Before extra_info Properties.codes.["HKGGH"]
+          "codes": [] //Only use by industries with O&D - e.g.: airlines
+        },
+        "defaultLocationCode": "", //Before "user_input_property_code": "HKGGH"
+        "geoId": "", //This field only applies for airline industry
+        "cityName": "", "user_input_origin_city_name": null,
+        "countryName": "", //Before "user_input_origin_country_name": null
+        "countryCode": "", //Not available before
+        "locationName": "", //Not available before
+        "regionName": "", //Not available before
+        "stateName": "", //Before "user_input_origin_state_name": null
+        "cityPrepositionFrom": null, //Same as before, just Camel Case
+        "cityPrepositionTo": null, //Same as before, just Camel Case
+        "countryPrepositionFrom": null, //Same as before, just Camel Case
+        "countryPrepositionTo": null, //Same as before, just Camel Case
+        "statePrepositionFrom": null, //Same as before, just Camel Case
+        "statePrepositionTo": null, //Same as before, just Camel Case
+     }
+     "destination": {
+        "level": "Country", //Before "level_destination", empty for Homepage
+        "locationCodes": { //Before extra_info Properties.codes.["MLDAL"]
+          "codes": ["MLDAL"] //The array will contain multiple values for other templates
+        },
+        "defaultLocationCode": "MLDAL", //Before "user_input_property_code": "HKGGH"
+        "geoId": "1282028", //Before "destination_geo_id"
+        "cityName": "Male", //Before "user_input_destination_city_name": null
+        "countryName": "Maldives", //Before "user_input_property_country_name": "Hong Kong SAR" / "user_input_destination_country_name": "maldives"
+        "countryCode": "MV", //Before "user_input_property_country_code": "MV"
+        "locationName": "Grand Hyatt Hong Kong", //Before "user_input_property_name"
+        "regionName": "Asia", //Before "user_input_property_region_name": "Asia"
+        "stateName": "", //Before user_input_property_state_name": null / user_input_destination_state_name: "
+        "cityPrepositionFrom": null, 
+        "cityPrepositionTo": null, 
+        "countryPrepositionFrom": null, 
+        "countryPrepositionTo": "Maldives", 
+        "statePrepositionFrom": null, 
+        "statePrepositionTo": null 
+     }
+  }  
+  "dynamicContext": {
+      //Specific variables per industry
+      "budgetMaximumAmount": 10000,
+      "budgetRedemptionUnit": "POINTS",
+      "isRedemption": false,
+      "passengerCount": 5,
+      "productCategory": "ROUND_TRIP",
+      "productType": "BUSINESS",
+      "isFlexibleDates": false,
+      "discountCode": "RA1097",
+      "departureDate": "2021-09-11",
+      "returnDate": "2021-09-17",
+      "originLocation": "NYC",
+      "destinationLocation": "MIA",
+      "originLocations": ["MIA","TXL","SXF"],
+      "destinationLocations": ["LHR","MIL","LAX"],
+      "defaultMonth": 0, 
+      "experience": { //Events
+          "type": ["Ticket Only", "Dining"],
+          "name": ["Rod Laver Arena Reserved Seat", "Penfolds Restaurant"]
+      },
+      "event": { //Events
+          "location": ["Margaret Court Arena", "Rod Laver Arena"],
+          "date": [1, 2, 3, 4, 14],
+          "session": ["Night", "Day", "Twilight"],
+          "time": ["11:00 AM", "8:00 PM"]
+     },
+   },    
+)
