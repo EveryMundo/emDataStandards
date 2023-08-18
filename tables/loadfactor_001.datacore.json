@@ -3,6 +3,7 @@
   "tenantCode": "CM",
   "flightNumber": "CM123",
   "departureDate": "2023-07-01",
+  "route": "SFO>JFK",
   "departureAirportIataCode": "SFO",
   "arrivalAirportIataCode": "JFK",
   "compartmentCode": "Y",

@@ -11,7 +11,7 @@
       "example": "14961881240552180.141840260"
     },
     "__createdat": {
-      "description": "Record creation date",
+      "description": "Record creation date. Also known as searchDate or search_date.",
       "type": "string",
       "example": "2017-11-28 15:46:02"
     },
