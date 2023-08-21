@@ -19,6 +19,7 @@ window.dataLayer.push({
   redemption_category: 'AdvantageProgram', //Name of the program
   total_redemption_amount: 15000,
   site_edition: 'en-US',
+  session_id: '12345',
   user_id: '731108519', //Loyalty program user ID -> Cross-device Tracking (Optional)
   ecommerce: {
     transaction_id: 'RBN794',
