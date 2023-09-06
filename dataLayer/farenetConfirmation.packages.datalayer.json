@@ -1,0 +1,199 @@
+{
+    "currencyCode": "USD",
+    "journey": {
+        "passengerDetails": [
+            {
+                "category": "Adult",
+                "count": 1
+            },
+            {
+                "category": "Child0to17",
+                "count": 1
+            }
+        ],
+        "flights": [
+            {
+                "boundType": "OUTBOUND",
+                "priceSpecification": {
+                    "priceBeforeTaxesAndFees": 106.19,
+                    "totalPrice": 106.19,
+                    "taxAmount": null,
+                    "additionalFeesAmount": null,
+                    "redemption": {
+                        "unit": "MILES",
+                        "amount": 1500,
+                        "taxAmount": 16.39,
+                        "category": "Economy MileSAAver"
+                    }
+                },
+                "fareClassInput": "Standard",
+                "fareClass": "ECONOMY",
+                "departureAirportIataCode": "FLL",
+                "arrivalAirportIataCode": "LGA",
+                "departureDate": "2018-07-26",
+                "estimatedDuration": "PT3H",
+                "availableSeatsCount": 5,
+                "legs": [
+                    {
+                        "flightNumber": "604",
+                        "route": "FLL>LGA",
+                        "departureAirport": {
+                            "name": "Fort Lauderdale–Hollywood International Airport",
+                            "iataCode": "FLL"
+                        },
+                        "departureTime": "7:05",
+                        "arrivalAirport": {
+                            "name": "LaGuardia Airport",
+                            "iataCode": "LGA"
+                        },
+                        "arrivalTime": "10:05",
+                        "estimatedDuration": "PT3H"
+                    }
+                ],
+                "departureCity": {
+                    "name": "Fort Lauderdale",
+                    "cityCode": "FLL"
+                },
+                "departureCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "arrivalCity": {
+                    "name": "New York",
+                    "cityCode": "NYC"
+                },
+                "arrivalCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "routeType": "NONSTOP"
+            },
+            {
+                "boundType": "INBOUND",
+                "priceSpecification": {
+                    "priceBeforeTaxesAndFees": 121.18,
+                    "totalPrice": 121.18,
+                    "taxAmount": null,
+                    "additionalFeesAmount": null,
+                    "redemption": {
+                        "unit": "MILES",
+                        "amount": 1500,
+                        "taxAmount": 16.39,
+                        "category": "Economy MileSAAver"
+                    }
+                },
+                "fareClassInput": "STANDARD",
+                "fareClass": "ECONOMY",
+                "departureAirportIataCode": "LGA",
+                "arrivalAirportIataCode": "FLL",
+                "departureDate": "2018-07-29",
+                "estimatedDuration": "PT3H1M",
+                "availableSeatsCount": 5,
+                "legs": [
+                    {
+                        "flightNumber": "779",
+                        "route": "LGA>FLL",
+                        "departureAirport": {
+                            "name": "LaGuardia Airport",
+                            "iataCode": "LGA"
+                        },
+                        "departureTime": "20:29",
+                        "arrivalAirport": {
+                            "name": "Fort Lauderdale–Hollywood International Airport",
+                            "iataCode": "FLL"
+                        },
+                        "arrivalTime": "23:30",
+                        "estimatedDuration": "PT3H1M"
+                    }
+                ],
+                "departureCity": {
+                    "name": "New York",
+                    "cityCode": "NYC"
+                },
+                "departureCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "arrivalCity": {
+                    "name": "Fort Lauderdale",
+                    "cityCode": "FLL"
+                },
+                "arrivalCountry": {
+                    "name": "United States",
+                    "isoCode": "US"
+                },
+                "routeType": "NONSTOP"
+            }
+        ],
+        "departureDate": "2018-07-26",
+        "returnDate": "2018-07-29",
+        "journeyType": "ROUND_TRIP",
+        "airlineIataCode": "NK"
+    },
+    "hotel": {
+        "hotelId": "Hotel123456789Kat",
+        "name": "Holiday Inn",
+        "group": "IHG",
+        "subGroup": "ABC",
+        "cityCode": "SAN",
+        "priceSpecification": {
+            "priceBeforeTaxesAndFees": 106.19,
+            "totalPrice": 106.19,
+            "taxAmount": null,
+            "additionalFeesAmount": null,
+            "redemption": {
+                "unit": "MILES",
+                "amount": 1500,
+                "taxAmount": 16.39,
+                "category": "Economy MileSAAver"
+            }
+        },
+        "guest": {
+          "count": 4,
+          "adultCount": 2,
+          "childCount": 2
+        },
+        "checkinDate": "2017-08-05",
+        "checkoutDate": "2017-08-06",
+        "checkinTime": "16:00:00",
+        "checkoutTime": "20:00:00",
+        "nightCount": 4,
+        "roomCount": 1,
+        "starRating": 5,
+        "aggregatedRating": {
+          "author": "Tripadvisor",
+          "highest": 5,
+          "value": 3,
+          "lowest": 1,
+          "count": 11
+        },
+        "images": [
+          "everymundo.com/image.jpg",
+          "everymundo.com/image2.jpg"
+        ]
+      },
+      "carRental": {
+        "provider": {
+          "name": "Hertz"
+        },
+        "priceSpecification": {
+          "priceBeforeTaxesAndFees": 234.21,
+          "totalPrice": 250.6,
+          "taxAmount": 16.39,
+          "averageDailyPrice": 25.6
+        },
+        "vehicleType": "CAR",
+        "vehicleClass": "ECONOMY",
+        "brand": "Honda",
+        "model": "Civic",
+        "seatCount": 4,
+        "baggageCount": 2,
+        "transmissionType": "AUTOMATIC",
+        "unlimitedMileage": true,
+        "airCondition": true
+      },
+    "page": {
+        "languageIsoCode": "en",
+        "siteEdition": "en-US"
+    }
+}
