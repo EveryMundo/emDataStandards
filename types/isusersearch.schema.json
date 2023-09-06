@@ -1,0 +1,21 @@
+{
+    "id": "/isusersearch",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "isusersearch",
+    "description": "Indicates whether the record was created by a user search. A value of true indicates that the record was created by a user search, while a value of false indicates that the record was created by another means, such as the calendar overview.",
+    "type": "boolean",
+    "example": true,
+    "required": [],
+    "links": [
+      {
+        "title": "isusersearch",
+        "description": "isusersearch",
+        "rel": "self",
+        "href": "/isusersearch",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }
