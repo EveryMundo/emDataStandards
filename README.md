@@ -18,7 +18,7 @@ The NDC Standard enhances the capability of communications between airlines and 
    - http://startndc.iata.org/education.htm
    - http://www.iata.org/whatwedo/airline-distribution/ndc/Documents/ndc-implementation-guide.pdf
    - How this applies to ancillary products delivered by third party suppliers (e.g. a nonairline controlled lounge), or for non-flight related products such as packaging a flight with a hotel or car, is outside the scope of NDC. The Master dataLayer includes a structure supporting vacation packages.
-2. Use [schema.org](schema.org) as the basis for variable definition; schema.org vocabulary was founded by major companies - Google, Microsoft, Yandex, Yahoo
+2. Use schema.org as the basis for variable definition; schema.org vocabulary was founded by major companies - Google, Microsoft, Yandex, Yahoo
    - Inherit data structure from schema.org:
      - property
      - propertyType
