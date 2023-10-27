@@ -26,7 +26,7 @@
       "stateGeoId": "4155751",
       "stateNames": [{ "lang": "en", "val": "Florida" }],
       "countryIsoCode": "US",
-      "countryAtpcoCode": "SO",
+      "countryAtpcoCode": "US",
       "countryGeoId": "6252001",
       "countryNames": [
         { "lang": "en", "val": "United States" },
@@ -34,17 +34,17 @@
         { "lang": "fr", "val": "États-Unis" },
         { "lang": "pt", "val": "Estados Unidos" }
       ],
-      "areaCode": "2",
-      "continentCode": "AF",
+      "areaCode": "1",
+      "continentCode": "NA",
       "subregionCode": "",
-      "regionCode": "AFR",
+      "regionCode": "NOA",
       "zoneAtpcoCode": "001",
       "latitude": "6.09682",
       "longitude": "46.63825",
       "timezoneId": "America/New_York",
       "timezoneOffset": "UTC/GMT-5",
       "discontinuedDate": null,
-      "effectiveDate": "2016-03-12",
+      "effectiveDate": "1960-10-24",
       "isActive": true
     },
     {
@@ -52,24 +52,24 @@
       "type": "AIRPORT",
       "geoId": "4164181",
       "names": [
-        { "lang": "en", "val": "Miami International Airport" },
-        { "lang": "es", "val": "Aeropuerto Internacional de Miami" },
-        { "lang": "fr", "val": "Aéroport International De Miami" },
-        { "lang": "pt", "val": "O Aeroporto Internacional de Miami" }
+        { "lang": "en", "val": "Milwaukee Mitchell International Airport" },
+        { "lang": "es", "val": null },
+        { "lang": "fr", "val": null },
+        { "lang": "pt", "val": null }
       ],
-      "citycode": "MIA",
+      "citycode": "MKE",
       "cityGeoId": "4164138",
       "cityNames": [
-        { "lang": "en", "val": "Miami" },
-        { "lang": "es", "val": "Miami" },
-        { "lang": "fr", "val": "Miami" },
-        { "lang": "pt", "val": "Miami" }
+        { "lang": "en", "val": "Milwaukee" },
+        { "lang": "es", "val": "Milwaukee" },
+        { "lang": "fr", "val": "Milwaukee" },
+        { "lang": "pt", "val": "Milwaukee" }
       ],
-      "stateIsoCode": "FL",
+      "stateIsoCode": "WI",
       "stateGeoId": "4155751",
-      "stateNames": [{ "lang": "en", "val": "Florida" }],
+      "stateNames": [{ "lang": "en", "val": "Wisconsin" }],
       "countryIsoCode": "US",
-      "countryAtpcoCode": "SO",
+      "countryAtpcoCode": "US",
       "countryGeoId": "6252001",
       "countryNames": [
         { "lang": "en", "val": "United States" },
@@ -77,17 +77,17 @@
         { "lang": "fr", "val": "États-Unis" },
         { "lang": "pt", "val": "Estados Unidos" }
       ],
-      "areaCode": "2",
-      "continentCode": "AF",
+      "areaCode": "1",
+      "continentCode": "NA",
       "subregionCode": "",
-      "regionCode": "AFR",
+      "regionCode": "NOA",
       "zoneAtpcoCode": "001",
       "latitude": "6.09682",
       "longitude": "46.63825",
-      "timezoneId": "America/New_York",
+      "timezoneId": "America/Chicago",
       "timezoneOffset": "UTC/GMT-5",
-      "discontinuedDate": "2016-03-11",
-      "effectiveDate": "1998-06-12",
+      "discontinuedDate": "1960-10-24",
+      "effectiveDate": "1947-04-15",
       "isActive": false
     }
   ]
