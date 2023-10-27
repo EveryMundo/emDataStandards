@@ -1,41 +1,94 @@
 {
-  "locationcode": "AAD",
-  "locationcodetype": "AIRPORT",
-  "airportgeoid": "123456",
-  "airportnames": [{
-    "en": "Adado Airport",
-    "es": "Aeroporto de Adado",
-    "fr": "Aéroport Adado",
-    "pt": "Aeroporto de Adado"
-  }],
-  "citygeoid": "1234567",
-  "citynames": [{
-    "en": "Adado",
-    "es": "Adado",
-    "fr": "Adado",
-    "pt": "Adão"
-  }],
-  "stateisocode": null,
-  "stategeoid": "90735920",
-  "countryisocode": "SO",
-  "countryatpcocode": "SO",
-  "countrygeoid": "9752839",
-  "countrynames": [{
-    "en": "Somalia",
-    "es": "Somalia",
-    "fr": "Somalie",
-    "pt": "Somália"
-  }],
-  "areaiatacode": "2",
-  "continentcode": "AF",
-  "subregioniatacode": "",
-  "regioniatacode": "AFR",
-  "zoneatpcocode": "233",
-  "latitude": "6.09682",
-  "longitude": "46.63825",
-  "timezoneid": "Africa/Mogadishu",
-  "timezoneoffset": "UTC/GMT+3",
-  "discontinueddate": "2003-01-12",
-  "effectivedate": "",
-  "isactive": false
+  "requestId": "abcd123",
+  "tenantCode": "AA",
+  "tenantName": "American Airlines",
+  "languages": ["en", "es", "fr", "pt"],
+  "locations": [
+    {
+      "code": "MIA",
+      "type": "AIRPORT",
+      "geoId": "4164181",
+      "names": [
+        { "lang": "en", "val": "Miami International Airport" },
+        { "lang": "es", "val": "Aeropuerto Internacional de Miami" },
+        { "lang": "fr", "val": "Aéroport International De Miami" },
+        { "lang": "pt", "val": "O Aeroporto Internacional de Miami" }
+      ],
+      "citycode": "MIA",
+      "cityGeoId": "4164138",
+      "cityNames": [
+        { "lang": "en", "val": "Miami" },
+        { "lang": "es", "val": "Miami" },
+        { "lang": "fr", "val": "Miami" },
+        { "lang": "pt", "val": "Miami" }
+      ],
+      "stateIsoCode": "FL",
+      "stateGeoId": "4155751",
+      "stateNames": [{ "lang": "en", "val": "Florida" }],
+      "countryIsoCode": "US",
+      "countryAtpcoCode": "SO",
+      "countryGeoId": "6252001",
+      "countryNames": [
+        { "lang": "en", "val": "United States" },
+        { "lang": "es", "val": "Estados Unidos" },
+        { "lang": "fr", "val": "États-Unis" },
+        { "lang": "pt", "val": "Estados Unidos" }
+      ],
+      "areaCode": "2",
+      "continentCode": "AF",
+      "subregionCode": "",
+      "regionCode": "AFR",
+      "zoneAtpcoCode": "001",
+      "latitude": "6.09682",
+      "longitude": "46.63825",
+      "timezoneId": "America/New_York",
+      "timezoneOffset": "UTC/GMT-5",
+      "discontinuedDate": null,
+      "effectiveDate": "2016-03-12",
+      "isActive": true
+    },
+    {
+      "code": "MIA",
+      "type": "AIRPORT",
+      "geoId": "4164181",
+      "names": [
+        { "lang": "en", "val": "Miami International Airport" },
+        { "lang": "es", "val": "Aeropuerto Internacional de Miami" },
+        { "lang": "fr", "val": "Aéroport International De Miami" },
+        { "lang": "pt", "val": "O Aeroporto Internacional de Miami" }
+      ],
+      "citycode": "MIA",
+      "cityGeoId": "4164138",
+      "cityNames": [
+        { "lang": "en", "val": "Miami" },
+        { "lang": "es", "val": "Miami" },
+        { "lang": "fr", "val": "Miami" },
+        { "lang": "pt", "val": "Miami" }
+      ],
+      "stateIsoCode": "FL",
+      "stateGeoId": "4155751",
+      "stateNames": [{ "lang": "en", "val": "Florida" }],
+      "countryIsoCode": "US",
+      "countryAtpcoCode": "SO",
+      "countryGeoId": "6252001",
+      "countryNames": [
+        { "lang": "en", "val": "United States" },
+        { "lang": "es", "val": "Estados Unidos" },
+        { "lang": "fr", "val": "États-Unis" },
+        { "lang": "pt", "val": "Estados Unidos" }
+      ],
+      "areaCode": "2",
+      "continentCode": "AF",
+      "subregionCode": "",
+      "regionCode": "AFR",
+      "zoneAtpcoCode": "001",
+      "latitude": "6.09682",
+      "longitude": "46.63825",
+      "timezoneId": "America/New_York",
+      "timezoneOffset": "UTC/GMT-5",
+      "discontinuedDate": "2016-03-11",
+      "effectiveDate": "1998-06-12",
+      "isActive": false
+    }
+  ]
 }
