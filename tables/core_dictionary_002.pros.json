@@ -1,99 +1,92 @@
 {
-    "request_id": "abcd123",
-    "tenant_code": "aa",
-    "tenant_name": "American Airlines",
-    "languages": ["en", "es", "fr", "pt"],
-    "airports": [
-      {
-        "geoId": 123456,
-        "codes": [
-          {
-            "standard": "IATA",
-            "value": "AAD"
-          }
-        ],
-        "name_en": "Adado Airport",
-        "name_es": "Aeroporto de Adado",
-        "name_fr": "Aéroport Adado",
-        "name_pt": "Aeroporto de Adado",
-        "metadata_active": true,
-        "metadata_type": "AIRPORT",
-        "metadata_coordinates_lat": "6.09682",
-        "metadata_coordinates_lng": "46.63825",
-        "metadata_timezone_id": "Africa/Mogadishu",
-        "metadata_timezone_offset": "UTC/GMT+3",
-        "metadata_areaCode": "+200",
-        "metadata_zoneCode": "AC400",
-        "metadata_discontinuedDate": "1995-12-31",
-        "metadata_effectiveDate": "2008-12-31",
-        "city": {
-          "geoId": 1234567,
-          "codes": [
-            {
-              "standard": "unknown",
-              "value": "CTY"
-            }
-          ],
-          "name_en": "Adado",
-          "name_es": "Adado",
-          "name_pt": "Adado",
-          "name_fr": "Adado"
-        },
-        "state": {
-          "geoId": 123333,
-          "codes": [
-            {
-              "standard": "unknown",
-              "value": "2"
-            }
-          ],
-          "name_en": "Lagos",
-          "name_es": "Lagos",
-          "name_pt": "Laguiños",
-          "name_fr": "Lagunée"
-        },
-        "country": {
-          "geoId": 1234567,
-          "codes": [
-            {
-              "standard": "ATPSO",
-              "value": "SO"
-            },
-            {
-              "standard": "ISO-3166",
-              "value": "SO"
-            }
-          ],
-          "name_en": "Somalia",
-          "name_es": "Somalia",
-          "name_pt": "Somalia",
-          "name_fr": "Somalia"
-        },
-        "subregion": {
-          "codes": [
-            {
-              "standard": "unknown",
-              "value": "11"
-            }
-          ]
-        },
-        "region": {
-          "codes": [
-            {
-              "standard": "unknown",
-              "value": "AF"
-            }
-          ]
-        },
-        "continent": {
-          "codes": [
-            {
-              "standard": "ISO",
-              "value": "AFR"
-            }
-          ]
-        }
-      }
-    ]
-  }
-  
+  "requestId": "abcd123",
+  "tenantCode": "AA",
+  "tenantName": "American Airlines",
+  "languages": ["en", "es", "fr", "pt"],
+  "locations": [
+    {
+      "code": "MIA",
+      "type": "AIRPORT",
+      "geoId": "4164181",
+      "names": [
+        { "lang": "en", "val": "Miami International Airport" },
+        { "lang": "es", "val": "Aeropuerto Internacional de Miami" },
+        { "lang": "fr", "val": "Aéroport International De Miami" },
+        { "lang": "pt", "val": "O Aeroporto Internacional de Miami" }
+      ],
+      "cityGeoId": "4164138",
+      "cityNames": [
+        { "lang": "en", "val": "Miami" },
+        { "lang": "es", "val": "Miami" },
+        { "lang": "fr", "val": "Miami" },
+        { "lang": "pt", "val": "Miami" }
+      ],
+      "stateIsoCode": "FL",
+      "stateGeoId": "4155751",
+      "stateNames": [{ "lang": "en", "val": "Florida" }],
+      "countryIsoCode": "US",
+      "countryAtpcoCode": "SO",
+      "countryGeoId": "6252001",
+      "countryNames": [
+        { "lang": "en", "val": "United States" },
+        { "lang": "es", "val": "Estados Unidos" },
+        { "lang": "fr", "val": "États-Unis" },
+        { "lang": "pt", "val": "Estados Unidos" }
+      ],
+      "areaCode": "2",
+      "continentCode": "AF",
+      "subregionCode": "",
+      "regionCode": "AFR",
+      "zoneAtpcoCode": "001",
+      "latitude": "6.09682",
+      "longitude": "46.63825",
+      "timezoneId": "America/New_York",
+      "timezoneOffset": "UTC/GMT-5",
+      "discontinuedDate": null,
+      "effectiveDate": "2016-03-12",
+      "isActive": true
+    },
+    {
+      "code": "MIA",
+      "type": "AIRPORT",
+      "geoId": "4164181",
+      "names": [
+        { "lang": "en", "val": "Miami International Airport" },
+        { "lang": "es", "val": "Aeropuerto Internacional de Miami" },
+        { "lang": "fr", "val": "Aéroport International De Miami" },
+        { "lang": "pt", "val": "O Aeroporto Internacional de Miami" }
+      ],
+      "cityGeoId": "4164138",
+      "cityNames": [
+        { "lang": "en", "val": "Miami" },
+        { "lang": "es", "val": "Miami" },
+        { "lang": "fr", "val": "Miami" },
+        { "lang": "pt", "val": "Miami" }
+      ],
+      "stateIsoCode": "FL",
+      "stateGeoId": "4155751",
+      "stateNames": [{ "lang": "en", "val": "Florida" }],
+      "countryIsoCode": "US",
+      "countryAtpcoCode": "SO",
+      "countryGeoId": "6252001",
+      "countryNames": [
+        { "lang": "en", "val": "United States" },
+        { "lang": "es", "val": "Estados Unidos" },
+        { "lang": "fr", "val": "États-Unis" },
+        { "lang": "pt", "val": "Estados Unidos" }
+      ],
+      "areaCode": "2",
+      "continentCode": "AF",
+      "subregionCode": "",
+      "regionCode": "AFR",
+      "zoneAtpcoCode": "001",
+      "latitude": "6.09682",
+      "longitude": "46.63825",
+      "timezoneId": "America/New_York",
+      "timezoneOffset": "UTC/GMT-5",
+      "discontinuedDate": "2016-03-11",
+      "effectiveDate": "1998-06-12",
+      "isActive": false
+    }
+  ]
+}
