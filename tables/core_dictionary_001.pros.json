@@ -43,6 +43,7 @@
       "longitude": "46.63825",
       "timezoneId": "America/New_York",
       "timezoneOffset": "UTC/GMT-5",
+      "currencyCode": "USD",
       "discontinuedDate": null,
       "effectiveDate": "1960-10-24",
       "isActive": true
@@ -86,6 +87,7 @@
       "longitude": "46.63825",
       "timezoneId": "America/Chicago",
       "timezoneOffset": "UTC/GMT-5",
+      "currencyCode": "USD",
       "discontinuedDate": "1960-10-24",
       "effectiveDate": "1947-04-15",
       "isActive": false
