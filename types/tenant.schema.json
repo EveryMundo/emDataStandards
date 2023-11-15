@@ -1,1 +1,35 @@
-tenant type/name/code
+{
+    "id": "/tenant",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Tenant",
+    "type": "object",
+    "properties": {
+      "type": {
+        "description": "AIRLINE, HOSPITALITY",
+        "type": "string",
+        "example": "AIRLINE"
+      },
+      "code": {
+        "description": "Tenant code",
+        "type": "string",
+        "example": "AA"
+      },
+      "name": {
+        "description": "Name of the tenant in sentence case",
+        "type": "string",
+        "example": "American Airlines"
+      }
+    },
+    "required": ["code"],
+    "links": [
+      {
+        "title": "Tenant",
+        "rel": "self",
+        "href": "/tenant",
+        "method": "GET",
+        "targetSchema": {
+          "rel": "self"
+        }
+      }
+    ]
+  }
