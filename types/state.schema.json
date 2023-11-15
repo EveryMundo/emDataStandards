@@ -10,7 +10,7 @@
       "type": "string",
       "example": "Florida"
     },
-    "stateCode": {
+    "isoCode": {
       "description": "ISO code for the state",
       "type": "string",
       "example": "FL"
