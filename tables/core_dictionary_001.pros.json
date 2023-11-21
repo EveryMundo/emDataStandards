@@ -44,8 +44,7 @@
       "timezoneId": "America/New_York",
       "currencyCode": "USD",
       "discontinuedDate": null,
-      "effectiveDate": "1960-10-24",
-      "isActive": true
+      "effectiveDate": "1960-10-24"
     },
     {
       "code": "MIA",
@@ -87,8 +86,7 @@
       "timezoneId": "America/Chicago",
       "currencyCode": "USD",
       "discontinuedDate": "1960-10-24",
-      "effectiveDate": "1947-04-15",
-      "isActive": false
+      "effectiveDate": "1947-04-15"
     }
   ]
 }
