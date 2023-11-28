@@ -44,7 +44,8 @@
       "timezoneId": "America/New_York",
       "currencyCode": "USD",
       "discontinuedDate": null,
-      "effectiveDate": "1960-10-24"
+      "effectiveDate": "1960-10-24",
+      "updateReason": ""
     },
     {
       "code": "MIA",
@@ -86,7 +87,8 @@
       "timezoneId": "America/Chicago",
       "currencyCode": "USD",
       "discontinuedDate": "1960-10-24",
-      "effectiveDate": "1947-04-15"
+      "effectiveDate": "1947-04-15",
+      "updateReason": "IATA code was reassigned"
     }
   ]
 }
