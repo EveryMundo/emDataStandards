@@ -45,7 +45,7 @@
       "currencyCode": "USD",
       "discontinuedDate": null,
       "effectiveDate": "1960-10-24",
-      "isActive": true
+      "updateReason": ""
     },
     {
       "code": "MIA",
@@ -88,7 +88,7 @@
       "currencyCode": "USD",
       "discontinuedDate": "1960-10-24",
       "effectiveDate": "1947-04-15",
-      "isActive": false
+      "updateReason": "IATA code was reassigned"
     }
   ]
 }
