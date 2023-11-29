@@ -36,7 +36,13 @@
         ],
         "areaCode": "1",
         "continentCode": "NA",
-        "subContinentCode": "NOA",
+        "continentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "subcontinentCode": "NOA",
+        "subcontinentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
         "zoneAtpcoCode": "001",
         "latitude": "6.09682",
         "longitude": "46.63825",
@@ -78,7 +84,13 @@
         ],
         "areaCode": "1",
         "continentCode": "NA",
-        "subContinentCode": "NOA",
+        "continentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "subcontinentCode": "NOA",
+        "subcontinentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
         "zoneAtpcoCode": "001",
         "latitude": "6.09682",
         "longitude": "46.63825",
