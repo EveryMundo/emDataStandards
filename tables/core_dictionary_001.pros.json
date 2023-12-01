@@ -1,94 +1,105 @@
 {
-  "requestId": "abcd123",
-  "tenantCode": "AA",
-  "tenantName": "American Airlines",
-  "languages": ["en", "es", "fr", "pt"],
-  "locations": [
-    {
-      "code": "MIA",
-      "type": "AIRPORT",
-      "geoId": "4164181",
-      "names": [
-        { "lang": "en", "val": "Miami International Airport" },
-        { "lang": "es", "val": "Aeropuerto Internacional de Miami" },
-        { "lang": "fr", "val": "Aéroport International De Miami" },
-        { "lang": "pt", "val": "O Aeroporto Internacional de Miami" }
-      ],
-      "citycode": "MIA",
-      "cityGeoId": "4164138",
-      "cityNames": [
-        { "lang": "en", "val": "Miami" },
-        { "lang": "es", "val": "Miami" },
-        { "lang": "fr", "val": "Miami" },
-        { "lang": "pt", "val": "Miami" }
-      ],
-      "stateIsoCode": "FL",
-      "stateGeoId": "4155751",
-      "stateNames": [{ "lang": "en", "val": "Florida" }],
-      "countryIsoCode": "US",
-      "countryAtpcoCode": "US",
-      "countryGeoId": "6252001",
-      "countryNames": [
-        { "lang": "en", "val": "United States" },
-        { "lang": "es", "val": "Estados Unidos" },
-        { "lang": "fr", "val": "États-Unis" },
-        { "lang": "pt", "val": "Estados Unidos" }
-      ],
-      "areaCode": "1",
-      "continentCode": "NA",
-      "subregionCode": "",
-      "regionCode": "NOA",
-      "zoneAtpcoCode": "001",
-      "latitude": "6.09682",
-      "longitude": "46.63825",
-      "timezoneId": "America/New_York",
-      "currencyCode": "USD",
-      "discontinuedDate": null,
-      "effectiveDate": "1960-10-24",
-      "updateReason": ""
-    },
-    {
-      "code": "MIA",
-      "type": "AIRPORT",
-      "geoId": "4164181",
-      "names": [
-        { "lang": "en", "val": "Milwaukee Mitchell International Airport" },
-        { "lang": "es", "val": null },
-        { "lang": "fr", "val": null },
-        { "lang": "pt", "val": null }
-      ],
-      "citycode": "MKE",
-      "cityGeoId": "4164138",
-      "cityNames": [
-        { "lang": "en", "val": "Milwaukee" },
-        { "lang": "es", "val": "Milwaukee" },
-        { "lang": "fr", "val": "Milwaukee" },
-        { "lang": "pt", "val": "Milwaukee" }
-      ],
-      "stateIsoCode": "WI",
-      "stateGeoId": "4155751",
-      "stateNames": [{ "lang": "en", "val": "Wisconsin" }],
-      "countryIsoCode": "US",
-      "countryAtpcoCode": "US",
-      "countryGeoId": "6252001",
-      "countryNames": [
-        { "lang": "en", "val": "United States" },
-        { "lang": "es", "val": "Estados Unidos" },
-        { "lang": "fr", "val": "États-Unis" },
-        { "lang": "pt", "val": "Estados Unidos" }
-      ],
-      "areaCode": "1",
-      "continentCode": "NA",
-      "subregionCode": "",
-      "regionCode": "NOA",
-      "zoneAtpcoCode": "001",
-      "latitude": "6.09682",
-      "longitude": "46.63825",
-      "timezoneId": "America/Chicago",
-      "currencyCode": "USD",
-      "discontinuedDate": "1960-10-24",
-      "effectiveDate": "1947-04-15",
-      "updateReason": "IATA code was reassigned"
-    }
-  ]
-}
+    "requestId": "abcd123",
+    "tenantCode": "AA",
+    "tenantName": "American Airlines",
+    "languages": ["en", "es", "fr", "pt"],
+    "locations": [
+      {
+        "code": "MIA",
+        "type": "AIRPORT",
+        "geoId": "4164181",
+        "names": [
+          { "lang": "en", "val": "Miami International Airport" },
+          { "lang": "es", "val": "Aeropuerto Internacional de Miami" },
+          { "lang": "fr", "val": "Aéroport International De Miami" },
+          { "lang": "pt", "val": "O Aeroporto Internacional de Miami" }
+        ],
+        "citycode": "MIA",
+        "cityGeoId": "4164138",
+        "cityNames": [
+          { "lang": "en", "val": "Miami" },
+          { "lang": "es", "val": "Miami" },
+          { "lang": "fr", "val": "Miami" },
+          { "lang": "pt", "val": "Miami" }
+        ],
+        "stateIsoCode": "FL",
+        "stateGeoId": "4155751",
+        "stateNames": [{ "lang": "en", "val": "Florida" }],
+        "countryIsoCode": "US",
+        "countryAtpcoCode": "US",
+        "countryGeoId": "6252001",
+        "countryNames": [
+          { "lang": "en", "val": "United States" },
+          { "lang": "es", "val": "Estados Unidos" },
+          { "lang": "fr", "val": "États-Unis" },
+          { "lang": "pt", "val": "Estados Unidos" }
+        ],
+        "areaCode": "1",
+        "continentCode": "NA",
+        "continentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "subcontinentCode": "NOA",
+        "subcontinentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "zoneAtpcoCode": "001",
+        "latitude": "6.09682",
+        "longitude": "46.63825",
+        "timezoneId": "America/New_York",
+        "currencyCode": "USD",
+        "discontinuedDate": null,
+        "effectiveDate": "1960-10-24",
+        "updateReason": ""
+      },
+      {
+        "code": "MIA",
+        "type": "AIRPORT",
+        "geoId": "4164181",
+        "names": [
+          { "lang": "en", "val": "Milwaukee Mitchell International Airport" },
+          { "lang": "es", "val": null },
+          { "lang": "fr", "val": null },
+          { "lang": "pt", "val": null }
+        ],
+        "citycode": "MKE",
+        "cityGeoId": "4164138",
+        "cityNames": [
+          { "lang": "en", "val": "Milwaukee" },
+          { "lang": "es", "val": "Milwaukee" },
+          { "lang": "fr", "val": "Milwaukee" },
+          { "lang": "pt", "val": "Milwaukee" }
+        ],
+        "stateIsoCode": "WI",
+        "stateGeoId": "4155751",
+        "stateNames": [{ "lang": "en", "val": "Wisconsin" }],
+        "countryIsoCode": "US",
+        "countryAtpcoCode": "US",
+        "countryGeoId": "6252001",
+        "countryNames": [
+          { "lang": "en", "val": "United States" },
+          { "lang": "es", "val": "Estados Unidos" },
+          { "lang": "fr", "val": "États-Unis" },
+          { "lang": "pt", "val": "Estados Unidos" }
+        ],
+        "areaCode": "1",
+        "continentCode": "NA",
+        "continentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "subcontinentCode": "NOA",
+        "subcontinentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "zoneAtpcoCode": "001",
+        "latitude": "6.09682",
+        "longitude": "46.63825",
+        "timezoneId": "America/Chicago",
+        "currencyCode": "USD",
+        "discontinuedDate": "1960-10-24",
+        "effectiveDate": "1947-04-15",
+        "updateReason": "IATA code was reassigned"
+      }
+    ]
+  }
+  
