@@ -1,6 +1,6 @@
 | KPI  | Description | Type | Example |
 | ------------- | ------------- | ------------- | ------------- |
-| airIndex  | airIndex is a numeric value between 0 and 1 that is obtained by combining two key factors: route search volume and price change behavior by route  | Number  | 0.5  |
+| airIndex  | airIndex is a numeric value between 0 and 1 that is obtained by syncing data that are indicators of demand and seat availability by route  | Number  | 0.5  |
 | ASKs  | Available Seat Kilometres (ASKs) is the measure of a flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance traveled in kilometers.  | Number  | 100  |
 | ASMs | Available Seat Miles (ASMs) is the measure of a flight's passenger carrying capacity. Calculated by multiplying the number of seats on an aircraft by the distance traveled in miles. | Number | 100 |
 | Average Fare | The average fare is the average of all fares collected from the Flight Results page. FareNet usually collects the lowest fare though exceptions may apply. | Number | 100 |
