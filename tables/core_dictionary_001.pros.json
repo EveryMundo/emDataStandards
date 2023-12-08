@@ -34,15 +34,15 @@
           { "lang": "fr", "val": "États-Unis" },
           { "lang": "pt", "val": "Estados Unidos" }
         ],
-        "areaCode": "1",
-        "continentCode": "NA",
-        "continentNames": [
-            { "lang": "en", "val": "North America" }
-        ],
         "subcontinentCode": "NOA",
         "subcontinentNames": [
             { "lang": "en", "val": "North America" }
         ],
+        "continentCode": "NA",
+        "continentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "areaCode": "1",
         "zoneAtpcoCode": "001",
         "latitude": "6.09682",
         "longitude": "46.63825",
@@ -82,15 +82,15 @@
           { "lang": "fr", "val": "États-Unis" },
           { "lang": "pt", "val": "Estados Unidos" }
         ],
-        "areaCode": "1",
-        "continentCode": "NA",
-        "continentNames": [
-            { "lang": "en", "val": "North America" }
-        ],
         "subcontinentCode": "NOA",
         "subcontinentNames": [
             { "lang": "en", "val": "North America" }
         ],
+        "continentCode": "NA",
+        "continentNames": [
+            { "lang": "en", "val": "North America" }
+        ],
+        "areaCode": "1",
         "zoneAtpcoCode": "001",
         "latitude": "6.09682",
         "longitude": "46.63825",
