@@ -44,5 +44,10 @@ dataLayer.push({
         'roomCount': 2,
         'tripLength': 7,
         'starRating': 5
+    }],
+    'carRentals': [{
+        'provider': 'Hertz',
+        'brand': 'BMW',
+        'model': '530i'
     }]
 });
