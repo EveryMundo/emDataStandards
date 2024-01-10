@@ -4,7 +4,6 @@ dataLayer.push({
     'eventAction': 'search-initiation',
     'actionLabel': null,
     'tenantCode': 'ETA',
-    'provider': 'Tennis Australia',
     'eventName': 'Semifinal',
     'eventLocation': 'Laver Arena',
     'eventSession': 'Night',
