@@ -4,7 +4,6 @@ dataLayer.push({
     'eventAction': 'viewable-impression',
     'actionLabel': null,
     'tenantCode': 'HYT',
-    'provider': 'Hyat',
     'regionName': 'North America',
     'countryCode': 'US',
     'cityName': 'Miami',
