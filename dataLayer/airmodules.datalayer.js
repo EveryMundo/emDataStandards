@@ -4,7 +4,6 @@ dataLayer.push({
     'eventAction': 'viewable_impression',
     'actionLabel': null,
     'airlineIataCode': 'UL',
-    'provider': 'SriLankanAirlines',
     'journeyType': 'ROUND_TRIP',
     'originAirportIataCode': 'CMB',
     'destinationAirportIataCode': 'SIN',
