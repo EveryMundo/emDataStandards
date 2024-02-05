@@ -84,7 +84,6 @@
         "propertyId",
         "roomCode",
         "rateCode",
-        "name",
         "totalPrice",
         "guest.count",
         "checkinDate",
