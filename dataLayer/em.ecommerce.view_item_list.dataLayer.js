@@ -22,7 +22,7 @@ window.dataLayer.push({
       item_id: 'FLIGHT',
       price: 299.00,
       item_category: 'Business Class',
-      item_category2: '2021-11-30', //Flight departure date
+      item_category2: '2021-11-30', //Flight return date
       item_category3: 'EM901', //Flight number(s)
       item_category4: 'PT3H1M', //Estimated flight duration
       item_category5: 'Adult', //Passenger type
