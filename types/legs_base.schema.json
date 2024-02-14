@@ -10,11 +10,6 @@
         "type": "string",
         "example": "EM110"
       },
-      "route": {
-        "description": "Origin City and Destination City",
-        "type": "string",
-        "example": "SFO>MIA"
-      },
       "departureAirport": {
         "$ref": "./airport_base.schema.json"
       },
