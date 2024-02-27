@@ -2,13 +2,17 @@
   "sourceDate": "2023-06-01",
   "flightNumber": "CM123",
   "departureDate": "2023-07-01",
-  "route": "SFO>JFK",
   "originAirportIataCode": "SFO",
   "destinationAirportIataCode": "JFK",
+  "route": "SFO>JFK",
   "compartmentCode": "Y",
-  "totalBooked": 13000,
   "adjustedCapacity": 67000,
+  "totalBooked": 13000,
+  "achievableDemand": 9.34,
+  "constrainedDemand": 88,
   "constrainedOut": 50000,
-  "loadFactorBooked": 0.19,
-  "loadFactorForecasted": 0.75
+  "achievableOut": 1.25,
+  "bookedLoadfactor": 0.19,
+  "constrainedLoadfactor": 0.75,
+  "achievableLoadfactor": 0.89
 }
