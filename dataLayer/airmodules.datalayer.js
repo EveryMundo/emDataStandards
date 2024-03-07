@@ -31,7 +31,8 @@ dataLayer.push({
         'youngAdultCount': null,
         'childCount': null,
         'infantInLapCount': null,
-        'infantInSeatCount': null
+        'infantInSeatCount': null,
+        'overseasFilipinoWorker': null
     }],
     'page': [{
         'siteEdition': 'en-LK',
