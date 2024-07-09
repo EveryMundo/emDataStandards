@@ -1,7 +1,7 @@
 dataLayer.push({
-    'event': 'search-initiation',
+    'event': 'search_initiation',
     'module': 'em-booking-popup-abstract',
-    'eventAction': 'search-initiation',
+    'eventAction': 'search_initiation', //Field used to ensure we are only tracking events native to the airModule through GTM
     'actionLabel': null,
     'tenantCode': 'ETA',
     'eventName': 'Semifinal',

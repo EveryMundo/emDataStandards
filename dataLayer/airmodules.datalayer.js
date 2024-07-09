@@ -1,7 +1,7 @@
 dataLayer.push({
     'event': 'viewable_impression',
     'module': 'em-booking-popup-abstract',
-    'eventAction': 'viewable_impression',
+    'eventAction': 'viewable_impression', //Field used to ensure we are only tracking events native to the airModule through GTM
     'actionLabel': null,
     'airlineIataCode': 'UL',
     'journeyType': 'ROUND_TRIP',

@@ -1,7 +1,7 @@
 dataLayer.push({
-    'event': 'viewable-impression',
+    'event': 'viewable_impression',
     'module': 'em-booking-popup-abstract',
-    'eventAction': 'viewable-impression',
+    'eventAction': 'viewable_impression', //Field used to ensure we are only tracking events native to the airModule through GTM
     'actionLabel': null,
     'tenantCode': 'HYT',
     'regionName': 'North America',
