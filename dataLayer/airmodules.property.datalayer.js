@@ -19,17 +19,17 @@ dataLayer.push({
     'roomAccesibility': false,
     'timestamp': '2021-02-16T17:41:43.200Z',
     'url': 'https: //www.hyatt.com/en/miami',
-    'passenger': [{
+    'passenger': {
         'count': 1,
         'adultCount': 1,
         'youngAdultCount': null,
         'childCount': null,
         'infantInLapCount': null,
         'infantInSeatCount': null
-    }],
-    'page': [{
+    },
+    'page': {
         'siteEdition': 'en-LK',
         'countryIsoCode': 'LK',
         'languageIsoCode': 'en'
-    }]
+    }
 });

@@ -25,7 +25,7 @@ dataLayer.push({
     'miles': null,
     'timestamp': '2021-02-16T17:41:43.200Z',
     'url': 'https: //www.srilankan.com/en-lk/',
-    'passenger': [{
+    'passenger': {
         'count': 1,
         'adultCount': 1,
         'youngAdultCount': null,
@@ -33,13 +33,13 @@ dataLayer.push({
         'infantInLapCount': null,
         'infantInSeatCount': null,
         'overseasFilipinoWorker': null
-    }],
-    'page': [{
+    },
+    'page': {
         'siteEdition': 'en-LK',
         'countryIsoCode': 'LK',
         'languageIsoCode': 'en'
-    }],
-    'lodging': [{
+    },
+    'lodging': {
         'cityCode': 'SIN',
         'name': 'Intercontinental',
         'startDate': '2021-03-13',
@@ -47,10 +47,10 @@ dataLayer.push({
         'roomCount': 2,
         'tripLength': 7,
         'starRating': 5
-    }],
-    'carRentals': [{
+    },
+    'carRentals': {
         'provider': 'Hertz',
         'brand': 'BMW',
         'model': '530i'
-    }]
+    }
 });

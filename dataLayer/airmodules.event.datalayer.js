@@ -22,15 +22,15 @@ dataLayer.push({
     'endDate': '2021-03-14',
     'timestamp': '2021-02-16T17:41:43.200Z',
     'url': 'https: //www.srilankan.com/en-lk/',
-    'passenger': [{
+    'passenger': {
         'count': 1,
         'adultCount': 1,
         'youngAdultCount': null,
         'childCount': null
-    }],
-    'page': [{
+    },
+    'page': {
         'siteEdition': 'en-LK',
         'countryIsoCode': 'LK',
         'languageIsoCode': 'en'
-    }]
+    }
 });
