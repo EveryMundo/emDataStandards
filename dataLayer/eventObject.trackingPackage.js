@@ -1,0 +1,50 @@
+const eventObject = {
+    event: 'viewable_impression',
+    module: 'em-booking-popup',
+    modulePrevious: 'em-farelist-histogram',
+    actionLabel: '',
+    airlineIataCode: 'UL',
+    journeyType: 'ONE_WAY',
+    originAirportIataCode: 'CMB',
+    destinationAirportIataCode: 'SIN',
+    route: 'CMB>SIN',
+    currencyCode: 'LKR',
+    totalPrice: 5.21,
+    totalPriceUSD: '',
+    fareClass: 'ECONOMY',
+    departureDate: '2021-03-13',
+    returnDate: '2021-06-14',
+    daysUntilFlight: 25,
+    tripLength: 93,
+    isFlexibleDates: '',
+    discountCode: '',
+    deeplinkSiteEdition: '',
+    miles: '',
+    timestamp: '2021-02-16T00: 00: 00.000Z',
+    url: 'https: //www.srilankan.com/en-lk/',
+    passenger: {
+        count: 1,
+        adultCount: 1,
+        youngAdultCount: '',
+        childCount: '',
+        infantInLapCount: '',
+        infantInSeatCount: ''
+    },
+    page: {
+        siteEdition: 'en-LK',
+        countryIsoCode: 'LK',
+        languageIsoCode: 'en',
+        typeName: 'CUSTOM_PAGE'
+    },
+    lodging: {
+        cityCode: 'SIN',
+        name: 'Intercontinental',
+        startDate: '2021-03-13',
+        endDate: '2021-03-20',
+        roomCount: 2,
+        tripLength: 7,
+        starRating: 5
+    },
+    moduleId: '',
+    tagName: ''
+}
