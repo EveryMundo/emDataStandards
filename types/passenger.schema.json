@@ -39,7 +39,11 @@
       "description": "Amount of in seat infants passengers",
       "type": "number",
       "example": 0
-    }
+    },
+    "overseasFilipinoWorker": {
+      "description": "Overseas Filipino Workers (OFWs) are Filipino citizens who are employed in foreign countries.",
+      "type": "number",
+      "example": 0
   },
   "required": ["count"],
   "links": [
