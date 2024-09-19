@@ -1,7 +1,7 @@
 dataLayer.push({
     'event': 'viewable_impression',
     'module': 'em-booking-popup-abstract',
-    'moduleConfiguration': {
+    'configuration': {
         "brandedFare": "",
         "fareClass": "ECONOMY",
         "redemptionType": "POINTS"
