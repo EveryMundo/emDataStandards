@@ -1,6 +1,11 @@
 dataLayer.push({
     'event': 'viewable_impression',
     'module': 'em-booking-popup-abstract',
+    'moduleConfiguration': {
+        "brandedFare": "",
+        "fareClass": "ECONOMY",
+        "redemptionType": "POINTS"
+    }, //Only applies to Dynamic Price airModules (DPAs)
     'eventAction': 'viewable_impression', //Field used to ensure we are only tracking events native to the airModule through GTM
     'actionLabel': null,
     'airlineIataCode': 'UL',
