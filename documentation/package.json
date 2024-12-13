@@ -62,7 +62,7 @@
     "style-loader": "^0.13.1",
     "url-loader": "^1.1.2",
     "webpack": "^2.2.0",
-    "webpack-dev-middleware": "^1.6.0",
+    "webpack-dev-middleware": "^5.3.4",
     "webpack-hot-middleware": "^2.25.1"
   }
 }
